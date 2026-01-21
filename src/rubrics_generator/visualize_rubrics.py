@@ -1,6 +1,6 @@
 import networkx as nx
-from typing import Set
-from pydantic import BaseModel, Field
+from typing import Set, Union, Dict, Any
+from pydantic import BaseModel, Field, field_validator
 from typing import List, Any
 import json
 
@@ -9,6 +9,41 @@ class Rubric(BaseModel):
     weight: int = Field(description="The weight that represents its importance: 3: Essential rubric, 2: Important but not essential, 1: Non-essential or supportive")
     reference: List[List[Any]|Any] = Field(default_factory=list, description="The list of references to the documentation paths that inform this rubric. Only leaf rubrics should have non-empty references.")
     sub_tasks: List["Rubric"] = Field(default_factory=list, description="The list of children rubrics. Leaf rubrics should not have children.")
+    
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "Rubric":
+        """
+        Create a Rubric from a dictionary, handling both format variants:
+        - Format 1: {name, description, reference, weight, children}
+        - Format 2: {requirements, weight, reference, sub_tasks}
+        """
+        # Handle Format 1: with "name" and "children"
+        if "name" in data:
+            requirements = data["name"]
+            if "description" in data:
+                requirements = f"{data['name']}: {data['description']}"
+            
+            children_data = data.get("children", [])
+            sub_tasks = [cls.from_dict(child) for child in children_data]
+            
+            return cls(
+                requirements=requirements,
+                weight=data.get("weight", 2),
+                reference=data.get("reference", []),
+                sub_tasks=sub_tasks
+            )
+        
+        # Handle Format 2: with "requirements" and "sub_tasks"
+        else:
+            sub_tasks_data = data.get("sub_tasks", [])
+            sub_tasks = [cls.from_dict(child) for child in sub_tasks_data]
+            
+            return cls(
+                requirements=data.get("requirements", "Unknown"),
+                weight=data.get("weight", 2),
+                reference=data.get("reference", []),
+                sub_tasks=sub_tasks
+            )
 
 def find_root(tree: nx.DiGraph) -> str:
     """Find the root node (node with no incoming edges)"""
@@ -128,12 +163,16 @@ def get_graph_statistics(graph: nx.DiGraph) -> dict:
 
 def visualize_rubrics(path: str) -> None:
     with open(path, "r") as f:
-        rubrics = json.load(f)
+        rubrics_data = json.load(f)
+    
+    # Handle wrapped format {"rubrics": [...]}
+    if isinstance(rubrics_data, dict) and "rubrics" in rubrics_data:
+        rubrics_data = rubrics_data["rubrics"]
     
     root = Rubric(
         requirements="root rubric",
         weight=3,
-        sub_tasks=[Rubric(**rubric) for rubric in rubrics]
+        sub_tasks=[Rubric.from_dict(rubric) for rubric in rubrics_data]
     )
     
     # Convert to graph
@@ -151,14 +190,14 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     with open(args.rubrics_path, "r") as f:
-        rubrics = json.load(f)
-        if "rubrics" in rubrics:
-            rubrics = rubrics["rubrics"]
+        rubrics_data = json.load(f)
+        if isinstance(rubrics_data, dict) and "rubrics" in rubrics_data:
+            rubrics_data = rubrics_data["rubrics"]
     
     root = Rubric(
         requirements="root rubric",
         weight=3,
-        sub_tasks=[Rubric(**rubric) for rubric in rubrics]
+        sub_tasks=[Rubric.from_dict(rubric) for rubric in rubrics_data]
     )
     
     # Convert to graph

@@ -327,8 +327,12 @@ def parse_docs_directory(path: str, project_name: str = None, output_dir: str = 
     return root_page, detailed_keys_tree
 
 if __name__ == "__main__":
-    import config
+    import sys
     import argparse
+    
+    # Add parent directory to path for importing config
+    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+    from src import config
     
     # Set up command line argument parsing
     parser = argparse.ArgumentParser(description='Parse documentation for a repository')

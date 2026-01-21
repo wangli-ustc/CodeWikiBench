@@ -14,6 +14,9 @@ except Exception as e:
     print(f"Failed to configure logfire: {e}")
 
 from pydantic_ai import Agent
+
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from tools import AgentDeps, docs_navigator_tool
 from utils import get_llm, run_llm_natively
 import config

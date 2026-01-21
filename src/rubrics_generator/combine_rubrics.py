@@ -5,10 +5,13 @@ import glob
 from typing import List, Dict
 import statistics
 from collections import Counter
-import config
-from utils import run_llm_natively
 from time import sleep
 import asyncio
+
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import config
+from utils import run_llm_natively
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Combine rubrics generated from multiple LLMs using semantic analysis")
