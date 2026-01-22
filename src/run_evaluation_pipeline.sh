@@ -217,7 +217,7 @@ if [[ "$SKIP_EVALUATION" == false ]]; then
         print_status "Running evaluation with $model..."
         
         # Build evaluation command
-        eval_cmd="python judge/judge.py --repo-name \"$REPO_NAME\" --model \"$model\" --batch-size $BATCH_SIZE --max-retries $MAX_RETRIES --reference \"$REFERENCE\""
+        eval_cmd="python $SCRIPT_DIR/judge/judge.py --repo-name \"$REPO_NAME\" --model \"$model\" --batch-size $BATCH_SIZE --max-retries $MAX_RETRIES --reference \"$REFERENCE\""
         
         # Add optional flags
         if [[ "$USE_TOOLS" == true ]]; then
@@ -262,7 +262,7 @@ if [[ "$SKIP_COMBINATION" == false ]] && [[ $model_count -gt 1 ]]; then
     print_step "Step 2: Combining evaluation results"
     
     # Build combination command
-    combine_cmd="python judge/combine_evaluations.py --repo-name \"$REPO_NAME\" --method \"$COMBINATION_METHOD\" --reference \"$REFERENCE\""
+    combine_cmd="python $SCRIPT_DIR/judge/combine_evaluations.py --repo-name \"$REPO_NAME\" --method \"$COMBINATION_METHOD\" --reference \"$REFERENCE\""
     
     # Add weights if specified
     if [[ -n "$WEIGHTS" ]]; then
@@ -289,15 +289,15 @@ if [[ "$VISUALIZE" == true ]]; then
     print_step "Step 3: Generating visualizations"
     
     # Check if visualization script exists
-    if [[ -f "judge/visualize_evaluation.py" ]]; then
-        python judge/visualize_evaluation.py --repo-name "$REPO_NAME" --reference "$REFERENCE"
+    if [[ -f "$SCRIPT_DIR/judge/visualize_evaluation.py" ]]; then
+        python $SCRIPT_DIR/judge/visualize_evaluation.py --repo-name "$REPO_NAME" --reference "$REFERENCE"
         if [[ $? -eq 0 ]]; then
             print_status "✓ Visualization completed"
         else
             print_warning "Visualization failed but pipeline continues"
         fi
     else
-        print_warning "Visualization script not found: judge/visualize_evaluation.py"
+        print_warning "Visualization script not found: $SCRIPT_DIR/judge/visualize_evaluation.py"
     fi
 fi
 

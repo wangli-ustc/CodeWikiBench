@@ -48,19 +48,19 @@ Use the following JSON format to represent the rubrics:
 [
   {
     "name": "Rubric 1",
-    "description": "High-level purpose of Rubric 1",
+    "requirements": "High-level purpose of Rubric 1",
     "reference": [],
     "weight": 3,
     "children": [
       {
         "name": "Rubric 1.1",
-        "description": "Specific functionality under Rubric 1",
+        "requirements": "Specific functionality under Rubric 1",
         "reference": [],
         "weight": 2,
         "children": [
           {
             "name": "Rubric 1.1.1",
-            "description": "Leaf-level functionality",
+            "requirements": "Leaf-level functionality",
             "weight": 3,
             "reference": ["ref_path_1", "ref_path_2"]
           }
@@ -68,7 +68,7 @@ Use the following JSON format to represent the rubrics:
       },
       {
         "name": "Rubric 1.2",
-        "description": "Another function under Rubric 1",
+        "requirements": "Another function under Rubric 1",
         "weight": 1,
         "reference": ["ref_path_3"]
       }
@@ -76,13 +76,13 @@ Use the following JSON format to represent the rubrics:
   },
   {
     "name": "Rubric 2",
-    "description": "High-level purpose of Rubric 2",
+    "requirements": "High-level purpose of Rubric 2",
     "weight": 2,
     "reference": [],
     "children": [
       {
         "name": "Rubric 2.1",
-        "description": "Functionality under Rubric 2",
+        "requirements": "Functionality under Rubric 2",
         "weight": 2,
         "reference": ["ref_path_4"]
       }

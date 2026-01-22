@@ -69,8 +69,11 @@ fi
 # Extract repo name from URL for target directory
 REPO_NAME=$(basename "$REPO_URL" .git)
 
+# Get script directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Automatically set target directory based on repo name
-TARGET_DIR="../data/$REPO_NAME/original"
+TARGET_DIR="$SCRIPT_DIR/../data/$REPO_NAME/original"
 
 echo "🚀 Starting download..."
 echo "Repository: $REPO_URL"

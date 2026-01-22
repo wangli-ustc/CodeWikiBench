@@ -7,6 +7,9 @@ from typing import List, Dict, Any
 import statistics
 from collections import Counter
 import math
+
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import config
 
 def parse_args():
