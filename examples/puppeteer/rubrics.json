@@ -1,0 +1,662 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Browser Automation Engine - Core system that controls web browsers through standardized protocols",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-Protocol Communication Layer - Manages bidirectional communication with browsers via CDP and WebDriver BiDi",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Chrome DevTools Protocol (CDP) Implementation - Primary protocol for Chromium-based browser control",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "CDP Session Management - Creates, manages, and terminates CDP sessions for isolated browser contexts",
+                  "weight": 3
+                },
+                {
+                  "requirements": "WebSocket Transport Layer - Handles real-time bidirectional communication with browser processes",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Protocol Message Serialization - Converts JavaScript commands to protocol messages and responses back",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Auto-generated CDP Type Bindings - Provides type-safe interfaces for CDP commands and events",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "WebDriver BiDi Implementation - Cross-browser compatibility layer for Firefox and other browsers",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Capability Negotiation & Protocol Fallback - Determines browser capabilities and falls back to compatible protocols",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Command Mapping & Response Normalization - Translates between WebDriver BiDi and internal command formats",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Extension Transport for In-Browser Puppeteer - Enables browser extension-based automation",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Content-Script Message Relay - Facilitates communication between extension and page contexts",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Browser Lifecycle Management - Controls browser process creation, configuration, and termination",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Browser Launcher & Process Manager - Spawns and monitors browser processes",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Executable Path Resolution - Locates and validates browser binaries across different platforms",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Launch Arguments Configuration - Applies browser-specific flags, sandbox settings, GPU options, and headless mode",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Process Health Monitoring - Tracks browser process state, handles unexpected terminations, and manages zombie processes",
+                  "weight": 2
+                },
+                {
+                  "requirements": "User Data Directory Orchestration - Manages profile isolation and cleanup scheduling",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Browser Binary Management - Handles download, installation, and caching of browser executables",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-Platform Binary Distribution - Supports fetching browser versions across different platforms and release channels",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Incremental Download with Progress Tracking - Manages browser binary downloads with progress hooks and caching",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Version Resolution & Cache Management - Provides CLI and programmatic APIs for browser version management",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Browser Context Isolation - Creates sandboxed environments for independent automation sessions",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Incognito Context Management - Provides isolated browsing sessions with separate cookies, storage, and permissions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Permission and Security Policy Control - Manages browser permissions and security settings per context",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Hierarchical Object Model - Provides structured abstraction layers for browser automation",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Browser Object - Top-level interface managing browser instances and global settings",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Browser Context Management - Manages collection of BrowserContexts including default context",
+              "weight": 3
+            },
+            {
+              "requirements": "Global Browser Operations - Provides methods for page creation, browser termination, and instance-wide settings",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Page & Frame Tree Abstraction - Represents hierarchical page structure and navigation states",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Page Object - Primary interface for automating browser tabs with frame hierarchy management",
+              "weight": 3
+            },
+            {
+              "requirements": "Frame Object - Scoped execution context for main documents and iframes",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Frame Tree Navigation - Traverses and manages hierarchical frame structures with cross-frame communication",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Frame Context Isolation - Ensures actions are targeted correctly within complex page structures",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Handle Object System - Remote references to browser-resident objects with lifecycle management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "JSHandle - Generic handle to JavaScript objects in browser with garbage collection tracking",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Remote Object Reference Counter - Manages memory references and prevents leaks",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Detached Frame Invalidation - Handles reference cleanup when frames are destroyed",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "ElementHandle - Specialized JSHandle for DOM elements with direct interaction capabilities",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Element Property Access - Retrieves attributes, properties, computed styles, and state information",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Element Interaction Methods - Provides click, type, screenshot, and other element-specific operations",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Page Navigation and Content Management",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Navigation Controller - Manages page transitions, loading states, and browser history",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Navigation Lifecycle State Machine - Tracks and manages page loading progression",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Network Idle & DOMContentLoaded Detection - Identifies when pages reach specific loading milestones",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Navigation Timeout Management - Handles timeouts for slow-loading pages and network conditions",
+                  "weight": 2
+                },
+                {
+                  "requirements": "History Stack Synchronization - Controls browser back/forward navigation and state management",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Page State Retrieval - Accesses current page URL, title, and HTML content",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Content Querying and Element Selection - Locates and references DOM elements using various strategies",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Multi-Engine Selector System - Supports CSS, XPath, ARIA, text, and pierce selectors",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "CSS & XPath Selector Backends - Standard CSS and XPath expression evaluation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Extended Query Engines - Text-based, ARIA accessibility, and shadow DOM piercing selectors",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Custom Query Handler Registry - Plugin system for domain-specific element selection strategies",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Locator API with Retry Semantics - Robust, auto-waiting, chainable element queries",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Auto-Retry Element Queries - Automatically re-queries elements on action until timeout",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Condition Waiting Framework - Polls DOM until elements matching selectors appear or conditions are met",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "User Interaction Simulation - Emulates human-like interactions with comprehensive input device support",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Action Dispatcher with Input Replay - Coordinates complex interaction sequences",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "High-Level Element Interactions - Click, hover, tap, type, select, and drag-and-drop operations",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Hit-Test & Clickable Point Calculator - Determines optimal interaction points on elements",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Element State Monitoring - Verifies visibility, position, and interaction readiness before actions",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Low-Level Input Device Control - Fine-grained keyboard, mouse, and touch event synthesis",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Keyboard Input System - Generates key events with proper timing, modifiers, and IME support",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Mouse Interaction Engine - Simulates mouse movements, clicks, wheel events, and drag operations",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Touch Interface Support - Provides touch gesture simulation for mobile testing",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Form Interaction Framework - Specialized handling of form elements and file operations",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "File Upload Simulation - Manages file selection and upload with blob-to-protocol encoding",
+              "weight": 2
+            },
+            {
+              "requirements": "Dialog Management - Handles browser alerts, confirms, prompts, and file chooser events",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "JavaScript Execution and Object Marshalling - Enables code execution within browser contexts",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Script Injection System - Executes JavaScript code in page or isolated execution contexts",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Runtime Function Call Builder - Constructs and executes Runtime.callFunctionOn commands",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Argument Serialization System - Handles JSHandle, ElementHandle, bigint, Date, RegExp conversion",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Exception & Stack Trace Rewriting - Captures, parses, and reports JavaScript execution errors",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Execution Context Registry - Manages isolated worlds and script injection per frame",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Isolated World Injection - Separates automation scripts from page scripts to prevent interference",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Preload Script Management - Stores and re-injects scripts on navigation events",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Cross-Context Communication Bridge - Allows Node.js functions to be called from browser context",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Function Exposure Framework - Injects Node.js functions into browser's window object",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Callback Registry with Promise Adapter - Manages async function calls between contexts",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Parameter Marshalling - Handles data type conversion between Node.js and browser contexts",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Network Interception and Observability - Monitors and controls network traffic with comprehensive proxy capabilities",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Request/Response Proxy Chain - Intercepts and modifies network traffic",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Cooperative Intercept Mode - Manages multiple interceptors with priority queue system",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Request Action Resolution - Processes abort, continue, and respond actions on intercepted requests",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Header and Payload Mutation - Provides buffers for modifying request data and headers",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Response Mocking System - Provides custom responses without hitting actual servers",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Network Environment Control - Manages cookies, authentication, and network conditions",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Cookie Jar Synchronization - Manages partition-aware cookie storage with same-site enforcement",
+              "weight": 2
+            },
+            {
+              "requirements": "Network Condition Emulation - Simulates bandwidth throttling, offline mode, and connection states",
+              "weight": 2
+            },
+            {
+              "requirements": "Authentication & Header Management - Controls extra HTTP headers and auth credentials",
+              "weight": 2
+            },
+            {
+              "requirements": "Security Details & Certificate Validation - Provides SSL certificate information and validation",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Content Capture and Analysis Pipeline - Extracts and processes web page content in multiple formats",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Visual Content Capture - Generates screenshots and visual representations",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Screenshot Composer - Multi-strategy image capture system",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Capture Strategy Engine - Supports viewport, full-page, element-specific, and clipped screenshots",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Image Format Encoder - Outputs PNG, JPEG, and WebP formats with quality control",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "PDF Generation System - Converts web pages to formatted PDF documents",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Print Media Emulation - Applies print-specific CSS styles and layouts",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Layout Control System - Manages margins, headers, footers, page breaks, and formatting options",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Performance and Coverage Analysis - Collects runtime metrics and code usage data",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Performance Trace Collection - Gathers browser performance data and timing information",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Navigation Timing Analysis - Measures page load performance characteristics",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Performance Trace JSON Exporter - Formats and exports trace data for analysis",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Code Coverage Analysis - Tracks JavaScript and CSS usage during execution",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Coverage Range Merger - Combines CSS & JS coverage data with unused code identification",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Accessibility Tree Capture - Extracts page accessibility information for automated testing",
+              "weight": 1
+            },
+            {
+              "requirements": "Screen-Cast Recording - Provides video recording capabilities for session capture",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Environment Emulation and Configuration - Simulates devices, conditions, and manages system configuration",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Device and Environment Emulation - Mimics various devices and user conditions",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Device Emulation Framework - Simulates hardware and software characteristics",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Viewport and Display Configuration - Sets dimensions, device pixel ratios, and scaling factors",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Device Preset System - Provides pre-configured device profiles (iPhone, Android, etc.)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "User Agent and Hardware Emulation - Modifies browser identification and hardware capabilities",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Environmental Condition Simulation - Emulates system states and user preferences",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Media Feature Emulation - Simulates CSS media queries, color schemes, and motion preferences",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Geolocation and Timezone Mocking - Provides fake GPS coordinates and regional settings",
+                  "weight": 1
+                },
+                {
+                  "requirements": "CPU Throttling - Simulates performance on slower devices",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Configuration Management System - Handles system-wide settings and extensibility",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Launch Options Normalization - Processes and validates browser launch configurations",
+              "weight": 2
+            },
+            {
+              "requirements": "Environment Variable & Config File Resolution - Manages project-wide settings through files and environment",
+              "weight": 1
+            },
+            {
+              "requirements": "Plugin Registry for Extension - Enables custom query handlers and system extensions",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Event System and Synchronization Framework - Manages event-driven interactions and asynchronous operations",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Event Emission and Broadcasting - Observable events for browser and page state changes",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Lifecycle Event Management - Emits events for page lifecycle moments (load, domcontentloaded, navigation)",
+              "weight": 3
+            },
+            {
+              "requirements": "Network Event Tracking - Reports request, response, and failure events for real-time monitoring",
+              "weight": 2
+            },
+            {
+              "requirements": "Browser Interaction Events - Broadcasts console messages, dialogs, errors, and worker creation events",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Waiting and Synchronization System - Provides timing control and state synchronization mechanisms",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Condition Waiting Framework - Waits for specific page states, elements, or custom conditions",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Element Condition Waiting - Waits for element visibility, presence, and interaction readiness",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Function-based Waiting - Waits for custom JavaScript conditions to be satisfied",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Network Idle Detection - Waits for network activity to cease before proceeding",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Timeout Management System - Handles operation timeouts and prevents infinite waiting",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Global and Operation-Specific Timeouts - Configures default and custom timeouts for various actions",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Observability and Diagnostics Infrastructure - Provides monitoring, logging, and debugging capabilities",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "Protocol Traffic Monitoring - Logs and tracks communication with browser instances",
+          "weight": 2
+        },
+        {
+          "requirements": "Pending Call Tracker - Monitors outstanding operations for hang detection and debugging",
+          "weight": 2
+        },
+        {
+          "requirements": "Console Message & Dialog Forwarding - Relays browser console output and dialog events to automation context",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

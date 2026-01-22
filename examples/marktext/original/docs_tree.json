@@ -1,0 +1,457 @@
+{
+  "title": "marktext",
+  "description": "Documentation for marktext",
+  "subpages": [
+    {
+      "title": "Application Data Directory",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Application Data Directory": "<detail_content>"
+      }
+    },
+    {
+      "title": "Basics",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Getting started": {
+          "Interface": {
+            "Toggle sidebar": "<detail_content>",
+            "Toggle tabs": "<detail_content>",
+            "Switch between editor modes": "<detail_content>",
+            "Typewriter and focus mode": "<detail_content>"
+          }
+        },
+        "Open and modify markdown files": {
+          "Open your first file": "<detail_content>",
+          "Save your edited file": "<detail_content>",
+          "Open a directory": "<detail_content>"
+        },
+        "Themes": "<detail_content>",
+        "Preferences": "<detail_content>"
+      }
+    },
+    {
+      "title": "Cli",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "Command Line Interface": "<detail_content>"
+      }
+    },
+    {
+      "title": "Editing in Depth",
+      "path": "[\"subpages\", 3]",
+      "content": {
+        "Text manipulation": "<detail_content>",
+        "Selections": "<detail_content>",
+        "Deleting": "<detail_content>",
+        "Brackets and quotes autocompletion": "<detail_content>",
+        "Links": "<detail_content>",
+        "Formatting": "<detail_content>",
+        "Editing features": "<detail_content>",
+        "File encoding": "<detail_content>",
+        "Line endings": "<detail_content>",
+        "Find and replace": "<detail_content>"
+      }
+    },
+    {
+      "title": "Environment",
+      "path": "[\"subpages\", 4]",
+      "content": {
+        "Development": "<detail_content>"
+      }
+    },
+    {
+      "title": "Export a Document",
+      "path": "[\"subpages\", 5]",
+      "content": {
+        "Options": {
+          "Page options": "<detail_content>",
+          "Style": "<detail_content>",
+          "Theme": "<detail_content>",
+          "Header and footer": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Themes (Export)",
+      "path": "[\"subpages\", 6]",
+      "content": {
+        "Install a theme": "<detail_content>",
+        "Create a theme": {
+          "Theme settings": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Faq",
+      "path": "[\"subpages\", 7]",
+      "content": {
+        "Frequently Asked Questions (FAQ)": "<detail_content>"
+      }
+    },
+    {
+      "title": "Images",
+      "path": "[\"subpages\", 8]",
+      "content": {
+        "Image support": "<detail_content>"
+      }
+    },
+    {
+      "title": "Image Uploader Configration",
+      "path": "[\"subpages\", 9]",
+      "content": {
+        "PicGo": "<detail_content>",
+        "GitHub": "<detail_content>"
+      }
+    },
+    {
+      "title": "Key Bindings",
+      "path": "[\"subpages\", 10]",
+      "content": {
+        "Available modifiers": "<detail_content>",
+        "Available keys": "<detail_content>",
+        "Available key bindings": "<detail_content>"
+      }
+    },
+    {
+      "title": "Key Bindings for Linux",
+      "path": "[\"subpages\", 11]",
+      "content": {
+        "Available menu key bindings": "<detail_content>",
+        "Available key bindings": "<detail_content>"
+      }
+    },
+    {
+      "title": "Key Bindings for macOS",
+      "path": "[\"subpages\", 12]",
+      "content": {
+        "Available menu key bindings": "<detail_content>",
+        "Available key bindings": "<detail_content>"
+      }
+    },
+    {
+      "title": "Keybindings Windows",
+      "path": "[\"subpages\", 13]",
+      "content": {
+        "Available menu key bindings": "<detail_content>",
+        "Available key bindings": "<detail_content>"
+      }
+    },
+    {
+      "title": "Linux Installation Instructions",
+      "path": "[\"subpages\", 14]",
+      "content": {
+        "AppImage": {
+          "Installation": {
+            "Desktop file creation": "<detail_content>",
+            "AppImageLauncher integration": "<detail_content>"
+          },
+          "Uninstallation": "<detail_content>",
+          "Custom launch script": "<detail_content>",
+          "Known issues": "<detail_content>"
+        },
+        "Binary": "<detail_content>",
+        "Flatpak": {
+          "Installation": "<detail_content>",
+          "Update": "<detail_content>"
+        },
+        "Arch User Repository": "<detail_content>"
+      }
+    },
+    {
+      "title": "Markdown Syntax",
+      "path": "[\"subpages\", 15]",
+      "content": {
+        "Table of contents": "<detail_content>",
+        "Headings": "<detail_content>"
+      }
+    },
+    {
+      "title": "Portable Mode",
+      "path": "[\"subpages\", 16]",
+      "content": {
+        "Linux and Windows": "<detail_content>"
+      }
+    },
+    {
+      "title": "Preferences",
+      "path": "[\"subpages\", 17]",
+      "content": {
+        "MarkText Preferences": "<detail_content>"
+      }
+    },
+    {
+      "title": "Readme",
+      "path": "[\"subpages\", 18]",
+      "content": {
+        "User Documentation": "<detail_content>"
+      }
+    },
+    {
+      "title": "Spelling",
+      "path": "[\"subpages\", 19]",
+      "content": {
+        "Features": "<detail_content>",
+        "Manage dictionaries": {
+          "macOS spell checker": "<detail_content>",
+          "Windows spell checker": "<detail_content>",
+          "Hunspell": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Themes",
+      "path": "[\"subpages\", 20]",
+      "content": {
+        "Themes": "<detail_content>"
+      }
+    },
+    {
+      "title": "Dev",
+      "description": "Documentation section: dev",
+      "path": "[\"subpages\", 21]",
+      "subpages": [
+        {
+          "title": "Project Architecture",
+          "path": "[\"subpages\", 21, \"subpages\", 0]",
+          "content": {
+            "Overview": "<detail_content>",
+            "Introduction to MarkText": {
+              "Application entry points": "<detail_content>",
+              "How Muya work": "<detail_content>",
+              "Main- and renderer process communication": "<detail_content>",
+              "Editor window (renderer process)": "<detail_content>",
+              "Examples": {
+                "Opening a markdown document and render it": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Build",
+          "path": "[\"subpages\", 21, \"subpages\", 1]",
+          "content": {
+            "Build Instructions": "<detail_content>"
+          }
+        },
+        {
+          "title": "Debugging",
+          "path": "[\"subpages\", 21, \"subpages\", 2]",
+          "content": {
+            "Use Visual Studio Code": "<detail_content>",
+            "Use Chrome Developer Tools": {
+              "Debug built application": "<detail_content>"
+            },
+            "Debug slow startup performance": "<detail_content>"
+          }
+        },
+        {
+          "title": "Interface",
+          "path": "[\"subpages\", 21, \"subpages\", 3]",
+          "content": {
+            "Main interface": {
+              "Titlebar": "<detail_content>",
+              "Sidebar": "<detail_content>",
+              "Editor": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Readme",
+          "path": "[\"subpages\", 21, \"subpages\", 4]",
+          "content": {
+            "Developer Documentation": "<detail_content>"
+          }
+        },
+        {
+          "title": "Steps to release MarkText",
+          "path": "[\"subpages\", 21, \"subpages\", 5]",
+          "content": {
+            "Work after releasing": "<detail_content>"
+          }
+        },
+        {
+          "title": "Release Hotfix",
+          "path": "[\"subpages\", 21, \"subpages\", 6]",
+          "content": {
+            "Prepare a hotfix": "<detail_content>"
+          }
+        },
+        {
+          "title": "Code",
+          "description": "Documentation section: code",
+          "path": "[\"subpages\", 21, \"subpages\", 7]",
+          "subpages": [
+            {
+              "title": "Block Addition Property",
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 0]",
+              "content": {
+                "Block addition properties and its value": "<detail_content>"
+              }
+            },
+            {
+              "title": "Commands",
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 1]",
+              "content": {
+                "Commands": "<detail_content>"
+              }
+            },
+            {
+              "title": "Inter-Process Communication (IPC)",
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 2]",
+              "content": {
+                "Examples": "<detail_content>"
+              }
+            },
+            {
+              "title": "Readme",
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 3]",
+              "content": {
+                "Internal Documentation": "<detail_content>"
+              }
+            },
+            {
+              "title": "Renderer",
+              "description": "Documentation section: renderer",
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 4]",
+              "subpages": [
+                {
+                  "title": "Editor",
+                  "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 4, \"subpages\", 0]",
+                  "content": {
+                    "Internal": {
+                      "Raw markdown document": "<detail_content>",
+                      "Markdowm document": "<detail_content>",
+                      "File State": "<detail_content>",
+                      "...": "<detail_content>"
+                    },
+                    "View": {
+                      "Sidebar": "<detail_content>",
+                      "Tabs": "<detail_content>",
+                      "Document": "<detail_content>"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I18N",
+      "description": "Documentation section: i18n",
+      "path": "[\"subpages\", 22]",
+      "subpages": [
+        {
+          "title": "French",
+          "path": "[\"subpages\", 22, \"subpages\", 0]",
+          "content": {
+            "Features": "<detail_content>",
+            "Pourquoi écrire un nouvel éditeur?": "<detail_content>",
+            "Download and Install": "<detail_content>",
+            "Development": "<detail_content>",
+            "Contribution": "<detail_content>",
+            "Backers": "<detail_content>",
+            "Sponsors": "<detail_content>",
+            "Contributors": "<detail_content>",
+            "License": "<detail_content>"
+          }
+        },
+        {
+          "title": "Ja",
+          "path": "[\"subpages\", 22, \"subpages\", 1]",
+          "content": {
+            "スクリーンショット": "<detail_content>",
+            "開発の意図": "<detail_content>",
+            "インテグレーション": "<detail_content>",
+            "コントリビューター": "<detail_content>",
+            "ライセンス": "<detail_content>"
+          }
+        },
+        {
+          "title": "Ko",
+          "path": "[\"subpages\", 22, \"subpages\", 2]",
+          "content": {
+            "스크린샷": "<detail_content>",
+            "기능": "<detail_content>",
+            "왜 다른 에디터를 쓰나요?": "<detail_content>",
+            "다운로드 및 설치": "<detail_content>",
+            "개발": "<detail_content>",
+            "통합": "<detail_content>",
+            "기여": "<detail_content>",
+            "기여자": "<detail_content>",
+            "라이센스": "<detail_content>"
+          }
+        },
+        {
+          "title": "Udział w projekcie",
+          "path": "[\"subpages\", 22, \"subpages\", 3]",
+          "content": {
+            "Licencja": "<detail_content>"
+          }
+        },
+        {
+          "title": "Pt",
+          "path": "[\"subpages\", 22, \"subpages\", 4]",
+          "content": {
+            "Captura de Tela": "<detail_content>",
+            "Recursos": "<detail_content>",
+            "Por que criar outro editor?": "<detail_content>",
+            "Download e Instalação": "<detail_content>",
+            "Desenvolvimento": "<detail_content>",
+            "Integrações": "<detail_content>",
+            "Contribuição": "<detail_content>",
+            "Contribuidores": "<detail_content>",
+            "Licença": "<detail_content>"
+          }
+        },
+        {
+          "title": "Spanish",
+          "path": "[\"subpages\", 22, \"subpages\", 5]",
+          "content": {
+            "Características": "<detail_content>",
+            "¿Por qué hacer otro editor ?": "<detail_content>",
+            "Descarga e instalación": "<detail_content>",
+            "Desarrollo": "<detail_content>",
+            "Integración": "<detail_content>",
+            "Contribución": "<detail_content>",
+            "Backers": "<detail_content>",
+            "Sponsors": "<detail_content>",
+            "Contribuidores": "<detail_content>",
+            "Licencia": "<detail_content>"
+          }
+        },
+        {
+          "title": "Tr",
+          "path": "[\"subpages\", 22, \"subpages\", 6]",
+          "content": {
+            "Ekran görüntüsü": "<detail_content>",
+            "Özellikler": "<detail_content>",
+            "Neden başka bir editör?": "<detail_content>",
+            "İndirme ve Kurulum": "<detail_content>",
+            "Geliştirme": "<detail_content>",
+            "Entegrasyonlar": "<detail_content>",
+            "Katkıda Bulunmak": "<detail_content>",
+            "Destekçiler": "<detail_content>",
+            "Lisans": "<detail_content>"
+          }
+        },
+        {
+          "title": "截图",
+          "path": "[\"subpages\", 22, \"subpages\", 7]",
+          "content": {
+            "特性": "<detail_content>"
+          }
+        },
+        {
+          "title": "螢幕擷圖",
+          "path": "[\"subpages\", 22, \"subpages\", 8]",
+          "content": {
+            "功能": "<detail_content>"
+          }
+        }
+      ]
+    }
+  ]
+}

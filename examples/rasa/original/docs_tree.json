@@ -1,0 +1,2036 @@
+{
+  "title": "rasa",
+  "description": "Documentation for rasa",
+  "subpages": [
+    {
+      "title": "Docs",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Useful commands": {
+          "Installation": "<detail_content>",
+          "Local Development": "<detail_content>",
+          "Build": "<detail_content>",
+          "Deployment": "<detail_content>"
+        },
+        "Manual steps after a new version": "<detail_content>",
+        "Handling deadlinks after removal of deprecated features": "<detail_content>"
+      }
+    },
+    {
+      "title": "Docs",
+      "description": "Documentation section: docs",
+      "path": "[\"subpages\", 1]",
+      "subpages": [
+        {
+          "title": "Actions",
+          "path": "[\"subpages\", 1, \"subpages\", 0]",
+          "content": {
+            "Responses": "<detail_content>",
+            "Custom Actions": "<detail_content>",
+            "Forms": "<detail_content>",
+            "Default Actions": "<detail_content>",
+            "Slot Validation Actions": "<detail_content>"
+          }
+        },
+        {
+          "title": "Rasa Architecture Overview",
+          "path": "[\"subpages\", 1, \"subpages\", 1]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Rasa Architecture",
+          "description": "Check the architecture to understand how Rasa uses machine learning, context and state of the conversation to predict the next action of the AI Assistant.",
+          "path": "[\"subpages\", 1, \"subpages\", 2]",
+          "content": {
+            "Message Handling": "<detail_content>"
+          }
+        },
+        {
+          "title": "Handling Business Logic",
+          "path": "[\"subpages\", 1, \"subpages\", 3]",
+          "content": {
+            "Step-by-step Guide on Using Forms to Handle Business Logic": {
+              "1. Defining the form": {
+                "Slot Mappings": {
+                  "Slot Mappings with Conditions": "<detail_content>"
+                },
+                "Validating Slots": "<detail_content>",
+                "Requesting Slots": "<detail_content>"
+              },
+              "2. Updating the configuration": "<detail_content>",
+              "3. Creating rules": "<detail_content>",
+              "4. Updating the NLU training data": {
+                "Form Activation Intent(s)": "<detail_content>",
+                "Form Filling Intent(s)": "<detail_content>"
+              },
+              "5. Defining the responses": "<detail_content>"
+            },
+            "Summary": "<detail_content>"
+          }
+        },
+        {
+          "title": "Chitchat and FAQs",
+          "path": "[\"subpages\", 1, \"subpages\", 4]",
+          "content": {
+            "Step-by-step Guide on Using Response Selector for FAQs and Chitchat": {
+              "1. Updating the configuration": "<detail_content>",
+              "2. Defining Retrieval Intents and the ResponseSelector": "<detail_content>",
+              "3. Creating rules": "<detail_content>",
+              "4. Updating the NLU Training Data": "<detail_content>",
+              "5. Defining the responses": "<detail_content>"
+            },
+            "Summary": "<detail_content>"
+          }
+        },
+        {
+          "title": "Command Line Interface",
+          "description": "Command line interface for open source chatbot framework Rasa. Learn how to train, test and run your machine learning-based conversational AI assistants",
+          "path": "[\"subpages\", 1, \"subpages\", 5]",
+          "content": {
+            "Cheat Sheet": "<detail_content>",
+            "Log Level": "<detail_content>",
+            "Custom logging configuration": "<detail_content>",
+            "rasa init": "<detail_content>",
+            "rasa train": {
+              "Incremental training": "<detail_content>"
+            },
+            "rasa interactive": "<detail_content>",
+            "rasa shell": "<detail_content>",
+            "rasa run": "<detail_content>",
+            "rasa run actions": "<detail_content>",
+            "rasa visualize": "<detail_content>",
+            "rasa test": "<detail_content>",
+            "rasa test e2e": "<detail_content>",
+            "rasa data split": "<detail_content>",
+            "rasa data convert nlu": "<detail_content>",
+            "rasa data migrate": "<detail_content>",
+            "rasa data validate": "<detail_content>",
+            "rasa export": "<detail_content>",
+            "rasa evaluate markers": "<detail_content>",
+            "rasa markers upload": "<detail_content>",
+            "rasa license": "<detail_content>"
+          }
+        },
+        {
+          "title": "Compatibility Matrix",
+          "description": "Information about compatibility between Rasa Pro Services and Rasa Plus.\n",
+          "path": "[\"subpages\", 1, \"subpages\", 6]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Components",
+          "path": "[\"subpages\", 1, \"subpages\", 7]",
+          "content": {
+            "Language Models": {
+              "MitieNLP": "<detail_content>",
+              "SpacyNLP": "<detail_content>"
+            },
+            "Tokenizers": {
+              "WhitespaceTokenizer": "<detail_content>",
+              "JiebaTokenizer": "<detail_content>",
+              "MitieTokenizer": "<detail_content>",
+              "SpacyTokenizer": "<detail_content>"
+            },
+            "Featurizers": {
+              "MitieFeaturizer": "<detail_content>",
+              "SpacyFeaturizer": "<detail_content>",
+              "ConveRTFeaturizer": "<detail_content>",
+              "LanguageModelFeaturizer": "<detail_content>",
+              "RegexFeaturizer": "<detail_content>",
+              "CountVectorsFeaturizer": "<detail_content>",
+              "LexicalSyntacticFeaturizer": "<detail_content>"
+            },
+            "Intent Classifiers": {
+              "MitieIntentClassifier": "<detail_content>",
+              "LogisticRegressionClassifier": "<detail_content>",
+              "SklearnIntentClassifier": "<detail_content>",
+              "KeywordIntentClassifier": "<detail_content>",
+              "DIETClassifier": "<detail_content>",
+              "FallbackClassifier": "<detail_content>"
+            },
+            "Entity Extractors": {
+              "MitieEntityExtractor": "<detail_content>",
+              "SpacyEntityExtractor": "<detail_content>",
+              "CRFEntityExtractor": "<detail_content>",
+              "DucklingEntityExtractor": "<detail_content>",
+              "DIETClassifier": "<detail_content>",
+              "RegexEntityExtractor": "<detail_content>",
+              "EntitySynonymMapper": "<detail_content>"
+            },
+            "Combined Intent Classifiers and Entity Extractors": {
+              "DIETClassifier": "<detail_content>"
+            },
+            "Selectors": {
+              "ResponseSelector": "<detail_content>"
+            },
+            "Custom Components": "<detail_content>"
+          }
+        },
+        {
+          "title": "Contextual Conversations",
+          "path": "[\"subpages\", 1, \"subpages\", 8]",
+          "content": {
+            "Step-by-step Guide on Creating Contextual Conversation Patterns": {
+              "1. Defining Slots": "<detail_content>",
+              "2. Creating Stories": "<detail_content>",
+              "3. Configuring the TEDPolicy": {
+                "Setting `max_history`": "<detail_content>"
+              }
+            },
+            "Summary": "<detail_content>"
+          }
+        },
+        {
+          "title": "Conversation-Driven Development",
+          "description": "Find out about best practices for conversational AI using Conversation-Driven Development.",
+          "path": "[\"subpages\", 1, \"subpages\", 9]",
+          "content": {
+            "What is CDD?": "<detail_content>",
+            "CDD in early stages of development": "<detail_content>",
+            "CDD with a bot in production": {
+              "Review": "<detail_content>",
+              "Annotate": "<detail_content>",
+              "Test": "<detail_content>",
+              "Track": "<detail_content>",
+              "Fix": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Custom Actions",
+          "path": "[\"subpages\", 1, \"subpages\", 10]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Custom Graph Components",
+          "path": "[\"subpages\", 1, \"subpages\", 11]",
+          "content": {
+            "Graph Components": "<detail_content>",
+            "Getting Started": "<detail_content>",
+            "The `GraphComponent` interface": {
+              "`create`": "<detail_content>",
+              "`load`": "<detail_content>",
+              "`get_default_config`": "<detail_content>",
+              "`supported_languages`": "<detail_content>",
+              "`not_supported_languages`": "<detail_content>",
+              "`required_packages`": "<detail_content>"
+            },
+            "Model Persistence": {
+              "Writing to the Model Storage": "<detail_content>",
+              "Reading from the Model Storage": "<detail_content>"
+            },
+            "Registering Graph Components with the Model Configuration": "<detail_content>",
+            "Using Custom Components in your Model Configuration": "<detail_content>",
+            "Implementation Hints": {
+              "Message Metadata": "<detail_content>",
+              "Sparse and Dense Message Features": "<detail_content>"
+            },
+            "Examples of Custom Components": {
+              "Dense Message Featurizer": "<detail_content>",
+              "Sparse Message Featurizer": "<detail_content>",
+              "NLU Meta Learners": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Default Actions",
+          "path": "[\"subpages\", 1, \"subpages\", 12]",
+          "content": {
+            "action_listen": "<detail_content>",
+            "action_restart": "<detail_content>",
+            "action_session_start": {
+              "Customization": "<detail_content>"
+            },
+            "action_default_fallback": "<detail_content>",
+            "action_deactivate_loop": "<detail_content>",
+            "action_two_stage_fallback": "<detail_content>",
+            "action_default_ask_affirmation": "<detail_content>",
+            "action_default_ask_rephrase": "<detail_content>",
+            "action_back": "<detail_content>",
+            "Form Action": "<detail_content>",
+            "action_unlikely_intent": {
+              "Customization": "<detail_content>"
+            },
+            "action_extract_slots": "<detail_content>"
+          }
+        },
+        {
+          "title": "Domain",
+          "path": "[\"subpages\", 1, \"subpages\", 13]",
+          "content": {
+            "Multiple Domain Files": "<detail_content>",
+            "Intents": {
+              "Ignoring Entities for Certain Intents": "<detail_content>"
+            },
+            "Entities": "<detail_content>",
+            "Slots": {
+              "Slots and Conversation Behavior": "<detail_content>",
+              "Slot Types": {
+                "Text Slot": "<detail_content>",
+                "Boolean Slot": "<detail_content>",
+                "Categorical Slot": "<detail_content>",
+                "Float Slot": "<detail_content>",
+                "List Slot": "<detail_content>",
+                "Any Slot": "<detail_content>",
+                "Custom Slot Types": "<detail_content>"
+              },
+              "Slot Mappings": {
+                "from_entity": {
+                  "Unique `from_entity` mapping matching": "<detail_content>"
+                },
+                "from_text": "<detail_content>",
+                "from_intent": "<detail_content>",
+                "from_trigger_intent": "<detail_content>"
+              },
+              "Mapping Conditions": "<detail_content>",
+              "Custom Slot Mappings": "<detail_content>",
+              "Initial slot values": "<detail_content>"
+            },
+            "Responses": "<detail_content>",
+            "Forms": "<detail_content>",
+            "Actions": {
+              "Select which actions should receive domain": "<detail_content>"
+            },
+            "Session configuration": "<detail_content>",
+            "Config": "<detail_content>"
+          }
+        },
+        {
+          "title": "Event Brokers",
+          "description": "Find out how open source chatbot framework Rasa allows you to stream events to a message broker.",
+          "path": "[\"subpages\", 1, \"subpages\", 14]",
+          "content": {
+            "Format": "<detail_content>",
+            "Pika Event Broker": {
+              "Adding a Pika Event Broker Using the Endpoint Configuration": "<detail_content>",
+              "Adding SSL options to the Pika Event Broker": "<detail_content>",
+              "Adding a Pika Event Broker in Python": "<detail_content>",
+              "Implementing a Pika Event Consumer": "<detail_content>"
+            },
+            "Kafka Event Broker": {
+              "Partition Key": "<detail_content>",
+              "Authentication and Authorization": "<detail_content>",
+              "Adding a Kafka Event Broker Using the Endpoint Configuration": "<detail_content>"
+            },
+            "SQL Event Broker": {
+              "Adding a SQL Event Broker Using the Endpoint Configuration": "<detail_content>"
+            },
+            "FileEventBroker": "<detail_content>",
+            "Custom Event Broker": {
+              "Configuration": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Fallback and Human Handoff",
+          "path": "[\"subpages\", 1, \"subpages\", 15]",
+          "content": {
+            "Handling Out-of-scope Messages": {
+              "1. Creating an Out-of-scope Intent": "<detail_content>",
+              "2. Defining the response message": "<detail_content>",
+              "3. Creating an Out-of-Scope Rule": "<detail_content>",
+              "Handling Specific Out-of-scope Messages": "<detail_content>"
+            },
+            "Fallbacks": {
+              "NLU Fallback": {
+                "1. Updating the configuration": "<detail_content>",
+                "2. Defining the response message": "<detail_content>",
+                "3. Creating an NLU fallback rule": "<detail_content>"
+              },
+              "Handling Low Action Confidence": {
+                "1. Updating the configuration": "<detail_content>",
+                "2. Defining the default response message": "<detail_content>",
+                "3. Customizing the default action (optional)": "<detail_content>"
+              },
+              "Two-Stage Fallback": {
+                "1. Updating the configuration": "<detail_content>",
+                "2. Defining the fallback responses": "<detail_content>",
+                "3. Defining a Two-Stage Fallback rule": "<detail_content>"
+              },
+              "4. Defining an ultimate fallback action": "<detail_content>"
+            },
+            "Human Handoff": "<detail_content>",
+            "Summary": "<detail_content>"
+          }
+        },
+        {
+          "title": "Forms",
+          "description": "Follow a rule-based process of information gathering using forms in open source bot framework Rasa.",
+          "path": "[\"subpages\", 1, \"subpages\", 16]",
+          "content": {
+            "Usage": {
+              "Defining a Form": "<detail_content>",
+              "Activating a Form": "<detail_content>",
+              "Deactivating a Form": "<detail_content>",
+              "Slot Mappings": "<detail_content>",
+              "Writing Stories / Rules for Unhappy Form Paths": "<detail_content>"
+            },
+            "Advanced Usage": {
+              "Validating Form Input": "<detail_content>",
+              "Custom Slot Mappings": "<detail_content>",
+              "Dynamic Form Behavior": "<detail_content>",
+              "The requested_slot slot": "<detail_content>",
+              "Using a Custom Action to Ask For the Next Slot": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Generating NLU Data",
+          "path": "[\"subpages\", 1, \"subpages\", 17]",
+          "content": {
+            "Conversation-Driven Development for NLU": {
+              "Gather Real Data": "<detail_content>",
+              "Share with Test Users Early": "<detail_content>"
+            },
+            "Avoiding Intent Confusion": {
+              "Splitting on Entities vs Intents": "<detail_content>"
+            },
+            "Improving Entity Recognition": {
+              "Pre-trained Entity Extractors": "<detail_content>",
+              "Regexes": "<detail_content>",
+              "Lookup Tables": "<detail_content>",
+              "Synonyms": "<detail_content>"
+            },
+            "Handling Edge Cases": {
+              "Misspellings": "<detail_content>",
+              "Defining an Out-of-scope Intent": "<detail_content>"
+            },
+            "Shipping Updates": "<detail_content>"
+          }
+        },
+        {
+          "title": "Rasa Glossary",
+          "description": "Glossary for all Rasa-related terms",
+          "path": "[\"subpages\", 1, \"subpages\", 18]",
+          "content": {
+            "[Action](./actions.mdx)": "<detail_content>",
+            "[Action Server](./action-server/index.mdx)": "<detail_content>",
+            "Annotation": "<detail_content>",
+            "[Anonymization](./pii-management.mdx)": "<detail_content>",
+            "[Business Logic](./business-logic.mdx)": "<detail_content>",
+            "[Chitchat](./chitchat-faqs.mdx)": "<detail_content>",
+            "CMS": "<detail_content>",
+            "[Conversation-Driven Development (CDD)](./conversation-driven-development.mdx)": "<detail_content>",
+            "[Conversation Tests](./testing-your-assistant.mdx)": "<detail_content>",
+            "[Component](./components.mdx)": "<detail_content>",
+            "[Conditional Response Variation](./responses.mdx#conditional-response-variations)": "<detail_content>",
+            "[Custom Action](./actions.mdx#custom-actions)": "<detail_content>",
+            "[Default Action](./actions.mdx#default-actions)": "<detail_content>",
+            "[DIET](./components.mdx#dietclassifier)": "<detail_content>",
+            "[Domain](./domain.mdx)": "<detail_content>",
+            "[Entity](./training-data-format.mdx#entities)": "<detail_content>",
+            "[Event](./action-server/events.mdx)": "<detail_content>",
+            "FAQs": "<detail_content>",
+            "[Form](./forms.mdx)": "<detail_content>",
+            "Happy / Unhappy Paths": "<detail_content>",
+            "[Intent](./nlu-training-data.mdx)": "<detail_content>",
+            "[Interactive Learning](./writing-stories.mdx#using-interactive-learning)": "<detail_content>",
+            "[Knowledge Base / Knowledge Graph](./action-server/knowledge-base-actions.mdx)": "<detail_content>",
+            "[Level 3 Assistant](https://blog.rasa.com/5-levels-of-conversational-ai-2020-update/)": "<detail_content>",
+            "[Messaging Channels](./messaging-and-voice-channels.mdx)": "<detail_content>",
+            "[Minimum Viable Assistant](./conversation-driven-development.mdx#cdd-in-early-stages-of-development)": "<detail_content>",
+            "[NLG](./nlg.mdx)": "<detail_content>",
+            "[NLU](./nlu-training-data.mdx)": "<detail_content>",
+            "[Pipeline](./tuning-your-model.mdx)": "<detail_content>",
+            "[Policy](./policies.mdx)": "<detail_content>",
+            "Rasa Core": "<detail_content>",
+            "Rasa NLU": "<detail_content>",
+            "[NLU Component](./components.mdx)": "<detail_content>",
+            "[Rasa X/Enterprise](https://rasa.com/docs/rasa-enterprise/)": "<detail_content>",
+            "[Retrieval Intent](./chitchat-faqs.mdx)": "<detail_content>",
+            "[REST Channel](./connectors/your-own-website.mdx)": "<detail_content>",
+            "[Response / Template / Utterance](./responses.mdx)": "<detail_content>",
+            "[Rules](./rules.mdx)": "<detail_content>",
+            "[Slot](./domain.mdx#slots)": "<detail_content>",
+            "[Story](./stories.mdx)": "<detail_content>",
+            "[TED Policy](./policies.mdx#ted-policy)": "<detail_content>",
+            "[Template / Response / Utterance](./responses.mdx)": "<detail_content>",
+            "[Tracker](./tracker-stores.mdx)": "<detail_content>",
+            "User Goal": "<detail_content>",
+            "Word embedding / Word vector": "<detail_content>",
+            "Rasa Primitive": "<detail_content>"
+          }
+        },
+        {
+          "title": "Graph Recipe",
+          "description": "Learn about Graph Recipe for Rasa.",
+          "path": "[\"subpages\", 1, \"subpages\", 19]",
+          "content": {
+            "Differences with Default Recipe": "<detail_content>",
+            "Graph Configuration File Structure": "<detail_content>",
+            "Graph Node Configuration": "<detail_content>"
+          }
+        },
+        {
+          "title": "Rasa HTTP API",
+          "description": "Read about Rasa's HTTP API that has endpoints for conversations, training models, and configuring your bot.",
+          "path": "[\"subpages\", 1, \"subpages\", 20]",
+          "content": {
+            "Enabling the HTTP API": "<detail_content>",
+            "Security Considerations": {
+              "Token Based Auth": "<detail_content>",
+              "JWT Based Auth": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Introduction to Rasa Open Source & Rasa Pro",
+          "description": "Learn more about open-source natural language processing library Rasa for conversation handling, intent classification and entity extraction in on premise chatbots.",
+          "path": "[\"subpages\", 1, \"subpages\", 21]",
+          "content": {
+            "Rasa Open Source": "<detail_content>",
+            "Rasa Pro": "<detail_content>"
+          }
+        },
+        {
+          "title": "Jupyter Notebooks",
+          "description": "Learn how to integrate open source chatbot platform Rasa into Jupyter notebooks, alongside all your machine learning code.",
+          "path": "[\"subpages\", 1, \"subpages\", 22]",
+          "content": {
+            "Train a Model": "<detail_content>",
+            "Chat with your assistant": "<detail_content>",
+            "Evaluate your model against test data": "<detail_content>"
+          }
+        },
+        {
+          "title": "Language Support",
+          "path": "[\"subpages\", 1, \"subpages\", 23]",
+          "content": {
+            "Training a Model in Any Languages": "<detail_content>",
+            "Using Pre-trained Language Models": {
+              "spaCy": "<detail_content>",
+              "MITIE": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Lock Stores",
+          "description": "Messages that are being processed lock Rasa for a given conversation ID to ensure that multiple incoming messages for that conversation do not interfere with each other. Rasa provides multiple implementations to maintain conversation locks.",
+          "path": "[\"subpages\", 1, \"subpages\", 24]",
+          "content": {
+            "InMemoryLockStore (default)": "<detail_content>",
+            "ConcurrentRedisLockStore": {
+              "Description": "<detail_content>",
+              "Configuration": "<detail_content>",
+              "Parameters": "<detail_content>",
+              "Migration Guide": "<detail_content>"
+            },
+            "RedisLockStore": "<detail_content>",
+            "Custom Lock Store": {
+              "Configuration": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Markers",
+          "description": "Find out how to mark points of interest in dialogues using Marker conditions.",
+          "path": "[\"subpages\", 1, \"subpages\", 25]",
+          "content": {
+            "Overview": "<detail_content>",
+            "Defining Markers": {
+              "Event Conditions": "<detail_content>",
+              "Operators": "<detail_content>",
+              "Marker Configuration": "<detail_content>"
+            },
+            "Extracting Markers": {
+              "Extracted Markers": "<detail_content>",
+              "Computed Statistics": "<detail_content>"
+            },
+            "Configuring the CLI command": "<detail_content>"
+          }
+        },
+        {
+          "title": "Connecting to Messaging and Voice Channels",
+          "description": "Check out how to make your Rasa assistant available on platforms like Facebook Messenger, Slack, Telegram or even your very own website.",
+          "path": "[\"subpages\", 1, \"subpages\", 26]",
+          "content": {
+            "Connecting to A Channel": "<detail_content>",
+            "Testing Channels on Your Local Machine": "<detail_content>"
+          }
+        },
+        {
+          "title": "Migrate From Other Tools (beta)",
+          "path": "[\"subpages\", 1, \"subpages\", 27]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Version Migration Guide",
+          "description": "Information about changes between major versions of chatbot framework Rasa Core\nand how you can migrate from one version to another.\n",
+          "path": "[\"subpages\", 1, \"subpages\", 28]",
+          "content": {
+            "Rasa 3.0 to 3.1": {
+              "Machine Learning Components": {
+                "TensorFlow Upgrade": "<detail_content>"
+              },
+              "NLU JSON Format": "<detail_content>"
+            },
+            "Rasa 2.x to 3.0": {
+              "Markdown Data": "<detail_content>",
+              "Model Configuration": "<detail_content>",
+              "Custom Policies and Custom Components": {
+                "Changes to Custom NLU Components": "<detail_content>",
+                "Changes to Custom Policies": "<detail_content>"
+              },
+              "Training data": {
+                "Upgrading `version` from `2.0` to `3.0`": "<detail_content>",
+                "`TrainingDataImporter`": "<detail_content>"
+              },
+              "Training": {
+                "`rasa train --dry-run`": "<detail_content>"
+              },
+              "Machine Learning Components": {
+                "Normalization of Confidences in `DIETClassifier` and `ResponseSelector`": "<detail_content>",
+                "Normalization of confidences in `TEDPolicy`": "<detail_content>",
+                "Removed Policies": "<detail_content>",
+                "Removed Tokenizers and Featurizers": "<detail_content>"
+              },
+              "Slot Mappings": {
+                "Automatic migration from 2.0 domain format to the 3.0 format": "<detail_content>",
+                "Manually migrating from 2.0 domain format to the 3.0 format": "<detail_content>",
+                "Rasa-SDK Modifications": "<detail_content>"
+              }
+            },
+            "Rasa 2.7 to 2.8": {
+              "Deprecations": {
+                "Tracker Featurizers": "<detail_content>",
+                "State Featurizer": "<detail_content>"
+              },
+              "Incremental Training": "<detail_content>",
+              "Machine Learning Components": "<detail_content>"
+            },
+            "Rasa 2.5 to 2.6": {
+              "Forms": {
+                "New `ignored_intents` parameter in Forms": "<detail_content>"
+              }
+            },
+            "Rasa 2.4 to 2.5": {
+              "Machine Learning Components": {
+                "`DIET`, `TED`, and `ResponseSelector`": "<detail_content>",
+                "SpaCy 3.0": "<detail_content>"
+              }
+            },
+            "Rasa 2.3 to Rasa 2.4": {
+              "Deprecating `template` for `response`": "<detail_content>"
+            },
+            "Rasa 2.3.3 to Rasa 2.3.4": {
+              "Machine Learning Components": "<detail_content>"
+            },
+            "Rasa 2.2 to Rasa 2.3": {
+              "General": "<detail_content>",
+              "Machine Learning Components": "<detail_content>"
+            },
+            "Rasa 2.1 to Rasa 2.2": {
+              "General": "<detail_content>",
+              "Deprecations": {
+                "Markdown Data": "<detail_content>"
+              },
+              "Policies": {
+                "Other": "<detail_content>"
+              }
+            },
+            "Rasa 2.0 to Rasa 2.1": {
+              "Deprecations": "<detail_content>"
+            },
+            "Rasa 1.10 to Rasa 2.0": {
+              "General": "<detail_content>",
+              "Training data files": "<detail_content>",
+              "Policies": {
+                "Manually migrating from the Mapping Policy": "<detail_content>",
+                "Manually migrating from the Fallback Policy": "<detail_content>",
+                "Manually migrating from the Two-Stage-Fallback Policy": "<detail_content>"
+              },
+              "Forms": "<detail_content>",
+              "Response Selectors": "<detail_content>",
+              "Unfeaturized Slots": "<detail_content>",
+              "Conversation sessions": "<detail_content>",
+              "Dialogue Featurization": "<detail_content>",
+              "Deprecations": "<detail_content>"
+            },
+            "Rasa 1.7 to Rasa 1.8": {
+              "General": "<detail_content>"
+            },
+            "Rasa 1.6 to Rasa 1.7": {
+              "General": "<detail_content>"
+            },
+            "Rasa 1.2 to Rasa 1.3": {
+              "General": "<detail_content>"
+            },
+            "Rasa NLU 0.14.x and Rasa Core 0.13.x to Rasa 1.0": {
+              "General": "<detail_content>",
+              "Script parameters": "<detail_content>",
+              "HTTP API": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Model Configuration",
+          "description": "Learn about model configuration for Rasa.",
+          "path": "[\"subpages\", 1, \"subpages\", 29]",
+          "content": {
+            "Suggested Config": "<detail_content>"
+          }
+        },
+        {
+          "title": "Model Storage",
+          "path": "[\"subpages\", 1, \"subpages\", 30]",
+          "content": {
+            "Load Model from Disk": "<detail_content>",
+            "Load Model from Server": {
+              "How to Configure Rasa": "<detail_content>",
+              "How to Configure Your Server": "<detail_content>"
+            },
+            "Load Model from Cloud": {
+              "Amazon S3 Storage": "<detail_content>",
+              "Google Cloud Storage": "<detail_content>",
+              "Azure Storage": "<detail_content>",
+              "Other Remote Storages": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "NLG Servers",
+          "path": "[\"subpages\", 1, \"subpages\", 31]",
+          "content": {
+            "Responding to Requests": {
+              "Request Format": "<detail_content>",
+              "Response Format": "<detail_content>"
+            },
+            "Configuring the Server URL": "<detail_content>"
+          }
+        },
+        {
+          "title": "NLU-Only Server",
+          "description": "Read about connecting to a Rasa NLU-only server using the HTTP API.",
+          "path": "[\"subpages\", 1, \"subpages\", 32]",
+          "content": {
+            "Connecting to an NLU server": "<detail_content>"
+          }
+        },
+        {
+          "title": "Using NLU Only",
+          "path": "[\"subpages\", 1, \"subpages\", 33]",
+          "content": {
+            "Training NLU-only models": "<detail_content>",
+            "Testing your NLU model on the command line": "<detail_content>",
+            "Running an NLU server": "<detail_content>"
+          }
+        },
+        {
+          "title": "NLU Training Data",
+          "description": "Read more about how to format training data with Rasa NLU for open source natural language processing.",
+          "path": "[\"subpages\", 1, \"subpages\", 34]",
+          "content": {
+            "Training Examples": "<detail_content>",
+            "Entities": "<detail_content>",
+            "Synonyms": "<detail_content>",
+            "Regular Expressions": {
+              "Regular Expressions for Intent Classification": "<detail_content>",
+              "Regular Expressions for Entity Extraction": {
+                "Regular Expressions as Features": "<detail_content>",
+                "Regular Expressions for Rule-based Entity Extraction": "<detail_content>"
+              }
+            },
+            "Lookup Tables": "<detail_content>",
+            "Entities Roles and Groups": {
+              "Entity Roles and Groups influencing dialogue predictions": "<detail_content>"
+            },
+            "BILOU Entity Tagging": "<detail_content>"
+          }
+        },
+        {
+          "title": "PII Management",
+          "path": "[\"subpages\", 1, \"subpages\", 35]",
+          "content": {
+            "Architecture Overview": {
+              "Supported Rasa Events": "<detail_content>",
+              "Supported PII entity types": "<detail_content>"
+            },
+            "How to write anonymization rules": {
+              "How to populate the metadata section": {
+                "How to install the language  model": "<detail_content>"
+              },
+              "How to populate the rule_lists section": "<detail_content>"
+            },
+            "How to update the Kafka event broker configuration": {
+              "Streaming anonymized events to Rasa X/Enterprise with Kafka": "<detail_content>"
+            },
+            "How to enable anonymization of PII in logs": "<detail_content>"
+          }
+        },
+        {
+          "title": "Policies",
+          "path": "[\"subpages\", 1, \"subpages\", 36]",
+          "content": {
+            "Action Selection": {
+              "Policy Priority": "<detail_content>"
+            },
+            "Machine Learning Policies": {
+              "TED Policy": "<detail_content>",
+              "UnexpecTED Intent Policy": {
+                "Prediction of `action_unlikely_intent`": "<detail_content>",
+                "Tuning the tolerance parameter": "<detail_content>"
+              },
+              "Memoization Policy": "<detail_content>",
+              "Augmented Memoization Policy": "<detail_content>"
+            },
+            "Rule-based Policies": {
+              "Rule Policy": "<detail_content>"
+            },
+            "Configuring Policies": {
+              "Max History": "<detail_content>",
+              "Data Augmentation": "<detail_content>",
+              "Featurizers": {
+                "State Featurizers": "<detail_content>",
+                "Tracker Featurizers": {
+                  "1. Full Dialogue": "<detail_content>",
+                  "2. Max History": "<detail_content>",
+                  "3. Intent Max History": "<detail_content>"
+                }
+              }
+            },
+            "Custom Policies": "<detail_content>"
+          }
+        },
+        {
+          "title": "Rasa Pro Change Log",
+          "path": "[\"subpages\", 1, \"subpages\", 37]",
+          "content": {
+            "Rasa Pro 3.6": {
+              "Rasa Plus 3.6": {
+                "Features": "<detail_content>"
+              },
+              "Improvements": "<detail_content>",
+              "Bugfixes": {
+                "Deprecations and Removal": "<detail_content>"
+              },
+              "Rasa Pro Services 3.1": {
+                "Features": "<detail_content>"
+              }
+            },
+            "Rasa Pro 3.5": {
+              "Rasa Plus 3.5": {
+                "Features": "<detail_content>"
+              },
+              "Rasa Pro Services 3.0": "<detail_content>"
+            },
+            "Rasa Pro 3.4": {
+              "Rasa Plus 3.4": {
+                "Features": "<detail_content>",
+                "Improvements": "<detail_content>"
+              },
+              "Rasa Pro Services 3.0": "<detail_content>"
+            },
+            "Rasa Pro 3.3": {
+              "Rasa Plus 3.3": {
+                "Features": "<detail_content>"
+              },
+              "Rasa Pro Services 3.0": {
+                "Features": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Rasa Pro",
+          "path": "[\"subpages\", 1, \"subpages\", 38]",
+          "content": {
+            "Rasa Pro Features": {
+              "Analytics with Conversational Data Pipeline": "<detail_content>",
+              "Concurrent Lock Store": "<detail_content>",
+              "End-to-End Testing": "<detail_content>",
+              "IVR Voice Connector": "<detail_content>",
+              "Observability (Tracing)": "<detail_content>",
+              "PII Handling": "<detail_content>",
+              "Real-Time Markers": "<detail_content>",
+              "Secrets Management": "<detail_content>",
+              "Security Scanning for Vulnerability Protection": "<detail_content>",
+              "Spaces (Alpha Release)": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Reaching Out to the User",
+          "path": "[\"subpages\", 1, \"subpages\", 39]",
+          "content": {
+            "Reaching out first": {
+              "1. Update the configuration": "<detail_content>",
+              "2. Add a rule": "<detail_content>",
+              "3. Add a response": "<detail_content>"
+            },
+            "External Events": {
+              "1. Trigger an Intent": "<detail_content>",
+              "2. Get the Conversation ID": "<detail_content>",
+              "3. Add NLU Training Data": "<detail_content>",
+              "4. Update the Domain": {
+                "5. Add a Rule": "<detail_content>",
+                "6. Add a Response": "<detail_content>"
+              },
+              "Try it out": "<detail_content>"
+            },
+            "Reminders": {
+              "Scheduling Reminders": {
+                "1. Define a Reminder": "<detail_content>",
+                "2. Add a Rule": "<detail_content>",
+                "3. Add Training Data": "<detail_content>",
+                "4. Update your Pipeline": "<detail_content>"
+              },
+              "Reacting to Reminders": {
+                "1. Define a Reaction": "<detail_content>",
+                "2. Add a Rule": "<detail_content>",
+                "3. Add Training Data": "<detail_content>"
+              },
+              "Cancelling Reminders": {
+                "1. Define an Action that Cancels a Reminder": "<detail_content>",
+                "2. Add a Rule": "<detail_content>",
+                "3. Add Training Data": "<detail_content>"
+              },
+              "Try it Out": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Responses",
+          "path": "[\"subpages\", 1, \"subpages\", 40]",
+          "content": {
+            "Defining Responses": {
+              "Using Variables in Responses": "<detail_content>",
+              "Response Variations": {
+                "IDs for Responses": "<detail_content>"
+              },
+              "Channel-Specific Response Variations": "<detail_content>",
+              "Conditional Response Variations": "<detail_content>"
+            },
+            "Rich Responses": {
+              "Buttons": "<detail_content>",
+              "Images": "<detail_content>",
+              "Custom Output Payloads": "<detail_content>"
+            },
+            "Using Responses in Conversations": {
+              "Calling Responses as Actions": "<detail_content>",
+              "Calling Responses from Custom Actions": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Rules",
+          "description": "Use Rasa rules to respond to FAQs, fill forms, or handle fallbacks gracefully.",
+          "path": "[\"subpages\", 1, \"subpages\", 41]",
+          "content": {
+            "Writing a Rule": {
+              "Rules for the Conversation Start": "<detail_content>",
+              "Rules with Conditions": "<detail_content>",
+              "Skip Waiting for User Input at the End of a Rule": "<detail_content>",
+              "Abort a Rule": "<detail_content>",
+              "Rules and Forms": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Rasa SDK Change Log",
+          "path": "[\"subpages\", 1, \"subpages\", 42]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Secrets Managers",
+          "description": "Safeguard credentials your service uses to authenticate to external resources.",
+          "path": "[\"subpages\", 1, \"subpages\", 43]",
+          "content": {
+            "HashiCorp Vault Secrets Manager": {
+              "Authentication": "<detail_content>",
+              "How to configure access to Vault": {
+                "Store access credentials in environment variables": "<detail_content>"
+              },
+              "How to configure Tracker Store with Vault Secrets Manager": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Setting up CI/CD",
+          "description": "Set up a CI/CD pipeline to ensure that iterative improvements to your assistant are tested and deployed with minimum manual effort",
+          "path": "[\"subpages\", 1, \"subpages\", 44]",
+          "content": {
+            "Overview": "<detail_content>",
+            "Continuous Integration (CI)": {
+              "CI Pipeline Overview": "<detail_content>",
+              "GitHub Actions CI Pipeline": "<detail_content>"
+            },
+            "Continuous Deployment (CD)": {
+              "Deploying Your Rasa Model": "<detail_content>",
+              "Deploying Your Action Server": "<detail_content>"
+            },
+            "Example CI/CD pipelines": "<detail_content>"
+          }
+        },
+        {
+          "title": "Slot Validation Actions",
+          "path": "[\"subpages\", 1, \"subpages\", 45]",
+          "content": {
+            "`action_validate_slot_mappings`": "<detail_content>",
+            "`validate_<form name>`": "<detail_content>",
+            "Regular Custom Action": "<detail_content>"
+          }
+        },
+        {
+          "title": "Spaces",
+          "description": "Learn about Spaces for Rasa.",
+          "path": "[\"subpages\", 1, \"subpages\", 46]",
+          "content": {
+            "When to use Spaces": "<detail_content>",
+            "When not to use Spaces / Limitations": "<detail_content>",
+            "An example spaces bot": "<detail_content>",
+            "How to use spaces": {
+              "Training only a specific subspace": "<detail_content>"
+            },
+            "How do spaces work?": {
+              "What happens during the assembly?": "<detail_content>",
+              "How is space activation tracked?": "<detail_content>",
+              "How does filter and rerank work?": "<detail_content>",
+              "How does entity recognition work differently?": "<detail_content>",
+              "Custom Actions": "<detail_content>",
+              "Response Selection": "<detail_content>",
+              "Lookup tables and Synonyms": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Stories",
+          "description": "Stories are used to teach Rasa real conversation designs to learn from providing the basis for a scalable machine learning dialogue management.",
+          "path": "[\"subpages\", 1, \"subpages\", 47]",
+          "content": {
+            "Format": {
+              "User Messages": "<detail_content>",
+              "Actions": "<detail_content>",
+              "Events": {
+                "Slot Events": "<detail_content>",
+                "Form Events": "<detail_content>"
+              }
+            },
+            "Checkpoints and OR statements": {
+              "Checkpoints": "<detail_content>",
+              "Or Statements": "<detail_content>"
+            },
+            "Test Conversation Format": "<detail_content>",
+            "End-to-end Training": "<detail_content>"
+          }
+        },
+        {
+          "title": "Testing Your Assistant",
+          "path": "[\"subpages\", 1, \"subpages\", 48]",
+          "content": {
+            "Validating Data and Stories": "<detail_content>",
+            "Writing Test Stories": "<detail_content>",
+            "Evaluating an NLU Model": {
+              "Using a Held-Out Test Set": "<detail_content>",
+              "Using Cross-Validation": "<detail_content>",
+              "Comparing NLU Pipelines": "<detail_content>",
+              "Interpreting the Output": {
+                "Intent Classifiers": "<detail_content>",
+                "Response Selectors": "<detail_content>",
+                "Entity Extraction": "<detail_content>",
+                "Entity Scoring": "<detail_content>"
+              }
+            },
+            "Evaluating a Dialogue Model": {
+              "Interpreting the generated warnings": "<detail_content>",
+              "Comparing Policy Configurations": "<detail_content>",
+              "Testing Action Code": "<detail_content>"
+            },
+            "End-To-End Testing": {
+              "How to write test cases": "<detail_content>",
+              "How to run the tests": {
+                "Testing custom actions": "<detail_content>"
+              },
+              "How to interpret the output": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Tracker Stores",
+          "description": "All conversations are stored within a tracker store. Read how Rasa provides implementations for different store types out of the box.",
+          "path": "[\"subpages\", 1, \"subpages\", 49]",
+          "content": {
+            "Switch to root user to install packages": "<detail_content>",
+            "Copy in oracle instaclient": "<detail_content>",
+            "https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html": "<detail_content>",
+            "Install the Python wrapper library for the Oracle drivers": "<detail_content>",
+            "Install Oracle client libraries": {
+              "RedisTrackerStore": {
+                "Configuration": "<detail_content>"
+              },
+              "MongoTrackerStore": {
+                "Configuration": {
+                  "Configuration Parameters": "<detail_content>"
+                }
+              },
+              "DynamoTrackerStore": {
+                "Configuration": {
+                  "Configuration Parameters": "<detail_content>"
+                }
+              },
+              "Custom Tracker Store": {
+                "Configuration": "<detail_content>"
+              },
+              "Fallback Tracker Store": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Training Data Format",
+          "description": "Description of the YAML format for training data",
+          "path": "[\"subpages\", 1, \"subpages\", 50]",
+          "content": {
+            "Overview": {
+              "High-Level Structure": "<detail_content>",
+              "Example": "<detail_content>"
+            },
+            "NLU Training Data": {
+              "Training Examples": "<detail_content>",
+              "Entities": "<detail_content>",
+              "Synonyms": "<detail_content>",
+              "Regular Expressions": "<detail_content>",
+              "Lookup Tables": "<detail_content>"
+            },
+            "Conversation Training Data": {
+              "Stories": {
+                "User Messages": "<detail_content>",
+                "Actions": "<detail_content>",
+                "Forms": "<detail_content>",
+                "Slots": "<detail_content>",
+                "Checkpoints": "<detail_content>",
+                "OR statement": "<detail_content>"
+              },
+              "Rules": "<detail_content>"
+            },
+            "Test Stories": "<detail_content>",
+            "End-to-end Training": "<detail_content>"
+          }
+        },
+        {
+          "title": "Training Data Importers",
+          "description": "Change the way Rasa imports training data by replacing the default importer or writing your own importer.",
+          "path": "[\"subpages\", 1, \"subpages\", 51]",
+          "content": {
+            "RasaFileImporter (default)": "<detail_content>",
+            "MultiProjectImporter (experimental)": "<detail_content>",
+            "Writing a Custom Importer": "<detail_content>"
+          }
+        },
+        {
+          "title": "Tuning Your NLU Model",
+          "path": "[\"subpages\", 1, \"subpages\", 52]",
+          "content": {
+            "How to Choose a Pipeline": {
+              "Sensible Starting Pipelines": "<detail_content>",
+              "Component Lifecycle": "<detail_content>",
+              "Doing Multi-Intent Classification": {
+                "When to Use Multi-Intents": "<detail_content>",
+                "How to Use Multi-Intents for Dialogue Management": "<detail_content>"
+              },
+              "Comparing Pipelines": "<detail_content>"
+            },
+            "Choosing the Right Components": {
+              "Tokenization": "<detail_content>",
+              "Featurization": {
+                "Pre-trained Embeddings": "<detail_content>",
+                "Supervised Embeddings": "<detail_content>"
+              },
+              "Intent Classification / Response Selectors": "<detail_content>",
+              "Entity Extraction": "<detail_content>"
+            },
+            "Improving Performance": {
+              "Handling Class Imbalance": "<detail_content>",
+              "Accessing Diagnostic Data": "<detail_content>"
+            },
+            "Configuring Tensorflow": {
+              "Deterministic Operations": "<detail_content>",
+              "Optimizing CPU Performance": {
+                "Parallelizing One Operation": "<detail_content>",
+                "Parallelizing Multiple Operations": "<detail_content>"
+              },
+              "Optimizing GPU Performance": {
+                "Limiting GPU Memory Growth": "<detail_content>",
+                "Restricting Absolute GPU Memory Available": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Handling Unexpected Input",
+          "path": "[\"subpages\", 1, \"subpages\", 53]",
+          "content": {
+            "User Interjections": {
+              "Contextual Interjections": "<detail_content>"
+            },
+            "Summary": "<detail_content>"
+          }
+        },
+        {
+          "title": "Writing Conversation Data",
+          "path": "[\"subpages\", 1, \"subpages\", 54]",
+          "content": {
+            "Designing Stories": "<detail_content>",
+            "When to Write Stories vs. Rules": "<detail_content>",
+            "Managing the Conversation Flow": {
+              "When to Use Slots to Influence Conversations": "<detail_content>",
+              "Implementing Branching Logic": "<detail_content>",
+              "Using OR statements and Checkpoints": {
+                "OR statements": "<detail_content>",
+                "Checkpoints": "<detail_content>"
+              },
+              "Creating Logical Breaks in Stories": "<detail_content>"
+            },
+            "Handling Context Switching": {
+              "Using Rules for Context Switching": "<detail_content>",
+              "Using Stories for Context Switching": "<detail_content>"
+            },
+            "Managing Conversation Data Files": "<detail_content>",
+            "Using Interactive Learning": {
+              "Command-line Interactive Learning": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Action Server",
+          "description": "Documentation section: action-server",
+          "path": "[\"subpages\", 1, \"subpages\", 55]",
+          "subpages": [
+            {
+              "title": "Actions",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 0]",
+              "content": {
+                "Custom Action Input": {
+                  "`next_action`": "<detail_content>",
+                  "`sender_id`": "<detail_content>",
+                  "`tracker`": "<detail_content>",
+                  "`domain`": "<detail_content>",
+                  "`version`": "<detail_content>"
+                },
+                "Custom Action Output": {
+                  "`events`": "<detail_content>",
+                  "`responses`": "<detail_content>"
+                },
+                "Special Action Types": "<detail_content>"
+              }
+            },
+            {
+              "title": "Events",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 1]",
+              "content": {
+                "Event Types": {
+                  "`slot`": "<detail_content>",
+                  "`reset_slots`": "<detail_content>",
+                  "`reminder`": "<detail_content>",
+                  "`cancel_reminder`": "<detail_content>",
+                  "`pause`": "<detail_content>",
+                  "`resume`": "<detail_content>",
+                  "`followup`": "<detail_content>",
+                  "`rewind`": "<detail_content>",
+                  "`undo`": "<detail_content>",
+                  "`restart`": "<detail_content>",
+                  "`session_started`": "<detail_content>",
+                  "`user`": "<detail_content>",
+                  "`bot`": "<detail_content>",
+                  "`action`": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Introduction to Rasa Action Server",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 2]",
+              "content": {
+                "How it works": "<detail_content>",
+                "SDKs for Custom Actions": {
+                  "Rasa SDK (Python)": "<detail_content>",
+                  "Other Action Servers": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Knowledge Base Actions",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 3]",
+              "content": {
+                "Using `ActionQueryKnowledgeBase`": {
+                  "Create a Knowledge Base": "<detail_content>",
+                  "Define the NLU Data": "<detail_content>",
+                  "Create an Action to Query your Knowledge Base": "<detail_content>"
+                },
+                "How It Works": {
+                  "Query the Knowledge Base for Objects": "<detail_content>",
+                  "Query the Knowledge Base for an Attribute of an Object": "<detail_content>",
+                  "Resolve Mentions": "<detail_content>"
+                },
+                "Customization": {
+                  "Customizing `ActionQueryKnowledgeBase`": "<detail_content>",
+                  "Creating Your Own Knowledge Base Actions": "<detail_content>",
+                  "Customizing the `InMemoryKnowledgeBase`": "<detail_content>",
+                  "Creating Your Own Knowledge Base": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Running a Rasa SDK Action Server",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 4]",
+              "content": {
+                "root": "<detail_content>"
+              }
+            },
+            {
+              "title": "Sanic Extensions",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 5]",
+              "content": {
+                "Step-by-step guide on creating your own Sanic extension in rasa_sdk": {
+                  "Create the rasa_sdk_plugins package": "<detail_content>",
+                  "Register modules containing the hooks": "<detail_content>",
+                  "Implement your hook": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Actions",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 6]",
+              "content": {
+                "Methods": {
+                  "Action.name": "<detail_content>",
+                  "Action.run": {
+                    "**Parameters**": "<detail_content>",
+                    "**Returns**": "<detail_content>",
+                    "**Return type**": "<detail_content>"
+                  }
+                },
+                "Example": "<detail_content>"
+              }
+            },
+            {
+              "title": "Dispatcher",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 7]",
+              "content": {
+                "CollectingDispatcher": {
+                  "CollectingDispatcher.utter_message": {
+                    "**Parameters**": "<detail_content>",
+                    "**Return type**": "<detail_content>"
+                  }
+                }
+              }
+            },
+            {
+              "title": "Events",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 8]",
+              "content": {
+                "Event Classes": {
+                  "SlotSet": "<detail_content>",
+                  "AllSlotsReset": "<detail_content>",
+                  "ReminderScheduled": "<detail_content>",
+                  "ReminderCancelled": "<detail_content>",
+                  "ConversationPaused": "<detail_content>",
+                  "ConversationResumed": "<detail_content>",
+                  "FollowupAction": "<detail_content>",
+                  "UserUtteranceReverted": "<detail_content>",
+                  "ActionReverted": "<detail_content>",
+                  "Restarted": "<detail_content>",
+                  "SessionStarted": "<detail_content>",
+                  "UserUttered": "<detail_content>",
+                  "BotUttered": "<detail_content>",
+                  "ActionExecuted": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Tracker",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 9]",
+              "content": {
+                "Attributes": "<detail_content>",
+                "Methods": {
+                  "Tracker.current_state": "<detail_content>",
+                  "Tracker.is_paused": "<detail_content>",
+                  "Tracker.get_latest_entity_values": "<detail_content>",
+                  "Tracker.get_latest_input_channel": "<detail_content>",
+                  "Tracker.events_after_latest_restart": "<detail_content>",
+                  "Tracker.get_slot": "<detail_content>",
+                  "Tracker.get_intent_of_latest_message": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Slot Validation Actions",
+              "path": "[\"subpages\", 1, \"subpages\", 55, \"subpages\", 10]",
+              "content": {
+                "`ValidationAction` class": {
+                  "How to subclass `ValidationAction`": {
+                    "Validation of Slots with Predefined Mappings": "<detail_content>",
+                    "Extraction of Custom Slot Mappings": "<detail_content>"
+                  },
+                  "`ValidationAction` class implementation": {
+                    "Methods": {
+                      "ValidationAction.name": "<detail_content>",
+                      "ValidationAction.run": {
+                        "**Parameters**": "<detail_content>",
+                        "**Returns**": "<detail_content>",
+                        "**Return type**": "<detail_content>"
+                      },
+                      "ValidationAction.required_slots": {
+                        "**Returns**": "<detail_content>"
+                      },
+                      "ValidationAction.get_extraction_events": "<detail_content>",
+                      "**Returns**": "<detail_content>",
+                      "ValidationAction.get_validation_events": {
+                        "**Returns**": "<detail_content>"
+                      }
+                    }
+                  }
+                },
+                "`FormValidationAction` class": {
+                  "`FormValidationAction` class implementation": {
+                    "Methods": {
+                      "FormValidationAction.name": "<detail_content>",
+                      "FormValidationAction.required_slots": "<detail_content>",
+                      "FormValidationAction.next_requested_slot": "<detail_content>",
+                      "FormValidationAction.run": "<detail_content>"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "Connectors",
+          "description": "Documentation section: connectors",
+          "path": "[\"subpages\", 1, \"subpages\", 56]",
+          "subpages": [
+            {
+              "title": "Audiocodes VoiceAI Connect",
+              "description": "Build a Rasa Voice Bot on Audiocodes VoiceAI Connect",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 0]",
+              "content": {
+                "Getting Credentials": "<detail_content>",
+                "Setting credentials": "<detail_content>",
+                "Usage": {
+                  "Receiving messages from a user": "<detail_content>",
+                  "Sending messages to a user": "<detail_content>",
+                  "Handling conversation events": "<detail_content>",
+                  "Configuring calls": {
+                    "Example: changing a pin code": "<detail_content>"
+                  }
+                }
+              }
+            },
+            {
+              "title": "Cisco Webex Teams",
+              "description": "Build a Rasa Chat Bot on Cisco Webex",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 1]",
+              "content": {
+                "Getting Credentials": "<detail_content>",
+                "Running on Cisco Webex Teams": "<detail_content>"
+              }
+            },
+            {
+              "title": "Custom Connectors",
+              "description": "Deploy and Run a Rasa Chat Bot on a custom chat interface",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 2]",
+              "content": {
+                "The `name` method": "<detail_content>",
+                "The `blueprint` method": "<detail_content>",
+                "Metadata on messages": "<detail_content>",
+                "Credentials for Custom Channels": "<detail_content>",
+                "Testing the Custom Connector Webhook": "<detail_content>"
+              }
+            },
+            {
+              "title": "Facebook Messenger",
+              "description": "Build a Rasa Chat Bot on Facebook Messenger",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 3]",
+              "content": {
+                "Facebook Setup": {
+                  "Getting Credentials": "<detail_content>",
+                  "Running On Facebook Messenger": "<detail_content>"
+                },
+                "Supported response attachments": "<detail_content>"
+              }
+            },
+            {
+              "title": "Google Hangouts Chat",
+              "description": "Build a Rasa Chat Bot on Google Hangouts Chat",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 4]",
+              "content": {
+                "Hangouts Chat Setup": {
+                  "Running On Hangouts Chat": "<detail_content>",
+                  "Cards and Interactive Cards": "<detail_content>",
+                  "Other Hangouts Chat Events": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Mattermost",
+              "description": "Build a Rasa Chat Bot on Mattermost",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 5]",
+              "content": {
+                "Getting Credentials": "<detail_content>",
+                "Running on Mattermost": "<detail_content>"
+              }
+            },
+            {
+              "title": "Microsoft Bot Framework",
+              "description": "Build a Rasa Chat Bot on Microsoft Bot Framework",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 6]",
+              "content": {
+                "Running on Microsoft Bot Framework": "<detail_content>"
+              }
+            },
+            {
+              "title": "RocketChat",
+              "description": "Build a Rasa Chat Bot on Rocketchat",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 7]",
+              "content": {
+                "Getting Credentials": "<detail_content>",
+                "Running on RocketChat": "<detail_content>"
+              }
+            },
+            {
+              "title": "Slack",
+              "description": "Build a Rasa Chat Bot on Slack",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 8]",
+              "content": {
+                "Sending Messages": "<detail_content>",
+                "Receiving Messages": "<detail_content>",
+                "Optional: Interactive Components": "<detail_content>",
+                "Additional Slack Options": "<detail_content>"
+              }
+            },
+            {
+              "title": "Telegram",
+              "description": "Build a Rasa Chat Bot on Telegram",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 9]",
+              "content": {
+                "Getting Credentials": "<detail_content>",
+                "Running on Telegram": "<detail_content>",
+                "Supported Response Attachments": "<detail_content>"
+              }
+            },
+            {
+              "title": "Twilio Voice",
+              "description": "Deploy a Rasa IVR assistant via the Twilio Voice connector",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 10]",
+              "content": {
+                "Running on Twilio": {
+                  "Connect to a Twilio Phone Number": "<detail_content>",
+                  "Connect to a Twilio SIP Domain": "<detail_content>"
+                },
+                "Configure Channel in Rasa": "<detail_content>",
+                "Parameter Definitions": {
+                  "Initial Prompt": "<detail_content>",
+                  "Assistant Voice": "<detail_content>",
+                  "Reprompt Fallback Phrase": "<detail_content>",
+                  "Speech Timeout": "<detail_content>",
+                  "Speech Model": "<detail_content>",
+                  "Enhanced": "<detail_content>"
+                },
+                "Custom Voice Responses": "<detail_content>"
+              }
+            },
+            {
+              "title": "Twilio",
+              "description": "Deploy a Rasa assistant through text message or WhatsApp via the Twilio connector",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 11]",
+              "content": {
+                "Getting Credentials": {
+                  "Connecting to WhatsApp": "<detail_content>"
+                },
+                "Running on Twilio": {
+                  "Receiving Location Data from Whatsapp with Twilio connector": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Your Own Website",
+              "description": "Deploy and Run a Rasa Chat Bot on a Website",
+              "path": "[\"subpages\", 1, \"subpages\", 56, \"subpages\", 12]",
+              "content": {
+                "REST Channels": {
+                  "RestInput": {
+                    "Request and Response Format": "<detail_content>"
+                  },
+                  "CallbackInput": {
+                    "Request and Response Format": "<detail_content>"
+                  }
+                },
+                "Websocket Channel": {
+                  "JWT Authentication": "<detail_content>",
+                  "Chat Widget": "<detail_content>"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "Deploy",
+          "description": "Documentation section: deploy",
+          "path": "[\"subpages\", 1, \"subpages\", 57]",
+          "subpages": [
+            {
+              "title": "Deploy Rasa Action Server",
+              "path": "[\"subpages\", 1, \"subpages\", 57, \"subpages\", 0]",
+              "content": {
+                "Installation Requirements": "<detail_content>",
+                "1. Installation": {
+                  "a. Create Namespace": "<detail_content>",
+                  "b. Deploy Rasa Action Server": "<detail_content>",
+                  "c. Access Rasa Action Server": "<detail_content>"
+                },
+                "Building an Action Server Image": {
+                  "Automating your Action Server Image Builds": {
+                    "Manually Building an Action Server": "<detail_content>"
+                  },
+                  "Using your Custom Action Server Image": "<detail_content>"
+                },
+                "Setting a Custom Action Server Image": "<detail_content>",
+                "2. Connect Rasa Action Server to a Rasa deployment": "<detail_content>"
+              }
+            },
+            {
+              "title": "Deploy Rasa Pro Services",
+              "description": "Deploy Rasa Rasa Pro Services in production",
+              "path": "[\"subpages\", 1, \"subpages\", 57, \"subpages\", 1]",
+              "content": {
+                "Rasa Pro Services Setup": {
+                  "Prerequisites": {
+                    "System Requirements": "<detail_content>",
+                    "License": "<detail_content>"
+                  },
+                  "Installation and Configuration": "<detail_content>",
+                  "Docker Container Configuration (Reference)": "<detail_content>",
+                  "Healthcheck Endpoint": "<detail_content>",
+                  "Connect to a secured Kafka instance": "<detail_content>",
+                  "Upgrading Versions": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Deploy Rasa",
+              "description": "Deploy a Rasa assistant on Kubernetes/Openshift using Helm",
+              "path": "[\"subpages\", 1, \"subpages\", 57, \"subpages\", 2]",
+              "content": {
+                "Installation Requirements": "<detail_content>",
+                "Installation": {
+                  "1. Create Namespace": "<detail_content>",
+                  "2. Create Values File": "<detail_content>",
+                  "3. Loading an initial model": "<detail_content>",
+                  "4. Deploy Rasa Assistant": {
+                    "Security Patch Releases": "<detail_content>",
+                    "Step 1: image pull secret": "<detail_content>",
+                    "Step 2: store license in a secret": "<detail_content>",
+                    "Step 3: update `values.yml`": "<detail_content>"
+                  },
+                  "5. Access Rasa Assistant": "<detail_content>"
+                },
+                "Next Steps": "<detail_content>"
+              }
+            },
+            {
+              "title": "Deploying a Rasa Assistant",
+              "description": "How to deploy your Rasa Assistant with Kubernetes/Openshift",
+              "path": "[\"subpages\", 1, \"subpages\", 57, \"subpages\", 3]",
+              "content": {
+                "When to Deploy Your Assistant": "<detail_content>",
+                "Recommended Deployment Method": {
+                  "Cluster Requirements": "<detail_content>"
+                },
+                "Alternative Deployment Methods": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Docker",
+          "description": "Documentation section: docker",
+          "path": "[\"subpages\", 1, \"subpages\", 58]",
+          "subpages": [
+            {
+              "title": "Building a Rasa Assistant in Docker",
+              "description": "Learn how to build a Rasa assistant in Docker.",
+              "path": "[\"subpages\", 1, \"subpages\", 58, \"subpages\", 0]",
+              "content": {
+                "Installing Docker": "<detail_content>",
+                "Setting up your Rasa Project": "<detail_content>",
+                "Talking to Your Assistant": "<detail_content>",
+                "Training a Model": "<detail_content>",
+                "Customizing your Model": {
+                  "Choosing a Tag": "<detail_content>",
+                  "Adding Custom Components": "<detail_content>",
+                  "Adding Custom Actions": "<detail_content>"
+                },
+                "Deploying your Assistant": "<detail_content>"
+              }
+            },
+            {
+              "title": "Deploying a Rasa Assistant in Docker Compose",
+              "description": "Use Docker Compose to deploy a Rasa assistant",
+              "path": "[\"subpages\", 1, \"subpages\", 58, \"subpages\", 1]",
+              "content": {
+                "Installing Docker": "<detail_content>",
+                "Configuring Channels": "<detail_content>",
+                "Using Docker Compose to Run Multiple Services": "<detail_content>",
+                "Configuring a Tracker Store": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Installation",
+          "description": "Documentation section: installation",
+          "path": "[\"subpages\", 1, \"subpages\", 59]",
+          "subpages": [
+            {
+              "title": "Setting up your environment",
+              "description": "How to set up your environment before installing Rasa",
+              "path": "[\"subpages\", 1, \"subpages\", 59, \"subpages\", 0]",
+              "content": {
+                "1. Python Environment Setup": "<detail_content>",
+                "2. Virtual Environment Setup": "<detail_content>",
+                "M1 / M2 (Apple Silicon) Limitations": "<detail_content>"
+              }
+            },
+            {
+              "title": "Installing Rasa Open Source",
+              "description": "Install Rasa Open Source on premises to enable local and customizable Natural Language Understanding and Dialogue Management.",
+              "path": "[\"subpages\", 1, \"subpages\", 59, \"subpages\", 1]",
+              "content": {
+                "Install Rasa Open Source": "<detail_content>",
+                "Building from Source": "<detail_content>",
+                "Additional dependencies": {
+                  "Python 3.10 requirements": "<detail_content>",
+                  "Dependencies for spaCy": "<detail_content>",
+                  "Dependencies for MITIE": "<detail_content>"
+                },
+                "Upgrading Versions": "<detail_content>"
+              }
+            },
+            {
+              "title": "Rasa Pro",
+              "description": "Documentation section: rasa-pro",
+              "path": "[\"subpages\", 1, \"subpages\", 59, \"subpages\", 2]",
+              "subpages": [
+                {
+                  "title": "Rasa Pro Installation",
+                  "description": "Install Rasa Pro in your production environment to create an enterprise ready Rasa deployment.",
+                  "path": "[\"subpages\", 1, \"subpages\", 59, \"subpages\", 2, \"subpages\", 0]",
+                  "content": {
+                    "Rasa Pro Setup": {
+                      "Python Package Installation": {
+                        "Authentication Set-Up": "<detail_content>",
+                        "Installing with `pip`": "<detail_content>",
+                        "Installing with `poetry`": "<detail_content>"
+                      },
+                      "Docker Image Installation": "<detail_content>",
+                      "Using An Intermediate Repository": "<detail_content>",
+                      "Runtime Configuration": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Rasa Pro Artifacts",
+                  "description": "artifacts that ship with Rasa Pro.",
+                  "path": "[\"subpages\", 1, \"subpages\", 59, \"subpages\", 2, \"subpages\", 1]",
+                  "content": {
+                    "root": "<detail_content>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Migrate From",
+          "description": "Documentation section: migrate-from",
+          "path": "[\"subpages\", 1, \"subpages\", 60]",
+          "subpages": [
+            {
+              "title": "Rasa as open source alternative to Facebook’s Wit.ai - Migration Guide",
+              "description": "Open source alternative to Facebook's Wit.ai for conversational bots and NLP",
+              "path": "[\"subpages\", 1, \"subpages\", 60, \"subpages\", 0]",
+              "content": {
+                "Step 1: Export your Training Data from Wit.ai": "<detail_content>",
+                "Step 2: Create a Rasa Project": "<detail_content>",
+                "Step 3: Train your NLU model": "<detail_content>",
+                "Step 4: Test your NLU model": "<detail_content>",
+                "Step 5: Start a Server with your NLU Model": "<detail_content>"
+              }
+            },
+            {
+              "title": "Rasa as open source alternative to Google Dialogflow - Migration Guide",
+              "description": "Open source alternative to Google Dialogflow for conversational bots and NLP",
+              "path": "[\"subpages\", 1, \"subpages\", 60, \"subpages\", 1]",
+              "content": {
+                "Step 1: Export your data from Dialogflow": "<detail_content>",
+                "Step 2: Create a Rasa Project": "<detail_content>",
+                "Step 3: Train your NLU model": "<detail_content>",
+                "Step 4: Test your NLU model": "<detail_content>",
+                "Step 5: Start a Server with your NLU Model": "<detail_content>",
+                "Terminology:": "<detail_content>"
+              }
+            },
+            {
+              "title": "Rasa as open source alternative to IBM Watson - Migration Tips",
+              "description": "Open source alternative to IBM Watson for conversational bots and NLP",
+              "path": "[\"subpages\", 1, \"subpages\", 60, \"subpages\", 2]",
+              "content": {
+                "root": "<detail_content>"
+              }
+            },
+            {
+              "title": "Rasa as open source alternative to Microsoft LUIS - Migration Guide",
+              "description": "Open source alternative to Microsoft LUIS for conversational bots and NLP",
+              "path": "[\"subpages\", 1, \"subpages\", 60, \"subpages\", 3]",
+              "content": {
+                "Step 1: Export your Training Data from LUIS": "<detail_content>",
+                "Step 2: Create a Rasa Project": "<detail_content>",
+                "Step 3: Train your NLU model": "<detail_content>",
+                "Step 4: Test your NLU model": "<detail_content>",
+                "Step 5: Start a Server with your NLU Model": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Monitoring",
+          "description": "Documentation section: monitoring",
+          "path": "[\"subpages\", 1, \"subpages\", 61]",
+          "subpages": [
+            {
+              "title": "Load Testing Guidelines",
+              "description": "Information about how best to scale up your bot to support parallel user activity\nand how you can use tracing to help debug issues.\n",
+              "path": "[\"subpages\", 1, \"subpages\", 61, \"subpages\", 0]",
+              "content": {
+                "Overview": {
+                  "Some recommendations to improve latency": "<detail_content>",
+                  "Debugging bot related issues while scaling up": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Tracing",
+              "description": "Resolve performance issues faster and identify bottlenecks through OpenTelemetry-based tracing",
+              "path": "[\"subpages\", 1, \"subpages\", 61, \"subpages\", 1]",
+              "content": {
+                "Tracing": {
+                  "Supported Tracing Backends/Collectors": "<detail_content>",
+                  "Enabling / Disabling": "<detail_content>",
+                  "Action Server": "<detail_content>"
+                },
+                "Configuring a Tracing Backend or Collector": {
+                  "Jaeger": "<detail_content>",
+                  "OTEL Collector": "<detail_content>"
+                },
+                "Traced Events": {
+                  "Model Training": {
+                    "`GraphTrainer` Attributes": "<detail_content>",
+                    "`GraphNode` Attributes": "<detail_content>"
+                  },
+                  "Message Handling": {
+                    "`Agent` Attributes": "<detail_content>",
+                    "`MessageProcessor` Attributes": "<detail_content>",
+                    "`TrackerStore` & `LockStore` Attributes": "<detail_content>"
+                  }
+                }
+              }
+            },
+            {
+              "title": "Analytics",
+              "description": "Documentation section: analytics",
+              "path": "[\"subpages\", 1, \"subpages\", 61, \"subpages\", 2]",
+              "subpages": [
+                {
+                  "title": "Data structure reference",
+                  "path": "[\"subpages\", 1, \"subpages\", 61, \"subpages\", 2, \"subpages\", 0]",
+                  "content": {
+                    "Database Table Overview": "<detail_content>",
+                    "Common Terms": "<detail_content>",
+                    "Tables": {
+                      "rasa_sender": {
+                        "`id` sender identifier": "<detail_content>",
+                        "`sender_key` Rasa channel sender identifier": "<detail_content>",
+                        "`channel` Rasa channel name": "<detail_content>",
+                        "`first_seen` first contact with this sender": "<detail_content>",
+                        "`last_seen` latest contact with this sender": "<detail_content>"
+                      },
+                      "rasa_session": {
+                        "`id` session identifier": "<detail_content>",
+                        "`sender_id` sender who started the session": "<detail_content>",
+                        "`timestamp` creation date time": "<detail_content>",
+                        "`start_sequence_number` start of the session": "<detail_content>",
+                        "`end_sequence_number` end of the session": "<detail_content>"
+                      },
+                      "rasa_turn": {
+                        "`id` session identifier": "<detail_content>",
+                        "`sender_id` sender who started the turn": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`start_sequence_number` start of the turn": "<detail_content>",
+                        "`end_sequence_number` end of the turn": "<detail_content>"
+                      },
+                      "rasa_event": {
+                        "`id` event identifier": "<detail_content>",
+                        "`sender_id` sender whose conversation the event belongs to": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`timestamp` creation date time": "<detail_content>",
+                        "`event_type` kind of event": "<detail_content>",
+                        "`model_id` model identifier": "<detail_content>",
+                        "`environment` name of the assistant environment": "<detail_content>",
+                        "`sequence_number` start of the event": "<detail_content>"
+                      },
+                      "rasa_bot_message": {
+                        "`id` bot message identifier": "<detail_content>",
+                        "`event_id` id of the event of this message": "<detail_content>",
+                        "`sender_id` sender whose conversation the message belongs to": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`timestamp` creation date time": "<detail_content>",
+                        "`template_name` name of the template used to generate the message": "<detail_content>",
+                        "`text` message content": "<detail_content>",
+                        "`model_id` model identifier": "<detail_content>",
+                        "`sequence_number` start of the event": "<detail_content>"
+                      },
+                      "rasa_user_message": {
+                        "`id` user message identifier": "<detail_content>",
+                        "`event_id` id of the event of this message": "<detail_content>",
+                        "`sender_id` sender whose conversation the message belongs to": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`intent` classification of the text": "<detail_content>",
+                        "`retrieval_intent` classification of the text": "<detail_content>",
+                        "`confidence` certainty the model predicted for classifications": "<detail_content>",
+                        "`text` message content": "<detail_content>",
+                        "`timestamp` creation date time": "<detail_content>",
+                        "`model_id` model identifier": "<detail_content>",
+                        "`sequence_number` start of the event": "<detail_content>",
+                        "`message_id` unique id for the message text": "<detail_content>"
+                      },
+                      "rasa_action": {
+                        "`id` action identifier": "<detail_content>",
+                        "`event_id` id of the event of this action execution": "<detail_content>",
+                        "`sender_id` sender whose conversation triggered this action execution": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`name` name of the executed action": "<detail_content>",
+                        "`confidence` ML models certainty of the predicted action": "<detail_content>",
+                        "`policy` name of the policy that predicted the action": "<detail_content>",
+                        "`timestamp` creation date time": "<detail_content>",
+                        "`model_id` model identifier": "<detail_content>",
+                        "`sequence_number` start of the event": "<detail_content>"
+                      },
+                      "rasa_slot": {
+                        "`id` slot change identifier": "<detail_content>",
+                        "`event_id` id of the event that triggered this slot change": "<detail_content>",
+                        "`sender_id` sender whose conversation triggered this slot change": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`slot_path` path of the slot": "<detail_content>",
+                        "`name` name of the slot": "<detail_content>",
+                        "`value` new slot value": "<detail_content>",
+                        "`timestamp` creation date time": "<detail_content>",
+                        "`sequence_number` start of the event": "<detail_content>"
+                      },
+                      "rasa_session_slot_state": {
+                        "`id` path of the slot": "<detail_content>",
+                        "`sender_id` sender whose conversation this slot is part of": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`name` name of the slot": "<detail_content>",
+                        "`value` last value of the slot in the session": "<detail_content>",
+                        "`timestamp` creation date time": "<detail_content>"
+                      },
+                      "rasa_patterns": {
+                        "`id` pattern identifier": "<detail_content>",
+                        "`name` pattern name": "<detail_content>",
+                        "`description` pattern description": "<detail_content>",
+                        "`config` pattern configuration": "<detail_content>",
+                        "`is_active` soft-delete flag": "<detail_content>",
+                        "`created_at` creation date time": "<detail_content>",
+                        "`updated_at` update date time": "<detail_content>"
+                      },
+                      "rasa_markers": {
+                        "`id` marker identifier": "<detail_content>",
+                        "`pattern_id` pattern which was applied in this marker": "<detail_content>",
+                        "`sender_id` sender identifier": "<detail_content>",
+                        "`session_id` session identifier": "<detail_content>",
+                        "`event_id` event identifier": "<detail_content>",
+                        "`num_preceding_user_turns` Number of Proeeding User turns": "<detail_content>",
+                        "`created_at` creation date time": "<detail_content>"
+                      }
+                    },
+                    "Internal Tables": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Example queries",
+                  "path": "[\"subpages\", 1, \"subpages\", 61, \"subpages\", 2, \"subpages\", 1]",
+                  "content": {
+                    "Number of sessions per month": "<detail_content>",
+                    "Number of sessions per channel": "<detail_content>",
+                    "Top N intents": "<detail_content>",
+                    "Escalation rate": "<detail_content>",
+                    "Abandonment rate": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Getting started with Analytics",
+                  "path": "[\"subpages\", 1, \"subpages\", 61, \"subpages\", 2, \"subpages\", 2]",
+                  "content": {
+                    "Types of metrics": "<detail_content>",
+                    "Prerequisites": "<detail_content>",
+                    "1. Connect an assistant": "<detail_content>",
+                    "2. Connect a data warehouse": {
+                      "PostgreSQL": "<detail_content>",
+                      "Redshift": {
+                        "Streaming from PostgreSQL to Redshift": "<detail_content>",
+                        "Direct connection": "<detail_content>"
+                      },
+                      "BigQuery": "<detail_content>",
+                      "Snowflake": "<detail_content>"
+                    },
+                    "3. Ingest past conversations (optional)": "<detail_content>",
+                    "4. Connect a BI Solution": {
+                      "Example: Metabase": "<detail_content>",
+                      "Example: Tableau": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Real-Time Analysis of Markers",
+                  "path": "[\"subpages\", 1, \"subpages\", 61, \"subpages\", 2, \"subpages\", 3]",
+                  "content": {
+                    "Defining Markers": "<detail_content>",
+                    "Enable Real-time Processing": {
+                      "Configuring the CLI command": "<detail_content>"
+                    },
+                    "How are Markers processed?": "<detail_content>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Telemetry",
+          "description": "Documentation section: telemetry",
+          "path": "[\"subpages\", 1, \"subpages\", 62]",
+          "subpages": [
+            {
+              "title": "Rasa Telemetry",
+              "path": "[\"subpages\", 1, \"subpages\", 62, \"subpages\", 0]",
+              "content": {
+                "How to opt-out": "<detail_content>",
+                "Why do we use telemetry reporting?": "<detail_content>",
+                "What about sensitive data?": "<detail_content>",
+                "What do we report?": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4876 @@
+{
+  "title": "x64dbg",
+  "description": "Documentation for x64dbg",
+  "subpages": [
+    {
+      "title": "Compile Linux",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Prerequisites": "<detail_content>",
+        "Install MSVC": "<detail_content>",
+        "Build": "<detail_content>",
+        "Issues": "<detail_content>"
+      }
+    },
+    {
+      "title": "docs",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Building": "<detail_content>"
+      }
+    },
+    {
+      "title": "Licenses",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "Licenses": "<detail_content>"
+      }
+    },
+    {
+      "title": "Commands",
+      "description": "Documentation section: commands",
+      "path": "[\"subpages\", 3]",
+      "subpages": [
+        {
+          "title": "Analysis",
+          "description": "Documentation section: analysis",
+          "path": "[\"subpages\", 3, \"subpages\", 0]",
+          "subpages": [
+            {
+              "title": "GetRelocSize/grs",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "analadv",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "analrecur/analr",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "analxrefs/analx",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "analyse/analyze/anal",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "analyse_nukem/analyze_nukem/anal_nukem",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "cfanalyze/cfanalyse/cfanal",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "exanalyse/exanalyze/exanal",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "Exhandlers",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 8]",
+              "content": {
+                "root": "<detail_content>"
+              }
+            },
+            {
+              "title": "Exinfo",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 9]",
+              "content": {
+                "exinfo": "<detail_content>"
+              }
+            },
+            {
+              "title": "imageinfo",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "symdownload/downloadsym",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "symload/loadsym",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "symunload/unloadsym",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "traceexecute",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "virtualmod",
+              "path": "[\"subpages\", 3, \"subpages\", 0, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Breakpoint Control",
+          "description": "Documentation section: breakpoint-control",
+          "path": "[\"subpages\", 3, \"subpages\", 1]",
+          "subpages": [
+            {
+              "title": "DeleteBPX/bpc/bc",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "Deleteexceptionbpx",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DeleteHardwareBreakpoint/bphc/bphwc",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DeleteMemoryBPX/membpc/bpmc",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DisableBPX/bpd/bd",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "Disableexceptionbpx",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DisableHardwareBreakpoint/bphd/bphwd",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DisableMemoryBreakpoint/membpd/bpmd",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "EnableBPX/bpe/be",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "EnableExceptionBPX",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "EnableHardwareBreakpoint/bphe/bphwe",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "EnableMemoryBreakpoint/membpe/bpme",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "Librariandisablebreakpoint",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "LibrarianEnableBreakpoint/bpedll",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "LibrarianRemoveBreakpoint/bcdll",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "LibrarianSetBreakpoint/bpdll",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "Setbpx",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 16]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBPXOptions/bptype",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 17]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "Setexceptionbpx",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 18]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpoint/bph/bphws",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 19]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBPX/membp/bpm",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 20]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryRangeBPX/memrangebp/bpmrange",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 21]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "bpgoto",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 22]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "bplist",
+              "path": "[\"subpages\", 3, \"subpages\", 1, \"subpages\", 23]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Conditional Breakpoint Control",
+          "description": "Documentation section: conditional-breakpoint-control",
+          "path": "[\"subpages\", 3, \"subpages\", 2]",
+          "subpages": [
+            {
+              "title": "GetBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "GetExceptionBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "GetHardwareBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "GetLibrarianBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "GetMemoryBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ResetBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ResetExceptionBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ResetHardwareBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ResetLibrarianBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ResetMemoryBreakpointHitCount",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointCommand",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointCommandCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointCondition/bpcond/bpcnd",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointFastResume",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointLog/bplog/bpl",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointLogCondition/bplogcondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointName/bpname",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 16]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointSilent",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 17]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetBreakpointSingleshoot",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 18]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointCommand",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 19]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointCommandCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 20]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 21]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointFastResume",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 22]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointLog",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 23]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointLogCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 24]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointName",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 25]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointSilent",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 26]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetExceptionBreakpointSingleshoot",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 27]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointCommand",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 28]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointCommandCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 29]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointCondition/bphwcond",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 30]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointFastResume",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 31]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointLog/bphwlog",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 32]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointLogCondition/bphwlogcondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 33]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointName/bphwname",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 34]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointSilent",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 35]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetHardwareBreakpointSingleshoot",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 36]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointCommand",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 37]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointCommandCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 38]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 39]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointFastResume",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 40]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointLog",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 41]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointLogCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 42]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointName",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 43]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointSilent",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 44]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetLibrarianBreakpointSingleshoot",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 45]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointCommand",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 46]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointCommandCondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 47]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointCondition/bpmcond",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 48]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointFastResume",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 49]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointLog/bpmlog",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 50]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointLogCondition/bpmlogcondition",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 51]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointName/bpmname",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 52]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointSilent",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 53]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetMemoryBreakpointSingleshoot",
+              "path": "[\"subpages\", 3, \"subpages\", 2, \"subpages\", 54]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Debug Control",
+          "description": "Documentation section: debug-control",
+          "path": "[\"subpages\", 3, \"subpages\", 3]",
+          "subpages": [
+            {
+              "title": "AttachDebugger/attach",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DebugContinue/con",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DetachDebugger/detach",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "InitDebug/initdbg/init",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "InstrUndo",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "StepInto/sti",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "StepOut/rtr",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "StepOver/step/sto/st",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "StepSystem/StepSystemInto",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "StepUser/StepUserInto",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "StopDebug/stop/dbgstop",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "eStepInto/esti",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "eStepOut/ertr",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "eStepOver/estep/esto/est",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "erun/ego/er/eg",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "pause",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "run/go/r/g",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 16]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "seStepInto/sesti",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 17]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "seStepOver/sestep/sesto/sest",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 18]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "serun/sego",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 19]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "skip",
+              "path": "[\"subpages\", 3, \"subpages\", 3, \"subpages\", 20]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "General Purpose",
+          "description": "Documentation section: general-purpose",
+          "path": "[\"subpages\", 3, \"subpages\", 4]",
+          "subpages": [
+            {
+              "title": "add",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "and",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "bswap",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "cmp",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "Dec",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "div",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "inc",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "kmovd/kmovq",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "lzcnt",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "mov/set",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "movdqu/movups/movupd",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "mul",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "mulhi",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "neg",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "not",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "or",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "pop",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 16]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "popcnt",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 17]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "push",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 18]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "rol",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 19]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ror",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 20]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "sar",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 21]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "shl/sal",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 22]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "shr",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 23]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "sub",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 24]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "test",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 25]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "vmovdqu/vmovups/vmovupd",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 26]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "xor",
+              "path": "[\"subpages\", 3, \"subpages\", 4, \"subpages\", 27]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Gui",
+          "description": "Documentation section: gui",
+          "path": "[\"subpages\", 3, \"subpages\", 5]",
+          "subpages": [
+            {
+              "title": "AddFavouriteCommand",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "AddFavouriteTool",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "AddFavouriteToolShortcut/SetFavouriteToolShortcut",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "ClearLog/cls/lc/lclr",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DisableLog/LogDisable",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "EnableLog/LogEnable",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "FoldDisassembly",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "disasm/dis/d",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "dump",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "graph",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "guiupdatedisable",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "guiupdateenable",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "memmapdump",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "refadd",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "refget",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "refinit",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "sdump",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 16]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "setfreezestack",
+              "path": "[\"subpages\", 3, \"subpages\", 5, \"subpages\", 17]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Memory Operations",
+          "description": "Documentation section: memory-operations",
+          "path": "[\"subpages\", 3, \"subpages\", 6]",
+          "subpages": [
+            {
+              "title": "Fill/memset",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "alloc",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "free",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "getpagerights/getpagerights/getrightspage",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "memcpy",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "minidump",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "savedata",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "setpagerights/setpagerights/setrightspage",
+              "path": "[\"subpages\", 3, \"subpages\", 6, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Misc",
+          "description": "Documentation section: misc",
+          "path": "[\"subpages\", 3, \"subpages\", 7]",
+          "subpages": [
+            {
+              "title": "HideDebugger/dbh/hide",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "asm",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "chd",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "config",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "getcommandline/getcmdline",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "getjit/jitget",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "getjitauto/jitgetauto",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "gpa",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "loadlib",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "mnemonicbrief",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "mnemonichelp",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "setcommandline/setcmdline",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "setjit/jitset",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "setjitauto/jitsetauto",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "zzz/doSleep",
+              "path": "[\"subpages\", 3, \"subpages\", 7, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Operating System Control",
+          "description": "Documentation section: operating-system-control",
+          "path": "[\"subpages\", 3, \"subpages\", 8]",
+          "subpages": [
+            {
+              "title": "DisablePrivilege",
+              "path": "[\"subpages\", 3, \"subpages\", 8, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "EnablePrivilege",
+              "path": "[\"subpages\", 3, \"subpages\", 8, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "GetPrivilegeState",
+              "path": "[\"subpages\", 3, \"subpages\", 8, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "handleclose/closehandle",
+              "path": "[\"subpages\", 3, \"subpages\", 8, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Plugins",
+          "description": "Documentation section: plugins",
+          "path": "[\"subpages\", 3, \"subpages\", 9]",
+          "subpages": [
+            {
+              "title": "StartScylla/scylla/imprec",
+              "path": "[\"subpages\", 3, \"subpages\", 9, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "plugload/pluginload/loadplugin",
+              "path": "[\"subpages\", 3, \"subpages\", 9, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "plugunload/pluginunload/unloadplugin",
+              "path": "[\"subpages\", 3, \"subpages\", 9, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Script",
+          "description": "Documentation section: script",
+          "path": "[\"subpages\", 3, \"subpages\", 10]",
+          "subpages": [
+            {
+              "title": "Jxx",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 0]",
+              "content": {
+                "root": "<detail_content>"
+              }
+            },
+            {
+              "title": "call",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "error",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "invalid",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "msg",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "msgyn",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "pause",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "printstack[,logstack]",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ret",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "scriptcmd",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "execution behavior": "<detail_content>",
+                "example": "<detail_content>"
+              }
+            },
+            {
+              "title": "scriptdll/dllscript",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "scriptexec",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "execution behavior": "<detail_content>",
+                "notes": "<detail_content>"
+              }
+            },
+            {
+              "title": "scriptload",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "scriptrun",
+              "path": "[\"subpages\", 3, \"subpages\", 10, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "execution behavior": "<detail_content>",
+                "prerequisites": "<detail_content>",
+                "notes": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Searching",
+          "description": "Documentation section: searching",
+          "path": "[\"subpages\", 3, \"subpages\", 11]",
+          "subpages": [
+            {
+              "title": "find",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "findall",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "examples": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "findallmem/findmemall",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "findasm/asmfind",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "findguid/guidfind",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "modcallfind",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "reffind/findref/ref",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "reffindrange/findrefrange/refrange",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "refstr/strref",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "setmaxfindresult/findsetmaxresult",
+              "path": "[\"subpages\", 3, \"subpages\", 11, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Thread Control",
+          "description": "Documentation section: thread-control",
+          "path": "[\"subpages\", 3, \"subpages\", 12]",
+          "subpages": [
+            {
+              "title": "createthread[,threadcreate,newthread,threadnew]",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "killthread/threadkill",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "resumeallthreads/threadresumeall",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "resumethread/threadresume",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "setthreadname/threadsetname",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "setthreadpriority/setprioritythread/threadsetpriority",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "suspendallthreads/threadsuspendall",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "suspendthread/threadsuspend",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "switchthread/threadswitch",
+              "path": "[\"subpages\", 3, \"subpages\", 12, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Tracing",
+          "description": "Documentation section: tracing",
+          "path": "[\"subpages\", 3, \"subpages\", 13]",
+          "subpages": [
+            {
+              "title": "RunToParty",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>",
+                "see also": "<detail_content>"
+              }
+            },
+            {
+              "title": "RunToUserCode/rtu",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "StartTraceRecording/StartRunTrace/opentrace",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "StopTraceRecording/StopRunTrace/tc",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceIntoBeyondTraceCoverage/TraceIntoBeyondTraceRecord/tibt",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceIntoConditional/ticnd",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceIntoIntoTraceCoverage/TraceIntoIntoTraceRecord/tiit",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceOverBeyondTraceCoverage,TraceOverBeyondTraceRecord/tobt",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceOverConditional/tocnd",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceOverIntoTraceCoverage/TraceOverIntoTraceRecord/toit",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceSetCommand/SetTraceCommand",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceSetLog/SetTraceLog",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "TraceSetLogFile/SetTraceLogFile",
+              "path": "[\"subpages\", 3, \"subpages\", 13, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Types",
+          "description": "Documentation section: types",
+          "path": "[\"subpages\", 3, \"subpages\", 14]",
+          "subpages": [
+            {
+              "title": "AddArg",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "AddFunction",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "AddMember",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "AddStruct",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "AddType",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "AddUnion",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "AppendArg",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "AppendMember",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ClearTypes",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataAscii/da",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataByte/db",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataCode/dc",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataDouble/DataReal8",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataDword/dw",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataFloat/DataReal4/df",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataFword",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataJunk",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 16]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataLongdouble/DataReal10",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 17]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataMiddle",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 18]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataMmword",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 19]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataOword",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 20]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataQword/dq",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 21]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataTbyte",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 22]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataUnicode/du",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 23]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataUnknown",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 24]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataWord/dw",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 25]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataXmmword",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 26]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "DataYmmword",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 27]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "EnumTypes",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 28]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "LoadTypes",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 29]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "ParseTypes",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 30]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "RemoveType",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 31]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SizeofType",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 32]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "VisitType/DisplayType/dt",
+              "path": "[\"subpages\", 3, \"subpages\", 14, \"subpages\", 33]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "User Database",
+          "description": "Documentation section: user-database",
+          "path": "[\"subpages\", 3, \"subpages\", 15]",
+          "subpages": [
+            {
+              "title": "argumentadd",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "argumentclear",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "argumentdel",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "argumentlist",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "bookmarkclear",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "bookmarkdel/bookmarkc",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "bookmarklist",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 6]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "bookmarkset/bookmark",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 7]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "commentclear",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 8]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "commentdel/cmtc/cmtdel",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 9]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "commentlist",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 10]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "commentset/cmt/cmtset",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 11]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "dbclear/cleardb",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 12]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "dbload/loaddb",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 13]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "dbsave/savedb",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 14]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "functionadd/func",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 15]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "functionclear",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 16]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "functiondel/funcc",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 17]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "functionlist",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 18]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "labelclear",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 19]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "labeldel/lblc/lbldel",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 20]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "labellist",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 21]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>",
+                "remarks": "<detail_content>"
+              }
+            },
+            {
+              "title": "labelset/lbl/lblset",
+              "path": "[\"subpages\", 3, \"subpages\", 15, \"subpages\", 22]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Variables",
+          "description": "Documentation section: variables",
+          "path": "[\"subpages\", 3, \"subpages\", 16]",
+          "subpages": [
+            {
+              "title": "var/varnew",
+              "path": "[\"subpages\", 3, \"subpages\", 16, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "vardel",
+              "path": "[\"subpages\", 3, \"subpages\", 16, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "varlist",
+              "path": "[\"subpages\", 3, \"subpages\", 16, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Watch Control",
+          "description": "Documentation section: watch-control",
+          "path": "[\"subpages\", 3, \"subpages\", 17]",
+          "subpages": [
+            {
+              "title": "AddWatch",
+              "path": "[\"subpages\", 3, \"subpages\", 17, \"subpages\", 0]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "CheckWatchdog",
+              "path": "[\"subpages\", 3, \"subpages\", 17, \"subpages\", 1]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "DelWatch",
+              "path": "[\"subpages\", 3, \"subpages\", 17, \"subpages\", 2]",
+              "content": {
+                "arguments": "<detail_content>",
+                "result": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetWatchExpression",
+              "path": "[\"subpages\", 3, \"subpages\", 17, \"subpages\", 3]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetWatchName",
+              "path": "[\"subpages\", 3, \"subpages\", 17, \"subpages\", 4]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            },
+            {
+              "title": "SetWatchdog",
+              "path": "[\"subpages\", 3, \"subpages\", 17, \"subpages\", 5]",
+              "content": {
+                "arguments": "<detail_content>",
+                "results": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Developers",
+      "description": "Documentation section: developers",
+      "path": "[\"subpages\", 4]",
+      "subpages": [
+        {
+          "title": "x64dbg trace file format specification",
+          "path": "[\"subpages\", 4, \"subpages\", 0]",
+          "content": {
+            "Magic word": "<detail_content>",
+            "Header": "<detail_content>",
+            "Binary trace blocks": "<detail_content>"
+          }
+        },
+        {
+          "title": "Functions",
+          "description": "Documentation section: functions",
+          "path": "[\"subpages\", 4, \"subpages\", 1]",
+          "subpages": [
+            {
+              "title": "Bridge",
+              "description": "Documentation section: bridge",
+              "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0]",
+              "subpages": [
+                {
+                  "title": "BridgeAlloc",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 0]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeFree",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 1]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeGetDbgVersion",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 2]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeInit",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 3]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeSettingFlush",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 4]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeSettingGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 5]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeSettingGetUint",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 6]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeSettingRead",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 7]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeSettingSet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 8]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeSettingSetUint",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 9]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "BridgeStart",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 0, \"subpages\", 10]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Debug",
+              "description": "Documentation section: debug",
+              "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1]",
+              "subpages": [
+                {
+                  "title": "DbgArgumentAdd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 0]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgArgumentDel",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 1]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgArgumentGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 2]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgArgumentOverlaps",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 3]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgAssembleAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 4]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgClearAutoBookmarkRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 5]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgClearAutoCommentRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 6]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgClearAutoFunctionRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 7]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgClearAutoLabelRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 8]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgClearBookmarkRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 9]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgClearCommentRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 10]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgClearLabelRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 11]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgCmdExec",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 12]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgCmdExecDirect",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 13]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgDelEncodeTypeRange",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 14]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgDelEncodeTypeSegment",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 15]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgDisasmAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 16]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgDisasmFastAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 17]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgExit",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 18]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgFunctionAdd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 19]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgFunctionDel",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 20]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgFunctionGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 21]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgFunctionOverlaps",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 22]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgFunctions",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 23]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetArgTypeAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 24]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetBookmarkAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 25]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetBpList",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 26]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetBpxTypeAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 27]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetBranchDestination",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 28]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetCommentAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 29]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetEncodeSizeAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 30]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetEncodeTypeAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 31]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetEncodeTypeBuffer",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 32]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetFunctionTypeAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 33]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetLabelAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 34]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetLoopTypeAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 35]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetModuleAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 36]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetRegDump",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 37]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetStringAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 38]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetThreadList",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 39]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetTimeWastedCounter",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 40]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetWatchList",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 41]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetXrefCountAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 42]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgGetXrefTypeAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 43]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgInit",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 44]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgIsBpDisabled",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 45]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgIsDebugging",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 46]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgIsJumpGoingToExecute",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 47]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgIsRunLocked",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 48]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgIsRunning",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 49]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgIsValidExpression",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 50]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgLoopAdd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 51]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgLoopDel",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 52]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgLoopGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 53]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgLoopOverlaps",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 54]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgMemFindBaseAddr",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 55]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgMemGetPageSize",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 56]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgMemIsValidReadPtr",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 57]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgMemMap",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 58]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgMemRead",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 59]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgMemWrite",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 60]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgMenuEntryClicked",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 61]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgModBaseFromName",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 62]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgReleaseEncodeTypeBuffer",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 63]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptAbort",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 64]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptBpGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 65]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptBpToggle",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 66]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptCmdExec",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 67]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptGetBranchInfo",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 68]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptGetLineType",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 69]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptLoad",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 70]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptRun",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 71]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptSetIp",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 72]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptStep",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 73]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgScriptUnload",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 74]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetAutoBookmarkAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 75]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetAutoCommentAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 76]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetAutoFunctionAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 77]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetAutoLabelAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 78]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetBookmarkAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 79]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetCommentAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 80]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetEncodeType",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 81]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSetLabelAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 82]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSettingsUpdated",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 83]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgStackCommentGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 84]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSymbolEnum",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 85]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgSymbolEnumFromCache",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 86]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgValFromString",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 87]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgValToString",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 88]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgWinEvent",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 89]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgWinEventGlobal",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 90]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgXrefAdd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 91]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgXrefDelAll",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 92]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "DbgXrefGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 1, \"subpages\", 93]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Gui",
+              "description": "Documentation section: gui",
+              "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2]",
+              "subpages": [
+                {
+                  "title": "GuiAddLogMessage",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 0]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiAddLogMessageHtml",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 1]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiAddQWidgetTab",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 2]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiAddRecentFile",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 3]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiAddStatusBarMessage",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 4]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiAutoCompleteAddCmd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 5]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiAutoCompleteClearAll",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 6]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiAutoCompleteDelCmd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 7]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiCloseQWidgetTab",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 8]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiDisasmAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 9]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiDisplayWarning",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 10]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiDumpAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 11]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiDumpAtN",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 12]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiExecuteOnGuiThread",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 13]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiExecuteOnGuiThreadEx",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 14]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiFocusView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 15]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiGetDebuggeeNotes",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 16]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiGetDisassembly",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 17]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiGetGlobalNotes",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 18]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiGetLineWindow",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 19]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiGetWindowHandle",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 20]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiGraphAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 21]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiIsUpdateDisabled",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 22]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiLoadGraph",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 23]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiLoadSourceFile",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 24]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiLogClear",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 25]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiMenuAdd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 26]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiMenuAddEntry",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 27]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiMenuAddSeparator",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 28]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiMenuClear",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 29]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiMenuSetEntryIcon",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 30]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiMenuSetIcon",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 31]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiOpenTraceFile",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 32]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceAddColumn",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 33]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceDeleteAllColumns",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 34]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceGetCellContent",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 35]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceGetRowCount",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 36]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceInitialize",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 37]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceReloadData",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 38]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceSetCellContent",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 39]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Notes": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceSetCurrentTaskProgress",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 40]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceSetProgress",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 41]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceSetRowCount",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 42]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceSetSearchStartCol",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 43]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiReferenceSetSingleSelection",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 44]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiRegisterScriptLanguage",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 45]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiRepaintTableView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 46]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptAdd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 47]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptClear",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 48]",
+                  "content": {
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptEnableHighlighting",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 49]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptError",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 50]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptMessage",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 51]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptMsgyn",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 52]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptSetInfoLine",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 53]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptSetIp",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 54]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiScriptSetTitle",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 55]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSelectionGet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 56]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSelectionSet",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 57]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSetDebugState",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 58]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSetDebuggeeNotes",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 59]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSetGlobalNotes",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 60]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSetLastException",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 61]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiShowCpu",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 62]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiShowQWidgetTab",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 63]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiStackDumpAt",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 64]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSymbolLogAdd",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 65]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSymbolLogClear",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 66]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSymbolRefreshCurrent",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 67]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSymbolSetProgress",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 68]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiSymbolUpdateModuleList",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 69]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUnregisterScriptLanguage",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 70]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateAllViews",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 71]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateArgumentWidget",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 72]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateBreakpointsView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 73]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateCallStack",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 74]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateDisable",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 75]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateDisassemblyView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 76]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateDumpView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 77]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateEnable",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 78]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateGraphView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 79]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateMemoryView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 80]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdatePatches",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 81]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateRegisterView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 82]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateSEHChain",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 83]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateSideBar",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 84]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateThreadView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 85]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateTimeWastedCounter",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 86]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateWatchView",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 87]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "GuiUpdateWindowTitle",
+                  "path": "[\"subpages\", 4, \"subpages\", 1, \"subpages\", 2, \"subpages\", 88]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return Value": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Related functions": "<detail_content>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Plugins",
+          "description": "Documentation section: plugins",
+          "path": "[\"subpages\", 4, \"subpages\", 2]",
+          "subpages": [
+            {
+              "title": "The basics",
+              "path": "[\"subpages\", 4, \"subpages\", 2, \"subpages\", 0]",
+              "content": {
+                "Exports": "<detail_content>",
+                "Definitions": "<detail_content>"
+              }
+            },
+            {
+              "title": "Notes",
+              "path": "[\"subpages\", 4, \"subpages\", 2, \"subpages\", 1]",
+              "content": {
+                "Character encoding": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gui",
+      "description": "Documentation section: gui",
+      "path": "[\"subpages\", 5]",
+      "subpages": [
+        {
+          "title": "Dialogs",
+          "description": "Documentation section: dialogs",
+          "path": "[\"subpages\", 5, \"subpages\", 0]",
+          "subpages": [
+            {
+              "title": "Entropy",
+              "path": "[\"subpages\", 5, \"subpages\", 0, \"subpages\", 0]",
+              "content": {
+                "Entropy": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Settings",
+          "description": "Documentation section: settings",
+          "path": "[\"subpages\", 5, \"subpages\", 1]",
+          "subpages": [
+            {
+              "title": "Events",
+              "path": "[\"subpages\", 5, \"subpages\", 1, \"subpages\", 0]",
+              "content": {
+                "System Breakpoint": "<detail_content>",
+                "TLS Callbacks": "<detail_content>",
+                "Entry Breakpoint": "<detail_content>",
+                "DLL Entry": "<detail_content>",
+                "Attach Breakpoint": "<detail_content>",
+                "Thread Entry": "<detail_content>",
+                "DLL Load": "<detail_content>",
+                "DLL Unload": "<detail_content>",
+                "Thread Start": "<detail_content>",
+                "Thread End": "<detail_content>",
+                "Debug Strings": "<detail_content>"
+              }
+            },
+            {
+              "title": "Exceptions",
+              "path": "[\"subpages\", 5, \"subpages\", 1, \"subpages\", 1]",
+              "content": {
+                "Add Range": "<detail_content>",
+                "Delete Range": "<detail_content>",
+                "Add Last": "<detail_content>"
+              }
+            },
+            {
+              "title": "GUI",
+              "path": "[\"subpages\", 5, \"subpages\", 1, \"subpages\", 2]",
+              "content": {
+                "Show FPU registers as little endian": "<detail_content>",
+                "Save GUI layout and column orders": "<detail_content>",
+                "Don't show close dialog": "<detail_content>",
+                "Show PID in HEX": "<detail_content>",
+                "Enable Load/Save Tab Order": "<detail_content>",
+                "Show Watch Labels in Side Bar": "<detail_content>",
+                "Do not call SetForegroundWindow": "<detail_content>",
+                "Show RVA addresses in graph view": "<detail_content>",
+                "Graph zoom mode": "<detail_content>",
+                "Show exit confirmation dialog": "<detail_content>",
+                "Disable auto completion in goto dialog": "<detail_content>",
+                "Show ASCII/Unicode in address dump mode": "<detail_content>"
+              }
+            },
+            {
+              "title": "Other settings",
+              "path": "[\"subpages\", 5, \"subpages\", 1, \"subpages\", 3]",
+              "content": {
+                "Engine": {
+                  "AnimateInterval": "<detail_content>",
+                  "MaxSkipExceptionCount": "<detail_content>"
+                },
+                "Gui": {
+                  "NonprintReplaceCharacter": "<detail_content>",
+                  "NullReplaceCharacter": "<detail_content>"
+                },
+                "Misc": {
+                  "AnimateIgnoreError": "<detail_content>",
+                  "NoSeasons": "<detail_content>"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "Views",
+          "description": "Documentation section: views",
+          "path": "[\"subpages\", 5, \"subpages\", 2]",
+          "subpages": [
+            {
+              "title": "Source",
+              "path": "[\"subpages\", 5, \"subpages\", 2, \"subpages\", 0]",
+              "content": {
+                "Source": "<detail_content>"
+              }
+            },
+            {
+              "title": "Trace",
+              "path": "[\"subpages\", 5, \"subpages\", 2, \"subpages\", 1]",
+              "content": {
+                "Start trace recording": "<detail_content>",
+                "Stop trace recording": "<detail_content>",
+                "Close": "<detail_content>",
+                "Close and delete": "<detail_content>",
+                "Open": "<detail_content>",
+                "Recent files": "<detail_content>",
+                "Search": {
+                  "Constant": "<detail_content>",
+                  "Memory Reference": "<detail_content>"
+                },
+                "Toggle Auto Disassembly Scroll": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Introduction",
+      "description": "Documentation section: introduction",
+      "path": "[\"subpages\", 6]",
+      "subpages": [
+        {
+          "title": "Commandline",
+          "path": "[\"subpages\", 6, \"subpages\", 0]",
+          "content": {
+            "Command line": "<detail_content>"
+          }
+        },
+        {
+          "title": "Conditional Breakpoints",
+          "path": "[\"subpages\", 6, \"subpages\", 1]",
+          "content": {
+            "Operations overview": "<detail_content>",
+            "Hit counter": "<detail_content>",
+            "Logging": "<detail_content>",
+            "Notes": "<detail_content>",
+            "Examples": "<detail_content>",
+            "Comparison with Conditional Tracing": "<detail_content>",
+            "See also": "<detail_content>"
+          }
+        },
+        {
+          "title": "Conditional Tracing",
+          "path": "[\"subpages\", 6, \"subpages\", 2]",
+          "content": {
+            "Operations overview": "<detail_content>",
+            "Logging": "<detail_content>",
+            "Trace coverage": "<detail_content>",
+            "Notes": "<detail_content>",
+            "See also": "<detail_content>"
+          }
+        },
+        {
+          "title": "Expression Functions",
+          "path": "[\"subpages\", 6, \"subpages\", 3]",
+          "content": {
+            "Strings": "<detail_content>",
+            "GUI Interaction": "<detail_content>",
+            "Source": "<detail_content>",
+            "Modules": "<detail_content>",
+            "Process Information": "<detail_content>",
+            "General Purpose": "<detail_content>",
+            "Memory": "<detail_content>",
+            "Disassembly": "<detail_content>",
+            "Tracing": "<detail_content>",
+            "Byte/Word/Dword/Qword/Ptr": "<detail_content>",
+            "Functions": "<detail_content>",
+            "References": "<detail_content>",
+            "Arguments": "<detail_content>",
+            "Exceptions": "<detail_content>",
+            "Syscalls": "<detail_content>",
+            "Plugins": "<detail_content>"
+          }
+        },
+        {
+          "title": "Expressions",
+          "path": "[\"subpages\", 6, \"subpages\", 4]",
+          "content": {
+            "Values": "<detail_content>",
+            "Operators": "<detail_content>",
+            "Quick-Assigning": "<detail_content>",
+            "Functions": "<detail_content>"
+          }
+        },
+        {
+          "title": "Features",
+          "path": "[\"subpages\", 6, \"subpages\", 5]",
+          "content": {
+            "Basic features": "<detail_content>",
+            "Advanced features": "<detail_content>",
+            "GUI features": "<detail_content>"
+          }
+        },
+        {
+          "title": "String Formatting",
+          "path": "[\"subpages\", 6, \"subpages\", 6]",
+          "content": {
+            "Types": "<detail_content>",
+            "Complex Type": "<detail_content>",
+            "Examples": "<detail_content>",
+            "Logging": "<detail_content>",
+            "Plugins": "<detail_content>"
+          }
+        },
+        {
+          "title": "Glossary",
+          "path": "[\"subpages\", 6, \"subpages\", 7]",
+          "content": {
+            "Glossary": "<detail_content>"
+          }
+        },
+        {
+          "title": "Inability",
+          "path": "[\"subpages\", 6, \"subpages\", 8]",
+          "content": {
+            "Inability": "<detail_content>"
+          }
+        },
+        {
+          "title": "Input",
+          "path": "[\"subpages\", 6, \"subpages\", 9]",
+          "content": {
+            "Input": "<detail_content>"
+          }
+        },
+        {
+          "title": "Values",
+          "path": "[\"subpages\", 6, \"subpages\", 10]",
+          "content": {
+            "Numbers": "<detail_content>",
+            "Variables": "<detail_content>",
+            "Registers": {
+              "Remarks": "<detail_content>"
+            },
+            "Flags": "<detail_content>",
+            "Memory locations": "<detail_content>",
+            "Labels/Symbols": "<detail_content>",
+            "Module Data": {
+              "DLL exports": "<detail_content>",
+              "Loaded module bases": "<detail_content>",
+              "RVA/File offset": "<detail_content>",
+              "Module entry points": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Variables",
+          "path": "[\"subpages\", 6, \"subpages\", 11]",
+          "content": {
+            "Setting variables": "<detail_content>",
+            "Reserved Variables": "<detail_content>"
+          }
+        }
+      ]
+    }
+  ]
+}

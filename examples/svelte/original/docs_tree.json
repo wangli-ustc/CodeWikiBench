@@ -1,0 +1,1021 @@
+{
+  "title": "svelte",
+  "description": "Documentation for svelte",
+  "subpages": [
+    {
+      "title": "Svelte",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "root": []
+      }
+    },
+    {
+      "title": "01 Introduction",
+      "description": "Documentation section: 01-introduction",
+      "path": "[\"subpages\", 1]",
+      "subpages": [
+        {
+          "title": "Overview",
+          "path": "[\"subpages\", 1, \"subpages\", 0]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Getting started",
+          "path": "[\"subpages\", 1, \"subpages\", 1]",
+          "content": {
+            "Alternatives to SvelteKit": "<detail_content>",
+            "Editor tooling": "<detail_content>",
+            "Getting help": "<detail_content>"
+          }
+        },
+        {
+          "title": ".svelte files",
+          "path": "[\"subpages\", 1, \"subpages\", 2]",
+          "content": {
+            "`<script>`": "<detail_content>",
+            "`<script module>`": "<detail_content>",
+            "`<style>`": "<detail_content>"
+          }
+        },
+        {
+          "title": ".svelte.js and .svelte.ts files",
+          "path": "[\"subpages\", 1, \"subpages\", 3]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Introduction",
+          "path": "[\"subpages\", 1, \"subpages\", 4]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "02 Runes",
+      "description": "Documentation section: 02-runes",
+      "path": "[\"subpages\", 2]",
+      "subpages": [
+        {
+          "title": "What are runes?",
+          "path": "[\"subpages\", 2, \"subpages\", 0]",
+          "content": {
+            "root": [
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "$state",
+          "path": "[\"subpages\", 2, \"subpages\", 1]",
+          "content": {
+            "`$state.raw`": "<detail_content>",
+            "`$state.snapshot`": "<detail_content>",
+            "Passing state into functions": "<detail_content>",
+            "Passing state across modules": "<detail_content>"
+          }
+        },
+        {
+          "title": "$derived",
+          "path": "[\"subpages\", 2, \"subpages\", 2]",
+          "content": {
+            "`$derived.by`": "<detail_content>",
+            "Understanding dependencies": "<detail_content>",
+            "Overriding derived values": "<detail_content>",
+            "Deriveds and reactivity": "<detail_content>",
+            "Destructuring": "<detail_content>",
+            "Update propagation": "<detail_content>"
+          }
+        },
+        {
+          "title": "$effect",
+          "path": "[\"subpages\", 2, \"subpages\", 3]",
+          "content": {
+            "`$effect.pre`": "<detail_content>",
+            "`$effect.tracking`": "<detail_content>",
+            "`$effect.pending`": "<detail_content>",
+            "`$effect.root`": "<detail_content>",
+            "When not to use `$effect`": "<detail_content>"
+          }
+        },
+        {
+          "title": "$props",
+          "path": "[\"subpages\", 2, \"subpages\", 4]",
+          "content": {
+            "Fallback values": "<detail_content>",
+            "Renaming props": "<detail_content>",
+            "Rest props": "<detail_content>",
+            "Updating props": "<detail_content>",
+            "Type safety": "<detail_content>",
+            "`$props.id()`": "<detail_content>"
+          }
+        },
+        {
+          "title": "$bindable",
+          "path": "[\"subpages\", 2, \"subpages\", 5]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "$inspect",
+          "path": "[\"subpages\", 2, \"subpages\", 6]",
+          "content": {
+            "$inspect(...).with": "<detail_content>",
+            "$inspect.trace(...)": "<detail_content>"
+          }
+        },
+        {
+          "title": "$host",
+          "path": "[\"subpages\", 2, \"subpages\", 7]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Runes",
+          "path": "[\"subpages\", 2, \"subpages\", 8]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "03 Template Syntax",
+      "description": "Documentation section: 03-template-syntax",
+      "path": "[\"subpages\", 3]",
+      "subpages": [
+        {
+          "title": "Basic markup",
+          "path": "[\"subpages\", 3, \"subpages\", 0]",
+          "content": {
+            "Tags": "<detail_content>",
+            "Element attributes": "<detail_content>",
+            "Component props": "<detail_content>",
+            "Spread attributes": "<detail_content>",
+            "Events": {
+              "Event delegation": "<detail_content>"
+            },
+            "Text expressions": "<detail_content>",
+            "Comments": "<detail_content>"
+          }
+        },
+        {
+          "title": "02 If",
+          "path": "[\"subpages\", 3, \"subpages\", 1]",
+          "content": {
+            "root": [
+              [],
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "03 Each",
+          "path": "[\"subpages\", 3, \"subpages\", 2]",
+          "content": {
+            "Keyed each blocks": "<detail_content>",
+            "Each blocks without an item": "<detail_content>",
+            "Else blocks": "<detail_content>"
+          }
+        },
+        {
+          "title": "04 Key",
+          "path": "[\"subpages\", 3, \"subpages\", 3]",
+          "content": {
+            "root": [
+              [],
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "05 Await",
+          "path": "[\"subpages\", 3, \"subpages\", 4]",
+          "content": {
+            "root": [
+              [],
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "Passing snippets to components",
+          "path": "[\"subpages\", 3, \"subpages\", 5]",
+          "content": {
+            "Explicit props": "<detail_content>",
+            "Implicit props": "<detail_content>",
+            "Implicit `children` snippet": "<detail_content>",
+            "Optional snippet props": "<detail_content>"
+          }
+        },
+        {
+          "title": "07 @Render",
+          "path": "[\"subpages\", 3, \"subpages\", 6]",
+          "content": {
+            "Optional snippets": "<detail_content>"
+          }
+        },
+        {
+          "title": "08 @Html",
+          "path": "[\"subpages\", 3, \"subpages\", 7]",
+          "content": {
+            "Styling": "<detail_content>"
+          }
+        },
+        {
+          "title": "09 @Attach",
+          "path": "[\"subpages\", 3, \"subpages\", 8]",
+          "content": {
+            "Attachment factories": "<detail_content>",
+            "Inline attachments": "<detail_content>",
+            "Passing attachments to components": "<detail_content>",
+            "Controlling when attachments re-run": "<detail_content>",
+            "Creating attachments programmatically": "<detail_content>",
+            "Converting actions to attachments": "<detail_content>"
+          }
+        },
+        {
+          "title": "10 @Const",
+          "path": "[\"subpages\", 3, \"subpages\", 9]",
+          "content": {
+            "root": [
+              [],
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "11 @Debug",
+          "path": "[\"subpages\", 3, \"subpages\", 10]",
+          "content": {
+            "root": [
+              [],
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "12 Bind",
+          "path": "[\"subpages\", 3, \"subpages\", 11]",
+          "content": {
+            "Function bindings": "<detail_content>",
+            "`<input bind:value>`": "<detail_content>",
+            "`<input bind:checked>`": "<detail_content>",
+            "`<input bind:indeterminate>`": "<detail_content>",
+            "`<input bind:group>`": "<detail_content>",
+            "`<input bind:files>`": "<detail_content>",
+            "`<select bind:value>`": "<detail_content>",
+            "`<audio>`": "<detail_content>",
+            "`<video>`": "<detail_content>",
+            "`<img>`": "<detail_content>",
+            "`<details bind:open>`": "<detail_content>",
+            "`window` and `document`": "<detail_content>",
+            "Contenteditable bindings": "<detail_content>",
+            "Dimensions": "<detail_content>",
+            "bind:this": "<detail_content>",
+            "bind:_property_ for components": "<detail_content>"
+          }
+        },
+        {
+          "title": "13 Use",
+          "path": "[\"subpages\", 3, \"subpages\", 12]",
+          "content": {
+            "Typing": "<detail_content>"
+          }
+        },
+        {
+          "title": "14 Transition",
+          "path": "[\"subpages\", 3, \"subpages\", 13]",
+          "content": {
+            "Local vs global": "<detail_content>",
+            "Built-in transitions": "<detail_content>",
+            "Transition parameters": "<detail_content>",
+            "Custom transition functions": "<detail_content>",
+            "Transition events": "<detail_content>"
+          }
+        },
+        {
+          "title": "15 In And Out",
+          "path": "[\"subpages\", 3, \"subpages\", 14]",
+          "content": {
+            "root": [
+              [],
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "16 Animate",
+          "path": "[\"subpages\", 3, \"subpages\", 15]",
+          "content": {
+            "Animation Parameters": "<detail_content>",
+            "Custom animation functions": "<detail_content>"
+          }
+        },
+        {
+          "title": "17 Style",
+          "path": "[\"subpages\", 3, \"subpages\", 16]",
+          "content": {
+            "root": [
+              [],
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>",
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "class",
+          "path": "[\"subpages\", 3, \"subpages\", 17]",
+          "content": {
+            "Attributes": {
+              "Objects and arrays": "<detail_content>"
+            },
+            "The `class:` directive": "<detail_content>"
+          }
+        },
+        {
+          "title": "await",
+          "path": "[\"subpages\", 3, \"subpages\", 18]",
+          "content": {
+            "Boundaries": "<detail_content>",
+            "Synchronized updates": "<detail_content>",
+            "Concurrency": "<detail_content>",
+            "Indicating loading states": "<detail_content>",
+            "Error handling": "<detail_content>",
+            "Caveats": "<detail_content>",
+            "Breaking changes": "<detail_content>"
+          }
+        },
+        {
+          "title": "Template syntax",
+          "path": "[\"subpages\", 3, \"subpages\", 19]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "04 Styling",
+      "description": "Documentation section: 04-styling",
+      "path": "[\"subpages\", 4]",
+      "subpages": [
+        {
+          "title": "Scoped styles",
+          "path": "[\"subpages\", 4, \"subpages\", 0]",
+          "content": {
+            "Specificity": "<detail_content>",
+            "Scoped keyframes": "<detail_content>"
+          }
+        },
+        {
+          "title": "Global styles",
+          "path": "[\"subpages\", 4, \"subpages\", 1]",
+          "content": {
+            ":global(...)": "<detail_content>",
+            ":global": "<detail_content>"
+          }
+        },
+        {
+          "title": "Custom properties",
+          "path": "[\"subpages\", 4, \"subpages\", 2]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Nested <style> elements",
+          "path": "[\"subpages\", 4, \"subpages\", 3]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Styling",
+          "path": "[\"subpages\", 4, \"subpages\", 4]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "05 Special Elements",
+      "description": "Documentation section: 05-special-elements",
+      "path": "[\"subpages\", 5]",
+      "subpages": [
+        {
+          "title": "<svelte:boundary>",
+          "path": "[\"subpages\", 5, \"subpages\", 0]",
+          "content": {
+            "Properties": {
+              "`pending`": "<detail_content>",
+              "`failed`": "<detail_content>",
+              "`onerror`": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "<svelte:window>",
+          "path": "[\"subpages\", 5, \"subpages\", 1]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:document>",
+          "path": "[\"subpages\", 5, \"subpages\", 2]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:body>",
+          "path": "[\"subpages\", 5, \"subpages\", 3]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:head>",
+          "path": "[\"subpages\", 5, \"subpages\", 4]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:element>",
+          "path": "[\"subpages\", 5, \"subpages\", 5]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:options>",
+          "path": "[\"subpages\", 5, \"subpages\", 6]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Special elements",
+          "path": "[\"subpages\", 5, \"subpages\", 7]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "06 Runtime",
+      "description": "Documentation section: 06-runtime",
+      "path": "[\"subpages\", 6]",
+      "subpages": [
+        {
+          "title": "Stores",
+          "path": "[\"subpages\", 6, \"subpages\", 0]",
+          "content": {
+            "When to use stores": "<detail_content>",
+            "svelte/store": {
+              "`writable`": "<detail_content>",
+              "`readable`": "<detail_content>",
+              "`derived`": "<detail_content>",
+              "`readonly`": "<detail_content>",
+              "`get`": "<detail_content>"
+            },
+            "Store contract": "<detail_content>"
+          }
+        },
+        {
+          "title": "Context",
+          "path": "[\"subpages\", 6, \"subpages\", 1]",
+          "content": {
+            "Using context with state": "<detail_content>",
+            "Type-safe context": "<detail_content>",
+            "Replacing global state": "<detail_content>"
+          }
+        },
+        {
+          "title": "Lifecycle hooks",
+          "path": "[\"subpages\", 6, \"subpages\", 2]",
+          "content": {
+            "`onMount`": "<detail_content>",
+            "`onDestroy`": "<detail_content>",
+            "`tick`": "<detail_content>",
+            "Deprecated: `beforeUpdate` / `afterUpdate`": {
+              "Chat window example": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Imperative component API",
+          "path": "[\"subpages\", 6, \"subpages\", 3]",
+          "content": {
+            "`mount`": "<detail_content>",
+            "`unmount`": "<detail_content>",
+            "`render`": "<detail_content>",
+            "`hydrate`": "<detail_content>"
+          }
+        },
+        {
+          "title": "Runtime",
+          "path": "[\"subpages\", 6, \"subpages\", 4]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "07 Misc",
+      "description": "Documentation section: 07-misc",
+      "path": "[\"subpages\", 7]",
+      "subpages": [
+        {
+          "title": "Testing",
+          "path": "[\"subpages\", 7, \"subpages\", 0]",
+          "content": {
+            "Unit and integration testing using Vitest": {
+              "Using runes inside your test files": "<detail_content>",
+              "Component testing": "<detail_content>"
+            },
+            "E2E tests using Playwright": "<detail_content>"
+          }
+        },
+        {
+          "title": "TypeScript",
+          "path": "[\"subpages\", 7, \"subpages\", 1]",
+          "content": {
+            "`<script lang=\"ts\">`": "<detail_content>",
+            "Preprocessor setup": {
+              "Using SvelteKit or Vite": "<detail_content>",
+              "Other build tools": "<detail_content>"
+            },
+            "tsconfig.json settings": "<detail_content>",
+            "Typing `$props`": "<detail_content>",
+            "Generic `$props`": "<detail_content>",
+            "Typing wrapper components": "<detail_content>",
+            "Typing `$state`": "<detail_content>",
+            "The `Component` type": "<detail_content>",
+            "Enhancing built-in DOM types": "<detail_content>"
+          }
+        },
+        {
+          "title": "Custom elements",
+          "path": "[\"subpages\", 7, \"subpages\", 2]",
+          "content": {
+            "Component lifecycle": "<detail_content>",
+            "Component options": "<detail_content>",
+            "Caveats and limitations": "<detail_content>"
+          }
+        },
+        {
+          "title": "Svelte 4 migration guide",
+          "path": "[\"subpages\", 7, \"subpages\", 3]",
+          "content": {
+            "Minimum version requirements": "<detail_content>",
+            "Browser conditions for bundlers": "<detail_content>",
+            "Removal of CJS related output": "<detail_content>",
+            "Stricter types for Svelte functions": "<detail_content>",
+            "Custom Elements with Svelte": "<detail_content>",
+            "SvelteComponentTyped is deprecated": "<detail_content>",
+            "Transitions are local by default": "<detail_content>",
+            "Default slot bindings": "<detail_content>",
+            "Preprocessors": "<detail_content>",
+            "New eslint package": "<detail_content>",
+            "Other breaking changes": "<detail_content>"
+          }
+        },
+        {
+          "title": "Svelte 5 migration guide",
+          "path": "[\"subpages\", 7, \"subpages\", 4]",
+          "content": {
+            "Reactivity syntax changes": {
+              "let → $state": "<detail_content>",
+              "$: → $derived/$effect": "<detail_content>",
+              "export let → $props": "<detail_content>"
+            },
+            "Event changes": {
+              "Component events": "<detail_content>",
+              "Bubbling events": "<detail_content>",
+              "Event modifiers": "<detail_content>",
+              "Multiple event handlers": "<detail_content>"
+            },
+            "Snippets instead of slots": {
+              "Default content": "<detail_content>",
+              "Multiple content placeholders": "<detail_content>",
+              "Passing data back up": "<detail_content>"
+            },
+            "Migration script": {
+              "run": "<detail_content>",
+              "Event modifiers": "<detail_content>",
+              "Things that are not automigrated": "<detail_content>"
+            },
+            "Components are no longer classes": {
+              "Server API changes": "<detail_content>",
+              "Component typing changes": "<detail_content>",
+              "bind:this changes": "<detail_content>"
+            },
+            "`<svelte:component>` is no longer necessary": {
+              "Dot notation indicates a component": "<detail_content>"
+            },
+            "Whitespace handling changed": "<detail_content>",
+            "Modern browser required": "<detail_content>",
+            "Changes to compiler options": "<detail_content>",
+            "The `children` prop is reserved": "<detail_content>",
+            "Breaking changes in runes mode": {
+              "Bindings to component exports are not allowed": "<detail_content>",
+              "Bindings need to be explicitly defined using `$bindable()`": "<detail_content>",
+              "`accessors` option is ignored": "<detail_content>",
+              "`immutable` option is ignored": "<detail_content>",
+              "Classes are no longer \"auto-reactive\"": "<detail_content>",
+              "Touch and wheel events are passive": "<detail_content>",
+              "Attribute/prop syntax is stricter": "<detail_content>",
+              "HTML structure is stricter": "<detail_content>"
+            },
+            "Other breaking changes": {
+              "Stricter `@const` assignment validation": "<detail_content>",
+              ":is(...), :has(...), and :where(...) are scoped": "<detail_content>",
+              "CSS hash position no longer deterministic": "<detail_content>",
+              "Scoped CSS uses :where(...)": "<detail_content>",
+              "Error/warning codes have been renamed": "<detail_content>",
+              "Reduced number of namespaces": "<detail_content>",
+              "beforeUpdate/afterUpdate changes": "<detail_content>",
+              "`contenteditable` behavior change": "<detail_content>",
+              "`oneventname` attributes no longer accept string values": "<detail_content>",
+              "`null` and `undefined` become the empty string": "<detail_content>",
+              "`bind:files` values can only be `null`, `undefined` or `FileList`": "<detail_content>",
+              "Bindings now react to form resets": "<detail_content>",
+              "`walk` no longer exported": "<detail_content>",
+              "Content inside `svelte:options` is forbidden": "<detail_content>",
+              "`<slot>` elements in declarative shadow roots are preserved": "<detail_content>",
+              "`<svelte:element>` tag must be an expression": "<detail_content>",
+              "`mount` plays transitions by default": "<detail_content>",
+              "`<img src={...}>` and `{@html ...}` hydration mismatches are not repaired": "<detail_content>",
+              "Hydration works differently": "<detail_content>",
+              "`onevent` attributes are delegated": "<detail_content>",
+              "`--style-props` uses a different element": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Frequently asked questions",
+          "path": "[\"subpages\", 7, \"subpages\", 5]",
+          "content": {
+            "I'm new to Svelte. Where should I start?": "<detail_content>",
+            "Where can I get support?": "<detail_content>",
+            "Are there any third-party resources?": "<detail_content>",
+            "How can I get VS Code to syntax-highlight my .svelte files?": "<detail_content>",
+            "Is there a tool to automatically format my .svelte files?": "<detail_content>",
+            "How do I document my components?": "<detail_content>",
+            "Does Svelte scale?": "<detail_content>",
+            "Is there a UI component library?": "<detail_content>",
+            "How do I test Svelte apps?": "<detail_content>",
+            "Is there a router?": "<detail_content>",
+            "How do I write a mobile app with Svelte?": "<detail_content>",
+            "Can I tell Svelte not to remove my unused styles?": "<detail_content>",
+            "Is Svelte v2 still available?": "<detail_content>",
+            "How do I do hot module reloading?": "<detail_content>"
+          }
+        },
+        {
+          "title": "Misc",
+          "path": "[\"subpages\", 7, \"subpages\", 6]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "98 Reference",
+      "description": "Documentation section: 98-reference",
+      "path": "[\"subpages\", 8]",
+      "subpages": [
+        {
+          "title": "svelte",
+          "path": "[\"subpages\", 8, \"subpages\", 0]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/action",
+          "path": "[\"subpages\", 8, \"subpages\", 1]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "svelte/animate",
+          "path": "[\"subpages\", 8, \"subpages\", 2]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/attachments",
+          "path": "[\"subpages\", 8, \"subpages\", 3]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/compiler",
+          "path": "[\"subpages\", 8, \"subpages\", 4]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/easing",
+          "path": "[\"subpages\", 8, \"subpages\", 5]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/events",
+          "path": "[\"subpages\", 8, \"subpages\", 6]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/legacy",
+          "path": "[\"subpages\", 8, \"subpages\", 7]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "svelte/motion",
+          "path": "[\"subpages\", 8, \"subpages\", 8]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/reactivity/window",
+          "path": "[\"subpages\", 8, \"subpages\", 9]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "svelte/reactivity",
+          "path": "[\"subpages\", 8, \"subpages\", 10]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "svelte/server",
+          "path": "[\"subpages\", 8, \"subpages\", 11]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/store",
+          "path": "[\"subpages\", 8, \"subpages\", 12]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "svelte/transition",
+          "path": "[\"subpages\", 8, \"subpages\", 13]",
+          "content": {
+            "root": [
+              "<detail_content>"
+            ]
+          }
+        },
+        {
+          "title": "Compiler errors",
+          "path": "[\"subpages\", 8, \"subpages\", 14]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Compiler warnings",
+          "path": "[\"subpages\", 8, \"subpages\", 15]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Runtime errors",
+          "path": "[\"subpages\", 8, \"subpages\", 16]",
+          "content": {
+            "Client errors": "<detail_content>",
+            "Server errors": "<detail_content>",
+            "Shared errors": "<detail_content>"
+          }
+        },
+        {
+          "title": "Runtime warnings",
+          "path": "[\"subpages\", 8, \"subpages\", 17]",
+          "content": {
+            "Client warnings": "<detail_content>",
+            "Shared warnings": "<detail_content>"
+          }
+        },
+        {
+          "title": "Reference",
+          "path": "[\"subpages\", 8, \"subpages\", 18]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    },
+    {
+      "title": "99 Legacy",
+      "description": "Documentation section: 99-legacy",
+      "path": "[\"subpages\", 9]",
+      "subpages": [
+        {
+          "title": "Overview",
+          "path": "[\"subpages\", 9, \"subpages\", 0]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Reactive let/var declarations",
+          "path": "[\"subpages\", 9, \"subpages\", 1]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "02 Legacy Reactive Assignments",
+          "path": "[\"subpages\", 9, \"subpages\", 2]",
+          "content": {
+            "Understanding dependencies": "<detail_content>",
+            "Browser-only code": "<detail_content>"
+          }
+        },
+        {
+          "title": "export let",
+          "path": "[\"subpages\", 9, \"subpages\", 3]",
+          "content": {
+            "Component exports": "<detail_content>",
+            "Renaming props": "<detail_content>"
+          }
+        },
+        {
+          "title": "$$props and $$restProps",
+          "path": "[\"subpages\", 9, \"subpages\", 4]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "10 Legacy On",
+          "path": "[\"subpages\", 9, \"subpages\", 5]",
+          "content": {
+            "Component events": "<detail_content>"
+          }
+        },
+        {
+          "title": "<slot>",
+          "path": "[\"subpages\", 9, \"subpages\", 6]",
+          "content": {
+            "Named slots": "<detail_content>",
+            "Fallback content": "<detail_content>",
+            "Passing data to slotted content": "<detail_content>"
+          }
+        },
+        {
+          "title": "$$slots",
+          "path": "[\"subpages\", 9, \"subpages\", 7]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:fragment>",
+          "path": "[\"subpages\", 9, \"subpages\", 8]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:component>",
+          "path": "[\"subpages\", 9, \"subpages\", 9]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "<svelte:self>",
+          "path": "[\"subpages\", 9, \"subpages\", 10]",
+          "content": {
+            "root": "<detail_content>"
+          }
+        },
+        {
+          "title": "Imperative component API",
+          "path": "[\"subpages\", 9, \"subpages\", 11]",
+          "content": {
+            "Creating a component": "<detail_content>",
+            "`$set`": "<detail_content>",
+            "`$on`": "<detail_content>",
+            "`$destroy`": "<detail_content>",
+            "Component props": "<detail_content>",
+            "Server-side component API": "<detail_content>"
+          }
+        },
+        {
+          "title": "Legacy APIs",
+          "path": "[\"subpages\", 9, \"subpages\", 12]",
+          "content": {
+            "root": []
+          }
+        }
+      ]
+    }
+  ]
+}

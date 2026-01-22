@@ -1,0 +1,272 @@
+{
+  "title": "libsql",
+  "description": "Documentation for libsql",
+  "subpages": [
+    {
+      "title": "Libsql-server admin API documentation",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Routes": "<detail_content>"
+      }
+    },
+    {
+      "title": "Build and run sqld",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Running sqld": "<detail_content>",
+        "Query sqld": "<detail_content>",
+        "Download a prebuilt binary": "<detail_content>",
+        "Build and install with Homebrew": {
+          "1. Add the tap `libsql/sqld` to Homebrew": "<detail_content>",
+          "2. Install the formulae `sqld`": "<detail_content>",
+          "3. Verify that `sqld` works": "<detail_content>"
+        },
+        "Using a prebuilt Docker image": "<detail_content>",
+        "Build from source using Docker / Podman": {
+          "1. Clone this repo": "<detail_content>",
+          "2. Build with Docker": "<detail_content>",
+          "3. Verify the build": "<detail_content>",
+          "4. Create a data volume": "<detail_content>",
+          "5. Run sqld in a container": "<detail_content>",
+          "6. Configure sqld with environment variables": "<detail_content>"
+        },
+        "Build from source using Rust": {
+          "1. Clone this repo": "<detail_content>",
+          "2. Build with cargo": "<detail_content>",
+          "3. Verify the build": "<detail_content>",
+          "4. Run sqld with all defaults": "<detail_content>",
+          "5. Run tests (optional)": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Sqld consistency model",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "Building on top of sqlite": "<detail_content>",
+        "Transactional consistency": "<detail_content>",
+        "Real-time guarantees": "<detail_content>"
+      }
+    },
+    {
+      "title": "Overview",
+      "path": "[\"subpages\", 3]",
+      "content": {
+        "Logical Architecture": {
+          "Reads": "<detail_content>",
+          "Writes": "<detail_content>"
+        },
+        "Server": "<detail_content>"
+      }
+    },
+    {
+      "title": "Docker image quick reference",
+      "path": "[\"subpages\", 4]",
+      "content": {
+        "Launch a primary instance": "<detail_content>",
+        "Launch a replica instance": "<detail_content>",
+        "Running on Apple Silicon": "<detail_content>",
+        "Docker Repository": "<detail_content>"
+      }
+    },
+    {
+      "title": "The Hrana protocol specification (version 1)",
+      "path": "[\"subpages\", 5]",
+      "content": {
+        "Motivation": "<detail_content>",
+        "Usage": "<detail_content>",
+        "Overview": "<detail_content>",
+        "Messages": {
+          "Hello": "<detail_content>",
+          "Request/response": "<detail_content>",
+          "Errors": "<detail_content>"
+        },
+        "Requests": {
+          "Open stream": "<detail_content>",
+          "Close stream": "<detail_content>",
+          "Execute a statement": "<detail_content>",
+          "Execute a batch": "<detail_content>",
+          "Values": "<detail_content>",
+          "Ordering": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "The Hrana protocol specification (version 2)",
+      "path": "[\"subpages\", 6]",
+      "content": {
+        "Version negotiation": "<detail_content>",
+        "Messages": {
+          "Hello": "<detail_content>"
+        },
+        "Requests": {
+          "Store an SQL text on the server": "<detail_content>",
+          "Close a stored SQL text": "<detail_content>",
+          "Execute a sequence of SQL statements": "<detail_content>",
+          "Describe a statement": "<detail_content>"
+        },
+        "Other changes": {
+          "Statement": "<detail_content>",
+          "Statement result": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "The Hrana protocol specification (version 3)",
+      "path": "[\"subpages\", 7]",
+      "content": {
+        "Overview": {
+          "Variants (WebSocket / HTTP)": "<detail_content>",
+          "Encoding": "<detail_content>"
+        },
+        "Hrana over WebSocket": {
+          "Version and encoding negotiation": "<detail_content>",
+          "Overview": "<detail_content>",
+          "Messages": {
+            "Hello": "<detail_content>",
+            "Request/response": "<detail_content>"
+          },
+          "Requests": {
+            "Open stream": "<detail_content>",
+            "Close stream": "<detail_content>",
+            "Execute a statement": "<detail_content>",
+            "Execute a batch": "<detail_content>",
+            "Open a cursor executing a batch": "<detail_content>",
+            "Close a cursor": "<detail_content>",
+            "Fetch entries from a cursor": "<detail_content>",
+            "Store an SQL text on the server": "<detail_content>",
+            "Close a stored SQL text": "<detail_content>",
+            "Execute a sequence of SQL statements": "<detail_content>",
+            "Describe a statement": "<detail_content>",
+            "Get the autocommit state": "<detail_content>"
+          },
+          "Errors": "<detail_content>",
+          "Ordering": "<detail_content>"
+        },
+        "Hrana over HTTP": {
+          "Overview": "<detail_content>",
+          "Version and encoding negotiation": "<detail_content>",
+          "Endpoints": {
+            "Check support for version 3 (JSON)": "<detail_content>",
+            "Check support for version 3 (Protobuf)": "<detail_content>",
+            "Execute a pipeline of requests (JSON)": "<detail_content>",
+            "Execute a pipeline of requests (Protobuf)": "<detail_content>",
+            "Execute a batch using a cursor (JSON)": "<detail_content>",
+            "Execute a batch using a cursor (Protobuf)": "<detail_content>"
+          },
+          "Requests": {
+            "Close stream": "<detail_content>",
+            "Execute a statement": "<detail_content>",
+            "Execute a batch": "<detail_content>",
+            "Execute a sequence of SQL statements": "<detail_content>",
+            "Describe a statement": "<detail_content>",
+            "Store an SQL text on the server": "<detail_content>",
+            "Close a stored SQL text": "<detail_content>",
+            "Get the autocommit state": "<detail_content>"
+          },
+          "Errors": "<detail_content>"
+        },
+        "Shared structures": {
+          "Errors": "<detail_content>",
+          "Statements": "<detail_content>",
+          "Statement results": "<detail_content>",
+          "Batches": {
+            "Conditions": "<detail_content>"
+          },
+          "Batch results": "<detail_content>",
+          "Cursor entries": {
+            "Step results": "<detail_content>",
+            "Errors": "<detail_content>"
+          },
+          "Result of describing a statement": {
+            "Parameters": "<detail_content>",
+            "Columns": "<detail_content>"
+          },
+          "Values": "<detail_content>"
+        },
+        "Protobuf schema": {
+          "Hrana over WebSocket": "<detail_content>",
+          "Hrana over HTTP": "<detail_content>",
+          "Shared structures": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "The sqld HTTP API v1 specification (\"Hrana over HTTP\")",
+      "path": "[\"subpages\", 8]",
+      "content": {
+        "Overview": "<detail_content>",
+        "Execute a statement": "<detail_content>",
+        "Execute a batch": "<detail_content>",
+        "Errors": "<detail_content>"
+      }
+    },
+    {
+      "title": "The sqld HTTP API v2 specification (\"Hrana over HTTP\")",
+      "path": "[\"subpages\", 9]",
+      "content": {
+        "Overview": "<detail_content>",
+        "Check support for version 2": "<detail_content>",
+        "Execute requests on a stream": "<detail_content>",
+        "Requests": {
+          "Close stream": "<detail_content>",
+          "Execute a statement": "<detail_content>",
+          "Execute a batch": "<detail_content>",
+          "Execute a sequence of SQL statements": "<detail_content>",
+          "Describe a statement": "<detail_content>",
+          "Store an SQL text on the server": "<detail_content>",
+          "Close a stored SQL text": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "`sqld` User Guide",
+      "path": "[\"subpages\", 10]",
+      "content": {
+        "Table of Contents": "<detail_content>",
+        "Overview": "<detail_content>",
+        "Replication": {
+          "TLS configuration": "<detail_content>",
+          "Launching a primary server": "<detail_content>",
+          "Launching a replica server": "<detail_content>"
+        },
+        "Client Authentication": "<detail_content>",
+        "Deployment": {
+          "Deploying with Docker": "<detail_content>",
+          "Deploying on Fly": "<detail_content>"
+        },
+        "Incremental snapshots": "<detail_content>",
+        "Multitenancy": {
+          "Path based routing": "<detail_content>",
+          "Wildcard domain for development": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Client Version Metrics",
+      "path": "[\"subpages\", 11]",
+      "content": {
+        "Client version metrics": "<detail_content>"
+      }
+    },
+    {
+      "title": "SQLD HTTP API",
+      "path": "[\"subpages\", 12]",
+      "content": {
+        "Usage": {
+          "The `Value` type": "<detail_content>",
+          "Response format": "<detail_content>",
+          "Routes": {
+            "Queries": {
+              "Body": "<detail_content>",
+              "Response Format": "<detail_content>",
+              "Parameter binding": "<detail_content>"
+            },
+            "Health": "<detail_content>",
+            "Version": "<detail_content>"
+          }
+        }
+      }
+    }
+  ]
+}

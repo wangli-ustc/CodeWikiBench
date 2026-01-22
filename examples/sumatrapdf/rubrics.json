@@ -1,0 +1,314 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Document Processing Engine",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-Format Document Parsing and Rendering",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "PDF Processing Engine",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Text Extraction and Search Engine",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Annotation Subsystem",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Highlight and Text Selection Engine",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Annotation Editor Interface - Visual editing and manipulation tools",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Annotation Persistence Layer - Serializes and saves annotation data back into source PDF files",
+                      "weight": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "eBook Format Handler - Specialized rendering for EPUB, MOBI and other electronic book formats",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "eBook UI Rendering System - Alternative interface optimized for reading experience",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Additional Format Support - XPS, CHM, HEIF and other image format processors",
+              "weight": 1
+            },
+            {
+              "requirements": "Unified UI Framework - Applies consistent interface patterns across different document types",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Document Rendering Pipeline",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Zoom and View Management System",
+              "weight": 3
+            },
+            {
+              "requirements": "Page Navigation Engine - Handles document traversal, positioning and named destinations",
+              "weight": 3
+            },
+            {
+              "requirements": "Presentation Mode Renderer - Full-screen and slideshow capabilities",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Accessibility Layer",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Platform Accessibility API Integration - Exposes document content through Microsoft UI Automation",
+              "weight": 3
+            },
+            {
+              "requirements": "Text-to-Speech Integration - Screen reader compatibility with Microsoft Narrator and other assistive technologies",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "User Interface Framework",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Window and Session Management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Tab Management Engine - Multi-document interface with state persistence",
+              "weight": 3
+            },
+            {
+              "requirements": "Session State Management - Persists open files, viewing history, favorites and last-viewed positions",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Command System Architecture",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Command Registry - Maintains internal commands for all application functions",
+              "weight": 3
+            },
+            {
+              "requirements": "Command Palette Interface - Text-based searching and execution of internal commands",
+              "weight": 2
+            },
+            {
+              "requirements": "Menu and Toolbar Command Dispatcher",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Input Processing System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Keyboard Shortcut Engine - Maps user-defined shortcuts to internal command registry",
+              "weight": 2
+            },
+            {
+              "requirements": "Mouse and Touch Navigation Handler",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Theme and Customization Engine",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Color Theme System - Applies custom color values for various UI elements",
+              "weight": 2
+            },
+            {
+              "requirements": "Toolbar Customization Engine - Dynamically builds toolbar with custom icons based on configuration",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "System Integration and External Control",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Command-Line Interface",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Argument Parser - Controls application startup behavior including file opening, navigation, and printing",
+              "weight": 3
+            },
+            {
+              "requirements": "Developer and Debug Option Handler",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Dynamic Data Exchange (DDE) Server",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "DDE Command Parser - Handles file operations, navigation and view settings from external applications",
+              "weight": 3
+            },
+            {
+              "requirements": "Forward Search Engine - Enables external LaTeX editors to jump to specific document locations",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "External Application Integration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Inverse Search Handler - Invokes configured external editors with file and line number parameters",
+              "weight": 3
+            },
+            {
+              "requirements": "External Viewer Integration - Configurable handlers for specific file types or links",
+              "weight": 1
+            },
+            {
+              "requirements": "Search and Translation Service Integration - User-defined URLs for external web services",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Operating System Integration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "File Association Manager - Registers as default handler for supported file types",
+              "weight": 2
+            },
+            {
+              "requirements": "Printing Subsystem - Document output to physical printers",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration and Settings Management",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Settings Persistence Layer",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Configuration File Parser - Manages settings from SumatraPDF-settings.txt",
+              "weight": 3
+            },
+            {
+              "requirements": "Advanced Settings Engine - Applies complex configurations that modify core application behaviors",
+              "weight": 2
+            },
+            {
+              "requirements": "Deployment Mode Awareness - Adjusts settings storage location based on Installer vs Portable mode",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Restricted Use Configuration",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Policy Enforcement Engine - Disables features like printing, saving, and settings changes in restricted mode",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Application Infrastructure and Deployment",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Installation and Distribution System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Installer Framework - Command-line support for silent and customized deployment",
+              "weight": 2
+            },
+            {
+              "requirements": "Portable Mode Support - Self-contained execution without installation requirements",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Diagnostics and Error Handling",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Crash Reporting System - Collects and submits diagnostic data for application failures",
+              "weight": 2
+            },
+            {
+              "requirements": "Logging and Trace System - Debug information accessible via developer options or external tools",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Build System Architecture",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Premake-based Compilation Framework - Supports multiple build configurations and variants",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Update Management System",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Version Checking and Update Notifications",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

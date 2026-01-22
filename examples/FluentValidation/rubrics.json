@@ -1,0 +1,364 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Validation Engine - The fundamental validation processing system that orchestrates rule definition, execution, and result generation",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Validation Rule Definition and Composition System - Framework for declaring, structuring, and combining validation constraints using fluent interfaces",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Validator Class Abstraction - Base class system that serves as containers for validation rules specific to model types",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "AbstractValidator<T> Implementation - Generic base class providing rule definition infrastructure for type T",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Fluent Rule Declaration - Property targeting using RuleFor() with chainable validation methods",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Built-in Validator Library - Comprehensive set of pre-implemented validation logic for common data constraints",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Existence Validators - Presence and absence validation (NotNull, NotEmpty, Empty, Null)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Comparison Validators - Value comparison logic against constants or other properties (Equal, NotEqual, LessThan, GreaterThan)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Range and Length Validators - Numeric boundaries and string/collection length constraints (Length, MinLength, MaxLength, InclusiveBetween, ExclusiveBetween)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Format and Pattern Validators - Structure and format constraints (RegularExpression, Email, CreditCard)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Type Validation - Data type conformity checks (Enum, EnumName, PrecisionScale)",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Custom Validator Extension System - Architecture for implementing domain-specific validation logic beyond built-in validators",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Inline Predicate Validators - Simple lambda-based custom validation rules defined inline",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Reusable Property Validator Classes - Complex validation logic encapsulated in PropertyValidator inheritance for cross-validator reuse",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Custom Message Placeholder System - Dynamic error message generation with contextual runtime data injection",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Rule Composition and Chaining - System for combining multiple validation constraints and controlling execution flow",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Sequential Rule Execution - Ordered processing of multiple validation rules on the same property",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Rule Reusability and Inclusion - Mechanisms for sharing validation logic across validators using Include() method",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Conditional Rule Application - Context-dependent rule activation using When/Unless predicates",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Dependent Rule Relationships - Inter-rule dependencies where subsequent rules execute only if prerequisites pass",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Validation Execution Control System - Runtime process for applying defined rules with configurable behavior and flow control",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Manual Validation Invocation - Primary execution mechanism through explicit Validate() method calls on validator instances",
+              "weight": 3
+            },
+            {
+              "requirements": "Asynchronous Validation Engine - Non-blocking validation execution supporting I/O-bound operations and async rules",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Async Rule Processing - Concurrent execution of validation logic with async/await support",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Async Testing Framework - Validation testing utilities for asynchronous validation scenarios",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Cascade Mode Management - Configurable validation flow control and early termination behavior",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-Level Cascade Configuration - Cascade mode settings at global, validator class, and individual rule levels",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Stop-on-First-Failure vs Continue-All-Rules - Configurable behavior for handling validation failures within property rule chains",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Selective Validation System - Targeted validation execution for specific properties or rule groups",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "RuleSet-based Validation - Named rule groups allowing selective execution of specific validation scenarios",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Property-Specific Validation - Isolated validation targeting only specified object properties",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Pre-Validation Hooks - Overrideable PreValidate() method for custom logic execution before rule processing",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Complex Object Validation System - Handles nested objects, collections, and inheritance scenarios with recursive validation capabilities",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Nested Object Validation - Recursive validation of complex property structures and object graphs",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Property Chain Navigation - Deep object graph traversal enabling validation of nested complex properties",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Validator Composition - Application of dedicated validators to complex property types for modular validation design",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Collection Validation Engine - Specialized handling of enumerable data structures with element-wise validation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Simple Type Collection Validation - Direct validation rules applied to primitive type collections",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Complex Type Collection Validation - Nested object validation within collections using dedicated validators for each element",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Inheritance Validation Support - Validation behavior across class hierarchies with automatic rule propagation",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Base Class Rule Inheritance - Automatic application of base class validator rules to derived class instances",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Validation Result and Error Management System - Comprehensive handling of validation outcomes, error reporting, and failure processing",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Validation Result Processing - Structured representation and manipulation of validation outcomes with detailed failure information",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Result Object Model - ValidationResult containing IsValid boolean flag and ValidationFailure collection",
+              "weight": 3
+            },
+            {
+              "requirements": "Exception-based Failure Handling - Configurable ValidationException throwing instead of result object return",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom State Attachment - Arbitrary metadata association with validation failures for application-specific data",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Error Message Generation and Customization - Dynamic error message creation with internationalization and templating support",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Customizable Error Messages - Override default messages with custom strings including property name and value placeholders",
+              "weight": 3
+            },
+            {
+              "requirements": "Message Placeholder System - Template-based error message generation with runtime data injection",
+              "weight": 2
+            },
+            {
+              "requirements": "Localization Engine - Integration with .NET localization and resource management for multi-language error messages",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom Error Code Assignment - Unique string-based error codes for structured error identification and categorization",
+              "weight": 2
+            },
+            {
+              "requirements": "Error Severity Classification - Hierarchical failure importance using severity levels (Error, Warning, Info)",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Value Transformation System - Pre-validation data manipulation and normalization capabilities",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Property Value Transformation - Runtime data conversion and sanitization before passing to subsequent validators",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Framework Integration Layer - Seamless integration adapters and extensions for various .NET application frameworks",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "ASP.NET Core Integration - Deep integration with modern ASP.NET Core pipeline and services",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Dependency Injection Integration - Automatic validator discovery, registration, and lifecycle management with IoC containers",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Automatic Validator Registration - Convention-based assembly scanning and validator registration with service collection extensions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Registration Filtering - Selective validator registration based on specified criteria and conditions",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Automatic Model Validation Pipeline - Seamless integration with ASP.NET Core model binding for incoming request validation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Model Binding Integration - Automatic validation trigger for controller action arguments and model parameters",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Action Filter-based Validation - Custom validation execution points in the request processing pipeline",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Client-Side Validation Support - Browser-side validation enablement through metadata generation",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "HTML5 Data Attribute Generation - Automatic generation of data-* attributes for client-side validation libraries",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Minimal API Integration - Validation support for lightweight ASP.NET Core endpoints with helpers and filters",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Legacy Framework Support - Integration packages for older .NET web framework versions",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "ASP.NET MVC 5 Integration - Classic MVC framework validation support with model binding integration",
+              "weight": 1
+            },
+            {
+              "requirements": "ASP.NET WebAPI 2 Integration - REST API validation framework support for legacy web services",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Blazor Integration - Client-side web application validation support with real-time form validation",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Blazor Component Validation - Interactive web component integration with real-time validation feedback",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Development and Testing Support System - Comprehensive tools and utilities for validator development, testing, and advanced customization",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "Validation Testing Framework - Specialized testing utilities and fluent APIs for validator verification and testing",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "TestValidate Method - Fluent testing API providing simplified unit test development for validator classes",
+              "weight": 2
+            },
+            {
+              "requirements": "Asynchronous Testing Support - Testing framework extensions for async validation scenarios and I/O-bound operations",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Advanced Configuration and Extensibility Features - Extended customization mechanisms for complex validation scenarios",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Root Context Data Management - Shared data propagation mechanism allowing arbitrary data flow from initial Validate() call to custom validators",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Pipeline Architecture and Processing Model",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Four-Stage Pipeline Structure (Input → Filter → Output with Codec support)",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Input Stage: Event ingestion and generation from diverse data sources",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-threaded input processing with lifecycle management (start/stop/awaitStop)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Event queuing and buffering mechanisms",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Filter Stage: Sequential data transformation, enrichment, and parsing logic",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Event mutation and enrichment processing capabilities",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Conditional processing logic and control flow (if/else) for dynamic event routing",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Worker threads execute filter stage in topological order with batch processing",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Output Stage: Event delivery to external destinations with reliability guarantees",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Batched event delivery with acknowledgment and commit mechanisms",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Output isolation and error handling patterns",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Back-pressure handling and flow control to prevent buffer overflow",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Codec Layer: Bidirectional serialization/deserialization between byte streams and Events",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Stateless encode/decode operations for data format translation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Codec cloning per-connection for stateful framing (multiline, JSON lines)",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Event Data Model and Field Reference System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Event Object: Fundamental, map-like data structure flowing through the pipeline",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Type-safe field access and mutation operations via programmatic API",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Immutable event structure with controlled mutation capabilities",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Field Reference Grammar: Hierarchical field access with bracket notation syntax",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Field reference parsing and resolution engine with zero-copy reads",
+                  "weight": 3
+                },
+                {
+                  "requirements": "sprintf template engine with field reference interpolation at runtime",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Metadata Field (@metadata): Transient data store for conditional logic, excluded from output",
+              "weight": 2
+            },
+            {
+              "requirements": "Elastic Common Schema (ECS) Compatibility: Event normalization to standardized schema",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Pipeline Configuration and Orchestration",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Declarative Configuration System: DSL for defining pipeline structure and plugin settings",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Configuration parsing into directed acyclic graph of plugin instances",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Plugin parameter validation and type coercion",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Environment variable substitution and templating support",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Multi-Pipeline Execution Engine: Support for multiple concurrent pipelines",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Pipeline-to-pipeline communication with internal event routing",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Complex routing topologies (distributor, isolator, forked-path patterns)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Pipeline lifecycle management with hot-reloading and graceful shutdown",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Plugin Framework and Extensibility System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Dual-Language Plugin Architecture: Ruby and Java plugin development on unified JVM",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Plugin Runtime Contract: Minimal lifecycle API (register/run|filter|decode|encode/close)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Plugin Types: Distinct roles (Input, Filter, Output, Codec) with specific interfaces",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Configuration schema advertisement and introspection at boot",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Ruby Plugin Development Model",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Plugin class inheritance with configuration parameter system",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Code-generated plugin skeleton and RubyGems packaging",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Java Plugin Development Model",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Java plugin API with annotation-based configuration",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Gradle-based build system with JAR packaging and deployment",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Plugin Management and Distribution System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Plugin Manager Utility: Installation, update, and removal of plugins",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "RubyGems and JAR dependency resolution with proxy support",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Offline plugin management and private repository support",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Data Resiliency and Queue Management",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Event Buffering and Queue Systems",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "In-Memory Queue: High-throughput, non-durable buffer for performance-focused use cases",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Configurable batch sizes and buffering strategies",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Back-pressure mechanisms and flow control",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Persistent Queue (PQ): Disk-based, journaled queue with at-least-once delivery guarantees",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Page and checkpoint file management for durability across restarts",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Queue corruption detection and repair utilities (pqcheck/pqrepair)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Garbage collection and disk space management policies",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Dead Letter Queue (DLQ): Error isolation and recovery system",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Failed event capture without blocking main pipeline flow",
+              "weight": 3
+            },
+            {
+              "requirements": "DLQ file rotation, size management, and reprocessing workflows",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Runtime Environment and Execution Engine",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "JVM-based Execution Foundation",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Java Virtual Machine runtime with memory and resource management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Heap and off-heap memory allocation strategies",
+                  "weight": 3
+                },
+                {
+                  "requirements": "JVM tuning parameters and garbage collection optimization",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Worker Thread Management: Parallel event processing with configurable thread pools",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Event ordering control and batch processing optimization",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Queue wiring between stages with thread orchestration",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Process Lifecycle and Dynamic Configuration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Controlled startup and shutdown with event draining to prevent data loss",
+              "weight": 2
+            },
+            {
+              "requirements": "Dynamic configuration reloading without full service restart",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Operational Management and Monitoring Infrastructure",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Monitoring and Metrics Collection",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "REST APIs for querying pipeline performance, throughput, and queue status",
+              "weight": 3
+            },
+            {
+              "requirements": "Integration with Elastic Stack Monitoring (Metricbeat/Elastic Agent)",
+              "weight": 2
+            },
+            {
+              "requirements": "Slowlog functionality for performance analysis and debugging",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Centralized Management Plane",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "REST APIs and UI for pipeline definition management",
+              "weight": 2
+            },
+            {
+              "requirements": "Elasticsearch-based configuration storage and pipeline synchronization",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Security and Authentication Framework",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Transport Layer Security (TLS/SSL) for encrypted communication",
+              "weight": 3
+            },
+            {
+              "requirements": "Authentication mechanisms: basic auth, PKI certificates, and API keys",
+              "weight": 2
+            },
+            {
+              "requirements": "Keystore service for secure credential management with decryption at boot",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Logging and Debugging Infrastructure",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Log4j2-based logging system with dynamic level control",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Deployment and Platform Integration",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-Platform Deployment Support",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Platform artifacts: tar/zip, deb/rpm packages with service management",
+              "weight": 2
+            },
+            {
+              "requirements": "Docker containerization with official images and configuration management",
+              "weight": 2
+            },
+            {
+              "requirements": "Kubernetes orchestration compatibility and Helm chart support",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Horizontal Scaling and Distributed Architecture",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Multi-instance deployment model for parallel processing",
+              "weight": 3
+            },
+            {
+              "requirements": "Inter-node communication for tiered architectures (collector/indexer patterns)",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

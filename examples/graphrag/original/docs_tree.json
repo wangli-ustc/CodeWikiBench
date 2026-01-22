@@ -1,0 +1,558 @@
+{
+  "title": "graphrag",
+  "description": "Documentation for graphrag",
+  "subpages": [
+    {
+      "title": "Blog Posts",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "Cli",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "CLI Reference": "<detail_content>"
+      }
+    },
+    {
+      "title": "Getting Started",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "Install Dependencies": "<detail_content>",
+        "Execute the Indexing Engine": "<detail_content>",
+        "Executing Queries": "<detail_content>"
+      }
+    },
+    {
+      "title": "Getting Started",
+      "path": "[\"subpages\", 3]",
+      "content": {
+        "Requirements": "<detail_content>"
+      }
+    },
+    {
+      "title": "Welcome to GraphRAG",
+      "path": "[\"subpages\", 4]",
+      "content": {
+        "Get Started with GraphRAG 🚀": "<detail_content>",
+        "GraphRAG vs Baseline RAG 🔍": "<detail_content>",
+        "The GraphRAG Process 🤖": {
+          "Index": "<detail_content>",
+          "Query": "<detail_content>",
+          "Prompt Tuning": "<detail_content>"
+        },
+        "Versioning": "<detail_content>"
+      }
+    },
+    {
+      "title": "Visualizing and Debugging Your Knowledge Graph",
+      "path": "[\"subpages\", 5]",
+      "content": {
+        "1. Run the Pipeline": "<detail_content>",
+        "2. Locate the Knowledge Graph": "<detail_content>",
+        "3. Open the Graph in Gephi": "<detail_content>",
+        "4. Install the Leiden Algorithm Plugin": "<detail_content>",
+        "5. Run Statistics": "<detail_content>",
+        "6. Color the Graph by Clusters": "<detail_content>",
+        "7. Resize Nodes by Degree Centrality": "<detail_content>",
+        "8. Layout the Graph": "<detail_content>",
+        "9. Run ForceAtlas2": "<detail_content>",
+        "10. Add Text Labels (Optional)": "<detail_content>"
+      }
+    },
+    {
+      "title": "Config",
+      "description": "Documentation section: config",
+      "path": "[\"subpages\", 6]",
+      "subpages": [
+        {
+          "title": "Env Vars",
+          "path": "[\"subpages\", 6, \"subpages\", 0]",
+          "content": {
+            "Default Configuration Mode (using Env Vars)": "<detail_content>",
+            "Miscellaneous Settings": "<detail_content>"
+          }
+        },
+        {
+          "title": "Configuring GraphRAG Indexing",
+          "path": "[\"subpages\", 6, \"subpages\", 1]",
+          "content": {
+            "Usage": "<detail_content>",
+            "Options": "<detail_content>",
+            "Example": "<detail_content>",
+            "Output": "<detail_content>",
+            "Next Steps": "<detail_content>"
+          }
+        },
+        {
+          "title": "Language Model Selection and Overriding",
+          "path": "[\"subpages\", 6, \"subpages\", 2]",
+          "content": {
+            "Default Model Support": "<detail_content>",
+            "Model Selection Considerations": "<detail_content>",
+            "Using Non-OpenAI Models": {
+              "Proxy APIs": "<detail_content>",
+              "Model Protocol": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Configuring GraphRAG Indexing",
+          "path": "[\"subpages\", 6, \"subpages\", 3]",
+          "content": {
+            "Default Configuration Mode": "<detail_content>"
+          }
+        },
+        {
+          "title": "Config Sections",
+          "path": "[\"subpages\", 6, \"subpages\", 4]",
+          "content": {
+            "Language Model Setup": {
+              "models": {
+                "Fields": "<detail_content>"
+              }
+            },
+            "Input Files and Chunking": {
+              "input": {
+                "Fields": "<detail_content>"
+              },
+              "chunks": {
+                "Fields": "<detail_content>"
+              }
+            },
+            "Outputs and Storage": {
+              "output": {
+                "Fields": "<detail_content>"
+              },
+              "update_index_output": {
+                "Fields": "<detail_content>"
+              },
+              "cache": {
+                "Fields": "<detail_content>"
+              },
+              "reporting": {
+                "Fields": "<detail_content>"
+              },
+              "vector_store": {
+                "Fields": "<detail_content>"
+              }
+            },
+            "Workflow Configurations": {
+              "workflows": "<detail_content>",
+              "embed_text": {
+                "Fields": "<detail_content>"
+              },
+              "extract_graph": {
+                "Fields": "<detail_content>"
+              },
+              "summarize_descriptions": {
+                "Fields": "<detail_content>"
+              },
+              "extract_graph_nlp": {
+                "Fields": "<detail_content>"
+              },
+              "prune_graph": {
+                "Fields": "<detail_content>"
+              },
+              "cluster_graph": {
+                "Fields": "<detail_content>"
+              },
+              "extract_claims": {
+                "Fields": "<detail_content>"
+              },
+              "community_reports": {
+                "Fields": "<detail_content>"
+              },
+              "embed_graph": {
+                "Fields": "<detail_content>"
+              },
+              "umap": {
+                "Fields": "<detail_content>"
+              },
+              "snapshots": {
+                "Fields": "<detail_content>"
+              }
+            },
+            "Query": {
+              "local_search": {
+                "Fields": "<detail_content>"
+              },
+              "global_search": {
+                "Fields": "<detail_content>"
+              },
+              "drift_search": {
+                "Fields": "<detail_content>"
+              },
+              "basic_search": {
+                "Fields": "<detail_content>"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "description": "Documentation section: data",
+      "path": "[\"subpages\", 7]",
+      "subpages": [
+        {
+          "title": "Operation Dulce",
+          "description": "Documentation section: operation_dulce",
+          "path": "[\"subpages\", 7, \"subpages\", 0]",
+          "subpages": [
+            {
+              "title": "About",
+              "path": "[\"subpages\", 7, \"subpages\", 0, \"subpages\", 0]",
+              "content": {
+                "About": "<detail_content>"
+              }
+            },
+            {
+              "title": "Operation: Dulce",
+              "path": "[\"subpages\", 7, \"subpages\", 0, \"subpages\", 1]",
+              "content": {
+                "Chapter 1": "<detail_content>",
+                "Chapter 2": "<detail_content>",
+                "Chapter 3": "<detail_content>",
+                "Chapter 4": "<detail_content>",
+                "Chapter 5": "<detail_content>",
+                "Chapter 6": "<detail_content>",
+                "Chapter 7": "<detail_content>",
+                "Chapter 8": "<detail_content>",
+                "Chapter 9": "<detail_content>",
+                "Chapter 10": "<detail_content>",
+                "Chapter 11": "<detail_content>",
+                "Chapter 12": "<detail_content>",
+                "Chapter 13": "<detail_content>",
+                "Chapter 14": "<detail_content>",
+                "Chapter 15": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Examples Notebooks",
+      "description": "Documentation section: examples_notebooks",
+      "path": "[\"subpages\", 8]",
+      "subpages": [
+        {
+          "title": "Inputs",
+          "description": "Documentation section: inputs",
+          "path": "[\"subpages\", 8, \"subpages\", 0]",
+          "subpages": [
+            {
+              "title": "Operation Dulce",
+              "description": "Documentation section: operation dulce",
+              "path": "[\"subpages\", 8, \"subpages\", 0, \"subpages\", 0]",
+              "subpages": [
+                {
+                  "title": "About",
+                  "path": "[\"subpages\", 8, \"subpages\", 0, \"subpages\", 0, \"subpages\", 0]",
+                  "content": {
+                    "About": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Operation: Dulce",
+                  "path": "[\"subpages\", 8, \"subpages\", 0, \"subpages\", 0, \"subpages\", 1]",
+                  "content": {
+                    "Chapter 1": "<detail_content>",
+                    "Chapter 2": "<detail_content>",
+                    "Chapter 3": "<detail_content>",
+                    "Chapter 4": "<detail_content>",
+                    "Chapter 5": "<detail_content>",
+                    "Chapter 6": "<detail_content>",
+                    "Chapter 7": "<detail_content>",
+                    "Chapter 8": "<detail_content>",
+                    "Chapter 9": "<detail_content>",
+                    "Chapter 10": "<detail_content>",
+                    "Chapter 11": "<detail_content>",
+                    "Chapter 12": "<detail_content>",
+                    "Chapter 13": "<detail_content>",
+                    "Chapter 14": "<detail_content>",
+                    "Chapter 15": "<detail_content>"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Index",
+      "description": "Documentation section: index",
+      "path": "[\"subpages\", 9]",
+      "subpages": [
+        {
+          "title": "Indexing Architecture ",
+          "path": "[\"subpages\", 9, \"subpages\", 0]",
+          "content": {
+            "Key Concepts": {
+              "Knowledge Model": "<detail_content>",
+              "Workflows": "<detail_content>",
+              "LLM Caching": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Bring Your Own Graph",
+          "path": "[\"subpages\", 9, \"subpages\", 1]",
+          "content": {
+            "Tables": {
+              "Entities": "<detail_content>",
+              "Relationships": "<detail_content>"
+            },
+            "Workflow Configuration": "<detail_content>",
+            "Optional Additional Config": {
+              "Text Units": "<detail_content>",
+              "Expanded Config": "<detail_content>",
+              "FastGraphRAG": "<detail_content>"
+            },
+            "Setup": "<detail_content>"
+          }
+        },
+        {
+          "title": "Indexing Dataflow",
+          "path": "[\"subpages\", 9, \"subpages\", 2]",
+          "content": {
+            "The GraphRAG Knowledge Model": "<detail_content>",
+            "The Default Configuration Workflow": "<detail_content>",
+            "Phase 1: Compose TextUnits": "<detail_content>",
+            "Phase 2: Graph Extraction": {
+              "Entity & Relationship Extraction": "<detail_content>",
+              "Entity & Relationship Summarization": "<detail_content>",
+              "Claim Extraction (optional)": "<detail_content>"
+            },
+            "Phase 3: Graph Augmentation": {
+              "Community Detection": "<detail_content>",
+              "Graph Tables": "<detail_content>"
+            },
+            "Phase 4: Community Summarization": {
+              "Generate Community Reports": "<detail_content>",
+              "Summarize Community Reports": "<detail_content>",
+              "Community Reports Table": "<detail_content>"
+            },
+            "Phase 5: Document Processing": {
+              "Augment with Columns (CSV Only)": "<detail_content>",
+              "Link to TextUnits": "<detail_content>",
+              "Documents Table": "<detail_content>"
+            },
+            "Phase 6: Network Visualization (optional)": {
+              "Graph Embedding": "<detail_content>",
+              "Dimensionality Reduction": "<detail_content>"
+            },
+            "Phase 7: Text Embedding": "<detail_content>"
+          }
+        },
+        {
+          "title": "Inputs",
+          "path": "[\"subpages\", 9, \"subpages\", 3]",
+          "content": {
+            "Input Loading and Schema": "<detail_content>",
+            "Formats": {
+              "Plain Text": "<detail_content>",
+              "Comma-delimited": "<detail_content>",
+              "JSON": "<detail_content>"
+            },
+            "Metadata": {
+              "Example": "<detail_content>"
+            },
+            "Chunking and Metadata": {
+              "Input Config": "<detail_content>",
+              "Chunking Config": "<detail_content>",
+              "Examples": {
+                "Text files": "<detail_content>",
+                "CSV files": "<detail_content>",
+                "JSON files": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Indexing Methods",
+          "path": "[\"subpages\", 9, \"subpages\", 4]",
+          "content": {
+            "Standard GraphRAG": "<detail_content>",
+            "FastGraphRAG": "<detail_content>",
+            "Choosing a Method": "<detail_content>"
+          }
+        },
+        {
+          "title": "Outputs",
+          "path": "[\"subpages\", 9, \"subpages\", 5]",
+          "content": {
+            "Shared fields": "<detail_content>",
+            "communities": "<detail_content>",
+            "community_reports": "<detail_content>",
+            "covariates": "<detail_content>",
+            "documents": "<detail_content>",
+            "entities": "<detail_content>",
+            "relationships": "<detail_content>",
+            "text_units": "<detail_content>"
+          }
+        },
+        {
+          "title": "GraphRAG Indexing 🤖",
+          "path": "[\"subpages\", 9, \"subpages\", 6]",
+          "content": {
+            "Getting Started": {
+              "Requirements": "<detail_content>"
+            },
+            "Usage": {
+              "CLI": "<detail_content>",
+              "Python API": "<detail_content>"
+            },
+            "Further Reading": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Prompt Tuning",
+      "description": "Documentation section: prompt_tuning",
+      "path": "[\"subpages\", 10]",
+      "subpages": [
+        {
+          "title": "Auto Prompt Tuning ⚙️",
+          "path": "[\"subpages\", 10, \"subpages\", 0]",
+          "content": {
+            "Prerequisites": "<detail_content>",
+            "Usage": "<detail_content>",
+            "Command-Line Options": "<detail_content>",
+            "Example Usage": "<detail_content>",
+            "Document Selection Methods": "<detail_content>",
+            "Modify Env Vars": "<detail_content>"
+          }
+        },
+        {
+          "title": "Manual Prompt Tuning ⚙️",
+          "path": "[\"subpages\", 10, \"subpages\", 1]",
+          "content": {
+            "Indexing Prompts": {
+              "Entity/Relationship Extraction": {
+                "Tokens": "<detail_content>"
+              },
+              "Summarize Entity/Relationship Descriptions": {
+                "Tokens": "<detail_content>"
+              },
+              "Claim Extraction": {
+                "Tokens": "<detail_content>"
+              },
+              "Generate Community Reports": {
+                "Tokens": "<detail_content>"
+              }
+            },
+            "Query Prompts": {
+              "Local Search": {
+                "Tokens": "<detail_content>"
+              },
+              "Global Search": {
+                "Tokens": "<detail_content>"
+              },
+              "Drift Search": {
+                "Tokens": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Prompt Tuning ⚙️",
+          "path": "[\"subpages\", 10, \"subpages\", 2]",
+          "content": {
+            "Default Prompts": "<detail_content>",
+            "Auto Tuning": "<detail_content>",
+            "Manual Tuning": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Query",
+      "description": "Documentation section: query",
+      "path": "[\"subpages\", 11]",
+      "subpages": [
+        {
+          "title": "DRIFT Search 🔎",
+          "path": "[\"subpages\", 11, \"subpages\", 0]",
+          "content": {
+            "Combining Local and Global Search": "<detail_content>",
+            "Methodology": "<detail_content>",
+            "Configuration": "<detail_content>",
+            "How to Use": "<detail_content>",
+            "Learn More": "<detail_content>"
+          }
+        },
+        {
+          "title": "Global Search 🔎",
+          "path": "[\"subpages\", 11, \"subpages\", 1]",
+          "content": {
+            "Whole Dataset Reasoning": "<detail_content>",
+            "Methodology": "<detail_content>",
+            "Configuration": "<detail_content>",
+            "How to Use": "<detail_content>"
+          }
+        },
+        {
+          "title": "Local Search 🔎",
+          "path": "[\"subpages\", 11, \"subpages\", 2]",
+          "content": {
+            "Entity-based Reasoning": "<detail_content>",
+            "Methodology": "<detail_content>",
+            "Configuration": "<detail_content>",
+            "How to Use": "<detail_content>"
+          }
+        },
+        {
+          "title": "Multi Index Search 🔎",
+          "path": "[\"subpages\", 11, \"subpages\", 3]",
+          "content": {
+            "Multi Dataset Reasoning": "<detail_content>",
+            "How to Use": "<detail_content>"
+          }
+        },
+        {
+          "title": "Query Engine 🔎",
+          "path": "[\"subpages\", 11, \"subpages\", 4]",
+          "content": {
+            "Local Search": "<detail_content>",
+            "Global Search": "<detail_content>",
+            "DRIFT Search": "<detail_content>",
+            "Basic Search": "<detail_content>",
+            "Question Generation": "<detail_content>"
+          }
+        },
+        {
+          "title": "Question Generation ❔",
+          "path": "[\"subpages\", 11, \"subpages\", 5]",
+          "content": {
+            "Entity-based Question Generation": "<detail_content>",
+            "Methodology": "<detail_content>",
+            "Configuration": "<detail_content>",
+            "How to Use": "<detail_content>"
+          }
+        },
+        {
+          "title": "Notebooks",
+          "description": "Documentation section: notebooks",
+          "path": "[\"subpages\", 11, \"subpages\", 6]",
+          "subpages": [
+            {
+              "title": "Overview",
+              "path": "[\"subpages\", 11, \"subpages\", 6, \"subpages\", 0]",
+              "content": {
+                "API Notebooks": "<detail_content>",
+                "Query Engine Notebooks": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

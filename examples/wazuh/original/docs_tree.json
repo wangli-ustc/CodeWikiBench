@@ -1,0 +1,563 @@
+{
+  "title": "wazuh",
+  "description": "Documentation for wazuh",
+  "subpages": [
+    {
+      "title": "Readme",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Introduction ": "<detail_content>"
+      }
+    },
+    {
+      "title": "Summary",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Summary": "<detail_content>",
+        "Development Documentation": "<detail_content>",
+        "Reference Manual": "<detail_content>",
+        "Diagnostic Documentation": "<detail_content>"
+      }
+    },
+    {
+      "title": "Ref",
+      "description": "Documentation section: ref",
+      "path": "[\"subpages\", 2]",
+      "subpages": [
+        {
+          "title": "Readme",
+          "path": "[\"subpages\", 2, \"subpages\", 0]",
+          "content": {
+            "Introduction": "<detail_content>"
+          }
+        },
+        {
+          "title": "Architecture",
+          "path": "[\"subpages\", 2, \"subpages\", 1]",
+          "content": {
+            "Architecture": "<detail_content>"
+          }
+        },
+        {
+          "title": "Backup Restore",
+          "path": "[\"subpages\", 2, \"subpages\", 2]",
+          "content": {
+            "Back Up and Restore": "<detail_content>"
+          }
+        },
+        {
+          "title": "Compatibility",
+          "path": "[\"subpages\", 2, \"subpages\", 3]",
+          "content": {
+            "Compatibility": "<detail_content>"
+          }
+        },
+        {
+          "title": "Configuration",
+          "path": "[\"subpages\", 2, \"subpages\", 4]",
+          "content": {
+            "Configuration": "<detail_content>"
+          }
+        },
+        {
+          "title": "Description",
+          "path": "[\"subpages\", 2, \"subpages\", 5]",
+          "content": {
+            "Description": "<detail_content>"
+          }
+        },
+        {
+          "title": "Glossary",
+          "path": "[\"subpages\", 2, \"subpages\", 6]",
+          "content": {
+            "Glossary": "<detail_content>"
+          }
+        },
+        {
+          "title": "Performance",
+          "path": "[\"subpages\", 2, \"subpages\", 7]",
+          "content": {
+            "Performance": "<detail_content>"
+          }
+        },
+        {
+          "title": "Security",
+          "path": "[\"subpages\", 2, \"subpages\", 8]",
+          "content": {
+            "Security": "<detail_content>"
+          }
+        },
+        {
+          "title": "Uninstall",
+          "path": "[\"subpages\", 2, \"subpages\", 9]",
+          "content": {
+            "Uninstall": "<detail_content>"
+          }
+        },
+        {
+          "title": "Upgrade",
+          "path": "[\"subpages\", 2, \"subpages\", 10]",
+          "content": {
+            "Upgrade": "<detail_content>"
+          }
+        },
+        {
+          "title": "Getting Started",
+          "description": "Documentation section: getting-started",
+          "path": "[\"subpages\", 2, \"subpages\", 11]",
+          "subpages": [
+            {
+              "title": "Readme",
+              "path": "[\"subpages\", 2, \"subpages\", 11, \"subpages\", 0]",
+              "content": {
+                "Getting Started": "<detail_content>"
+              }
+            },
+            {
+              "title": "Installation",
+              "path": "[\"subpages\", 2, \"subpages\", 11, \"subpages\", 1]",
+              "content": {
+                "Installation": "<detail_content>"
+              }
+            },
+            {
+              "title": "Packages",
+              "path": "[\"subpages\", 2, \"subpages\", 11, \"subpages\", 2]",
+              "content": {
+                "Packages": "<detail_content>"
+              }
+            },
+            {
+              "title": "Requirements",
+              "path": "[\"subpages\", 2, \"subpages\", 11, \"subpages\", 3]",
+              "content": {
+                "Requirements": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Modules",
+          "description": "Documentation section: modules",
+          "path": "[\"subpages\", 2, \"subpages\", 12]",
+          "subpages": [
+            {
+              "title": "Readme",
+              "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 0]",
+              "content": {
+                "Modules": "<detail_content>"
+              }
+            },
+            {
+              "title": "Engine",
+              "description": "Documentation section: engine",
+              "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1]",
+              "subpages": [
+                {
+                  "title": "Engine",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1, \"subpages\", 0]",
+                  "content": {
+                    "Introduction": "<detail_content>",
+                    "Data flow": {
+                      "Event": "<detail_content>",
+                      "Policy processing": "<detail_content>",
+                      "Decoding process": "<detail_content>",
+                      "Security enrichment process": "<detail_content>",
+                      "Archiving and alerting process": "<detail_content>",
+                      "Full pipeline": "<detail_content>"
+                    },
+                    "Schema": {
+                      "Configuration": "<detail_content>",
+                      "Implications": "<detail_content>"
+                    },
+                    "Managing the Engine's processing": {
+                      "Namespaces": "<detail_content>",
+                      "Assets Catalog": "<detail_content>",
+                      "Policies and Routes": {
+                        "Architecture": "<detail_content>"
+                      }
+                    },
+                    "Assets": {
+                      "Attributes": "<detail_content>",
+                      "Stages": "<detail_content>",
+                      "Asset types": "<detail_content>",
+                      "Operations": "<detail_content>",
+                      "Execution Graph Summary": "<detail_content>",
+                      "Helper functions": {
+                        "Condition Helpers": "<detail_content>",
+                        "Mapping Helpers": "<detail_content>",
+                        "Transform Helpers": "<detail_content>",
+                        "Parsing rules": "<detail_content>"
+                      },
+                      "Definitions": {
+                        "Restrictions": "<detail_content>",
+                        "Use Cases": "<detail_content>"
+                      },
+                      "Variables": "<detail_content>",
+                      "Log Parsing": "<detail_content>",
+                      "Key Value Databases": {
+                        "Use cases": "<detail_content>"
+                      },
+                      "Dates and Timestamps": "<detail_content>",
+                      "Geolocation": "<detail_content>",
+                      "Decoders": "<detail_content>",
+                      "Rules": "<detail_content>",
+                      "Outputs": "<detail_content>",
+                      "Filters": "<detail_content>"
+                    },
+                    "Stages": {
+                      "Check/Allow": {
+                        "Condition list": "<detail_content>",
+                        "Conditional expression": "<detail_content>"
+                      },
+                      "Parse": {
+                        "Parser expression": "<detail_content>",
+                        "Schema fields and parsers": "<detail_content>",
+                        "End tokens and field expressions": "<detail_content>"
+                      },
+                      "Map": "<detail_content>",
+                      "Normalize/Enrichment": "<detail_content>",
+                      "Output": "<detail_content>"
+                    },
+                    "Parsers": {
+                      "Schema parsers": "<detail_content>"
+                    },
+                    "Debugging": {
+                      "Filtering Logs by Executable Name": "<detail_content>",
+                      "Filtering Logs by Severity": "<detail_content>",
+                      "Traces": "<detail_content>"
+                    },
+                    "F.A.Q": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Api Reference",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1, \"subpages\", 1]",
+                  "content": {
+                    "API Reference": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Architecture",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1, \"subpages\", 2]",
+                  "content": {
+                    "Introduction": "<detail_content>",
+                    "Main Modules": "<detail_content>",
+                    "Module: Server": "<detail_content>",
+                    "Module: Orchestrator": "<detail_content>",
+                    "Module: Backend": "<detail_content>",
+                    "Module: Geo": "<detail_content>",
+                    "Module: KVDB": "<detail_content>",
+                    "Module: Persistent Storage": "<detail_content>",
+                    "Module: Global": "<detail_content>",
+                    "Module: Builder": "<detail_content>",
+                    "Module: API": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Internal Development Tools",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1, \"subpages\", 3]",
+                  "content": {
+                    "Api-communication": "<detail_content>",
+                    "Engine Suite": {
+                      "Key Tools in `engine-suite`:": "<detail_content>"
+                    },
+                    "Engine Test Utils": "<detail_content>",
+                    "Engine Helper Test": "<detail_content>",
+                    "Engine Health Test": "<detail_content>",
+                    "Engine Integration Test": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Summary",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1, \"subpages\", 4]",
+                  "content": {
+                    "Index": {
+                      "Filter": "<detail_content>",
+                      "Map": "<detail_content>",
+                      "Transformation": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Output Reference",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1, \"subpages\", 5]",
+                  "content": {
+                    "File": {
+                      "Signature": "<detail_content>",
+                      "Parameters": "<detail_content>",
+                      "Asset example": "<detail_content>"
+                    },
+                    "Indexer": {
+                      "Signature": "<detail_content>",
+                      "Parameters": "<detail_content>",
+                      "Asset example": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Schema parser reference",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 1, \"subpages\", 6]",
+                  "content": {
+                    "Boolean parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples": "<detail_content>"
+                    },
+                    "Long parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples": "<detail_content>"
+                    },
+                    "Double parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples": "<detail_content>"
+                    },
+                    "Float parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples": "<detail_content>"
+                    },
+                    "Byte parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples": "<detail_content>"
+                    },
+                    "Text parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples: With prefix": "<detail_content>",
+                      "Examples 2: With Prefix and suffix": "<detail_content>"
+                    },
+                    "IP parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples": "<detail_content>"
+                    },
+                    "Date parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Examples: Without locale": "<detail_content>",
+                      "Examples: With locale": "<detail_content>"
+                    },
+                    "Binary parser": {
+                      "Behavior": "<detail_content>",
+                      "Signature": "<detail_content>",
+                      "Example": "<detail_content>"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Inventory Harvester",
+              "description": "Documentation section: inventory-harvester",
+              "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 2]",
+              "subpages": [
+                {
+                  "title": "InventoryHarvester",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 2, \"subpages\", 0]",
+                  "content": {
+                    "Overview": {
+                      "Key Responsibilities": "<detail_content>",
+                      "Data Flow": "<detail_content>",
+                      "Supported modules": "<detail_content>"
+                    },
+                    "Related Epic": "<detail_content>",
+                    "Functional Requirements": "<detail_content>",
+                    "Non-Functional Requirements": "<detail_content>",
+                    "Implementation Restrictions": "<detail_content>",
+                    "Implementation Missing Features": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Api Reference",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 2, \"subpages\", 1]",
+                  "content": {
+                    "API Reference": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Architecture",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 2, \"subpages\", 2]",
+                  "content": {
+                    "Main Components": "<detail_content>",
+                    "High-Level Architecture Diagram": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Settings",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 2, \"subpages\", 3]",
+                  "content": {
+                    "Connection to Wazuh Indexer": "<detail_content>",
+                    "Data to index": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Description",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 2, \"subpages\", 4]",
+                  "content": {
+                    "FIM": {
+                      "Files": "<detail_content>",
+                      "Registries": "<detail_content>"
+                    },
+                    "Inventory": {
+                      "System": "<detail_content>",
+                      "Packages": "<detail_content>",
+                      "Processes": "<detail_content>",
+                      "Ports": "<detail_content>",
+                      "Hardware": "<detail_content>",
+                      "Hotfixes": "<detail_content>",
+                      "Network Protocol": "<detail_content>",
+                      "Network address": "<detail_content>",
+                      "Network interfaces": "<detail_content>",
+                      "Groups": "<detail_content>",
+                      "Users": "<detail_content>"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Utils",
+              "description": "Documentation section: utils",
+              "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 3]",
+              "subpages": [
+                {
+                  "title": "Flatbuffers",
+                  "description": "Documentation section: flatbuffers",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 3, \"subpages\", 0]",
+                  "subpages": [
+                    {
+                      "title": "Flatbuffers",
+                      "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 3, \"subpages\", 0, \"subpages\", 0]",
+                      "content": {
+                        "Flatbuffer schemas": {
+                          "Common AgentInfo table": "<detail_content>",
+                          "FIM Delta table": "<detail_content>",
+                          "FIM Data table": "<detail_content>",
+                          "FIM Attributes table": "<detail_content>",
+                          "Inventory Delta table": "<detail_content>",
+                          "Inventory Provider union table": "<detail_content>",
+                          "Inventory providers": "<detail_content>",
+                          "SyncMsg table": "<detail_content>",
+                          "DataUnion table union": "<detail_content>",
+                          "State table": "<detail_content>",
+                          "AttributesUnion table union": "<detail_content>",
+                          "fim_file table": "<detail_content>",
+                          "fim_registry_key table": "<detail_content>",
+                          "fim_registry_value": "<detail_content>"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Vulnerability Scanner",
+              "description": "Documentation section: vulnerability-scanner",
+              "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4]",
+              "subpages": [
+                {
+                  "title": "Readme",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4, \"subpages\", 0]",
+                  "content": {
+                    "Introduction": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Indexed vulnerabilities ",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4, \"subpages\", 1]",
+                  "content": {
+                    "Ubuntu ": "<detail_content>",
+                    "Centos": "<detail_content>",
+                    "Windows ": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Arquitecture",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4, \"subpages\", 2]",
+                  "content": {
+                    "Main Components": "<detail_content>",
+                    "High-Level diagram": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Configuration ",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4, \"subpages\", 3]",
+                  "content": {
+                    "Connection to Wazuh Indexer": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Events format ",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4, \"subpages\", 4]",
+                  "content": {
+                    "Syscollector event types": "<detail_content>",
+                    "Hotfix events (Only Windows)": {
+                      "Delta event": "<detail_content>",
+                      "Synchronization event": "<detail_content>"
+                    },
+                    "Os events ": {
+                      "Delta events ": "<detail_content>",
+                      "Synchronization events": "<detail_content>"
+                    },
+                    "Package events ": {
+                      "Delta events ": "<detail_content>",
+                      "Synchronization events": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Flatbuffer schemas",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4, \"subpages\", 5]",
+                  "content": {
+                    "Flatbuffer schemas": {
+                      "Common AgentInfo table": "<detail_content>",
+                      "Inventory Delta table": "<detail_content>",
+                      "Inventory Provider union table": "<detail_content>",
+                      "Inventory providers": "<detail_content>",
+                      "SyncMsg table": "<detail_content>",
+                      "DataUnion table union": "<detail_content>",
+                      "State table": "<detail_content>",
+                      "AttributesUnion table union": "<detail_content>",
+                      "Integrity clear table": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Test tools",
+                  "path": "[\"subpages\", 2, \"subpages\", 12, \"subpages\", 4, \"subpages\", 6]",
+                  "content": {
+                    "Compilation ": "<detail_content>",
+                    "Vulnerability Scanner tool ": {
+                      "Database creation ": "<detail_content>",
+                      "Detection ": "<detail_content>",
+                      "Mocking Wazuh-DB information": "<detail_content>"
+                    },
+                    "RocksDB tool ": {
+                      "Inspect databases ": {
+                        "Indexer databases ": "<detail_content>",
+                        "Inventory database": "<detail_content>"
+                      },
+                      "Remove indexed vulnerability and clean databases": {
+                        "Output examples ": "<detail_content>"
+                      }
+                    },
+                    "`databaseFeedManager` Tool": {
+                      "Inject CVEs into the Vulnerability Scanner Database": {
+                        "Output example": "<detail_content>"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

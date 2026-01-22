@@ -1,0 +1,159 @@
+{
+  "total_repositories": 22,
+  "repositories": [
+    {
+      "name": "Chart.js",
+      "url": "https://github.com/chartjs/Chart.js",
+      "commit": "6372280085625b43ef34d7b70f3e86b063d22a10",
+      "pages": 162,
+      "requirements": 61
+    },
+    {
+      "name": "FluentValidation",
+      "url": "https://github.com/FluentValidation/FluentValidation",
+      "commit": "298069b4ef88241013d0573f38e25c936e80685f",
+      "pages": 31,
+      "requirements": 48
+    },
+    {
+      "name": "OpenHands",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "commit": "30604c40fc6e9ac914089376f41e118582954f22",
+      "pages": 78,
+      "requirements": 67
+    },
+    {
+      "name": "electron",
+      "url": "https://github.com/electron/electron",
+      "commit": "828fd59a72e673acf03f878b4f488a40fca46dfe",
+      "pages": 270,
+      "requirements": 92
+    },
+    {
+      "name": "git-credential-manager",
+      "url": "https://github.com/git-ecosystem/git-credential-manager",
+      "commit": "b62021fdd7f0e28bf851580e0afd834976bd79d1",
+      "pages": 27,
+      "requirements": 70
+    },
+    {
+      "name": "graphrag",
+      "url": "https://github.com/microsoft/graphrag",
+      "commit": "a398cc38bb75c17ee37894f2f2a751e2231d9347",
+      "pages": 42,
+      "requirements": 56
+    },
+    {
+      "name": "json",
+      "url": "https://github.com/nlohmann/json",
+      "commit": "4bc4e37f4f56f88b3a80abb7a6508b19a244e803",
+      "pages": 259,
+      "requirements": 57
+    },
+    {
+      "name": "libsql",
+      "url": "https://github.com/tursodatabase/libsql",
+      "commit": "6e55668cdb1d1d7406ea7fd6eea22991ac1ac301",
+      "pages": 13,
+      "requirements": 37
+    },
+    {
+      "name": "logstash",
+      "url": "https://github.com/elastic/logstash",
+      "commit": "895cfa5b14633ae9b9e671105f7b7935c9f2b9f1",
+      "pages": 110,
+      "requirements": 57
+    },
+    {
+      "name": "marktext",
+      "url": "https://github.com/marktext/marktext",
+      "commit": "11c8cc1e1929a7975df39fa5f4503130fef53547",
+      "pages": 46,
+      "requirements": 57
+    },
+    {
+      "name": "material-components-android",
+      "url": "https://github.com/material-components/material-components-android",
+      "commit": "c2051db2a9be2a1e23f1128bfc76a9ff29ede7c4",
+      "pages": 63,
+      "requirements": 96
+    },
+    {
+      "name": "mermaid",
+      "url": "https://github.com/mermaid-js/mermaid",
+      "commit": "82800a2c8461370fe133458c12dd42bdc5dc3871",
+      "pages": 102,
+      "requirements": 67
+    },
+    {
+      "name": "ml-agents",
+      "url": "https://github.com/Unity-Technologies/ml-agents",
+      "commit": "4cf2f49ad0a973c95eb41325aa3a46959f187708",
+      "pages": 58,
+      "requirements": 46
+    },
+    {
+      "name": "puppeteer",
+      "url": "https://github.com/puppeteer/puppeteer",
+      "commit": "c1105f125c71353587a837958c2748097ef2927d",
+      "pages": 606,
+      "requirements": 82
+    },
+    {
+      "name": "qmk_firmware",
+      "url": "https://github.com/qmk/qmk_firmware",
+      "commit": "1a58fce043e7f2e2b938dee03945dabc29e48d73",
+      "pages": 205,
+      "requirements": 110
+    },
+    {
+      "name": "rasa",
+      "url": "https://github.com/RasaHQ/rasa",
+      "commit": "f28c69e4672cd978745f5a73396c79c26017d612",
+      "pages": 112,
+      "requirements": 70
+    },
+    {
+      "name": "storybook",
+      "url": "https://github.com/storybookjs/storybook",
+      "commit": "f739234e9972691f757430404d8988e40b2dcf4c",
+      "pages": 804,
+      "requirements": 78
+    },
+    {
+      "name": "sumatrapdf",
+      "url": "https://github.com/sumatrapdfreader/sumatrapdf",
+      "commit": "cdadfde74471e9b06898e5c1e87edd98b4204597",
+      "pages": 40,
+      "requirements": 40
+    },
+    {
+      "name": "svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "commit": "be645b4d9f84cb7580683c7b2336d1023906c4da",
+      "pages": 101,
+      "requirements": 96
+    },
+    {
+      "name": "trino",
+      "url": "https://github.com/trinodb/trino",
+      "commit": "d1501ee536c0c6883ed960a184ba7b3f9e36a6c3",
+      "pages": 656,
+      "requirements": 68
+    },
+    {
+      "name": "wazuh",
+      "url": "https://github.com/wazuh/wazuh",
+      "commit": "44b7cd33e05abb7730228bb092b23b419ee4f15e",
+      "pages": 46,
+      "requirements": 46
+    },
+    {
+      "name": "x64dbg",
+      "url": "https://github.com/x64dbg/x64dbg",
+      "commit": "134e7ebb26523757ca9042f2a0925024751f42c7",
+      "pages": 553,
+      "requirements": 107
+    }
+  ]
+}

@@ -1,0 +1,729 @@
+{
+  "title": "git-credential-manager",
+  "description": "Documentation for git-credential-manager",
+  "subpages": [
+    {
+      "title": "Readme",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "User documentation": "<detail_content>"
+      }
+    },
+    {
+      "title": "Architecture",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Overview": {
+          "Cross-platform UI": "<detail_content>",
+          "Microsoft authentication": "<detail_content>"
+        },
+        "Asynchronous programming": "<detail_content>",
+        "Command execution": "<detail_content>",
+        "Host provider": "<detail_content>",
+        "Command context": "<detail_content>",
+        "Error handling and tracing": "<detail_content>"
+      }
+    },
+    {
+      "title": "Host provider auto-detection",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "Self-hosted/on-prem detection": "<detail_content>",
+        "Remote URL probing": {
+          "Timeout": "<detail_content>"
+        },
+        "Manual configuration": "<detail_content>"
+      }
+    },
+    {
+      "title": "Azure Managed Identities and Service Principals",
+      "path": "[\"subpages\", 3]",
+      "content": {
+        "Managed Identities": {
+          "How to configure Managed Identities": "<detail_content>"
+        },
+        "Service Principals": {
+          "How to configure Service Principals": {
+            "Authentication with Service Principals": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "Azure Repos: Access tokens and Accounts",
+      "path": "[\"subpages\", 4]",
+      "content": {
+        "Different credential types": {
+          "Azure DevOps personal access tokens": "<detail_content>",
+          "Microsoft identity OAuth tokens": {
+            "User accounts": {
+              "Listing remembered accounts": "<detail_content>",
+              "Using different accounts within a repository": "<detail_content>",
+              "Forget an account": "<detail_content>",
+              "Using different accounts for specific Git remotes": "<detail_content>"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Bitbucket Authentication",
+      "path": "[\"subpages\", 5]",
+      "content": {
+        "Bitbucket Authentication": "<detail_content>"
+      }
+    },
+    {
+      "title": "Bitbucket Authentication, 2FA and OAuth",
+      "path": "[\"subpages\", 6]",
+      "content": {
+        "Multiple User Accounts": "<detail_content>",
+        "On-Premise Bitbucket": "<detail_content>",
+        "OAuth2 Configuration": {
+          "Host Configuration": "<detail_content>",
+          "Client Configuration": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Configuration options",
+      "path": "[\"subpages\", 7]",
+      "content": {
+        "Available settings": {
+          "credential.interactive": {
+            "Compatibility": "<detail_content>",
+            "Example": "<detail_content>"
+          },
+          "credential.trace": {
+            "Example": "<detail_content>"
+          },
+          "credential.traceSecrets": {
+            "Example": "<detail_content>"
+          },
+          "credential.traceMsAuth": {
+            "Example": "<detail_content>"
+          },
+          "credential.debug": {
+            "Example": "<detail_content>"
+          },
+          "credential.provider": {
+            "Example": "<detail_content>"
+          },
+          "credential.authority _(deprecated)_": {
+            "Example": "<detail_content>"
+          },
+          "credential.guiPrompt": {
+            "Example": "<detail_content>"
+          },
+          "credential.guiSoftwareRendering": {
+            "Example": "<detail_content>"
+          },
+          "credential.allowUnsafeRemotes": {
+            "Example": "<detail_content>"
+          },
+          "credential.autoDetectTimeout": {
+            "Example": "<detail_content>"
+          },
+          "credential.allowWindowsAuth": {
+            "Example": "<detail_content>"
+          },
+          "credential.httpProxy _(deprecated)_": {
+            "Example": "<detail_content>"
+          },
+          "credential.bitbucketAuthModes": {
+            "Example": "<detail_content>"
+          },
+          "credential.bitbucketAlwaysRefreshCredentials": {
+            "Example": "<detail_content>"
+          },
+          "credential.bitbucketValidateStoredCredentials": {
+            "Example": "<detail_content>"
+          },
+          "credential.bitbucketDataCenterOAuthClientId": {
+            "Example": "<detail_content>"
+          },
+          "credential.bitbucketDataCenterOAuthClientSecret": {
+            "Example": "<detail_content>"
+          },
+          "credential.gitHubAccountFiltering": {
+            "Example": "<detail_content>"
+          },
+          "credential.gitHubAuthModes": {
+            "Example": "<detail_content>"
+          },
+          "credential.gitLabAuthModes": {
+            "Example": "<detail_content>"
+          },
+          "credential.namespace": {
+            "Example": "<detail_content>"
+          },
+          "credential.credentialStore": {
+            "Example": "<detail_content>"
+          },
+          "credential.cacheOptions": {
+            "Example": "<detail_content>"
+          },
+          "credential.plaintextStorePath": {
+            "Example": "<detail_content>"
+          },
+          "credential.dpapiStorePath": {
+            "Example": "<detail_content>"
+          },
+          "credential.gpgPassStorePath": {
+            "Example": "<detail_content>"
+          },
+          "credential.msauthFlow": {
+            "Example": "<detail_content>"
+          },
+          "credential.msauthUseBroker _(experimental)_": {
+            "Example": "<detail_content>"
+          },
+          "credential.msauthUseDefaultAccount _(experimental)_": {
+            "Example": "<detail_content>"
+          },
+          "credential.useHttpPath": {
+            "Example": "<detail_content>"
+          },
+          "credential.azreposCredentialType": {
+            "Example": "<detail_content>"
+          },
+          "credential.azreposManagedIdentity": "<detail_content>",
+          "credential.azreposServicePrincipal": {
+            "Example": "<detail_content>"
+          },
+          "credential.azreposServicePrincipalSecret": {
+            "Example": "<detail_content>"
+          },
+          "credential.azreposServicePrincipalCertificateThumbprint": {
+            "Example": "<detail_content>"
+          },
+          "credential.azreposServicePrincipalCertificateSendX5C": {
+            "Example": "<detail_content>"
+          },
+          "trace2.normalTarget": {
+            "Example": "<detail_content>"
+          },
+          "trace2.eventTarget": {
+            "Example": "<detail_content>"
+          },
+          "trace2.perfTarget": {
+            "Example": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "Credential stores",
+      "path": "[\"subpages\", 8]",
+      "content": {
+        "Windows Credential Manager": "<detail_content>",
+        "DPAPI protected files": "<detail_content>",
+        "macOS Keychain": "<detail_content>",
+        "[freedesktop.org Secret Service API][freedesktop-secret-service]": "<detail_content>",
+        "GPG/[`pass`][passwordstore] compatible files": {
+          "Headless/TTY-only sessions": "<detail_content>"
+        },
+        "Git's built-in [credential cache][credential-cache]": "<detail_content>",
+        "Plaintext files": "<detail_content>",
+        "Passthrough/no-op (no credential store)": "<detail_content>"
+      }
+    },
+    {
+      "title": "Development and debugging",
+      "path": "[\"subpages\", 9]",
+      "content": {
+        "Building": {
+          "macOS": "<detail_content>",
+          "Windows": "<detail_content>",
+          "Linux": "<detail_content>"
+        },
+        "Debugging": {
+          "Attaching to a running process": "<detail_content>",
+          "Collect trace output": {
+            "`GCM_TRACE`": "<detail_content>",
+            "Git's Trace2 API": {
+              "Supported format targets": "<detail_content>",
+              "Supported events": "<detail_content>"
+            }
+          },
+          "Code coverage metrics": "<detail_content>"
+        },
+        "Linting Documentation": "<detail_content>"
+      }
+    },
+    {
+      "title": "Enterprise configuration defaults",
+      "path": "[\"subpages\", 10]",
+      "content": {
+        "User Freedom": "<detail_content>",
+        "Windows": {
+          "32-bit Windows": "<detail_content>",
+          "64-bit Windows": "<detail_content>"
+        },
+        "macOS": "<detail_content>",
+        "Linux": "<detail_content>"
+      }
+    },
+    {
+      "title": "Environment variables",
+      "path": "[\"subpages\", 11]",
+      "content": {
+        "Available settings": {
+          "GCM_TRACE": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_TRACE_SECRETS": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_TRACE_MSAUTH": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_DEBUG": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_INTERACTIVE": {
+            "Compatibility": "<detail_content>",
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_PROVIDER": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_AUTHORITY _(deprecated)_": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_GUI_PROMPT": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_GUI_SOFTWARE_RENDERING": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_ALLOW_UNSAFE_REMOTES": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_AUTODETECT_TIMEOUT": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_ALLOW_WINDOWSAUTH": {
+            "Example": {
+              "Windows": "<detail_content>",
+              "macOS/Linux": "<detail_content>"
+            }
+          },
+          "GCM_HTTP_PROXY _(deprecated)_": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_BITBUCKET_AUTHMODES": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_BITBUCKET_ALWAYS_REFRESH_CREDENTIALS": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_BITBUCKET_VALIDATE_STORED_CREDENTIALS": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_BITBUCKET_DATACENTER_CLIENTID": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_BITBUCKET_DATACENTER_CLIENTSECRET": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_GITHUB_ACCOUNTFILTERING": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_GITHUB_AUTHMODES": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_GITLAB_AUTHMODES": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_NAMESPACE": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_CREDENTIAL_STORE": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_CREDENTIAL_CACHE_OPTIONS": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_PLAINTEXT_STORE_PATH": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_DPAPI_STORE_PATH": {
+            "Windows": "<detail_content>"
+          },
+          "GCM_GPG_PATH": {
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_MSAUTH_FLOW": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_MSAUTH_USEBROKER _(experimental)_": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_MSAUTH_USEDEFAULTACCOUNT _(experimental)_": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_AZREPOS_CREDENTIALTYPE": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_AZREPOS_MANAGEDIDENTITY": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_AZREPOS_SERVICE_PRINCIPAL": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_AZREPOS_SP_SECRET": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_AZREPOS_SP_CERT_THUMBPRINT": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GCM_AZREPOS_SP_CERT_SEND_X5C": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GIT_TRACE2": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GIT_TRACE2_EVENT": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          },
+          "GIT_TRACE2_PERF": {
+            "Windows": "<detail_content>",
+            "macOS/Linux": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "Frequently asked questions",
+      "path": "[\"subpages\", 12]",
+      "content": {
+        "Authentication problems": {
+          "Q: I got an error trying to push/pull/clone. What do I do now?": "<detail_content>",
+          "Q: I got an error saying unsecure HTTP is not supported": "<detail_content>",
+          "Q: I got an authentication error and I am behind a network proxy": "<detail_content>",
+          "Q: I'm getting errors about picking a credential store on Linux": "<detail_content>"
+        },
+        "About the project": {
+          "Q: How does this project relate to [Git Credential Manager for Windows][gcm-windows] and [Git Credential Manager for Mac and Linux][gcm-linux]?": "<detail_content>",
+          "Q: Does this mean GCM for Windows (.NET Framework-based) is deprecated?": "<detail_content>",
+          "Q: Does this mean the Java-based GCM for Mac/Linux is deprecated?": "<detail_content>",
+          "Q: I want to use SSH": "<detail_content>",
+          "Q: Are HTTP(S) remotes preferred over SSH?": "<detail_content>",
+          "Q: Why did you not just port the existing GCM Windows codebase from .NET Framework to .NET Core?": "<detail_content>",
+          "What level of support does GCM have?": "<detail_content>",
+          "Q: Why does GCM not support operating system/distribution 'X', or Git hosting provider 'Y'?": "<detail_content>"
+        },
+        "Technical": {
+          "Why is the `credential.useHttpPath` setting required for `dev.azure.com`?": "<detail_content>",
+          "Why does GCM take so long at startup the first time?": "<detail_content>",
+          "How do I fix \"Could not create SSL/TLS secure channel\" errors on Windows 7?": "<detail_content>",
+          "How do I use GCM with Windows Subsystem for Linux (WSL)?": "<detail_content>",
+          "Does GCM work with multiple users? If so, how?": "<detail_content>",
+          "How can I disable GUI dialogs and prompts?": "<detail_content>",
+          "How can I extend GUI prompts/integrate prompts with my application?": "<detail_content>",
+          "How do I revoke consent for GCM for GitHub.com?": "<detail_content>",
+          "I used the install from source script to install GCM on my Linux distribution. Now how can I uninstall GCM and its dependencies?": "<detail_content>",
+          "How do I revoke access for a GitLab OAuth application?": "<detail_content>",
+          "Q: What do the `configure` and `unconfigure` commands do?": {
+            "`configure`": "<detail_content>",
+            "`unconfigure`": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "Generic Host Provider OAuth",
+      "path": "[\"subpages\", 13]",
+      "content": {
+        "Registering an OAuth application": "<detail_content>",
+        "Configure GCM": {
+          "Additional configuration": {
+            "Token user name": "<detail_content>",
+            "Include client authentication in headers": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "GitHub Authentication Deprecation",
+      "path": "[\"subpages\", 14]",
+      "content": {
+        "What's going on?": "<detail_content>",
+        "What should I do now?": {
+          "Windows command-line users": "<detail_content>",
+          "Visual Studio users": "<detail_content>",
+          "SSH, macOS, and Linux users": "<detail_content>"
+        },
+        "What if I cannot upgrade Git for Windows?": "<detail_content>",
+        "What if I cannot use Git Credential Manager?": "<detail_content>",
+        "Help! I cannot make any changes to my Windows machine without an Administrator": {
+          "Help! I still cannot or don't want to install anything": "<detail_content>"
+        },
+        "What about GitHub Enterprise Server (GHES)?": "<detail_content>"
+      }
+    },
+    {
+      "title": "GitLab support",
+      "path": "[\"subpages\", 15]",
+      "content": {
+        "Using on another instance": {
+          "Clearing config": "<detail_content>",
+          "Config for popular instances": "<detail_content>"
+        },
+        "Preferences": "<detail_content>",
+        "Caveats": "<detail_content>"
+      }
+    },
+    {
+      "title": "Git Credential Manager Host Provider",
+      "path": "[\"subpages\", 16]",
+      "content": {
+        "Abstract": "<detail_content>",
+        "1. Introduction": {
+          "1.1. Notational Conventions": "<detail_content>",
+          "1.2. Abbreviations": "<detail_content>"
+        },
+        "2. Implementation": {
+          "2.1. Registration": {
+            "2.1.2. Ordering": "<detail_content>"
+          },
+          "2.2. Handling Requests": {
+            "2.2.1. Rejecting Requests": "<detail_content>"
+          },
+          "2.3. Retrieving Credentials": {
+            "2.3.1 Authentication Prompts": "<detail_content>"
+          },
+          "2.4. Storing Credentials": "<detail_content>",
+          "2.5. Erasing Credentials": "<detail_content>",
+          "2.6 `HostProvider` base class": {
+            "2.6.1 `GetServiceName`": "<detail_content>",
+            "2.6.2 `GenerateCredentialAsync`": "<detail_content>"
+          },
+          "2.7. External Metadata": "<detail_content>"
+        },
+        "3. Helpers": {
+          "3.1. Discovery": "<detail_content>"
+        },
+        "4. Error Handling": "<detail_content>",
+        "5. Custom Commands": "<detail_content>",
+        "References": "<detail_content>"
+      }
+    },
+    {
+      "title": "Install instructions",
+      "path": "[\"subpages\", 17]",
+      "content": {
+        "macOS": {
+          "Homebrew :star:": {
+            "Install": "<detail_content>",
+            "Uninstall": "<detail_content>"
+          },
+          "macOS Package": {
+            "Install": "<detail_content>",
+            "Uninstall": "<detail_content>"
+          }
+        },
+        "Linux": {
+          ".NET tool :star:": "<detail_content>",
+          "Debian package": {
+            "Install": "<detail_content>",
+            "Uninstall": "<detail_content>"
+          },
+          "Tarball": {
+            "Install": "<detail_content>",
+            "Uninstall": "<detail_content>"
+          },
+          "Install from source helper script": {
+            "Install": "<detail_content>",
+            "Uninstall": "<detail_content>"
+          }
+        },
+        "Windows": {
+          "Git for Windows :star:": "<detail_content>",
+          "Standalone installation": "<detail_content>",
+          "Uninstall (Windows 10)": "<detail_content>",
+          "Uninstall (Windows 7-8.1)": "<detail_content>",
+          "Windows Subsystem for Linux (WSL)": "<detail_content>"
+        },
+        ".NET tool": "<detail_content>"
+      }
+    },
+    {
+      "title": "Uninstalling after installing from source",
+      "path": "[\"subpages\", 18]",
+      "content": {
+        "All distributions": "<detail_content>",
+        "Debian/Ubuntu": "<detail_content>",
+        "Linux Mint": "<detail_content>",
+        "Fedora/CentOS/RHEL": "<detail_content>",
+        "Alpine": "<detail_content>"
+      }
+    },
+    {
+      "title": "Validating GCM's GPG signature",
+      "path": "[\"subpages\", 19]",
+      "content": {
+        "Debian package": "<detail_content>",
+        "Tarball": "<detail_content>"
+      }
+    },
+    {
+      "title": "Migration Guide",
+      "path": "[\"subpages\", 20]",
+      "content": {
+        "Migrating from Git Credential Manager for Windows": {
+          "GCM_AUTHORITY": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Multiple users",
+      "path": "[\"subpages\", 21]",
+      "content": {
+        "Foundations: Git and Git hosts": "<detail_content>",
+        "People, identities, credentials, oh my": "<detail_content>",
+        "Setting it up": {
+          "Example: fresh clones": "<detail_content>",
+          "Example: existing clones": "<detail_content>"
+        },
+        "Azure DevOps": "<detail_content>",
+        "GitHub": "<detail_content>",
+        "TL;DR: Tell GCM to remember which account to use": "<detail_content>"
+      }
+    },
+    {
+      "title": "Network and HTTP configuration",
+      "path": "[\"subpages\", 22]",
+      "content": {
+        "HTTP Proxy": {
+          "Authenticated proxies": "<detail_content>",
+          "Other proxy options": "<detail_content>",
+          "Bypassing addresses": "<detail_content>"
+        },
+        "TLS Verification": "<detail_content>",
+        "Unsafe Remote URLs": "<detail_content>"
+      }
+    },
+    {
+      "title": "Git Credential Manager Rename",
+      "path": "[\"subpages\", 23]",
+      "content": {
+        "Rename transition": "<detail_content>",
+        "How to update": {
+          "Git for Windows": "<detail_content>",
+          "Windows standalone installer": "<detail_content>",
+          "macOS Homebrew": "<detail_content>",
+          "macOS package": "<detail_content>",
+          "Linux Debian package": "<detail_content>",
+          "Linux tarball": "<detail_content>",
+          "Troubleshooting": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Command-line usage",
+      "path": "[\"subpages\", 24]",
+      "content": {
+        "Commands": {
+          "--help / -h / -?": "<detail_content>",
+          "--version": "<detail_content>",
+          "get / store / erase": "<detail_content>",
+          "configure/unconfigure": "<detail_content>",
+          "azure-repos": "<detail_content>",
+          "github": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Web Account Manager integration",
+      "path": "[\"subpages\", 25]",
+      "content": {
+        "How to enable": "<detail_content>",
+        "Features": "<detail_content>",
+        "Using the current OS account by default": "<detail_content>",
+        "Surprising behaviors": {
+          "For work or school accounts (Azure AD-backed identities)": {
+            "Removing device management": "<detail_content>"
+          },
+          "For Microsoft accounts": "<detail_content>"
+        },
+        "Running as administrator": {
+          "GCM 2.1 and later": "<detail_content>",
+          "Previous versions": "<detail_content>",
+          "Possible solutions": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Windows Subsystem for Linux (WSL)",
+      "path": "[\"subpages\", 26]",
+      "content": {
+        "Configuring WSL with Git for Windows (recommended)": "<detail_content>",
+        "Configuring WSL without Git for Windows": {
+          "Using the user-only GCM installer?": "<detail_content>"
+        },
+        "How it works": "<detail_content>",
+        "Shared configuration": "<detail_content>",
+        "Can I install Git Credential Manager directly inside of WSL?": "<detail_content>"
+      }
+    }
+  ]
+}

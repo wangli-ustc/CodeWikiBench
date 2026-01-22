@@ -1,0 +1,462 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Distributed SQL Query Engine Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Core Query Processing Engine",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Query Execution Model with Coordinator-Worker Architecture",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Coordinator node manages query planning, optimization, and coordination",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Worker nodes execute query fragments (tasks) with parallel processing",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Stage-based execution with split processing and driver management",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Exchange mechanism for inter-node data transfer",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Query Optimizer with Cost-Based Optimization",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Rule-based and cost-based query plan optimization",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Join reordering and distribution strategy selection",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Predicate and projection pushdown to connectors",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Adaptive plan optimizations for runtime adjustments",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Memory and Resource Management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Hierarchical memory pools with spill-to-disk capabilities",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Resource groups for query prioritization and limits",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Task concurrency and worker thread management",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Fault-Tolerant Execution System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Query and task-level retry mechanisms",
+              "weight": 3
+            },
+            {
+              "requirements": "Exchange manager for intermediate result persistence",
+              "weight": 3
+            },
+            {
+              "requirements": "Graceful shutdown and failure recovery",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Pluggable Connector Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Service Provider Interface (SPI) Framework",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Connector metadata and split management interfaces",
+              "weight": 3
+            },
+            {
+              "requirements": "Page source and sink providers for data I/O",
+              "weight": 3
+            },
+            {
+              "requirements": "Type mapping and serialization system",
+              "weight": 2
+            },
+            {
+              "requirements": "Pushdown capability negotiation",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Data Source Connectors",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Relational Database Connectors",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "JDBC-based connectors with query pushdown",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Connection pooling and transaction management",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Big Data and Analytics Connectors",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Object storage connectors (Hive, Iceberg, Delta Lake)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Streaming and real-time connectors (Kafka, Kinesis)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Search and document stores (Elasticsearch, MongoDB)",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Cloud Platform Connectors",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Cloud warehouse connectors (BigQuery, Snowflake, Redshift)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Cloud-native authentication and authorization",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Object Storage Integration",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "File System Abstraction Layer",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-cloud storage support (S3, Azure, GCS, HDFS)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Authentication and security mapping",
+                  "weight": 2
+                },
+                {
+                  "requirements": "File system caching for performance",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Table Format Support",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Columnar format readers (Parquet, ORC)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Transactional table formats (Iceberg, Delta Lake, Hudi)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Schema evolution and time travel capabilities",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Security and Access Control Framework",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-Layer Authentication System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Protocol-level authentication (TLS/HTTPS, certificates)",
+              "weight": 3
+            },
+            {
+              "requirements": "Identity provider integration (LDAP, OAuth2, Kerberos, JWT)",
+              "weight": 3
+            },
+            {
+              "requirements": "Internal cluster security with shared secrets",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Authorization and Access Control",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Pluggable access control systems",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "File-based access control with rule evaluation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "External policy engines (OPA, Ranger)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Role-based access control (RBAC)",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Fine-grained Permission System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Catalog, schema, table, and column-level permissions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Row filtering and column masking",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Function and procedure access control",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "User and Group Management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "User mapping and identity transformation",
+              "weight": 2
+            },
+            {
+              "requirements": "Group provider integration",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "SQL Language Engine and Function System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "ANSI SQL Compliance and Extensions",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Complete DDL/DML statement support",
+              "weight": 3
+            },
+            {
+              "requirements": "Advanced SQL features (CTEs, window functions, pattern matching)",
+              "weight": 2
+            },
+            {
+              "requirements": "Transaction support with ACID properties",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Comprehensive Function Library",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Built-in function categories (math, string, date, JSON, etc.)",
+              "weight": 2
+            },
+            {
+              "requirements": "Aggregate and window functions",
+              "weight": 2
+            },
+            {
+              "requirements": "Specialized functions (geospatial, ML, statistical)",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "User-Defined Function (UDF) Framework",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "SQL UDF support with control flow",
+              "weight": 2
+            },
+            {
+              "requirements": "Python UDF integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Inline and catalog function management",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Type System and Data Handling",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Rich type system with complex types (arrays, maps, rows)",
+              "weight": 3
+            },
+            {
+              "requirements": "Type coercion and conversion mechanisms",
+              "weight": 2
+            },
+            {
+              "requirements": "JSON processing and path expressions",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Administration and Operations Framework",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Configuration Management System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Hierarchical property system with validation",
+              "weight": 3
+            },
+            {
+              "requirements": "Dynamic catalog management",
+              "weight": 2
+            },
+            {
+              "requirements": "Session property management",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Monitoring and Observability",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "JMX metrics and monitoring integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Event listener framework for auditing",
+              "weight": 2
+            },
+            {
+              "requirements": "OpenTelemetry and OpenMetrics support",
+              "weight": 2
+            },
+            {
+              "requirements": "Query execution tracking and statistics",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Web UI and Client Interfaces",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Administrative web interface with query monitoring",
+              "weight": 2
+            },
+            {
+              "requirements": "Command-line interface (CLI) with interactive features",
+              "weight": 2
+            },
+            {
+              "requirements": "JDBC driver with protocol optimization",
+              "weight": 3
+            },
+            {
+              "requirements": "Client protocol with spooling support",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Deployment and Scaling",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Container and Kubernetes deployment support",
+              "weight": 2
+            },
+            {
+              "requirements": "Node scheduling and network topology awareness",
+              "weight": 2
+            },
+            {
+              "requirements": "Plugin system for extensibility",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

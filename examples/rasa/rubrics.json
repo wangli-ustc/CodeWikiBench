@@ -1,0 +1,524 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Conversational AI Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Natural Language Understanding (NLU) Pipeline",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Text Processing and Tokenization",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Language-specific tokenizers (Whitespace, Jieba, MITIE, spaCy) with multi-language support",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Text preprocessing and normalization capabilities",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Feature Extraction and Representation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Dense feature extraction using pre-trained models (ConveRT, LanguageModelFeaturizer, spaCy)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Sparse feature extraction (CountVectors, Regex, LexicalSyntactic)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Pre-trained embedding integration (MITIE, spaCy)",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Intent Classification System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "DIET (Dual Intent Entity Transformer) unified architecture for multi-task learning",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Multi-intent classification capability with confidence scoring",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Fallback mechanisms and out-of-scope detection",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Entity Extraction Engine",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Named entity recognition with roles and groups support",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Multiple extraction methods: rule-based (RegexEntityExtractor), ML-based (CRFEntityExtractor, DIETClassifier), and pre-trained models (SpacyEntityExtractor)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Entity synonym mapping and lookup table integration for normalization",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Response Selection System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "ResponseSelector for retrieval intents (FAQs, chitchat) with context-aware selection",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Dialogue Management System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Conversation State Management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Tracker-based state management storing conversation events and context",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Event-driven architecture capturing user inputs, bot actions, slot changes, and conversation milestones",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Session lifecycle management and restart handling",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Slot-based memory system",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Typed slot system (text, boolean, categorical, float, list, any) with influence on dialogue flow",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Configurable slot mapping mechanisms (entity, text, intent, trigger mappings)",
+                      "weight": 3
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Persistent state storage with configurable Tracker Store backends (InMemory, Redis, MongoDB, DynamoDB, SQL)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Lock Store mechanism for conversation-level concurrency control and race condition prevention",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Policy-Based Action Prediction",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Policy orchestration with priority-based execution allowing rule overrides",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Rule-Based Policy System",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "RulePolicy for deterministic execution of fixed conversation paths and business logic",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Form handling for systematic information collection with validation",
+                      "weight": 3
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Machine Learning Policies",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "TEDPolicy (Transformer Embedding Dialogue) for generalized conversation handling and multi-turn context modeling",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "MemoizationPolicy for exact pattern matching from training stories",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "UnexpecTED Intent Policy for out-of-scope detection and handling",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "Form-Based Information Gathering",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Dynamic slot validation with custom mappings and unhappy path handling",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Form activation, deactivation, and loop-based collection mechanisms",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Action Execution System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Action Server Architecture",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Custom Action Framework with HTTP-based communication and event-driven execution",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Tracker and domain access for actions with external service integration capabilities",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Action Server endpoint for connecting to independent custom action services",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Built-in Default Actions",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Session management actions (action_restart, action_listen, action_default_fallback)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Form and slot manipulation actions for conversation flow control",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Response Generation System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Template-based response actions (utter_...) with variable substitution and conditional variations",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Rich response support including text, buttons, images, and custom payloads",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Channel-specific response formatting and adaptation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "External NLG Server endpoint for delegated response generation",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration and Data Management",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Domain Schema Definition",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Central domain.yml schema defining assistant capabilities (intents, entities, slots, actions, responses)",
+              "weight": 3
+            },
+            {
+              "requirements": "Slot type definitions and mapping configurations",
+              "weight": 3
+            },
+            {
+              "requirements": "Response template definitions with metadata and variations",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Training Data Management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "NLU Training Data with examples, synonyms, regexes, and lookup tables",
+              "weight": 3
+            },
+            {
+              "requirements": "Dialogue Training Data",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Stories for example conversation paths and ML policy training",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Rules for fixed behavior patterns that override ML predictions",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "YAML-based training data format with validation and migration tools",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Model Configuration System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "NLU pipeline configuration with component sequence and hyperparameters",
+              "weight": 3
+            },
+            {
+              "requirements": "Policy configuration for dialogue management with priority settings",
+              "weight": 3
+            },
+            {
+              "requirements": "Graph Recipe format for complex, non-linear model architectures with custom components",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Training and Model Management",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Graph-Based Training Architecture",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Component dependency resolution and execution graph management",
+              "weight": 3
+            },
+            {
+              "requirements": "Incremental training capabilities for model updates without full retraining",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Model Storage and Deployment",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Multi-backend model storage (local, S3, GCS, Azure) with remote loading capabilities",
+              "weight": 3
+            },
+            {
+              "requirements": "Model versioning and artifact management",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Testing and Evaluation Framework",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Automated testing suite (rasa test) for NLU performance, dialogue prediction, and end-to-end flows",
+              "weight": 3
+            },
+            {
+              "requirements": "Cross-validation and held-out test set evaluation with metrics reporting",
+              "weight": 2
+            },
+            {
+              "requirements": "Data validation (rasa data validate) for training data integrity and consistency",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "External Integrations and Communication",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Channel Connector System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Built-in connectors for messaging platforms (Slack, Facebook, Telegram, Twilio, Webex)",
+              "weight": 3
+            },
+            {
+              "requirements": "Voice channel support (Twilio Voice, IVR) and custom website integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom connector framework for extending to new platforms",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "HTTP API and Communication Layer",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "REST and WebSocket APIs for conversation management and model operations",
+              "weight": 3
+            },
+            {
+              "requirements": "Authentication and security (JWT, token-based) for API access control",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Event Streaming and Integration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Event Broker endpoints for streaming to message queues (Kafka, RabbitMQ, SQL)",
+              "weight": 2
+            },
+            {
+              "requirements": "Asynchronous event processing and analytics integration",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Development and Operations Framework",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Command Line Interface (CLI)",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Unified toolset for assistant lifecycle (init, train, interactive, run, data management)",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Deployment and Scaling Infrastructure",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Containerization support with official Docker images and Docker Compose configurations",
+              "weight": 2
+            },
+            {
+              "requirements": "Kubernetes and OpenShift deployment with Helm charts for production scaling",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Monitoring and Observability",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "OpenTelemetry-based distributed tracing for performance monitoring and bottleneck identification",
+              "weight": 2
+            },
+            {
+              "requirements": "Conversational analytics with event-based data pipeline and BI integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Marker-based conversation pattern detection and analytics",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Enterprise Security and Compliance Features",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "PII Management and Data Protection",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Rule-based PII detection and anonymization in logs and event streams",
+              "weight": 2
+            },
+            {
+              "requirements": "Compliance-focused event stream anonymization",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Secrets and Credential Management",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "HashiCorp Vault integration for secure credential management",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Multi-tenant Architecture (Spaces)",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Domain-specific conversation spaces with filtering and context switching",
+              "weight": 2
+            },
+            {
+              "requirements": "Space activation and tenant isolation mechanisms",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

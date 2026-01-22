@@ -1,0 +1,512 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Git Credential Helper Protocol Implementation and Core Execution Flow",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Git credential helper command implementation",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Implements the 'get' command to find and return a credential for a given remote URL",
+              "weight": 3
+            },
+            {
+              "requirements": "Implements the 'store' command to persist a credential provided by Git",
+              "weight": 3
+            },
+            {
+              "requirements": "Implements the 'erase' command to delete a stored credential for a given remote URL",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Git configuration system integration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Provides a 'configure' command to set itself as the system-wide or user-specific credential helper in Git's configuration",
+              "weight": 2
+            },
+            {
+              "requirements": "Provides an 'unconfigure' command to remove its configuration from Git",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Command context and request processing",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Parses input from Git (protocol, host, path) to understand the credential request",
+              "weight": 3
+            },
+            {
+              "requirements": "Loads system configuration to inform the execution flow",
+              "weight": 2
+            },
+            {
+              "requirements": "Executes an asynchronous, pipeline-based architecture for processing commands",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Host Provider Framework and Git Service Detection",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Generic HostProvider abstraction and registration system",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Providers implement methods to generate, store, and erase credentials for their specific service",
+              "weight": 3
+            },
+            {
+              "requirements": "Provider registration and ordering system for matching priority",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Request handling and rejection logic",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Service name generation and credential mapping",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Git hosting service auto-detection mechanism",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Remote URL probing to identify service type (GitHub, Azure Repos, etc.)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Configurable timeout for remote URL probing to prevent hangs",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Self-hosted and on-premise service instance detection",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Manual override of host provider via configuration (credential.provider)",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Multi-account and identity management per host provider",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Associates specific user accounts with individual repository remotes or paths",
+              "weight": 2
+            },
+            {
+              "requirements": "Account listing and forgetting mechanisms",
+              "weight": 2
+            },
+            {
+              "requirements": "Per-repository and per-remote account binding",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Authentication Provider Ecosystem for Git Hosting Services",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Microsoft ecosystem authentication",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Azure DevOps/Repos Provider with multiple authentication types",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Microsoft identity platform OAuth tokens for user accounts",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Personal Access Tokens (PATs) management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Azure Managed Identity authentication for non-interactive scenarios",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Azure Service Principal authentication with secrets and certificates",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Certificate thumbprint validation",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "X5C certificate chain handling",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "Windows Account Manager (WAM) integration",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Broker authentication support for seamless SSO experience",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Automatic use of currently signed-in OS account",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Administrator privilege handling",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "GitHub Provider with OAuth and token management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "OAuth-based authentication and Personal Access Token support",
+              "weight": 3
+            },
+            {
+              "requirements": "Account filtering and multi-account support",
+              "weight": 2
+            },
+            {
+              "requirements": "Authentication mode selection",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Bitbucket Provider with comprehensive authentication support",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "OAuth2 authentication and 2FA support",
+              "weight": 3
+            },
+            {
+              "requirements": "Multiple user account management",
+              "weight": 2
+            },
+            {
+              "requirements": "On-premise Bitbucket Data Center support with OAuth2 client configuration",
+              "weight": 2
+            },
+            {
+              "requirements": "Credential validation and refresh mechanisms",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "GitLab Provider with instance-specific configuration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "OAuth-based authentication for GitLab instances",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom instance configuration management",
+              "weight": 2
+            },
+            {
+              "requirements": "Authentication preference handling",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Generic OAuth Provider for custom Git hosting services",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "OAuth application registration framework for any OAuth2-compliant host",
+              "weight": 2
+            },
+            {
+              "requirements": "Token user name and client authentication configuration",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Multi-Platform Credential Storage Abstraction",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Pluggable credential store backend system",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Selection of specific credential store backend via configuration (credential.credentialStore)",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Platform-native secure storage backends",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Windows Credential Manager and DPAPI-protected file integration",
+              "weight": 3
+            },
+            {
+              "requirements": "macOS Keychain integration",
+              "weight": 3
+            },
+            {
+              "requirements": "Linux Secret Service API integration via freedesktop.org specification",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Cross-platform and fallback storage mechanisms",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "GPG-encrypted files compatible with the pass utility",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Headless/TTY session support for automated environments",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Git built-in in-memory credential cache integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Plaintext file storage with security warnings for insecure environments",
+              "weight": 1
+            },
+            {
+              "requirements": "No-op/passthrough store that does not persist credentials",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration and Runtime Environment Management",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Layered configuration model with defined precedence",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Environment variables with GCM_* prefix have highest precedence",
+              "weight": 3
+            },
+            {
+              "requirements": "Git configuration settings (credential.*) as primary configuration method",
+              "weight": 3
+            },
+            {
+              "requirements": "Enterprise-wide default settings through system-level configuration files",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Namespace and credential isolation mechanisms",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Multi-user support with credential separation",
+              "weight": 2
+            },
+            {
+              "requirements": "HTTP path-based credential differentiation",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Network behavior configuration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "HTTP proxy support including authenticated proxies and bypass configuration",
+              "weight": 2
+            },
+            {
+              "requirements": "TLS/SSL certificate verification controls for specific environments",
+              "weight": 2
+            },
+            {
+              "requirements": "Mechanism to allow connections to unencrypted (HTTP) remote URLs",
+              "weight": 1
+            },
+            {
+              "requirements": "Windows authentication integration",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Cross-Platform User Interface and Interaction System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "GUI prompt system with platform adaptation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Interactive authentication dialog management for OAuth login flows",
+              "weight": 2
+            },
+            {
+              "requirements": "Software rendering fallback for compatibility",
+              "weight": 1
+            },
+            {
+              "requirements": "Mechanism to disable all interactive UI prompts for headless environments (credential.interactive)",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Cross-environment integration support",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Windows Subsystem for Linux (WSL) integration",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Cross-boundary credential sharing between WSL and Windows host",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Shared configuration management across WSL boundary",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Debugging, Diagnostics, and Tracing Infrastructure",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Comprehensive tracing system with multiple output formats",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Git Trace2 API integration for structured event logging",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Multiple format target support (JSON, text, etc.)",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Event and performance metric collection",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "GCM-specific trace output with configurable secret filtering",
+              "weight": 2
+            },
+            {
+              "requirements": "Legacy tracing support via environment variables (GCM_TRACE)",
+              "weight": 1
+            },
+            {
+              "requirements": "Microsoft authentication-specific tracing capabilities",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Error handling and recovery mechanisms",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "requirements": "Installation, Deployment, and Distribution System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Platform-specific installation and distribution methods",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Git for Windows integration as primary distribution channel",
+              "weight": 3
+            },
+            {
+              "requirements": "Package manager integration (Homebrew, APT, etc.)",
+              "weight": 2
+            },
+            {
+              "requirements": ".NET tool distribution support",
+              "weight": 2
+            },
+            {
+              "requirements": "Source compilation support for custom builds",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Security verification and integrity",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "GPG signature verification for release artifacts",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

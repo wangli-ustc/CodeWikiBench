@@ -1,0 +1,1098 @@
+{
+  "title": "sumatrapdf",
+  "description": "Documentation for sumatrapdf",
+  "content": {},
+  "metadata": {
+    "type": "root",
+    "path": "/home/anhnh/CodeWikiBench/data/sumatrapdf/original/docs"
+  },
+  "subpages": [
+    {
+      "title": "Md",
+      "description": "Documentation section: md",
+      "content": {},
+      "metadata": {
+        "type": "directory",
+        "path": "/home/anhnh/CodeWikiBench/data/sumatrapdf/original/docs/md"
+      },
+      "subpages": [
+        {
+          "title": "Accessibility and Text-to-Speech",
+          "description": null,
+          "content": {
+            "Accessibility in SumatraPDF plugin": "Accessibility features are considered experimental and accessibility is not enabled at the moment in the SumatraPDF plugin.",
+            "Usage": {
+              "Microsoft Narrator": [
+                "Start Microsoft Narrator",
+                "Start SumatraPDF",
+                "Open document in SumatraPDF",
+                "Select text. Microsoft Narrator will now read out the selected text."
+              ]
+            },
+            "Supported configurations": {
+              "Supported file types": "PDF, XPS, DjVu",
+              "Supported Clients": [
+                "Microsoft Narrator"
+              ],
+              "Unsupported Clients": [
+                "[NVDA](https://community.nvda-project.org/)"
+              ]
+            }
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 0]"
+        },
+        {
+          "title": "Advanced Options Settings",
+          "description": null,
+          "content": {
+            "Advanced options / settings": "SumatraPDF has many [advanced settings](https://www.sumatrapdfreader.org/settings/settings) to customize look and behavior.\n\nTo open advanced settings file:\n\n['menu `Settings` / `Advanced options...`', 'or with Command Palette: `Ctrl + K`, type `adv` to narrow down to command, press `Enter` to select `Advanced Options...` command']\n\nThis opens a settings text file in default .txt editor. Make changes and save the file.\n\nTo reset to default settings, delete settings file. SumatraPDF will re-create it with default values.\n\nMost settings take effect immediately after saving the settings file. Some settings (e.g. `UseTabs`) require closing and re-starting SumatraPDF.\n\nDocumentation for all settings is at [https://www.sumatrapdfreader.org/settings/settings](https://www.sumatrapdfreader.org/settings/settings)\n\nHere are some things you can customize:\n\n['[keyboard shortcuts](Customizing-keyboard-shortcuts.md)', 'width of tab with `Tab Width`', 'window background color with `FixedPageUI.BackgroundColor`', 'color used to highlight text with `FixedPageUI.SelectionColor`', 'hide scrollbars with `FixedPageUI.HideScrollbars`']\n\nAdvanced settings file also stores the history and state of opened files so that we can e.g. re-open on the page"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 1]"
+        },
+        {
+          "title": "Build system",
+          "description": null,
+          "content": {
+            "When to run premake": "Premake re-generates Visual Studio project files from `premake5.*.lua` files.\n\nYou only need to do that if you add or remove source files.\n\nTo re-generate:\n\n['install [Go](https://golang.org/)', 'make changes to `premake5.*.lua` files, most likely `premake5.files.lua`', 'run `.\\\\doit.bat -premake` which runs a Go program in `do` directory with `-premake` flag']\n\nRelevant files:\n\n```\nPS C:\\Users\\kjk\\src\\sumatrapdf> ls *.lua\nMode                LastWriteTime         Length Name\n----                -------------         ------ ----\n-a----         4/24/2020 12:20 AM          22947 premake5.files.lua\n-a----          5/4/2020  7:51 PM          23565 premake5.lua\n```",
+            "Customizing build": "Sometimes we want to customize the build with `#ifdef`. We could do it by adding additional configurations, but that can spiral out of control quickly.\n\nInstead we have `src\\utils\\BuildConfig.h` file. It's empty by default but you can changed it to add your `#define` customization.",
+            "Build variants": "We have `Debug`, `Release` and `ReleaseAnalyze` configurations. `ReleaseAnalyze` runs code analysis.\n\nWe have platforms:\n\n['`Win32` : 32-bit build', '`x64` : 64-bit build', '`x64_asan` : 64-build with additional runtime [Address Sanitizers](https://devblogs.microsoft.com/cppblog/addresssanitizer-asan-for-windows-with-msvc/) checks. Only 64-bit build for simplicity']",
+            "How official builds are made": "I use a Go program in `do` directory, executed with `.\\doit.bat -build-pre-rel` or `.\\doit.bat -build-release`."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 2]"
+        },
+        {
+          "title": "Command Palette",
+          "description": null,
+          "content": {
+            "Command Palette": "**Available in version 3.4 or later.**\n\nUse `Ctrl + K` to invoke command palette:\n\n![Command Palette](img/command-palette.png)\n\nCommand palette is fast and convenient way to:\n\n['access all SumatraPDF functionality', 'open previously opened files', 'switch to another tab']\n\nHow to use it:\n\n['press\\xa0`Ctrl-K`\\xa0to show command palette window', 'enter text to narrow down list of matches', '`up` / `down` arrow navigate between matches', '`Enter`\\xa0to execute selected match (or double-click with mouse)', '`Escape`\\xa0to close the window (or click outside of it)']\n\nThe list contains:\n\n['list of currently opened files (tabs)', 'list of recently opened files', '[commands](Commands.md)']"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 3]"
+        },
+        {
+          "title": "Command-line arguments",
+          "description": null,
+          "content": {
+            "List of command line options": [
+              "`-presentation` : start in presentation view",
+              "`-fullscreen` : start in full screen view",
+              "`-new-window` : when opening a file, always open it in a new window, as opposed to in a tab (**ver 3.2+**)",
+              "`-appdata <directory>` : set custom directory where we'll store `SumatraPDF-settings.txt` file and thumbnail cache",
+              "`-restrict` : runs in restricted mode where you can disable features that require access to file system, registry and the internet. Useful for kiosk-like usage. Read more detailed documentation."
+            ],
+            "Navigation options": [
+              "`-named-dest <destination-name>` : searches the first indicated file for a destination or a table-of-contents entry (or starting with version 3.1 also a page label) matching destination-name and scrolls the document to it. Combine with -reuse-instance if the document is already open.",
+              "`-page <pageNo>` : scrolls the first indicated file to the indicated page. Combine with -reuse-instance if the document is already open.",
+              "`-view <view-mode>` : set view mode for the first indicated file. Available view modes:",
+              [
+                "`\"single page\"`",
+                "`\"continuous single page\"`",
+                "`facing`",
+                "`\"continuous facing\"`",
+                "`\"book view\"`",
+                "`\"continuous book view\"`"
+              ],
+              "Notice that options with space have to be surrounded by \"\" quotes.",
+              "Combine with `-reuse-instance` if the document is already open.",
+              "`-zoom <zoom-level>` : Sets the zoom level for the first indicated file. Alternatives are \"fit page\", \"fit width\", \"fit content\" or any percentage value. Combine with -reuse-instance if the document is already open.",
+              "`-scroll <x,y>` : Scrolls to the given coordinates for the first indicated file. Combine with `-reuse-instance` if the document is already open.",
+              "`search <term>` : Start a search for a given term when opening a document e.g. `SumatraPDF.exe -search \"foo\" bar.pdf`. **Ver 3.4+**"
+            ],
+            "Send DDE commands": [
+              "`-dde cmd` : send [DDE commands](DDE-Commands.md) to currently running instance e.g. `-dde '[Open(\"C:\\Users\\kjk\\foo.pdf\")]'`. Make sure to properly quote arguments. File paths must be absolute. **Ver 3.5+**."
+            ],
+            "Printing options": [
+              "`-print-to-default` : prints all files indicated on this command line to the system default printer. After printing, SumatraPDF exits immediately (check the error code for failure).",
+              "`-print-to <printer-name>` : prints all files indicated on this command line to the named printer. After printing, SumatraPDF exits immediately (check the error code for failure). E.g. `-print-to \"Microsoft XPS Document Writer\"` prints all indicated files to the XPS virtual printer.",
+              "`-print-settings <settings-list>`",
+              [
+                "used in combination with `-print-to` and `-print-to-default`. Allows to tweak some of the printing related settings without using the Print dialog. The settings-list is a comma separated list of page ranges and advanced options such as",
+                [
+                  "`even` or `odd`.",
+                  "`portrait` or `landscape` : can provide 90 degree rotation of contents (NOT the rotation of paper which must be pre-set by the choice of printer defaults)",
+                  "`noscale`, `shrink` and `fit`",
+                  "`color` or `monochrome`",
+                  "`duplex`, `duplexshort`, `duplexlong` and `simplex`",
+                  "`bin=<num or name>` : select tray to print to",
+                  "`paper=<page size>` : page size is `A2`, `A3`, `A4`, `A5`, `A6`, `letter`, `legal`, `tabloid`, `statement`"
+                ],
+                "e.g. `-print-settings \"1-3,5,10-8,odd,fit,bin=2\"` prints pages 1, 3, 5, 9 (i.e. the odd pages from the ranges 1-3, 5-5 and 10-8) and scales them so that they fit into the printable area of the paper.",
+                "`-print-settings \"3x\"` : prints the document 3 times"
+              ],
+              "`-silent` : used in combination with `-print-to` and `-print-to-default`. Silences any error messages related to command line printing.",
+              "`-print-dialog` : displays the Print dialog for all the files indicated on this command line.",
+              "`-exit-when-done` : used in combination with `-print-dialog` (and `-stress-test`). Exits SumatraPDF after the Print dialog has been dismissed and the document printed."
+            ],
+            "Options related to forward/inverse search (for LaTeX editors)": [
+              "`-forward-search \"<sourcepath>\" <line> \"<pdfpath>\"`: performs a forward search from a LaTeX source file to a loaded PDF document (using PdfSync or SyncTeX). This is an alternative to the ForwardSearch DDE command. E.g. -forward-search \"/path/to/main.tex\" 123 \"/path/to/main.pdf\" highlights all text related to line 123 in main.tex.",
+              "`-reuse-instance` : tells an already open SumatraPDF to load the indicated files. If there are several running instances, behavior is undefined. Only needed when communicating with SumatraPDF through DDE (use the ReuseInstance setting instead otherwise).",
+              "`-inverse-search <command-line>` : sets the command line to be used for performing an inverse search from a PDF document (usually back to a LaTeX source file). The inverse search command line can also be set from the Setting dialog. Use the variable %f for the current filename and %l for the current line.\n[Deprecated]: This setting is exposed in the Options dialog after the first PDF document with corresponding .synctex or .pdfsync file has been loaded. Alternatively, use the corresponding advanced setting instead.",
+              "`-fwdsearch-offset <offset> -fwdsearch-width <width> -fwdsearch-color <hexcolor> -fwdsearch-permanent <flag>` : allows to customize the forward search highlight. Set the offset to a positive number to change the highlight style to a rectangle at the left of the page (instead of rectangles over the whole text). The flag for `-fwdsearch-permanent` can be 0 (make the highlight fade away, default) or 1.\n[Deprecated]: Use the corresponding advanced settings instead."
+            ],
+            "Developer options": [
+              "`-console` : Opens a console window alongside SumatraPDF for accessing (MuPDF) debug output.",
+              "`-stress-test <path> [file-filter] [range] [cycle-count]`",
+              [
+                "Renders all pages of the indicated file/directory for stability and performance testing. E.g.:"
+              ],
+              "```\n-stress-test file1.pdf 25x\n-stress-test file2.pdf 1-3\n-stress-test dir *.pdf;*.xps 15- 3x\n```",
+              "renders file1.pdf 25 times, renders pages 1 to 3 of file2.pdf and renders all but the first 14 PDF and XPS files from dir 3 times.",
+              "`-bench <filepath> [page-range]` : Renders all pages (or just the indicated ones) for the given file and then outputs the required rendering times for performance testing and comparisons. Often used together with `-console`."
+            ],
+            "Deprecated options": "The following options just set values in the settings file and may be removed in any future version:\n\n['`-bg-color <hexcolor>` : changes the yellow background color to a different color. See e.g. [html-color-codes.info](https://html-color-codes.info/) for a way to generate the hexcode for a color. E.g. `-bg-color #999999` changes the color to gray.\\n[Deprecated]: Use [MainWindowBackground](https://www.sumatrapdfreader.org/settings/settings.html#MainWindowBackground) setting instead.', '`-esc-to-exit` : enables the Escape key to quit SumatraPDF. Deprecated: Use the [EscToExit](https://www.sumatrapdfreader.org/settings.html#EscToExit) setting instead.', '`-set-color-range <text-hexcolor> <background-hexcolor>` : Uses the given two colors for foreground and background and maps all other colors used in a document in between these two. E.g. `-set-color-range #dddddd #333333` displays soft white text on a dark gray background. [Deprecated]: Use the TextColor and BackgroundColor settings for FixedPageUI instead.', '`-lang <language-code>` : sets the UI language. See [/scripts/trans_langs.py] (https://github.com/sumatrapdfreader/sumatrapdf/blob/master/scripts/trans_langs.py) for the list of available language codes. E.g. -lang de. [Deprecated]: Use the `UiLanguage` setting instead.', '`-manga-mode <mode>` : enables or disables \"Manga mode\" for reading (mainly Japanese) comic books from right to left. Mode must be \"true\" or 1 for enabling and \"false\" or 0 for disabling this feature.', '`-invert-colors`']\n\nDeprecated: Use the [CbxMangaMode](https://www.sumatrapdfreader.org/settings.html#ComicBookUI_CbxMangaMode) setting for ComicBookUI instead."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 4]"
+        },
+        {
+          "title": "Commands",
+          "description": null,
+          "content": {
+            "File": "```\nCommand IDs,Keyboard shortcuts,Command Palette,Notes\nCmdClose,\"Ctrl + W, Ctrl + F4\",Close Document,\nCmdCloseCurrentDocument,q,Close Current Document,\nCmdCommandPalette,Ctrl + K,Command Palette,\nCmdDuplicateInNewWindow,Shift + Ctrl + N,Open Current Document In New Window,\nCmdExit,Ctrl + Q,Exit Application,\nCmdMoveFrameFocus,F6,Move Frame Focus,\nCmdNewWindow,Ctrl + N,Open New SumatraPDF Window,\nCmdOpenFile,Ctrl + O,Open File...,\nCmdOpenNextFileInFolder,Shift + Ctrl + Right,Open Next File In Folder,\nCmdOpenPrevFileInFolder,Shift + Ctrl + Left,Open Previous File In Folder,\nCmdOpenSelectedDocument,,Open Selected Document,\nCmdPinSelectedDocument,,Pin Selected Document,\nCmdPrint,Ctrl + P,Print Document...,\nCmdProperties,Ctrl + D,Show Document Properties...,\nCmdReloadDocument,r,Reload Document,\nCmdRenameFile,F2,Rename File...,\nCmdReopenLastClosedFile,Shift + Ctrl + T,Reopen Last Closed,\nCmdSaveAs,Ctrl + S,Save File As...,\nCmdToggleCursorPosition,m,Toggle Cursor Position,\nCmdShowInFolder,,Show File In Folder...,\nCmdToggleBookmarks,\"Shift + F12, F12\",Toggle Bookmarks,\nCmdToggleTableOfContents,,Toggle Table Of Contents,ver 3.6+\nCmdCollapseAll,,Collapse All,\nCmdExpandAll,,Expand All,\nCmdOpenEmbeddedPDF,,Open Embedded PDF,\nCmdSaveEmbeddedFile,,Save Embedded File...,\nCmdCreateShortcutToFile,,Create .lnk Shortcut,\nCmdSelectAll,Ctrl + A,Select All,\nCmdCopyComment,,Copy Comment,\nCmdCopyImage,,Copy Image,\nCmdCopyLinkTarget,,Copy Link Target,\nCmdCopySelection,\"Ctrl + C, Ctrl + Insert\",Copy Selection,\nCmdCopyFilePath,,Copy File Path,ver 3.5+\nCmdDeleteFile,,Delete Currently Opened File, ver 3.6+\n```",
+            "Search": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdFindFirst,Ctrl + F,Find\nCmdFindMatch,,Find: Match Case\nCmdFindNext,F3,Find Next\nCmdFindNextSel,Ctrl + F3,Find Next Selection\nCmdFindPrev,Shift + F3,Find Previous\nCmdFindPrevSel,Shift + Ctrl + F3,Find Previous Selection\n```",
+            "Viewing": "```\nCommand IDs,Keyboard shortcuts,Command Palette,Notes\nCmdBookView,Ctrl + 8,Book View,\nCmdFacingView,Ctrl + 7,Facing View,\nCmdInvertColors,i,Invert Colors,\nCmdRotateLeft,\"[, Shift + Ctrl + Subtract\",Rotate Left,\nCmdRotateRight,\"], Shift + Ctrl + Add\",Rotate Right,\nCmdSinglePageView,Ctrl + 6,Single Page View,\nCmdToggleContinuousView,c,Toggle Continuous View,\nCmdToggleFullscreen,\"f, Shift + Ctrl + L, F11\",Toggle Fullscreen,\nCmdToggleMangaMode,,Toggle Manga Mode,\nCmdToggleMenuBar,F9,Toggle Menu Bar,\nCmdTogglePageInfo,Shift + i,Show / Hide Current Page Number,\nCmdToggleScrollbars,,Toggle Scrollbars,\nCmdToggleToolbar,F8,Toggle Toolbar,\nCmdToggleFrequentlyRead,,Toggle Frequently Read,ver 3.5+\nCmdSelectNextTheme,,Select Next Theme,ver 3.5+\nCmdToggleLinks,,Toggle Show Links, Toggle drawing blue rectangle around links\n```",
+            "Tabs": "```\nCommand IDs,Keyboard shortcuts,Command Palette,Notes\nCmdCloseAllTabs,,Close All Tabs,ver 3.6+\nCmdCloseTabsToTheLeft,,Close Tabs To The Left,ver 3.6+\nCmdCloseTabsToTheRight,,Close Tabs To The Right,ver 3.6+\nCmdCloseOtherTabs,,Close Other Tabs,ver 3.6+\nCmdNextTab,Ctrl + PageUp,Next Tab,\nCmdPrevTab,Ctrl + PageDown,Previous Tab,\nCmdMoveTabRight,Ctrl + Shift + PageUp,Move Tab Right,ver 3.6+\nCmdMoveTabLeft,Ctrl + Shift + PageDown,Move Tab Left,ver 3.6+\nCmdNextTabSmart,Ctrl + Tab,Smart tab Switch,ver 3.6+\nCmdPrevTabSmart,Ctrl + Shift + Tab,Smart tab Switch,ver 3.6+\n```",
+            "Navigation": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdScrollUp,\"k, Up\",Scroll Up\nCmdScrollDown,\"j, Down\",Scroll Down\nCmdScrollLeft,\"h, Left\",Scroll Left\nCmdScrollRight,\"l, Right\",Scroll Right\nCmdScrollUpHalfPage,Shift + Up,Scroll Up By Half Page\nCmdScrollDownHalfPage,Shift + Down,Scroll Down By Half Page\nCmdScrollUpPage,\"Ctrl + Up, PageUp, Shift + Return, Shift + Space\",Scroll Up By Page\nCmdScrollDownPage,\"Ctrl + Down, PageDown, Return, Space\",Scroll Down By Page\nCmdScrollLeftPage,Shift + Left,Scroll Left By Page\nCmdScrollRightPage,Shift + Right,Scroll Right By Page\nCmdGoToFirstPage,\"Ctrl + Home, Home\",First Page\nCmdGoToLastPage,\"Ctrl + End, End\",Last Page\nCmdGoToPrevPage,\"p\",Previous Page\nCmdGoToNextPage,\"n\",Next Page\nCmdGoToPage,\"g, Ctrl + G\",Go to Page...\nCmdNavigateBack,\"Alt + Left, Backspace\",Navigate Back\nCmdNavigateForward,\"Alt + Right, Shift + Backspace\",Navigate Forward\n```",
+            "Favorites": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdFavoriteAdd,Ctrl + B,Add Favorite\nCmdFavoriteDel,,Delete Favorite\nCmdFavoriteToggle,,Toggle Favorites\n```",
+            "Presentation": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdTogglePresentationMode,\"Ctrl + L, Shift + F11, F5\",View: Presentation Mode\nCmdPresentationBlackBackground,.,Presentation Black Background\nCmdPresentationWhiteBackground,w,Presentation White Background\n```",
+            "Annotations": "```\nCommand IDs,Keyboard shortcuts,Command Palette,Notes\nCmdCreateAnnotCaret,,Create Caret Annotation,\nCmdCreateAnnotCircle,,Create Circle Annotation,\nCmdCreateAnnotFileAttachment,,Create File Attachment Annotation,\nCmdCreateAnnotFreeText,,Create Free Text Annotation,\nCmdCreateAnnotHighlight,\"a, A\",Create Highlight Annotation,\nCmdCreateAnnotInk,,Create Ink Annotation,\nCmdCreateAnnotLine,,Create Line Annotation,\nCmdCreateAnnotLink,,Create Link Annotation,\nCmdCreateAnnotPolygon,,Create Polygon Annotation,\nCmdCreateAnnotPolyLine,,Create Poly Line Annotation,\nCmdCreateAnnotPopup,,Create Popup Annotation,\nCmdCreateAnnotRedact,,Create Redact Annotation,\nCmdCreateAnnotSquare,,Create Square Annotation,\nCmdCreateAnnotSquiggly,,Create Squiggly Annotation,\nCmdCreateAnnotStamp,,Create Stamp Annotation,\nCmdCreateAnnotStrikeOut,,Create Strike Out Annotation,\nCmdCreateAnnotText,,Create Text Annotation,\nCmdCreateAnnotUnderline,\"u, U\",Create Underline Annotation,\nCmdDeleteAnnotation,Delete,Delete Annotation,\nCmdEditAnnotations,,Edit Annotations,\nCmdSaveAnnotations,Shift + Ctrl + S,Save Annotations to existing PDF,\nCmdSaveAnnotationsNewFile,,Save Annotations to new PDF,ver 3.6+\n```",
+            "Zoom": "```\nCommand IDs,Keyboard shortcuts,Command Palette,Notes\nCmdToggleZoom,z,Toggle Zoom,\nCmdZoomActualSize,Ctrl + 1,Zoom: Actual Size,\nCmdZoomCustom,Ctrl + Y,Zoom: Custom...,\nCmdZoomFitContent,Ctrl + 3,Zoom: Fit Content,\nCmdZoomFitPage,Ctrl + 0,Zoom: Fit Page,\nCmdZoomFitPageAndSinglePage,,Zoom: Fit Page and Single Page,\nCmdZoomFitWidth,Ctrl + 2,Zoom: Fit Width,\nCmdZoomFitWidthAndContinuous,,Zoom: Fit Width And Continuous,\nCmdZoomIn,Ctrl + Add,Zoom In,\nCmdZoomOut,Ctrl + Subtract,Zoom Out,\nCmdZoom100,,Zoom: 100%,\nCmdZoom12_5,,Zoom: 12.5%,\nCmdZoom125,,Zoom: 125%,\nCmdZoom150,,Zoom: 150%,\nCmdZoom1600,,Zoom: 1600%,\nCmdZoom200,,Zoom: 200%,\nCmdZoom25,,Zoom: 25%,\nCmdZoom3200,,Zoom: 3200%,\nCmdZoom400,,Zoom: 400%,\nCmdZoom50,,Zoom: 50%,\nCmdZoom6400,,Zoom: 6400%,\nCmdZoom8_33,,Zoom: 8.33%,\nCmdZoom800,,Zoom: 800%,\n```",
+            "External app": "```\nCommand IDs,Keyboard shortcuts,Command Palette,Notes\nCmdOpenWithExplorer,,Open Directory In Explorer,ver 3.5+\nCmdOpenWithDirectoryOpus,,Open Directory In Directory Opus,ver 3.5+\nCmdOpenWithTotalCommander,,Open Directory In Total Commander,ver 3.5+\nCmdOpenWithDoubleCommander,,Open Directory In Double Commander,ver 3.5+\nCmdOpenWithAcrobat,,Open in Adobe Acrobat,\nCmdOpenWithFoxIt,,Open in Foxit Reader,\nCmdOpenWithFoxItPhantom,,Open in Foxit Phantom,\nCmdOpenWithHtmlHelp,,Open in Microsoft HTML Help,\nCmdOpenWithPdfDjvuBookmarker,,Open in Pdf&Djvu Bookmarker,\nCmdOpenWithPdfXchange,,Open in PDF-XChange,\nCmdOpenWithXpsViewer,,Open in Microsoft Xps Viewer,\nCmdTranslateSelectionWithDeepL,,Translate Selection With DeepL,\nCmdTranslateSelectionWithGoogle,,Translate Selection with Google,\nCmdSearchSelectionWithBing,,Search Selection with Bing,\nCmdSearchSelectionWithGoogle,,Search Selection with Google,\nCmdSearchSelectionWithWikipedia,,Search Selection with Wikipedia,ver 3.6+\nCmdSearchSelectionWithGoogleScholar,,Search Selection with Goolge Scholar,ver 3.6+\nCmdSendByEmail,,Send Document By Email...,\nCmdInvokeInverseSearch,,Invoke Inverse Search,ver 3.6+\n\n```",
+            "System": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdAdvancedOptions,,Advanced Options (Settings)...\nCmdAdvancedSettings,,Advanced Options (Settings)...\nCmdChangeLanguage,,Change Language...\nCmdCheckUpdate,,Check For Updates\nCmdClearHistory,,Clear History\nCmdContributeTranslation,,Contribute Translation\nCmdForgetSelectedDocument,,Remove Selected Document From History\nCmdOptions,,Options...\nCmdShowLog,,Show Logs\n```",
+            "Help": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdHelpOpenManual,F1,Help: Manual\nCmdHelpOpenKeyboardShortcuts,,Help: Keyboard Shortcuts\nCmdHelpAbout,,Help: About SumatraPDF\nCmdHelpOpenManualOnWebsite,,Help: Manual On Website\nCmdHelpVisitWebsite,,Help: SumatraPDF Website\n```",
+            "Debug": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdDebugCrashMe,,Debug: Crash Me\nCmdDebugDownloadSymbols,,Debug: Download Symbols\nCmdDebugShowNotif,,Debug: Show Notification\nCmdDebugStartStressTest,,Debug: Start Stress Test\nCmdDebugTestApp,,Debug: Test App\nCmdDebugTogglePredictiveRender,,Debug: Toggle Predictive Rendering\nCmdDebugToggleRtl,,Debug: Toggle Rtl\nCmdNone,,Do nothing\n```",
+            "Deprecated or internal": "```\nCommand IDs,Keyboard shortcuts,Command Palette\nCmdDebugCorruptMemory,,don't use\nCmdOpenWithKnownExternalViewerFirst,,don't use\nCmdOpenWithKnownExternalViewerLast,,don't use\nCmdSelectionHandler,,use SelectionHandlers advanced setting instead\nCmdSetTheme,,don't use\nCmdViewWithExternalViewer,,don't use\nCmdSaveAttachment,,don't use\nCmdOpenAttachment,,don't use\n```"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 5]"
+        },
+        {
+          "title": "Configure For Restricted Use",
+          "description": null,
+          "content": {
+            "Configure for restricted use": "SumatraPDF can be configured for restricted use. \n\nA restricted mode is useful if you want to use SumatraPDF as a bundled viewer for your program's documentation or in kiosk mode\n\nIn restricted mode some actions that are not appropriate in such context are disabled:\n\n['opening new files', 'launching URLs from with PDF document', 'text and image selection', 'printing', 'changing default settings', 'saving to disk', 'automatic and manual update checks', 'a history of recently opened files', 'TeX preview support', 'registering as a default PDF viewer', 'opening with Adobe Acrobat', 'e-mailing PDF']\n\nTo restrict SumatraPDF put file `sumatrapdfrestrict.ini` in the same directory where `SumatraPDF.exe` is.\n\nHere's a [full documentation of available options](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/docs/sumatrapdfrestrict.ini)."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 6]"
+        },
+        {
+          "title": "Contribute to SumatraPDF",
+          "description": null,
+          "content": {
+            "Getting the sources and compiling": "You'll need latest Visual Studio. A [free Community edition](https://www.visualstudio.com/vs/community/) will work.\n\nGet the sources from [https://github.com/sumatrapdfreader/sumatrapdf](https://github.com/sumatrapdfreader/sumatrapdf)\n\nOpen `vs2022/SumatraPDF.sln` compile and run.\n\nRead more about our [build system](Build-system.md).",
+            "Contribute to SumatraPDF": "We use a standard GitHub model:\n\n['fork [https://github.com/sumatrapdfreader/sumatrapdf](https://github.com/sumatrapdfreader/sumatrapdf)', 'submit pull request', \"I'll review the code, provide the feedback and merge it when it's ready\"]\n\nBefore you start working on a significant addition, it's a good idea to first discuss it in [issue tracker](https://github.com/sumatrapdfreader/sumatrapdf/issues).",
+            "Bug reports? Feature requests? Questions?": "You can use [issue tracker](https://github.com/sumatrapdfreader/sumatrapdf/issues) for development related topics or [forums](https://www.sumatrapdfreader.org/forum.html) for general topics.",
+            "Info for new developers": "Info to orient new developers to Sumatra code base.\n\nYou should install Go ([https://golang.org/dl/](https://golang.org/dl/)).\n\nMany tasks are automated with Go program in `do` directory. Run `doit.bat` for easy running of that program. use different cmd-line args to trigger different functions.\n\nTo build, use latest Visual Studio and open `vs2022\\SumatraPDF.sln` solution. Look at different targets and configurations.\n\nDon't edit the solution directly. To learn how to make changes (add files, change compilation flags etc.) see info about [build system](Build-system.md).\n\nWe use [GitHub Actions](https://help.github.com/en/actions) for a CI system. See `.github` directory. Most importantly it builds a 64-bit release version on every checkin to catch build errors and uploads it to storage and makes available via [https://www.sumatrapdfreader.org/prerelease](https://www.sumatrapdfreader.org/prerelease)\n\nOverview of the directories:\n\n['`src` : main Sumatra code', '`mupdf` : library used to parse / render PDF files (from [https://mupdf.com/](https://mupdf.com/))', '`ext` : other third-party libraries (some are needed for mupdf, some for Sumatra code)', '`do` : Go program that automates common tasks. Invoke with `doit.bat`']"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 7]"
+        },
+        {
+          "title": "Contribute translation",
+          "description": null,
+          "content": {
+            "The meaning of & in translations": "& means that the following character is the hot key. For example, `&File` means that `f` key is a hot key in menu items etc. Hot keys are rendered with underline in menu items (although it can be disabled system-wide).\n\nYou don’t have to add hot keys in translations - those are for convenience and easier use with a keyboard.\n\nIn translated text a different character could be an accelerator.\n\nSee [https://github.com/sumatrapdfreader/sumatrapdf/discussions/2919](https://github.com/sumatrapdfreader/sumatrapdf/discussions/2919) for more information."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 8]"
+        },
+        {
+          "title": "Corrupted Installation",
+          "description": null,
+          "content": {
+            "Corrupted installation": "If you're reading this, you might have been told by SumatraPDF that you have a corrupted installation.\n\n**How can that happen?**\n\nSumatraPDF comes in two flavors: a portable version and an installer.\n\nA portable version is a self-contained executable and cannot be corrupted.\n\nAn installer needs to be run to be properly installed. Part of it is extracting `libmupdf.dll` library.\n\nThere are 2 possible problem:\n\n['`libmupdf.dll` is missing', \"`libmupdf.dll` is there but its version doesn't match the version of `SumatraPDF.exe`\"]\n\n**How to solve the problem?**\n\nIf you want to place SumatraPDF in any location, under any name, use the self-contained portable flavor.\n\nIf you insist on using the installable version, just install it. The installer will run if it has `-install` in the name of the .exe (which it will if you download [official build](https://www.sumatrapdfreader.org/download-free-pdf-viewer)).\n\nIf you rename the `.exe`, you can force running the installer with `-install` option.\n\nAlternatively, you can extract `libmupdf.dll` and all other files with `-x` option."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 9]"
+        },
+        {
+          "title": "Customize External Viewers",
+          "description": null,
+          "content": {
+            "Customize external viewers": "SumatraPDF makes it easy for you to open current document in a different program.\n\nFor example, if you also have Adobe Reader installed, you can use `File` menu to open PDF document you're viewing in Adobe Reader. We auto-detect some popular apps (Adobe, Foxit, PDF X-Change etc.).\n\nYou can add custom viewers using [advanced settings](https://www.sumatrapdfreader.org/settings/settings.html).\n\nTo configure an external viewer:\n\n['use `Settings / Advanced Settings...` menu to open configuration file', 'modify`ExternalViewers` section']\n\nRelevant settings:\n\n```\nExternalViewers [\n  [\n    CommandLine =\n    Name =\n    Filter =\n\n    // ver 3.6+:\n    Key = \n  ]\n]\n```\n\nExample:\n\n```\nExternalViewers [\n  [\n    CommandLine = \"C:\\Program Files\\FoxitReader\\FoxitReader.exe\" /A page=%p \"%1\"\n    Name = Foxit &Reader\n    Filter = *.pdf\n    Key = Ctrl + m\n  ]\n]\n```\n\n`CommandLine` is a full path of executable to open a file with arguments.\n\nArguments can use special values:\n\n['`\"%1\"` : will be replaced with a full path of the current document', '`%p` : will be replaced with current page number. Not all viewers support page numbers', '`\"%d\"` : will be replaced with directory of the current document. Useful for launching file managers. Available in version **3.5** and later']\n\nPlease make sure to use quotes around file / directory special values (i.e. `\"%1\"` and `\"%d\"`) to avoid issues with file paths that have spaces in them.\n\n`Name` will be displayed in `File` menu.\n\n`Filter` restricts which files can be opened by the reader. For example:\n\n['to only activate it for PDF files, use `*.pdf`', 'to activate for PNG and JPEG files, use `*.png;*.jpg;*.jpeg`', 'to allow all files, use `*` (useful for file managers)']\n\n`Key` is optional and is a keyboard shortcut to invoke that viewer. Available in **3.6** and later."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 10]"
+        },
+        {
+          "title": "Customize search / translation services",
+          "description": null,
+          "content": {
+            "Adding more services": "You can add more web services using [advanced settings](https://www.sumatrapdfreader.org/settings/settings.html).\n\nTo configure an external reader:\n\n['use `Settings / Advanced Settings...` menu to open configuration file', 'modify `SelectionHandlers` section']\n\nHere's an example of adding [DuckDuckGo](https://duckduckgo.com/) search engine:\n\n```\nSelectionHandlers [\n  [\n    URL = https://duckduckgo.com/?ia=web&q=${selection}\n    Name = &DuckDuckGo\n    Key = Ctrl + t\n  ]\n]\n```\n\n`URL` is the website that will be launched. `${selection}` will be replaced with (URL-encoded) current selection.\n\n`Name` is what shows in the menu. You can use `&` characters to add Windows hot-key for keyboard-only invocation.\n\n**Ver3.6+**: `Key` is a keyboard shorcut in the same format as in [Shortcuts](Customizing-keyboard-shortcuts.md) advanced setting."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 11]"
+        },
+        {
+          "title": "Customize Theme Colors",
+          "description": null,
+          "content": {
+            "Customize theme (colors)": "**Available in version 3.6 or later.**\n\nYou can change colors of SumatraPDF UI by creating a custom theme using `Themes` [advanced setting](Advanced-options-settings.md).\n\nTo create a theme:\n\n['use `Settings` / `Advanced Options...` menu (or `Ctrl + K` Command Palette, type `adv` to narrow down and select `Advanced Options...` command)', 'this opens default .txt editor with advanced settings file', 'find `Themes` array and add new shortcut definitions']\n\nExample of customization:\n\n```\nThemes [\n    [\n        Name = My Dark Theme\n        TextColor = #bac9d0\n        BackgroundColor = #263238\n        ControlBackgroundColor = #263238\n        LinkColor = #8aa3b0\n        ColorizeControls = true\n    ]\n]\n```\n\n`TextColor` and `BackgroundColor` are for main window color and color of text.\n\nIf you use `I` (`CmdInvertColors`) they will also be used to replace white background / black text color when renderign PDF/ePub documents.\n\n`ControlBackgroundColor` is for background of Windows controls (buttons, window frame, menus, list controls etc.).\n\n`LinkColor` is a color for links. Typically it's blue.\n\n`ColorizeControls` should be `true`. If `false` we won't try to change colors of standard windows controls (menu, toolbar, buttons etc.) so a lot of UI will not respect theme colors."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 12]"
+        },
+        {
+          "title": "Customize toolbar",
+          "description": null,
+          "content": {
+            "Using icons": "Ideally we would allow SVG icons but that's not possible.\n\nYou can use Unicode symbols supported by Segoe UI font: http://zuga.net/articles/unicode-all-characters-supported-by-the-font-segoe-ui/\n\nTo find a symbol you can search for example for `arrow` and then copy & paste the symbol (e.g. `→`) into settings file."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 13]"
+        },
+        {
+          "title": "Customizing eBook UI",
+          "description": null,
+          "content": {
+            "Use advanced settings": "Use **Settings -> Advanced Settings** menu and find **EbookUI** section.\n\nAs described in [settings](https://www.sumatrapdfreader.org/settings/settings) you can change the following aspects of eBook UI:\n\n['FontName', 'FontSize', 'TextColor', 'BackgroundColor']",
+            "Use PDF UI for eBooks": "Use **Settings -> Advanced Settings** menu and find **EbookUI** section.\n\nSet **UseFixedPageUI = true**\n\nRestart the app after changing the settings."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 14]"
+        },
+        {
+          "title": "Customizing keyboard shortcuts",
+          "description": null,
+          "content": {
+            "Format of `Key` section:": [
+              "just a key (like `a`, `Z`, `5`) i.e. letters `a` to `z`, `A` to `Z`, and numbers `0` to `9`",
+              "modifiers + key. Modifiers are: `Shift`, `Alt`, `Ctrl` e.g. `Alt + F1`, `Ctrl + Shift + Y`",
+              "there are some special keys (e.g. `Alt + F3`)",
+              [
+                "`F1` - `F24`",
+                "`numpad0` - `numpad9` : `0` to `9` but on a numerical keyboard",
+                "`Delete`, `Backspace`, `Insert`, `Home`, `End`, `Escape`",
+                "`Left`, `Right`, `Up`, `Down` for arrow keys",
+                "full list of [special keys](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Accelerators.cpp#L14)"
+              ],
+              "without modifiers, case do matter i.e. `a` and `A` are different",
+              "with modifiers, use `Shift` to select upper-case i.e. `Alt + a` is the same as `Alt + A` , use `Alt + Shift + A` to select the upper-case `A`"
+            ],
+            "Commands": "You can see a [full list of commands](Commands.md) ([or in the source code](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Commands.h#L9))",
+            "Notes": "The changes are applied right after you save settings file so that you can test changes without restarting SumatraPDF.\n\nIf a custom `Shortcut` doesn't work it could be caused by invalid command name or invalid command arguments.\n\nWe log information about unsuccessful parsing of a shortcut so [check the logs](Debugging-Sumatra.md#getting-logs) if things don't work as expected."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 15]"
+        },
+        {
+          "title": "DDE Commands",
+          "description": null,
+          "content": {
+            "Format of DDE comands": "Single DDE command: `[Command(parameter1, parameter2, ..., )]`\n\nMultiple DDE commands: `[Command1(parameter1, parameter2, ..., )][Command2(...)][...]`",
+            "Sending DDE commands": "You can either use windows api by sending DDE commands to server `SUMATRA` and topic `control`. See [this code](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/utils/WinUtil.cpp#L2437) for example of sending DDE command.\n\nOr you can use `-dde` command-line argument to `SumatraPDF.exe` e.g. `SumatraPDF.exe -dde \"[SetView(\\\"c:\\\\file.pdf\\\",\\\"continuous\\\",-3)]\"`.\n\nNotice escaping of DDE command string: `\"` and `\\` with `\\`.",
+            "List of DDE commands:": {
+              "Named commands": "*Ver 3.5+**: you can send all [named commands](Commands.md) as DDE:\n\n['format `[<command_id>]` e.g. `[CmdClose]`']",
+              "Open file": [
+                "format: `[Open(\"<filePath>\"[,<newWindow>,<focus>,<forceRefresh>])]`",
+                "arguments:",
+                [
+                  "if `newWindow` is 1 then a new window is created even if the file is already open",
+                  "if `focus` is 1 then the focus is set to the window",
+                  "if `forceRefresh` is 1 the command forces the refresh of the file window if already open (useful for files opened over network that don't get file-change notifications)\"."
+                ],
+                "example: `[Open(\"c:\\file.pdf\",1,1,0)]`"
+              ],
+              "Forward-search": [
+                "format: `[ForwardSearch([\"<pdffilepath>\",]\"<sourcefilepath>\",<line>,<column>[,<newwindow>,<setfocus>])]`",
+                "arguments:",
+                [
+                  "`pdffilepath` : path to the PDF document (if this path is omitted and the document isn't already open, SumatraPDF won't open it for you)",
+                  "`column` : this parameter is for future use (just always pass 0)",
+                  "`newwindow` : 1 to open the document in a new window (even if the file is already opened)",
+                  "`focus` : 1 to set focus to SumatraPDF's window."
+                ],
+                "examples",
+                [
+                  "`[ForwardSearch(\"c:\\file.pdf\",\"c:\\folder\\source.tex\",298,0)]`",
+                  "`[ForwardSearch(\"c:\\folder\\source.tex\",298,0,0,1)]`"
+                ]
+              ],
+              "Jump to named destination command": [
+                "format: `[GotoNamedDest(\"<pdffilepath>\",\"<destination name>\")]`",
+                "example: `[GotoNamedDest(\"c:\\file.pdf\", \"chapter.1\")]`",
+                "note: the pdf file must be already opened"
+              ],
+              "Go to page": [
+                "format: `[GotoPage(\"<pdffilepath>\",<page number>)]`",
+                "example: `[GotoPage(\"c:\\file.pdf\", 37)]`",
+                "note: the pdf file must be already opened."
+              ],
+              "Set view settings": [
+                "format: `[SetView(\"<pdffilepath>\",\"<view mode>\",<zoom level>[,<scrollX>,<scrollY>])]`",
+                "arguments:",
+                [
+                  "`view mode`:",
+                  [
+                    "`\"single page\"`",
+                    "`\"facing\"`",
+                    "`\"book view\"`",
+                    "`\"continuous\"`",
+                    "`\"continuous facing\"`",
+                    "`\"continuous book view\"`"
+                  ],
+                  "`zoom level` : either a zoom factor between 8 and 6400 (in percent) or one of -1 (Fit Page), -2 (Fit Width) or -3 (Fit Content)",
+                  "`scrollX, scrollY` : PDF document (user) coordinates of the point to be visible in the top-left of the window"
+                ],
+                "example: `[SetView(\"c:\\file.pdf\",\"continuous\",-3)]`",
+                "note: the pdf file must already be opened"
+              ]
+            }
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 16]"
+        },
+        {
+          "title": "Debugging Sumatra",
+          "description": null,
+          "content": {
+            "Getting logs": "We log information that might be helpful in diagnosing issues.\n\nTo see the logs: `Ctrl + K` ([Command Palette](Command-Palette.md)), type `show log`\n\nThis saves logs to a file and opens default editor for `.txt` files with log file.",
+            "Install necessary software": [
+              "Install WinDBG debugger from Microsoft Store at [https://www.microsoft.com/en-us/p/windbg-preview/9pgjgd53tn86#activetab=pivot:overviewtab](https://www.microsoft.com/en-us/p/windbg-preview/9pgjgd53tn86#activetab=pivot:overviewtab). Alternatively, you can follow instructions from [https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools)",
+              "In SumatraPDF, use menu `Debug` / `Download symbols`. Symbols are important for the debugger (like WinDBG) to resolve addresses to names that"
+            ],
+            "Debugging a crash": "To debug crashes:\n\n['start SumatraPDF.exe under the control of WinDBG', ['start WinDBG.exe', 'File/Open (Ctrl-E), find and open SumatraPDF.exe executable', 'In WinDBG, type:', ['`.sympath+ SRV*c:\\\\symbols*https://msdl.microsoft.com/download/symbols`', '`g`']], 'when Sumatra crashes, type:\\xa0`!analyze -v`\\xa0and paste the result of that to the bug report']",
+            "Debugging a hang": "Here are the steps to follow if Sumatra hangs\n\n['Start SumatraPDF.exe and get it to hang', 'start WinDBG.exe', 'use File/Attach to process (F6) and select SumatraPDF.exe from the', 'In WinDBG, type:']\n\n7.1) `.sympath+ SRV*c:\\symbols*https://msdl.microsoft.com/download/symbols`\n\n7.2) `~*kb`\n\n7.3) `lmf`\n\nAttach the output to bug report."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 17]"
+        },
+        {
+          "title": "Editing annotations",
+          "description": null,
+          "content": {
+            "Highlight text with `a`": "Most common annotation is highlighting of text: select text and press `a`. This creates a highlight annotation in yellow color:\n\n![Unsaved Annotation Changes](img/annot-unsaved-changes.png)\n\nHere I highlighted word `USAGE` and pressed `a`.",
+            "Saving annotations back to PDF file": "Notice in toolbar (upper right) we show: You have unsaved annotations.\n\nWhen you close the document (or exit the app) and have unsaved annotations, SumatraPDF will ask if you want to save them:\n\n![Unsaved Annotations Dialog](img/unsaved-annotations-dialog.png)\n\nIf you close the dialog or choose `Discard`, annotations will be lost.\n\n`Save changes to existing PDF` will over-write the PDF with newly added annotations.\n\n`Save changes to a new PDF` will allow you to save as a new file.",
+            "Open annotation editor": "If you press `A` (upper case i.e. `Shift-a`) we will create a highlight annotation (same as lower case `a`) but also open annotation editor window.\n\nAnother way to open annotation editor is to use context menu (right mouse click or `Shift-F10`) and use `Edit Annotations`:\n\n![Annotation Context Menu](img/annot-context-menu.png)",
+            "Other annotations for selected text": "When you selected a text, you can create the following annotations from the selection:\n\n['highlight', 'underline', 'strike out', 'squiggly underline']\n\n![Context Menu Annotation From Selection](img/context-menu-annot-from-sel.png)\n\nWe also copy selected text to a clipboard so that e.g. you can use `Ctrl-V` to paste it into `Contents` property of the annotation.",
+            "Other annotation types": "You can also create annotation object at your mouse location:\n\n['text', 'free text', 'stamp', 'caret']\n\n![Context Menu Annotation Under Cursor](img/context-menu-annot-under-cursor.png)",
+            "Annotation editor": "All those commands will open annotation editor:\n\n![Annotation Editor](img/annotation-editor.png)\n\nHere we have a text annotation in the editor.\n\nYou can delete annotations, change color, text and other attributes.",
+            "Select annotation from page in editor": "When you have many annotations on the page, it's hard to locate the desired annotation in the editor list.\n\nTo select an annotation in the editor, place the mouse cursor over an annotation in the page, right click for context menu and use `Select Annotation in Editor`.\n\n![Context Menu Select Annotation In Editor](img/context-menu-select-in-editor.png)",
+            "Moving annotations": "To move an annotation on the page, left click with mouse and drag to new location.",
+            "Customize highlight color": "To change default color for highlight annotation (created with keyboard shortcut `a`), use `Settings \\ Advanced Options...` menu and change `Annotations` \\ `HighlightColor` value. Default is yellow `#ffff00`).",
+            "Missing features": "This is a first version of annotation editing. We don't yet support all annotation types and can't do everything that other PDF editing apps can do.\n\nThe future will be driven by your feedback. If there are features missing or there are better ways of doing things, let me know in the forum [https://forum.sumatrapdfreader.org/](https://forum.sumatrapdfreader.org/)\n\nWhen providing feedback:\n\n['tell us what', 'tell us why. Context is important for prioritizing features. Is new feature / idea something that you absolutely need or is it just a nice improvement', 'you might be familiar how other PDF editors work. When referencing feature or UI ideas coming from other apps, tell us which app it is. Screenshots are better than words when describing UI ideas.']"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 18]"
+        },
+        {
+          "title": "How to submit bug reports",
+          "description": null,
+          "content": {
+            "Check in latest pre-release build": "First, see if it still happens in latest [pre-release version](https://www.sumatrapdfreader.org/prerelease). It's possible that a bug has already been fixed there.",
+            "Create an issue": "If the problem is present in latest [pre-release build](https://www.sumatrapdfreader.org/prerelease), please create a bug report in our [issue tracker](https://github.com/sumatrapdfreader/sumatrapdf/issues).",
+            "Provide a test file": "Does it involve a specific PDF (or CHM or XPS) file? \n\nPlease attach it to the issue (try dragging and dropping on the issue field). Without a test document we rarely can make progress on fixing the issue.\n\nIf the file (or other information) is confidential, you can e-mail it directly to [kkowalczyk@gmail.com](mailto:kkowalczyk@gmail.com) ([Krzysztof Kowalczyk](https://blog.kowalczyk.info/), SumatraPDF's main developer).",
+            "Provide reproduction steps": "Often the bug only happens in a specific scenario.\n\nIf possible, please provide step-by-step instructions for reproducing the the issue.",
+            "Reporting crashes": "[Submit crash report](Submit-crash-report.md)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 19]"
+        },
+        {
+          "title": "How we store settings",
+          "description": null,
+          "content": {
+            "Where we store settings": "Persisted data is stored in `SumatraPDF-settings.txt` file.\n\nIn portable version the file is stored in the same directory as SumatraPDF executable. In non-portable version, it's in `%LOCALAPPDATA%\\SumatraPDF` directory.\n\nStarting with version 1.6 we also persist thumbnails for \"Frequently read\" list. They are stored in subdirectory `sumatrapdfcache` as `.png` files.\n\nSee [https://www.sumatrapdfreader.org/settings/settings](https://www.sumatrapdfreader.org/settings/settings) for information about all the settings."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 20]"
+        },
+        {
+          "title": "Installer Cmd Line Arguments",
+          "description": null,
+          "content": {
+            "Installer cmd-line arguments": "To get list of options run the installer with `-help`.\n\nAvailable options:\n\n['`-install` : this triggers installation', \"`-s`, `-silent` : silent installation, doesn't show UI\", '`-d <directory>` e.g. `Sumatra-install.exe -install -d \"c:\\\\Sumatra PDF\"`\\nset directory where program is installed. The default is `%LOCALAPPDATA%\\\\SumatraPDF` or `%PROGRAMFILES%\\\\SumatraPDF` with `-all-users`', \"`-x` : don't  install, extract the files\\nextracts files to current directory or directory provided with `-d` option\", '`-with-filter` : install search filter', '`-with-preview` : install shell preview for PDF files', '`-uninstall` : uninstalls SumatraPDF']\n\n**Ver 3.2+**\n\n['`-log`\\nwrites installation log to `%LOCALAPPDATA%\\\\sumatra-install-log.txt`. At the end of installation will open the log file in notepad.']\n\n**Ver 3.4+**\n\n['`-all-users` : installs system-wide, for all users\\ninstalls to `%PROGRAMFILES%\\\\SumatraPDF` and writes to `HKLM` registry']\n\n**Ver 3.6+**\n\n['`-fast-install` : automatically starts installation with default options, starts the app when installation is finished']"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 21]"
+        },
+        {
+          "title": "Is There A Virus In Sumatra Sources",
+          "description": null,
+          "content": {
+            "Is there a virus in Sumatra sources?": "Some people report that their anti-virus software complains about executables in bin directory of Sumatra sources.\n\nIs there really a virus in them?\n\n**No**.\n\nFalse positives are unfortunately quite common in all popular anti-virus programs. You can always verify what your particular anti-virus program says against what other anti-virus programs say by using [https://www.virustotal.com/](https://www.virustotal.com/).\n\nIf only one or two report a given file as having a virus, it's most likely a false positive."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 22]"
+        },
+        {
+          "title": "Keyboard Shortcuts",
+          "description": null,
+          "content": {
+            "Keyboard shortcuts": "You can [customize keyboard shortcuts](Customizing-keyboard-shortcuts.md). Also see [standard Windows keyboard shortcuts](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec) for controls like tree view or edit fields.\n\n:columns\n\nFile menu\n\n['`Ctrl + N` Open a new window', '`Ctrl + O` Open a file', '`Ctrl + W` Close current file', '`Ctrl + S` Save current file as', '`F2` Rename current file', '`Ctrl + P` Print', '`Ctrl + D` Properties', '`Ctrl + Q`, `Alt-F4` Quit app']\n\nGo To menu\n\n['`Right Arrow` / `Left Arrow`- Next / Previous Page\\nscrolls left / right if page width > window width', '`Home` First Page', '`End` Last Page', '`Ctrl + G` Go To Page...', '`Alt + Left Arrow` Back', '`Alt + Right Arrow` Forward', '`Ctrl + F` Find...']\n\nFavorites menu\n\n['`Ctrl + B` Add current page to favorites']\n\nView menu\n\n['`Ctrl + 6` Single Page', '`Ctrl + 7` Facing', '`Ctrl + 8` Book View', '`Ctrl + Shift + -`, `[`- Rotate Left (anti-clockwise)', '`Ctrl + Shift + +`, `]`- Rotate Right (clockwise)', '`F5` Enter / Exit Presentation', '`F11` Enter / Exit Full Screen', '`F12` Show / Hide Bookmarks', '`F8` Show / Hide Toolbar', '`Ctrl + A` Select All', '`Ctrl + C` Copy Selection']\n\nZoom menu\n\n['`Ctrl + 0` Fit Page', '`Ctrl + 1` Actual Size', '`Ctrl + 2` Fit Width', '`Ctrl + 3` Fit Content', '`Ctrl + Y` Custom Zoom...']\n\nNavigation\n\n['`j` / `k` Scroll up / down by line', '`h` / `l` Scroll left / right', '`Up` / `Down` Scroll up/down by line', '`Shift + Left` / `Shift + Right`- Scroll left /right faster', '`space` Scroll by screen', '`Shift + space` Scroll back by screen', '`n` / `p` Next / previous page', '`Page Down` /  `Page Up` Next / previous page', '`Ctrl + Down` / `Ctrl + Up` Next / previous page', '`Alt + Left` Go back', '`Alt + Right` Go forward', '`Ctrl + G` Go to page', '`g` Go to page', '`Home` Go to first page', '`End` Go to last page', '`b` Flip a page in book mode', '`Ctrl + Shift + Right` Open next document in the directory', '`Ctrl + Shift + Left` Open previous document in the directory']\n\nViewing state\n\n['`+` / `-` zoom in/out', '`Ctrl + scroll wheel` zoom in/out', '`z` toggle zoom between Fit Page, Fit Width, Fit Content', '`c` toggle between continuous/non-continuous mode', '`Ctrl + Shift + -` rotate left', '`/` on numeric keypad rotate left', '`Ctrl + Shift + +` rotate right', '`*` on numeric keypad rotate left', '`F12` show/hide bookmarks (table of contents)', '`F6` switch focus between bookmarks window and main window', '`Ctrl + L`, `F5`, `Shift + F11`- Enter / exit presentation mode (minimal full screen mode)', '`F11`, `Ctrl + Shift + L`, `f` Enter / Exit full screen mode', '`ESC` exit full screen or presentation mode', 'mouse double click exit full screen or presentation mode', '`i` toggle showing page info (**ver 3.6+** )', '`i` invert colors in the document (**ver 3.5.2 or earlier**)', '`Shift + i` invert colors in the document (**ver 3.6+**)', '`Shift + i` toggle showing page info (**ver 3.5.2 or earlier**)', '`m` show cursor position in document coordinates', '`F8` show/hide toolbar', '`F9` show/hide menu', '`w` in presentation mode, make whole screen white', '`.` in presentation mode, make whole screen black']\n\nActions\n\n['`Ctrl + O` Open a new document', '`Ctrl + W` Close current document', '`Ctrl + F4` Also close current document', '`Ctrl + S` Save current document as...', '`Ctrl + Shift + S` Create a link to current document', '`Ctrl + P` Print', '`F2` Rename file and reopen with new name', '`Ctrl + Shift + N` Open current document in new window', '`r` Reload document', '`Ctrl + F` Find text', '`/` Find text', '`F3` Find next', '`Shift + F3` Find previous', '`Alt + F4` Close window (and all documents in it). Quit app if last window.', '`q` Close current document (tab). Close window if last tab. Quit app if last window.', '`Ctrl + Q` Quit app (close all windows and opened documents)', '`Ctrl + Left Mouse` Select area (can then use with copy, print or +/- zoom)', '`Ctrl + B` Add current page to favorites', '`Right Mouse` Grab and pan page in any direction', '`Alt + Scroll Wheel` Increase vertical scroll wheel steps (faster)', '`Shift + Scroll Wheel` Pan horizontally with scroll wheel', '`Ctrl + Y` Show dropdown zoom control', '`F1` Show documentation / manual']\n\nTabs\n\n['`Ctrl + Tab` go to next tab', '`Ctrl + Shift + Tab` go to previous tab', '`Alt + 1` go to tab 1. Use `Alt + 2`, etc. up to `Alt + 8`', '`Alt + 9` go to last tab']\n\nAnnotations\n\n**Ver 3.3+**, some in **ver 3.4+**:\n\n['`a` create highlight annotation from selected text', '`A` like `a` plus opens annotation editor', '`u` create underline annotation from selected text', '`Delete` delete annotation under mouse cursor', '`Ctrl-Shift-S` save annotations to current PDF file']\n\n:columns"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 23]"
+        },
+        {
+          "title": "LaTeX integration",
+          "description": null,
+          "content": {
+            "notepad++": "Launch SumatraPDF from notepad++ enabling forward and backward search:\n\n```\n\"C:\\Program files\\SumatraPDF\\SumatraPDF.exe\" -forward-search \"$(FULL_CURRENT_PATH)\" $(CURRENT_LINE) -inverse-search \"\\\"C:/Program Files/Notepad++/notepad++.exe\\\" \\\"%f\\\" -n%l\" \"$(CURRENT_DIRECTORY)\"/\"$(NAME_PART)\".pdf\n```",
+            "TexStudio": "Launch SumatraPDF from TeXStudio enabling forward and backward search:\n\n```\n\"C:/Program Files/SumatraPDF/SumatraPDF.exe\" -forward-search \"?c:am.tex\" @ -inverse-search \"\\\"C:/Program Files (x86)/TeXstudio/texstudio.exe\\\" \\\"%%f\\\" -line %%l\" \"?am.pdf\"\n```",
+            "TeXnicCenter": "**Detailed instructions**: [https://tex.stackexchange.com/questions/453670/adobe-reader-makes-texniccenter-crash-alternative-sumatra/453731#453731](https://tex.stackexchange.com/questions/453670/adobe-reader-makes-texniccenter-crash-alternative-sumatra/453731#453731)\n\n**Short instructions:**\n\nConfigure viewer in [output profiles](https://texniccenter.sourceforge.net/configuration.html#viewer-tab).\n\n['press Alt+F7 (Build > Define Output Profiles)', 'for any one of the PDF Profiles e.g. LaTeX > PDF', 'for Executable path it should have something like:', ['`C:\\\\Program Files\\\\SumatraPDF\\\\SumatraPDF.exe -inverse-search \"\\\\\"C:\\\\Program Files (x86)\\\\TeXnicCenter\\\\TeXnicCenter.exe\\\\\" /ddecmd \\\\\"[goto(\\'%f\\',\\'%l\\')]\\\\\"\"`', '`SumatraPDF.exe` path might be different on your computer'], 'go back to the editor and using any simple .TeX press `Ctrl + Shift + F5` (Build and view)', 'SumatraPDF should have fired up with the compiled PDF', 'in SumatraPDF go To `Settings` > `Advanced Options`', 'make the following modifications and save the settings file:']\n\n```\nReuseInstance = true\nReloadModifiedDocuments = true\n\nInverseSearchCmdLine = \"C:\\Program Files\\TeXnicCenter\\TeXnicCenter.exe\" /nosplash /ddecmd \"[goto('%f', '%l')]\"\nOR\nInverseSearchCmdLine = \"C:\\Program Files (x86)\\TeXnicCenter\\TeXnicCenter.exe\" /nosplash /ddecmd \"[goto('%f', '%l')]\"\n\nEnableTeXEnhancements = true\nUseTabs = true\n```\n\nNow a double click in the PDF should take you back to TeXnicCenter either in an included file or the main file. IF not, check the syntax of the InverseSearchCmdLine = matches YOUR location for TeXnicCenter\n\nBack in the editor press Alt+F7 (Build > Define Output Profiles) and for each of the PDF options select viewer\n\nIn the 1Executable path1 section REMOVE any thing after the .exe\n\nIn the 1View project's Output1 select `Command line argument` and check it is `\"%bm.pdf\"`\n\nIn Forward search change it to `-forward-search \"%Wc\" %l \"%bm.pdf\"`",
+            "Vim": {
+              "forward-search": "The following function works pretty well (note that it is written in Vim9\nlanguage):\n\n```\ndef ForwardSearch()\n  var filename_root = expand('%:p:r')\n  system($'SumatraPDF.exe -forward-search {filename_root}.tex {line(\".\")} {filename_root}.pdf')\nenddef\n```\n\nFeel free to replace `SumatraPDF.exe` with the correct executable filename,\ne.g. `SumatraPDFv3-4-5.exe`.\n\nNext, you should map this function to some key, for example you could use the\nfollowing.\n\n```\nnnoremap <buffer> <F5> <Scriptcmd>ForwardSearch()<cr>\n```\n\nNow, `<F5>` will perform a forward-search. Feel free to replace `<F5>` with\nthe key that you prefer.",
+              "backward-search": "Define a global-scope `BackwardSearch` function as it follows:\n\n```\ndef g:BackwardSearch(line: number, filename: string)\n  exe $'buffer {bufnr(fnamemodify(filename, ':.'))}'\n  cursor(line, 1)\nenddef\n```\n\nNext, open `SumatraPDF` and go to _Settings/Options_. Replace the line in the\n_Set inverse-search command-line_ box, with the following:\n\n```\nvim --servername vim --remote-send \":call BackwardSearch(%l, '%f')<cr>\"\n```\n\nIf you use gvim, then replace `vim` with `gvim` in the above line. The\nbackwards search should be now enabled."
+            },
+            "WinEdt and Emacs": "<!-- See instructions at [https://william.famille-blum.org/blog/static.php?page=static081010-000413](https://william.famille-blum.org/blog/static.php?page=static081010-000413) -->\n\nEmacs:\n[https://www.emacswiki.org/emacs/AUCTeX#toc25](https://www.emacswiki.org/emacs/AUCTeX#toc25)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 24]"
+        },
+        {
+          "title": "Logview",
+          "description": null,
+          "content": {
+            "Download": "Download [Logview 0.2](https://files2.sumatrapdfreader.org/software/logview/rel/logview-0.2.exe).",
+            "More info": "Logview is a generic logging tools that opens a named pipe `\\\\.\\pipe\\LOCAL\\ArsLexis-Logger` that any application can open and write to.\n\nSumatraPDF uses it for logging (`log()`, `logf()`, `logfa()` functions in `Log.h` and `Log.cpp`)."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 25]"
+        },
+        {
+          "title": "Reporting Printing Bugs",
+          "description": null,
+          "content": {
+            "Reporting printing bugs": "Printing bugs are hard to diagnose because each printer has a different printer driver, so the same file can print well on one printer and not print on another printer.\n\nThat's why when reporting printing bugs in [https://github.com/sumatrapdfreader/sumatrapdf/issues](https://github.com/sumatrapdfreader/sumatrapdf/issues), please make sure to include the following information:\n\n['version of Sumatra', 'version of the OS (e.g. windows Vista, windows 10 etc.)', 'name of the printer', 'can you open and see the file in Sumatra?', 'what exactly happens, are there any error messages?', 'if it happens only for some files but not the others', [\"is there anything different about the files that don't print that jumps out?\", \"please attach the file that doesn't print to bug report. If the file is confidential you can e-mail it to [kkowalczyk@gmail.com](mailto:kkowalczyk@gmail.com) ([Krzysztof Kowalczyk](https://blog.kowalczyk.info/), Sumatra's main developer).\"]]"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 26]"
+        },
+        {
+          "title": "Scrolling and navigating",
+          "description": null,
+          "content": {
+            "Scrolling with keyboard": "`Up`, `Down`, `Left`, `Right` refers to arrow keys.\n\n['`k`, `j`, `h`, `l` : scroll up / down / left / right', '`Up`, `Down` : scroll up / down', '`n`, `Left` : go to next page (aligns top of page with top of window)', '`p`, `Right` : go to previous page (aligns top of page with top of window)', '`Shift + Down`, `Shift + Up` : scroll forward / backward by a page', '`Space`, `Shift + Space` : scroll forward / backward by a page', '`Home`, `End` : go to first / last page', '`g`, `Ctrl + g` : go to page (text field in toolbar or dialog if toolbar not shown)']",
+            "Scrolling with mouse and touch pad": [
+              "click on scrollbar to scroll up or down by page",
+              "`Shift` + click on scrollbar : scrolls to that position",
+              "scroll up / down with mouse scroll wheel or touch pad scrolling gesture",
+              "press `Alt` while scrolling : scrolls faster (by half page instead of by line)",
+              "mouse over scrollbar : scrolls faster (by half page instead of by line)"
+            ]
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 27]"
+        },
+        {
+          "title": "Set as default PDF viewer",
+          "description": null,
+          "content": {
+            "Using File Explorer": "In File Explorer:\n\n['find a .pdf file (or any other supported file type)', 'right-click to get a context menu', 'select `Open with` and then `Choose another app`']\n\n![Eplorer Menu Open With](img/explorer_menu_open_with.png)\n\nFrom the list, choose `SumatraPDF` and check `Always use this app to open .pdf files`:\n\n![choose_app.png](img/choose_app.png)",
+            "Using Default apps system settings": "This is based on latest Windows 11 build at the time of this writing.\n\nUnfortunately the details differ between Windows updates.\n\nLaunch `Default app` section in settings app, e.g. use `Windows logo` hot-key to launch system-wide search, type `default apps` and click on `Default apps` search result to launch settings app.\n\n![Untitled](img/default-apps.png)\n\nIn Default apps type `.pdf` for file extension:\n\n![Settings](img/settings-app.png)\n\nClick on current default PDF application (`Microsoft Edge` in this example) and select `SumatraPDF`:\n\nYou can do that for other file formats."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 28]"
+        },
+        {
+          "title": "Source Code Downloads",
+          "description": null,
+          "content": {
+            "Source code downloads": "You can download source code of every release as .zip or .tar.gz from [https://github.com/sumatrapdfreader/sumatrapdf/releases](https://github.com/sumatrapdfreader/sumatrapdf/releases)\n\nFull source history is available in [git repository](https://github.com/sumatrapdfreader/sumatrapdf)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 29]"
+        },
+        {
+          "title": "Submit Crash Report",
+          "description": null,
+          "content": {
+            "Submit crash report`": "Please help us fix SumatraPDF crashes.\n\nIf you have a reproducible crash:\n\n['download symbols:', ['menu: `Debug` / `Download Symbols`', '`Ctrl + K` for command palette and `Debug: Download Symbols`'], 'trigger the crash', 'when you see crash dialog, press `Cancel` to launch default text editor with crash report', 'post the content of the crash log as a gist at [https://gist.github.com/](https://gist.github.com/). For example: `Ctrl-A` to select all text, `Ctrl-C` to copy it to a clipboard and then `Ctrl-V` to the gist', 'create a bug report at [https://github.com/sumatrapdfreader/sumatrapdf/issues](https://github.com/sumatrapdfreader/sumatrapdf/issues)', 'post a link to the gist in the bug report', '**include the file that caused the crash**', ['attach to the GitHub issue (put in a .zip file if file type is not accepted)', 'or, if the file is private, e-mail to kkowalczyk@gmail.com (and reference bug number)', 'I can’t stress it enough: if I can’t reproduce a crash myself, I might not be able to fix it'], 'provide additional information like:', ['what were you doing when the crash happened', 'when did the crash happen. When opening a file? changing view? etc.', 'how did you open the file? drag & drop on Sumatra window? Double-click in file manager? From command line?', 'the best information is a set of steps I can do to reproduce the crash']]"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 30]"
+        },
+        {
+          "title": "Sumatrapdf Documentation",
+          "description": null,
+          "content": {
+            "Documentation for users": "[Command Palette](Command-Palette.md)\n\n[Keyboard shortcuts](Keyboard-shortcuts.md)\n\n[Customizing keyboard shortcuts](Customizing-keyboard-shortcuts.md)\n\n[Scrolling, zooming, navigating](Scrolling-and-zooming.md)\n\n[Commands](Commands.md)\n\n[Command-line arguments](Command-line-arguments.md)\n\n[Advanced options / settings](Advanced-options-settings.md)\n\n[Customizing toolbar](Customize-toolbar.md)\n\n[Customizing UI colors / theme](Customize-theme-colors.md)\n\n[Customize external viewers](Customize-external-viewers.md)\n\n[Customize search / translation services](Customize-search-translation-services.md)\n\n[Editing annotations](Editing-annotations.md)\n\n[LaTeX integration](LaTeX-integration.md)\n\n[DDE Commands](DDE-Commands.md)\n\n[Set as default PDF viewer](Set-as-default-PDF-viewer.md)\n\n[Configure for restricted use](Configure-for-restricted-use.md)\n\n[Supported document formats](Supported-document-formats.md)\n\n[Customizing eBook UI](Customizing-eBook-UI.md)\n\n[Installer cmd-line arguments](Installer-cmd-line-arguments.md)\n\n[Uninstalling SumatraPDF](Uninstalling-SumatraPDF.md)\n\n[Version history](Version-history.md)",
+            "Misc": "[Contribute translation](Contribute-translation.md)\n\n[How to submit bug reports](How-to-submit-bug-reports.md)\n\n[Submit crash report](Submit-crash-report.md)\n\n[Reporting printing bugs](Reporting-printing-bugs.md)\n\n[Update check doesnt work?](Update-check-doesnt-work.md)\n\n[Corrupted installation](Corrupted-installation.md)\n\n[Why only Windows?](Why-only-Windows.md)",
+            "Information for developers": "[Contribute to SumatraPDF](Contribute-to-SumatraPDF.md)\n\n[Logview](Logview.md)\n\n[Build system](Build-system.md)\n\n[Debugging Sumatra](Debugging-Sumatra.md)\n\n[How we store settings](How-we-store-settings.md)\n\n[Using DrMemory](Using-DrMemory.md)\n\n[Using OpenCppCoverage](Using-OpenCppCoverage.md)\n\n[Is there a virus in Sumatra sources?](Is-there-a-virus-in-Sumatra-sources.md)\n\n[Accessibility and Text-to-Speech](Accessibility-and-Text-to-Speech.md)\n\n[Source code downloads](Source-code-downloads.md)\n:columns",
+            "Downloads": [
+              "[latest stable release](https://www.sumatrapdfreader.org/download-free-pdf-viewer)",
+              "[pre-release builds](https://www.sumatrapdfreader.org/prerelease) (latest features, potentially buggy)"
+            ],
+            "Feedback": "Found a bug? Have feature request? Submit via [issue tracker](https://github.com/sumatrapdfreader/sumatrapdf/issues) and  [vote for features](https://sumatrapdf.canny.io/feature-requests) you want to see next.\n\nHave feedback or question? Discuss in a [forum](https://github.com/sumatrapdfreader/sumatrapdf/discussions).\n\nWant to make SumatraPDF work better in your language? [Contribute a translation.](Contribute-translation.md)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 31]"
+        },
+        {
+          "title": "Supported document formats",
+          "description": null,
+          "content": {
+            "HEIF support": "**Ver 3.4+**: SumatraPDF can open [HEIF images](https://nokiatech.github.io/heif/) but only if Windows has a codec for the format.\n\nYou can use one of those codecs:\n\n['[https://www.copytrans.net/copytransheic/](https://www.copytrans.net/copytransheic/) : free for personal use', '[https://www.microsoft.com/en-us/p/heif-image-extensions/9pmmsr1cgpwg?activetab=pivot:overviewtab](https://www.microsoft.com/en-us/p/heif-image-extensions/9pmmsr1cgpwg?activetab=pivot:overviewtab) : HEIF image codec from Microsoft, Windows 10 or later']\n\nYou can make SumatraPDF to be [default program for handling those file types](Set-as-default-PDF-viewer.md)."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 32]"
+        },
+        {
+          "title": "Uninstalling SumatraPDF",
+          "description": null,
+          "content": {
+            "Are you using official Sumatra build?": "Did you download Sumatra from [official Sumatra website](https://www.sumatrapdfreader.org/download-free-pdf-viewer)?\n\nIf not, we can't help you because we didn't create the software you're using.",
+            "Uninstalling Sumatra": "There are 2 versions of Sumatra: an installer and a portable version (zipped executable).",
+            "Uninstalling portable version": "If you're using zipped executable, the only thing you need to do is to delete SumatraPDF.exe.",
+            "Uninstalling the installer version": "If you installed SumatraPDF by running official installer, you uninstall it like every other application.\n\nOn Windows 10 / 11:\n\n['start Settings app ([https://www.digitalcitizen.life/introducing-windows-10-ways-open-settings](https://www.digitalcitizen.life/introducing-windows-10-ways-open-settings))', 'Select `Apps`', 'find `SumatraPDF` on the list, click it and press `Uninstall` button:']\n\n![Uninstall](img/uninstall.png)",
+            "What if the above doesn't help?": "What if you still have questions? You can use the [forums](https://forum.sumatrapdfreader.org/) to ask for additional help.\n\nHowever, in order for someone to help you, you need to provide the following information:\n\n[\"Sumatra PDF version you're using\", 'your OS (Windows) version', 'did you download an installer or zipped executable?', 'where did you download the Sumatra from (the url of the webpage you used to download Sumatra)?', 'is there SumatraPDF directory in your program files directory (usually \"c:\\\\Program Files\" or \"c:\\\\Program Files (x86)\" on 64-bit systems)?', 'what evidence there is that Sumatra is installed? Be precise and specific. Don\\'t just say \"there\\'s a link to it\", tell us where that link is, what is the name of the link etc.']\n\nTo emphasize: if you don't provide this information, we cannot help you."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 33]"
+        },
+        {
+          "title": "Update Check Doesnt Work",
+          "description": null,
+          "content": {
+            "Update check doesn't work?": "A new version of Sumatra has been released, you `Help -> Check for updates` menu and it didn't notify about a new release. Is this a bug?\n\nMost likely not.\n\nWe wait at least a week before activating update check. That way, if there is a major problem with a new release that we didn't catch in testing, less people will have to re-download the update that fixes the problem."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 34]"
+        },
+        {
+          "title": "Using Drmemory",
+          "description": null,
+          "content": {
+            "Using DrMemory": "[DrMemory](https://drmemory.org/) is a tool for detecting memory errors and misuse of Windows APIs.\n\nI've tried portable version [1.8.1RC1](https://github.com/DynamoRIO/drmemory/wiki/Downloads) on Windows 7 32bit (it doesn't support Windows 10 and 64bit).\n\nI ran it as:\n\n['`mkdir ..\\\\drmemlogs`', '`..\\\\drmemory\\\\bin\\\\drmemory.exe -logdir ..\\\\drmemlogs -suppress=drmem-sup.txt —   .\\\\rel\\\\SumatraPDF.exe ..\\\\f1.pdf`']\n\nThere are what appear to be false positives. I add suppressions to drmem-sup.txt as I find them.\n\nDrMemory visibly slows down the program and also crashes sometimes (e.g. it crashed for me with XPS files)."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 35]"
+        },
+        {
+          "title": "Using Opencppcoverage",
+          "description": null,
+          "content": {
+            "Using OpenCppCoverage": "I tried [OpenCppCoverage](https://opencppcoverage.codeplex.com/) (https://github.com/Unity-Technologies/OpenCppCoverage) 0.9.3 on SumatraPDF.\n\nI installed 64-bit version from the installer on Win 10. I ran `OpenCppCoverage.exe --sources sumatra -- .\\dbg64\\SumatraPDF.exe`, opened a file, closed the program.\n\n`--sources` limits reporting to only files whose paths match a given pattern. Using sumatra for pattern matches all our source files, assuming the sources were checked out to `sumatrapdf` directory (because `sumatra` matches `sumatrapdf` in file path) and skips the sources for C/C++ libraries.\n\nIt generated `CoverageReport-${date}` directory with HTML report. There's top-level index.html with links to html file for each module (SumatraPDF.exe in our case).\n\nThey recommend running on debug code.\n\nAt the end it reports generating reports for system dlls, but also says can't get symbols, so it doesn't actually generate anything.\n\nThe html report isn't great. Another option would be to use `--export_type=binary` option which generates `SumatraPDF.cov` file and write html generator myself. I assume the format of `.cov` file is simple."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 36]"
+        },
+        {
+          "title": "Version history",
+          "description": null,
+          "content": {
+            "[RSS/Atom feed](https://github.com/sumatrapdfreader/sumatrapdf/releases)": "",
+            "Version history": {
+              "next (3.6)": "Changes in [pre-release builds](https://www.sumatrapdfreader.org/prerelease):\n\n['in Command Palette, if you start search with \":\" we show everything (like in 3.5)', 'in Command Palette, when viewing opened files history (#), you can press Delete to remove the entry from history', 'improved zooming:', ['zooming with pinch touch screen gesture or with ctrl + scroll wheel now zooms around the mouse position and does continuous zoom levels. Used to zoom around top-left corner and progress fixed zoom levels shown in menu'], 'include manual (`F1` to launch browser with documentation)', 'add `LazyLoading` advanced setting, defaults to true. When restoring a session lazy loading delays loading a file until its tab is selected. Makes SumatraPDF startup faster.', 'new commands in command palette (`Ctrl + K`):', ['`CmdCloseAllTabs` : \"Close All Tabs\"', '`CmdCloseTabsToTheLeft` : \"Close Tabs To The Left\"', '`CmdDeleteFile`: \"Delete File\"', '`CmdToggleFrequentlyRead` : \"Toggle Frequently Read\"', '`CmdToggleLinks` : \"Toggle Show Links\"', '`CmdInvokeInverseSearch`', '`CmdMoveTabRight` (`Ctrl + Shift + PageUp`), `CmdMoveTabLeft` (`Ctrl + Shift + PageDown`) to move tabs left / right, like in Chrome'], 'add ability to provide arguments to some commands when creating bindings in `Shortcuts`:', ['CmdCreateAnnot\\\\* commands take a color argument, `openedit` to automatically open edit annotations window when creating an annotation, `copytoclipboard` to copy selection to clipboard and `setcontent` to set contents of annotation to selection', '`CmdScrollDown`, `CmdScrollUp` : integer argument, how many lines to scroll', '`CmdGoToNextPage`, `CmdGoToPrevPage` : integer argument, how many pages to advance', '`CmdNextTabSmart`, `CmdPrevTabSmart` (`Smart Tab Switch`), shortcut: `Ctrl + Tab`, `Ctrl + Shift + Tab``'], 'added `UIFontSize` advanced setting', 'removed `TreeFontWeightOffset` advanced setting', 'increase number of thumbnails on home page from 10 => 30', 'add `ShowLinks` advanced setting and \"Toggle Show Links\" (`CmdToggleLinks`) for command palette', 'default `ReuseInstance` setting to true', 'added `Key` arg to `ExternalViewers` advanced setting (keyboard shortcut)', 'added `Key` arg to `SelectionHandlers` advanced setting (keyboard shortcut)', 'improved scrolling with mouse wheel and touch gestures', 'theming improvements', 'go back to opening settings file with default .txt editor (notepad most likely)', \"don't exit fullscreen on double-click. must double-click in upper-right corner\", 'when opening via double-click, if `Ctrl` is pressed will always open in new tab (vs. activating existing tab)', 'register for handling `.webp` files', 'bug fix: Del should not delete an annotation if editing content', 'bug fix: re-enable tree view full row select', 'change: `CmdCreateAnnotHighlight` etc. no longer copies selection to clipboard by default. To get that behavior back, you can use `copytoclipboard` argument [instead](Commands.md#cmdcreateannothighlight-and-other-cmdcreateannot).', 'change: `Ctrl + Tab` is now `CmdNextTabSmart`, was `CmdNextTab`. `Ctrl + Shift + Tab` is now `CmdPrevTabSmart`, was `CmdPrevTab`. You can [re-bind it](Customizing-keyboard-shortcuts.md) if you prefer old behavior', '`CmdCommandPalette` takes optional `mode` argument: `@` for tab selection, `#` for selecting from file history and `>` for commands.', 'command palette no longer shows combined tabs/file history/commands. `CmdCommandPalette` only shows commands. Because of that removed `CmdCommandPaletteNoFiles` because now ``CmdCommandPalette` behaves like it', 'removed `CmdCommandPaletteOnlyTabs`, replaced by`CmdCommandPaletteNoFiles @`', '`Ctrl + Shift + K` no longer active, use `Ctrl + K`. You can restore this shortcut by binding it to `CmdCommandPalette >` command.', 'add `Name` field for shortcuts. If given, the command will show up in Command Palette (`Ctrl + K`)', \"closing a current tab now behaves like in Chrome: selects next tab (to the right). We used to select previously active tab, but that's unpredicable and we prefer to align SumatraPDF behavior with other popular apps.\", \"swapped key bindings: 'i' is now CmdTogglePageInfo, 'I' is CmdInvertColors. Several people were confused by accidentally typing 'i' to invert colors, is less likely to type it accidentally\", 'allow creating custom themes in advanced settings in `Themes` section. [See docs](https://www.sumatrapdfreader.org/docs/Customize-theme-colors).', 'improve scrolling with middle click drag [#4529](https://github.com/sumatrapdfreader/sumatrapdf/issues/4529)']",
+              "3.5.2 (2023-10-25)": [
+                "fix not showing tab text",
+                "make menus in dark themes look more like standard menus (bigger padding)",
+                "fix Bookmarks for folder showing bad file names",
+                "update translations"
+              ],
+              "3.5.1 (2023-10-24)": [
+                "fix uninstaller crash",
+                "disable lazy loading of files when restoring a session"
+              ],
+              "3.5 (2023-10-23)": [
+                "Arm 64-bit builds",
+                "dark mode (menu `Settings / Theme` or `Ctrl + K` command `Select next theme`)\nyou can use `i` (invert colors) to match the background / text color of rendered\nPDF document. Due to technical limitations, it doesn't work well with images",
+                "`i` (invert colors) is remembered in settings",
+                "`CmdEditAnnotations` select annotation under cursor and open annotation edit window",
+                "rename `CmdShowCursorPosition` => `CmdToggleCursorPosition`",
+                "add `Annotations [ FreeTextColor, FreeTextSize, FreeTextBorderWidth ]` settings",
+                "ability to move annotations. `Ctrl + click` to select annotation and them move via drag & drop",
+                "add `CmdCommandPaletteOnlyTabs` command with `Alt + K` shortcut",
+                "exit full screen / presentation modes via double click with left mouse button",
+                "ability to drag out a tab to open it in new window",
+                "support opening `.avif` images (including inside .cbz/,cbr files)",
+                "respect image orientation `exif` metadata in .jpeg and .png images",
+                "support Adobe Reader syntax for opening files `/A \"page=<pageno>#nameddest=<dest>search=<string>`",
+                "add `Next Tab` / `Prev Tab` commands with `Ctrl + PageUp` / `Ctrl + PageDown` shortcuts",
+                "keep Home tab open; add `NoHomeTab` advanced option to disable that",
+                "add context menu to tabs",
+                "bugfix: handle files we can't open in `next file in folder` / `prev file in folder` commands",
+                "command palette: when search starts with `>`, only show commands, not files (like in Visual Studio Code)",
+                "add `reopen last closed` command (`Ctrl + Shift + T`, like in web browsers)",
+                "add `clear history` command",
+                "can send commands via [DDE](https://www.sumatrapdfreader.org/docs/DDE-Commands)",
+                "added `CmdOpenWithExplorer`, `CmdOpenWithDirectoryOpus`, `CmdOpenWithTotalCommander`, `CmdOpenWithDoubleCommander` commands",
+                "enable `CmdCloseOtherTabs`, `CmdCloseTabsToTheRight` commands from command palette",
+                "recognize `PgUp` / `PgDown` and a few more in keyboard shortcuts",
+                "add `-disable-auto-rotation` cmd-line print option",
+                "add `-dde` cmd-line option"
+              ],
+              "3.4.6 (2022-06-08)": [
+                "fix crashes",
+                "fix hang in Fit Content mode and Bookmark links"
+              ],
+              "3.4.5 (2022-06-05)": [
+                "fix crashes"
+              ],
+              "3.4.4 (2022-06-02)": [
+                "restore `HOME` and `END` in find edit field",
+                "fix crashes"
+              ],
+              "3.4.3 (2022-05-29)": [
+                "re-enable `Backspace` in edit field",
+                "fix installation for all users when using custom installation directory",
+                "re-enable `Copy Image` context menu for comic book files",
+                "fix display of some PDF images",
+                "fix slow loading of some ePub files"
+              ],
+              "3.4.2 (2022-05-27)": [
+                "make keyboard accelerators work when tree view has focus",
+                "fix `-set-color-range` and `-bg-color` replacing `MainWindowBackground`",
+                "fix crash with incorrectly defined selection handlers"
+              ],
+              "3.4.1 (2022-05-25)": [
+                "fix downloading of symbols for better crash reports"
+              ],
+              "3.4 (2022-05-24)": [
+                "[Command Palette](Command-Palette.md)",
+                "[customizable keyboard shortcuts](Customizing-keyboard-shortcuts.md)",
+                "better support for epub files using mupdf's epub engine. Adds text selection and search in ebook files. Better rendering fidelity. On the downside, might be slower.",
+                "[search / translate selected text](Customize-search-translation-services.md) with web services",
+                [
+                  "we have few built-in and you can [add your own](https://www.sumatrapdfreader.org/settings/settings3-4#SelectionHandlers)"
+                ],
+                "installer: `-all-users` cmd-line arg for system-wide install",
+                "added `Annotations.TextIconColor` and `TextIconType` advanced settings",
+                "added `Annotations.UnderlineColor` advanced setting",
+                "added `Annotations.DefaultAuthor` advanced setting",
+                "`i` keyboard shortcuts inverts document colors `Shift + i` does what `i` used to do i.e. show page number",
+                "`u` and `Shift + u` keyboard shortcuts adds underline annotation for currently selected text",
+                "`Delete` / `Backspace` keyboard shortcuts delete an annotation under mouse cursor",
+                "support .svg files",
+                "faster scrolling with mouse wheel when cursor over scrollbar",
+                "add `-search` cmd-line option and `[Search(\"<file>\", \"<search-term>\")]` DDE command",
+                "a way to get list of used fonts in properties window",
+                "support opening `.heic` image files (if Windows heic codec is installed)",
+                "add experimental smooth scrolling (enabled with `SmoothScroll` advanced setting)"
+              ],
+              "3.3.3 (2021-07-20)": [
+                "fix a crash in PdfFilter.dll"
+              ],
+              "3.3.2 (2021-07-19)": [
+                "restore showing Table Of Contents for .chm files",
+                "fix crashes"
+              ],
+              "3.3.1 (2021-07-14)": [
+                "fix rotation in DjVu documents"
+              ],
+              "3.3 (2021-07-06)": [
+                "added support for adding / removing / editing annotations in PDF files. Read [the tutorial](Editing-annotations.md)",
+                "new toolbar",
+                [
+                  "changed toolbar to scale with DPI by using new, vector icons",
+                  "added rotate left / right to the toolbar",
+                  "new toolbar:"
+                ],
+                "![Toolbar](img/toolbar.png)",
+                "added ability to hide scrollbar (more screen space for the document). Use right-click context menu.",
+                "add `-paperkind=${num}` printing option ([checkin](https://github.com/sumatrapdfreader/sumatrapdf/pull/1815/commits/2104e6104ea759dc4f839c7e8be5973f5a4f0488))"
+              ],
+              "3.2 (2020-03-15)": "This release upgrades the core PDF parsing and rendering library mupdf to the latest version. This fixes PDF rendering bugs and improves performance.\n\nAdded support multiple windows with tabs:\n\n['added `File / New Window` (`Ctrl-n`) which opens a new window', 'to compare the same file side-by-side, `Ctrl-Shift-n` shortcut opens current file a new window. The same file is now opened in 2 windows that you can re-arrange as needed', '`-new-window` cmd-line option will open the document in new window', 'if you hold `SHIFT` when drag&dropping files from Explorer (and other apps), the file will be opened in a new window']\n\nImproved management of favorites:\n\n['context menu (right mouse click) on the document area adds menu items for:', ['showing / hiding favorites view', 'adding current page to favorites (or removing if already is in favorites)'], 'context menu in bookmarks view adds menu item for adding selected page to favorites']\n\nThis release no longer supports Windows XP. Latest version that support XP is 3.1.2 that you can download from\n\n[https://www.sumatrapdfreader.org/download-prev.html](https://www.sumatrapdfreader.org/download-prev.html)",
+              "3.1.2 (2016-08-14)": [
+                "fixed issue with icons being purple in latest Windows 10 update",
+                "tell Windows 10 that SumatraPDF can open supported file types"
+              ],
+              "3.1.1 (2015-11-02)": [
+                "(re)add support for old processors that don’t have SSE2",
+                "support newer versions of unrar.dll",
+                "allow keeping browser plugin if it’s already installed",
+                "crash fixes"
+              ],
+              "3.1 (2015-10-24)": [
+                "64bit builds",
+                "all documents are restored at startup if a window with multiple tabs is closed (or if closing happened through File -> Exit); this can be disabled through the `RestoreSession` advanced setting",
+                "printing happens (again) always as image which leads to more reliable results at the cost of requiring more printer memory; the \"Print as Image\" advanced printing option has been removed",
+                "scrolling with touchpad (e.g. on Surface Pro) now works",
+                "many crash and other bug fixes"
+              ],
+              "3.0 (2014-10-18)": [
+                "Tabs! Enabled by default. Use Settings/Options... menu to go back to the old UI",
+                "support table of contents and links in ebook UI",
+                "add support for PalmDoc ebooks",
+                "add support for displaying CB7 and CBT comic books (in addition to CBZ and CBR)",
+                "add support for LZMA and PPMd compression in CBZ comic books",
+                "allow saving Comic Book files as PDF",
+                "swapped keybindings:",
+                [
+                  "F11 : Fullscreen mode (still also Ctrl+Shift+L)",
+                  "F5 : Presentation mode (also Shift+F11, still also Ctrl+L)"
+                ],
+                "added a document measurement UI. Press 'm' to start. Keep pressing 'm' to change measurement units",
+                "new advanced settings: FullPathInTitle, UseSysColors (no longer exposed through the Options dialog), UseTabs",
+                "replaced non-free UnRAR with a free RAR extraction library. If some CBR files fail to open for you, download unrar.dll from https://www.rarlab.com/rar_add.htm and place it alongside SumatraPDF.exe",
+                "deprecated browser plugin. We keep it if was installed in earlier version"
+              ],
+              "2.5.2 (2014-05-13)": [
+                "use less memory for comic book files",
+                "PDF rendering fixes"
+              ],
+              "2.5.1 (2014-05-07)": [
+                "hopefully fix frequent ebook crashes"
+              ],
+              "2.5 (2014-05-05)": [
+                "2 page view for ebooks",
+                "new keybindings:",
+                [
+                  "Ctrl+PgDn, Ctrl+Right : go to next page",
+                  "Ctrl+PgUp, Ctrl+Left : go to previous page"
+                ],
+                "10x faster ebook layout",
+                "support JP2 images",
+                "new **[advanced settings](https://www.sumatrapdfreader.org/settings.html)**: ShowMenuBar, ReloadModifiedDocuments, CustomScreenDPI",
+                "left/right clicking no longer changes pages in fullscreen mode (use Presentation mode if you rely on this feature)",
+                "fixed multiple crashes and made multiple minor improvements"
+              ],
+              "2.4 (2013-10-01)": [
+                "full-screen mode for ebooks (Ctrl-L)",
+                "new key bindings:",
+                [
+                  "F9 - show/hide menu (not remembered after quitting)",
+                  "F8 - show/hide toolbar"
+                ],
+                "support WebP images (standalone and in comic books)",
+                "support for RAR5 compressed comic books",
+                "fixed multiple crashes"
+              ],
+              "2.3.2 (2013-05-25)": [
+                "fix changing a language via Settings/Change Language"
+              ],
+              "2.3.1 (2013-05-23)": [
+                "don't require SSE2 (to support old computers without SSE2 support)"
+              ],
+              "2.3 (2013-05-22)": [
+                "greater configurability via **[advanced settings](https://www.sumatrapdfreader.org/settings.html)**",
+                "\"Go To Page\" in ebook ui",
+                "add View/Manga Mode menu item for Comic Book (CBZ/CBR) files",
+                "new key bindings:",
+                [
+                  "Ctrl-Up : page up",
+                  "Ctrl-Down : page down"
+                ],
+                "add support for OpenXPS documents",
+                "support Deflate64 in Comic Book (CBZ/CBR) files",
+                "fixed missing paragraph indentation in EPUB documents",
+                "printing with \"Use original page sizes\" no longer centers pages on paper",
+                "reduced size. Installer is ~1MB smaller",
+                "downside: this release no longer supports very old processors without **[SSE2 instructions](https://en.wikipedia.org/wiki/SSE2)**. Using SSE2 makes Sumatra faster. If you have an old computer without SSE2, you need to use 2.2.1."
+              ],
+              "2.2.1 (2013-01-12)": [
+                "fixed ebooks sometimes not remembering the viewing position",
+                "fixed Sumatra not exiting when opening files from a network drive",
+                "fixes for most frequent crashes and PDF parsing robustness fixes"
+              ],
+              "2.2 (2012-12-24)": [
+                "add support for FictionBook ebook format",
+                "add support for PDF documents encrypted with Acrobat X",
+                "“Print as image” compatibility option in print dialog for documents that fail to print properly",
+                "new command-line option: -manga-mode [1|true|0|false] for proper display of manga comic books",
+                "many robustness fixes and small improvements"
+              ],
+              "2.1.1 (2012-05-07)": [
+                "fixes for a few crashes"
+              ],
+              "2.1 (2012-05-03)": [
+                "support for EPUB ebook format",
+                "added File/Rename menu item to rename currently viewed file (contributed by Vasily Fomin)",
+                "support multi-page TIFF files",
+                "support TGA images",
+                "support for some comic book (CBZ) metadata",
+                "support JPEG XR images (available on Windows Vista or later, for Windows XP the **[Windows Imaging Component](https://www.microsoft.com/en-us/download/details.aspx?id=32)** has to be installed)",
+                "the installer is now signed"
+              ],
+              "2.0.1 (2012-04-08)": [
+                "fix loading .mobi files from command line",
+                "fix a crash loading multiple .mobi files at once",
+                "fix a crash showing tooltips for table of contents tree entries"
+              ],
+              "2.0 (2012-04-02)": [
+                "support for **[MOBI](https://blog.kowalczyk.info/articles/mobi-ebook-reader-viewer-for-windows.html)** eBook format",
+                "support opening CHM documents from network drives",
+                "a selection can be copied to a clipboard as an image by using right-click context menu",
+                "using ucrt to reduce program size"
+              ],
+              "1.9 (2011-11-23)": [
+                "support for **[CHM](https://blog.kowalczyk.info/articles/chm-reader-viewer-for-windows.html)** documents",
+                "support touch gestures, available on Windows 7 or later. Contributed by Robert Prouse",
+                "open linked audio and video files in an external media player",
+                "improved support for PDF transparency groups"
+              ],
+              "1.8 (2011-09-18)": [
+                "improved support for PDF form text fields",
+                "various minor improvements and bug fixes",
+                "speedup handling some types of djvu files"
+              ],
+              "1.7 (2011-07-18)": [
+                "favorites",
+                "improved support for right-to-left languages e.g. Arabic",
+                "logical page numbers are displayed and used, if a document provides them (such as i, ii, iii, etc.)",
+                "allow to restrict SumatraPDF's features with more granularity; see **[sumatrapdfrestric.init](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/docs/sumatrapdfrestrict.ini)** for documentation",
+                "-named-dest also matches strings in table of contents",
+                "improved support for EPS files (requires Ghostscript)",
+                "more robust installer",
+                "many minor improvements and bugfixes"
+              ],
+              "1.6 (2011-05-30)": [
+                "add support for displaying DjVu documents",
+                "display Frequently Read list when no document is open",
+                "add support for displaying Postscript documents (requires recent Ghostscript version to be already installed)",
+                "add support for displaying a folder containing images: drag the folder to SumatraPDF window",
+                "support clickable links and a Table of Content for XPS documents",
+                "display printing progress and allow to cancel it",
+                "add Print toolbar button",
+                "experimental: previewing of PDF documents in Windows Vista and 7. Creates thumbnails and displays documents in Explorer's Preview pane. Needs to be explicitly selected during install process. We've had reports that it doesn't work on Windows 7 x64."
+              ],
+              "1.5.1 (2011-04-26)": [
+                "fixes for rare crashes"
+              ],
+              "1.5 (2011-04-23)": [
+                "add support for viewing XPS documents",
+                "add support for viewing CBZ and CBR comic books",
+                "add File/Save Shortcut menu item to create shortcuts to a specific place in a document",
+                "add context menu for copying text, link addresses and comments. In browser plugin it also adds saving and printing commands",
+                "add folder browsing (Ctrl+Shift+Right opens next PDF document in the current folder, Ctrl+Shift+Left opens previous document)"
+              ],
+              "1.4 (2011-03-12)": [
+                "browser plugin for Firefox/Chrome/Opera (Internet Explorer is not supported). It's not installed by default so you have to check the apropriate checkbox in the installer",
+                "IFilter that enables full-text search of PDF files in Windows Desktop Search (i.e. search from Windows Vista/7's Start Menu). Also not installed by default",
+                "scrolling with right mouse button",
+                "you can choose a custom installation directory in the installer",
+                "menu items for re-opening current document in Foxit and PDF-XChange (if they're installed)",
+                "we no longer compress the installer executable with mpress. It caused some anti-virus programs to falsely report Sumatra as a virus. The downside is that the binaries on disk are now bigger. Note: we still compress the portable .zip version",
+                "-title cmd-line option was removed",
+                "support for AES-256 encrypted PDF documents",
+                "fixed an integer overflow reported by Jeroen van der Gun and and other small fixes and improvements to PDF handling"
+              ],
+              "1.3 (2011-02-04)": [
+                "improved text selection and copying. We now mimic the way a browser or Adobe Reader works: just select text with mouse and use Ctrl-C to copy it to a clipboard",
+                "Shift+Left Mouse now scrolls the document, Ctrl+Left mouse still creates a rectangular selection (for copying images)",
+                "'c' shortcut toggles continuous mode",
+                "'+' / '\\*' on the numeric keyboard now do zoom and rotation",
+                "added toolbar icons for Fit Page and Fit Width and updated the look of toolbar icons",
+                "add support for back/forward mouse buttons for back/forward navigation",
+                "1.2 introduces a new full screen mode and made it the default full screen mode. Old mode was still available but not easily discoverable. We've added View/Presentation menu item for new full screen mode and View/Fullscreen menu item for the old full screen mode, to make it more discoverable",
+                "new, improved installer",
+                "improved zoom performance (zooming to 6400% no longer crashes)",
+                "text find uses less memory",
+                "further printing improvements",
+                "translation updates",
+                "updated to latest mupdf for misc bugfixes and improvements",
+                "use libjpeg-turbo library instead of libjpeg, for faster decoding of some PDFs",
+                "updated openjpeg library to version 1.4 and freetype to version 2.4.4",
+                "fixed 2 integer overflows reported by Stefan Cornelius from Secunia Research"
+              ],
+              "1.2 (2010-11-26)": [
+                "improved printing: faster and uses less resources",
+                "add Ctrl-Y as a shortcut for Custom Zoom",
+                "add Ctrl-A as a shortcut for Select All Text",
+                "improved full screen mode",
+                "open embedded PDF documents",
+                "allow saving PDF document attachements to disk",
+                "latest fixes and improvements to PDF rendering from mupdf project"
+              ],
+              "1.1 (2010-05-20)": [
+                "added book view (“View/Book View” menu item) option. It’s known as “Show Cover Page During Two-Up” in Adobe Reader",
+                "added “File/Properties” menu item, showing basic information about PDF file",
+                "added “File/Send by email” menu",
+                "added export as text. When doing “File/Save As”, change “Save As types” from “ PDF documents” to “Text documents”. Don’t expect miracles, though. Conversion to text is not very good in most cases.",
+                "auto-detect commonly used TeX editors for inverse-search command",
+                "bug fixes to PDF handling (more PDFs are shown correctly)",
+                "misc bug fixes and small improvements in UI",
+                "add Ctrl + and Ctrl – as shortcuts for zooming (matches Adobe Reader)"
+              ],
+              "1.0.1 (2009-11-27)": [
+                "many memory leaks fixed (Simon Bünzli)",
+                "potential crash due to stack corruption (pointed out by Christophe Devine)",
+                "making Sumatra default PDF reader no longer asks for admin priviledges on Vista/Windows 7",
+                "translation updates"
+              ],
+              "1.0 (2009-11-17)": [
+                "lots of small bug fixes and improvements"
+              ],
+              "0.9.4 (2009-07-19)": [
+                "improved PDF compatibility (more types of documents can be rendered)",
+                "added settings dialog (contributed by Simon Bünzli)",
+                "improvements in handling unicode",
+                "changed default view from single page to continuous",
+                "SyncTex improvements (contributed by William Blum)",
+                "add option to not remember opened files",
+                "a new icon for documents association (contributed by George Georgiou)",
+                "lots of bugfixes and UI polish"
+              ],
+              "0.9.3 (2008-10-07)": [
+                "fix an issue with opening non-ascii files",
+                "updated Japanese and Brazillian translation"
+              ],
+              "0.9.2 (2008-10-06)": [
+                "ability to disable auto-update check",
+                "improved text rendering - should fix problems with overlapping text",
+                "improved font substition for fonts not present in PDF file",
+                "can now open PDF files with non-ascii names",
+                "improvements to DDE (contributed by Danilo Roascio)",
+                "SyncTex improvements",
+                "improve persistance of state (contributed by Robert Liu)",
+                "fix crash when pressing 'Cancel' when entering a password",
+                "updated translations"
+              ],
+              "0.9.1 (2008-08-22)": [
+                "improved rendering of some PDFs",
+                "support for links inside PDF file",
+                "added -restrict and -title cmd-line options (contributed by Matthew Wilcoxson)",
+                "enabled SyncTex support which mistakenly disabled in 0.9",
+                "misc fixes and translation updates"
+              ],
+              "0.9 (2008-08-10)": [
+                "add Ctrl-P as print shortcut",
+                "add F11 as full-screen shortcut",
+                "password dialog no longer shows the password",
+                "support for AES-encrypted PDF files",
+                "updates to SyncTeX/PdfSync integration (contributed by William Blum)",
+                "add -nameddest command-line option and DDE commands for jumping to named destination(contributed by Alexander Klenin)",
+                "add -reuse-instance command-line option (contributed by William Blum)",
+                "add DDE command to open PDF file (contributed by William Blum)",
+                "removed poppler rendering engine resulting in smaller program and updated to latest mupdf sources",
+                "misc bugfixes and translation updates"
+              ],
+              "0.8.1 (2008-05-27)": [
+                "automatic reloading of changed PDFs (contributed by William Blum)",
+                "tex integration (contributed by William Blum)",
+                "updated icon for case-sensitivity selection in find (contributed by Sonke Tesch)",
+                "language change is now a separate dialog instead of a menu",
+                "remember more settings (like default view)",
+                "automatic checks for new versions",
+                "add command-line option -lang $lang",
+                "add command-line option -print-dialog (contributed by Peter Astrand)",
+                "ESC or single mouse click hides selection",
+                "fix showing boxes in table of contents tree",
+                "translation updates"
+              ],
+              "0.8 (2008-01-01)": [
+                "added search (contributed by MrChuoi)",
+                "added table of contents (contributed by MrChuoi)",
+                "added many translation",
+                "new program icon",
+                "fixed printing",
+                "fixed some crashes",
+                "rendering speedups",
+                "fixed loading of some PDFs",
+                "add command-line option -esc-to-exit",
+                "add command-line option -bgcolor $color"
+              ],
+              "0.7 (2007-07-28)": [
+                "added ability to select the text and copy to clipboard - contributed by Tomek Weksej",
+                "made it multi-lingual (13 translations)",
+                "added Save As option",
+                "list of recently opened files is updated immediately",
+                "fixed .pdf extension registration on Vista",
+                "added ability to compile as DLL and C# sample application - contributed by Valery Possoz",
+                "mingw compilation fixes and project files for CodeBlocks - contributed by MrChuoi",
+                "fixed a few crashes",
+                "moved the sources to Google Code project hosting"
+              ],
+              "0.6 (2007-04-29)": [
+                "enable opening password-protected PDFs",
+                "don't allow printing in PDFs that have printing forbidden",
+                "don't automatically reopen files at startup",
+                "fix opening PDFs from network shares",
+                "new, better icon",
+                "reload the document when changing rendering engine",
+                "improve cursor shown when dragging",
+                "fix toolbar appearance on XP and Vista with classic theme",
+                "when MuPDF engine cannot load a file or render a page, we fallback to poppler engine to make rendering more robust",
+                "fixed a few crashes"
+              ],
+              "0.5 (2007-03-04)": [
+                "fixed rendering problems with some PDF files",
+                "speedups - the application should feel be snappy and there should be less waiting for rendering",
+                "added 'r' keybinding for reloading currently open PDF file",
+                "added <Ctrl>-<Shift>-+ and <Ctrl>-<Shift>-- keybindings to rotate clockwise and counter-clockwise (just like Acrobat Reader)",
+                "fixed a crash or two"
+              ],
+              "0.4 (2007-02-18)": [
+                "printing",
+                "ask before registering as a default handler for PDF files",
+                "faster rendering thanks to alternative PDF rendering engine. Previous engine is available as well.",
+                "scrolling with mouse wheel",
+                "fix toolbar issues on win2k",
+                "improve the way fonts directory is found",
+                "improvements to portable mode",
+                "uninstaller completely removes the program",
+                "changed name of preferences files from prefs.txt to sumatrapdfprefs.txt"
+              ],
+              "0.3 (2006-11-25)": [
+                "added toolbar for most frequently used operations",
+                "should be more snappy because rendering is done in background and it caches one page ahead",
+                "some things are faster"
+              ],
+              "0.2 (2006-08-06)": [
+                "added facing, continuous and continuous facing viewing modes",
+                "remember history of opened files",
+                "session saving i.e. on exit remember which files are opened and restore the session when the program is started without any command-line parameters",
+                "ability to open encrypted files",
+                "\"Go to page dialog\"",
+                "less invasive (less yellow) icon that doesn't jump at you on desktop",
+                "fixed problem where sometimes text wouldn't show (better mapping for fonts; use a default font if can't find the font specified in PDF file)",
+                "handle URI links inside PDF documents",
+                "show \"About\" screen",
+                "provide a download in a .zip file for those who can't run installation program",
+                "switched to poppler code instead of xpdf"
+              ],
+              "0.1 (2006-06-01)": [
+                "first version released"
+              ]
+            }
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 37]"
+        },
+        {
+          "title": "Why Only Windows",
+          "description": null,
+          "content": {
+            "Why only Windows?": "People sometimes suggest that Sumatra should be available for some other operating system: Linux, Mac, Android etc.\n\nThis won't happen.\n\nThe first reason is that current developers don't know how to write software for those other platforms.\n\nSecond reason is that it would mean writing the whole program from scratch for a new platform.\n\nSumatra is tightly integrated with and optimized for Windows. Making a version for another operating system is not a matter of making a few changes here and there but writing all the UI code from scratch i.e. redoing years of development that went into Sumatra.\n\nSumatraPDF is an open-source project so anyone is free to take our source code and use as much of it as they want to create equivalent for some other operating system, but we're unlikely to do it ourselves."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 0, \"subpages\", 38]"
+        }
+      ],
+      "path": "[\"subpages\", 0]"
+    }
+  ]
+}

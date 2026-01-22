@@ -1,0 +1,532 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Storybook Core Architecture: Dual-Process Component Development System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Manager Application: Development Environment Shell",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "React-based UI orchestration system providing main interface elements",
+              "weight": 3
+            },
+            {
+              "requirements": "Sidebar navigation and story organization with hierarchical display",
+              "weight": 2
+            },
+            {
+              "requirements": "Toolbar and addon panel management with extensible UI components",
+              "weight": 2
+            },
+            {
+              "requirements": "Theme system and UI customization capabilities for branding",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Preview Application: Isolated Component Rendering Environment",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Sandboxed iframe rendering system for component isolation",
+              "weight": 3
+            },
+            {
+              "requirements": "Multi-framework rendering support through pluggable framework adapters",
+              "weight": 3
+            },
+            {
+              "requirements": "Canvas rendering and viewport management for component display",
+              "weight": 2
+            },
+            {
+              "requirements": "Hot module replacement and live reloading for development workflow",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Manager-Preview Communication System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Channel-based bidirectional communication bus between applications",
+              "weight": 3
+            },
+            {
+              "requirements": "Dynamic story updates and args synchronization",
+              "weight": 3
+            },
+            {
+              "requirements": "Event API for addon interactions and state management",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration Management: Layered Behavior Definition System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Main Configuration System (main.js|ts)",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Story file discovery using glob patterns and indexing mechanisms",
+              "weight": 3
+            },
+            {
+              "requirements": "Addon ecosystem registration and configuration management",
+              "weight": 3
+            },
+            {
+              "requirements": "Framework and builder specification (Webpack/Vite integration)",
+              "weight": 3
+            },
+            {
+              "requirements": "Build tool configuration customization (webpackFinal, viteFinal)",
+              "weight": 2
+            },
+            {
+              "requirements": "Static asset serving and environment variable processing",
+              "weight": 2
+            },
+            {
+              "requirements": "Feature flags and experimental capabilities control",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Preview Configuration System (preview.js|ts)",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Global decorators for component context wrapping and theming",
+              "weight": 3
+            },
+            {
+              "requirements": "Global parameters providing static metadata for stories and addons",
+              "weight": 2
+            },
+            {
+              "requirements": "Global loaders for asynchronous data fetching before story rendering",
+              "weight": 2
+            },
+            {
+              "requirements": "Global argTypes and args defining default component properties",
+              "weight": 2
+            },
+            {
+              "requirements": "Global types for dynamic variables controlled by toolbar addons",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Parameter Inheritance and Override System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Hierarchical configuration merging: Global → Component → Story",
+              "weight": 3
+            },
+            {
+              "requirements": "Cascading defaults with specific override capabilities",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Component Story Format (CSF): Story Definition and Processing Engine",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Story File Structure and Metadata System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "ES module structure with default export (meta) and named exports (stories)",
+              "weight": 3
+            },
+            {
+              "requirements": "Story metadata extraction, validation, and composition mechanisms",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Component Metadata (Meta) Management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Component linking and title hierarchy definition",
+              "weight": 3
+            },
+            {
+              "requirements": "Component-level args, argTypes, decorators, parameters, and loaders",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Story Definition and Execution System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Story-specific args for component property permutations",
+              "weight": 3
+            },
+            {
+              "requirements": "Play function execution engine for user interaction simulation",
+              "weight": 3
+            },
+            {
+              "requirements": "Custom render functions for complex rendering logic",
+              "weight": 2
+            },
+            {
+              "requirements": "Story-specific loaders for targeted data fetching",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Args System: Dynamic Property Management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Args as component properties for story rendering",
+              "weight": 3
+            },
+            {
+              "requirements": "ArgTypes metadata for automatic control generation and documentation",
+              "weight": 3
+            },
+            {
+              "requirements": "Automatic argTypes inference from TypeScript, PropTypes, and framework metadata",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Addon Ecosystem and Extensibility Framework",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Addon Architecture and Communication",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Addon registration, lifecycle management, and preset system",
+              "weight": 3
+            },
+            {
+              "requirements": "UI-based addons adding tabs, panels, and toolbar items",
+              "weight": 2
+            },
+            {
+              "requirements": "Preset addons for build configuration modification",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Addon API and Integration Points",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Manager API for UI registration and state access",
+              "weight": 2
+            },
+            {
+              "requirements": "Preview API for addon data consumption within stories",
+              "weight": 2
+            },
+            {
+              "requirements": "Presets API for build process integration hooks",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Essential Addons Integration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Controls addon for dynamic property manipulation with auto-generated UI",
+              "weight": 3
+            },
+            {
+              "requirements": "Actions addon for event handling, logging, and debugging",
+              "weight": 2
+            },
+            {
+              "requirements": "Viewport and backgrounds addons for environment simulation",
+              "weight": 2
+            },
+            {
+              "requirements": "Docs addon for automatic documentation generation",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Testing and Quality Assurance Framework",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Interactive Testing Infrastructure",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Play function system for scripted user interactions with visual debugging",
+              "weight": 3
+            },
+            {
+              "requirements": "Testing library integration (@storybook/testing-library, @storybook/jest)",
+              "weight": 3
+            },
+            {
+              "requirements": "Mock and spy system for dependency isolation and testing",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Automated Testing Integration",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Test runner for headless browser automation and CI/CD integration",
+              "weight": 3
+            },
+            {
+              "requirements": "Visual regression testing capabilities",
+              "weight": 2
+            },
+            {
+              "requirements": "Accessibility testing automation",
+              "weight": 2
+            },
+            {
+              "requirements": "Code coverage reporting and analysis",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Portable Stories System for External Testing",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Story composition utilities (composeStories, composeStory) for unit testing frameworks",
+              "weight": 3
+            },
+            {
+              "requirements": "Project annotations and global configuration application for test environments",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Documentation and Knowledge Management System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Automatic Documentation Generation (addon-docs)",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Autodocs: Component documentation pages using stories and argTypes",
+              "weight": 3
+            },
+            {
+              "requirements": "Component metadata extraction and analysis for documentation",
+              "weight": 3
+            },
+            {
+              "requirements": "Doc blocks system for structured documentation components",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "MDX Processing and Custom Documentation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "MDX compilation and story integration for rich documentation",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom documentation page generation and layout",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Multi-Framework Support and Build System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Framework Integration Infrastructure",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Framework detection, configuration, and adapter system",
+              "weight": 3
+            },
+            {
+              "requirements": "Framework-specific rendering and metadata extraction capabilities",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Build System Architecture",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Builder abstraction supporting Webpack and Vite with HMR",
+              "weight": 2
+            },
+            {
+              "requirements": "Story compilation, bundling, and static build generation",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Data Management and State Handling",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Global State Management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Global variables and toolbar state synchronization",
+              "weight": 2
+            },
+            {
+              "requirements": "URL parameter mapping and persistence",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Mocking and Data Simulation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Module mocking and dependency injection system",
+              "weight": 3
+            },
+            {
+              "requirements": "Network request mocking with MSW integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Provider mocking for context-based components",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Sharing, Collaboration, and Deployment",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Static Build and Deployment Pipeline",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Production build optimization and asset management",
+              "weight": 3
+            },
+            {
+              "requirements": "SEO optimization and metadata generation",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Collaboration and Integration Features",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Storybook composition for multi-project integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Embedding capabilities and iframe integration",
+              "weight": 1
+            },
+            {
+              "requirements": "Design tool integration and synchronization",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Developer Experience and Maintenance Tools",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "CLI Tools and Project Management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Project initialization and setup automation",
+              "weight": 2
+            },
+            {
+              "requirements": "Addon management and installation system",
+              "weight": 1
+            },
+            {
+              "requirements": "Diagnostic and troubleshooting tools",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Migration and Upgrade Infrastructure",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Version detection and compatibility checking",
+              "weight": 2
+            },
+            {
+              "requirements": "Automated code transformation and upgrade tooling",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

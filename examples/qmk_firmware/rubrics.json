@@ -1,0 +1,774 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Firmware Architecture - The fundamental runtime system orchestrating keyboard operations and execution flow",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Main Execution Loop - The central process that orchestrates all keyboard operations",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Continuously scans the key matrix for state changes",
+              "weight": 3
+            },
+            {
+              "requirements": "Processes detected key events through the feature pipeline",
+              "weight": 3
+            },
+            {
+              "requirements": "Manages system tasks and feature-specific periodic tasks",
+              "weight": 2
+            },
+            {
+              "requirements": "Generates and sends HID reports to the host computer",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Key Event Processing Pipeline - Multi-stage transformation of raw matrix scans into host-consumable actions",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Matrix Scanning - Detects physical key presses by scanning rows and columns",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Supports standard diode matrices and direct pin configurations",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Allows for custom matrix implementations",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Debouncing - Filters out electrical noise from key switch contacts",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Provides multiple debounce algorithms (symmetric, eager) for different hardware needs",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Keycode Resolution - Maps matrix position to specific keycode based on active layer",
+              "weight": 3
+            },
+            {
+              "requirements": "Feature and Callback Hooks - Allows modular features to intercept and modify key events",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Executes user-defined functions at various key processing stages",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "HID Report Generation - Translates processed keycodes into standard USB HID reports",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Layer Management System - Stack-based system for managing multiple virtual keyboard layouts",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Layer State Management - Dynamic layer activation with stack-based precedence",
+              "weight": 3
+            },
+            {
+              "requirements": "Transparency System - Key behavior inheritance allowing lower layers to show through",
+              "weight": 3
+            },
+            {
+              "requirements": "Layer Manipulation Functions - Momentary activation, toggling, and direct layer setting",
+              "weight": 2
+            },
+            {
+              "requirements": "Advanced layer features such as tri-layer states",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "State Management - Manages keyboard's internal state, both volatile and persistent",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Runtime State Tracking - Manages modifier states, layers, and feature status",
+              "weight": 3
+            },
+            {
+              "requirements": "Persistent Storage Management - EEPROM/Flash storage for configuration settings",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Implements wear-leveling for EEPROM emulation on flash memory",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Real-Time Operating System Integration - ChibiOS RTOS integration for ARM-based MCUs",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Hardware initialization and startup sequence management",
+              "weight": 2
+            },
+            {
+              "requirements": "Multitasking support for complex features like audio, RGB lighting, and USB communication",
+              "weight": 2
+            },
+            {
+              "requirements": "System timer and low-level hardware resource abstraction",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Hardware Abstraction Layer - Standardized interface decoupling firmware logic from specific hardware implementations",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-Architecture MCU Support - Cross-platform microcontroller compatibility system",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "AVR Architecture Support - Native Atmel AVR microcontroller implementation",
+              "weight": 3
+            },
+            {
+              "requirements": "ARM Architecture Support - ChibiOS-based ARM microcontroller integration",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "STM32 Family Support - STMicroelectronics ARM Cortex-M implementation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "RP2040 Support - Raspberry Pi silicon with PIO capabilities",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Alternative ARM Vendors - Kinetis, WestBerry, Artery, and other ARM implementations",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "RISC-V Architecture Support - Emerging architecture compatibility",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Peripheral Driver System - Standardized drivers for hardware component control",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Communication Protocol Drivers - Low-level hardware communication interfaces",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "I2C Master Driver - Inter-integrated circuit communication protocol",
+                  "weight": 2
+                },
+                {
+                  "requirements": "SPI Master Driver - Serial peripheral interface communication",
+                  "weight": 2
+                },
+                {
+                  "requirements": "UART and Serial Drivers - Device communication for split keyboards and debugging",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Lighting and Display Drivers - Visual feedback component management",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Addressable RGB LED drivers (WS2812, APA102)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "LED Matrix drivers (IS31FL37xx series)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "OLED/LCD screen drivers (SSD1306, HD44780)",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Input Device Drivers - Non-switch input device support",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Rotary Encoder drivers for volume and navigation control",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Pointing device sensor drivers (ADNS, PMW series, Cirque trackpads)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Analog-to-Digital Converter driver for joysticks and analog inputs",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Storage Drivers - Persistent data storage abstraction",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "EEPROM Driver - Non-volatile configuration storage",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Flash Driver - Program memory and large data storage",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "GPIO Control System - Pin manipulation and configuration abstraction",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Pin State Management - Digital input/output control with atomic operations",
+              "weight": 3
+            },
+            {
+              "requirements": "ADC Integration - Analog sensor input processing",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Board Abstraction and Portability - Adaptation system for different PCBs and controllers",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Board-specific configuration in dedicated keyboard folders",
+              "weight": 3
+            },
+            {
+              "requirements": "Converter system for common controller footprints to different MCUs",
+              "weight": 2
+            },
+            {
+              "requirements": "Bootloader support for firmware flashing (DFU, UF2, Caterina)",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration Management System - Data-driven keyboard definition and hierarchical customization framework",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Hierarchical Configuration Model - Layered override system for keyboard customization",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Configuration Precedence - Userspace > Keymap > Keyboard > Core override hierarchy",
+              "weight": 3
+            },
+            {
+              "requirements": "Build System Integration - config.h and rules.mk for preprocessor definitions and feature selection",
+              "weight": 3
+            },
+            {
+              "requirements": "Userspace Support - Shared code and settings across multiple keymaps",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Data-Driven Configuration - JSON-based declarative keyboard definition system",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Keyboard Definition Schema - Central keyboard.json for hardware description",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Matrix layout, pin assignments, and feature definitions in structured format",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Layout Macros - Physical key arrangement to logical key mapping",
+                  "weight": 3
+                },
+                {
+                  "requirements": "USB Device Descriptor - HID device identification and capabilities",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Code Generation - Automatic C header file and build flag generation from JSON",
+              "weight": 2
+            },
+            {
+              "requirements": "Tool Integration - Enables QMK Configurator and other tools to understand keyboards",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Keymap System - Hierarchical key behavior definition and layer management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Keycode System - Comprehensive input action definition framework",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Basic Keycodes - Standard keyboard key definitions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Quantum Keycodes - QMK-specific advanced key behaviors for layers, reset, etc.",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Modifier Integration - Key combination and modifier state management",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Mod-Tap Keys - Dual-function keys that act as modifiers when held, regular keys when tapped",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Specialized feature keycodes for RGB control, Audio, Macros, and Unicode",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Feature Framework - Modular functionality system for advanced keyboard behavior enhancement",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Advanced Input Processing - Complex key behavior modification systems",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Tap-Hold Processing - Dual-function key behavior based on timing",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Layer-Tap Keys - Layer activation when held, key when tapped",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Tap-Hold Configuration - Timing and behavior customization system",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Multi-Key Interaction Systems - Complex key combination behaviors",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Tap Dance - Multi-tap key behavior sequences based on tap count",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Combos - Simultaneous key press combinations triggering actions",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Key Overrides - Context-sensitive key behavior modification",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Auto Shift - Automatic capitalization based on hold duration",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Lighting and Visual Features - LED control and visual feedback systems",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "RGB Matrix System - Advanced programmable RGB lighting with effects engine",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Effect Engine - Predefined and custom lighting animations",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Indicator System - Status-based lighting feedback",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Basic Lighting Systems - Simple LED control mechanisms",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Backlighting - Uniform keyboard illumination with brightness control",
+                  "weight": 1
+                },
+                {
+                  "requirements": "RGB Lighting - Basic addressable RGB strip control with breathing effects",
+                  "weight": 2
+                },
+                {
+                  "requirements": "LED Matrix - Monochrome programmable lighting",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Display Integration - Graphics engine for rendering on displays",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Input Device Emulation and Extensions - Alternative input method support",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "HID Device Emulation - Keyboard acting as other input devices",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Mouse Keys - Cursor and mouse button control from keyboard",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Joystick and Gamepad emulation",
+                  "weight": 1
+                },
+                {
+                  "requirements": "MIDI device emulation",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Pointing Device Support - Mouse and trackpad integration",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Sensor integration for various pointing device sensors",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Split keyboard pointing device support",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Alternative Input Methods - Non-standard input device support",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Rotary encoder support for volume and navigation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Analog joystick and gamepad functionality",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Digitizer and graphics tablet support",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Text Processing and Automation Features - Advanced text input and manipulation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Macro System - Programmable text and key sequence automation",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Static Macros - Predefined text and key sequences",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Dynamic Macros - Runtime-recordable macro sequences",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Text Enhancement Features - Intelligent text processing",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Autocorrect - Automatic typo correction system",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Caps Word - Smart capitalization mode",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Unicode Support - International character input system",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Audio System - Audible feedback and musical note generation",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "requirements": "Communication and Connectivity - Device communication protocols and multi-device support",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "USB HID Implementation - Host computer communication protocol",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Keyboard HID - Standard keyboard input reporting",
+              "weight": 3
+            },
+            {
+              "requirements": "Extended HID - Mouse, media, and consumer device reporting",
+              "weight": 2
+            },
+            {
+              "requirements": "Raw HID - Custom application communication channel",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Split Keyboard Architecture - Multi-part keyboard communication system",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Inter-Half Communication - Data synchronization between keyboard halves",
+              "weight": 3
+            },
+            {
+              "requirements": "Feature Synchronization - State sharing for lighting, layers, and settings",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Wireless Communication - Bluetooth and wireless connectivity support",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Bluetooth HID - Wireless keyboard functionality",
+              "weight": 2
+            },
+            {
+              "requirements": "Power Management - Battery monitoring and power optimization",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Build and Deployment Ecosystem - Tools and services for firmware development, compilation, and deployment",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "QMK Command Line Interface - Comprehensive development and configuration tool",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Development environment setup and management",
+              "weight": 2
+            },
+            {
+              "requirements": "Firmware compilation orchestration",
+              "weight": 3
+            },
+            {
+              "requirements": "Flashing tool integration for programming MCUs",
+              "weight": 3
+            },
+            {
+              "requirements": "Utility functions for scaffolding, diagnostics, and configuration",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Remote Compilation Service - Web-based firmware compilation as a service",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "RESTful API endpoints for compile job submission",
+              "weight": 3
+            },
+            {
+              "requirements": "Asynchronous job queue management with Redis/RQ",
+              "weight": 2
+            },
+            {
+              "requirements": "Job status tracking and firmware artifact distribution",
+              "weight": 2
+            },
+            {
+              "requirements": "QMK Configurator backend integration",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Web-Based Configuration Tools - Browser-accessible keyboard customization",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "QMK Configurator - Visual keymap editor with drag-and-drop interface",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Visual keyboard representation based on keyboard.json data",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Keycode assignment through graphical interface",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Keymap.json generation and API submission",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Firmware Deployment System - Mechanisms for writing firmware to microcontrollers",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Bootloader Support - Multiple bootloader compatibility for flashing",
+              "weight": 3
+            },
+            {
+              "requirements": "QMK Toolbox - Cross-platform GUI application for firmware flashing",
+              "weight": 2
+            },
+            {
+              "requirements": "In-System Programming support for bootloader flashing and recovery",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Project Governance and Development Process - Open-source project management and quality assurance",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "Contribution and Code Review Workflow - Structured community contribution process",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Coding standards enforcement with automated formatting tools",
+              "weight": 2
+            },
+            {
+              "requirements": "GitHub pull request workflow with type-specific checklists",
+              "weight": 2
+            },
+            {
+              "requirements": "Git version control best practices for branching and rebasing",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Quality Assurance and Testing - Code quality and stability maintenance systems",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Unit testing framework integration with Google Test",
+              "weight": 2
+            },
+            {
+              "requirements": "Static analysis and linting for error detection",
+              "weight": 2
+            },
+            {
+              "requirements": "Debugging tools and runtime analysis capabilities",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Release and Maintenance Strategy - Update management and dependency handling",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Scheduled breaking changes cycle for major refactors and API changes",
+              "weight": 2
+            },
+            {
+              "requirements": "External dependency management through Git submodules",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Licensing and Compliance Policy - Legal framework and license enforcement",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "GPLv2 licensing with proprietary code exclusion policies",
+              "weight": 2
+            },
+            {
+              "requirements": "Commercial vendor license violation handling procedures",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

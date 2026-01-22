@@ -1,0 +1,654 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Multi-Process Architecture: A desktop runtime combining Chromium frontend with Node.js backend in isolated processes",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Main Process: Central control unit with full Node.js and OS access managing application lifecycle and coordinating all child processes",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Application Lifecycle Management: Controls application state from launch to quit via the 'app' module",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "System event handling for 'ready', 'activate', 'window-all-closed', and OS signals to manage application state",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Application control methods for programmatic quit, relaunch, focus, and single-instance enforcement",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Global configuration management including paths, name, command-line switches, and exit codes",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Window Factory and Management: Creates and orchestrates native OS windows that spawn dedicated renderer processes",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "BrowserWindow/BaseWindow instantiation with each window tied to a dedicated renderer process via Chromium IPC",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Window property management including size, position, frame type, parent-child relationships, and platform-specific behaviors",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Window lifecycle event handling for 'close', 'focus', 'blur', minimize, maximize, and state changes",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Native API Gateway: Exposes OS primitives through Node.js bindings for desktop integration",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Native UI component management for menus, tray icons, dialogs, notifications, and platform-specific elements",
+                  "weight": 3
+                },
+                {
+                  "requirements": "System service integration including shell operations, clipboard, power monitoring, and global shortcuts",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Hardware and device access mediation for screen capture, USB, HID, serial, and bluetooth devices",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Security Policy Enforcement: Applies security configurations, fuses, and Chromium switches to control process capabilities",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Fuse-based security hardening with compile-time flags to permanently disable features like 'runAsNode'",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Chromium security switch configuration and nodeIntegration/contextIsolation policy defaults",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Permission and privilege management for sensitive operations like media access, geolocation, and device permissions",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Renderer Process: Sandboxed Chromium environment for web content rendering with controlled Node.js integration",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "WebContents Controller: Core component managing web page rendering and interaction within windows",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Navigation and page lifecycle management including reloads, history, and state transitions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Event emission for page lifecycle events like 'did-finish-load', 'dom-ready', 'render-process-gone'",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Page interaction methods for JavaScript execution, CSS insertion, printing, zoom, find-in-page, and media capture",
+                  "weight": 2
+                },
+                {
+                  "requirements": "DevTools integration and debugging protocol access for development workflows",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Context Isolation and Security: Multi-world JavaScript environment separation for secure API exposure",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "World separation between main world and isolated worlds to prevent prototype pollution and unauthorized access",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Preload script execution in isolated world with controlled API exposure through contextBridge",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Process sandboxing mechanisms restricting renderer access to system resources by default",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Node.js integration control with configurable levels of access and isolation",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Web Platform Feature Management: Controls access to web APIs and platform-specific features",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Permission gate management for geolocation, camera, microphone, USB, HID, serial, bluetooth via session handlers",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Content Security Policy (CSP) enforcement to mitigate XSS and injection attacks",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Custom protocol handling and URL scheme registration with security enforcement",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Offscreen rendering capabilities with GPU or software frame capture for headless operations",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Embedded Content Views: Mechanisms for embedding additional web content with process isolation",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "WebContentsView implementation for modern, flexible content embedding and layering",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Legacy webview tag support for out-of-process iframes maintaining backward compatibility",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Utility Process: Lightweight Node.js child processes for CPU-heavy or untrusted tasks with crash isolation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Process spawning and communication via parentPort postMessage for offloading blocking operations",
+              "weight": 2
+            },
+            {
+              "requirements": "Crash isolation ensuring utility process failures don't affect main or renderer processes",
+              "weight": 2
+            },
+            {
+              "requirements": "V8 snapshot loading capabilities for reduced startup time with fuse-controlled access",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Inter-Process Communication (IPC): Secure messaging infrastructure enabling communication between all process types",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Primary Communication Patterns: Core messaging mechanisms for process coordination",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Promise-based invoke/handle pattern as the recommended method for bidirectional request-response messaging",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Event-based send/on pattern for asynchronous one-way fire-and-forget messaging",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Structured clone serialization for complex data transfer between processes",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Advanced Communication Mechanisms: High-performance and specialized messaging options",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "MessageChannelMain/MessagePortMain for direct port-based communication bypassing main IPC router",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Transferable objects and shared texture handles for efficient data passing",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Synchronous sendSync method (discouraged) for blocking communication with performance impact",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Session and Network Management: Per-partition network stack managing browsing contexts, protocols, and request interception",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Session Partitioning: Isolated browsing contexts with separate data stores and configurations",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Storage partition separation for cookies, localStorage, indexedDB, service workers, and extensions per session",
+              "weight": 3
+            },
+            {
+              "requirements": "Session-specific network stack configuration including proxy settings and certificate handling",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Protocol and Request Management: Custom protocol handling and network request interception",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Custom protocol registry mapping schemes to handlers (file/buffer/stream/http) with privilege enforcement",
+              "weight": 3
+            },
+            {
+              "requirements": "WebRequest API for intercepting and modifying network requests and responses",
+              "weight": 2
+            },
+            {
+              "requirements": "Network logging, proxy resolution (PAC, manual), and NTLM SSO support",
+              "weight": 2
+            },
+            {
+              "requirements": "Certificate verification and SSL/TLS configuration management",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "HTTP Client Integration: Node.js-based network requests from main process",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Net module providing HTTP/HTTPS request capabilities from main process",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Native Platform Integration: Comprehensive suite for creating native desktop experiences across operating systems",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Native UI Components: Standard OS interface elements and user interaction systems",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Menu System: Cross-platform menu creation and management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Application and context menu management via Menu and MenuItem modules",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Keyboard shortcut and accelerator binding for menu items and global actions",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Platform-specific menu behaviors and styling adaptations",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "System Integration Components: OS-level UI elements and notifications",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "System tray icon creation and management via Tray module",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Native system dialogs for file operations, alerts, and error messages via dialog module",
+                  "weight": 2
+                },
+                {
+                  "requirements": "OS-level notifications using the Notification API",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Platform-specific UI features like macOS Dock, Touch Bar, Windows Taskbar integration",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "System Services: OS-level service integration and hardware access",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "File System and Shell Integration: OS interaction for file and application management",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Shell operations for opening files/URLs and trash management via shell module",
+                  "weight": 2
+                },
+                {
+                  "requirements": "File system access, dialog management, and drag-drop functionality",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Clipboard operations for text, images, and rich content via clipboard module",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "System Monitoring and Control: Hardware state and user preference tracking",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Power state monitoring for battery, suspend, resume events via powerMonitor",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Display and screen information querying including metrics and cursor position via screen module",
+                  "weight": 1
+                },
+                {
+                  "requirements": "System theme and color preference access through systemPreferences and nativeTheme",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Global keyboard shortcuts registration for app-wide hotkeys via globalShortcut",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Hardware Device Access: Mediated access to system hardware and peripherals",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Screen and window capture for sharing/recording via desktopCapturer module",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Device permission management for WebUSB, WebHID, WebSerial, and Bluetooth APIs",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Hardware device enumeration and access control with user consent workflows",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Packaging and Distribution System: Complete application lifecycle management from build to deployment",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Build and Packaging Pipeline: Multi-platform application bundling and optimization",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "ASAR Virtual File System: Single-file application bundling with performance optimization",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Application source bundling into tar-like ASAR format for improved read performance",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Integrity validation with header hash verification and runtime fuse checking",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Unpacked file support for native addons and large assets to avoid extraction penalties",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Cross-Platform Compilation: Multi-architecture and multi-OS build support",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Cross-compilation capabilities for ARM64, Win-ARM, and other target architectures",
+                  "weight": 2
+                },
+                {
+                  "requirements": "GN/Ninja build system wrapper around Chromium with distributed compilation support",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Native dependency bundling and resolution for platform-specific libraries",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Code Signing and Security: Application integrity and platform compliance",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Platform Security Compliance: OS-specific signing and validation requirements",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Code signing integration for macOS notarization and Windows Authenticode",
+                  "weight": 3
+                },
+                {
+                  "requirements": "App store submission workflows and validation processes",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Certificate management and code signature verification",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Auto-Update System: Automated application update delivery and management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Update Coordination: Client-server update protocol and management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "AutoUpdater module leveraging Squirrel.Mac/Windows for update checking, downloading, and installation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Update server communication with metadata handling in platform-specific formats",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Delta update application and incremental patching capabilities",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Update Security and Verification: Ensuring update integrity and rollback capabilities",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Update verification and code signature validation before installation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Rollback capabilities and update failure recovery mechanisms",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Native Module and Extension System: Support for external code integration and browser extensions",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Native Module Integration: C++ addon support and compilation management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Native Node.js addon rebuilding against Electron's specific V8/ABI using node-gyp or prebuild",
+              "weight": 3
+            },
+            {
+              "requirements": "Context-aware module loading with support for multiple Electron versions",
+              "weight": 2
+            },
+            {
+              "requirements": "Non-context-aware module blocking for enhanced security",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Chrome Extension Support: Browser extension loading and API compatibility",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Extension host process mirroring Chromium's extension system with content scripts and API support",
+              "weight": 2
+            },
+            {
+              "requirements": "Chrome DevTools extension loading with subset API compatibility",
+              "weight": 1
+            },
+            {
+              "requirements": "Extension background page execution in renderer processes",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Development and Debugging Infrastructure: Comprehensive tooling for application development, testing, and diagnostics",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Developer Tooling: Debugging and development workflow support",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "DevTools Integration: Chrome DevTools protocol access for debugging",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Chrome DevTools protocol integration for debugging both main and renderer processes",
+                  "weight": 3
+                },
+                {
+                  "requirements": "DevTools front-end serving from bundled Chromium revision with remote debugging target support",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Extension-based debugging tools and inspector capabilities",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Performance and Monitoring Tools: Application performance analysis and optimization",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Content tracing module for performance trace capture and analysis",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Memory profiling and leak detection capabilities",
+                  "weight": 1
+                },
+                {
+                  "requirements": "CPU profiling and performance bottleneck identification",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Testing and Automation: Automated testing framework and CI/CD integration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Test Automation Support: WebDriver and headless testing capabilities",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "WebDriver integration for automated UI testing and browser automation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Headless operation mode for CI/CD pipeline integration",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Unit testing framework support with mocking capabilities for Electron APIs",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Crash Reporting and Diagnostics: Error tracking and application health monitoring",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Crash Collection and Reporting: Automated crash dump collection and analysis",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Crashpad/CrashpadClient integration across all platforms for minidump collection",
+                  "weight": 3
+                },
+                {
+                  "requirements": "CrashReporter module for automatic crash dump submission to configured servers",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Stack-walking symbol resolution and crash analysis capabilities",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Sentry-compatible endpoint integration for crash data aggregation",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

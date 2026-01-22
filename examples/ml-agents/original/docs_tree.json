@@ -1,0 +1,872 @@
+{
+  "title": "ml-agents",
+  "description": "Documentation for ml-agents",
+  "subpages": [
+    {
+      "title": "Api Reference",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "API Reference": "<detail_content>"
+      }
+    },
+    {
+      "title": "Background: Machine Learning",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Unsupervised Learning": "<detail_content>",
+        "Supervised Learning": "<detail_content>",
+        "Reinforcement Learning": "<detail_content>",
+        "Training and Inference": "<detail_content>",
+        "Deep Learning": "<detail_content>"
+      }
+    },
+    {
+      "title": "Background: PyTorch",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "PyTorch": "<detail_content>",
+        "TensorBoard": "<detail_content>"
+      }
+    },
+    {
+      "title": "Background Unity",
+      "path": "[\"subpages\", 3]",
+      "content": {
+        "Background: Unity": "<detail_content>"
+      }
+    },
+    {
+      "title": "Code Of Conduct",
+      "path": "[\"subpages\", 4]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "How to Contribute to ML-Agents",
+      "path": "[\"subpages\", 5]",
+      "content": {
+        "1.Fork the repository": "<detail_content>",
+        "2. Set up your development environment": "<detail_content>",
+        "3. Choose an issue or feature": "<detail_content>",
+        "4. Make your changes": "<detail_content>",
+        "5. Test your changes": "<detail_content>",
+        "6. Submit a pull request": "<detail_content>",
+        "7. Respond to feedback": "<detail_content>",
+        "8. Continuous integration and code review": "<detail_content>",
+        "9. Merge your changes": "<detail_content>"
+      }
+    },
+    {
+      "title": "Custom Side Channels",
+      "path": "[\"subpages\", 6]",
+      "content": {
+        "Overview": {
+          "Unity side": "<detail_content>",
+          "Python side": "<detail_content>"
+        },
+        "Example implementation": {
+          "Example Unity C# code": "<detail_content>",
+          "Example Python code": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "ELO Rating System",
+      "path": "[\"subpages\", 7]",
+      "content": {
+        "What is a zero-sum game?": "<detail_content>",
+        "How works the ELO Rating System": {
+          "The Tennis example": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Frequently Asked Questions",
+      "path": "[\"subpages\", 8]",
+      "content": {
+        "Installation problems": "<detail_content>",
+        "Environment Permission Error": "<detail_content>",
+        "Environment Connection Timeout": "<detail_content>",
+        "Communication port {} still in use": "<detail_content>",
+        "Mean reward : nan": "<detail_content>",
+        "\"File name\" cannot be opened because the developer cannot be verified.": "<detail_content>"
+      }
+    },
+    {
+      "title": "Getting Started Guide",
+      "path": "[\"subpages\", 9]",
+      "content": {
+        "Installation": "<detail_content>",
+        "Understanding a Unity Environment": {
+          "Agent": {
+            "Behavior Parameters : Vector Observation Space": "<detail_content>",
+            "Behavior Parameters : Actions": "<detail_content>"
+          }
+        },
+        "Running a pre-trained model": "<detail_content>",
+        "Training a new model with Reinforcement Learning": {
+          "Training the environment": "<detail_content>",
+          "Observing Training Progress": "<detail_content>"
+        },
+        "Embedding the model into the Unity Environment": "<detail_content>",
+        "Next Steps": "<detail_content>"
+      }
+    },
+    {
+      "title": "Glossary",
+      "path": "[\"subpages\", 10]",
+      "content": {
+        "ML-Agents Toolkit Glossary": "<detail_content>"
+      }
+    },
+    {
+      "title": "The Hugging Face Integration",
+      "path": "[\"subpages\", 11]",
+      "content": {
+        "Download a model from the Hub": "<detail_content>",
+        "Upload a model to the Hub": "<detail_content>",
+        "Visualize an agent playing": "<detail_content>"
+      }
+    },
+    {
+      "title": "Inference Engine",
+      "path": "[\"subpages\", 12]",
+      "content": {
+        "Supported devices": "<detail_content>",
+        "Using Inference Engine": "<detail_content>"
+      }
+    },
+    {
+      "title": "Installing ML-Agents Toolkit for Windows (Deprecated)",
+      "path": "[\"subpages\", 13]",
+      "content": {
+        "Step 1: Install Python via Anaconda": "<detail_content>",
+        "Step 2: Setup and Activate a New Conda Environment": "<detail_content>",
+        "Step 3: Install Required Python Packages": {
+          "Installing for Development": "<detail_content>"
+        },
+        "(Optional) Step 4: GPU Training using The ML-Agents Toolkit": {
+          "Install Nvidia CUDA toolkit": "<detail_content>",
+          "Install Nvidia cuDNN library": "<detail_content>",
+          "Set Environment Variables": "<detail_content>",
+          "Install TensorFlow GPU": "<detail_content>"
+        },
+        "Acknowledgments": "<detail_content>"
+      }
+    },
+    {
+      "title": "Installation",
+      "path": "[\"subpages\", 14]",
+      "content": {
+        "Next Steps": "<detail_content>",
+        "Help": "<detail_content>"
+      }
+    },
+    {
+      "title": "Match-3 with ML-Agents",
+      "path": "[\"subpages\", 15]",
+      "content": {
+        "Getting started": "<detail_content>",
+        "Technical specifications for Match-3 with ML-Agents": {
+          "AbstractBoard class": "<detail_content>",
+          "`Move` struct": "<detail_content>",
+          "`BoardSize` struct": {
+            "`Match3Sensor` and `Match3SensorComponent` classes": "<detail_content>",
+            "`Match3Actuator` and `Match3ActuatorComponent` classes": "<detail_content>"
+          },
+          "Setting up Match-3 simulation": "<detail_content>"
+        },
+        "Implementation Details": {
+          "Action Space": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Game Integrations",
+      "path": "[\"subpages\", 16]",
+      "content": {
+        "Match-3": "<detail_content>",
+        "Interested in more game templates?": "<detail_content>"
+      }
+    },
+    {
+      "title": "License",
+      "path": "[\"subpages\", 17]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "Making a New Learning Environment",
+      "path": "[\"subpages\", 18]",
+      "content": {
+        "Overview": "<detail_content>",
+        "Set Up the Unity Project": "<detail_content>",
+        "Create the Environment": {
+          "Create the Floor Plane": "<detail_content>",
+          "Add the Target Cube": "<detail_content>",
+          "Add the Agent Sphere": "<detail_content>",
+          "Group into Training Area": "<detail_content>"
+        },
+        "Implement an Agent": {
+          "Initialization and Resetting the Agent": "<detail_content>",
+          "Observing the Environment": "<detail_content>",
+          "Taking Actions and Assigning Rewards": {
+            "Actions": "<detail_content>",
+            "Rewards": "<detail_content>",
+            "OnActionReceived()": "<detail_content>"
+          }
+        },
+        "Final Agent Setup in Editor": "<detail_content>",
+        "Testing the Environment": "<detail_content>",
+        "Training the Environment": "<detail_content>",
+        "Optional: Multiple Training Areas within the Same Scene": "<detail_content>",
+        "Optional: Training Using Concurrent Unity Instances": "<detail_content>"
+      }
+    },
+    {
+      "title": "Agents",
+      "path": "[\"subpages\", 19]",
+      "content": {
+        "Decisions": "<detail_content>",
+        "Observations and Sensors": {
+          "Generating Observations": {
+            "Agent.CollectObservations()": "<detail_content>",
+            "Observable Fields and Properties": "<detail_content>",
+            "ISensor interface and SensorComponents": "<detail_content>"
+          },
+          "Vector Observations": {
+            "One-hot encoding categorical information": "<detail_content>",
+            "Normalization": "<detail_content>",
+            "Stacking": "<detail_content>",
+            "Vector Observation Summary & Best Practices": "<detail_content>"
+          },
+          "Visual Observations": {
+            "Visual Observation Summary & Best Practices": "<detail_content>"
+          },
+          "Raycast Observations": {
+            "RayCast Observation Summary & Best Practices": "<detail_content>"
+          },
+          "Grid Observations": {
+            "Grid Observation Summary & Best Practices": "<detail_content>"
+          },
+          "Variable Length Observations": {
+            "Variable Length Observation Summary & Best Practices": "<detail_content>"
+          },
+          "Goal Signal": {
+            "Goal Signal Summary & Best Practices": "<detail_content>"
+          }
+        },
+        "Actions and Actuators": {
+          "Continuous Actions": "<detail_content>",
+          "Discrete Actions": {
+            "Masking Discrete Actions": "<detail_content>"
+          },
+          "IActuator interface and ActuatorComponents": "<detail_content>",
+          "Actions Summary & Best Practices": "<detail_content>"
+        },
+        "Rewards": {
+          "Examples": "<detail_content>",
+          "Rewards Summary & Best Practices": "<detail_content>"
+        },
+        "Agent Properties": "<detail_content>",
+        "Destroying an Agent": "<detail_content>",
+        "Defining Multi-agent Scenarios": {
+          "Teams for Adversarial Scenarios": "<detail_content>",
+          "Groups for Cooperative Scenarios": {
+            "Cooperative Behaviors Notes and Best Practices": "<detail_content>"
+          }
+        },
+        "Recording Demonstrations": "<detail_content>"
+      }
+    },
+    {
+      "title": "Designing a Learning Environment",
+      "path": "[\"subpages\", 20]",
+      "content": {
+        "The Simulation and Training Process": "<detail_content>",
+        "Organizing the Unity Scene": {
+          "Academy": {
+            "Academy resetting": "<detail_content>"
+          },
+          "Multiple Areas": "<detail_content>"
+        },
+        "Environments": "<detail_content>",
+        "Environment Parameters": "<detail_content>",
+        "Agent": "<detail_content>",
+        "Recording Statistics": "<detail_content>"
+      }
+    },
+    {
+      "title": "Example Learning Environments",
+      "path": "[\"subpages\", 21]",
+      "content": {
+        "Basic": "<detail_content>",
+        "3DBall: 3D Balance Ball": "<detail_content>",
+        "GridWorld": "<detail_content>",
+        "Push Block": "<detail_content>",
+        "Wall Jump": "<detail_content>",
+        "Crawler": "<detail_content>",
+        "Worm": "<detail_content>",
+        "Food Collector": "<detail_content>",
+        "Hallway": "<detail_content>",
+        "Soccer Twos": "<detail_content>",
+        "Strikers Vs. Goalie": "<detail_content>",
+        "Walker": "<detail_content>",
+        "Pyramids": "<detail_content>",
+        "Match 3": "<detail_content>",
+        "Sorter": "<detail_content>",
+        "Cooperative Push Block": "<detail_content>",
+        "Dungeon Escape": "<detail_content>"
+      }
+    },
+    {
+      "title": "Using an Environment Executable",
+      "path": "[\"subpages\", 22]",
+      "content": {
+        "Building the 3DBall environment": "<detail_content>",
+        "Interacting with the Environment": "<detail_content>",
+        "Training the Environment": "<detail_content>",
+        "Training on Headless Server": "<detail_content>"
+      }
+    },
+    {
+      "title": "Limitations",
+      "path": "[\"subpages\", 23]",
+      "content": {
+        "Limitations": "<detail_content>"
+      }
+    },
+    {
+      "title": "Ml Agents Envs Readme",
+      "path": "[\"subpages\", 24]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "ML-Agents Toolkit Overview",
+      "path": "[\"subpages\", 25]",
+      "content": {
+        "Running Example: Training NPC Behaviors": "<detail_content>",
+        "Key Components": "<detail_content>",
+        "Training Modes": {
+          "Built-in Training and Inference": {
+            "Cross-Platform Inference": "<detail_content>"
+          },
+          "Custom Training and Inference": "<detail_content>"
+        },
+        "Flexible Training Scenarios": "<detail_content>",
+        "Training Methods: Environment-agnostic": {
+          "Deep Reinforcement Learning": {
+            "Curiosity for Sparse-reward Environments": "<detail_content>",
+            "RND for Sparse-reward Environments": "<detail_content>"
+          },
+          "Imitation Learning": {
+            "GAIL (Generative Adversarial Imitation Learning)": "<detail_content>",
+            "Behavioral Cloning (BC)": "<detail_content>",
+            "Recording Demonstrations": "<detail_content>"
+          },
+          "Summary": "<detail_content>"
+        },
+        "Training Methods: Environment-specific": {
+          "Training in Competitive Multi-Agent Environments with Self-Play": "<detail_content>",
+          "Training In Cooperative Multi-Agent Environments with MA-POCA": "<detail_content>",
+          "Solving Complex Tasks using Curriculum Learning": "<detail_content>",
+          "Training Robust Agents using Environment Parameter Randomization": "<detail_content>"
+        },
+        "Model Types": {
+          "Learning from Vector Observations": "<detail_content>",
+          "Learning from Cameras using Convolutional Neural Networks": "<detail_content>",
+          "Learning from Variable Length Observations using Attention": "<detail_content>",
+          "Memory-enhanced Agents using Recurrent Neural Networks": "<detail_content>"
+        },
+        "Additional Features": "<detail_content>",
+        "Summary and Next Steps": "<detail_content>"
+      }
+    },
+    {
+      "title": "Ml Agents Readme",
+      "path": "[\"subpages\", 26]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "Unity ML-Agents Toolkit Documentation",
+      "path": "[\"subpages\", 27]",
+      "content": {
+        "Installation & Set-up": "<detail_content>",
+        "Getting Started": "<detail_content>",
+        "Creating Learning Environments": "<detail_content>",
+        "Training & Inference": "<detail_content>",
+        "Extending ML-Agents": "<detail_content>",
+        "Hugging Face Integration": "<detail_content>",
+        "Python Tutorial with Google Colab": "<detail_content>",
+        "Help": "<detail_content>",
+        "API Docs": "<detail_content>",
+        "Translations": "<detail_content>",
+        "Deprecated Docs": "<detail_content>"
+      }
+    },
+    {
+      "title": "Migrating",
+      "path": "[\"subpages\", 28]",
+      "content": {
+        "Migrating to Release 11": {
+          "Agent virtual method deprecation": "<detail_content>",
+          "BrainParameters field and method deprecation": "<detail_content>"
+        },
+        "Migrating from Release 7 to latest": {
+          "Important changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from Release 3 to Release 7": {
+          "Important changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from Release 1 to Release 3": {
+          "Important changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from 0.15 to Release 1": {
+          "Important changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from 0.14 to 0.15": {
+          "Important changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from 0.13 to 0.14": {
+          "Important changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from ML-Agents Toolkit v0.12.0 to v0.13.0": {
+          "Important changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from ML-Agents Toolkit v0.11.0 to v0.12.0": {
+          "Important Changes": "<detail_content>",
+          "Steps to Migrate": "<detail_content>"
+        },
+        "Migrating from ML-Agents Toolkit v0.10 to v0.11.0": {
+          "Important Changes": {
+            "Steps to Migrate": "<detail_content>"
+          }
+        },
+        "Migrating from ML-Agents Toolkit v0.9 to v0.10": {
+          "Important Changes": {
+            "Steps to Migrate": "<detail_content>"
+          }
+        },
+        "Migrating from ML-Agents Toolkit v0.8 to v0.9": {
+          "Important Changes": {
+            "Steps to Migrate": "<detail_content>"
+          }
+        },
+        "Migrating from ML-Agents Toolkit v0.7 to v0.8": {
+          "Important Changes": {
+            "Steps to Migrate": "<detail_content>"
+          }
+        },
+        "Migrating from ML-Agents Toolkit v0.6 to v0.7": {
+          "Important Changes": {
+            "Steps to Migrate": "<detail_content>"
+          }
+        },
+        "Migrating from ML-Agents Toolkit v0.5 to v0.6": {
+          "Important Changes": {
+            "Steps to Migrate": "<detail_content>"
+          }
+        },
+        "Migrating from ML-Agents Toolkit v0.4 to v0.5": {
+          "Important": "<detail_content>",
+          "Unity API": "<detail_content>",
+          "Python API": "<detail_content>"
+        },
+        "Migrating from ML-Agents Toolkit v0.3 to v0.4": {
+          "Unity API": "<detail_content>",
+          "Python API": "<detail_content>"
+        },
+        "Migrating from ML-Agents Toolkit v0.2 to v0.3": {
+          "Important": "<detail_content>",
+          "Python Training": "<detail_content>",
+          "Unity API": "<detail_content>",
+          "Semantics": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "ML-Agents Package Settings",
+      "path": "[\"subpages\", 29]",
+      "content": {
+        "Create Custom Settings": "<detail_content>",
+        "Multiple Custom Settings for Different Scenarios": "<detail_content>"
+      }
+    },
+    {
+      "title": "Profiling in Python",
+      "path": "[\"subpages\", 30]",
+      "content": {
+        "Adding Profiling": "<detail_content>",
+        "Output": {
+          "Parallel execution": {
+            "Subprocesses": "<detail_content>",
+            "Threads": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "Unity Ml-Agents Custom trainers Plugin",
+      "path": "[\"subpages\", 31]",
+      "content": {
+        "Overview": "<detail_content>",
+        "Installation and Execution": "<detail_content>",
+        "Tutorial": "<detail_content>"
+      }
+    },
+    {
+      "title": "mlagents\\_envs.envs.unity\\_gym\\_env",
+      "path": "[\"subpages\", 32]",
+      "content": {
+        "UnityGymException Objects": "<detail_content>",
+        "UnityToGymWrapper Objects": "<detail_content>",
+        "ActionFlattener Objects": "<detail_content>"
+      }
+    },
+    {
+      "title": "Unity ML-Agents Gym Wrapper",
+      "path": "[\"subpages\", 33]",
+      "content": {
+        "Installation": "<detail_content>",
+        "Using the Gym Wrapper": "<detail_content>",
+        "Limitations": "<detail_content>",
+        "Running OpenAI Baselines Algorithms": {
+          "Example - DQN Baseline": "<detail_content>",
+          "Other Algorithms": "<detail_content>"
+        },
+        "Run Google Dopamine Algorithms": {
+          "Adapting Dopamine's Scripts": "<detail_content>",
+          "Limitations": "<detail_content>",
+          "Hyperparameters": "<detail_content>",
+          "Starting a Run": "<detail_content>",
+          "Example: GridWorld": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "mlagents\\_envs.base\\_env",
+      "path": "[\"subpages\", 34]",
+      "content": {
+        "DecisionStep Objects": "<detail_content>",
+        "DecisionSteps Objects": "<detail_content>",
+        "TerminalStep Objects": "<detail_content>",
+        "TerminalSteps Objects": "<detail_content>",
+        "ActionTuple Objects": "<detail_content>",
+        "ActionSpec Objects": "<detail_content>",
+        "DimensionProperty Objects": "<detail_content>",
+        "ObservationType Objects": "<detail_content>",
+        "ObservationSpec Objects": "<detail_content>",
+        "BehaviorSpec Objects": "<detail_content>",
+        "BaseEnv Objects": "<detail_content>"
+      }
+    },
+    {
+      "title": "Unity ML-Agents Python Low Level API",
+      "path": "[\"subpages\", 35]",
+      "content": {
+        "mlagents_envs": "<detail_content>",
+        "Loading a Unity Environment": {
+          "Interacting with a Unity Environment": {
+            "The BaseEnv interface": "<detail_content>",
+            "DecisionSteps and DecisionStep": "<detail_content>",
+            "TerminalSteps and TerminalStep": "<detail_content>",
+            "BehaviorSpec": "<detail_content>"
+          },
+          "Communicating additional information with the Environment": {
+            "EngineConfigurationChannel": "<detail_content>",
+            "EnvironmentParameters": "<detail_content>",
+            "Custom side channels": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "mlagents.trainers.trainer.on\\_policy\\_trainer",
+      "path": "[\"subpages\", 36]",
+      "content": {
+        "OnPolicyTrainer Objects": "<detail_content>"
+      }
+    },
+    {
+      "title": "mlagents.trainers.optimizer.torch\\_optimizer",
+      "path": "[\"subpages\", 37]",
+      "content": {
+        "TorchOptimizer Objects": "<detail_content>"
+      }
+    },
+    {
+      "title": "mlagents\\_envs.envs.pettingzoo\\_env\\_factory",
+      "path": "[\"subpages\", 38]",
+      "content": {
+        "PettingZooEnvFactory Objects": "<detail_content>"
+      }
+    },
+    {
+      "title": "Unity ML-Agents PettingZoo Wrapper",
+      "path": "[\"subpages\", 39]",
+      "content": {
+        "Installation and Examples": "<detail_content>",
+        "API interface": "<detail_content>",
+        "Notes": "<detail_content>"
+      }
+    },
+    {
+      "title": "Unity ML-Agents Toolkit",
+      "path": "[\"subpages\", 40]",
+      "content": {
+        "Features": "<detail_content>",
+        "Releases & Documentation": "<detail_content>",
+        "Additional Resources": {
+          "More from Unity": "<detail_content>"
+        },
+        "Community and Feedback": "<detail_content>",
+        "Privacy": "<detail_content>"
+      }
+    },
+    {
+      "title": "Training Configuration File",
+      "path": "[\"subpages\", 41]",
+      "content": {
+        "Common Trainer Configurations": "<detail_content>",
+        "Trainer-specific Configurations": {
+          "PPO-specific Configurations": "<detail_content>",
+          "SAC-specific Configurations": "<detail_content>",
+          "MA-POCA-specific Configurations": "<detail_content>"
+        },
+        "Reward Signals": {
+          "Extrinsic Rewards": "<detail_content>",
+          "Curiosity Intrinsic Reward": "<detail_content>",
+          "GAIL Intrinsic Reward": "<detail_content>",
+          "RND Intrinsic Reward": "<detail_content>"
+        },
+        "Behavioral Cloning": "<detail_content>",
+        "Memory-enhanced Agents using Recurrent Neural Networks": "<detail_content>",
+        "Self-Play": {
+          "Note on Reward Signals": "<detail_content>",
+          "Note on Swap Steps": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Training ML-Agents",
+      "path": "[\"subpages\", 42]",
+      "content": {
+        "Training with mlagents-learn": {
+          "Starting Training": {
+            "Observing Training": "<detail_content>",
+            "Stopping and Resuming Training": "<detail_content>",
+            "Loading an Existing Model": "<detail_content>"
+          }
+        },
+        "Training Configurations": {
+          "Adding CLI Arguments to the Training Configuration file": {
+            "Environment settings": "<detail_content>",
+            "Engine settings": "<detail_content>",
+            "Checkpoint settings": "<detail_content>",
+            "Torch settings:": "<detail_content>"
+          },
+          "Behavior Configurations": "<detail_content>",
+          "Default Behavior Settings": "<detail_content>",
+          "Environment Parameters": {
+            "Environment Parameter Randomization": {
+              "Supported Sampler Types": "<detail_content>",
+              "Training with Environment Parameter Randomization": "<detail_content>"
+            },
+            "Curriculum": {
+              "Training with a Curriculum": "<detail_content>"
+            }
+          },
+          "Training Using Concurrent Unity Instances": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Customizing Training via Plugins",
+      "path": "[\"subpages\", 43]",
+      "content": {
+        "How to Write Your Own Plugin": {
+          "setup.py": "<detail_content>",
+          "Local Installation": "<detail_content>"
+        },
+        "Plugin Interfaces": {
+          "StatsWriter": {
+            "Interface": "<detail_content>",
+            "Registration": "<detail_content>"
+          }
+        }
+      }
+    },
+    {
+      "title": "Training on Amazon Web Service",
+      "path": "[\"subpages\", 44]",
+      "content": {
+        "Pre-configured AMI": "<detail_content>",
+        "Configuring your own instance": {
+          "Installing the ML-Agents Toolkit on the instance": "<detail_content>",
+          "Setting up X Server (optional)": {
+            "Install and setup Xorg:": "<detail_content>",
+            "Update and setup Nvidia driver:": "<detail_content>",
+            "Restart the EC2 instance:": "<detail_content>",
+            "Make sure there are no Xorg processes running:": "<detail_content>",
+            "Start X Server and make the ubuntu use X Server for display:": "<detail_content>",
+            "Ensure the Xorg is correctly configured:": "<detail_content>"
+          }
+        },
+        "Training on EC2 instance": "<detail_content>",
+        "FAQ": {
+          "The <Executable_Name>\\_Data folder hasn't been copied cover": "<detail_content>",
+          "Unity Environment not responding": "<detail_content>",
+          "Could not launch X Server": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Training on Microsoft Azure (works with ML-Agents Toolkit v0.3)",
+      "path": "[\"subpages\", 45]",
+      "content": {
+        "Pre-Configured Azure Virtual Machine": "<detail_content>",
+        "Configuring your own Instance": "<detail_content>",
+        "Installing ML-Agents": "<detail_content>",
+        "Testing": "<detail_content>",
+        "Running Training on your Virtual Machine": "<detail_content>",
+        "Monitoring your Training Run with TensorBoard": "<detail_content>",
+        "Running on Azure Container Instances": "<detail_content>",
+        "Custom Instances": "<detail_content>"
+      }
+    },
+    {
+      "title": "Custom Trainer Plugin",
+      "path": "[\"subpages\", 46]",
+      "content": {
+        "How to write a custom trainer plugin": {
+          "Step 1: Write your custom trainer class": "<detail_content>",
+          "Step 2: implement your custom optimizer for the trainer.": "<detail_content>",
+          "Step 3: Integrate your custom trainer into the plugin system": "<detail_content>",
+          "Step 4: Install your custom trainer and run training:": "<detail_content>",
+          "Validate your implementations:": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Unity Environment Registry [Experimental]",
+      "path": "[\"subpages\", 47]",
+      "content": {
+        "Loading an Environment from the Registry": "<detail_content>",
+        "Create and share your own registry": "<detail_content>"
+      }
+    },
+    {
+      "title": "Using Docker For ML-Agents (Deprecated)",
+      "path": "[\"subpages\", 48]",
+      "content": {
+        "Requirements": "<detail_content>",
+        "Setup": "<detail_content>",
+        "Usage": {
+          "Build the Environment (Optional)": "<detail_content>",
+          "Build the Docker Container": "<detail_content>",
+          "Run the Docker Container": "<detail_content>",
+          "Running Tensorboard": "<detail_content>",
+          "Stopping Container and Saving State": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Using TensorBoard to Observe Training",
+      "path": "[\"subpages\", 49]",
+      "content": {
+        "The ML-Agents Toolkit training statistics": {
+          "Environment Statistics": "<detail_content>",
+          "Is Training": "<detail_content>",
+          "Policy Statistics": "<detail_content>",
+          "Learning Loss Functions": "<detail_content>",
+          "Self-Play": "<detail_content>"
+        },
+        "Exporting Data from TensorBoard": "<detail_content>",
+        "Custom Metrics from Unity": "<detail_content>"
+      }
+    },
+    {
+      "title": "Using Virtual Environment",
+      "path": "[\"subpages\", 50]",
+      "content": {
+        "What is a Virtual Environment?": "<detail_content>",
+        "Why should I use a Virtual Environment?": "<detail_content>",
+        "Python Version Requirement (Required)": "<detail_content>",
+        "Use Conda (or Mamba)": "<detail_content>",
+        "Installing Pip (Required)": "<detail_content>",
+        "Mac OS X Setup": "<detail_content>",
+        "Ubuntu Setup": "<detail_content>",
+        "Windows Setup": "<detail_content>"
+      }
+    },
+    {
+      "title": "ML-Agents Versioning",
+      "path": "[\"subpages\", 51]",
+      "content": {
+        "Context": "<detail_content>",
+        "GitHub Releases": "<detail_content>",
+        "Packages": {
+          "Unity package": "<detail_content>",
+          "Python Packages": "<detail_content>"
+        },
+        "Communicator": "<detail_content>",
+        "Side Channels": "<detail_content>"
+      }
+    },
+    {
+      "title": "Com.Unity.Ml Agents",
+      "path": "[\"subpages\", 52]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "Index",
+      "path": "[\"subpages\", 53]",
+      "content": {
+        "⚠️ Documentation Moved ⚠️": "<detail_content>"
+      }
+    },
+    {
+      "title": "Ml Agents Envs",
+      "path": "[\"subpages\", 54]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "Ml Agents",
+      "path": "[\"subpages\", 55]",
+      "content": {
+        "root": "<detail_content>"
+      }
+    },
+    {
+      "title": "Doxygen",
+      "description": "Documentation section: doxygen",
+      "path": "[\"subpages\", 56]",
+      "subpages": [
+        {
+          "title": "Readme",
+          "path": "[\"subpages\", 56, \"subpages\", 0]",
+          "content": {
+            "Doxygen files": "<detail_content>"
+          }
+        }
+      ]
+    }
+  ]
+}

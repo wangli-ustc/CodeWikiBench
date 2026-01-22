@@ -1,0 +1,356 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Distributed Security Information and Event Management (SIEM) Platform",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Event Processing Engine",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Core Event Processing Pipeline Architecture",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-Stage Data Flow Pipeline",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Initial Event Ingestion and Filtering (Check/Allow Stage): Policy-based routing and conditional logic to accept, discard, or direct events through user-defined directed acyclic graphs",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Data Parsing and Structuring (Parse Stage): Schema-driven parsing that deconstructs raw logs into canonical JSON with strict validation using type-specific parsers (IP, Date, Long, Text, Boolean, Binary, etc.)",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Data Mapping and Transformation (Map Stage): Field modification, restructuring, and token processing with sandboxed helper functions",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Data Enrichment and Normalization (Normalize/Enrichment Stage): Context augmentation with geolocation, threat intelligence, and KVDB lookups for security enrichment",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Final Processing and Output Routing (Output Stage): Deterministic destination routing for archiving, alerting, and indexer delivery",
+                      "weight": 3
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Modular Backend Architecture",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Server Module: Core processing engine that handles incoming data streams and connections",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Orchestrator Module: Workflow coordination and overall data processing flow management",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Backend and Persistent Storage Modules: Data storage, retrieval interfaces, and global state management",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Specialized Data Modules: Geolocation enrichment (Geo) and Key-Value Database (KVDB) operations for in-memory lookups",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "API Module: Management interface and integration capabilities for external systems",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Dynamic Asset Builder: Runtime asset compilation and deployment capabilities",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "Configurable Asset Management System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Asset Catalog and Namespace Organization",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Versioned Asset Registry: Content-addressable storage for decoders, rules, filters, and outputs with version control",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Multi-tenant Namespace Isolation: Isolated asset sets and runtime policies for different organizational units",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Asset Type Classification and Processing",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Decoders: Schema-aware parsing definitions for extracting fields from unstructured log messages with expression-based logic",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Rules: Event evaluation logic with condition assessment, severity assignment, and alert triggering capabilities",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Filters: Event flow control mechanisms based on specific criteria and conditions",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Outputs: Pluggable output sinks defining serialization and delivery to files, indexers, or external search clusters",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Helper Function Ecosystem",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Condition Evaluation Helpers: Logic assessment and boolean operations for rule processing",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Data Mapping and Transformation Helpers: Field manipulation, format conversion, and data restructuring functions",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Parsing Rule Definitions: Expression-based parsing logic with prefixes, suffixes, and locale awareness",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "System Monitoring and Inventory Management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Inventory Harvester Module",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-Source Data Collection Architecture",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "File Integrity Monitoring (FIM): File system and Windows registry change detection with attribute and metadata tracking",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "System Inventory Collection: Comprehensive gathering of system information, packages, processes, ports, hardware, network interfaces, users, groups, and hotfixes",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Delta Computation and State Reconciliation: Periodic snapshots with minimal update message generation against previous states",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Data Processing and Integration",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Wazuh Indexer Connectivity: Bulk indexing and searchable current-state indices maintenance",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Configurable Data Filtering: Selective data forwarding and filtering based on collection policies",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Automated Vulnerability Detection and Assessment",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Stateless Vulnerability Scanner Module",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-Platform Vulnerability Detection",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "CVE Feed Management: RocksDB-backed vulnerability database with incremental updates from external sources (Ubuntu/Debian, CentOS/RHEL, Windows)",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Real-time Vulnerability Correlation: Event-driven processing that correlates endpoint inventory data (OS, packages, hotfixes) against vulnerability databases",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Syscollector Event Processing: Delta and synchronization event handling for OS, package, and hotfix correlation",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Internal Data Management and Architecture",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Local RocksDB Management: Vulnerability feed data and agent inventory state management for efficient scanning",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Indexer Integration: Connection to Wazuh Indexer for agent data retrieval and vulnerability finding reporting",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Data Serialization and Communication Infrastructure",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "FlatBuffers Schema System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Agent Communication Protocol",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Agent Information Serialization: Compact, versioned message formats for agent metadata and status",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "SyncMsg Protocol: Full state and incremental delta transfer support for efficient communication",
+                      "weight": 3
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Data Structure Definitions",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "FIM Data Serialization: File and registry delta serialization with attribute and metadata encoding",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Inventory Data Serialization: Provider union type system and synchronization message formatting for system inventory",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Zero-Copy Serialization: High-performance, zero-copy data exchange between components ensuring interoperability",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "System Lifecycle and Operations Management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Installation and Deployment Framework",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-Platform Distribution: Package-based distribution system with system requirements validation and compatibility layer",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Configuration Management: Schema-driven configuration validation with runtime implications handling and centralized configuration files",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Maintenance and Operations Support",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Data Persistence and Recovery: Backup and restore functionality for configuration and data with structured upgrade procedures",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Performance and Security Optimization: Monitoring, tuning capabilities, security hardening, and access control mechanisms",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Clean System Management: Structured uninstallation procedures and system cleanup capabilities",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Development and Testing Infrastructure",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Engine Development Toolkit",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "CLI Development Suite: Engine-suite CLI for compiling, testing, and validating assets offline with API communication testing tools",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Specialized Testing Framework: Health checks, integration tests, and helper function testing utilities",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Vulnerability Scanner Testing Framework",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Database Management Tools: CVE database creation, injection, feed management, and RocksDB inspection utilities",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Detection Testing Capabilities: Mocking capabilities and detection testing for vulnerability assessment validation",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Debugging and Observability Framework",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Live Debugging Capabilities: Trace-based debugging with severity and executable filtering for pipeline execution analysis",
+                  "weight": 1
+                },
+                {
+                  "requirements": "End-to-End Validation: Health and integration test harnesses for correctness validation across the entire system",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

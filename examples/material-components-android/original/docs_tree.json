@@ -1,0 +1,1475 @@
+{
+  "title": "material-components-android",
+  "description": "Documentation for material-components-android",
+  "subpages": [
+    {
+      "title": "Building From the Latest Source",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Useful Links": "<detail_content>"
+      }
+    },
+    {
+      "title": "Catalog App",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Useful Links": "<detail_content>"
+      }
+    },
+    {
+      "title": "General Contributing Guidelines",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "Pull Request Process": "<detail_content>",
+        "Building From Source": "<detail_content>",
+        "Running Tests": "<detail_content>",
+        "Code Conventions": {
+          "Be consistent": "<detail_content>",
+          "Java": "<detail_content>",
+          "XML": "<detail_content>"
+        },
+        "Useful Links": "<detail_content>"
+      }
+    },
+    {
+      "title": "Directorystructure",
+      "path": "[\"subpages\", 3]",
+      "content": {
+        "Material component directory structure": "<detail_content>"
+      }
+    },
+    {
+      "title": "Getting started with Material components for Android",
+      "path": "[\"subpages\", 4]",
+      "content": {
+        "1. Migration guidance": "<detail_content>",
+        "2. Maven library dependency": {
+          "New Namespace and AndroidX": "<detail_content>",
+          "Non-Transitive R Classes (referencing library resources programmatically)": "<detail_content>"
+        },
+        "3. Android SDK compilation": "<detail_content>",
+        "4. Java 8 compilation": "<detail_content>",
+        "5. Gradle, AGP, and Android Studio": "<detail_content>",
+        "6. `AppCompatActivity`": "<detail_content>",
+        "7. `Material3` theme inheritance": {
+          "**`Material3Expressive` themes**": "<detail_content>",
+          "**`Material3` themes**": "<detail_content>",
+          "**`AppCompat` or `MaterialComponents` Themes**": "<detail_content>"
+        },
+        "8. Add Material components": {
+          "**Implementing a text field via XML**": "<detail_content>"
+        },
+        "Contributors": "<detail_content>",
+        "Useful Links": "<detail_content>"
+      }
+    },
+    {
+      "title": "Theming Guide",
+      "path": "[\"subpages\", 5]",
+      "content": {
+        "Useful Links": "<detail_content>"
+      }
+    },
+    {
+      "title": "Using a Snapshot Version of the Library",
+      "path": "[\"subpages\", 6]",
+      "content": {
+        "Useful Links": "<detail_content>"
+      }
+    },
+    {
+      "title": "Adaptive",
+      "description": "Documentation section: adaptive",
+      "path": "[\"subpages\", 7]",
+      "subpages": [
+        {
+          "title": "Canonical layouts",
+          "path": "[\"subpages\", 7, \"subpages\", 0]",
+          "content": {
+            "Libraries and APIs": "<detail_content>",
+            "Demos": "<detail_content>",
+            "General implementation": {
+              "Navigation components": "<detail_content>",
+              "Displaying the main `Fragment`": "<detail_content>",
+              "Monitoring foldable device states": "<detail_content>",
+              "Using `ConstraintSet`": "<detail_content>"
+            },
+            "List View demo": {
+              "Implementation": "<detail_content>"
+            },
+            "Feed demo": {
+              "Implementation": "<detail_content>"
+            },
+            "Single View Hero demo": {
+              "Implementation": "<detail_content>"
+            },
+            "Supporting Panel demo": {
+              "Implementation": "<detail_content>"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "description": "Documentation section: components",
+      "path": "[\"subpages\", 8]",
+      "subpages": [
+        {
+          "title": "Badges",
+          "path": "[\"subpages\", 8, \"subpages\", 0]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "`BadgeDrawable` Attributes": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding badges": "<detail_content>",
+              "`BadgeDrawable` gravity modes": "<detail_content>",
+              "`BadgeDrawable` placement and offsets": "<detail_content>",
+              "TalkBack support": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Banner",
+          "path": "[\"subpages\", 8, \"subpages\", 1]",
+          "content": {
+            "Banner": "<detail_content>"
+          }
+        },
+        {
+          "title": "Bottom app bars",
+          "path": "[\"subpages\", 8, \"subpages\", 2]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive update": "<detail_content>",
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Navigation icon attributes": "<detail_content>",
+              "FAB attributes": "<detail_content>",
+              "Action item(s) attributes": "<detail_content>",
+              "Overflow menu attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Bottom app bar examples": "<detail_content>",
+              "Making bottom app bars accessible": {
+                "Content descriptions": "<detail_content>",
+                "Talkback": "<detail_content>"
+              },
+              "Applying scrolling behavior to bottom app bars": "<detail_content>"
+            },
+            "Customizing bottom app bars": {
+              "Theming bottom app bars": {
+                "Bottom app bar theming example": {
+                  "Implementing bottom app bar theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Bottom navigation (Navigation bar)",
+          "path": "[\"subpages\", 8, \"subpages\", 3]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": "<detail_content>"
+            },
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Navigation bar item attributes": "<detail_content>",
+              "Active indicator attributes": "<detail_content>",
+              "Icon attributes": "<detail_content>",
+              "Text label attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding navigation bar": "<detail_content>",
+              "Navigation bar example": "<detail_content>",
+              "Adding navigation bar on larger screens": "<detail_content>",
+              "Making navigation bar accessible": "<detail_content>",
+              "Adding badges": "<detail_content>"
+            },
+            "Customizing navigation bar": {
+              "Theming a navigation bar": {
+                "Navigation bar theming example": {
+                  "Implementing navigation bar theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Bottom sheets",
+          "path": "[\"subpages\", 8, \"subpages\", 4]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Sheet attributes": "<detail_content>",
+              "Behavior attributes": "<detail_content>",
+              "Styles": "<detail_content>",
+              "Theme overlays": "<detail_content>"
+            },
+            "Variants of bottom sheets": {
+              "Standard bottom sheet": {
+                "Standard bottom sheet example": "<detail_content>"
+              },
+              "Modal bottom sheet": {
+                "Modal bottom sheet example": "<detail_content>"
+              }
+            },
+            "Code implementation": "<detail_content>",
+            "Customizing bottom sheets": {
+              "Theming bottom sheets": {
+                "Bottom sheet theming example": {
+                  "Implementing bottom sheet theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Button",
+          "path": "[\"subpages\", 8, \"subpages\", 5]",
+          "content": {
+            "Buttons": "<detail_content>"
+          }
+        },
+        {
+          "title": "Button groups",
+          "path": "[\"subpages\", 8, \"subpages\", 6]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": "<detail_content>"
+            },
+            "Key properties": {
+              "Shape and size attributes": "<detail_content>",
+              "Additional attributes of child buttons": "<detail_content>",
+              "Styles and theme attributes": "<detail_content>"
+            },
+            "Variants of button groups": "<detail_content>",
+            "Code implementation": {
+              "Making button groups adaptive": "<detail_content>",
+              "Handling overflow": {
+                "Overflow mode - menu": "<detail_content>",
+                "Overflow mode - wrap": {
+                  "Configuration": "<detail_content>",
+                  "Wrapping gravity": "<detail_content>"
+                }
+              },
+              "Making buttons accessible": "<detail_content>"
+            },
+            "Customizing button groups": {
+              "Theming buttons": {
+                "Button theming example": {
+                  "Implementing button theming": "<detail_content>"
+                }
+              },
+              "Optical centering": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Cards",
+          "path": "[\"subpages\", 8, \"subpages\", 7]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Container attribute": "<detail_content>",
+              "Checked icon attributes": "<detail_content>",
+              "States": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Variants of cards": "<detail_content>",
+            "Code implementation": {
+              "Making cards checkable": "<detail_content>",
+              "Making cards draggable": "<detail_content>",
+              "Making cards accessible": "<detail_content>"
+            },
+            "Customizing cards": {
+              "Theming cards": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Carousels",
+          "path": "[\"subpages\", 8, \"subpages\", 8]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": "<detail_content>",
+            "Layouts of carousel": "<detail_content>",
+            "Code implementation": {
+              "Adding carousel": "<detail_content>"
+            },
+            "Customizing carousel": {
+              "Setting item size": "<detail_content>",
+              "Setting item shape": "<detail_content>",
+              "Reacting to changes in item mask size": "<detail_content>",
+              "Controlling focal alignment": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Checkbox",
+          "path": "[\"subpages\", 8, \"subpages\", 9]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Checkbox attributes": "<detail_content>",
+              "Text label attributes": "<detail_content>",
+              "Checkbox states": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding checkbox": "<detail_content>",
+              "Checkbox example": "<detail_content>",
+              "Making checkbox accessible": "<detail_content>",
+              "Selecting checkbox": "<detail_content>",
+              "Setting error state on checkbox": "<detail_content>",
+              "Making checkbox indeterminate": "<detail_content>"
+            },
+            "Customizing checkbox": {
+              "Theming checkbox": {
+                "Checkbox theming example": {
+                  "Implementing checkbox theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Chips",
+          "path": "[\"subpages\", 8, \"subpages\", 10]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Thumbnail attributes": "<detail_content>",
+              "Text attributes": "<detail_content>",
+              "Remove (close) icon attributes": "<detail_content>",
+              "`ChipGroup` attributes": "<detail_content>",
+              "Styles": "<detail_content>",
+              "Theme attributes": "<detail_content>"
+            },
+            "Variants of chips": "<detail_content>",
+            "Code implementation": {
+              "Adding chips": "<detail_content>",
+              "Making chips accessible": {
+                "Touch target": "<detail_content>",
+                "RTL-friendly chip layout": "<detail_content>"
+              },
+              "Grouping chips with `ChipGroup`": "<detail_content>",
+              "Using standalone `ChipDrawable`": "<detail_content>"
+            },
+            "Customizing chips": {
+              "Theming chips": {
+                "Chip theming example": {
+                  "Implementing chip theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Buttons",
+          "path": "[\"subpages\", 8, \"subpages\", 11]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": {
+                "Buttons": "<detail_content>",
+                "Shapes": "<detail_content>",
+                "Sizes": "<detail_content>"
+              }
+            },
+            "Key properties": "<detail_content>",
+            "Variants of buttons": {
+              "Default button": "<detail_content>",
+              "Toggle button": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding button color styles": "<detail_content>",
+              "Making buttons accessible": "<detail_content>"
+            },
+            "Customizing buttons": {
+              "Theming buttons": {
+                "Button theming example": {
+                  "Implementing button theming": "<detail_content>"
+                }
+              },
+              "Optical centering": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Datatable",
+          "path": "[\"subpages\", 8, \"subpages\", 12]",
+          "content": {
+            "DataTable": "<detail_content>"
+          }
+        },
+        {
+          "title": "Date pickers",
+          "path": "[\"subpages\", 8, \"subpages\", 13]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Container": "<detail_content>",
+              "Title": "<detail_content>",
+              "Selected date": "<detail_content>",
+              "Switch-to-keyboard input icon": "<detail_content>",
+              "Year selection menu": "<detail_content>",
+              "Month pagination": "<detail_content>",
+              "Current date": "<detail_content>",
+              "Selected range": "<detail_content>",
+              "Cancel button": "<detail_content>",
+              "Styles and theme overlays": "<detail_content>"
+            },
+            "Variants of date pickers": "<detail_content>",
+            "Code implementation": {
+              "Date pickers examples": "<detail_content>",
+              "Adding calendar constraints": "<detail_content>",
+              "Making date pickers accessible": "<detail_content>"
+            },
+            "Customizing date pickers": {
+              "Theming date pickers": {
+                "Date picker theming example": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Dialogs",
+          "path": "[\"subpages\", 8, \"subpages\", 14]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Title attributes": "<detail_content>",
+              "Content attributes": "<detail_content>",
+              "Buttons attributes": "<detail_content>",
+              "Scrim attributes": "<detail_content>",
+              "Theme overlays": "<detail_content>",
+              "Theme attributes": "<detail_content>"
+            },
+            "Variants of dialogs": {
+              "Basic dialog": "<detail_content>",
+              "Full-screen dialog": "<detail_content>"
+            },
+            "Code implementation": {
+              "Dialogs example": "<detail_content>",
+              "Making dialogs accessible": "<detail_content>"
+            },
+            "Customizing dialogs": {
+              "Theming dialogs": {
+                "Dialog theming example": {
+                  "Implementing dialog theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Dividers",
+          "path": "[\"subpages\", 8, \"subpages\", 15]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Dividers attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Types of divider": {
+              "Full width divider": "<detail_content>",
+              "Inset divider": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding `MaterialDivider`": "<detail_content>",
+              "Adding heavy divider": "<detail_content>",
+              "Adding `MaterialDividerItemDecoration`": "<detail_content>",
+              "Making dividers accessible": "<detail_content>"
+            },
+            "Customizing dividers": {
+              "Theming dividers": {
+                "Divider theming example": {
+                  "Implementing divider theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Docked & floating toolbars",
+          "path": "[\"subpages\", 8, \"subpages\", 16]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive update": "<detail_content>"
+          }
+        },
+        {
+          "title": "Docked toolbar",
+          "path": "[\"subpages\", 8, \"subpages\", 17]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": "<detail_content>"
+            },
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding docked toolbar": "<detail_content>",
+              "Making docked toolbar accessible": {
+                "TalkBack": "<detail_content>"
+              }
+            },
+            "Customizing docked toolbar": {
+              "Theming docked toolbar": {
+                "Docked toolbar theming example": {
+                  "Implementing docked toolbar theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Extended floating action buttons (Extended FABs)",
+          "path": "[\"subpages\", 8, \"subpages\", 18]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": {
+                "M3 Expressive small extended FAB": "<detail_content>",
+                "M3 Expressive medium extended FAB": "<detail_content>",
+                "M3 Expressive large extended FAB": "<detail_content>"
+              }
+            },
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Icon attributes": "<detail_content>",
+              "Text label": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Variants of extended FAB": "<detail_content>",
+            "Code implementation": {
+              "Adding extended FAB": "<detail_content>",
+              "Making extended FABs accessible": "<detail_content>",
+              "Animating visibility of extended FAB": "<detail_content>",
+              "Extending and shrinking extended FAB": "<detail_content>"
+            },
+            "Customizing extended FABs": {
+              "Theming extended FABs": {
+                "Extended FAB theming example": {
+                  "Implementing FAB theming": "<detail_content>"
+                }
+              },
+              "Sizing extended FABs": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Floating action buttons (FABs)",
+          "path": "[\"subpages\", 8, \"subpages\", 19]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": {
+                "Theme overlays": "<detail_content>",
+                "M3 Expressive FAB": "<detail_content>",
+                "M3 Expressive medium FAB": "<detail_content>",
+                "M3 Expressive large FAB": "<detail_content>"
+              }
+            },
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Icon attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Variants of FAB": "<detail_content>",
+            "Code implementation": {
+              "Making FABs accessible": "<detail_content>",
+              "Animating visibility of FAB": "<detail_content>"
+            },
+            "Customizing FABs": {
+              "Theming FABs": {
+                "FAB theming example": {
+                  "Implementing FAB theming": "<detail_content>"
+                }
+              },
+              "Sizing FABs": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Floating action button (FAB) menu",
+          "path": "[\"subpages\", 8, \"subpages\", 20]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive update": "<detail_content>",
+            "Code implementation (via Compose interop)": "<detail_content>"
+          }
+        },
+        {
+          "title": "Floating toolbar",
+          "path": "[\"subpages\", 8, \"subpages\", 21]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": "<detail_content>"
+            },
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding floating toolbar": "<detail_content>",
+              "Making floating toolbar accessible": {
+                "TalkBack": "<detail_content>"
+              }
+            },
+            "Customizing floating toolbar": {
+              "Theming floating toolbar": {
+                "Floating toolbar theming example": {
+                  "Implementing floating toolbar theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Icon buttons",
+          "path": "[\"subpages\", 8, \"subpages\", 22]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": {
+                "Icon button shapes": "<detail_content>",
+                "Icon button in different sizes": "<detail_content>",
+                "Icon button in different width and height ratio": "<detail_content>"
+              }
+            },
+            "Key properties": {
+              "Styles and theme attributes": "<detail_content>"
+            },
+            "Variants of icon buttons": {
+              "Default icon button": {
+                "Adding icon button": "<detail_content>"
+              },
+              "Toggle icon button": {
+                "Adding toggle icon button": "<detail_content>"
+              }
+            },
+            "Code implementation": {
+              "Making buttons accessible": "<detail_content>"
+            },
+            "Customizing icon buttons": {
+              "Theming buttons": {
+                "Button theming example": {
+                  "Implementing button theming": "<detail_content>"
+                }
+              },
+              "Optical centering": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Imagelist",
+          "path": "[\"subpages\", 8, \"subpages\", 23]",
+          "content": {
+            "Image List": "<detail_content>"
+          }
+        },
+        {
+          "title": "Lists",
+          "path": "[\"subpages\", 8, \"subpages\", 24]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Sizes of list items": "<detail_content>",
+            "Code implementation": "<detail_content>",
+            "M3 Expressive": "<detail_content>"
+          }
+        },
+        {
+          "title": "Loading Indicators",
+          "path": "[\"subpages\", 8, \"subpages\", 25]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>"
+            },
+            "Key properties": "<detail_content>",
+            "Code implementation": {
+              "Adding loading indicators": "<detail_content>",
+              "Making loading indicators accessible": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Material text view",
+          "path": "[\"subpages\", 8, \"subpages\", 26]",
+          "content": {
+            "Key properties": {
+              "Attributes": "<detail_content>"
+            },
+            "Code implementation": "<detail_content>"
+          }
+        },
+        {
+          "title": "Menus",
+          "path": "[\"subpages\", 8, \"subpages\", 27]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Dropdown menu": {
+                "Container attributes": "<detail_content>",
+                "Text attributes": "<detail_content>",
+                "Styles": "<detail_content>"
+              },
+              "Exposed dropdown menu": {
+                "`TextInputLayout` attributes (container, label, trailing icon)": "<detail_content>",
+                "`MaterialAutoCompleteTextView` attributes (input text, dropdown menu)": "<detail_content>",
+                "Styles": "<detail_content>"
+              }
+            },
+            "Variants of menus": {
+              "Dropdown menus": {
+                "Dropdown menu examples": "<detail_content>"
+              },
+              "Exposed dropdown menu": {
+                "Non editable variation": "<detail_content>",
+                "Setting a default value": "<detail_content>"
+              }
+            },
+            "Code implementation": {
+              "Menu examples": "<detail_content>",
+              "Making menus accessible": "<detail_content>"
+            },
+            "Customizing menus": {
+              "Theming menus": {
+                "Dropdown menu theming examples": {
+                  "Implementing menu theming": "<detail_content>"
+                },
+                "Exposed dropdown menu theming examples": {
+                  "Implementing exposed dropdown menu theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navigation drawers",
+          "path": "[\"subpages\", 8, \"subpages\", 28]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive update": "<detail_content>",
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Header attributes": "<detail_content>",
+              "Divider attributes": "<detail_content>",
+              "Item attributes": "<detail_content>",
+              "Text attributes": "<detail_content>",
+              "Icon attributes": "<detail_content>",
+              "Subtitle attributes": "<detail_content>",
+              "Scrim attributes": "<detail_content>",
+              "`NavigationView` styles": "<detail_content>",
+              "`DrawerLayout` styles": "<detail_content>"
+            },
+            "Variants of navigation drawer": "<detail_content>",
+            "Code implementation": "<detail_content>",
+            "Customizing navigation drawers": {
+              "Theming navigation drawers": {
+                "Navigation drawer theming example": {
+                  "Implementing navigation drawer theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Navigation rail",
+          "path": "[\"subpages\", 8, \"subpages\", 29]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": "<detail_content>"
+            },
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Header attributes": "<detail_content>",
+              "Navigation Menu attributes": "<detail_content>",
+              "Navigation item attributes": "<detail_content>",
+              "Active indicator attributes": "<detail_content>",
+              "Icon attributes": "<detail_content>",
+              "Text label attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": "<detail_content>",
+            "Customizing navigation rail": {
+              "Theming navigation rail": {
+                "Navigation rail theming example": {
+                  "Implementing navigation rail theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Overflow linear layout",
+          "path": "[\"subpages\", 8, \"subpages\", 30]",
+          "content": {
+            "Key properties": {
+              "`OverflowLinearLayout` attributes": "<detail_content>",
+              "`OverflowLinearLayout_Layout` attributes": "<detail_content>",
+              "`OverflowLinearLayout` styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding overflow linear layout": "<detail_content>",
+              "Making overflow linear layout accessible": "<detail_content>"
+            },
+            "Customizing overflow linear layout": {
+              "Theming overflow linear layout": {
+                "Implementing overflow linear layout theming": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Progress indicators",
+          "path": "[\"subpages\", 8, \"subpages\", 31]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": "<detail_content>"
+            },
+            "Key properties": {
+              "Common attributes": "<detail_content>",
+              "Linear type specific attributes": "<detail_content>",
+              "Circular type specific attributes": "<detail_content>",
+              "Styles": "<detail_content>",
+              "Non-text contrast update": "<detail_content>"
+            },
+            "Variants of progress indicators": "<detail_content>",
+            "Code implementation": {
+              "Adding determinate progress indicators": "<detail_content>",
+              "Adding indeterminate progress indicators": "<detail_content>",
+              "Switching from indeterminate to determinate": "<detail_content>",
+              "Making progress indicators accessible": "<detail_content>"
+            },
+            "Customizing progress indicators": {
+              "Theming progress indicators": {
+                "Implementing progress indicator theming": "<detail_content>"
+              },
+              "Showing or hiding the progress indicator": "<detail_content>",
+              "Adding rounded corners": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Radio button",
+          "path": "[\"subpages\", 8, \"subpages\", 32]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Radio button attributes": "<detail_content>",
+              "Text label attributes": "<detail_content>",
+              "Radio button states": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding radio button": "<detail_content>",
+              "Making radio buttons accessible": "<detail_content>",
+              "Grouping radio buttons": "<detail_content>"
+            },
+            "Customizing radio buttons": {
+              "Theming radio buttons": {
+                "Radio button theming example": {
+                  "Implementing radio button theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Search",
+          "path": "[\"subpages\", 8, \"subpages\", 33]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": {
+                "SearchBar in MaterialToolbar": "<detail_content>"
+              }
+            },
+            "Key properties": {
+              "Search bar": {
+                "Attributes": "<detail_content>",
+                "Styles": "<detail_content>"
+              },
+              "Search view": {
+                "Attributes": "<detail_content>",
+                "Styles": "<detail_content>"
+              }
+            },
+            "Code implementation": {
+              "Adding Search bar": "<detail_content>",
+              "Adding Search view": "<detail_content>",
+              "Making search components accessible": "<detail_content>",
+              "Transition listeners": "<detail_content>",
+              "Predictive back": "<detail_content>"
+            },
+            "Customizing search bar": {
+              "Expand and collapse animations": "<detail_content>",
+              "Soft input modes": "<detail_content>",
+              "Translucent status bar": "<detail_content>",
+              "Menu to back arrow animation": "<detail_content>",
+              "Search prefix": "<detail_content>",
+              "Search history, suggestions, and results": "<detail_content>",
+              "Scrolling behavior": {
+                "Fixed mode": "<detail_content>",
+                "Scroll-away mode": "<detail_content>",
+                "Lift on scroll mode": "<detail_content>"
+              },
+              "Putting it all together": "<detail_content>",
+              "Toolbar transitions": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Side sheets",
+          "path": "[\"subpages\", 8, \"subpages\", 34]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Sheet attributes": "<detail_content>",
+              "Behavior attributes": "<detail_content>",
+              "Sheet edge": {
+                "Standard and coplanar sheets": "<detail_content>",
+                "Modal sheets": "<detail_content>"
+              },
+              "Styles": "<detail_content>"
+            },
+            "Variants of side sheets": "<detail_content>",
+            "Code implementation": {
+              "Adding side sheets": "<detail_content>",
+              "Listening to state and slide changes": "<detail_content>",
+              "Setting state": "<detail_content>",
+              "Predictive back": {
+                "Standard and coplanar (non-modal) side sheets": "<detail_content>",
+                "Modal side sheets": "<detail_content>"
+              }
+            },
+            "Customizing side sheets": {
+              "Theming side sheets": {
+                "Side sheet theming example": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Slider",
+          "path": "[\"subpages\", 8, \"subpages\", 35]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive styles": "<detail_content>"
+            },
+            "Key properties": {
+              "Track attributes": "<detail_content>",
+              "Thumb attributes": "<detail_content>",
+              "Value label attributes": "<detail_content>",
+              "Tick mark attributes": "<detail_content>",
+              "Styles": "<detail_content>",
+              "Non-text contrast update": "<detail_content>"
+            },
+            "Variants of sliders": {
+              "Standard slider": "<detail_content>",
+              "Centered slider": "<detail_content>",
+              "Range slider": "<detail_content>"
+            },
+            "Code implementation": {
+              "Making sliders accessible": "<detail_content>",
+              "Setting a `LabelFormatter`": "<detail_content>"
+            },
+            "Customizing sliders": {
+              "Theming sliders": {
+                "Slider theming example": {
+                  "Implementing slider theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Snackbar",
+          "path": "[\"subpages\", 8, \"subpages\", 36]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Text label attributes": "<detail_content>",
+              "Container attributes": "<detail_content>",
+              "Action attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding snackbar": "<detail_content>",
+              "Making snackbar accessible": "<detail_content>",
+              "Showing snackbar": "<detail_content>",
+              "Anchoring snackbar": "<detail_content>",
+              "Related concepts": "<detail_content>",
+              "Adding an action": "<detail_content>"
+            },
+            "Customizing snackbar": {
+              "Theming snackbar": {
+                "Snackbar theming example": {
+                  "Implementing snackbar theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Split button",
+          "path": "[\"subpages\", 8, \"subpages\", 37]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>"
+            },
+            "Key properties": {
+              "Size and space attributes": "<detail_content>",
+              "Styles and theme attributes": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding split button": "<detail_content>",
+              "Making buttons accessible": "<detail_content>",
+              "Animating trailing icon": "<detail_content>"
+            },
+            "Customizing split button": {
+              "Theming buttons": {
+                "Button theming example": {
+                  "Implementing button theming": "<detail_content>"
+                }
+              },
+              "Optical centering": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Switch",
+          "path": "[\"subpages\", 8, \"subpages\", 38]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Switch attributes": "<detail_content>",
+              "Thumb attributes": "<detail_content>",
+              "Icon attributes": "<detail_content>",
+              "Track attributes": "<detail_content>",
+              "Text label attributes": "<detail_content>",
+              "Switch states": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding switch": "<detail_content>",
+              "Making switch accessible": "<detail_content>"
+            },
+            "Customizing switch": {
+              "Theming switch": {
+                "Switch theming example": {
+                  "Implementing switch theming": "<detail_content>"
+                }
+              },
+              "Anatomy": "<detail_content>",
+              "Key properties": {
+                "Switch attributes": "<detail_content>",
+                "Thumb attributes": "<detail_content>",
+                "Track attributes": "<detail_content>",
+                "Text label attributes": "<detail_content>",
+                "Switch states": "<detail_content>",
+                "Styles": "<detail_content>",
+                "Switch theming example": {
+                  "Implementing switch theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs",
+          "path": "[\"subpages\", 8, \"subpages\", 39]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Tab item icon attributes": "<detail_content>",
+              "Tab item text label attributes": "<detail_content>",
+              "Tab item container attributes": "<detail_content>",
+              "Tab indicator attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding tabs": "<detail_content>",
+              "Making tabs accessible": {
+                "Content description": "<detail_content>"
+              },
+              "Using tabs with ViewPager": "<detail_content>",
+              "Using tabs with ViewPager2": "<detail_content>",
+              "Adding badges to tabs": "<detail_content>",
+              "Adding fixed tabs": {
+                "Fixed tabs example": "<detail_content>"
+              },
+              "Adding scrollable tabs": {
+                "Scrollable tabs example": "<detail_content>"
+              }
+            },
+            "Customizing tabs": {
+              "Theming tabs": {
+                "Tabs theming example": {
+                  "Implementing tabs theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Text fields",
+          "path": "[\"subpages\", 8, \"subpages\", 40]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": "<detail_content>",
+            "Variants of text fields": {
+              "Filled text field": {
+                "Filled text field examples": "<detail_content>"
+              },
+              "Outlined text field": {
+                "Outlined text field examples": "<detail_content>"
+              }
+            },
+            "Code implementation": "<detail_content>",
+            "Customizing text fields": {
+              "Theming text fields": {
+                "Text field theming example": {
+                  "Implementing text field theming": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Time pickers",
+          "path": "[\"subpages\", 8, \"subpages\", 41]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "Key properties": {
+              "Attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Variants of time pickers": {
+              "Time picker dial": "<detail_content>",
+              "Time picker input": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding time picker": "<detail_content>",
+              "Making time pickers accessible": "<detail_content>"
+            },
+            "Customizing time pickers": {
+              "Theming time pickers": {
+                "Time picker theming example": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Toggle button groups",
+          "path": "[\"subpages\", 8, \"subpages\", 42]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>",
+              "M3 Expressive style": "<detail_content>"
+            },
+            "Key properties": {
+              "Selection attributes": "<detail_content>",
+              "Container attributes": "<detail_content>",
+              "Styles": "<detail_content>"
+            },
+            "Code implementation": {
+              "Adding an icon-only toggle button": {
+                "Icon toggle example": "<detail_content>"
+              },
+              "Making buttons accessible": "<detail_content>"
+            },
+            "Customizing toggle button groups": {
+              "Theming buttons": {
+                "Button theming example": {
+                  "Implementing button theming": "<detail_content>"
+                }
+              },
+              "Optical centering": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Tooltip",
+          "path": "[\"subpages\", 8, \"subpages\", 43]",
+          "content": {
+            "Tooltip": "<detail_content>"
+          }
+        },
+        {
+          "title": "Top app bars (App bars)",
+          "path": "[\"subpages\", 8, \"subpages\", 44]",
+          "content": {
+            "Design & API documentation": "<detail_content>",
+            "Anatomy": "<detail_content>",
+            "M3 Expressive": {
+              "M3 Expressive update": "<detail_content>"
+            },
+            "Key properties": {
+              "Container attributes": "<detail_content>",
+              "Navigation icon attributes": "<detail_content>",
+              "Title attributes": "<detail_content>",
+              "Action items attributes": "<detail_content>",
+              "Overflow menu attributes": "<detail_content>",
+              "Scrolling behavior attributes": "<detail_content>",
+              "`AppBarLayout` styles": "<detail_content>",
+              "`MaterialToolbar` styles": "<detail_content>",
+              "`CollapsingToolbarLayout` styles": "<detail_content>"
+            },
+            "Variants of app bars": "<detail_content>",
+            "Code implementation": "<detail_content>",
+            "Customizing app bars": {
+              "Theming app bars": {
+                "App bar theming example": {
+                  "Implementing app bar theming": "<detail_content>"
+                }
+              }
+            },
+            "Contextual action bar": "<detail_content>",
+            "Deprecated app bars": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Foundations",
+      "description": "Documentation section: foundations",
+      "path": "[\"subpages\", 9]",
+      "subpages": [
+        {
+          "title": "Predictive Back",
+          "path": "[\"subpages\", 9, \"subpages\", 0]",
+          "content": {
+            "Design and API Documentation": "<detail_content>",
+            "Usage": {
+              "Predictive Back Material Components": "<detail_content>"
+            },
+            "Talks": "<detail_content>",
+            "Blog Posts": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Theming",
+      "description": "Documentation section: theming",
+      "path": "[\"subpages\", 10]",
+      "subpages": [
+        {
+          "title": "Color theming",
+          "path": "[\"subpages\", 10, \"subpages\", 0]",
+          "content": {
+            "Design and API Documentation": "<detail_content>",
+            "Using The Color Theming System": "<detail_content>",
+            "Using Surface Colors": {
+              "Using Surface with Elevation Overlay": "<detail_content>"
+            },
+            "Using dynamic colors": "<detail_content>",
+            "Custom Colors": "<detail_content>",
+            "Using Color Harmonization": "<detail_content>",
+            "Color role mapping utilities": "<detail_content>",
+            "Content-based Dynamic Colors": "<detail_content>",
+            "Contrast Control": "<detail_content>"
+          }
+        },
+        {
+          "title": "Dark theme",
+          "path": "[\"subpages\", 10, \"subpages\", 1]",
+          "content": {
+            "Design and API Documentation": "<detail_content>",
+            "Setup": "<detail_content>",
+            "Catalog": "<detail_content>",
+            "Color palette": "<detail_content>",
+            "Elevation overlays": {
+              "Affected components": "<detail_content>",
+              "Theme attributes": "<detail_content>",
+              "Custom views and non-Material Components": {
+                "MaterialShapeDrawable": "<detail_content>",
+                "ElevationOverlayProvider": "<detail_content>",
+                "Absolute Elevation": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Motion",
+          "path": "[\"subpages\", 10, \"subpages\", 2]",
+          "content": {
+            "Theming": {
+              "Springs": {
+                "Custom animations using the spring motion system": "<detail_content>"
+              },
+              "Curves (easing & duration)": {
+                "Custom animations using the curve motion system": "<detail_content>"
+              }
+            },
+            "Transitions": {
+              "Motion resources": "<detail_content>",
+              "Container transform": {
+                "Using the container transform pattern": "<detail_content>",
+                "Container transform examples": {
+                  "Transition between Fragments": "<detail_content>",
+                  "Transition between activities": "<detail_content>",
+                  "Transition between Views": "<detail_content>"
+                },
+                "Customization": {
+                  "Container transform attributes": "<detail_content>",
+                  "Container transform properties": "<detail_content>",
+                  "Fade through Variant": "<detail_content>"
+                }
+              },
+              "Shared axis": {
+                "Using the shared axis pattern": {
+                  "Shared axis direction": "<detail_content>"
+                },
+                "Shared axis examples": {
+                  "Transition between Fragments": "<detail_content>",
+                  "Transition between Activities": "<detail_content>",
+                  "Transition between Views": "<detail_content>"
+                },
+                "Customization": {
+                  "Shared axis composition": "<detail_content>",
+                  "Shared axis fade variant": "<detail_content>",
+                  "Shared axis attributes": "<detail_content>"
+                }
+              },
+              "Fade through": {
+                "Using the fade through pattern": "<detail_content>",
+                "Fade through examples": {
+                  "Transition between Fragments": "<detail_content>",
+                  "Transition between Activities": "<detail_content>",
+                  "Transition between Views": "<detail_content>"
+                },
+                "Customization": {
+                  "Fade through composition": "<detail_content>",
+                  "Fade through slide variant": "<detail_content>",
+                  "Fade through attributes": "<detail_content>"
+                }
+              },
+              "Fade": {
+                "Using the fade pattern": "<detail_content>",
+                "Fade examples": {
+                  "Transition a View": "<detail_content>"
+                },
+                "Customization": {
+                  "Fade composition": "<detail_content>",
+                  "Fade through attributes": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Shape theming",
+          "path": "[\"subpages\", 10, \"subpages\", 3]",
+          "content": {
+            "Design and API Documentation": "<detail_content>",
+            "How it works": {
+              "`MaterialShapeDrawable` and `ShapeAppearanceModel`": "<detail_content>",
+              "Theming `MaterialShapeDrawable`s": {
+                "Shape styles": "<detail_content>",
+                "Shape theme attributes": "<detail_content>"
+              },
+              "Corner family and corner sizes": "<detail_content>"
+            },
+            "Usage": {
+              "Building a shape appearance": {
+                "`ShapeAppearance` and `shapeAppearanceOverlay` attributes": "<detail_content>"
+              },
+              "Using `shapeAppearance` in the theme": "<detail_content>",
+              "Customizing component shapes": {
+                "Theme-wide component overrides": "<detail_content>",
+                "Individual component overrides": "<detail_content>",
+                "Supported components": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Typography theming",
+          "path": "[\"subpages\", 10, \"subpages\", 4]",
+          "content": {
+            "Design and API Documentation": "<detail_content>",
+            "Usage": {
+              "Baseline scale": "<detail_content>",
+              "Emphasized scale": "<detail_content>"
+            },
+            "Style values": "<detail_content>",
+            "Customization": "<detail_content>",
+            "Downloadable fonts": "<detail_content>"
+          }
+        }
+      ]
+    }
+  ]
+}

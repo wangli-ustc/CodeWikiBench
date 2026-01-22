@@ -1,0 +1,3189 @@
+{
+  "title": "json",
+  "description": "Documentation for json",
+  "subpages": [
+    {
+      "title": "Documentation",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Generate documentation": "<detail_content>"
+      }
+    },
+    {
+      "title": "Docset",
+      "description": "Documentation section: docset",
+      "path": "[\"subpages\", 1]",
+      "subpages": [
+        {
+          "title": "docset",
+          "path": "[\"subpages\", 1, \"subpages\", 0]",
+          "content": {
+            "Licenses": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Mkdocs",
+      "description": "Documentation section: mkdocs",
+      "path": "[\"subpages\", 2]",
+      "subpages": [
+        {
+          "title": "Docs",
+          "description": "Documentation section: docs",
+          "path": "[\"subpages\", 2, \"subpages\", 0]",
+          "subpages": [
+            {
+              "title": "Index",
+              "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 0]",
+              "content": {
+                "JSON for Modern C++": "<detail_content>"
+              }
+            },
+            {
+              "title": "Api",
+              "description": "Documentation section: api",
+              "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1]",
+              "subpages": [
+                {
+                  "title": "<small>nlohmann::</small>json",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 0]",
+                  "content": {
+                    "Examples": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "<small>nlohmann::</small>operator>>(basic_json)",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 1]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return value": "<detail_content>",
+                    "Exceptions": "<detail_content>",
+                    "Complexity": "<detail_content>",
+                    "Notes": "<detail_content>",
+                    "Examples": "<detail_content>",
+                    "See also": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "<small>nlohmann::</small>operator\"\"_json",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 2]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return value": "<detail_content>",
+                    "Exceptions": "<detail_content>",
+                    "Complexity": "<detail_content>",
+                    "Examples": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "<small>nlohmann::</small>operator\"\"_json_pointer",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 3]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return value": "<detail_content>",
+                    "Exceptions": "<detail_content>",
+                    "Complexity": "<detail_content>",
+                    "Examples": "<detail_content>",
+                    "See also": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "<small>nlohmann::</small>operator<<(basic_json), <small>nlohmann::</small>operator<<(json_pointer)",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 4]",
+                  "content": {
+                    "Parameters": "<detail_content>",
+                    "Return value": "<detail_content>",
+                    "Exceptions": "<detail_content>",
+                    "Complexity": "<detail_content>",
+                    "Notes": "<detail_content>",
+                    "Examples": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "<small>nlohmann::</small>ordered_json",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 5]",
+                  "content": {
+                    "Iterator invalidation": "<detail_content>",
+                    "Examples": "<detail_content>",
+                    "See also": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "<small>nlohmann::</small>ordered_map",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 6]",
+                  "content": {
+                    "Template parameters": "<detail_content>",
+                    "Iterator invalidation": "<detail_content>",
+                    "Member types": "<detail_content>",
+                    "Member functions": "<detail_content>",
+                    "Examples": "<detail_content>",
+                    "See also": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Adl Serializer",
+                  "description": "Documentation section: adl_serializer",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 7]",
+                  "subpages": [
+                    {
+                      "title": "<small>nlohmann::adl_serializer::</small>from_json",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 7, \"subpages\", 0]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::</small>adl_serializer",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 7, \"subpages\", 1]",
+                      "content": {
+                        "Member functions": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::adl_serializer::</small>to_json",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 7, \"subpages\", 2]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Basic Json",
+                  "description": "Documentation section: basic_json",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8]",
+                  "subpages": [
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>accept",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 0]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>array",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 1]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>array_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 2]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>at",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 3]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>back",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 4]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>basic_json",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 5]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>begin",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 6]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>binary",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 7]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>binary_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 8]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>boolean_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 9]",
+                      "content": {
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>cbegin",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 10]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>cbor_tag_handler_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 11]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>cend",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 12]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>clear",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 13]",
+                      "content": {
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>contains",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 14]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>count",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 15]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>crbegin",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 16]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>crend",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 17]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>default_object_comparator_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 18]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>diff",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 19]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>dump",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 20]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>emplace",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 21]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Iterator invalidation": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>emplace_back",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 22]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Iterator invalidation": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>empty",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 23]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Possible implementation": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>end",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 24]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>end_pos",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 25]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>erase",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 26]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>error_handler_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 27]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>exception",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 28]",
+                      "content": {
+                        "Member functions": "<detail_content>",
+                        "Member variables": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>find",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 29]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>flatten",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 30]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>from_bjdata",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 31]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>from_bson",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 32]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>from_cbor",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 33]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>from_msgpack",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 34]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>from_ubjson",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 35]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>front",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 36]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>get",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 37]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>get_allocator",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 38]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>get_binary",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 39]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>get_ptr",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 40]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>get_ref",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 41]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>get_to",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 42]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::</small>basic_json",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 43]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Specializations": "<detail_content>",
+                        "Iterator invalidation": "<detail_content>",
+                        "Requirements": {
+                          "Basic": "<detail_content>",
+                          "Layout": "<detail_content>",
+                          "Library-wide": "<detail_content>",
+                          "Container": "<detail_content>"
+                        },
+                        "Member types": {
+                          "Exceptions": "<detail_content>",
+                          "Container types": "<detail_content>",
+                          "JSON value data types": "<detail_content>",
+                          "Parser callback": "<detail_content>"
+                        },
+                        "Member functions": {
+                          "Object inspection": "<detail_content>",
+                          "Value access": "<detail_content>",
+                          "Element access": "<detail_content>",
+                          "Lookup": "<detail_content>",
+                          "Iterators": "<detail_content>",
+                          "Capacity": "<detail_content>",
+                          "Modifiers": "<detail_content>",
+                          "Lexicographical comparison operators": "<detail_content>",
+                          "Serialization / Dumping": "<detail_content>",
+                          "Deserialization / Parsing": "<detail_content>",
+                          "JSON Pointer functions": "<detail_content>",
+                          "JSON Patch functions": "<detail_content>",
+                          "JSON Merge Patch functions": "<detail_content>"
+                        },
+                        "Static functions": {
+                          "Binary formats": "<detail_content>"
+                        },
+                        "Non-member functions": "<detail_content>",
+                        "Literals": "<detail_content>",
+                        "Helper classes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>input_format_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 44]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>insert",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 45]",
+                      "content": {
+                        "Iterator invalidation": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>invalid_iterator",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 46]",
+                      "content": {
+                        "Member functions": "<detail_content>",
+                        "Member variables": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_array",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 47]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_binary",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 48]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_boolean",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 49]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_discarded",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 50]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_null",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 51]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_number",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 52]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Possible implementation": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_number_float",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 53]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_number_integer",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 54]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_number_unsigned",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 55]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_object",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 56]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_primitive",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 57]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Possible implementation": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_string",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 58]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>is_structured",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 59]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Possible implementation": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>items",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 60]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>json_base_class_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 61]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>json_serializer",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 62]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>max_size",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 63]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>merge_patch",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 64]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>meta",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 65]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>number_float_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 66]",
+                      "content": {
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>number_integer_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 67]",
+                      "content": {
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>number_unsigned_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 68]",
+                      "content": {
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>object",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 69]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>object_comparator_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 70]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>object_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 71]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator+=",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 72]",
+                      "content": {
+                        "Iterator invalidation": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator=",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 73]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator[]",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 74]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Iterator invalidation": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator ValueType",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 75]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator==",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 76]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator>=",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 77]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator>",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 78]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator<=",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 79]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator<",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 80]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator!=",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 81]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator<=>",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 82]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>operator value_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 83]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>other_error",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 84]",
+                      "content": {
+                        "Member functions": "<detail_content>",
+                        "Member variables": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>out_of_range",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 85]",
+                      "content": {
+                        "Member functions": "<detail_content>",
+                        "Member variables": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>parse",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 86]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>parse_error",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 87]",
+                      "content": {
+                        "Member functions": "<detail_content>",
+                        "Member variables": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>parse_event_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 88]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>parser_callback_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 89]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>patch",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 90]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>patch_inplace",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 91]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>push_back",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 92]",
+                      "content": {
+                        "Iterator invalidation": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>rbegin",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 93]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>rend",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 94]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>sax_parse",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 95]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>size",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 96]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>start_pos",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 97]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>std::</small>hash<nlohmann::basic_json\\>",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 98]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "std::swap<basic_json\\>",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 99]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Possible implementation": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>string_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 100]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>swap",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 101]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>to_bjdata",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 102]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>to_bson",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 103]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>to_cbor",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 104]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>to_msgpack",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 105]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "to_string(basic_json)",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 106]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Possible implementation": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>to_ubjson",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 107]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>type",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 108]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>type_error",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 109]",
+                      "content": {
+                        "Member functions": "<detail_content>",
+                        "Member variables": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>type_name",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 110]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>unflatten",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 111]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>update",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 112]",
+                      "content": {
+                        "Iterator invalidation": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>value",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 113]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>value_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 114]",
+                      "content": {
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::basic_json::</small>~basic_json",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 8, \"subpages\", 115]",
+                      "content": {
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Byte Container With Subtype",
+                  "description": "Documentation section: byte_container_with_subtype",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 9]",
+                  "subpages": [
+                    {
+                      "title": "<small>nlohmann::byte_container_with_subtype::</small>byte_container_with_subtype",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 9, \"subpages\", 0]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::byte_container_with_subtype::</small>clear_subtype",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 9, \"subpages\", 1]",
+                      "content": {
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::byte_container_with_subtype::</small>has_subtype",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 9, \"subpages\", 2]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::</small>byte_container_with_subtype",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 9, \"subpages\", 3]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Member types": "<detail_content>",
+                        "Member functions": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::byte_container_with_subtype::</small>set_subtype",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 9, \"subpages\", 4]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::byte_container_with_subtype::</small>subtype",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 9, \"subpages\", 5]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Json Pointer",
+                  "description": "Documentation section: json_pointer",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10]",
+                  "subpages": [
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>back",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 0]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>empty",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 1]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::</small>json_pointer",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 2]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Member types": "<detail_content>",
+                        "Member functions": "<detail_content>",
+                        "Literals": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>json_pointer",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 3]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>operator==",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 4]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>operator!=",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 5]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Exception safety": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>operator/",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 6]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>operator/=",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 7]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>operator string_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 8]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Possible implementation": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>parent_pointer",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 9]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>pop_back",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 10]",
+                      "content": {
+                        "Exceptions": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>push_back",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 11]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Complexity": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>string_t",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 12]",
+                      "content": {
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_pointer::</small>to_string",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 10, \"subpages\", 13]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Json Sax",
+                  "description": "Documentation section: json_sax",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11]",
+                  "subpages": [
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>binary",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 0]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>boolean",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 1]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>end_array",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 2]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>end_object",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 3]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::</small>json_sax",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 4]",
+                      "content": {
+                        "Template parameters": "<detail_content>",
+                        "Member types": "<detail_content>",
+                        "Member functions": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>key",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 5]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>null",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 6]",
+                      "content": {
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>number_float",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 7]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>number_integer",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 8]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>number_unsigned",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 9]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>parse_error",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 10]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>start_array",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 11]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>start_object",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 12]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "<small>nlohmann::json_sax::</small>string",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 11, \"subpages\", 13]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Return value": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Macros",
+                  "description": "Documentation section: macros",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12]",
+                  "subpages": [
+                    {
+                      "title": "Macros",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 0]",
+                      "content": {
+                        "Runtime assertions": "<detail_content>",
+                        "Exceptions": "<detail_content>",
+                        "Language support": "<detail_content>",
+                        "Library version": "<detail_content>",
+                        "Library namespace": "<detail_content>",
+                        "Type conversions": "<detail_content>",
+                        "Comparison behavior": "<detail_content>",
+                        "Serialization/deserialization macros": {
+                          "Enums": "<detail_content>",
+                          "Classes and structs": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "JSON_ASSERT",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 1]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_DIAGNOSTIC_POSITIONS",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 2]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_DIAGNOSTICS",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 3]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_DISABLE_ENUM_SERIALIZATION",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 4]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_HAS_CPP_11, JSON_HAS_CPP_14, JSON_HAS_CPP_17, JSON_HAS_CPP_20",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 5]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_HAS_FILESYSTEM / JSON_HAS_EXPERIMENTAL_FILESYSTEM",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 6]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_HAS_RANGES",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 7]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_HAS_STATIC_RTTI",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 8]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_HAS_THREE_WAY_COMPARISON",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 9]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_NO_IO",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 10]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_NOEXCEPTION",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 11]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_SKIP_LIBRARY_VERSION_CHECK",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 12]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_SKIP_UNSUPPORTED_COMPILER_CHECK",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 13]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_CATCH_USER, JSON_THROW_USER, JSON_TRY_USER",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 14]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_USE_GLOBAL_UDLS",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 15]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_USE_IMPLICIT_CONVERSIONS",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 16]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "JSON_USE_LEGACY_DISCARDED_VALUE_COMPARISON",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 17]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": {
+                          "See also": "<detail_content>"
+                        },
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Nlohmann Define Derived Type",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 18]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "NLOHMANN_DEFINE_TYPE_INTRUSIVE, NLOHMANN_DEFINE_TYPE_INTRUSIVE_WITH_DEFAULT, NLOHMANN_DEFINE_TYPE_INTRUSIVE_ONLY_SERIALIZE",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 19]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE, NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE_WITH_DEFAULT, NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE_ONLY_SERIALIZE",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 20]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "NLOHMANN_JSON_NAMESPACE",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 21]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "NLOHMANN_JSON_NAMESPACE_BEGIN, NLOHMANN_JSON_NAMESPACE_END",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 22]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "NLOHMANN_JSON_NAMESPACE_NO_VERSION",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 23]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "NLOHMANN_JSON_SERIALIZE_ENUM",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 24]",
+                      "content": {
+                        "Parameters": "<detail_content>",
+                        "Default definition": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "NLOHMANN_JSON_VERSION_MAJOR, NLOHMANN_JSON_VERSION_MINOR, NLOHMANN_JSON_VERSION_PATCH",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 1, \"subpages\", 12, \"subpages\", 25]",
+                      "content": {
+                        "Default definition": "<detail_content>",
+                        "Examples": "<detail_content>",
+                        "See also": "<detail_content>",
+                        "Version history": "<detail_content>"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Community",
+              "description": "Documentation section: community",
+              "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 2]",
+              "subpages": [
+                {
+                  "title": "Code Of Conduct",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 2, \"subpages\", 0]",
+                  "content": {
+                    "root": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Contribution Guidelines",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 2, \"subpages\", 1]",
+                  "content": {
+                    "root": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Governance",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 2, \"subpages\", 2]",
+                  "content": {
+                    "Overview": "<detail_content>",
+                    "Roles and responsibilities": {
+                      "Benevolent dictator (project lead)": "<detail_content>",
+                      "Committers": "<detail_content>",
+                      "Contributors": "<detail_content>",
+                      "Users": "<detail_content>"
+                    },
+                    "Support": "<detail_content>",
+                    "Contribution Process": "<detail_content>",
+                    "Decision-Making Process": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Index",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 2, \"subpages\", 3]",
+                  "content": {
+                    "Community": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Quality assurance",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 2, \"subpages\", 4]",
+                  "content": {
+                    "C++ language compliance and compiler compatibility": "<detail_content>",
+                    "C++ standard library compliance": "<detail_content>",
+                    "Stable public API": "<detail_content>",
+                    "Robust input processing": "<detail_content>",
+                    "Static analysis": "<detail_content>",
+                    "Dynamic analysis": "<detail_content>",
+                    "Style check": "<detail_content>",
+                    "Simple integration": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Security Policy",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 2, \"subpages\", 5]",
+                  "content": {
+                    "root": "<detail_content>"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Features",
+              "description": "Documentation section: features",
+              "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3]",
+              "subpages": [
+                {
+                  "title": "Arbitrary Type Conversions",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 0]",
+                  "content": {
+                    "Basic usage": "<detail_content>",
+                    "Simplify your life with macros": "<detail_content>",
+                    "How do I convert third-party types?": "<detail_content>",
+                    "How can I use `get()` for non-default constructible/non-copyable types?": "<detail_content>",
+                    "Can I write my own serializer? (Advanced use)": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Runtime Assertions",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 1]",
+                  "content": {
+                    "Switch off runtime assertions": "<detail_content>",
+                    "Change assertion behavior": "<detail_content>",
+                    "Function with runtime assertions": {
+                      "Unchecked object access to a const value": "<detail_content>",
+                      "Constructing from an uninitialized iterator range": "<detail_content>",
+                      "Operations on uninitialized iterators": "<detail_content>"
+                    },
+                    "Changes": {
+                      "Reading from a null `FILE` or `char` pointer": "<detail_content>"
+                    },
+                    "See also": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Binary Values",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 2]",
+                  "content": {
+                    "API for binary values": "<detail_content>",
+                    "Serialization": {
+                      "JSON": "<detail_content>",
+                      "BJData": "<detail_content>",
+                      "BSON": "<detail_content>",
+                      "CBOR": "<detail_content>",
+                      "MessagePack": "<detail_content>",
+                      "UBJSON": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Comments",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 3]",
+                  "content": {
+                    "Comments": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Specializing enum conversion",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 4]",
+                  "content": {
+                    "Usage": "<detail_content>",
+                    "Notes": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Iterators",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 5]",
+                  "content": {
+                    "Overview": {
+                      "Iteration order for objects": "<detail_content>",
+                      "Access object keys during iteration": "<detail_content>",
+                      "Range-based for loops": "<detail_content>",
+                      "Reverse iteration order": "<detail_content>",
+                      "Iterating strings and binary values": "<detail_content>"
+                    },
+                    "Iterator invalidation": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "JSON Patch and Diff",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 6]",
+                  "content": {
+                    "Patches": "<detail_content>",
+                    "Diff": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "JSON Pointer",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 7]",
+                  "content": {
+                    "Introduction": "<detail_content>",
+                    "JSON Pointer creation": "<detail_content>",
+                    "Value access": "<detail_content>",
+                    "Flatten / unflatten": "<detail_content>",
+                    "See also": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Supported Macros",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 8]",
+                  "content": {
+                    "`JSON_ASSERT(x)`": "<detail_content>",
+                    "`JSON_CATCH_USER(exception)`": "<detail_content>",
+                    "`JSON_DIAGNOSTICS`": "<detail_content>",
+                    "`JSON_DIAGNOSTIC_POSITIONS`": "<detail_content>",
+                    "`JSON_HAS_CPP_11`, `JSON_HAS_CPP_14`, `JSON_HAS_CPP_17`, `JSON_HAS_CPP_20`": "<detail_content>",
+                    "`JSON_HAS_FILESYSTEM`, `JSON_HAS_EXPERIMENTAL_FILESYSTEM`": "<detail_content>",
+                    "`JSON_NOEXCEPTION`": "<detail_content>",
+                    "`JSON_DISABLE_ENUM_SERIALIZATION`": "<detail_content>",
+                    "`JSON_NO_IO`": "<detail_content>",
+                    "`JSON_SKIP_LIBRARY_VERSION_CHECK`": "<detail_content>",
+                    "`JSON_SKIP_UNSUPPORTED_COMPILER_CHECK`": "<detail_content>",
+                    "`JSON_THROW_USER(exception)`": "<detail_content>",
+                    "`JSON_TRY_USER`": "<detail_content>",
+                    "`JSON_USE_IMPLICIT_CONVERSIONS`": "<detail_content>",
+                    "`NLOHMANN_DEFINE_TYPE_*(...)`, `NLOHMANN_DEFINE_DERIVED_TYPE_*(...)`": "<detail_content>",
+                    "`NLOHMANN_JSON_SERIALIZE_ENUM(type, ...)`": "<detail_content>",
+                    "`NLOHMANN_JSON_VERSION_MAJOR`, `NLOHMANN_JSON_VERSION_MINOR`, `NLOHMANN_JSON_VERSION_PATCH`": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Merge Patch",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 9]",
+                  "content": {
+                    "JSON Merge Patch": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Modules",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 10]",
+                  "content": {
+                    "Requirements": "<detail_content>",
+                    "Example": "<detail_content>",
+                    "Modules do not export macros": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "`nlohmann` Namespace",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 11]",
+                  "content": {
+                    "Structure": "<detail_content>",
+                    "Purpose": "<detail_content>",
+                    "Limitations": "<detail_content>",
+                    "Disabling the version component": "<detail_content>",
+                    "Disabling the inline namespace completely": "<detail_content>",
+                    "Version history": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Object Order",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 12]",
+                  "content": {
+                    "Default behavior: sort keys": "<detail_content>",
+                    "Alternative behavior: preserve insertion order": {
+                      "Notes on parsing": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Trailing Commas",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 13]",
+                  "content": {
+                    "Trailing Commas": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Binary Formats",
+                  "description": "Documentation section: binary_formats",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 14]",
+                  "subpages": [
+                    {
+                      "title": "BJData",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 14, \"subpages\", 0]",
+                      "content": {
+                        "Serialization": "<detail_content>",
+                        "Deserialization": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "BSON",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 14, \"subpages\", 1]",
+                      "content": {
+                        "Serialization": "<detail_content>",
+                        "Deserialization": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "CBOR",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 14, \"subpages\", 2]",
+                      "content": {
+                        "Serialization": "<detail_content>",
+                        "Deserialization": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Binary Formats",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 14, \"subpages\", 3]",
+                      "content": {
+                        "Comparison": {
+                          "Completeness": "<detail_content>",
+                          "Binary values": "<detail_content>",
+                          "Sizes": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "MessagePack",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 14, \"subpages\", 4]",
+                      "content": {
+                        "Serialization": "<detail_content>",
+                        "Deserialization": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "UBJSON",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 14, \"subpages\", 5]",
+                      "content": {
+                        "Serialization": "<detail_content>",
+                        "Deserialization": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Element Access",
+                  "description": "Documentation section: element_access",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 15]",
+                  "subpages": [
+                    {
+                      "title": "Checked access: at",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 15, \"subpages\", 0]",
+                      "content": {
+                        "Overview": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Summary": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Access with default value: value",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 15, \"subpages\", 1]",
+                      "content": {
+                        "Overview": "<detail_content>",
+                        "Example": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "See also": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Index",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 15, \"subpages\", 2]",
+                      "content": {
+                        "Element Access": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Unchecked access: operator[]",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 15, \"subpages\", 3]",
+                      "content": {
+                        "Overview": "<detail_content>",
+                        "Notes": "<detail_content>",
+                        "Summary": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Parsing",
+                  "description": "Documentation section: parsing",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 16]",
+                  "subpages": [
+                    {
+                      "title": "Parsing",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 16, \"subpages\", 0]",
+                      "content": {
+                        "Input": "<detail_content>",
+                        "SAX vs. DOM parsing": "<detail_content>",
+                        "Exceptions": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Json Lines",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 16, \"subpages\", 1]",
+                      "content": {
+                        "JSON Lines": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Parsing and Exceptions",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 16, \"subpages\", 2]",
+                      "content": {
+                        "Switch off exceptions": "<detail_content>",
+                        "Use accept() function": "<detail_content>",
+                        "User-defined SAX interface": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Parser Callbacks",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 16, \"subpages\", 3]",
+                      "content": {
+                        "Overview": "<detail_content>",
+                        "Callback event types": "<detail_content>",
+                        "Return value": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "SAX Interface",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 16, \"subpages\", 4]",
+                      "content": {
+                        "See also": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Types",
+                  "description": "Documentation section: types",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 17]",
+                  "subpages": [
+                    {
+                      "title": "Types",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 17, \"subpages\", 0]",
+                      "content": {
+                        "Overview": "<detail_content>",
+                        "Storage": "<detail_content>",
+                        "Template arguments": "<detail_content>",
+                        "Objects": {
+                          "Default type": "<detail_content>",
+                          "Behavior": "<detail_content>",
+                          "Key order": "<detail_content>",
+                          "Limits": "<detail_content>",
+                          "Storage": "<detail_content>"
+                        },
+                        "Arrays": {
+                          "Default type": "<detail_content>",
+                          "Limits": "<detail_content>",
+                          "Storage": "<detail_content>"
+                        },
+                        "Strings": {
+                          "Default type": "<detail_content>",
+                          "Encoding": "<detail_content>",
+                          "String comparison": "<detail_content>",
+                          "Storage": "<detail_content>"
+                        },
+                        "Booleans": {
+                          "Default type": "<detail_content>",
+                          "Storage": "<detail_content>"
+                        },
+                        "Numbers": {
+                          "Default types": "<detail_content>",
+                          "Default behavior": "<detail_content>",
+                          "Limits": "<detail_content>",
+                          "Storage": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Number Handling",
+                      "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 3, \"subpages\", 17, \"subpages\", 1]",
+                      "content": {
+                        "Background": {
+                          "JSON number syntax": "<detail_content>",
+                          "Number interoperability": "<detail_content>"
+                        },
+                        "Library implementation": {
+                          "Number storage": "<detail_content>",
+                          "Number limits": "<detail_content>",
+                          "Zeros": "<detail_content>",
+                          "Number serialization": {
+                            "NaN handling": "<detail_content>"
+                          },
+                          "Number comparison": "<detail_content>",
+                          "Number conversion": "<detail_content>",
+                          "Determine number types": "<detail_content>",
+                          "Template number types": "<detail_content>"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Home",
+              "description": "Documentation section: home",
+              "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4]",
+              "subpages": [
+                {
+                  "title": "Architecture",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 0]",
+                  "content": {
+                    "Overview": "<detail_content>",
+                    "Template specializations": "<detail_content>",
+                    "Value storage": "<detail_content>",
+                    "Parsing inputs (deserialization)": "<detail_content>",
+                    "SAX Interface": "<detail_content>",
+                    "Writing outputs (serialization)": "<detail_content>",
+                    "Value conversion": "<detail_content>",
+                    "Additional features": "<detail_content>",
+                    "Details namespace": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Customers",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 1]",
+                  "content": {
+                    "Space Exploration": "<detail_content>",
+                    "Automotive": "<detail_content>",
+                    "Gaming and Entertainment": "<detail_content>",
+                    "Consumer Electronics": "<detail_content>",
+                    "Operating Systems": "<detail_content>",
+                    "Development Tools and IDEs": "<detail_content>",
+                    "Machine Learning and AI": "<detail_content>",
+                    "Scientific Research and Analysis": "<detail_content>",
+                    "Business and Productivity Software": "<detail_content>",
+                    "Databases and Big Data": "<detail_content>",
+                    "Simulation and Modeling": "<detail_content>",
+                    "Enterprise and Cloud Applications": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Design Goals",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 2]",
+                  "content": {
+                    "Design goals": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Exceptions",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 3]",
+                  "content": {
+                    "Overview": {
+                      "Base type": "<detail_content>",
+                      "Switch off exceptions": "<detail_content>",
+                      "Extended diagnostic messages": "<detail_content>"
+                    },
+                    "Parse errors": {
+                      "json.exception.parse_error.101": "<detail_content>",
+                      "json.exception.parse_error.102": "<detail_content>",
+                      "json.exception.parse_error.103": "<detail_content>",
+                      "json.exception.parse_error.104": "<detail_content>",
+                      "json.exception.parse_error.105": "<detail_content>",
+                      "json.exception.parse_error.106": "<detail_content>",
+                      "json.exception.parse_error.107": "<detail_content>",
+                      "json.exception.parse_error.108": "<detail_content>",
+                      "json.exception.parse_error.109": "<detail_content>",
+                      "json.exception.parse_error.110": "<detail_content>",
+                      "json.exception.parse_error.112": "<detail_content>",
+                      "json.exception.parse_error.113": "<detail_content>",
+                      "json.exception.parse_error.114": "<detail_content>",
+                      "json.exception.parse_error.115": "<detail_content>"
+                    },
+                    "Iterator errors": {
+                      "json.exception.invalid_iterator.201": "<detail_content>",
+                      "json.exception.invalid_iterator.202": "<detail_content>",
+                      "json.exception.invalid_iterator.203": "<detail_content>",
+                      "json.exception.invalid_iterator.204": "<detail_content>",
+                      "json.exception.invalid_iterator.205": "<detail_content>",
+                      "json.exception.invalid_iterator.206": "<detail_content>",
+                      "json.exception.invalid_iterator.207": "<detail_content>",
+                      "json.exception.invalid_iterator.208": "<detail_content>",
+                      "json.exception.invalid_iterator.209": "<detail_content>",
+                      "json.exception.invalid_iterator.210": "<detail_content>",
+                      "json.exception.invalid_iterator.211": "<detail_content>",
+                      "json.exception.invalid_iterator.212": "<detail_content>",
+                      "json.exception.invalid_iterator.213": "<detail_content>",
+                      "json.exception.invalid_iterator.214": "<detail_content>"
+                    },
+                    "Type errors": {
+                      "json.exception.type_error.301": "<detail_content>",
+                      "json.exception.type_error.302": "<detail_content>",
+                      "json.exception.type_error.303": "<detail_content>",
+                      "json.exception.type_error.304": "<detail_content>",
+                      "json.exception.type_error.305": "<detail_content>",
+                      "json.exception.type_error.306": "<detail_content>",
+                      "json.exception.type_error.307": "<detail_content>",
+                      "json.exception.type_error.308": "<detail_content>",
+                      "json.exception.type_error.309": "<detail_content>",
+                      "json.exception.type_error.310": "<detail_content>",
+                      "json.exception.type_error.311": "<detail_content>",
+                      "json.exception.type_error.312": "<detail_content>",
+                      "json.exception.type_error.313": "<detail_content>",
+                      "json.exception.type_error.314": "<detail_content>",
+                      "json.exception.type_error.315": "<detail_content>",
+                      "json.exception.type_error.316": "<detail_content>",
+                      "json.exception.type_error.317": "<detail_content>"
+                    },
+                    "Out of range": {
+                      "json.exception.out_of_range.401": "<detail_content>",
+                      "json.exception.out_of_range.402": "<detail_content>",
+                      "json.exception.out_of_range.403": "<detail_content>",
+                      "json.exception.out_of_range.404": "<detail_content>",
+                      "json.exception.out_of_range.405": "<detail_content>",
+                      "json.exception.out_of_range.406": "<detail_content>",
+                      "json.exception.out_of_range.407": "<detail_content>",
+                      "json.exception.out_of_range.408": "<detail_content>",
+                      "json.exception.out_of_range.409": "<detail_content>"
+                    },
+                    "Further exceptions": {
+                      "json.exception.other_error.501": "<detail_content>",
+                      "json.exception.other_error.502": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Frequently Asked Questions (FAQ)",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 4]",
+                  "content": {
+                    "Known bugs": {
+                      "Brace initialization yields arrays": "<detail_content>"
+                    },
+                    "Limitations": {
+                      "Relaxed parsing": "<detail_content>",
+                      "Parse errors reading non-ASCII characters": "<detail_content>",
+                      "Wide string handling": "<detail_content>"
+                    },
+                    "Exceptions": {
+                      "Parsing without exceptions": "<detail_content>",
+                      "Key name in exceptions": "<detail_content>"
+                    },
+                    "Serialization issues": {
+                      "Number precision": "<detail_content>"
+                    },
+                    "Compilation issues": {
+                      "Android SDK": "<detail_content>",
+                      "Missing STL function": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "License",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 5]",
+                  "content": {
+                    "License": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Releases",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 6]",
+                  "content": {
+                    "v3.7.3": {
+                      "Summary": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.7.2": {
+                      "Summary": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.7.1": {
+                      "Summary": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.7.0": {
+                      "Summary": "<detail_content>",
+                      ":sparkles: New Features": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.6.1": {
+                      "Summary": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.6.0": {
+                      "Summary": "<detail_content>",
+                      ":sparkles: New Features": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.5.0": {
+                      "Summary": "<detail_content>",
+                      ":sparkles: New Features": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.4.0": {
+                      "Summary": "<detail_content>",
+                      ":sparkles: New Features": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.3.0": {
+                      "Summary": "<detail_content>",
+                      ":sparkles: New Features": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.2.0": {
+                      "Summary": "<detail_content>",
+                      ":sparkles: New Features": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.1.2": {
+                      "Summary": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.1.1": {
+                      "Summary": "<detail_content>",
+                      ":bug: Bug Fixes": "<detail_content>",
+                      ":hammer: Further Changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.1.0": {
+                      "Summary": "<detail_content>",
+                      ":sparkles: New features": "<detail_content>",
+                      ":zap: Improvements": "<detail_content>",
+                      ":truck: Reorganization": "<detail_content>",
+                      ":hammer: Further changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>"
+                    },
+                    "v3.0.1": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>",
+                      "Deprecated functions": "<detail_content>"
+                    },
+                    "v3.0.0": {
+                      "Summary": "<detail_content>",
+                      ":boom: Breaking changes": "<detail_content>",
+                      ":fire: Deprecated functions": "<detail_content>",
+                      ":sparkles: New features": "<detail_content>",
+                      ":hammer: Further changes": "<detail_content>",
+                      "Moving from 2.x.x to 3.0.0": {
+                        "User-defined Exceptions": "<detail_content>",
+                        "Handling of NaN and INF": "<detail_content>",
+                        "Removal of deprecated functions": "<detail_content>"
+                      }
+                    },
+                    "v2.1.1": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.1.0": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.10": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.9": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.8": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.7": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.6": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.5": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.4": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.3": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.2": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.1": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    },
+                    "v2.0.0": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>",
+                      "Notes": "<detail_content>"
+                    },
+                    "v1.1.0": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>",
+                      "Notes": "<detail_content>"
+                    },
+                    "v1.0.0": {
+                      "Summary": "<detail_content>",
+                      "Changes": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Sponsors",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 4, \"subpages\", 7]",
+                  "content": {
+                    "Priority Sponsor": "<detail_content>",
+                    "Named Sponsors": "<detail_content>"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Integration",
+              "description": "Documentation section: integration",
+              "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 5]",
+              "subpages": [
+                {
+                  "title": "CMake",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 5, \"subpages\", 0]",
+                  "content": {
+                    "Integration": {
+                      "External": "<detail_content>",
+                      "Embedded": "<detail_content>",
+                      "Supporting Both": "<detail_content>",
+                      "FetchContent": "<detail_content>"
+                    },
+                    "CMake Options": {
+                      "`JSON_BuildTests`": "<detail_content>",
+                      "`JSON_CI`": "<detail_content>",
+                      "`JSON_Diagnostics`": "<detail_content>",
+                      "`JSON_Diagnostic_Positions`": "<detail_content>",
+                      "`JSON_DisableEnumSerialization`": "<detail_content>",
+                      "`JSON_FastTests`": "<detail_content>",
+                      "`JSON_GlobalUDLs`": "<detail_content>",
+                      "`JSON_ImplicitConversions`": "<detail_content>",
+                      "`JSON_Install`": "<detail_content>",
+                      "`JSON_LegacyDiscardedValueComparison`": "<detail_content>",
+                      "`JSON_MultipleHeaders`": "<detail_content>",
+                      "`JSON_SystemInclude`": "<detail_content>",
+                      "`JSON_Valgrind`": "<detail_content>"
+                    }
+                  }
+                },
+                {
+                  "title": "Index",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 5, \"subpages\", 1]",
+                  "content": {
+                    "Header only": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Migration Guide",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 5, \"subpages\", 2]",
+                  "content": {
+                    "Replace deprecated functions": "<detail_content>",
+                    "Replace implicit conversions": "<detail_content>",
+                    "Import namespace `literals` for UDLs": "<detail_content>",
+                    "Do not hard-code the complete library namespace": "<detail_content>",
+                    "Do not use the `details` namespace": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Package Managers",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 5, \"subpages\", 3]",
+                  "content": {
+                    "Running example": "<detail_content>",
+                    "Homebrew": "<detail_content>",
+                    "Meson": "<detail_content>",
+                    "Bazel": "<detail_content>",
+                    "Conan": "<detail_content>",
+                    "Spack": "<detail_content>",
+                    "Hunter": "<detail_content>",
+                    "vcpkg": "<detail_content>",
+                    "cget": "<detail_content>",
+                    "Swift Package Manager": "<detail_content>",
+                    "NuGet": "<detail_content>",
+                    "Conda": "<detail_content>",
+                    "MSYS2": "<detail_content>",
+                    "MacPorts": "<detail_content>",
+                    "build2": "<detail_content>",
+                    "CPM.cmake": "<detail_content>",
+                    "xmake": "<detail_content>",
+                    "Other package managers": "<detail_content>",
+                    "Buckaroo": "<detail_content>",
+                    "CocoaPods": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Pkg Config",
+                  "path": "[\"subpages\", 2, \"subpages\", 0, \"subpages\", 5, \"subpages\", 4]",
+                  "content": {
+                    "Pkg-config": "<detail_content>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Includes",
+          "description": "Documentation section: includes",
+          "path": "[\"subpages\", 2, \"subpages\", 1]",
+          "subpages": [
+            {
+              "title": "Glossary",
+              "path": "[\"subpages\", 2, \"subpages\", 1, \"subpages\", 0]",
+              "content": {
+                "root": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "title": "marktext",
+  "description": "Documentation for marktext",
+  "content": {},
+  "metadata": {
+    "type": "root",
+    "path": "/home/anhnh/CodeWikiBench/data/marktext/original/docs"
+  },
+  "subpages": [
+    {
+      "title": "Application Data Directory",
+      "description": null,
+      "content": {
+        "Application Data Directory": "The per-user application data directory is located in the following directory:\n\n['`%APPDATA%\\\\marktext` on Windows', '`$XDG_CONFIG_HOME/marktext` or `~/.config/marktext` on Linux', '`~/Library/Application Support/marktext` on macOS']\n\nWhen [portable mode](PORTABLE.md) is enabled, the directory location is either the `--user-data-dir` parameter or `marktext-user-data` directory."
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 0]"
+    },
+    {
+      "title": "Basics",
+      "description": null,
+      "content": {
+        "Getting started": {
+          "Interface": {
+            "Toggle sidebar": "The sidebar consists of three panels and you can toggle the sidebar by pressing <kbd>CmdOrCtrl</kbd>+<kbd>J</kbd>:\n\n['Filesystem explorer (tree view) of the opened root directory', 'Find in files', 'Table of contents of the selected tab']",
+            "Toggle tabs": "MarkText can be used as a single editor but opens all files in a separate tab. Tabs can be toggled via <kbd>CmdOrCtrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> and reordered by drag and drop.\n\n**Want to use tabs without showing them?**\n\nYou can hide tabs and use key bindings such as <kbd>CmdOrCtrl</kbd>+<kbd>Tab</kbd> to cycle through tabs or the sidebar *opened files* panel.\n\n![](assets/marktext-interface-1.png)",
+            "Switch between editor modes": "You can use <kbd>CmdOrCtrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd> to switch between the preview and source-code editor. The realtime preview editor is the default editor with many features. A detailed overview of all features can be found [here](EDITING.md).",
+            "Typewriter and focus mode": "Use <kbd>CmdOrCtrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> to enter distraction free focus mode or <kbd>CmdOrCtrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> for typewriter."
+          }
+        },
+        "Open and modify markdown files": {
+          "Open your first file": "You can use the menu `File -> Open File` or press <kbd>CmdOrCtrl</kbd>+<kbd>O</kbd> to open a file dialog to choose a markdown file. Another way to is to launch MarkText with directories or files via command line.",
+          "Save your edited file": "After some modifications you can save your file via <kbd>CmdOrCtrl</kbd>+<kbd>S</kbd> or use *save as* to use a different file name.",
+          "Open a directory": "MarkText also has support to open a directory via <kbd>CmdOrCtrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> or the sidebar button *Open Folder*. After opening a directory all files and directories are shown in the sidebar tree view. The tree view allows you to open further files, browse and modify files or directories inside the opened root directory. Above the tree view are all opened files located. You can also use quick open (<kbd>CmdOrCtrl</kbd>+<kbd>P</kbd>) to quickly open a file from the opened root directory or editor and navigate via arrow keys or select a file via mouse. To view another sidebar panel like find in files click on the left sidebar icons.\n\n![](assets/marktext-interface-2.png)"
+        },
+        "Themes": "You can change the application theme by clicking on an entry under the themes application menu.",
+        "Preferences": "You can control and modify all preferences in the settings window or edit `preferences.json` in the [application data directory](APPLICATION_DATA_DIRECTORY.md). Detailed information about the preference file can be found [here](PREFERENCES.md).\n\n['General application settings', 'Settings that control the editor appearance', 'Markdown related settings', 'The application theme', 'Options how images are handled']\n\n![](assets/marktext-settings.png)"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 1]"
+    },
+    {
+      "title": "Cli",
+      "description": null,
+      "content": {
+        "Command Line Interface": "```\nUsage: marktext [commands] [path ...]\n\n  Available commands:\n\n        --debug                   Enable debug mode\n        --safe                    Disable plugins and other user configuration\n    -n, --new-window              Open a new window on second-instance\n        --user-data-dir           Change the user data directory\n        --disable-gpu             Disable GPU hardware acceleration\n    -v, --verbose                 Be verbose\n        --version                 Print version information\n    -h, --help                    Print this help message\n```\n\n`marktext` should point to your installation of MarkText. The exact location will vary from platform to platform. On macOS, you can create a convenient alias like:\n\n```\nalias marktext=\"/Applications/Mark\\ Text.app/Contents/MacOS/Mark\\ Text\"\n```"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 2]"
+    },
+    {
+      "title": "Editing in Depth",
+      "description": null,
+      "content": {
+        "Text manipulation": "MarkText shows you formatted text in realtime while you can simply write and edit text but also use markdown syntax. To improve your writing efficiency there are a lot of key bindings for better text manipulation. In the preferences you can control the editor settings such as font settings, autocompletion and line width.",
+        "Selections": "You can select text with your mouse cursor, double click on a word or use the keyboard <kbd>Shift</kbd>+<kbd>Arrow Keys</kbd>.\n\n**Format overlay:**\n\nThe format overlay is a pop up that automatically appears when you're selecting text. You can easily transform text and inline markdown but also remove formatting.\n\n![](assets/marktext-format-popup.png)\n\n['Bold', 'Italics', 'Underline', 'Strikethrough', 'Inline code', 'Inline math formulas', 'Create link', 'Create image', 'Remove formatting']\n\nFurther overlays are available for emojis, links, images and tables.",
+        "Deleting": "Do you want to delete headings, lists or tables? Just select the area and press backspace.",
+        "Brackets and quotes autocompletion": "You can configure MarkText to autocomplete markdown syntax, brackets and quotes. By default `()`, `[]`, `{}`, `**`, `__`, `$$`, `\"\"` and `''` are completed when the first character is typed.",
+        "Links": "Links are shown by default as normal text but if you click on a link the link is shown as markdown link with title and URL like below:\n\n![](assets/marktext-link-preview.png)",
+        "Formatting": "MarkText will automatically format your markdown document according CommonMark and GitHub Flavored Markdown specification. You can control few settings via preferences such as list indentation.",
+        "Editing features": "Quick insert\n\nWhen you start a new line, just type `@` to show a pop up with all available markdown features. Now you can select an entry and the line is transformed into the selected one.\n\n![](assets/marktext-quick-insert.png)\n\nLine transformer\n\nYou can transform a line into another type by clicking on the highlighted icon in the image below and select `Turn Into`. Furthermore, you can duplicate the selected line, create a paragraph above the selected line or delete the line.\n\n![](assets/marktext-line-transformer.png)\n\nTable tools\n\nIt's sometimes hard to write and manage tables in markdown. In MarkText you can press <kbd>CmdOrCtrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> to get a table dialog and create a table with variable row and column count. Both row and column count can be changed via the table tools (first icon above the table) later if necessary. You can use all inline styles in a table cell and align the text via table tools at the top of the table.\n\n**Insert and delete rows and columns:**\n\nYou can insert or delete a new row or column by clicking on an existing cell and click on the menu on the right side for rows or bottom for columns.\n\n![](assets/marktext-table_drag_drop.png)\n\n**Move table cells:**\n\nYou can simply move a row or column by clicking on the cell menu (like above) and dragging it by holding your mouse left-button like this:\n\n![](assets/marktext-table-gif.gif)\n\nImage tools\n\n![](assets/marktext-image-viewer.png)\n\nMarkText provides an image viewer and a pop up to select and label images. You can resize any image by your mouse cursor and changes are applied in realtime. By clicking on an image or writing `![]()` a pop up is automatically shown that allows you to select an image from disk or paste a path or URL. Images can be automatically uploaded to cloud, moved to a relative or absolute path on disk. Even pasting images that are not located on disk is supported and these images are stored in the background. In addition, you can control the image alignment whether inline, left, centered or right.\n\n![](assets/marktext-image-popup.png)\n\nEmoji picker\n\nInstantly add emojis to your markdown document without long searches. During typing, we automatically refresh the list of available emojis.\n\n![](assets/marktext-emoji-picker.png)\n\nFocus mode\n\n![](assets/marktext-focus-mode.png)\n\nThe focus mode will help you to focus on the currently line only by fading out other lines. To activate the focus mode, simply press <kbd>CmdOrCtrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>.\n\nTypewriter mode\n\nIn typewriter mode, the cursor is always keep in the middle of the editor.",
+        "File encoding": "MarkText tries to automatically detect the used file encoding and byte-order mark (BOM) when opening a file. The default encoding is UTF-8 that should support all needed characters but can be changed in settings. You can disable automatically encoding detection but then we assume that all files are UTF-8 encoded. The current used encoding can be shown via command palette and also changed there.",
+        "Line endings": "MarkText automatically analyzes each file and detects the used line ending and can be changed via command palette too.",
+        "Find and replace": "**Inside the editor:**\n\nTo quickly find a keyword in your document press <kbd>CmdOrCtrl</kbd>+<kbd>F</kbd> to open the search pop up. Now you can search for text or replace the given keyword.\n\n**Search in opened folder:**\n\nMarkText provides a build-in filesystem explorer (tree view) with a fast file searcher. Type a keyword in the search bar and select the needed options like regex or case-insensitive search. That's all, now MarkText will search all markdown files in the opened root directory."
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 3]"
+    },
+    {
+      "title": "Environment",
+      "description": null,
+      "content": {
+        "Development": "| Name                                 | Description                                                  |\n| ------------------------------------ | ------------------------------------------------------------ |\n| `MARKTEXT_EXIT_ON_ERROR`             | Exit on the first error or exception that occurs.            |\n| `MARKTEXT_DEV_HIDE_BROWSER_ANALYZER` | Don't show the dependency analyzer.                          |\n| `MARKTEXT_IS_STABLE`                 | **Please don't use this!** Used to identify stable releases. |"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 4]"
+    },
+    {
+      "title": "Export a Document",
+      "description": null,
+      "content": {
+        "Options": {
+          "Page options": "You can set the page size, orientation and margin before exporting a document.",
+          "Style": "Adjust the page style without modify the page theme:\n\n['Overwrite font family, size and line height.', 'Auto numbering headings.', 'Option to show the front matter on the exported document.']",
+          "Theme": "MarkText allows you to select a page theme before exporting. You can learn more about page themes [here](EXPORT_THEMES.md).",
+          "Header and footer": "You can include a header and/or footer in the exported document if you choose PDF or printing and also adjust the header/footer style. You can select between no, a single or a three cell header in export options. The header and/or footer appear on each page when defined and the header can be multiline but the footer only single line. Unfortunately, page numbering is currently not supported. An example can be seen below.\n\n![](assets/marktext-export-header.png)\n\n![](assets/marktext-export-pdf.png)"
+        }
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 5]"
+    },
+    {
+      "title": "Themes (Export)",
+      "description": null,
+      "content": {
+        "Install a theme": "You can install a theme by copying the `.css` file to `themes/export/` directory inside the [application data directory](APPLICATION_DATA_DIRECTORY.md) location but you may need to restart MarkText to detect the theme.",
+        "Create a theme": {
+          "Theme settings": "A theme currently only have a name (`A-z0-9 -`) that is defined by a CSS comment at the first line like:\n\n```\n/** Liber **/\n\n.markdown-body {\n  /* ... */\n}\n```"
+        }
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 6]"
+    },
+    {
+      "title": "Faq",
+      "description": null,
+      "content": {
+        "Frequently Asked Questions (FAQ)": "What are the supported platforms?\n\nMarkText is a desktop application and available for:\n\n['Linux x64 (tested on Debian and Red Hat based distros)', 'macOS 10.10 x64 or later', 'Windows 7-10 x86 and x64']\n\nIs MarkText open-source and free?\n\nYes, MarkText is licensed under the [MIT](https://github.com/marktext/marktext/blob/develop/LICENSE) license and completely free for everyone. The source-code is available on [GitHub](https://github.com/marktext/marktext).\n\nCan I use MarkText as note management/taking app?\n\nMarkText is a pure markdown editor without feature such as knowledge management and tags but yes, you can do this via the integrated filesystem explorer and task lists.\n\nWhere can I find documentation?\n\nDocumentation is currently under development.\n\n['[End-user documentation](https://github.com/marktext/marktext/blob/develop/docs/README.md)', '[Developer documentation](https://github.com/marktext/marktext/blob/develop/docs/dev/README.md)']\n\nCan I run a portable version of MarkText?\n\nYes, please see [here](PORTABLE.md) for further information.\n\nHow can I report bugs and problems\n\nYou can report bugs and problems via our [GitHub issue tracker](https://github.com/marktext/marktext/issues). Please provide a detailed description of the problem to better solve the issue.\n\nI cannot launch MarkText on Linux (SUID sandbox)\n\n['*The SUID sandbox helper binary was found, but is not configured correctly.*']\n\nNormally, you should never get this error but if you disabled user namespaces, this error message may appears in the command output when launching MarkText. To solve the issue, that Chromium cannot start the sandbox (process), you can choose one of the following steps:\n\n['Enable Linux kernel user namespaces to use the preferred sandbox: `sudo sysctl kernel.unprivileged_userns_clone=1`.', \"Set correct SUID sandbox helper binary permissions: `sudo chown root <path_to_marktext_dir>/chrome-sandbox && sudo chmod 4755 <path_to_marktext_dir>/chrome-sandbox`. This is preferred if you don't want to enable user namespaces.\", 'Launch MarkText with `--no-sandbox` argument.']"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 7]"
+    },
+    {
+      "title": "Images",
+      "description": null,
+      "content": {
+        "Image support": "MarkText can automatically copy your images into a specified directory or handle images from clipboard.\n\nUpload to cloud using selected uploader\n\nPlease see [here](IMAGE_UPLOADER_CONFIGRATION.md) for more information.\n\nMove to designated local folder\n\nAll images are automatically copied into the specified local directory that may be relative.\n\n**Prefer relative assets folder:**\n\nWhen this option is enabled, all images are copied relative to the opened file. The root directory is used when a project is opened and no variables are used. You can specify the path via the *relative image folder name* text box and include variables like `${filename}` to add the file name to the relative directory. The local resource directory is used if the file is not saved.\n\nNote: The assets directory name must be a valid path name and MarkText need write access to the directory.\n\nExamples for relative paths:\n\n['`assets`', '`../assets`', '`.`: current file directory', '`assets/123`', '`assets_${filename}` (add the document file name)']\n\nKeep original location\n\nMarkText only saves images from clipboard into the specified local directory."
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 8]"
+    },
+    {
+      "title": "Image Uploader Configration",
+      "description": null,
+      "content": {
+        "PicGo": "PicGo is a CLI tool to upload images to various cloud providers. Please see [here](https://picgo.github.io/PicGo-Doc/en/guide/) of more information.",
+        "GitHub": "['NOTE: This uploader is deprecated and will be replaced by PicGo in version 0.18.']\n\n['Step 1, Create a GitHub [repo](https://github.com/new).']\n\n![5ce17b03726c384991](https://i.loli.net/2019/05/19/5ce17b03726c384991.png)\n\n['Step 2, Create a GitHub token in [Settings/Developer settings.](https://github.com/settings/tokens)']\n\n![5ce17bd849d5589341](https://i.loli.net/2019/05/19/5ce17bd849d5589341.png)\n\n['Config in MarkText Preferences window. click `CmdOrCtrl + ,` to open MarkText Preferences window.']\n\n![5ce17cb97b0f111638](https://i.loli.net/2019/05/19/5ce17cb97b0f111638.png)\n\n['Input you `token`, `owner name` and `repo name` whick you just created. Click `Save` and `Set As default Uploader`.', 'Paste an image into MarkText and open you created repo to see the uploaded image.']"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 9]"
+    },
+    {
+      "title": "Key Bindings",
+      "description": null,
+      "content": {
+        "Available modifiers": [
+          "`Cmd` on macOS",
+          "`Option` on macOS",
+          "`Ctrl`",
+          "`Shift`",
+          "`Alt` (equal to `Option` on macOS)"
+        ],
+        "Available keys": [
+          "`0-9`, `A-Z`, `F1-F24` and punctuations like `/` or `#`",
+          "`Plus`, `Space`, `Tab`, `Backspace`, `Delete`, `Insert`, `Return/Enter`, `Esc`, `Home`, `End` and `PrintScreen`",
+          "`Up`, `Down`, `Left` and `Right`",
+          "`PageUp` and `PageDown`",
+          "Empty string `\"\"` to unset a accelerator"
+        ],
+        "Available key bindings": [
+          "[Key bindings for macOS](KEYBINDINGS_OSX.md)",
+          "[Key bindings for Linux](KEYBINDINGS_LINUX.md)",
+          "[Key bindings for Windows](KEYBINDINGS_WINDOWS.md)"
+        ]
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 10]"
+    },
+    {
+      "title": "Key Bindings for Linux",
+      "description": null,
+      "content": {
+        "Available menu key bindings": "File menu\n\n| Id                  | Default                                       | Description                           |\n|:------------------- | --------------------------------------------- | ------------------------------------- |\n| `file.new-window`   | <kbd>Ctrl</kbd>+<kbd>N</kbd>                  | New window                            |\n| `file.new-tab`      | <kbd>Ctrl</kbd>+<kbd>T</kbd>                  | New tab                               |\n| `file.open-file`    | <kbd>Ctrl</kbd>+<kbd>O</kbd>                  | Open markdown file                    |\n| `file.open-folder`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> | Open folder                           |\n| `file.save`         | <kbd>Ctrl</kbd>+<kbd>S</kbd>                  | Save                                  |\n| `file.save-as`      | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> | Save as...                            |\n| `file.move-file`    | -                                             | Move current file to another location |\n| `file.rename-file`  | -                                             | Rename current file                   |\n| `file.print`        | -                                             | Print current tab                     |\n| `file.preferences`  | <kbd>Ctrl</kbd>+<kbd>,</kbd>                  | Open settings window                  |\n| `file.close-tab`    | <kbd>Ctrl</kbd>+<kbd>W</kbd>                  | Close tab                             |\n| `file.close-window` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> | Close window                          |\n| `file.quit`         | <kbd>Ctrl</kbd>+<kbd>Q</kbd>                  | Quit MarkText                         |\n\nEdit menu\n\n| Id                        | Default                                       | Description                                     |\n|:------------------------- | --------------------------------------------- | ----------------------------------------------- |\n| `edit.undo`               | <kbd>Ctrl</kbd>+<kbd>Z</kbd>                  | Undo last operation                             |\n| `edit.redo`               | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> | Redo last operation                             |\n| `edit.cut`                | <kbd>Ctrl</kbd>+<kbd>X</kbd>                  | Cut selected text                               |\n| `edit.copy`               | <kbd>Ctrl</kbd>+<kbd>C</kbd>                  | Copy selected text                              |\n| `edit.paste`              | <kbd>Ctrl</kbd>+<kbd>V</kbd>                  | Paste text                                      |\n| `edit.copy-as-markdown`   | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> | Copy selected text as markdown                  |\n| `edit.copy-as-html`       | -                                             | Copy selected text as html                      |\n| `edit.paste-as-plaintext` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> | Copy selected text as plaintext                 |\n| `edit.select-all`         | <kbd>Ctrl</kbd>+<kbd>A</kbd>                  | Select all text of the document                 |\n| `edit.duplicate`          | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> | Duplicate the current paragraph                 |\n| `edit.create-paragraph`   | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> | Create a new paragraph after the current one    |\n| `edit.delete-paragraph`   | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> | Delete current paragraph                        |\n| `edit.find`               | <kbd>Ctrl</kbd>+<kbd>F</kbd>                  | Find information in the document                |\n| `edit.find-next`          | <kbd>F3</kbd>                                 | Continue the search and find the next match     |\n| `edit.find-previous`      | <kbd>Shift</kbd>+<kbd>F3</kbd>                | Continue the search and find the previous match |\n| `edit.replace`            | <kbd>Ctrl</kbd>+<kbd>R</kbd>                  | Replace the information with a replacement      |\n| `edit.find-in-folder`     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> | Find files contain the keyword in opend folder  |\n\nParagraph menu\n\n| Id                          | Default                                       | Description                              |\n| --------------------------- | --------------------------------------------- | ---------------------------------------- |\n| `paragraph.heading-1`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd> | Set line as heading 1                    |\n| `paragraph.heading-2`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd> | Set line as heading 2                    |\n| `paragraph.heading-3`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd> | Set line as heading 3                    |\n| `paragraph.heading-4`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd> | Set line as heading 4                    |\n| `paragraph.heading-5`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>5</kbd> | Set line as heading 5                    |\n| `paragraph.heading-6`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>6</kbd> | Set line as heading 6                    |\n| `paragraph.upgrade-heading` | <kbd>Ctrl</kbd>+<kbd>Plus</kbd>               | Upgrade a heading                        |\n| `paragraph.degrade-heading` | <kbd>Ctrl</kbd>+<kbd>-</kbd>                  | Degrade a heading                        |\n| `paragraph.table`           | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> | Insert a table                           |\n| `paragraph.code-fence`      | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | Insert a code block                      |\n| `paragraph.quote-block`     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd> | Insert a quote block                     |\n| `paragraph.math-formula`    | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>M</kbd>   | Insert a math block                      |\n| `paragraph.html-block`      | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>H</kbd>   | Insert a HTML block                      |\n| `paragraph.order-list`      | <kbd>Ctrl</kbd>+<kbd>G</kbd>                  | Insert a ordered list                    |\n| `paragraph.bullet-list`     | <kbd>Ctrl</kbd>+<kbd>H</kbd>                  | Insert a unordered list                  |\n| `paragraph.task-list`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> | Insert a task list                       |\n| `paragraph.loose-list-item` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> | Convert a list item to a loose list item |\n| `paragraph.paragraph`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd> | Convert a heading to a paragraph         |\n| `paragraph.horizontal-line` | <kbd>Ctrl</kbd>+<kbd>\\_</kbd>                 | Add a horizontal line                    |\n| `paragraph.front-matter`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd> | Insert a YAML frontmatter block          |\n\nFormat menu\n\n| Id                    | Default                                       | Description                                     |\n| --------------------- | --------------------------------------------- | ----------------------------------------------- |\n| `format.strong`       | <kbd>Ctrl</kbd>+<kbd>B</kbd>                  | Set the font of the selected text to bold       |\n| `format.emphasis`     | <kbd>Ctrl</kbd>+<kbd>I</kbd>                  | Set the font of the selected text to italic     |\n| `format.underline`    | <kbd>Ctrl</kbd>+<kbd>U</kbd>                  | Change the selected text to underline           |\n| `format.superscript`  | -                                             | Change the selected text to underline           |\n| `format.subscript`    | -                                             | Change the selected text to underline           |\n| `format.highlight`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd> | Highlight the selected text by <mark>tag</mark> |\n| `format.inline-code`  | <kbd>Ctrl</kbd>+<kbd>Y</kbd>                  | Change the selected text to inline code         |\n| `format.inline-math`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | Change the selected text to inline math         |\n| `format.strike`       | <kbd>Ctrl</kbd>+<kbd>D</kbd>                  | Strike through the selected text                |\n| `format.hyperlink`    | <kbd>Ctrl</kbd>+<kbd>L</kbd>                  | Insert a hyperlink                              |\n| `format.image`        | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> | Insert a image                                  |\n| `format.clear-format` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> | Clear the formatting of the selected text       |\n\nWindow menu\n\n| Id                            | Default                      | Description               |\n| ----------------------------- | ---------------------------- | ------------------------- |\n| `window.minimize`             | <kbd>Ctrl</kbd>+<kbd>M</kbd> | Minimize the window       |\n| `window.toggle-always-on-top` | -                            | Toogle always on top mode |\n| `window.zoom-in`              | -                            | Zoom in                   |\n| `window.zoom-out`             | -                            | Zoom out                  |\n| `window.toggle-full-screen`   | <kbd>F11</kbd>               | Toggle fullscreen mode    |\n\nView menu\n\n| Id                      | Default                                       | Description                              |\n| ----------------------- | --------------------------------------------- | ---------------------------------------- |\n| `view.command-palette`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> | Toggle command palette                   |\n| `view.source-code-mode` | <kbd>Ctrl</kbd>+<kbd>E</kbd>                  | Switch to source code mode               |\n| `view.typewriter-mode`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> | Enable typewriter mode                   |\n| `view.focus-mode`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd> | Enable focus mode                        |\n| `view.toggle-sidebar`   | <kbd>Ctrl</kbd>+<kbd>J</kbd>                  | Toggle sidebar                           |\n| `view.toggle-tabbar`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> | Toggle tabbar                            |\n| `view.toggle-toc` .     | <kbd>Ctrl</kbd>+<kbd>K</kbd>                  | Toggle table of contents                 |\n| `view.toggle-dev-tools` | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>   | Toggle developer tools (debug mode only) |\n| `view.dev-reload`       | <kbd>Ctrl</kbd>+<kbd>F5</kbd>                 | Reload window (debug mode only)          |\n| `view.reload-images`    | <kbd>F5</kbd>                                 | Reload images                            |",
+        "Available key bindings": "Tabs\n\n| Id                       | Default                                         | Description                  |\n| ------------------------ | ----------------------------------------------- | ---------------------------- |\n| `tabs.cycle-forward`     | <kbd>Ctrl</kbd>+<kbd>Tab</kbd>                  | Cycle through tabs           |\n| `tabs.cycle-backward`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd> | Cycle backwards through tabs |\n| `tabs.switch-to-left`    | <kbd>Ctrl</kbd>+<kbd>PageUp</kbd>               | Switch tab to the left       |\n| `tabs.switch-to-right`   | <kbd>Ctrl</kbd>+<kbd>PageDown</kbd>             | Switch tab to the right      |\n| `tabs.switch-to-first`   | <kbd>Ctrl</kbd>+<kbd>1</kbd>                    | Switch tab to the 1st        |\n| `tabs.switch-to-second`  | <kbd>Ctrl</kbd>+<kbd>2</kbd>                    | Switch tab to the 2nd        |\n| `tabs.switch-to-third`   | <kbd>Ctrl</kbd>+<kbd>3</kbd>                    | Switch tab to the 3rd        |\n| `tabs.switch-to-fourth`  | <kbd>Ctrl</kbd>+<kbd>4</kbd>                    | Switch tab to the 4th        |\n| `tabs.switch-to-fifth`   | <kbd>Ctrl</kbd>+<kbd>5</kbd>                    | Switch tab to the 5th        |\n| `tabs.switch-to-sixth`   | <kbd>Ctrl</kbd>+<kbd>6</kbd>                    | Switch tab to the 6th        |\n| `tabs.switch-to-seventh` | <kbd>Ctrl</kbd>+<kbd>7</kbd>                    | Switch tab to the 7th        |\n| `tabs.switch-to-eighth`  | <kbd>Ctrl</kbd>+<kbd>8</kbd>                    | Switch tab to the 8th        |\n| `tabs.switch-to-ninth`   | <kbd>Ctrl</kbd>+<kbd>9</kbd>                    | Switch tab to the 9th        |\n| `tabs.switch-to-tenth`   | <kbd>Ctrl</kbd>+<kbd>0</kbd>                    | Switch tab to the 10th       |\n\nMisc\n\n| Id                | Default                      | Description            |\n| ----------------- | ---------------------------- | ---------------------- |\n| `file.quick-open` | <kbd>Ctrl</kbd>+<kbd>P</kbd> | Show quick open dialog |"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 11]"
+    },
+    {
+      "title": "Key Bindings for macOS",
+      "description": null,
+      "content": {
+        "Available menu key bindings": "MarkText menu\n\n| Id                 | Default                                           | Description                            |\n| ------------------ | ------------------------------------------------- | -------------------------------------- |\n| `mt.hide`          | <kbd>Command</kbd>+<kbd>H</kbd>                   | Hide MarkText                          |\n| `mt.hide-others`   | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>H</kbd> | Hide all other windows except MarkText |\n| `file.preferences` | <kbd>Command</kbd>+<kbd>,</kbd>                   | Open settings window                   |\n| `file.quit`        | <kbd>Command</kbd>+<kbd>Q</kbd>                   | Quit MarkText                          |\n\nFile menu\n\n| Id                  | Default                                          | Description                           |\n|:------------------- | ------------------------------------------------ | ------------------------------------- |\n| `file.new-window`   | <kbd>Command</kbd>+<kbd>N</kbd>                  | New window                            |\n| `file.new-tab`      | <kbd>Command</kbd>+<kbd>T</kbd>                  | New tab                               |\n| `file.open-file`    | <kbd>Command</kbd>+<kbd>O</kbd>                  | Open markdown file                    |\n| `file.open-folder`  | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> | Open folder                           |\n| `file.save`         | <kbd>Command</kbd>+<kbd>S</kbd>                  | Save                                  |\n| `file.save-as`      | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> | Save as...                            |\n| `file.move-file`    | -                                                | Move current file to another location |\n| `file.rename-file`  | -                                                | Rename current file                   |\n| `file.print`        | -                                                | Print current tab                     |\n| `file.close-tab`    | <kbd>Command</kbd>+<kbd>W</kbd>                  | Close tab                             |\n| `file.close-window` | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> | Close window                          |\n\nEdit menu\n\n| Id                        | Default                                           | Description                                     |\n|:------------------------- | ------------------------------------------------- | ----------------------------------------------- |\n| `edit.undo`               | <kbd>Command</kbd>+<kbd>Z</kbd>                   | Undo last operation                             |\n| `edit.redo`               | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>  | Redo last operation                             |\n| `edit.cut`                | <kbd>Command</kbd>+<kbd>X</kbd>                   | Cut selected text                               |\n| `edit.copy`               | <kbd>Command</kbd>+<kbd>C</kbd>                   | Copy selected text                              |\n| `edit.paste`              | <kbd>Command</kbd>+<kbd>V</kbd>                   | Paste text                                      |\n| `edit.copy-as-markdown`   | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>  | Copy selected text as markdown                  |\n| `edit.copy-as-html`       | -                                                 | Copy selected text as html                      |\n| `edit.paste-as-plaintext` | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>  | Copy selected text as plaintext                 |\n| `edit.select-all`         | <kbd>Command</kbd>+<kbd>A</kbd>                   | Select all text of the document                 |\n| `edit.duplicate`          | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>P</kbd> | Duplicate the current paragraph                 |\n| `edit.create-paragraph`   | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>  | Create a new paragraph after the current one    |\n| `edit.delete-paragraph`   | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>  | Delete current paragraph                        |\n| `edit.find`               | <kbd>Command</kbd>+<kbd>F</kbd>                   | Find information in the document                |\n| `edit.find-next`          | <kbd>Cmd</kbd>+<kbd>G</kbd>                       | Continue the search and find the next match     |\n| `edit.find-previous`      | <kbd>Shift</kbd>+<kbd>Cmd</kbd>+<kbd>G</kbd>      | Continue the search and find the previous match |\n| `edit.replace`            | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>F</kbd> | Replace the information with a replacement      |\n| `edit.find-in-folder`     | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>  | Find files contain the keyword in opend folder  |\n| `edit.screenshot`         | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>A</kbd> | Get the screenshot                              |\n\nParagraph menu\n\n| Id                          | Default                                           | Description                              |\n| --------------------------- | ------------------------------------------------- | ---------------------------------------- |\n| `paragraph.heading-1`       | <kbd>Command</kbd>+<kbd>1</kbd>                   | Set line as heading 1                    |\n| `paragraph.heading-2`       | <kbd>Command</kbd>+<kbd>2</kbd>                   | Set line as heading 2                    |\n| `paragraph.heading-3`       | <kbd>Command</kbd>+<kbd>3</kbd>                   | Set line as heading 3                    |\n| `paragraph.heading-4`       | <kbd>Command</kbd>+<kbd>4</kbd>                   | Set line as heading 4                    |\n| `paragraph.heading-5`       | <kbd>Command</kbd>+<kbd>5</kbd>                   | Set line as heading 5                    |\n| `paragraph.heading-6`       | <kbd>Command</kbd>+<kbd>6</kbd>                   | Set line as heading 6                    |\n| `paragraph.upgrade-heading` | <kbd>Command</kbd>+<kbd>Plus</kbd>                | Upgrade a heading                        |\n| `paragraph.degrade-heading` | <kbd>Command</kbd>+<kbd>-</kbd>                   | Degrade a heading                        |\n| `paragraph.table`           | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>  | Insert a table                           |\n| `paragraph.code-fence`      | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>C</kbd> | Insert a code block                      |\n| `paragraph.quote-block`     | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>Q</kbd> | Insert a quote block                     |\n| `paragraph.math-formula`    | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>M</kbd> | Insert a math block                      |\n| `paragraph.html-block`      | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>J</kbd> | Insert a HTML block                      |\n| `paragraph.order-list`      | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>O</kbd> | Insert a ordered list                    |\n| `paragraph.bullet-list`     | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>U</kbd> | Insert a unordered list                  |\n| `paragraph.task-list`       | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>X</kbd> | Insert a task list                       |\n| `paragraph.loose-list-item` | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>L</kbd> | Convert a list item to a loose list item |\n| `paragraph.paragraph`       | <kbd>Command</kbd>+<kbd>0</kbd>                   | Convert a heading to a paragraph         |\n| `paragraph.horizontal-line` | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>-</kbd> | Add a horizontal line                    |\n| `paragraph.front-matter`    | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>Y</kbd> | Insert a YAML frontmatter block          |\n\nFormat menu\n\n| Id                    | Default                                          | Description                                     |\n| --------------------- | ------------------------------------------------ | ----------------------------------------------- |\n| `format.strong`       | <kbd>Command</kbd>+<kbd>B</kbd>                  | Set the font of the selected text to bold       |\n| `format.emphasis`     | <kbd>Command</kbd>+<kbd>I</kbd>                  | Set the font of the selected text to italic     |\n| `format.underline`    | <kbd>Command</kbd>+<kbd>U</kbd>                  | Change the selected text to underline           |\n| `format.superscript`  | -                                                | Change the selected text to underline           |\n| `format.subscript`    | -                                                | Change the selected text to underline           |\n| `format.highlight`    | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd> | Highlight the selected text by <mark>tag</mark> |\n| `format.inline-code`  | <kbd>Command</kbd>+<kbd>`</kbd>                  | Change the selected text to inline code         |\n| `format.inline-math`  | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | Change the selected text to inline math         |\n| `format.strike`       | <kbd>Command</kbd>+<kbd>D</kbd>                  | Strike through the selected text                |\n| `format.hyperlink`    | <kbd>Command</kbd>+<kbd>L</kbd>                  | Insert a hyperlink                              |\n| `format.image`        | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> | Insert a image                                  |\n| `format.clear-format` | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> | Clear the formatting of the selected text       |\n\nWindow menu\n\n| Id                            | Default                                         | Description               |\n| ----------------------------- | ----------------------------------------------- | ------------------------- |\n| `window.minimize`             | <kbd>Command</kbd>+<kbd>M</kbd>                 | Minimize the window       |\n| `window.toggle-always-on-top` | -                                               | Toogle always on top mode |\n| `window.zoom-in`              | -                                               | Zoom in                   |\n| `window.zoom-out`             | -                                               | Zoom out                  |\n| `window.toggle-full-screen`   | <kbd>Ctrl</kbd>+<kbd>Command</kbd>+<kbd>F</kbd> | Toggle fullscreen mode    |\n\nView menu\n\n| Id                      | Default                                           | Description                              |\n| ----------------------- | ------------------------------------------------- | ---------------------------------------- |\n| `view.command-palette`  | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>  | Toggle command palette                   |\n| `view.source-code-mode` | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>S</kbd> | Switch to source code mode               |\n| `view.typewriter-mode`  | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>T</kbd> | Enable typewriter mode                   |\n| `view.focus-mode`       | <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>  | Enable focus mode                        |\n| `view.toggle-sidebar`   | <kbd>Command</kbd>+<kbd>J</kbd>                   | Toggle sidebar                           |\n| `view.toggle-tabbar`    | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>B</kbd> | Toggle tabbar                            |\n| `view.toggle-toc` .     | <kbd>Command</kbd>+<kbd>K</kbd>                   | Toggle table of contents                 |\n| `view.toggle-dev-tools` | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>I</kbd> | Toggle developer tools (debug mode only) |\n| `view.dev-reload`       | <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>R</kbd> | Reload window (debug mode only)          |\n| `view.reload-images`    | <kbd>Command</kbd>+<kbd>R</kbd>                   | Reload images                            |",
+        "Available key bindings": "Tabs\n\n| Id                       | Default                                         | Description                  |\n| ------------------------ | ----------------------------------------------- | ---------------------------- |\n| `tabs.cycle-forward`     | <kbd>Ctrl</kbd>+<kbd>Tab</kbd>                  | Cycle through tabs           |\n| `tabs.cycle-backward`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd> | Cycle backwards through tabs |\n| `tabs.switch-to-left`    | <kbd>Command</kbd>+<kbd>PageUp</kbd>            | Switch tab to the left       |\n| `tabs.switch-to-right`   | <kbd>Command</kbd>+<kbd>PageDown</kbd>          | Switch tab to the right      |\n| `tabs.switch-to-first`   | <kbd>Ctrl</kbd>+<kbd>1</kbd>                    | Switch tab to the 1st        |\n| `tabs.switch-to-second`  | <kbd>Ctrl</kbd>+<kbd>2</kbd>                    | Switch tab to the 2nd        |\n| `tabs.switch-to-third`   | <kbd>Ctrl</kbd>+<kbd>3</kbd>                    | Switch tab to the 3rd        |\n| `tabs.switch-to-fourth`  | <kbd>Ctrl</kbd>+<kbd>4</kbd>                    | Switch tab to the 4th        |\n| `tabs.switch-to-fifth`   | <kbd>Ctrl</kbd>+<kbd>5</kbd>                    | Switch tab to the 5th        |\n| `tabs.switch-to-sixth`   | <kbd>Ctrl</kbd>+<kbd>6</kbd>                    | Switch tab to the 6th        |\n| `tabs.switch-to-seventh` | <kbd>Ctrl</kbd>+<kbd>7</kbd>                    | Switch tab to the 7th        |\n| `tabs.switch-to-eighth`  | <kbd>Ctrl</kbd>+<kbd>8</kbd>                    | Switch tab to the 8th        |\n| `tabs.switch-to-ninth`   | <kbd>Ctrl</kbd>+<kbd>9</kbd>                    | Switch tab to the 9th        |\n| `tabs.switch-to-tenth`   | <kbd>Ctrl</kbd>+<kbd>0</kbd>                    | Switch tab to the 10th       |\n\nMisc\n\n| Id                | Default                         | Description            |\n| ----------------- | ------------------------------- | ---------------------- |\n| `file.quick-open` | <kbd>Command</kbd>+<kbd>P</kbd> | Open quick open dialog |"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 12]"
+    },
+    {
+      "title": "Keybindings Windows",
+      "description": null,
+      "content": {
+        "Available menu key bindings": "File menu\n\n| Id                  | Default                                       | Description                           |\n|:------------------- | --------------------------------------------- | ------------------------------------- |\n| `file.new-window`   | <kbd>Ctrl</kbd>+<kbd>N</kbd>                  | New window                            |\n| `file.new-tab`      | <kbd>Ctrl</kbd>+<kbd>T</kbd>                  | New tab                               |\n| `file.open-file`    | <kbd>Ctrl</kbd>+<kbd>O</kbd>                  | Open markdown file                    |\n| `file.open-folder`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> | Open folder                           |\n| `file.save`         | <kbd>Ctrl</kbd>+<kbd>S</kbd>                  | Save                                  |\n| `file.save-as`      | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> | Save as...                            |\n| `file.move-file`    | -                                             | Move current file to another location |\n| `file.rename-file`  | -                                             | Rename current file                   |\n| `file.print`        | -                                             | Print current tab                     |\n| `file.preferences`  | <kbd>Ctrl</kbd>+<kbd>,</kbd>                  | Open settings window                  |\n| `file.close-tab`    | <kbd>Ctrl</kbd>+<kbd>W</kbd>                  | Close tab                             |\n| `file.close-window` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> | Close window                          |\n| `file.quit`         | <kbd>Ctrl</kbd>+<kbd>Q</kbd>                  | Quit MarkText                         |\n\nEdit menu\n\n| Id                       | Default                                       | Description                                     |\n|:------------------------ | --------------------------------------------- | ----------------------------------------------- |\n| `edit.undo`              | <kbd>Ctrl</kbd>+<kbd>Z</kbd>                  | Undo last operation                             |\n| `edit.redo`              | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> | Redo last operation                             |\n| `edit.cut`               | <kbd>Ctrl</kbd>+<kbd>X</kbd>                  | Cut selected text                               |\n| `edit.copy`              | <kbd>Ctrl</kbd>+<kbd>C</kbd>                  | Copy selected text                              |\n| `edit.paste`             | <kbd>Ctrl</kbd>+<kbd>V</kbd>                  | Paste text                                      |\n| `edit.copy-as-markdown`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> | Copy selected text as markdown                  |\n| `edit.copy-as-html`      | -                                             | Copy selected text as html                      |\n| `edit.paste-as-plaintext` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> | Copy selected text as plaintext                 |\n| `edit.select-all`        | <kbd>Ctrl</kbd>+<kbd>A</kbd>                  | Select all text of the document                 |\n| `edit.duplicate`         | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd>   | Duplicate the current paragraph                 |\n| `edit.create-paragraph`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> | Create a new paragraph after the current one    |\n| `edit.delete-paragraph`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> | Delete current paragraph                        |\n| `edit.find`              | <kbd>Ctrl</kbd>+<kbd>F</kbd>                  | Find information in the document                |\n| `edit.find-next`         | <kbd>F3</kbd>                                 | Continue the search and find the next match     |\n| `edit.find-previous`     | <kbd>Shift</kbd>+<kbd>F3</kbd>                | Continue the search and find the previous match |\n| `edit.replace`           | <kbd>Ctrl</kbd>+<kbd>R</kbd>                  | Replace the information with a replacement      |\n| `edit.find-in-folder`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> | Find files contain the keyword in opend folder  |\n\nParagraph menu\n\n| Id                          | Default                                       | Description                              |\n| --------------------------- | --------------------------------------------- | ---------------------------------------- |\n| `paragraph.heading-1`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd> | Set line as heading 1                    |\n| `paragraph.heading-2`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd> | Set line as heading 2                    |\n| `paragraph.heading-3`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd> | Set line as heading 3                    |\n| `paragraph.heading-4`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd> | Set line as heading 4                    |\n| `paragraph.heading-5`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>5</kbd> | Set line as heading 5                    |\n| `paragraph.heading-6`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>6</kbd> | Set line as heading 6                    |\n| `paragraph.upgrade-heading` | <kbd>Ctrl</kbd>+<kbd>Plus</kbd>               | Upgrade a heading                        |\n| `paragraph.degrade-heading` | <kbd>Ctrl</kbd>+<kbd>-</kbd>                  | Degrade a heading                        |\n| `paragraph.table`           | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> | Insert a table                           |\n| `paragraph.code-fence`      | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | Insert a code block                      |\n| `paragraph.quote-block`     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd> | Insert a quote block                     |\n| `paragraph.math-formula`    | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd>   | Insert a math block                      |\n| `paragraph.html-block`      | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>H</kbd>   | Insert a HTML block                      |\n| `paragraph.order-list`      | <kbd>Ctrl</kbd>+<kbd>G</kbd>                  | Insert a ordered list                    |\n| `paragraph.bullet-list`     | <kbd>Ctrl</kbd>+<kbd>H</kbd>                  | Insert a unordered list                  |\n| `paragraph.task-list`       | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>X</kbd>   | Insert a task list                       |\n| `paragraph.loose-list-item` | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>   | Convert a list item to a loose list item |\n| `paragraph.paragraph`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd> | Convert a heading to a paragraph         |\n| `paragraph.horizontal-line` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd> | Add a horizontal line                    |\n| `paragraph.front-matter`    | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Y</kbd>   | Insert a YAML frontmatter block          |\n\nFormat menu\n\n| Id                    | Default                                       | Description                                     |\n| --------------------- | --------------------------------------------- | ----------------------------------------------- |\n| `format.strong`       | <kbd>Ctrl</kbd>+<kbd>B</kbd>                  | Set the font of the selected text to bold       |\n| `format.emphasis`     | <kbd>Ctrl</kbd>+<kbd>I</kbd>                  | Set the font of the selected text to italic     |\n| `format.underline`    | <kbd>Ctrl</kbd>+<kbd>U</kbd>                  | Change the selected text to underline           |\n| `format.superscript`  | -                                             | Change the selected text to underline           |\n| `format.subscript`    | -                                             | Change the selected text to underline           |\n| `format.highlight`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd> | Highlight the selected text by <mark>tag</mark> |\n| `format.inline-code`  | <kbd>Ctrl</kbd>+<kbd>`</kbd>                  | Change the selected text to inline code         |\n| `format.inline-math`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | Change the selected text to inline math         |\n| `format.strike`       | <kbd>Ctrl</kbd>+<kbd>D</kbd>                  | Strike through the selected text                |\n| `format.hyperlink`    | <kbd>Ctrl</kbd>+<kbd>L</kbd>                  | Insert a hyperlink                              |\n| `format.image`        | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> | Insert a image                                  |\n| `format.clear-format` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> | Clear the formatting of the selected text       |\n\nWindow menu\n\n| Id                            | Default                      | Description               |\n| ----------------------------- | ---------------------------- | ------------------------- |\n| `window.minimize`             | <kbd>Ctrl</kbd>+<kbd>M</kbd> | Minimize the window       |\n| `window.toggle-always-on-top` | -                            | Toogle always on top mode |\n| `window.zoom-in`              | -                            | Zoom in                   |\n| `window.zoom-out`             | -                            | Zoom out                  |\n| `window.toggle-full-screen`   | <kbd>F11</kbd>               | Toggle fullscreen mode    |\n\nView menu\n\n| Id                      | Default                                       | Description                              |\n| ----------------------- | --------------------------------------------- | ---------------------------------------- |\n| `view.command-palette`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> | Toggle command palette                   |\n| `view.source-code-mode` | <kbd>Ctrl</kbd>+<kbd>E</kbd>                  | Switch to source code mode               |\n| `view.typewriter-mode`  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> | Enable typewriter mode                   |\n| `view.focus-mode`       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd> | Enable focus mode                        |\n| `view.toggle-sidebar`   | <kbd>Ctrl</kbd>+<kbd>J</kbd>                  | Toggle sidebar                           |\n| `view.toggle-tabbar`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> | Toggle tabbar                            |\n| `view.toggle-toc` .     | <kbd>Ctrl</kbd>+<kbd>K</kbd>                  | Toggle table of contents                 |\n| `view.toggle-dev-tools` | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>   | Toggle developer tools (debug mode only) |\n| `view.dev-reload`       | <kbd>Ctrl</kbd>+<kbd>F5</kbd>                 | Reload window (debug mode only)          |\n| `view.reload-images`    | <kbd>F5</kbd>                                 | Reload images                            |",
+        "Available key bindings": "Tabs\n\n| Id                       | Default                                         | Description                  |\n| ------------------------ | ----------------------------------------------- | ---------------------------- |\n| `tabs.cycle-forward`     | <kbd>Ctrl</kbd>+<kbd>Tab</kbd>                  | Cycle through tabs           |\n| `tabs.cycle-backward`    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd> | Cycle backwards through tabs |\n| `tabs.switch-to-left`    | <kbd>Ctrl</kbd>+<kbd>PageUp</kbd>               | Switch tab to the left       |\n| `tabs.switch-to-right`   | <kbd>Ctrl</kbd>+<kbd>PageDown</kbd>             | Switch tab to the right      |\n| `tabs.switch-to-first`   | <kbd>Ctrl</kbd>+<kbd>1</kbd>                    | Switch tab to the 1st        |\n| `tabs.switch-to-second`  | <kbd>Ctrl</kbd>+<kbd>2</kbd>                    | Switch tab to the 2nd        |\n| `tabs.switch-to-third`   | <kbd>Ctrl</kbd>+<kbd>3</kbd>                    | Switch tab to the 3rd        |\n| `tabs.switch-to-fourth`  | <kbd>Ctrl</kbd>+<kbd>4</kbd>                    | Switch tab to the 4th        |\n| `tabs.switch-to-fifth`   | <kbd>Ctrl</kbd>+<kbd>5</kbd>                    | Switch tab to the 5th        |\n| `tabs.switch-to-sixth`   | <kbd>Ctrl</kbd>+<kbd>6</kbd>                    | Switch tab to the 6th        |\n| `tabs.switch-to-seventh` | <kbd>Ctrl</kbd>+<kbd>7</kbd>                    | Switch tab to the 7th        |\n| `tabs.switch-to-eighth`  | <kbd>Ctrl</kbd>+<kbd>8</kbd>                    | Switch tab to the 8th        |\n| `tabs.switch-to-ninth`   | <kbd>Ctrl</kbd>+<kbd>9</kbd>                    | Switch tab to the 9th        |\n| `tabs.switch-to-tenth`   | <kbd>Ctrl</kbd>+<kbd>0</kbd>                    | Switch tab to the 10th       |\n\nMisc\n\n| Id                | Default                      | Description            |\n| ----------------- | ---------------------------- | ---------------------- |\n| `file.quick-open` | <kbd>Ctrl</kbd>+<kbd>P</kbd> | Open quick open dialog |"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 13]"
+    },
+    {
+      "title": "Linux Installation Instructions",
+      "description": null,
+      "content": {
+        "AppImage": {
+          "Installation": {
+            "Desktop file creation": "See [example desktop file](https://github.com/marktext/marktext/blob/develop/resources/linux/marktext.desktop).\n\n```\n$ curl -L https://raw.githubusercontent.com/marktext/marktext/develop/resources/linux/marktext.desktop -o $HOME/.local/share/applications/marktext.desktop\n\n# Update the Exec in desktop file to your real marktext command. Specify Path if necessary.\n$ vim $HOME/.local/share/applications/marktext.desktop\n\n$ update-desktop-database $HOME/.local/share/applications/\n```",
+            "AppImageLauncher integration": "You can integrate the AppImage into the system via [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher). It will handle the desktop entry automatically."
+          },
+          "Uninstallation": [
+            "Delete AppImage file.",
+            "Delete your desktop file if exists.",
+            "Delete your user settings: `~/.config/marktext`"
+          ],
+          "Custom launch script": [
+            "Save AppImage somewhere. Let's say `~/bin/marktext.AppImage`",
+            "`chmod +x ~/bin/marktext.AppImage`",
+            "Create a launch script:",
+            "```\n#!/bin/bash\nDESKTOPINTEGRATION=0 ~/bin/marktext.AppImage\n```"
+          ],
+          "Known issues": [
+            "MarkText is always integrated into desktop environment after updating"
+          ]
+        },
+        "Binary": "You can download the latest `marktext-%version%.tar.gz` package from the [release page](https://github.com/marktext/marktext/releases/latest). You may need to install electron dependencies.",
+        "Flatpak": {
+          "Installation": "**Prerequisites:**\n\nYou need to install the `flatpak` package for your distribution. Please see the [official flatpak tutorial](https://flatpak.org/setup/) for more information and note that you have to add the flathub repository (`flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`) as described in the Quick Setup.\n\n**Install from Flathub:**\n\nAfter you install flatpak and flathub repository, you can install [MarkText](https://flathub.org/apps/details/com.github.marktext.marktext) with just one command (note that you may be asked to enter your password):\n\n```\nflatpak install flathub com.github.marktext.marktext\n```\n\nor `flatpak install --user flathub com.github.marktext.marktext` to install for the current user only.\n\nTo run MarkText just execute `flatpak run com.github.marktext.marktext` or click on the MarkText icon in your application launcher.",
+          "Update": "To update MarkText run the following command:\n\n```\nflatpak update com.github.marktext.marktext\n```\n\nor `flatpak update` to update all installed flatpaks."
+        },
+        "Arch User Repository": "The Arch User Repository also contains the packages:\n\n`marktext`, `marktext-bin`, `marktext-git` and `marktext-appimage`.\n\nInstall it via an AUR helper like `yay -S marktext` or with\n\n```\ngit clone https://aur.archlinux.org/marktext.git\ncd marktext\nmakepkg -si\n```"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 14]"
+    },
+    {
+      "title": "Markdown Syntax",
+      "description": null,
+      "content": {
+        "Table of contents": [
+          "[Markdown Syntax](#markdown-syntax)",
+          [
+            "[Headings](#headings)",
+            "[Paragraphs](#paragraphs)",
+            "[Breaks](#breaks)",
+            "[Horizontal Rule](#horizontal-rule)",
+            "[Emphasis](#emphasis)",
+            [
+              "[Bold](#bold)",
+              "[Italics](#italics)",
+              "[Strikethrough](#strikethrough)"
+            ],
+            "[Links](#links)",
+            [
+              "[Autolinks](#autolinks)",
+              "[Inline links](#inline-links)",
+              "[Link titles](#link-titles)",
+              "[Named Anchors](#named-anchors)"
+            ],
+            "[Images](#images)",
+            "[Blockquotes](#blockquotes)",
+            "[Lists](#lists)",
+            [
+              "[Unordered](#unordered)",
+              "[Ordered](#ordered)",
+              "[Time-saving Tip](#time-saving-tip)"
+            ],
+            "[Todo List](#todo-list)",
+            "[Tables](#tables)",
+            [
+              "[Aligning cells](#aligning-cells)"
+            ],
+            "[Code](#code)",
+            [
+              "[Inline code](#inline-code)",
+              "[\"Fenced\" code block](#fenced-code-block)",
+              "[Indented code](#indented-code)",
+              "[Syntax highlighting](#syntax-highlighting)"
+            ],
+            "[Keyboard Keys](#keyboard-keys)",
+            "[Emojis](#emojis)",
+            "[Front Matter](#front-matter)",
+            "[Math Formulas](#math-formulas)",
+            [
+              "[Inline Math Formulas](#inline-math-formulas)",
+              "[Block Math Formulas](#block-math-formulas)"
+            ],
+            "[Diagrams](#diagrams)",
+            "[Raw HTML](#raw-html)",
+            "[Escaping with backslashes](#escaping-with-backslashes)",
+            "[Credits](#credits)"
+          ]
+        ],
+        "Headings": "Headings from `h1` through `h6` are constructed with a `#` for each level:\n\n```\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\nAlternatively you can use ATX headings:\n\nH1\n======\n\nH2\n------\n```\n\nRenders to:"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 15]"
+    },
+    {
+      "title": "Portable Mode",
+      "description": null,
+      "content": {
+        "Linux and Windows": "On Linux and Windows you can also create a directory called `marktext-user-data` to save all user data inside the directory. Like:\n\n```\nmarktext-portable/\n ├── marktext (Linux) or MarkText.exe (Windows)\n ├── marktext-user-data/\n ├── resources/\n ├── THIRD-PARTY-LICENSES.txt\n └── ...\n```"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 16]"
+    },
+    {
+      "title": "Preferences",
+      "description": null,
+      "content": {
+        "MarkText Preferences": "Preferences can be controlled and modified in the settings window or via the `preferences.json` file in the [application data directory](APPLICATION_DATA_DIRECTORY.md).\n\nGeneral\n\n| Key                    | Type    | Default Value | Description                                                                                                                                                |\n| ---------------------- | ------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| autoSave               | Boolean | false         | Automatically save the content being edited. option value: true, false                                                                                     |\n| autoSaveDelay          | Number  | 5000          | The delay in milliseconds after a changed file is saved automatically? 1000 ~10000                                                                         |\n| titleBarStyle          | String  | custom        | The title bar style on Linux and Window: `custom` or `native`                                                                                              |\n| openFilesInNewWindow   | Boolean | false         | true, false                                                                                                                                                |\n| openFolderInNewWindow  | Boolean | false         | true, false                                                                                                                                                |\n| zoom                   | Number  | 1.0           | The zoom level. Between 0.5 and 2.0 inclusive.                                                                                              |\n| hideScrollbar          | Boolean | false         | Whether to hide scrollbars. Optional value: true, false                                                                                                    |\n| wordWrapInToc          | Boolean | false         | Whether to enable word wrap in TOC. Optional value: true, false                                                                                            |\n| fileSortBy             | String  | created       | Sort files in opened folder by `created` time, modified time and title.                                                                                    |\n| startUpAction          | String  | lastState     | The action after MarkText startup, open the last edited content, open the specified folder or blank page, optional value: `lastState`, `folder`, `blank` |\n| defaultDirectoryToOpen | String  | `\"\"`          | The path that should be opened if `startUpAction=folder`.                                                                                                  |\n| language               | String  | en            | The language MarkText use.                                                                                                                                |\n\nEditor\n\n| Key                                | Type    | Defaut             | Description                                                                                                                                                                   |\n| ---------------------------------- | ------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| fontSize                           | Number  | 16                 | Font size in pixels. 12 ~ 32                                                                                                                                                   |\n| editorFontFamily                   | String  | Open Sans          | Font Family                                                                                                                                                                    |\n| lineHeight                         | Number  | 1.6                | Line Height                                                                                                                                                                    |\n| autoPairBracket                    | Boolean | true               | Automatically brackets when editing                                                                                                                                            |\n| autoPairMarkdownSyntax             | Boolean | true               | Autocomplete markdown syntax                                                                                                                                                   |\n| autoPairQuote                      | Boolean | true               | Automatic completion of quotes                                                                                                                                                 |\n| endOfLine                          | String  | default            | The newline character used at the end of each line. The default value is default, which selects your operating system's default newline character. `lf` `crlf` `default`         |\n| textDirection                      | String  | ltr                | The writing text direction, optional value: `ltr` or `rtl`                                                                                                                     |\n| codeFontSize                       | Number  | 14                 | Font size on code block, the range is 12 ~ 28                                                                                                                                  |\n| codeFontFamily                     | String  | `DejaVu Sans Mono` | Code font family                                                                                                                                                               |\n| trimUnnecessaryCodeBlockEmptyLines | Boolean | true               | Whether to trim the beginning and end empty line in Code block                                                                                                                 |\n| hideQuickInsertHint                | Boolean | false              | Hide hint for quickly creating paragraphs                                                                                                                                      |\n| imageDropAction                    | String  | folder             | The default behavior after paste or drag the image to MarkText, upload it to the image cloud (if configured), move to the specified folder, insert the path          |\n| defaultEncoding                    | String  | `utf8`             | The default file encoding                                                                                                                                                      |\n| autoGuessEncoding                  | Boolean | true               | Try to automatically guess the file encoding when opening files                                                                                                                |\n| trimTrailingNewline                | Enum    | `2`                | Ensure a single trailing newline or whether trailing newlines should be removed: `0`: trim all trailing newlines, `1`: ensure single newline, `2`: auto detect, `3`: disabled. |\n| hideLinkPopup                      | Boolean | false              | It will not show the link popup when hover over the link if set `hideLinkPopup` to true                                                                                        |\n| autoCheck                          | Boolean | false              | Whether to automatically check related task. Optional value: true, false                                                                                             |\n\nMarkdown\n\n| Key                 | Type    | Default | Description                                                                                                                          |\n| ------------------- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------ |\n| preferLooseListItem | Boolean | true    | The preferred list type.                                                                                                             |\n| bulletListMarker    | String  | `-`     | The preferred marker used in bullet list, optional value: `-`, `*` `+`                                                               |\n| orderListDelimiter  | String  | `.`     | The preferred delimiter used in order list, optional value: `.` `)`                                                                  |\n| preferHeadingStyle  | String  | `atx`   | The preferred heading style in MarkText, optional value `atx` `setext`, [more info](https://spec.commonmark.org/0.29/#atx-headings) |\n| tabSize             | Number  | 4       | The number of spaces a tab is equal to                                                                                               |\n| listIndentation     | String  | 1       | The list indentation of sub list items or paragraphs, optional value `dfm`, `tab` or number 1~4                                      |\n| frontmatterType     | String  | `-`     | The frontmatter type: `-` (YAML), `+` (TOML), `;` (JSON) or `{` (JSON)                                                               |\n| superSubScript      | Boolean | `false` | Enable pandoc's markdown extension superscript and subscript.                                                                        |\n| footnote            | Boolean | `false` | Enable pandoc's footnote markdown extension                                                                                          |\n| sequenceTheme       | String  | `hand`  | Change the theme of [js-sequence-diagrams](https://bramp.github.io/js-sequence-diagrams/)                                                                                         |\n\nTheme\n\n| Key   | Type   | Default | Description                                                           |\n| ----- | ------ | ------- | --------------------------------------------------------------------- |\n| theme | String | light   | `dark`, `graphite`, `material-dark`, `one-dark`, `light` or `ulysses` |\n\nEditable via file\n\nThese entires don't have a settings option and need to be changed manually.\n\nView\n\n| Key                           | Type    | Default | Description                                        |\n| ----------------------------- | ------- | ------- | -------------------------------------------------- |\n| sideBarVisibility<sup>*</sup> | Boolean | false   | Controls the visibility of the sidebar.            |\n| tabBarVisibility<sup>*</sup>  | Boolean | false   | Controls the visibility of the tabs.               |\n| sourceCodeModeEnabled*        | Boolean | false   | Controls the visibility of the source-code editor. |\n\n\\*: These options are default/fallback values that are used if not session is loaded and are overwritten by the menu entries.\n\nFile system\n\n| Key                  | Type             | Default | Description                                                                                                                                                      |\n| -------------------- | ---------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| searchExclusions     | Array of Strings | `[]`    | The filename exclusions for the file searcher. Default: `'*.markdown', '*.mdown', '*.mkdn', '*.md', '*.mkd', '*.mdwn', '*.mdtxt', '*.mdtext', '*.mdx', '*.text', '*.txt'` |\n| searchMaxFileSize    | String           | `\"\"`    | The maximum file size to search in (e.g. 50K or 10MB). Default: unlimited                                                                                        |\n| searchIncludeHidden  | Boolean          | false   | Search hidden files and directories                                                                                                                              |\n| searchNoIgnore       | Boolean          | false   | Don't respect ignore files such as `.gitignore`.                                                                                                                 |\n| searchFollowSymlinks | Boolean          | true    | Whether to follow symbolic links.                                                                                                                                |\n| watcherUsePolling    | Boolean          | false   | Whether to use polling to receive file changes. Polling may leads to high CPU utilization.                                                                       |"
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 17]"
+    },
+    {
+      "title": "Readme",
+      "description": null,
+      "content": {
+        "User Documentation": "Welcome to the end-user documentation of MarkText.\n\n![](assets/marktext-interface-2.png)\n\n**Quick start:**\n\n['[Basics](BASICS.md)', '[Editing in depth](EDITING.md)', '[Spelling](SPELLING.md)', '[Markdown syntax](MARKDOWN_SYNTAX.md)']\n\n**Further documents:**\n\n['[Frequently asked questions (FAQ)](FAQ.md)', '[Application data directory](APPLICATION_DATA_DIRECTORY.md)', '[Command line interface](CLI.md)', '[Environment variables](ENVIRONMENT.md)', '[Export a document](EXPORT.md)', '[Image uploader configuration](IMAGE_UPLOADER_CONFIGRATION.md)', '[Installation instructions](../README.md#download-and-installation)', '[Key bindings](KEYBINDINGS.md)', '[Portable mode](PORTABLE.md)', '[Preferences](PREFERENCES.md)', '[Themes](THEMES.md)', '[Themes for exporting](EXPORT_THEMES.md)']\n\nInterested in developer documentation? Please see [here](dev/README.md)."
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 18]"
+    },
+    {
+      "title": "Spelling",
+      "description": null,
+      "content": {
+        "Features": "**Automatic language detection:**\n\nMarkText can try to automatically detect the language while typing and we're currently support over 160 languages by Compact Language Detector.\n\n**Don't underline misspelled words:**\n\nIf you don't like that all spelling mistakes are red highlighted, you can disable this feature in settings but still benefit from manually spell checking via right-click menu. Disabling constantly spell checking will also improve performance overall.\n\n**Adding words to dictionary:**\n\nYou can add words to the selected dictionary by right-clicking on a misspelled word and select `Add to Dictionary` or remove a previously added word. If you want to temporary ignore a word, select `Ignore`.",
+        "Manage dictionaries": {
+          "macOS spell checker": "You need to add the additional language dictionaries via *\"Language & Region\"* in your system preferences pane.",
+          "Windows spell checker": "On Windows 10, you need to add additional language dictionaries via *\"Language\"* in your *\"Time & language\"* settings. Add the additional language(s) and download the *\"Basic typing\"* language option for each language.",
+          "Hunspell": "Please go to spelling settings and scroll to the bottom. Now you see a list of available language dictionaries and can add additional dictionaries via the drop-down menu at the bottom. Please note that an active internet connection is required to download a dictionary!\n\n![](assets/marktext-spelling-settings.png)"
+        }
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 19]"
+    },
+    {
+      "title": "Themes",
+      "description": null,
+      "content": {
+        "Themes": "MarkText currently doesn't support user-defined application themes. This feature is planned for v0.17.0."
+      },
+      "metadata": {},
+      "subpages": [],
+      "path": "[\"subpages\", 20]"
+    },
+    {
+      "title": "Dev",
+      "description": "Documentation section: dev",
+      "content": {},
+      "metadata": {
+        "type": "directory",
+        "path": "/home/anhnh/CodeWikiBench/data/marktext/original/docs/dev"
+      },
+      "subpages": [
+        {
+          "title": "Project Architecture",
+          "description": null,
+          "content": {
+            "Overview": [
+              "`.`: Configuration files",
+              "`package.json`: Project settings",
+              "`build/`: Contains generated binaries",
+              "`dist/`: Build files for deployment",
+              "`docs/`: Documentation and assets",
+              "`resources/`: Application assets using at build time",
+              "`node_modules/`: Dependencies",
+              "`src`: MarkText source code",
+              [
+                "`common/`: Common source files that only require Node.js APIs. Code from this folder can be used in all other folders except `muya`.",
+                "`main/`: Main process source files that require Electron main-process APIs. `main` files can use `common` source code.",
+                "`muya/`: MarkTexts backend that only allow pure JavaScript, BOM and DOM APIs. Don't use Electron or Node.js APIs!",
+                "`renderer`: Frontend that require Electron renderer-process APIs and may use `common` or `muya` source code."
+              ],
+              "`static/`: Application assets (images, themes, etc)",
+              "`test/`: Contains (unit) tests"
+            ],
+            "Introduction to MarkText": {
+              "Application entry points": "There are two entry points to the application:\n\n[\"`src/main/index.js` for the main process that is executed first and only once per instance. Once the application is initialized, it's safe to access all the environment variables and single-instances and the application (`App`) is started (`src/main/app/index.js`). You can use the application after `App::init()` is run successfully.\", '`src/renderer/main.js` for each editor window. At the beginning libraries are loaded, the window is initialized and Vue components are mounted.']",
+              "How Muya work": "TBD\n\n['Overview about Muya components', 'How Muya work internal', 'Data structure']",
+              "Main- and renderer process communication": "Main- and renderer process communicate asynchronously via [inter-process communication (IPC)](code/IPC.md) and it's mainly used for IO and user interaction with native dialogs.",
+              "Editor window (renderer process)": "TBD",
+              "Examples": {
+                "Opening a markdown document and render it": "`MarkdownDocument` is a document that represents a markdown file on disk or an untitled document. To get a markdown document you can use the `loadMarkdownFile` function that asynchronously returns a `RawMarkdownDocument` (= `MarkdownDocument` with some additional information) in the main process.\n\n**Overall steps to open a file:**\n\n['Click `File -> Open File` and a file dialog is shown that emit `app-open-file-by-id` with the editor window id to open the file in and resolved absolute file path.', 'The application (`App` instance) tries to find the specified editor and call `openTab` on the editor window. A new editor window is created if no editor window exists.', 'The editor window tries to load the markdown file via `loadMarkdownFile` and send the result via the `mt::open-new-tab` event to the renderer process.']\n\n['Each opened file is also added to the filesystem watcher and the full path is saved to track opened file in the current editor window.']\n\n['The event is triggered in `src/renderer/store/editor.js` (renderer process), does some checks and create a new document state that represent a markdown document and tab state.', 'The new created tab is either opened and the `file-changed` event is emitted or just added to the tab state.', 'Both Muya and the source-code editor listen on this event and change the markdown document accordingly.']\n\n['NOTE: We currently have no high level APIs to make changes to the document text or lines automatically. All modifications need user interaction!']"
+              }
+            }
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 21, \"subpages\", 0]"
+        },
+        {
+          "title": "Build",
+          "description": null,
+          "content": {
+            "Build Instructions": "Clone the repository:\n\n```\ngit clone https://github.com/marktext/marktext.git\n```\n\nPrerequisites\n\nBefore you can get started developing, you need set up your build environment:\n\n['Node.js `>=v16` but `<v17` and yarn', 'Python `>=v3.6` for node-gyp', 'C++ compiler and development tools', 'Build is supported on Linux, macOS and Windows']\n\n**Additional development dependencies on Linux:**\n\n['libX11 (with headers)', 'libxkbfile (with headers)', 'libsecret (with headers)', 'libfontconfig (with headers)']\n\nOn Debian-based Linux: `sudo apt-get install libx11-dev libxkbfile-dev libsecret-1-dev libfontconfig-dev`\n\nOn Red Hat-based Linux: `sudo dnf install libX11-devel libxkbfile-devel libsecret-devel fontconfig-devel`\n\n**Additional development dependencies on Windows:**\n\n['Windows 10 SDK (only needed before Windows 10)', 'Visual Studio 2019 (preferred)']\n\nLet's build\n\n['Go to `marktext` folder', 'Install dependencies: `yarn install` or `yarn install --frozen-lockfile`', 'Build MarkText binaries and packages: `yarn run build`', 'MarkText binary is located under `build` folder']\n\nCopy the build app to applications folder, or if on Windows run the executable installer.\n\nImportant scripts\n\n```\n$ yarn run <script> # or npm run <script>\n```\n\n| Script          | Description                                      |\n| --------------- | ------------------------------------------------ |\n| `build`         | Build MarkText binaries and packages for your OS |\n| `build:bin`     | Build MarkText binary for your OS                |\n| `dev`           | Build and run MarkText in developer mode         |\n| `lint`          | Lint code style                                  |\n| `test` / `unit` | Run unit tests                                   |\n\nFor more scripts please see `package.json`."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 21, \"subpages\", 1]"
+        },
+        {
+          "title": "Debugging",
+          "description": null,
+          "content": {
+            "Use Visual Studio Code": "The most simplest way is to debug using the `Debug MarkText` configuration. You can set breakpoints and use the `debugger` statement.\n\n**Prerequisites:**\n\n['[Debugger for Chrome](https://marketplace.visualstudio.com/itemdetails?itemName=msjsdiag.debugger-for-chrome)']",
+            "Use Chrome Developer Tools": {
+              "Debug built application": "You can use the default Electron command-line parameters to enable debug mode as described above.\n\n```\n$ marktext --inspect=5858 --remote-debugging-port=8315\n```"
+            },
+            "Debug slow startup performance": "Regardless of whether you are using the built or development version, you can use the [node-profiler](https://github.com/fxha/node-profiler) to analysis startup issues. Please follow the tool description for setup. Afterwards, launch the following commands in parallel (e.g. use three terminal windows and launch MarkText last).\n\n```\n$ node-profiler main\n$ node-profiler renderer\n$ marktext --inspect=5858 --remote-debugging-port=8315\n```\n\nAfter the successful launch of MarkText, press `Ctrl+C` on both `node-profiler` instances. The tools created two files named `main.cpuprofile` and `renderer.cpuprofile`. You can now analyse these files via *Chrome Developer Tools* or *Visual Studio Code*."
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 21, \"subpages\", 2]"
+        },
+        {
+          "title": "Interface",
+          "description": null,
+          "content": {
+            "Main interface": {
+              "Titlebar": "The titlebar is located at the top of the window and shows the current opened file path and the menu on Linux and Windows. On macOS we're using client-side decorations (CSD) that look similar to the picture above. On Linux and Windows there are two type of titlebar: a custom CSD that you can see in the image above and the native one.",
+              "Sidebar": "The sidebar is an optional feature of MarkText that contains three panels and has a variable width. The first pannel is a tree view of the opened root directory. The latter two are a folder searcher (find in files) that is powered by ripgrep and table of contents of the currently opened document.",
+              "Editor": "The editor is the core element that hosts the realtime preview editor called Muya and consists of three parts. Tabs are located at the top and at the bottom the per-tab notification bar is located for events like file changed or deleted. The main part is the editor that is either provided by Muya or CodeMirror for the source-code editor. There are multiple overlays available like inline toolbar, emoji picker, quick insert or image tools."
+            }
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 21, \"subpages\", 3]"
+        },
+        {
+          "title": "Readme",
+          "description": null,
+          "content": {
+            "Developer Documentation": "Welcome to developer documentation of MarkText.\n\n['[Project architecture](ARCHITECTURE.md)', '[Build instructions](BUILD.md)', '[Debugging](DEBUGGING.md)', '[Interface](INTERFACE.md)', '[Steps to release MarkText](RELEASE.md)', '[Prepare a hotfix](RELEASE_HOTFIX.md)', '[Internal documentation](code/README.md)']"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 21, \"subpages\", 4]"
+        },
+        {
+          "title": "Steps to release MarkText",
+          "description": null,
+          "content": {
+            "Work after releasing": [
+              "Ensure all issues in the changelog are closed",
+              ":relaxed: :tada:"
+            ]
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 21, \"subpages\", 5]"
+        },
+        {
+          "title": "Release Hotfix",
+          "description": null,
+          "content": {
+            "Prepare a hotfix": [
+              "Create a hotfix branch: `git checkout -b hotfix-vX.Y.Z`",
+              "Make changes to the code and/or `cherry-pick` changes from another branch and commit changes.",
+              "Test the hotfix and binaries.",
+              "[Release](RELEASE.md) a new MarkText version."
+            ]
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 21, \"subpages\", 6]"
+        },
+        {
+          "title": "Code",
+          "description": "Documentation section: code",
+          "content": {},
+          "metadata": {
+            "type": "directory",
+            "path": "/home/anhnh/CodeWikiBench/data/marktext/original/docs/dev/code"
+          },
+          "subpages": [
+            {
+              "title": "Block Addition Property",
+              "description": null,
+              "content": {
+                "Block addition properties and its value": "1. span\n\n['functionType', ['languageInput', 'footnoteInput', 'codeContent (used in code block)', \"cellContent (used in table cell, it's parent must be th or td block)\", 'atxLine (can not contain soft line break and hard line break use in atx heading)', 'thematicBreakLine (can not contain soft line break and hard line break use in thematic break)', 'paragraphContent (defaultValue use in paragraph and setext heading)'], \"lang - only when it's functionType is `codeContent`\", ['All prismjs support language or empty string']]\n\n2. div\n\nused for preview `block math`, `mermaid`, `flowchart`, `vega-lite`, `sequence`, `plantuml` and `html block`.\n\n['functionType', ['multiplemath', 'mermaid', 'flowchart', 'vega-lite', 'sequence', 'plantuml', 'html']]\n\n3. figure\n\nThe container block of `table`, `html`, `block math`, `mermaid`,`flowchart`,`vega-lite`,`sequence`,`plantuml`.\n\n['functionType', ['table', 'footnote', 'html', 'multiplemath', 'mermaid', 'flowchart', 'vega-lite', 'sequence', 'plantuml']]\n\n4. pre\n\nUsed for `html`,`block math`,`mermaid`,`flowchart`,`vega-lite`,`sequence`, `plantuml`, `code block`.\n\n['functionType', ['html', 'multiplemath', 'mermaid', 'flowchart', 'vega-lite', 'sequence', 'plantuml', 'fencecode', 'indentcode', 'frontmatter'], 'lang', ['all prismjs support language or empty string']]\n\n5. code\n\n['lang', ['all prismjs support language or empty string']]\n\nul\n\n['listType', ['bullet', 'task']]\n\nol\n\n['listType', ['order'], 'start', ['0-999999999']]\n\nli\n\n['listItemType', ['order', 'bullet', 'task'], 'isLooseListItem', ['true', 'false'], 'bulletMarkerOrDelimiter', ['bulletMarker：`-`, `+`, `*`', 'Delimiter：  `)`, `.`']]\n\nh1~6\n\n['headingStyle', ['atx', 'setext'], 'marker - only setext heading has marker']\n\ninput\n\n['checked', ['true', 'false']]\n\ntable\n\n['row', 'column']\n\nth/td\n\n['align', 'column']"
+              },
+              "metadata": {},
+              "subpages": [],
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 0]"
+            },
+            {
+              "title": "Commands",
+              "description": null,
+              "content": {
+                "Commands": "A command can execute a procedure and is shown in the command palette or can be run from event bus. We distinguish between static commands that are defined at compile time (maybe completed at runtime) and dynamtic commands that are created at runtime. Static commands are pure objects that are listed as array and most dynamic commands are classes that need access to the editor or other components. Each command can have nestled subcommands that have the same properties like a command. A root command is the command from which all subcommands are loaded that are displayed on screen. You can change the root command by calling `bus.$emit('show-command-palette', <command-reference>)`. Please note: a root command has special requirements such as a `run` method.\n\n**Static command:**\n\n```\n{\n  id: 'file.new-tab', // Unique id\n  description: 'File: New Tab',\n  execute: async () => {\n    // Set `null` as first parameter to fake the sender event.\n    ipcRenderer.emit('mt::new-untitled-tab', null)\n  }\n}\n```\n\n**Dynamic command:**\n\nYou can use either a class or object at runtime to register a command via the bus event `CMD::register-command`. A simple class example can be found below or a more complex [here](https://github.com/marktext/marktext/blob/develop/src/renderer/commands/quickOpen.js).\n\n```\nexport class ExampleCommand {\n  constructor () {\n    this.id = 'example-id'\n    this.description = 'Example'\n  }\n\n  // Execute the command.\n  async execute () {\n    // No-op\n  }\n}\n\nexport class Example2Command {\n  constructor () {\n    this.id = 'example-2-id'\n    this.description = 'Example 2'\n    this.placeholder = '' // Textbox placeholder (optional)\n    this.title = '' // Tooltip (optional)\n    this.subcommands = [] // (optional)\n    this.subcommandSelectedIndex = -1 // Required if `subcommands` defined (optional)\n  }\n\n  // Prepare subcommands and run the command when the entry is set as root.\n  // `run` must prepare the `subcommands`.\n  // `run` is only required if the command can be loaded as root command. If\n  // `execute` and `run` are not defined but `subcommands` is defined the\n  // subcommands are automatically loaded when the command is selected. Please\n  // note that `subcommands` must be available and the command cannot be loaded\n  // as root command when no `run` method is available (optional).\n  run = async () => {\n    this.subcommands = [{\n      id: 'example-2-sub-1',\n      description: 'Subcommand 1',\n      execute: async () => {\n        // No-op\n      }\n    },\n    {\n      id: 'example-2-sub-2',\n      description: 'Subcommand 2',\n      execute: async () => {\n        // No-op\n      }\n    }]\n  }\n\n  // Run when the command palette is unloaded and the command is root.\n  unload = () => {\n    this.subcommands = []\n  }\n\n  // Handle search queries when the entry is root. Must return available\n  // entries that should be shown in UI. If not defined the default searcher\n  // is used (optional).\n  search = async query => {\n    return []\n  }\n\n  // Execute the command. Required but ignore if the parent has a\n  // `executeSubcommand` method.\n  execute = async () => {\n    // The timeout is required to hide the command palette and then show again\n    // to prevent issues.\n    await delay(100)\n    bus.$emit('show-command-palette', this)\n  }\n\n  // When defined this method is called when a subcommand is executed\n  // instead `execute` on subcommand (optional).\n  executeSubcommand = async id => {\n    // No-op\n  }\n}\n```"
+              },
+              "metadata": {},
+              "subpages": [],
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 1]"
+            },
+            {
+              "title": "Inter-Process Communication (IPC)",
+              "description": null,
+              "content": {
+                "Examples": "Listening to a renderer event in the main process:\n\n```\nimport { ipcMain } from 'electron'\n\n// Listen for renderer events\nipcMain.on('mt::some-event-name', (event, arg1, arg2) => {\n  // ...\n\n  // Send a direct response to the renderer process\n  event.sender.send('mt::some-event-name-response', 'pong')\n})\n\n// Listen for main events\nipcMain.on('some-event-name', (arg1, arg2) => {\n  // ...\n})\n\n\nipcMain.emit('some-event-name', 'arg 1', 'arg 2')\n// ipcMain.emit('mt::some-event-name-response', undefined, 'arg 1', 'arg 2') // crash because event is used\n```\n\nListening to a main event in the renderer process:\n\n```\nimport { ipcRenderer } from 'electron'\n\n// Listen for main events\nipcRenderer.on('mt::some-event-name-response', (event, arg1, arg2) => {\n  // ...\n})\n\nipcRenderer.send('mt::some-event-name-response', 'arg 1', 'arg 2')\n```"
+              },
+              "metadata": {},
+              "subpages": [],
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 2]"
+            },
+            {
+              "title": "Readme",
+              "description": null,
+              "content": {
+                "Internal Documentation": "WIP documentation of MarkText internals.\n\n['[Block addition properties and its value](BLOCK_ADDITION_PROPERTY.md)', '[Commands](COMMANDS.md)', '[Inter-Process Communication (IPC)](IPC.md)']"
+              },
+              "metadata": {},
+              "subpages": [],
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 3]"
+            },
+            {
+              "title": "Renderer",
+              "description": "Documentation section: renderer",
+              "content": {},
+              "metadata": {
+                "type": "directory",
+                "path": "/home/anhnh/CodeWikiBench/data/marktext/original/docs/dev/code/renderer"
+              },
+              "subpages": [
+                {
+                  "title": "Editor",
+                  "description": null,
+                  "content": {
+                    "Internal": {
+                      "Raw markdown document": "```\ninterface IMarkdownDocumentRaw\n{\n  // Markdown content\n  markdown: string,\n  // Filename\n  filename: string,\n  // Full path (may be empty?)\n  pathname: string,\n\n  // Document encoding\n  encoding: string,\n  // \"lf\" or \"crlf\"\n  lineEnding: string,\n  // Convert document (\"lf\") to `lineEnding` when saving\n  adjustLineEndingOnSave: boolean\n\n  // Whether the document has mixed line endings (lf and crlf) and was converted to lf.\n  isMixedLineEndings: boolean\n}\n```",
+                      "Markdowm document": "A markdown document (`IMarkdownDocument`) represent a file.\n\n```\ninterface IMarkdownDocument\n{\n  // Markdown content\n  markdown: string,\n  // Filename\n  filename: string,\n  // Full path (may be empty?)\n  pathname: string,\n\n  // Document encoding\n  encoding: string,\n  // \"lf\" or \"crlf\"\n  lineEnding: string,\n  // Convert document (\"lf\") to `lineEnding` when saving\n  adjustLineEndingOnSave: boolean\n}\n```\n\n```\ninterface IMarkdownDocumentOptions\n{\n  // Document encoding\n  encoding: string,\n  // \"lf\" or \"crlf\"\n  lineEnding: string,\n  // Convert document (\"lf\") to `lineEnding` when saving\n  adjustLineEndingOnSave: boolean\n}\n```",
+                      "File State": "Internal state of a markdown document. `IMarkdownDocument` is used to create a `IFileState`.\n\n```\ninterface IDocumentState\n{\n  isSaved: boolean,\n  pathname: string,\n  filename: string,\n  markdown: string,\n  encoding: string,\n  lineEnding: string,\n  adjustLineEndingOnSave: boolean,\n  history: {\n    stack: Array<any>,\n    index: number\n  },\n  cursor: any,\n  wordCount: {\n    paragraph: number,\n    word: number,\n    character: number,\n    all: number\n  },\n  searchMatches: {\n    index: number,\n    matches: Array<any>,\n    value: string\n  }\n}\n```",
+                      "...": "TBD"
+                    },
+                    "View": {
+                      "Sidebar": "TBD",
+                      "Tabs": "TBD",
+                      "Document": "TBD"
+                    }
+                  },
+                  "metadata": {},
+                  "subpages": [],
+                  "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 4, \"subpages\", 0]"
+                }
+              ],
+              "path": "[\"subpages\", 21, \"subpages\", 7, \"subpages\", 4]"
+            }
+          ],
+          "path": "[\"subpages\", 21, \"subpages\", 7]"
+        }
+      ],
+      "path": "[\"subpages\", 21]"
+    },
+    {
+      "title": "I18N",
+      "description": "Documentation section: i18n",
+      "content": {},
+      "metadata": {
+        "type": "directory",
+        "path": "/home/anhnh/CodeWikiBench/data/marktext/original/docs/i18n"
+      },
+      "subpages": [
+        {
+          "title": "French",
+          "description": null,
+          "content": {
+            "Features": [
+              "Rendu en temps réelle et utilise [snabbdom](https://github.com/snabbdom/snabbdom) en tant que moteur de rendu.",
+              "Supporte [CommonMark Spec](https://spec.commonmark.org/0.29/) et [GitHub Flavored Markdown Spec](https://github.github.com/gfm/).",
+              "Supporte les paragraphes et raccourices clavier afin d'améliorer votre productivité.",
+              "Export de votre markdown en **HTML** et **PDF**.",
+              "Thèmes Sombre et Clair.",
+              "Plusieurs mode d'édition: **Mode code source**, **Mode machine à écrire**, **Mode focus**."
+            ],
+            "Pourquoi écrire un nouvel éditeur?": [
+              "J'adore écrire. J'ai utilisé de nombreux éditeurs markdown et pourtant, aucun ne correspondait réellement à mes besoins. **MarkText** utilise un DOM virtuel pour le rendu ce qui le rend très efficace. C'est aussi un outil open source pour tous les amoureux de l'écriture et du markdown.",
+              "Comme mentionné **MarkText** est et restera open source. Il est aussi espérer que des amoureux du markdown puissent participer au dévelopement du projet afin de rendre **MarkText** un éditeur parmis les plus populaire.",
+              "Il y a beaucoup d'éditeur markdown et chacun de ses éditeurs à ses propres caractéristiques mais il est aussi difficile de pouvoir satisfaire tout les besoins utilisateurs. J'espère que **MarkText** pourra satisfaire vos besoins le plus possible. De plus **MarkText** n'est pas parfait mais nous faisons de notre mieux pour aller dans cette direction."
+            ],
+            "Download and Install": "![Conda](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)\n\n| ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                             | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                                     | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                                   |\n|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|\n| [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x64.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x86_64.AppImage) |\n\nVous ne trouvez pas votre système? Aller sur la [page des releases](https://github.com/marktext/marktext/releases). Toujours pas? Ouvrez une [issue](https://github.com/marktext/marktext/issues).\n\nVous voulez voir une nouvelle feature dans la prochaine version? Consulté le [CHANGELOG](../../.github/CHANGELOG.md)\n\nSi vous êtes sur OS X, vous pouvez installer MarkText via [**homebrew cask**](https://github.com/caskroom/homebrew-cask), pour commencer à utiliser Homebrew-Cask, vous avez seulement besoin d'avoir [Homebrew](https://brew.sh/) installer sur votre machine.\n\n```\nbrew install --cask mark-text\n```\n\n![](../../docs/brew-cask.gif)\n\nmacOS and Windows\n\nTélécharger et installer simplement MarkText via le client d'installation.\n\nLinux\n\nVeuillez suivre [les instructions d'installations Linux](../../docs/LINUX.md).",
+            "Development": "Si vous souhaiter participer à l'amélioration de **MarkText**, référer vous au [instructions de dévelopement](../../CONTRIBUTING.md#build-instructions).\n\nSi vous avez des questions pendant votre utilisation, vous êtes les bienvenues pour ouvrir une issue, mais j'espère que vous suivrez le format requis. Bien sûr, si vous soumettez une PR directement, cela sera apprécié.",
+            "Contribution": "**MarkText** est en plein déveloment, prenez soin d'étudier le [guide de contribution](../../CONTRIBUTING.md) avant de faire une pull request. Vous souhaitez plus de fonctionnalités à MarkText? Rendez-vous sur la [TODO LIST](../../.github/TODOLIST.md) pour ouvrir des issues.",
+            "Backers": "Merci à tous nos collaborateurs! 🙏 [[Deviens un backer](https://opencollective.com/marktext#backers)]\n\n<a href=\"https://opencollective.com/marktext#backers\" target=\"_blank\"><img src=\"https://opencollective.com/marktext/tiers/backer.svg?avatarHeight=36\" /></a>",
+            "Sponsors": "Supporter ce projet en devenant sponsor de celui-ci. Votre logo sera affiché ici ainsi qu'un lien vers votre site internet. [[Deviens un sponsor](https://opencollective.com/marktext#silver-sponsors)]\n\n**Platinum Sponsors**\n\n<a href=\"https://readme.io\" target=\"_blank\"><img src=\"../../docs/sponsor/readme.png\" /></a>",
+            "Contributors": "Merci à tous les contributeurs ayant déjà participé à MarkText [[contributors](https://github.com/marktext/marktext/graphs/contributors)]\n\nUn remerciement spécial à @[Yasujizr](https://github.com/Yasujizr) qui est l'auteur du logo de MarkText.\n\n<a href=\"https://github.com/marktext/marktext/graphs/contributors\"><img src=\"https://opencollective.com/marktext/contributors.svg?width=890\" /></a>",
+            "License": "[**MIT**](../../LICENSE).\n\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext?ref=badge_large)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 0]"
+        },
+        {
+          "title": "Ja",
+          "description": null,
+          "content": {
+            "スクリーンショット": "![](../../docs/marktext.png?raw=true)\n\n<h2 id=\"features\">特徴</h2>\n\n['WYSIWYGなリアルタイムプレビューと、執筆に没頭できるクリーンでシンプルなインターフェース', '[CommonMark Spec](https://spec.commonmark.org/0.29/)と[GitHub Flavored Markdown Spec](https://github.github.com/gfm/)、および一部の[Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)をサポート', 'KaTeXを用いた数式表示、Front matterや絵文字が使用可能', '段落とインラインショートカットを利用することで編集効率を向上', '**HTML**ファイルと**PDF**ファイルを出力可能', '**Cadmium Light**, **Material Dark**など様々なテーマ', '選べる編集モード: **Source Code mode**, **Typewriter mode**, **Focus mode**']\n\n<h4 align=\"center\">:crescent_moon:テーマ:high_brightness:</h4>\n\n| Cadmium Light                                           | Dark                                                  |\n|:-------------------------------------------------------:|:-----------------------------------------------------:|\n| ![](../../docs/themeImages/cadmium-light.png?raw=true)  | ![](../../docs/themeImages/dark.png?raw=true)         |\n| Graphite Light                                          | Materal Dark                                          |\n| ![](../../docs/themeImages/graphite-light.png?raw=true) | ![](../../docs/themeImages/materal-dark.png?raw=true) |\n| Ulysses Light                                           | One Dark                                              |\n| ![](../../docs/themeImages/ulysses-light.png?raw=true)  | ![](../../docs/themeImages/one-dark.png?raw=true)     |\n\n<h4 align=\"center\">:smile_cat:編集モード:dog:</h4>\n\n| Source Code                | Typewriter                     | Focus                     |\n|:--------------------------:|:------------------------------:|:-------------------------:|\n| ![](../../docs/source.gif) | ![](../../docs/typewriter.gif) | ![](../../docs/focus.gif) |",
+            "開発の意図": [
+              "私は書くことが好きです。これまでに沢山のマークダウンエディタを使ってきましたが、まだ私の要望を完璧に満たすものを見つけられていません。致命的なバグに執筆を邪魔されたくないのです。**MarkText**はページのレンダリングに仮想DOMを用いることで効率を向上させ、さらにオープンソースで提供しました。",
+              "上記の通り、**MarkText**はオープンソースなので、誰でもソースコードをコントリビュートすることで開発に参加し、**MarkText** をポピュラーなマークダウンエディタにしていくことができます。",
+              "特徴的な機能を備えたマークダウンエディタは既に沢山ありますが、全てのマークダウンユーザーの要望を満たすのは難しいです。まだまだ未熟ですが、**MarkText** がマークダウンユーザーの要望を可能な限り叶えられるエディタになることを願っています。"
+            ],
+            "インテグレーション": [
+              "[Alfred Workflow](http://www.packal.org/workflow/mark-text): macOS向けのアプリであるAlfred Workflowです。Alfredを起動して、\"mt\"コマンドを入力することでファイルやフォルダをMarkTextで開きます。"
+            ],
+            "コントリビューター": "MarkTextにコントリビュートしてくださった [[コントリビューター](https://github.com/marktext/marktext/graphs/contributors)] の皆さんに感謝を申し上げます。\n\nMarkTextのロゴをデザインしてくださった @[Yasujizr](https://github.com/Yasujizr) に感謝を申し上げます。\n\n<a href=\"https://github.com/marktext/marktext/graphs/contributors\"><img src=\"https://opencollective.com/marktext/contributors.svg?width=890\" /></a>",
+            "ライセンス": "[**MIT**](../../LICENSE).\n\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext?ref=badge_large)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 1]"
+        },
+        {
+          "title": "Ko",
+          "description": null,
+          "content": {
+            "스크린샷": "![](docs/marktext.png?raw=true)",
+            "기능": [
+              "실시간 미리보기 (WYSIWYG) 및 주의분산 없는 글쓰기 경험을 위한 깔끔하고 단순한 인터페이스.",
+              "[CommonMark Spec](https://spec.commonmark.org/0.29/), [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) 지원 및 [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) 일부 지원.",
+              "수학 표현 (KaTeX), 서문, 이모지와 같은 마크다운 확장.",
+              "단락 및 인라인 스타일 단축키 지원으로 문서 작성 효율 향상.",
+              "**HTML** 및 **PDF** 파일 출력.",
+              "다양한 테마: **카드뮴 라이트**, **머티리얼 다크** 등등.",
+              "다양한 편집 모드: **소스 코드 모드**, **타자기 모드**, **포커스 모드**.",
+              "클립보드에서 바로 이미지 붙여넣기."
+            ],
+            "왜 다른 에디터를 쓰나요?": [
+              "저는 글쓰기를 좋아합니다. 많은 마크다운 에디터를 사용해왔지만, 아직 제 요구를 완벽히 충족시키는 편집기는 없었습니다. 글을 쓸 때 견딜 수 없는 버그 때문에 방해 받길 원치 않습니다. **마크 텍스트**는 높은 효율성과 오픈소스라는 추가 이점이 있는 가상 DOM을 이용하여 페이지를 렌더링합니다. 마크다운과 글쓰기를 좋아하는 사람이라면 누구나 마크 텍스트를 이용할 수 있습니다.",
+              "위에서 설명한 대로, **마크 텍스트**는 완전히 무료이고 오픈 소스이며 영원히 오픈 소스일 것입니다. 우리는 모든 마크다운 애호가들이 자신만의 코드를 컨트리뷰트하여 **마크 텍스트**를 인기있는 마크다운 에디터로 개발하는 데 도움 주기를 바랍니다.",
+              "많은 마크다운 에디터가 각자의 장점을 가지고 있습니다. 어떤 것은 다른 것에 없는 기능을 가지고 있습니다. 각각의 사용자들의 요구를 만족시키기는 어렵지만 우리는 **마크 텍스트**가 가능한 한 많은 사용자를 만족시킬 수 있기를 바랍니다. 최신의 **마크 텍스트**가 아직 완벽하지 않을 수 있어도, 우리는 할 수 있는 한 최고로 만들기 위해 노력할 것입니다."
+            ],
+            "다운로드 및 설치": "![플랫폼](https://img.shields.io/static/v1.svg?label=Platform&message=Linux-64%20|%20macOS-64%20|%20Win-32%20|%20Win-64&style=for-the-badge)\n\n| ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                  | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                          | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                        |\n|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|\n| [![최신 버전](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x64.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg) | [![최신 버전](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | [![최신 버전](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x86_64.AppImage) |\n\n최신 버전의 새로운 기능을 보고 싶나요? [변경사항](.github/CHANGELOG.md)을 참조하세요.\n\n맥OS\n\n최신 `marktext-%version%.dmg`를 [릴리즈 페이지](https://github.com/marktext/marktext/releases/latest)에서 다운로드하거나 [**homebrew cask**](https://github.com/caskroom/homebrew-cask)를 이용하여 설치할 수 있습니다. Homebrew-Cask를 이용하려면 [Homebrew](https://brew.sh/)가 설치되어 있어야 합니다.\n\n```\nbrew install --cask mark-text\n```\n\n윈도우\n\n마크 텍스트를 다운로드하여 설치 마법사(`marktext-setup-%version%.exe`)를 통해 설치하고 사용자별로 설치할 것인지 공용으로 설치할 것인지 선택하십시오.\n\n다른 방법으로, [Chocolatey](https://chocolatey.org/)를 이용해서 마크 텍스트를 설치하십시오. Chocolatey를 이용하기 위해서는 [Chocolatey](https://chocolatey.org/install)가 설치되어 있어야 합니다.\n\n```\nchoco install marktext\n```\n\n리눅스\n\n[리눅스 설치 가이드](docs/LINUX.md)를 따르십시오.\n\n기타\n\n모든 리눅스, 맥OS 그리고 윈도우 용 파일은 [릴리즈 페이지](https://github.com/marktext/marktext/releases/latest)에서 다운로드할 수 있습니다. 시스템에서 버전을 이용할 수 없을 시, [이슈](https://github.com/marktext/marktext/issues)를 열어주세요.",
+            "개발": "스스로 **마크 텍스트**를 빌드하고 싶다면, [빌드 가이드](docs/dev/BUILD.md)를 참고해주십시오.\n\n['[사용자 문서](docs/README.md)', '[개발자 문서](docs/dev/README.md)']\n\n**마크 텍스트**와 관련하여 질문이 있으시면 언제든지 질문을 이슈에 기재하실 수 있습니다. 기재할 때는 이슈를 열 때 나오는 기본 포맷을 사용해주십시오. 물론 바로 PR을 제출하는 것도 대환영입니다.",
+            "통합": [
+              "[Alfred Workflow](http://www.packal.org/workflow/mark-text): 맥OS 앱 Alfred를 위한 워크플로우: 마크 텍스트를 이용하여 파일/폴더를 열려면 \"mt\"를 사용하세요."
+            ],
+            "기여": "마크 텍스트는 전체 개발 중입니다. PR 하기 전에 [컨트리뷰트 가이드](CONTRIBUTING.md)를 필히 읽어주십시오.\n마크 텍스트에 새로운 기능을 추가하고 싶은가요? [로드맵](https://github.com/marktext/marktext/projects)을 참조하시어 이슈를 열어주세요.",
+            "기여자": "마크 텍스트에 기여해주신 모든 분들께 감사합니다. [[기여자](https://github.com/marktext/marktext/graphs/contributors)]\n\n마크 텍스트 로고를 디자인해주신 @[Yasujizr](https://github.com/Yasujizr)에게 특별한 감사를 전합니다.\n\n<a href=\"https://github.com/marktext/marktext/graphs/contributors\"><img src=\"https://opencollective.com/marktext/contributors.svg?width=890\" /></a>",
+            "라이센스": "[**MIT**](LICENSE).\n\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext?ref=badge_large)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 2]"
+        },
+        {
+          "title": "Udział w projekcie",
+          "description": null,
+          "content": {
+            "Licencja": "[**MIT**](../../LICENSE).\n\nCopyright (c) 2017-present, @Jocs"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 3]"
+        },
+        {
+          "title": "Pt",
+          "description": null,
+          "content": {
+            "Captura de Tela": "![](https://github.com/marktext/marktext/raw/develop/docs/marktext.png?raw=true)",
+            "Recursos": [
+              "Visualização em tempo real (WYSIWYG) e uma interface limpa e simples para obter uma experiência de escrita sem distrações.",
+              "Suporta o uso de [CommonMark Spec](https://spec.commonmark.org/0.29/), [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) e suporte seletivo para [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown).",
+              "Extensões de Markdown, como expressões matemáticas (KaTeX), front matter e emojis.",
+              "Utilize parágrafos e atalhos de estilos para melhorar sua eficiência de escrita.",
+              "Exporta arquivos **HTML** e **PDF**.",
+              "Vários temas, como: **Cadmium Light**, **Material Dark**, etc.",
+              "Vários modos de edição: **Modo Código**, **Modo Escritor** e **Modo Foco**.",
+              "Cole imagens diretamente."
+            ],
+            "Por que criar outro editor?": [
+              "Eu adoro escrever. Usei muitos editores de markdown, mas ainda não há nenhum que consiga atender totalmente às minhas necessidades. Não gosto de ser incomodado quando escrevo por algum bug insuportável. **MarkText** usa DOM virtual para renderizar páginas, o que tem os benefícios adicionais de ser altamente eficiente e possui código aberto. Desta forma, qualquer pessoa que adora markdown e escrita pode usar MarkText.",
+              "Conforme mencionado acima, **MarkText** é totalmente gratuito e de código-fonte aberto e será para sempre. Esperamos que todos os amantes do markdown contribuam com seu próprio código e ajudem a desenvolver o **MarkText**, tornando-o um editor de markdown popular.",
+              "Existem muitos editores de markdown e todos têm seus próprios méritos, alguns têm recursos que outros não. É difícil satisfazer as necessidades de cada pessoa, mas esperamos que **MarkText** seja capaz de satisfazer cada utilizador de Markdown tanto quanto possível. Embora o último **MarkText** ainda não seja perfeito, vamos tentar fazer o melhor que pudermos."
+            ],
+            "Download e Instalação": "![platform](https://img.shields.io/static/v1.svg?label=Platform&message=Linux-64%20|%20macOS-64%20|%20Win-32%20|%20Win-64&style=for-the-badge)\n\n| ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                  | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                          | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                        |\n|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|\n| [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x64.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x86_64.AppImage) |\n\nQuer ver os últimos recursos? Por favor consulte o [Histórico de Mudanças](.github/CHANGELOG.md).\n\nmacOS\n\nPode baixar o último `marktext-%version%.dmg` indo à [página de versões](https://github.com/marktext/marktext/releases/latest) ou instale o MarkText usando [**homebrew cask**](https://github.com/caskroom/homebrew-cask) (é necessário ter o [Homebrew](https://brew.sh/) instalado).\n\n```\nbrew install --cask mark-text\n```\n\nWindows\n\nInstale o MarkText utilizando um gerenciador de instalações (`marktext-setup-%version%.exe`) e escolha para instalar para seu usuário ou em toda a máquina.\n\nCaso não quiser fazer isso, pode instalar usando o [Chocolatey](https://chocolatey.org/). Para usar o Chocolatey você precisa de ter instalado [Chocolatey](https://chocolatey.org/install).\n\n```\nchoco install marktext\n```\n\nLinux\n\nSiga o [Manual de Instalações do Linux](docs/LINUX.md).\n\nOutros\n\nTodo o código-fonte para Linux, macOS and Windows pode ser baixado na [página de versões](https://github.com/marktext/marktext/releases/latest). Se não está a conseguir usar nenhuma versão no seu sistema, por favor abra uma [issue](https://github.com/marktext/marktext/issues).",
+            "Desenvolvimento": "Se você deseja fazer sua própria build do **MarkText**, dê uma lida no documento de [instruções de build](docs/dev/BUILD.md).\n\n['[Documentação do Usuário](docs/README.md)', '[Documentação do Desenvolvedor](docs/dev/README.md)']\n\nSe você ainda possui alguma dúvida sobre **MarkText**, seja bem vindo para abrir uma issue. Ao fazer isso, use o formato padrão encontrado ao abrir uma 'issue'. Claro, se você enviar um PR diretamente, será muito apreciado.",
+            "Integrações": [
+              "[Alfred Workflow](http://www.packal.org/workflow/mark-text): Um fluxo de trabalho para o aplicativo Alfred do macOS: Use \"mt\" para abrir arquivos/pasta com MarkText."
+            ],
+            "Contribuição": "MarkText está em pleno desenvolvimento, certifique-se de ler o [guia de Contribuição](CONTRIBUTING.md) antes de fazer uma solicitação de PR. Quer adicionar alguns recursos ao MarkText? Consulte nosso [roadmap](https://github.com/marktext/marktext/projects) and open issues.",
+            "Contribuidores": "Obrigado a todas as pessoas que já contribuíram para MarkText[[contribuidores](https://github.com/marktext/marktext/graphs/contributors)]\n\nUm agradecimento especial ao @[Yasujizr](https://github.com/Yasujizr) por desenhar nossa Logo.\n\n<a href=\"https://github.com/marktext/marktext/graphs/contributors\"><img src=\"https://opencollective.com/marktext/contributors.svg?width=890\" /></a>",
+            "Licença": "[**MIT**](LICENSE).\n\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext?ref=badge_large)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 4]"
+        },
+        {
+          "title": "Spanish",
+          "description": null,
+          "content": {
+            "Características": [
+              "Renderizado en tiempo real, y utiliza [snabbdom](https://github.com/snabbdom/snabbdom) como motor de renderizado.",
+              "Soporta [CommonMark Spec](https://spec.commonmark.org/0.29/) y [GitHub Flavored Markdown Spec](https://github.github.com/gfm/).",
+              "Soporta párrafos y atajos en mitad de la línea para mejorar la eficiencia de escritura",
+              "Exporta archivos markdown en **HTML** y **PDF**.",
+              "Temas claro y oscuro.",
+              "Varios modos de edición: **Modo código fuente**, **Modo máquina de escribir**, **Modo concentración**."
+            ],
+            "¿Por qué hacer otro editor ?": [
+              "Me encanta escribir. He usado un montón de editores de markdown, y todavía no he encontrado ninguno que cumpla todas mis necesidades. No me gusta que me moleste ningún bug cuando escribo. **MarkText** usa virtual DOM para renderizar páginas, la cual tiene el beneficio de ser muy eficiente y de código abierto. Así, a cualquiera que le guste escribir y use markdown puede usar MarkText",
+              "Como se ha mencionado arriba, **MarkText** es de código abierto, y lo será para siempre. Esperamos que todos los amantes de markdown contribuyan y ayuden al desarrollo de **MarkText**, para que sea popular.",
+              "Hay muchos editores de markdown, y todos tienen sus méritos. Algunos tienen funcionalidades que otros no. Es difícil satisfacer los gustos de todo el mundo, pero esperamos que **MarkText** cubra las necesidades de todos lo máximo posible. Aunque lo último de **MarkText** no sea perfecto, lo damos todo para intentar que sea lo mejor"
+            ],
+            "Descarga e instalación": "![Conda](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)\n\n| ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                             | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                                     | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                                   |\n|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|\n| [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x64.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x86_64.AppImage) |\n\n¿No encuentras tu sistema? Ve a la [página de descargas](https://github.com/marktext/marktext/releases). ¿No se encuentra disponible tu versión? Abre una [issue](https://github.com/marktext/marktext/issues).\n\n¿Quieres saber las nuevas funcionalidades de la última versión? Échale un vistazo al [CHANGELOG](../../.github/CHANGELOG.md)\n\nSi estás usando macOS, puedes instalar Mart Text usando [**homebrew cask**](https://github.com/caskroom/homebrew-cask). Para usar Homebrew-Cask, tienes que tener instalado [Homebrew](https://brew.sh/)\n\n```\nbrew install --cask mark-text\n```\n\n![](../../docs/brew-cask.gif)\n\nmacOS y Windows\n\nDescarga e instala Mart Text a partir del asistente de instalación\n\nLinux\n\nSigue las [instrucciones de instalación de Linux]   (../../docs/LINUX.md).",
+            "Desarrollo": "Si quieres construir tú mismo **MarkText**, por favor, sigue las  [instrucciones de desarrollo](../../CONTRIBUTING.md#build-instructions).\n\nSi tienes dudas sobre **MarkText**, puedes abrir un issue. Si lo haces, por favor, sigue el formato estándar. Por supuesto, apreciamos que mandes directamente un Pull Request",
+            "Integración": [
+              "[Alfred Workflow](http://www.packal.org/workflow/mark-text): un workflow  para la aplicación de macOS Alfred: usa \"mt\" para abrir archivos/carpetas con MarkText"
+            ],
+            "Contribución": "**MarkText** está en pleno desarrollo. Asegúrate de leer [la guía de contribución](../../CONTRIBUTING.md) antes de hacer un Pull Request. ¿Quieres añadir algunas funcionalidades? Échale un vistazo a la [TODO LIST](../../.github/TODOLIST.md) y abre issues.",
+            "Backers": "¡Gracias a todos nuestros colaboradores! 🙏 [[Conviértete en un backer](https://opencollective.com/marktext#backers)]\n\n<a href=\"https://opencollective.com/marktext#backers\" target=\"_blank\"><img src=\"https://opencollective.com/marktext/tiers/backer.svg?avatarHeight=36\" /></a>",
+            "Sponsors": "Apoya este proyecto convirtiéndote en un sponsor. Tu logo se verá aquí con un link a tu página [[Conviértete en un sponsor](https://opencollective.com/marktext#silver-sponsors)]\n\n**Bronze Sponsors**\n\n<a href=\"https://opencollective.com/marktext#platinum-sponsors\">\n<img src=\"https://opencollective.com/marktext/tiers/bronze-sponsors.svg?avatarHeight=36&width=600\">\n</a>\n\n**Silver Sponsors**\n\n<a href=\"https://opencollective.com/marktext#platinum-sponsors\">\n<img src=\"https://opencollective.com/marktext/tiers/silver-sponsors.svg?avatarHeight=36&width=600\">\n</a>\n\n**Gold Sponsors**\n\n<a href=\"https://opencollective.com/marktext#platinum-sponsors\">\n<img src=\"https://opencollective.com/marktext/tiers/gold-sponsors.svg?avatarHeight=36&width=600\">\n</a>\n\n**Platinum Sponsors**\n\n<a href=\"https://readme.io\" target=\"_blank\"><img src=\"../../docs/sponsor/readme.png\" /></a>",
+            "Contribuidores": "Gracias a todo el mundo que ha contribuido al desarrollo de MarkText! [[contributors](https://github.com/marktext/marktext/graphs/contributors)]\n\nUn especial agradecimiento a @[Yasujizr](https://github.com/Yasujizr) por hacer el logo de MarkText.\n\n<a href=\"https://github.com/marktext/marktext/graphs/contributors\"><img src=\"https://opencollective.com/marktext/contributors.svg?width=890\" /></a>",
+            "Licencia": "[**MIT**](../../LICENSE).\n\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext?ref=badge_large)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 5]"
+        },
+        {
+          "title": "Tr",
+          "description": null,
+          "content": {
+            "Ekran görüntüsü": "![](../marktext.png?raw=true)",
+            "Özellikler": [
+              "Gerçek zamanlı önizleme (WYSIWYG), ve temiz ve basit bir arayüz.",
+              "[CommonMark Spec](https://spec.commonmark.org/0.29/), [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) ve (kısmen) [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) standartları desteği.",
+              "Matematilsel ifadeler (KaTeX), front matter, emoji, ve benzeri markdown eklentileri.",
+              "Paragraf ve satıriçi biçimlendirme için kısayollar.",
+              "**HTML** ve **PDF** dosya çıktıları.",
+              "Çeşitli arayüz temaları: **Cadmium Light**, **Material Dark**, vb.",
+              "Çeşitli yazma modları: **kaynak düzenleme**, **daktilo modu**, **odak modu**, vb.",
+              "Resim kopyalama ve yapıştırma desteği"
+            ],
+            "Neden başka bir editör?": [
+              "Yazmayı sevdiğimiz için. Birçok markdown editörü kullandık, ve hala benim gereksinimlerimi tam anlamı ile karşılayanı bir editör yok. Yazarken dayanılmaz bir bug ile uğraşmaktan hoşlanmıyorum. **MarkText** sayfayı çizmek için virtual DOM kullanır, bu da hızlı ve açık kaynaklı olması gibi avantajlar sağlıyor. Bu yolla yazmayı ve markdown'u seven bütün herkes MarkText kullanabilir.",
+              "Yukarıda bahsettiğim gibi **MarkText** daima açık kaynak olacak. Tüm markdown sevenlerin koda katkıda bulunmasını ve **MarkText**'in daha popüler bir markdown editör olmasını ümit ediyorum.",
+              "Birçok markdown editörü var, ve her biri kendi avantajlarına sahip. Tüm markdown kullanıcılarını tatmin etmek zor, ama biz **MarkText** 'in markdown kullanıcılarının gereksinimlerini mümkün oldukça tatmin edebileceğini umuyoruz. **MarkText** hala mükemmel değil, ancak biz elimizden geldiğince iyileştirmeye çalışıyoruz."
+            ],
+            "İndirme ve Kurulum": "![platform](https://img.shields.io/static/v1.svg?label=Platform&message=Linux-64%20|%20macOS-64%20|%20Win-32%20|%20Win-64&style=for-the-badge)\n\n| ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                  | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                          | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                        |\n|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|\n| [![son sürüm](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x64.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg) | [![son sürüm](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | [![son sürüm](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x86_64.AppImage) |\n\nSon sürümde gelen değişiklikler için [CHANGELOG](.github/CHANGELOG.md)'a bakınız.\n\nmacOS\n\nMarkText'i [indirmeler](https://github.com/marktext/marktext/releases/latest)'den`marktext-%sürüm%.dmg` olarak  indirebilir, ya da [**homebrew cask**](https://github.com/caskroom/homebrew-cask) yoluyla kurabilirsiniz. Homebrew-Cask kullanabilmek için [Homebrew](https://brew.sh/)'ün kurulu olması gerekir.\n\n```\nbrew install --cask mark-text\n```\n\nWindows\n\n(`marktext-setup-%version%.exe`) yükleyiciyi indirip çalıştırın.\n\nVeya, MarkText'i [Chocolatey](https://chocolatey.org/) yoluyla kurun. Chocolatey kullanabilmek için [Chocolatey](https://chocolatey.org/install)'in kurulu olması gerekir.\n\n```\nchoco install marktext\n```\n\nLinux\n\nbkz. [Linux kurulumu](../LINUX.md).\n\nDiğer platformlar\n\nTüm Linux, macOS ve Windows sürümleri [indirmeler](https://github.com/marktext/marktext/releases/latest)'de bulunur. Kendi platformunuz için bir sürüm bulamıyorsanuz, [issue](https://github.com/marktext/marktext/issues) açınız.",
+            "Geliştirme": "Eğer **MarkText** kendiniz derlemek isterseniz, lütfen [geliştirici dökümantasyonuna](../../CONTRIBUTING.md#build-instructions) bakın.\n\n['[Kullanıcı dokümantasyonu](../README.md)', '[Geliştirici dokümantasyonu](../dev/README.md)']\n\n**MarkText** hakkında sorularınız için issue açabilirsiniz. Lütfen standart formatı kullanın. Direkt olarak PR açmak tabiki hoş karşılanır.",
+            "Entegrasyonlar": [
+              "[Alfred Workflow](http://www.packal.org/workflow/mark-text): macOS Alfred uygulaması için bir iş akışı: MarkText ile dosya/klasör açmak için \"mt\" kullanılır."
+            ],
+            "Katkıda Bulunmak": "MarkText geliştirme aşamasındadır. Lütfen pull request açmadan önce [Katkıda bulunma Rehberine](../../CONTRIBUTING.md) bakınız. MarkText'e katkıda bulunmak için [roadmap](https://github.com/marktext/marktext/projects)'e bakınız.",
+            "Destekçiler": "Tüm destekçilerimize teşekkürler! [[destekçiler](https://github.com/marktext/marktext/graphs/contributors)]\n\nMarkText logosunu tasarlayan @[Yasujizr](https://github.com/Yasujizr)'a özel teşekkürler.\n\n<a href=\"https://github.com/marktext/marktext/graphs/contributors\"><img src=\"https://opencollective.com/marktext/contributors.svg?width=890\" /></a>",
+            "Lisans": "[**MIT**](../../LICENSE).\n\n[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext?ref=badge_large)"
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 6]"
+        },
+        {
+          "title": "截图",
+          "description": null,
+          "content": {
+            "特性": [
+              "实时预览（所见即所得）和简洁明了的界面，使您获得无干扰的写作体验。",
+              "支持 [CommonMark 规范](https://spec.commonmark.org/0.29/)和 [GitHub Flavored Markdown 规范](https://github.github.com/gfm/)。",
+              "Markdown扩展，例如数学表达式（KaTeX）、front matter 和 emoji。",
+              "支持段落和内联样式快捷方式，以提高您的写作效率。",
+              "输出 **HTML** 和 **PDF** 文件。",
+              "各种主题：**Cadmium Light**、**Material Dark** 等等。",
+              "各种编辑模式：**源代码模式**、**打字机模式**、**专注模式**。",
+              "直接从剪贴板中粘贴图片。"
+            ]
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 7]"
+        },
+        {
+          "title": "螢幕擷圖",
+          "description": null,
+          "content": {
+            "功能": [
+              "即時預覽（WYSIWYG）和簡單明瞭的界面，使您獲得無干擾的寫作體驗。",
+              "支援 [CommonMark Spec](https://spec.commonmark.org/0.29/) 和 [GitHub Flavored Markdown Spec](https://github.github.com/gfm/).",
+              "Markdown擴充功能，例如數學表達式（KaTeX）、front matter 和 emoji。",
+              "支援段落以及行内樣式的快捷方式，提高您的寫作效率。",
+              "可以輸出 **HTML** 和 **PDF** 文件。",
+              "各種主題：**Cadmium Light**、**Material Dark** 等等。",
+              "各種編輯模式：**原始碼模式**、**打字機模式**、**專注模式**。",
+              "直接從剪貼簿中貼上圖片。"
+            ]
+          },
+          "metadata": {},
+          "subpages": [],
+          "path": "[\"subpages\", 22, \"subpages\", 8]"
+        }
+      ],
+      "path": "[\"subpages\", 22]"
+    }
+  ]
+}

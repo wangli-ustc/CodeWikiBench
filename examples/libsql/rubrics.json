@@ -1,0 +1,290 @@
+{
+  "rubrics": [
+    {
+      "requirements": "libsql Distributed Database System: A SQLite-compatible database system built for replication and modern client-server interaction",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Core SQLite Engine Foundation: Extended SQLite engine with distributed capabilities",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "SQLite Compatibility Layer: Maintains SQLite's transactional model and SQL processing",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "ACID transaction support with real-time consistency guarantees on primary node",
+                  "weight": 3
+                },
+                {
+                  "requirements": "SQL statement execution and query processing capabilities",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Write-Ahead Log (WAL) Interception: SQLite pages intercepted to generate WAL frames for replication",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Transaction commit order enforced by primary-time allocator for serial replay on replicas",
+                  "weight": 3
+                },
+                {
+                  "requirements": "WAL frames streamed to replicas for asynchronous replication",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Statement Preparation and Caching: Server-side SQL text storage and management system",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "SQL statement text cached on server to reduce bandwidth and parsing overhead",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Statement description and metadata extraction for prepared statements",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Distributed Replication Architecture: Primary-replica topology with data synchronization",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Primary-Replica Topology: Clear separation of write and read responsibilities",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Primary Node: Sole authority for write operations (INSERT, UPDATE, DELETE) and change propagation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Replica Nodes: Read-only copies serving read queries with monotonic, real-time consistent snapshots",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Read-write operation separation for performance optimization and replication management",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Replication Synchronization Mechanism: Data propagation from primary to replicas",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Primary broadcasts WAL frames over TLS-secured replication links",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Replicas register log position with primary resuming from last acknowledged frame",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Incremental snapshots by freezing WAL segments and shipping to object storage",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Consistency Guarantees: Real-time consistency on primary, eventual consistency on replicas",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Multi-Protocol Communication Layer: Hrana and HTTP APIs for client-server interaction",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Hrana Protocol Implementation: Stateful, multiplexed protocol with version evolution",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Protocol Versioning and Negotiation: Support for v1-v3 with backward compatibility",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Version negotiation selects highest mutually supported protocol version",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Multiple encoding support (JSON/Protobuf) based on negotiation",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "WebSocket Transport: Persistent, stateful connections for real-time communication",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Bidirectional message exchange with request/response patterns",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Connection multiplexing: single WebSocket carries multiple logical streams",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Stream lifecycle management (open/close) with isolated connection contexts",
+                      "weight": 3
+                    }
+                  ]
+                },
+                {
+                  "requirements": "HTTP Transport: Stateless operation support for serverless environments",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "RESTful endpoint architecture for database operations",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Pipeline execution for batch operations within single HTTP requests",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Advanced Protocol Features: High-level abstractions for efficient database interaction",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Batches: Multiple SQL statements execution in single atomic transaction and network round-trip",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Cursors: Incremental fetching of large result sets in paginated batches",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "Legacy HTTP API: Simple, stateless REST-like API for basic operations",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "POST-only endpoints for individual SQL statements and batch execution",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Health checks and version reporting utility endpoints",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Multi-Tenancy and Routing Infrastructure: Multiple isolated databases within single server process",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Path-Based Database Routing: URL-based namespace resolution and tenant isolation",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "URL path segments mapped to independent SQLite file sets",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Dynamic database namespace resolution for request routing",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Wildcard domain support for per-tenant sub-domains during development",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Security and Authentication Layer: Access control and data protection mechanisms",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Client Authentication and Authorization: System to verify and control client access",
+              "weight": 2
+            },
+            {
+              "requirements": "Transport Layer Security (TLS): Encryption for data in transit between clients, servers, and replicas",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Administrative and Monitoring Infrastructure: Server management and observability interfaces",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Admin API: Programmatic server management interface",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Health, metrics and cluster membership endpoints for orchestrators",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Telemetry and Metrics Collection: Anonymous client version metrics for backward-compatibility decisions",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Deployment and Distribution Model: Multiple packaging and installation options",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Container-Based Deployment: Primary distribution via Docker images",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-architecture Docker image packaging and distribution",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Environment variable-based configuration management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Container volume management for persistent database state",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Native Binary Distribution: Alternative installation methods",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Package manager integration (Homebrew formula)",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Prebuilt static binary distribution",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Source compilation with Rust toolchain",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Compiler-Driven Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Single-file component (.svelte) processing system",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Parses distinct blocks for logic (<script>), structure (markup), and presentation (<style>)",
+              "weight": 3
+            },
+            {
+              "requirements": "TypeScript integration via preprocessor and `<script lang=\"ts\">` syntax",
+              "weight": 2
+            },
+            {
+              "requirements": "Module script support for component-level exports and imports",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Compile-time static analysis and optimization pipeline",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Template compiler transforms template syntax into reactive JavaScript with explicit dependency graphs",
+              "weight": 3
+            },
+            {
+              "requirements": "Runes compiler rewrites $state/$derived/$effect calls into reactive store-like cells and effect subscriptions",
+              "weight": 3
+            },
+            {
+              "requirements": "Style compiler extracts styles, generates component-scoped hashes, and emits CSS with specificity wrappers",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Generated code output and runtime targets",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Generates optimized imperative JavaScript that directly manipulates DOM without virtual DOM",
+              "weight": 3
+            },
+            {
+              "requirements": "Server-side rendering compilation to HTML string generation with client hydration support",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom elements compilation target via `<svelte:options>` tag",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Compiler configuration and error handling",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Compiler options for output configuration and accessibility warnings",
+              "weight": 1
+            },
+            {
+              "requirements": "Error and warning reporting system with development feedback",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Fine-Grained Reactivity Engine",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Runes-based reactivity primitives (Svelte 5+)",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "State management with $state rune",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Reactive variable declarations that trigger updates on mutation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Raw state management with $state.raw for non-proxied values",
+                  "weight": 2
+                },
+                {
+                  "requirements": "State snapshot functionality with $state.snapshot",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Cross-module and function state passing mechanisms",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Computed values with $derived rune",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Memoized values with automatic dependency tracking and re-evaluation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Lazy evaluation system with $derived.by",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Destructuring support for derived values",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Side effects with $effect rune",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Functions that run after DOM updates and re-run when dependencies change",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Pre-update effects with $effect.pre that run before DOM modifications",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Effect tracking and pending state management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Isolated execution context with $effect.root to prevent destruction with containing component",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Component properties with $props rune",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Reactive component properties with default values",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Property fallback value system and rest props handling",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Property renaming and type safety integration",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Two-way binding with $bindable rune",
+              "weight": 2
+            },
+            {
+              "requirements": "Development utilities ($inspect, $host) for debugging and signal tracing",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Reactivity propagation and scheduling system",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Version counters and dirty flags system to avoid cascading walks",
+              "weight": 2
+            },
+            {
+              "requirements": "Micro-task batching for effect execution",
+              "weight": 2
+            },
+            {
+              "requirements": "Signal objects with .v (value) and .s (subscribers) fields",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Legacy reactivity system (Svelte 4 and earlier)",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Instrumented `let` variable assignments generating DOM update code",
+              "weight": 2
+            },
+            {
+              "requirements": "Reactive statements with `$:` syntax creating reactive computations",
+              "weight": 2
+            },
+            {
+              "requirements": "Export let prop system for component interfaces",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Component System and Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Component factory and instance model",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Function-based component factories returning fragments with mount/update/destroy hooks",
+              "weight": 3
+            },
+            {
+              "requirements": "Component encapsulation of logic, markup, and styles within single .svelte files",
+              "weight": 3
+            },
+            {
+              "requirements": "Imperative API for programmatic component mounting and interaction",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Mount and unmount operations for any DOM node",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Server-side rendering with render function",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Hydration system for SSR components",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Data flow and component communication",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Parent-to-child data flow via props",
+              "weight": 3
+            },
+            {
+              "requirements": "Child-to-parent communication via dispatched events",
+              "weight": 2
+            },
+            {
+              "requirements": "Context API for hierarchical data passing",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Type-safe context API with getContext/setContext",
+                  "weight": 2
+                },
+                {
+                  "requirements": "State integration with context system",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Content projection and composition",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Snippet system for renderable fragment passing",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Parent components passing renderable fragments to children",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Snippet rendering with @render tag in child components",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Data passing from child component back to snippet scope",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Legacy slot-based system for backward compatibility",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Component lifecycle management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Lifecycle functions (onMount, onDestroy) executing at specific component lifecycle points",
+              "weight": 3
+            },
+            {
+              "requirements": "Update cycle management with tick() function for awaiting pending state changes",
+              "weight": 2
+            },
+            {
+              "requirements": "Legacy update hooks (beforeUpdate/afterUpdate) for backward compatibility",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Template System and DOM Rendering",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Template syntax compilation to JavaScript",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Basic markup compilation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Element attribute binding and spread syntax",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Event delegation and handler attachment",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Text expression interpolation",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Control flow block compilation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Conditional rendering with {#if}/{#else} blocks converted to JavaScript logic",
+                  "weight": 3
+                },
+                {
+                  "requirements": "List rendering with {#each} blocks generating keyed reconciliation loops",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Async handling with {#await} blocks creating state machines for promise resolution",
+                  "weight": 2
+                },
+                {
+                  "requirements": "{#key} blocks forcing DOM element re-creation when key value changes",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Special template directives and runtime features",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Raw HTML injection with {@html} directive",
+              "weight": 2
+            },
+            {
+              "requirements": "Compile-time constants with {@const} directive",
+              "weight": 1
+            },
+            {
+              "requirements": "Debug utilities with {@debug} directive",
+              "weight": 1
+            },
+            {
+              "requirements": "Dynamic component/element rendering via <svelte:element>",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Data binding infrastructure",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Two-way data binding with bind: directive",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Form element bindings (value, checked, files)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Select and group binding mechanisms",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Media element bindings for audio/video",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Element reference binding with bind:this",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Element dimensions binding (clientWidth, clientHeight)",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Component property binding system",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Element lifecycle and behavior attachment",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Actions (use: directive) for attaching reusable behavior and lifecycle logic to elements",
+              "weight": 2
+            },
+            {
+              "requirements": "Animation and transition directives",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "CSS animations via transition:, in:, out: directives for element lifecycle",
+                  "weight": 2
+                },
+                {
+                  "requirements": "List animation with animate: directive using FLIP technique",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Built-in transition functions and custom transition API",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Local vs global transition scoping",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Scoped Styling System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "CSS encapsulation and scoping",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Automatic component-scoped styling with unique hash-based class generation",
+              "weight": 3
+            },
+            {
+              "requirements": "Scoped keyframes animations to prevent global name collisions",
+              "weight": 2
+            },
+            {
+              "requirements": "CSS specificity handling with :where(...) wrappers",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Global styling mechanisms",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": ":global() modifier for applying styles to entire document",
+              "weight": 2
+            },
+            {
+              "requirements": "Global style blocks for document-wide styling",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Dynamic styling system",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "CSS custom property integration for dynamic values",
+              "weight": 2
+            },
+            {
+              "requirements": "Class directive for conditional class application",
+              "weight": 2
+            },
+            {
+              "requirements": "Style directive for dynamic inline style management",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Special Elements and Global Integration",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Document and global object interaction",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "<svelte:head> for managing document metadata with automatic cleanup",
+              "weight": 2
+            },
+            {
+              "requirements": "<svelte:window>, <svelte:document>, <svelte:body> for binding to global events and properties",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Error handling and boundaries",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "<svelte:boundary> for creating error boundaries for async operations",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Component configuration and options",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "<svelte:options> for component-level configuration",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Runtime Library and Store System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Store system for cross-component state management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Writable and readable store implementations following observable contract",
+              "weight": 3
+            },
+            {
+              "requirements": "Derived store computation system with automatic dependency tracking",
+              "weight": 2
+            },
+            {
+              "requirements": "Store subscription mechanism and lifecycle management",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Animation and transition utilities",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Built-in transition functions (fade, fly) in svelte/transition",
+              "weight": 2
+            },
+            {
+              "requirements": "Easing functions (cubicIn, elasticOut) in svelte/easing for animation timing",
+              "weight": 1
+            },
+            {
+              "requirements": "Motion utilities in svelte/motion for tweening and interpolation",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Runtime helper modules",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Event handling utilities with delegation patterns",
+              "weight": 2
+            },
+            {
+              "requirements": "Server-side rendering utilities for HTML string generation",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Legacy Compatibility and Migration",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "Legacy API transformation",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Export let props desugared into $props() with same names",
+              "weight": 1
+            },
+            {
+              "requirements": "$: reactive statements transformed into $derived/$effect based on usage analysis",
+              "weight": 1
+            },
+            {
+              "requirements": "Slot syntax transformed into snippet passing",
+              "weight": 1
+            },
+            {
+              "requirements": "Class-based component API wrapped around new function-based factory",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Migration tooling and compatibility layers",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

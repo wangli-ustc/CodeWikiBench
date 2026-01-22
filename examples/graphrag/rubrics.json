@@ -1,0 +1,408 @@
+{
+  "rubrics": [
+    {
+      "requirements": "GraphRAG Knowledge Graph Construction System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-Phase Indexing Pipeline",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Document Processing and Text Unit Composition",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-format input data ingestion with schema validation (Plain Text, CSV, JSON)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Configurable text chunking with document metadata preservation and hierarchical text unit creation",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "LLM-Driven Graph Extraction Workflow",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Core Graph Extraction",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Prompt-driven entity identification with configurable schemas",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Relationship extraction with semantic typing and weights",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Entity and relationship description summarization",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Optional claim extraction for factual assertions linked to source text",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Graph pruning and quality filtering based on configurable rules",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Community Detection and Graph Augmentation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Hierarchical community clustering using Leiden algorithm with configurable parameters",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Community-based graph partitioning and table generation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Graph embedding generation for network visualization (e.g., UMAP)",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Community Summarization and Report Generation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "LLM-based community report synthesis with metadata",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Hierarchical report summarization across multiple community levels",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Embedding Generation and Vector Store Integration",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Dense vector embedding of text units and entities for semantic operations",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Vector store configuration and indexing for efficient retrieval",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Pre-structured Graph Ingestion Workflow (FastGraphRAG)",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "External graph import with schema mapping and custom entity/relationship table ingestion",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Integration of pre-defined graphs into augmentation pipeline for community detection and summarization",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Output Persistence and Knowledge Model",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Structured data serialization into tabular format (entities, relationships, communities, reports)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Configurable output storage backends with incremental indexing capabilities",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Multi-Modal Query Engine Architecture",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Local Search Engine",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Entity-centric retrieval using vector similarity for relevant entity identification",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Context assembly from local graph neighborhood, related entities and relationships",
+                  "weight": 3
+                },
+                {
+                  "requirements": "LLM-based answer synthesis using local context and associated text",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Global Search Engine",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Community report-based reasoning leveraging hierarchical summaries for whole-dataset analysis",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Hierarchical community traversal for comprehensive coverage and pattern identification",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Dataset-wide synthesis by drilling down from high-level contexts to specific text",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "DRIFT Search Engine",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Hybrid local-global search combination strategy for comprehensive responses",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Dynamic search mode selection based on query characteristics",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Auxiliary Query Features",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Baseline vector-search-only retrieval over raw text chunks",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Multi-index search capability for cross-dataset reasoning and knowledge integration",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Entity-based question generation for proactive query synthesis and evaluation",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Configuration and Workflow Management System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Centralized Configuration Management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Comprehensive schema defining all parameters for indexing workflows, storage, and query strategies",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Configuration loading from environment variables and dedicated settings files",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Standard vs FastGraphRAG indexing method selection",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Language Model Integration Framework",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Multi-provider LLM support with unified interface beyond single providers",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Model selection and override mechanisms with proxy API support for non-OpenAI models",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Storage and Caching Architecture",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "LLM response caching for cost optimization and speed improvement on iterative runs",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Vector store integration for persistent text embeddings",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Execution Interfaces",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Command-Line Interface (CLI) for executing indexing pipeline and system utilities",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Python API for programmatic control and integration into custom applications",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Prompt Engineering and Optimization System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Manual Prompt Customization Framework",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Indexing Prompt Templates",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Entity/relationship extraction prompts with token substitution",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Community report generation prompts",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Claim extraction prompts",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Query Prompt Templates",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Local search reasoning prompts",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Global search synthesis prompts",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "DRIFT search hybrid prompts",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Manual override capability for any default prompt template",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Automated Prompt Tuning Engine",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Document selection strategies for prompt optimization with data sampling",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Performance-based prompt refinement through variation generation and evaluation",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Knowledge Model and Data Schema",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Core Knowledge Graph Schema",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Entity table with attributes and embeddings",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Relationship table with semantic types and weights",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Community table with hierarchical clustering data",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Text units table linking documents to graph elements",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Extended Knowledge Artifacts",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Community reports table with generated summaries and metadata",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Documents table with metadata and provenance information",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Claims table for factual assertions (optional component)",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Visualization and Analysis Tools",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Graph Visualization Pipeline",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Gephi integration for network analysis with community-based coloring and layout",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Node sizing by centrality metrics",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

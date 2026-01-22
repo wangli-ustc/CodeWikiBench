@@ -1,0 +1,1577 @@
+{
+  "title": "Chart.js",
+  "description": "Documentation for Chart.js",
+  "subpages": [
+    {
+      "title": "Chart.js",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Why Chart.js": {
+          "Features": "<detail_content>",
+          "Defaults": "<detail_content>",
+          "Integrations": "<detail_content>",
+          "Developer experience": "<detail_content>",
+          "Canvas rendering": "<detail_content>",
+          "Performance": "<detail_content>",
+          "Community": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Axes",
+      "description": "Documentation section: axes",
+      "path": "[\"subpages\", 1]",
+      "subpages": [
+        {
+          "title": " Common",
+          "path": "[\"subpages\", 1, \"subpages\", 0]",
+          "content": {
+            "Common options to all axes": "<detail_content>"
+          }
+        },
+        {
+          "title": " Common Ticks",
+          "path": "[\"subpages\", 1, \"subpages\", 1]",
+          "content": {
+            "Common tick options to all axes": "<detail_content>"
+          }
+        },
+        {
+          "title": "Axes",
+          "path": "[\"subpages\", 1, \"subpages\", 2]",
+          "content": {
+            "Default scales": "<detail_content>",
+            "Common Configuration": "<detail_content>",
+            "Tick Configuration": "<detail_content>",
+            "Axis Range Settings": "<detail_content>",
+            "Stacking": "<detail_content>",
+            "Callbacks": {
+              "Updating Axis Defaults": "<detail_content>"
+            },
+            "Creating New Axes": "<detail_content>"
+          }
+        },
+        {
+          "title": "Labeling Axes",
+          "path": "[\"subpages\", 1, \"subpages\", 3]",
+          "content": {
+            "Scale Title Configuration": "<detail_content>",
+            "Creating Custom Tick Formats": "<detail_content>"
+          }
+        },
+        {
+          "title": "Styling",
+          "path": "[\"subpages\", 1, \"subpages\", 4]",
+          "content": {
+            "Grid Line Configuration": "<detail_content>",
+            "Tick Configuration": "<detail_content>",
+            "Major Tick Configuration": "<detail_content>",
+            "Border Configuration": "<detail_content>"
+          }
+        },
+        {
+          "title": "Cartesian",
+          "description": "Documentation section: cartesian",
+          "path": "[\"subpages\", 1, \"subpages\", 5]",
+          "subpages": [
+            {
+              "title": " Common",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 0]",
+              "content": {
+                "Common options to all cartesian axes": "<detail_content>"
+              }
+            },
+            {
+              "title": " Common Ticks",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 1]",
+              "content": {
+                "Common tick options to all cartesian axes": "<detail_content>"
+              }
+            },
+            {
+              "title": "Category Axis",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 2]",
+              "content": {
+                "Category Axis Definition": "<detail_content>",
+                "Configuration Options": {
+                  "Category Axis specific options": "<detail_content>"
+                },
+                "Tick Configuration": "<detail_content>",
+                "Min Max Configuration": "<detail_content>",
+                "Internal data format": "<detail_content>"
+              }
+            },
+            {
+              "title": "Cartesian Axes",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 3]",
+              "content": {
+                "Visual Components": {
+                  "Border": "<detail_content>",
+                  "Grid lines": "<detail_content>",
+                  "Ticks and Tick Marks": "<detail_content>",
+                  "Title": "<detail_content>"
+                },
+                "Common Configuration": {
+                  "Axis Position": "<detail_content>",
+                  "Scale Bounds": "<detail_content>",
+                  "Tick Configuration": "<detail_content>",
+                  "Tick Alignment": "<detail_content>",
+                  "Axis ID": "<detail_content>"
+                },
+                "Creating Multiple Axes": "<detail_content>"
+              }
+            },
+            {
+              "title": "Linear Axis",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 4]",
+              "content": {
+                "Configuration Options": {
+                  "Linear Axis specific options": "<detail_content>"
+                },
+                "Tick Configuration": {
+                  "Linear Axis specific tick options": "<detail_content>"
+                },
+                "Step Size": "<detail_content>",
+                "Grace": "<detail_content>",
+                "Internal data format": "<detail_content>"
+              }
+            },
+            {
+              "title": "Logarithmic Axis",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 5]",
+              "content": {
+                "Configuration Options": "<detail_content>",
+                "Tick Configuration": {
+                  "Logarithmic Axis specific options": "<detail_content>"
+                },
+                "Internal data format": "<detail_content>"
+              }
+            },
+            {
+              "title": "Time Cartesian Axis",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 6]",
+              "content": {
+                "Date Adapters": "<detail_content>",
+                "Data Sets": {
+                  "Input Data": "<detail_content>",
+                  "Date Formats": "<detail_content>"
+                },
+                "Configuration Options": {
+                  "Time Axis specific options": {
+                    "Time Units": "<detail_content>",
+                    "Display Formats": "<detail_content>",
+                    "Ticks Source": "<detail_content>",
+                    "Parser": "<detail_content>"
+                  }
+                },
+                "Min Max Configuration": "<detail_content>",
+                "Changing the scale type from Time scale to Logarithmic/Linear scale.": "<detail_content>",
+                "Internal data format": "<detail_content>"
+              }
+            },
+            {
+              "title": "Time Series Axis",
+              "path": "[\"subpages\", 1, \"subpages\", 5, \"subpages\", 7]",
+              "content": {
+                "Example": "<detail_content>",
+                "More details": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Radial",
+          "description": "Documentation section: radial",
+          "path": "[\"subpages\", 1, \"subpages\", 6]",
+          "subpages": [
+            {
+              "title": "Radial Axes",
+              "path": "[\"subpages\", 1, \"subpages\", 6, \"subpages\", 0]",
+              "content": {
+                "Visual Components": {
+                  "Angle Lines": "<detail_content>",
+                  "Grid Lines": "<detail_content>",
+                  "Point Labels": "<detail_content>",
+                  "Ticks": "<detail_content>"
+                }
+              }
+            },
+            {
+              "title": "Linear Radial Axis",
+              "path": "[\"subpages\", 1, \"subpages\", 6, \"subpages\", 1]",
+              "content": {
+                "Configuration Options": {
+                  "Linear Radial Axis specific options": "<detail_content>",
+                  "Common options for all axes": "<detail_content>"
+                },
+                "Tick Configuration": {
+                  "Linear Radial Axis specific tick options": "<detail_content>"
+                },
+                "Grid Line Configuration": "<detail_content>",
+                "Axis Range Settings": "<detail_content>",
+                "Step Size": "<detail_content>",
+                "Angle Line Options": "<detail_content>",
+                "Point Label Options": "<detail_content>",
+                "Internal data format": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Charts",
+      "description": "Documentation section: charts",
+      "path": "[\"subpages\", 2]",
+      "subpages": [
+        {
+          "title": "Area Chart",
+          "path": "[\"subpages\", 2, \"subpages\", 0]",
+          "content": {
+            "Filling modes": {
+              "Example": "<detail_content>",
+              "Example with multiple colors": "<detail_content>"
+            },
+            "Configuration": {
+              "propagate": {
+                "Example using propagate": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Bar Chart",
+          "path": "[\"subpages\", 2, \"subpages\", 1]",
+          "content": {
+            "Dataset Properties": {
+              "Example dataset configuration": "<detail_content>",
+              "General": "<detail_content>",
+              "Styling": {
+                "borderSkipped": "<detail_content>",
+                "borderWidth": "<detail_content>",
+                "borderRadius": "<detail_content>",
+                "inflateAmount": "<detail_content>"
+              },
+              "Interactions": "<detail_content>",
+              "barPercentage": "<detail_content>",
+              "categoryPercentage": "<detail_content>",
+              "barThickness": "<detail_content>",
+              "maxBarThickness": "<detail_content>"
+            },
+            "Scale Configuration": {
+              "Example scale configuration": "<detail_content>",
+              "Offset Grid Lines": "<detail_content>"
+            },
+            "Default Options": "<detail_content>",
+            "barPercentage vs categoryPercentage": "<detail_content>",
+            "Data Structure": "<detail_content>",
+            "Stacked Bar Chart": "<detail_content>",
+            "Horizontal Bar Chart": {
+              "Horizontal Bar Chart config Options": "<detail_content>"
+            },
+            "Internal data format": "<detail_content>"
+          }
+        },
+        {
+          "title": "Bubble Chart",
+          "path": "[\"subpages\", 2, \"subpages\", 2]",
+          "content": {
+            "Dataset Properties": {
+              "General": "<detail_content>",
+              "Styling": "<detail_content>",
+              "Interactions": "<detail_content>"
+            },
+            "Default Options": "<detail_content>",
+            "Data Structure": "<detail_content>",
+            "Internal data format": "<detail_content>"
+          }
+        },
+        {
+          "title": "Doughnut and Pie Charts",
+          "path": "[\"subpages\", 2, \"subpages\", 3]",
+          "content": {
+            "Dataset Properties": {
+              "General": "<detail_content>",
+              "Styling": "<detail_content>",
+              "Border Alignment": "<detail_content>",
+              "Border Radius": "<detail_content>",
+              "Interactions": "<detail_content>"
+            },
+            "Config Options": "<detail_content>",
+            "Default Options": "<detail_content>",
+            "Data Structure": "<detail_content>"
+          }
+        },
+        {
+          "title": "Line Chart",
+          "path": "[\"subpages\", 2, \"subpages\", 4]",
+          "content": {
+            "Dataset Properties": {
+              "General": "<detail_content>",
+              "Point Styling": "<detail_content>",
+              "Line Styling": "<detail_content>",
+              "Interactions": "<detail_content>",
+              "cubicInterpolationMode": "<detail_content>",
+              "Segment": "<detail_content>",
+              "Stepped": "<detail_content>"
+            },
+            "Default Options": "<detail_content>",
+            "Data Structure": "<detail_content>",
+            "Stacked Area Chart": "<detail_content>",
+            "Vertical Line Chart": {
+              "Config Options": "<detail_content>"
+            },
+            "Internal data format": "<detail_content>"
+          }
+        },
+        {
+          "title": "Mixed Chart Types",
+          "path": "[\"subpages\", 2, \"subpages\", 5]",
+          "content": {
+            "Drawing order": "<detail_content>"
+          }
+        },
+        {
+          "title": "Polar Area Chart",
+          "path": "[\"subpages\", 2, \"subpages\", 6]",
+          "content": {
+            "Dataset Properties": {
+              "General": "<detail_content>",
+              "Styling": "<detail_content>",
+              "Border Alignment": "<detail_content>",
+              "Interactions": "<detail_content>"
+            },
+            "Config Options": "<detail_content>",
+            "Default Options": "<detail_content>",
+            "Data Structure": "<detail_content>"
+          }
+        },
+        {
+          "title": "Radar Chart",
+          "path": "[\"subpages\", 2, \"subpages\", 7]",
+          "content": {
+            "Dataset Properties": {
+              "General": "<detail_content>",
+              "Point Styling": "<detail_content>",
+              "Line Styling": "<detail_content>",
+              "Interactions": "<detail_content>"
+            },
+            "Scale Options": "<detail_content>",
+            "Default Options": "<detail_content>",
+            "Data Structure": "<detail_content>",
+            "Internal data format": "<detail_content>"
+          }
+        },
+        {
+          "title": "Scatter Chart",
+          "path": "[\"subpages\", 2, \"subpages\", 8]",
+          "content": {
+            "Dataset Properties": "<detail_content>",
+            "Data Structure": "<detail_content>",
+            "Internal data format": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Configuration",
+      "description": "Documentation section: configuration",
+      "path": "[\"subpages\", 3]",
+      "subpages": [
+        {
+          "title": "Animations",
+          "path": "[\"subpages\", 3, \"subpages\", 0]",
+          "content": {
+            "Animation configuration": "<detail_content>",
+            "animation": "<detail_content>",
+            "animations": {
+              "Default animations": "<detail_content>"
+            },
+            "transitions": {
+              "Default transitions": "<detail_content>"
+            },
+            "Disabling animation": "<detail_content>",
+            "Easing": "<detail_content>",
+            "Animation Callbacks": "<detail_content>"
+          }
+        },
+        {
+          "title": "Canvas Background",
+          "path": "[\"subpages\", 3, \"subpages\", 1]",
+          "content": {
+            "Canvas background": "<detail_content>"
+          }
+        },
+        {
+          "title": "Data Decimation",
+          "path": "[\"subpages\", 3, \"subpages\", 2]",
+          "content": {
+            "Configuration Options": "<detail_content>",
+            "Decimation Algorithms": {
+              "Largest Triangle Three Bucket (LTTB) Decimation": "<detail_content>",
+              "Min/Max Decimation": "<detail_content>"
+            },
+            "Requirements": "<detail_content>",
+            "Related Samples": "<detail_content>"
+          }
+        },
+        {
+          "title": "Device Pixel Ratio",
+          "path": "[\"subpages\", 3, \"subpages\", 3]",
+          "content": {
+            "Configuration Options": "<detail_content>"
+          }
+        },
+        {
+          "title": "Elements",
+          "path": "[\"subpages\", 3, \"subpages\", 4]",
+          "content": {
+            "Global Configuration": "<detail_content>",
+            "Point Configuration": {
+              "Point Styles": {
+                "Types": "<detail_content>",
+                "Info": "<detail_content>"
+              }
+            },
+            "Line Configuration": "<detail_content>",
+            "Bar Configuration": "<detail_content>",
+            "Arc Configuration": "<detail_content>"
+          }
+        },
+        {
+          "title": "Configuration",
+          "path": "[\"subpages\", 3, \"subpages\", 5]",
+          "content": {
+            "Configuration object structure": {
+              "type": "<detail_content>",
+              "data": "<detail_content>",
+              "options": "<detail_content>",
+              "plugins": "<detail_content>"
+            },
+            "Global Configuration": "<detail_content>",
+            "Dataset Configuration": "<detail_content>"
+          }
+        },
+        {
+          "title": "Interactions",
+          "path": "[\"subpages\", 3, \"subpages\", 6]",
+          "content": {
+            "Events": {
+              "Event Option": "<detail_content>",
+              "Converting Events to Data Values": "<detail_content>"
+            },
+            "Modes": {
+              "point": "<detail_content>",
+              "nearest": "<detail_content>",
+              "index": "<detail_content>",
+              "dataset": "<detail_content>",
+              "x": "<detail_content>",
+              "y": "<detail_content>"
+            },
+            "Custom Interaction Modes": "<detail_content>"
+          }
+        },
+        {
+          "title": "Layout",
+          "path": "[\"subpages\", 3, \"subpages\", 7]",
+          "content": {
+            "Layout": "<detail_content>"
+          }
+        },
+        {
+          "title": "Legend",
+          "path": "[\"subpages\", 3, \"subpages\", 8]",
+          "content": {
+            "Configuration options": "<detail_content>",
+            "Position": "<detail_content>",
+            "Align": "<detail_content>",
+            "Legend Label Configuration": "<detail_content>",
+            "Legend Title Configuration": "<detail_content>",
+            "Legend Item Interface": "<detail_content>",
+            "Example": "<detail_content>",
+            "Custom On Click Actions": "<detail_content>"
+          }
+        },
+        {
+          "title": "Locale",
+          "path": "[\"subpages\", 3, \"subpages\", 9]",
+          "content": {
+            "Configuration Options": "<detail_content>"
+          }
+        },
+        {
+          "title": "Responsive Charts",
+          "path": "[\"subpages\", 3, \"subpages\", 10]",
+          "content": {
+            "Configuration Options": "<detail_content>",
+            "Important Note": "<detail_content>",
+            "Printing Resizable Charts": "<detail_content>"
+          }
+        },
+        {
+          "title": "Subtitle",
+          "path": "[\"subpages\", 3, \"subpages\", 11]",
+          "content": {
+            "Subtitle Configuration": "<detail_content>",
+            "Example Usage": "<detail_content>"
+          }
+        },
+        {
+          "title": "Title",
+          "path": "[\"subpages\", 3, \"subpages\", 12]",
+          "content": {
+            "Title Configuration": {
+              "Position": "<detail_content>"
+            },
+            "Align": "<detail_content>",
+            "Example Usage": "<detail_content>"
+          }
+        },
+        {
+          "title": "Tooltip",
+          "path": "[\"subpages\", 3, \"subpages\", 13]",
+          "content": {
+            "Tooltip Configuration": {
+              "Position Modes": "<detail_content>",
+              "Tooltip Alignment": "<detail_content>",
+              "Text Alignment": "<detail_content>",
+              "Sort Callback": "<detail_content>",
+              "Filter Callback": "<detail_content>"
+            },
+            "Tooltip Callbacks": {
+              "Label Callback": "<detail_content>",
+              "Label Color Callback": "<detail_content>",
+              "Label Point Style Callback": "<detail_content>",
+              "Tooltip Item Context": "<detail_content>"
+            },
+            "External (Custom) Tooltips": "<detail_content>",
+            "Tooltip Model": "<detail_content>",
+            "Custom Position Modes": "<detail_content>",
+            "Default font overrides": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Developers",
+      "description": "Documentation section: developers",
+      "path": "[\"subpages\", 4]",
+      "subpages": [
+        {
+          "title": "API",
+          "path": "[\"subpages\", 4, \"subpages\", 0]",
+          "content": {
+            ".destroy()": "<detail_content>",
+            ".update(mode?)": "<detail_content>",
+            ".reset()": "<detail_content>",
+            ".render()": "<detail_content>",
+            ".stop()": "<detail_content>",
+            ".resize(width?, height?)": "<detail_content>",
+            ".clear()": "<detail_content>",
+            ".toBase64Image(type?, quality?)": "<detail_content>",
+            ".getElementsAtEventForMode(e, mode, options, useFinalPosition)": "<detail_content>",
+            ".getSortedVisibleDatasetMetas()": "<detail_content>",
+            ".getDatasetMeta(index)": "<detail_content>",
+            "getVisibleDatasetCount": "<detail_content>",
+            "isDatasetVisible(datasetIndex)": "<detail_content>",
+            "setDatasetVisibility(datasetIndex, visibility)": "<detail_content>",
+            "toggleDataVisibility(index)": "<detail_content>",
+            "getDataVisibility(index)": "<detail_content>",
+            "hide(datasetIndex, dataIndex?)": "<detail_content>",
+            "show(datasetIndex, dataIndex?)": "<detail_content>",
+            "setActiveElements(activeElements)": "<detail_content>",
+            "isPluginEnabled(pluginId)": "<detail_content>",
+            "Static: getChart(key)": "<detail_content>",
+            "Static: register(chartComponentLike)": "<detail_content>",
+            "Static: unregister(chartComponentLike)": "<detail_content>"
+          }
+        },
+        {
+          "title": "New Axes",
+          "path": "[\"subpages\", 4, \"subpages\", 1]",
+          "content": {
+            "Scale Properties": "<detail_content>",
+            "Scale Interface": "<detail_content>"
+          }
+        },
+        {
+          "title": "New Charts",
+          "path": "[\"subpages\", 4, \"subpages\", 2]",
+          "content": {
+            "Dataset Controller Interface": "<detail_content>",
+            "Extending Existing Chart Types": "<detail_content>",
+            "TypeScript Typings": "<detail_content>"
+          }
+        },
+        {
+          "title": "Contributing",
+          "path": "[\"subpages\", 4, \"subpages\", 3]",
+          "content": {
+            "Joining the project": "<detail_content>",
+            "Building and Testing": {
+              "Documentation": "<detail_content>",
+              "Image-Based Tests": "<detail_content>"
+            },
+            "Bugs and Issues": "<detail_content>"
+          }
+        },
+        {
+          "title": "Developers",
+          "path": "[\"subpages\", 4, \"subpages\", 4]",
+          "content": {
+            "Latest resources": "<detail_content>",
+            "Development releases": "<detail_content>",
+            "Browser support": "<detail_content>",
+            "Previous versions": "<detail_content>"
+          }
+        },
+        {
+          "title": "Plugins",
+          "path": "[\"subpages\", 4, \"subpages\", 5]",
+          "content": {
+            "Using plugins": "<detail_content>",
+            "Global plugins": "<detail_content>",
+            "Configuration": {
+              "Plugin ID": "<detail_content>",
+              "Plugin options": {
+                "Disable plugins": "<detail_content>",
+                "Plugin defaults": "<detail_content>"
+              }
+            },
+            "Plugin Core API": {
+              "Chart Initialization": "<detail_content>",
+              "Chart Update": "<detail_content>",
+              "Scale Update": "<detail_content>",
+              "Rendering": "<detail_content>",
+              "Event Handling": "<detail_content>",
+              "Chart destroy": "<detail_content>"
+            },
+            "TypeScript Typings": "<detail_content>"
+          }
+        },
+        {
+          "title": "Publishing an extension",
+          "path": "[\"subpages\", 4, \"subpages\", 6]",
+          "content": {
+            "Awesome": "<detail_content>",
+            "ESM": {
+              "Rollup": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Updating Charts",
+          "path": "[\"subpages\", 4, \"subpages\", 7]",
+          "content": {
+            "Adding or Removing Data": "<detail_content>",
+            "Updating Options": "<detail_content>",
+            "Preventing Animations": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "General",
+      "description": "Documentation section: general",
+      "path": "[\"subpages\", 5]",
+      "subpages": [
+        {
+          "title": "Accessibility",
+          "path": "[\"subpages\", 5, \"subpages\", 0]",
+          "content": {
+            "Examples": "<detail_content>"
+          }
+        },
+        {
+          "title": "Colors",
+          "path": "[\"subpages\", 5, \"subpages\", 1]",
+          "content": {
+            "Default colors": {
+              "Per-dataset color settings": "<detail_content>",
+              "Default color palette": "<detail_content>",
+              "Dynamic datasets at runtime": "<detail_content>",
+              "Advanced color palettes": "<detail_content>"
+            },
+            "Color formats": "<detail_content>",
+            "Patterns and Gradients": "<detail_content>"
+          }
+        },
+        {
+          "title": "Data structures",
+          "path": "[\"subpages\", 5, \"subpages\", 2]",
+          "content": {
+            "Primitive[]": "<detail_content>",
+            "Array[]": "<detail_content>",
+            "Object[]": "<detail_content>",
+            "Object[] using custom properties": "<detail_content>",
+            "Object": "<detail_content>",
+            "Dataset Configuration": {
+              "parsing": "<detail_content>"
+            },
+            "TypeScript": "<detail_content>"
+          }
+        },
+        {
+          "title": "Fonts",
+          "path": "[\"subpages\", 5, \"subpages\", 3]",
+          "content": {
+            "Missing Fonts": "<detail_content>",
+            "Loading Fonts": "<detail_content>"
+          }
+        },
+        {
+          "title": "Options",
+          "path": "[\"subpages\", 5, \"subpages\", 4]",
+          "content": {
+            "Option resolution": {
+              "Chart level options": "<detail_content>",
+              "Dataset level options": "<detail_content>",
+              "Dataset animation options": "<detail_content>",
+              "Dataset element level options": "<detail_content>",
+              "Scale options": "<detail_content>",
+              "Plugin options": "<detail_content>"
+            },
+            "Scriptable Options": "<detail_content>",
+            "Indexable Options": "<detail_content>",
+            "Option Context": {
+              "chart": "<detail_content>",
+              "dataset": "<detail_content>",
+              "data": "<detail_content>",
+              "scale": "<detail_content>",
+              "tick": "<detail_content>",
+              "pointLabel": "<detail_content>",
+              "tooltip": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Padding",
+          "path": "[\"subpages\", 5, \"subpages\", 5]",
+          "content": {
+            "Number": "<detail_content>",
+            "{top, left, bottom, right} object": "<detail_content>",
+            "{x, y} object": "<detail_content>"
+          }
+        },
+        {
+          "title": "Performance",
+          "path": "[\"subpages\", 5, \"subpages\", 6]",
+          "content": {
+            "Data structure and format": {
+              "Parsing": "<detail_content>",
+              "Data normalization": "<detail_content>",
+              "Decimation": "<detail_content>"
+            },
+            "Tick Calculation": {
+              "Rotation": "<detail_content>",
+              "Sampling": "<detail_content>"
+            },
+            "Disable Animations": "<detail_content>",
+            "Specify `min` and `max` for scales": "<detail_content>",
+            "Parallel rendering with web workers": "<detail_content>",
+            "Line Charts": {
+              "Leave Bézier curves disabled": "<detail_content>",
+              "Automatic data decimation during draw": "<detail_content>",
+              "Enable spanGaps": "<detail_content>",
+              "Disable Line Drawing": "<detail_content>",
+              "Disable Point Drawing": "<detail_content>"
+            },
+            "When transpiling with Babel, consider using `loose` mode": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "description": "Documentation section: getting-started",
+      "path": "[\"subpages\", 6]",
+      "subpages": [
+        {
+          "title": "Getting Started",
+          "path": "[\"subpages\", 6, \"subpages\", 0]",
+          "content": {
+            "Create a Chart": "<detail_content>"
+          }
+        },
+        {
+          "title": "Installation",
+          "path": "[\"subpages\", 6, \"subpages\", 1]",
+          "content": {
+            "npm": "<detail_content>",
+            "CDN": {
+              "CDNJS": "<detail_content>",
+              "jsDelivr": "<detail_content>"
+            },
+            "GitHub": "<detail_content>"
+          }
+        },
+        {
+          "title": "Integration",
+          "path": "[\"subpages\", 6, \"subpages\", 2]",
+          "content": {
+            "Script Tag": "<detail_content>",
+            "Bundlers (Webpack, Rollup, etc.)": {
+              "Quick start": "<detail_content>",
+              "Bundle optimization": "<detail_content>",
+              "Helper functions": "<detail_content>"
+            },
+            "CommonJS": "<detail_content>",
+            "RequireJS": "<detail_content>"
+          }
+        },
+        {
+          "title": "Step-by-step guide",
+          "path": "[\"subpages\", 6, \"subpages\", 3]",
+          "content": {
+            "Build a new application with Chart.js": {
+              "Simple customizations": "<detail_content>",
+              "Real-world data": "<detail_content>",
+              "Further customizations": "<detail_content>",
+              "Multiple datasets": "<detail_content>",
+              "Plugins": "<detail_content>",
+              "Tree-shaking": "<detail_content>"
+            },
+            "Next steps": "<detail_content>"
+          }
+        },
+        {
+          "title": "Using From Node Js",
+          "path": "[\"subpages\", 6, \"subpages\", 4]",
+          "content": {
+            "Using from Node.js": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Migration",
+      "description": "Documentation section: migration",
+      "path": "[\"subpages\", 7]",
+      "subpages": [
+        {
+          "title": "3.x Migration Guide",
+          "path": "[\"subpages\", 7, \"subpages\", 0]",
+          "content": {
+            "End user migration": {
+              "Setup and installation": "<detail_content>",
+              "Chart types": "<detail_content>",
+              "Options": {
+                "Generic changes": "<detail_content>",
+                "Specific changes": "<detail_content>",
+                "Defaults": "<detail_content>",
+                "Scales": "<detail_content>",
+                "Animations": "<detail_content>",
+                "Customizability": "<detail_content>",
+                "Interactions": "<detail_content>",
+                "Ticks": "<detail_content>",
+                "Tooltip": "<detail_content>"
+              }
+            },
+            "Developer migration": {
+              "Removed": {
+                "Removed from Chart": "<detail_content>",
+                "Removed from Dataset Controllers": "<detail_content>",
+                "Removed from Elements": "<detail_content>",
+                "Removed from Helpers": "<detail_content>",
+                "Removed from Layout": "<detail_content>",
+                "Removed from Scales": "<detail_content>",
+                "Removed from Plugins (Legend, Title, and Tooltip)": "<detail_content>",
+                "Removal of Public APIs": "<detail_content>",
+                "Removal of private APIs": "<detail_content>"
+              },
+              "Renamed": {
+                "Renamed private APIs": "<detail_content>"
+              },
+              "Changed": {
+                "Changed in Scales": {
+                  "Changed in Ticks": "<detail_content>",
+                  "Changed in Time Scale": "<detail_content>"
+                },
+                "Changed in Controllers": {
+                  "Core Controller": "<detail_content>",
+                  "Dataset Controllers": "<detail_content>"
+                },
+                "Changed in Interactions": "<detail_content>",
+                "Changed in Layout": "<detail_content>",
+                "Changed in Helpers": {
+                  "Canvas Helper": "<detail_content>"
+                },
+                "Changed in Platform": "<detail_content>",
+                "Changed in IPlugin interface": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "4.x Migration Guide",
+          "path": "[\"subpages\", 7, \"subpages\", 1]",
+          "content": {
+            "End user migration": {
+              "Charts": "<detail_content>",
+              "Options": {
+                "Specific changes": "<detail_content>",
+                "Type changes": "<detail_content>"
+              },
+              "General": "<detail_content>"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Samples",
+      "description": "Documentation section: samples",
+      "path": "[\"subpages\", 8]",
+      "subpages": [
+        {
+          "title": "Chart.js Samples",
+          "path": "[\"subpages\", 8, \"subpages\", 0]",
+          "content": {
+            "Out of the box working samples": "<detail_content>",
+            "Autogenerated data": "<detail_content>",
+            "Actions block": "<detail_content>"
+          }
+        },
+        {
+          "title": "Utils",
+          "path": "[\"subpages\", 8, \"subpages\", 1]",
+          "content": {
+            "Disclaimer": "<detail_content>",
+            "Functions": "<detail_content>",
+            "Components": "<detail_content>"
+          }
+        },
+        {
+          "title": "Advanced",
+          "description": "Documentation section: advanced",
+          "path": "[\"subpages\", 8, \"subpages\", 2]",
+          "subpages": [
+            {
+              "title": "Data Decimation",
+              "path": "[\"subpages\", 8, \"subpages\", 2, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Derived Axis Type",
+              "path": "[\"subpages\", 8, \"subpages\", 2, \"subpages\", 1]",
+              "content": {
+                "Log2 axis implementation": "<detail_content>",
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Derived Chart Type",
+              "path": "[\"subpages\", 8, \"subpages\", 2, \"subpages\", 2]",
+              "content": {
+                "DerivedBubble Implementation": "<detail_content>",
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Linear Gradient",
+              "path": "[\"subpages\", 8, \"subpages\", 2, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Programmatic Event Triggers",
+              "path": "[\"subpages\", 8, \"subpages\", 2, \"subpages\", 4]",
+              "content": {
+                "API": "<detail_content>",
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Animation Progress Bar",
+              "path": "[\"subpages\", 8, \"subpages\", 2, \"subpages\", 5]",
+              "content": {
+                "Initial animation": "<detail_content>",
+                "Other animations": "<detail_content>",
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Radial Gradient",
+              "path": "[\"subpages\", 8, \"subpages\", 2, \"subpages\", 6]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Animations",
+          "description": "Documentation section: animations",
+          "path": "[\"subpages\", 8, \"subpages\", 3]",
+          "subpages": [
+            {
+              "title": "Delay",
+              "path": "[\"subpages\", 8, \"subpages\", 3, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Drop",
+              "path": "[\"subpages\", 8, \"subpages\", 3, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Loop",
+              "path": "[\"subpages\", 8, \"subpages\", 3, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Progressive Line With Easing",
+              "path": "[\"subpages\", 8, \"subpages\", 3, \"subpages\", 3]",
+              "content": {
+                "Api ": "<detail_content>",
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Progressive Line",
+              "path": "[\"subpages\", 8, \"subpages\", 3, \"subpages\", 4]",
+              "content": {
+                "Api ": "<detail_content>",
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Area",
+          "description": "Documentation section: area",
+          "path": "[\"subpages\", 8, \"subpages\", 4]",
+          "subpages": [
+            {
+              "title": "Line Chart Boundaries",
+              "path": "[\"subpages\", 8, \"subpages\", 4, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Line Chart Datasets",
+              "path": "[\"subpages\", 8, \"subpages\", 4, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Line Chart drawTime",
+              "path": "[\"subpages\", 8, \"subpages\", 4, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Line Chart Stacked",
+              "path": "[\"subpages\", 8, \"subpages\", 4, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Radar Chart Stacked",
+              "path": "[\"subpages\", 8, \"subpages\", 4, \"subpages\", 4]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Bar",
+          "description": "Documentation section: bar",
+          "path": "[\"subpages\", 8, \"subpages\", 5]",
+          "subpages": [
+            {
+              "title": "Bar Chart Border Radius",
+              "path": "[\"subpages\", 8, \"subpages\", 5, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Floating Bars",
+              "path": "[\"subpages\", 8, \"subpages\", 5, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Horizontal Bar Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 5, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Stacked Bar Chart with Groups",
+              "path": "[\"subpages\", 8, \"subpages\", 5, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Stacked Bar Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 5, \"subpages\", 4]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Vertical Bar Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 5, \"subpages\", 5]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Legend",
+          "description": "Documentation section: legend",
+          "path": "[\"subpages\", 8, \"subpages\", 6]",
+          "subpages": [
+            {
+              "title": "Events",
+              "path": "[\"subpages\", 8, \"subpages\", 6, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "HTML Legend",
+              "path": "[\"subpages\", 8, \"subpages\", 6, \"subpages\", 1]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "Point Style",
+              "path": "[\"subpages\", 8, \"subpages\", 6, \"subpages\", 2]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "Position",
+              "path": "[\"subpages\", 8, \"subpages\", 6, \"subpages\", 3]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "Alignment and Title Position",
+              "path": "[\"subpages\", 8, \"subpages\", 6, \"subpages\", 4]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Line",
+          "description": "Documentation section: line",
+          "path": "[\"subpages\", 8, \"subpages\", 7]",
+          "subpages": [
+            {
+              "title": "Interpolation Modes",
+              "path": "[\"subpages\", 8, \"subpages\", 7, \"subpages\", 0]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "Line Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 7, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Multi Axis Line Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 7, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Point Styling",
+              "path": "[\"subpages\", 8, \"subpages\", 7, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Line Segment Styling",
+              "path": "[\"subpages\", 8, \"subpages\", 7, \"subpages\", 4]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Stepped Line Charts",
+              "path": "[\"subpages\", 8, \"subpages\", 7, \"subpages\", 5]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Line Styling",
+              "path": "[\"subpages\", 8, \"subpages\", 7, \"subpages\", 6]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Other Charts",
+          "description": "Documentation section: other-charts",
+          "path": "[\"subpages\", 8, \"subpages\", 8]",
+          "subpages": [
+            {
+              "title": "Bubble",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Combo bar/line",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Doughnut",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Multi Series Pie",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Pie",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 4]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Polar area centered point labels",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 5]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Polar area",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 6]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Radar skip points",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 7]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Radar",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 8]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Scatter - Multi axis",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 9]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Scatter",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 10]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Stacked bar/line",
+              "path": "[\"subpages\", 8, \"subpages\", 8, \"subpages\", 11]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Plugins",
+          "description": "Documentation section: plugins",
+          "path": "[\"subpages\", 8, \"subpages\", 9]",
+          "subpages": [
+            {
+              "title": "Chart Area Border",
+              "path": "[\"subpages\", 8, \"subpages\", 9, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Doughnut Empty State",
+              "path": "[\"subpages\", 8, \"subpages\", 9, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Quadrants",
+              "path": "[\"subpages\", 8, \"subpages\", 9, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Scale Options",
+          "description": "Documentation section: scale-options",
+          "path": "[\"subpages\", 8, \"subpages\", 10]",
+          "subpages": [
+            {
+              "title": "Center Positioning",
+              "path": "[\"subpages\", 8, \"subpages\", 10, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Grid Configuration",
+              "path": "[\"subpages\", 8, \"subpages\", 10, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Tick Configuration",
+              "path": "[\"subpages\", 8, \"subpages\", 10, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Title Configuration",
+              "path": "[\"subpages\", 8, \"subpages\", 10, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Scales",
+          "description": "Documentation section: scales",
+          "path": "[\"subpages\", 8, \"subpages\", 11]",
+          "subpages": [
+            {
+              "title": "Linear Scale - Suggested Min-Max",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Linear Scale - Min-Max",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Linear Scale - Step Size",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Log Scale",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Stacked Linear / Category",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 4]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Time Scale - Combo Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 5]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Time Scale",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 6]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Time Scale - Max Span",
+              "path": "[\"subpages\", 8, \"subpages\", 11, \"subpages\", 7]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Scriptable",
+          "description": "Documentation section: scriptable",
+          "path": "[\"subpages\", 8, \"subpages\", 12]",
+          "subpages": [
+            {
+              "title": "Bar Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 12, \"subpages\", 0]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Bubble Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 12, \"subpages\", 1]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Line Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 12, \"subpages\", 2]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Pie Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 12, \"subpages\", 3]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Polar Area Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 12, \"subpages\", 4]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            },
+            {
+              "title": "Radar Chart",
+              "path": "[\"subpages\", 8, \"subpages\", 12, \"subpages\", 5]",
+              "content": {
+                "Docs": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Subtitle",
+          "description": "Documentation section: subtitle",
+          "path": "[\"subpages\", 8, \"subpages\", 13]",
+          "subpages": [
+            {
+              "title": "Basic",
+              "path": "[\"subpages\", 8, \"subpages\", 13, \"subpages\", 0]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Title",
+          "description": "Documentation section: title",
+          "path": "[\"subpages\", 8, \"subpages\", 14]",
+          "subpages": [
+            {
+              "title": "Alignment",
+              "path": "[\"subpages\", 8, \"subpages\", 14, \"subpages\", 0]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Tooltip",
+          "description": "Documentation section: tooltip",
+          "path": "[\"subpages\", 8, \"subpages\", 15]",
+          "subpages": [
+            {
+              "title": "Custom Tooltip Content",
+              "path": "[\"subpages\", 8, \"subpages\", 15, \"subpages\", 0]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "External HTML Tooltip",
+              "path": "[\"subpages\", 8, \"subpages\", 15, \"subpages\", 1]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "Interaction Modes",
+              "path": "[\"subpages\", 8, \"subpages\", 15, \"subpages\", 2]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "Point Style",
+              "path": "[\"subpages\", 8, \"subpages\", 15, \"subpages\", 3]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            },
+            {
+              "title": "Position",
+              "path": "[\"subpages\", 8, \"subpages\", 15, \"subpages\", 4]",
+              "content": {
+                "Docs ": "<detail_content>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

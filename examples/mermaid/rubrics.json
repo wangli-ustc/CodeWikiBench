@@ -1,0 +1,470 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Rendering Pipeline: The central mechanism that transforms Mermaid text into visual SVG diagrams",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Initialization and Execution Flow: The process of setting up the environment and rendering diagrams",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Global Initialization: Establishes site-wide default configuration for all subsequent renders",
+              "weight": 3
+            },
+            {
+              "requirements": "Automated Rendering: Scans DOM for elements matching selectors, extracts Mermaid text, and orchestrates full parse-and-render pipeline",
+              "weight": 3
+            },
+            {
+              "requirements": "Manual Rendering API: Provides programmatic interface to render single Mermaid text strings into SVG with direct result return",
+              "weight": 2
+            },
+            {
+              "requirements": "Parse-only Mode: Provides syntax validation without rendering, returning boolean success status or detailed errors",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Diagram Detection and Parsing Pipeline: Multi-stage process converting raw text into structured, renderable format",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Diagram Type Detection: Identifies diagram type from text using registered detector functions, supporting 20+ diagram types",
+              "weight": 3
+            },
+            {
+              "requirements": "Syntax Parsing and Grammar Validation: Converts text to Abstract Syntax Tree using diagram-specific parsers with comprehensive error handling",
+              "weight": 3
+            },
+            {
+              "requirements": "Directive and Frontmatter Processing: Extracts and merges configuration overrides embedded within diagram text",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Layout Engine: Calculates positions, dimensions, and spatial relationships of diagram elements",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Pluggable Layout Algorithms: Supports multiple layout engines selectable via configuration",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "ELK (Eclipse Layout Kernel) integration for automatic layout",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Dagre layout algorithm support",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Custom layout loaders for extensible positioning",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Layout Processing: Takes parsed AST as input and outputs annotated graph with coordinates for nodes and edge paths",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "SVG Rendering Subsystem: Constructs final SVG output from laid-out data structures",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Shape and Node Rendering: Modular system for drawing SVG elements based on node types at calculated positions",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "30+ flowchart shapes including custom geometric forms with shape helper functions",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Polygon and path creation utilities for complex shapes",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Node bounds calculation and positioning",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Edge and Path Rendering: Draws SVG paths between nodes with styling for thickness, patterns, and arrowheads",
+              "weight": 2
+            },
+            {
+              "requirements": "Text and Label Rendering: Manages placement and styling of text with Markdown formatting and mathematical notation support",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "MathML and legacy mathematical notation rendering",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Interactivity Binding: Attaches event handlers to SVG elements during rendering for user interaction",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration Management System: Hierarchical system for controlling diagram appearance and behavior",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Configuration Hierarchy and Precedence: Merges settings from multiple sources in specific order",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "System Defaults: Baseline hardcoded configuration in the library",
+              "weight": 2
+            },
+            {
+              "requirements": "Site-Level Configuration: Global configuration applied across entire site via initialize function",
+              "weight": 3
+            },
+            {
+              "requirements": "Diagram-Level Overrides: Configuration embedded within diagram code with highest precedence",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Frontmatter: YAML-like blocks at diagram beginning for specific options",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Directives: Special comments that override configuration at any point within diagram definition",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Configuration API: Programmatic interface for configuration state management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Configuration Access Functions: Get current configuration, set new values, and reset to defaults",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Theming Engine: Specialized subsystem for visual styling management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Built-in Theme System: Pre-defined themes (default, dark, forest, neutral, base) activated via single configuration option",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom Theming via Variables: Fine-grained customization of colors, fonts, and style properties through themeVariables",
+              "weight": 3
+            },
+            {
+              "requirements": "Diagram-Specific Theme Variables: Dedicated variable scopes for styling individual diagram types",
+              "weight": 2
+            },
+            {
+              "requirements": "CSS Class Definition and Application System: Dynamic CSS generation and application",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Extensibility and Plugin Architecture: Mechanisms for adding new functionality to the core system",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Diagram Type Registration: Primary extension point for adding new diagram types",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "External Diagram Registration: Function accepting array of diagram definitions with dynamic loading support",
+              "weight": 3
+            },
+            {
+              "requirements": "Diagram Definition Requirements: Each definition must provide unique ID, detector function, and loader function",
+              "weight": 3
+            },
+            {
+              "requirements": "Lazy Loading Support: Dynamic import capabilities for external diagrams",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Custom Element Registration: Addition of new visual components within existing diagram types",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Custom SVG Shapes: Shape registry for defining new flowchart node shapes with rendering functions",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Shape Function Creation and Registration API",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Utility functions for shape development",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Icon and Asset Management: Registration of external icon packs and custom loaders",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "FontAwesome icon pack registration",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Custom icon loader support",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Image shape integration for flowcharts",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Custom Layout Algorithm Registration: Pluggable layout engine allowing new algorithms via registerLayoutLoaders",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "requirements": "Security and Sanitization Framework: Cross-cutting concern preventing XSS attacks in diagram rendering",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Security Levels: Configurable securityLevel setting dictating trust level for diagram content",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Strict Mode: Disallows all HTML in labels, rendering as plain text",
+              "weight": 3
+            },
+            {
+              "requirements": "Loose Mode: Allows HTML in labels without sanitization for trusted content",
+              "weight": 2
+            },
+            {
+              "requirements": "Antiscript Mode: Allows HTML but uses sanitizer to remove malicious code",
+              "weight": 3
+            },
+            {
+              "requirements": "Sandbox Mode: Additional security isolation level",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Input Sanitization via DOMPurify: Integration of DOMPurify library for content sanitization",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "HTML Label Sanitization: Safe rendering of HTML content in diagram labels",
+              "weight": 2
+            },
+            {
+              "requirements": "Customizable Sanitizer Configuration: DOMPurify behavior customization via dompurifyConfig object",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Input Validation and Error Handling: Parse error detection and syntax validation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Parse Error Detection and Reporting: Comprehensive error messaging for invalid syntax",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Diagram-Specific Rendering Engines: Library of supported diagram types with dedicated logic",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Common Diagram Implementation Pattern: Consistent internal structure for all diagram types",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Unique Text-Based Syntax: Human-readable syntax definition for each diagram type",
+              "weight": 3
+            },
+            {
+              "requirements": "Dedicated Parser Implementation: Converts syntax into structured format using parsing tools",
+              "weight": 3
+            },
+            {
+              "requirements": "Dedicated Renderer Implementation: Translates parsed structure into specific SVG elements",
+              "weight": 3
+            },
+            {
+              "requirements": "Diagram-Specific Configuration Options: Exposed configuration within main MermaidConfig interface",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Flowchart Rendering Engine: Comprehensive support for flowchart diagrams",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Node Shape Rendering: Support for 30+ shape types with custom geometric forms",
+              "weight": 2
+            },
+            {
+              "requirements": "Edge Rendering: Multiple arrow types and styles with path generation",
+              "weight": 2
+            },
+            {
+              "requirements": "Subgraph and Clustering Support: Hierarchical grouping of diagram elements",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Sequence Diagram Engine: Actor-based interaction modeling",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Actor and Participant Management: Lifecycle and state management for diagram participants",
+              "weight": 2
+            },
+            {
+              "requirements": "Message Flow Rendering: Activation boxes and interaction visualization",
+              "weight": 2
+            },
+            {
+              "requirements": "Control Flow Structures: Loops, alternatives, and parallel execution support",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Specialized Diagram Engines: Support for domain-specific diagram types",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Gantt Chart Engine: Timeline and task management visualization",
+              "weight": 1
+            },
+            {
+              "requirements": "Class Diagram Engine: UML relationship and structure support",
+              "weight": 1
+            },
+            {
+              "requirements": "Git Graph Engine: Branch and merge visualization",
+              "weight": 1
+            },
+            {
+              "requirements": "Entity Relationship Engine: Database modeling with cardinality support",
+              "weight": 1
+            },
+            {
+              "requirements": "State Diagram Engine: Transition and concurrency support",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Accessibility and Standards Compliance: Support for accessibility standards and mathematical notation",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "ARIA Support System: Accessibility features for diagram interpretation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Role Description Assignment: Automatic assignment for different diagram types",
+              "weight": 2
+            },
+            {
+              "requirements": "Accessible Title and Description Support: Screen reader compatible metadata",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Integration and Deployment Infrastructure: Multiple deployment methods and development workflow",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Multiple Deployment Methods: Various distribution channels for different use cases",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "CDN Distribution: Web integration via content delivery network",
+              "weight": 2
+            },
+            {
+              "requirements": "NPM Package: Dependency management for JavaScript projects",
+              "weight": 2
+            },
+            {
+              "requirements": "CLI Tool: Command-line rendering capabilities",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "API Surface for Programmatic Usage: Interface for external integration",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Core API Functions: Initialize, render, and configuration functions for web integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Event Binding and Interaction Support: User interaction handling capabilities",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Development and Contribution Workflow: Infrastructure for project maintenance",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Local Development Setup: Build system and development environment",
+              "weight": 1
+            },
+            {
+              "requirements": "Testing Framework: Unit and end-to-end testing infrastructure",
+              "weight": 1
+            },
+            {
+              "requirements": "Documentation Generation and Maintenance: Automated documentation system",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1416 @@
+{
+  "title": "logstash",
+  "description": "Documentation for logstash",
+  "subpages": [
+    {
+      "title": "Extend",
+      "description": "Documentation section: extend",
+      "path": "[\"subpages\", 0]",
+      "subpages": [
+        {
+          "title": "How to write a Logstash codec plugin [codec-new-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 0]",
+          "content": {
+            "Get started [_get_started_2]": {
+              "Create a GitHub repo for your new plugin [_create_a_github_repo_for_your_new_plugin_2]": "<detail_content>",
+              "Use the plugin generator tool [_use_the_plugin_generator_tool_2]": "<detail_content>",
+              "Copy the codec code [_copy_the_codec_code]": "<detail_content>",
+              "See what your plugin looks like [_see_what_your_plugin_looks_like_2]": "<detail_content>"
+            },
+            "Coding codec plugins [_coding_codec_plugins]": {
+              "`require` Statements [_require_statements_2]": "<detail_content>"
+            },
+            "Plugin Body [_plugin_body_2]": {
+              "`class` Declaration [_class_declaration_2]": "<detail_content>",
+              "`config_name` [_config_name_2]": "<detail_content>"
+            },
+            "Configuration Parameters [_configuration_parameters_2]": "<detail_content>",
+            "Plugin Methods [_plugin_methods_2]": {
+              "`register` Method [_register_method_2]": "<detail_content>",
+              "`decode` Method [_decode_method]": "<detail_content>",
+              "`encode` Method [_encode_method]": "<detail_content>"
+            },
+            "Building the Plugin [_building_the_plugin_2]": {
+              "External dependencies [_external_dependencies_2]": "<detail_content>",
+              "Deprecated features [_deprecated_features_2]": "<detail_content>",
+              "Add a Gemfile [_add_a_gemfile_2]": "<detail_content>"
+            },
+            "Add a `gemspec` file [_add_a_gemspec_file_2]": {
+              "Runtime and Development Dependencies [_runtime_and_development_dependencies_2]": "<detail_content>",
+              "Jar dependencies [_jar_dependencies_2]": "<detail_content>"
+            },
+            "Document your plugin [_document_your_plugin_2]": "<detail_content>",
+            "Add Tests [_add_tests_2]": "<detail_content>",
+            "Clone and test! [_clone_and_test_2]": "<detail_content>",
+            "Building and Testing [_building_and_testing_2]": {
+              "Build [_build_2]": "<detail_content>",
+              "Test installation [_test_installation_2]": "<detail_content>"
+            },
+            "Submitting your plugin to [RubyGems.org](http://rubygems.org) and [logstash-plugins](https://github.com/logstash-plugins) [_submitting_your_plugin_to_rubygems_orghttprubygems_org_and_logstash_pluginshttpsgithub_comlogstash_plugins_2]": {
+              "Licensing [_licensing_2]": "<detail_content>",
+              "Publishing to [RubyGems.org](http://rubygems.org) [_publishing_to_rubygems_orghttprubygems_org_2]": "<detail_content>"
+            },
+            "Contributing your source code to [logstash-plugins](https://github.com/logstash-plugins) [_contributing_your_source_code_to_logstash_pluginshttpsgithub_comlogstash_plugins_2]": {
+              "Benefits [_benefits_2]": "<detail_content>",
+              "Acceptance Guidelines [_acceptance_guidelines_2]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Logstash Plugins Community Maintainer Guide [community-maintainer]",
+          "path": "[\"subpages\", 0, \"subpages\", 1]",
+          "content": {
+            "Contribution Guidelines [_contribution_guidelines]": "<detail_content>",
+            "Document Goals [_document_goals]": "<detail_content>",
+            "Development Workflow [_development_workflow]": {
+              "Terminology [_terminology_2]": "<detail_content>",
+              "Patch Requirements [_patch_requirements]": "<detail_content>",
+              "Development Process [_development_process]": "<detail_content>",
+              "Branch Management [_branch_management]": "<detail_content>",
+              "Changelog Management [_changelog_management]": {
+                "Detailed format of https://www.elastic.co/guide/en/logstash/current/CHANGELOG.html [_detailed_format_of_changelog_md]": "<detail_content>"
+              },
+              "Continuous Integration [_continuous_integration]": "<detail_content>"
+            },
+            "Versioning Plugins [_versioning_plugins]": {
+              "Changing the version [_changing_the_version]": "<detail_content>",
+              "Labeling [_labeling]": "<detail_content>"
+            },
+            "Logging [_logging]": "<detail_content>",
+            "Contributor License Agreement (CLA) Guidance [_contributor_license_agreement_cla_guidance]": "<detail_content>",
+            "Need Help? [_need_help]": "<detail_content>",
+            "Community Administration [_community_administration]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Contribute To Core",
+          "path": "[\"subpages\", 0, \"subpages\", 2]",
+          "content": {
+            "Extending Logstash core [contribute-to-core]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Contributing a patch to a Logstash plugin [contributing-patch-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 3]",
+          "content": {
+            "Input plugins [contrib-patch-input]": {
+              "Input API [input-api]": "<detail_content>"
+            },
+            "Codec plugins [contrib-patch-codec]": {
+              "Codec API [codec-api]": "<detail_content>"
+            },
+            "Filter plugins [contrib-patch-filter]": {
+              "Filter API [filter-api]": "<detail_content>"
+            },
+            "Output plugins [contrib-patch-output]": {
+              "Output API [output-api]": "<detail_content>"
+            },
+            "Process [patch-process]": "<detail_content>",
+            "Testing methodologies [test-methods]": {
+              "Test driven development [tdd]": "<detail_content>",
+              "RSpec framework [rspec]": "<detail_content>"
+            },
+            "Putting it all together [all-together]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Create Logstash plugins [contributing-java-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 4]",
+          "content": {
+            "Process overview [_process_overview]": {
+              "Let’s get started [_lets_get_started]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "How to write a Logstash filter plugin [filter-new-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 5]",
+          "content": {
+            "Get started [_get_started_3]": {
+              "Create a GitHub repo for your new plugin [_create_a_github_repo_for_your_new_plugin_3]": "<detail_content>",
+              "Use the plugin generator tool [_use_the_plugin_generator_tool_3]": "<detail_content>",
+              "Copy the filter code [_copy_the_filter_code]": "<detail_content>",
+              "See what your plugin looks like [_see_what_your_plugin_looks_like_3]": "<detail_content>"
+            },
+            "Coding filter plugins [_coding_filter_plugins]": {
+              "`require` Statements [_require_statements_3]": "<detail_content>"
+            },
+            "Plugin Body [_plugin_body_3]": {
+              "`class` Declaration [_class_declaration_3]": "<detail_content>",
+              "`config_name` [_config_name_3]": "<detail_content>"
+            },
+            "Configuration Parameters [_configuration_parameters_3]": "<detail_content>",
+            "Plugin Methods [_plugin_methods_3]": {
+              "`register` Method [_register_method_3]": "<detail_content>",
+              "`filter` Method [_filter_method]": "<detail_content>"
+            },
+            "Building the Plugin [_building_the_plugin_3]": {
+              "External dependencies [_external_dependencies_3]": "<detail_content>",
+              "Deprecated features [_deprecated_features_3]": "<detail_content>",
+              "Add a Gemfile [_add_a_gemfile_3]": "<detail_content>"
+            },
+            "Add a `gemspec` file [_add_a_gemspec_file_3]": {
+              "Runtime and Development Dependencies [_runtime_and_development_dependencies_3]": "<detail_content>",
+              "Jar dependencies [_jar_dependencies_3]": "<detail_content>"
+            },
+            "Document your plugin [_document_your_plugin_3]": "<detail_content>",
+            "Add Tests [_add_tests_3]": "<detail_content>",
+            "Clone and test! [_clone_and_test_3]": "<detail_content>",
+            "Building and Testing [_building_and_testing_3]": {
+              "Build [_build_3]": "<detail_content>",
+              "Test installation [_test_installation_3]": "<detail_content>"
+            },
+            "Submitting your plugin to [RubyGems.org](http://rubygems.org) and [logstash-plugins](https://github.com/logstash-plugins) [_submitting_your_plugin_to_rubygems_orghttprubygems_org_and_logstash_pluginshttpsgithub_comlogstash_plugins_3]": {
+              "Licensing [_licensing_3]": "<detail_content>",
+              "Publishing to [RubyGems.org](http://rubygems.org) [_publishing_to_rubygems_orghttprubygems_org_3]": "<detail_content>"
+            },
+            "Contributing your source code to [logstash-plugins](https://github.com/logstash-plugins) [_contributing_your_source_code_to_logstash_pluginshttpsgithub_comlogstash_plugins_3]": {
+              "Benefits [_benefits_3]": "<detail_content>",
+              "Acceptance Guidelines [_acceptance_guidelines_3]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Contribute to Logstash [contributing-to-logstash]",
+          "path": "[\"subpages\", 0, \"subpages\", 6]",
+          "content": {
+            "Add a plugin [add-plugin]": "<detail_content>"
+          }
+        },
+        {
+          "title": "How to write a Logstash input plugin [input-new-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 7]",
+          "content": {
+            "Get started [_get_started]": {
+              "Create a GitHub repo for your new plugin [_create_a_github_repo_for_your_new_plugin]": "<detail_content>",
+              "Use the plugin generator tool [_use_the_plugin_generator_tool]": "<detail_content>",
+              "Copy the input code [_copy_the_input_code]": "<detail_content>",
+              "See what your plugin looks like [_see_what_your_plugin_looks_like]": "<detail_content>"
+            },
+            "Coding input plugins [_coding_input_plugins]": {
+              "`require` Statements [_require_statements]": "<detail_content>"
+            },
+            "Plugin Body [_plugin_body]": {
+              "`class` Declaration [_class_declaration]": "<detail_content>",
+              "`config_name` [_config_name]": "<detail_content>"
+            },
+            "Configuration Parameters [_configuration_parameters]": "<detail_content>",
+            "Plugin Methods [_plugin_methods]": {
+              "`register` Method [_register_method]": "<detail_content>",
+              "`run` Method [_run_method]": "<detail_content>"
+            },
+            "Building the Plugin [_building_the_plugin]": {
+              "External dependencies [_external_dependencies]": "<detail_content>",
+              "Deprecated features [_deprecated_features]": "<detail_content>",
+              "Add a Gemfile [_add_a_gemfile]": "<detail_content>"
+            },
+            "Add a `gemspec` file [_add_a_gemspec_file]": {
+              "Runtime and Development Dependencies [_runtime_and_development_dependencies]": "<detail_content>",
+              "Jar dependencies [_jar_dependencies]": "<detail_content>"
+            },
+            "Document your plugin [_document_your_plugin]": "<detail_content>",
+            "Add Tests [_add_tests]": "<detail_content>",
+            "Clone and test! [_clone_and_test]": "<detail_content>",
+            "Building and Testing [_building_and_testing]": {
+              "Build [_build]": "<detail_content>",
+              "Test installation [_test_installation]": "<detail_content>"
+            },
+            "Submitting your plugin to [RubyGems.org](http://rubygems.org) and [logstash-plugins](https://github.com/logstash-plugins) [_submitting_your_plugin_to_rubygems_orghttprubygems_org_and_logstash_pluginshttpsgithub_comlogstash_plugins]": {
+              "Licensing [_licensing]": "<detail_content>",
+              "Publishing to [RubyGems.org](http://rubygems.org) [_publishing_to_rubygems_orghttprubygems_org]": "<detail_content>"
+            },
+            "Contributing your source code to [logstash-plugins](https://github.com/logstash-plugins) [_contributing_your_source_code_to_logstash_pluginshttpsgithub_comlogstash_plugins]": {
+              "Benefits [_benefits]": "<detail_content>",
+              "Acceptance Guidelines [_acceptance_guidelines]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "How to write a Java codec plugin [java-codec-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 8]",
+          "content": {
+            "Set up your environment [_set_up_your_environment_2]": {
+              "Copy the example repo [_copy_the_example_repo_2]": "<detail_content>",
+              "Generate the .jar file [_generate_the_jar_file_2]": "<detail_content>"
+            },
+            "Code the plugin [_code_the_plugin_2]": {
+              "Class declaration [_class_declaration_6]": {
+                "Plugin settings [_plugin_settings_2]": "<detail_content>",
+                "Constructor and initialization [_constructor_and_initialization_2]": "<detail_content>"
+              },
+              "Codec methods [_codec_methods]": "<detail_content>",
+              "cloneCodec method [_clonecodec_method]": "<detail_content>",
+              "getId method [_getid_method_2]": "<detail_content>",
+              "Unit tests [_unit_tests_2]": "<detail_content>"
+            },
+            "Package and deploy [_package_and_deploy_2]": {
+              "Configuring the Gradle packaging task [_configuring_the_gradle_packaging_task_2]": "<detail_content>",
+              "Running the Gradle packaging task [_running_the_gradle_packaging_task_2]": "<detail_content>",
+              "Installing the Java plugin in Logstash [_installing_the_java_plugin_in_logstash_2]": "<detail_content>"
+            },
+            "Run Logstash with the Java codec plugin [_run_logstash_with_the_java_codec_plugin]": "<detail_content>",
+            "Feedback [_feedback_2]": "<detail_content>"
+          }
+        },
+        {
+          "title": "How to write a Java filter plugin [java-filter-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 9]",
+          "content": {
+            "Set up your environment [_set_up_your_environment_3]": {
+              "Copy the example repo [_copy_the_example_repo_3]": "<detail_content>",
+              "Generate the .jar file [_generate_the_jar_file_3]": "<detail_content>"
+            },
+            "Code the plugin [_code_the_plugin_3]": {
+              "Class declaration [_class_declaration_7]": "<detail_content>",
+              "Plugin settings [_plugin_settings_3]": "<detail_content>",
+              "Constructor and initialization [_constructor_and_initialization_3]": "<detail_content>",
+              "Filter method [_filter_method_2]": "<detail_content>",
+              "getId method [_getid_method_3]": "<detail_content>",
+              "close method [_close_method]": "<detail_content>",
+              "Unit tests [_unit_tests_3]": "<detail_content>"
+            },
+            "Package and deploy [_package_and_deploy_3]": {
+              "Configuring the Gradle packaging task [_configuring_the_gradle_packaging_task_3]": "<detail_content>",
+              "Running the Gradle packaging task [_running_the_gradle_packaging_task_3]": "<detail_content>",
+              "Installing the Java plugin in Logstash [_installing_the_java_plugin_in_logstash_3]": "<detail_content>"
+            },
+            "Run Logstash with the Java filter plugin [_run_logstash_with_the_java_filter_plugin]": "<detail_content>",
+            "Feedback [_feedback_3]": "<detail_content>"
+          }
+        },
+        {
+          "title": "How to write a Java input plugin [java-input-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 10]",
+          "content": {
+            "Set up your environment [_set_up_your_environment]": {
+              "Copy the example repo [_copy_the_example_repo]": "<detail_content>",
+              "Generate the .jar file [_generate_the_jar_file]": "<detail_content>"
+            },
+            "Code the plugin [_code_the_plugin]": {
+              "Class declaration [_class_declaration_5]": "<detail_content>",
+              "Plugin settings [_plugin_settings]": "<detail_content>",
+              "Constructor and initialization [_constructor_and_initialization]": "<detail_content>",
+              "Start method [_start_method]": "<detail_content>",
+              "Stop and awaitStop methods [_stop_and_awaitstop_methods]": "<detail_content>",
+              "getId method [_getid_method]": "<detail_content>",
+              "Unit tests [_unit_tests]": "<detail_content>"
+            },
+            "Package and deploy [_package_and_deploy]": {
+              "Configuring the Gradle packaging task [_configuring_the_gradle_packaging_task]": "<detail_content>",
+              "Running the Gradle packaging task [_running_the_gradle_packaging_task]": "<detail_content>",
+              "Installing the Java plugin in Logstash [_installing_the_java_plugin_in_logstash]": "<detail_content>"
+            },
+            "Running Logstash with the Java input plugin [_running_logstash_with_the_java_input_plugin]": "<detail_content>",
+            "Feedback [_feedback]": "<detail_content>"
+          }
+        },
+        {
+          "title": "How to write a Java output plugin [java-output-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 11]",
+          "content": {
+            "Set up your environment [_set_up_your_environment_4]": {
+              "Copy the example repo [_copy_the_example_repo_4]": "<detail_content>",
+              "Generate the .jar file [_generate_the_jar_file_4]": "<detail_content>"
+            },
+            "Code the plugin [_code_the_plugin_4]": {
+              "Class declaration [_class_declaration_8]": "<detail_content>",
+              "Plugin settings [_plugin_settings_4]": "<detail_content>",
+              "Constructor and initialization [_constructor_and_initialization_4]": "<detail_content>",
+              "Output method [_output_method]": "<detail_content>",
+              "Stop and awaitStop methods [_stop_and_awaitstop_methods_2]": "<detail_content>",
+              "getId method [_getid_method_4]": "<detail_content>",
+              "Unit tests [_unit_tests_4]": "<detail_content>"
+            },
+            "Package and deploy [_package_and_deploy_4]": {
+              "Configuring the Gradle packaging task [_configuring_the_gradle_packaging_task_4]": "<detail_content>",
+              "Running the Gradle packaging task [_running_the_gradle_packaging_task_4]": "<detail_content>",
+              "Installing the Java plugin in Logstash [_installing_the_java_plugin_in_logstash_4]": "<detail_content>"
+            },
+            "Running Logstash with the Java output plugin [_running_logstash_with_the_java_output_plugin]": "<detail_content>",
+            "Feedback [_feedback_4]": "<detail_content>"
+          }
+        },
+        {
+          "title": "How to write a Logstash output plugin [output-new-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 12]",
+          "content": {
+            "Get started [_get_started_4]": {
+              "Create a GitHub repo for your new plugin [_create_a_github_repo_for_your_new_plugin_4]": "<detail_content>",
+              "Use the plugin generator tool [_use_the_plugin_generator_tool_4]": "<detail_content>",
+              "Copy the output code [_copy_the_output_code]": "<detail_content>",
+              "See what your plugin looks like [_see_what_your_plugin_looks_like_4]": "<detail_content>"
+            },
+            "Coding output plugins [_coding_output_plugins]": {
+              "`require` Statements [_require_statements_4]": "<detail_content>"
+            },
+            "Plugin Body [_plugin_body_4]": {
+              "`class` Declaration [_class_declaration_4]": "<detail_content>",
+              "`config_name` [_config_name_4]": "<detail_content>"
+            },
+            "Configuration Parameters [_configuration_parameters_4]": "<detail_content>",
+            "Plugin Methods [_plugin_methods_4]": {
+              "`register` Method [_register_method_4]": "<detail_content>"
+            },
+            "Building the Plugin [_building_the_plugin_4]": {
+              "External dependencies [_external_dependencies_4]": "<detail_content>",
+              "Deprecated features [_deprecated_features_4]": "<detail_content>",
+              "Add a Gemfile [_add_a_gemfile_4]": "<detail_content>"
+            },
+            "Add a `gemspec` file [_add_a_gemspec_file_4]": {
+              "Runtime and Development Dependencies [_runtime_and_development_dependencies_4]": "<detail_content>",
+              "Jar dependencies [_jar_dependencies_4]": "<detail_content>"
+            },
+            "Document your plugin [_document_your_plugin_4]": "<detail_content>",
+            "Add Tests [_add_tests_4]": "<detail_content>",
+            "Clone and test! [_clone_and_test_4]": "<detail_content>",
+            "Building and Testing [_building_and_testing_4]": {
+              "Build [_build_4]": "<detail_content>",
+              "Test installation [_test_installation_4]": "<detail_content>"
+            },
+            "Submitting your plugin to [RubyGems.org](http://rubygems.org) and [logstash-plugins](https://github.com/logstash-plugins) [_submitting_your_plugin_to_rubygems_orghttprubygems_org_and_logstash_pluginshttpsgithub_comlogstash_plugins_4]": {
+              "Licensing [_licensing_4]": "<detail_content>",
+              "Publishing to [RubyGems.org](http://rubygems.org) [_publishing_to_rubygems_orghttprubygems_org_4]": "<detail_content>"
+            },
+            "Contributing your source code to [logstash-plugins](https://github.com/logstash-plugins) [_contributing_your_source_code_to_logstash_pluginshttpsgithub_comlogstash_plugins_4]": {
+              "Benefits [_benefits_4]": "<detail_content>",
+              "Acceptance Guidelines [_acceptance_guidelines_4]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Document your plugin [plugin-doc]",
+          "path": "[\"subpages\", 0, \"subpages\", 13]",
+          "content": {
+            "Documentation file [plugin-doc-file]": "<detail_content>",
+            "Heading IDs [heading-ids]": "<detail_content>",
+            "Link formats [link-format]": {
+              "Link to content in the same file [_link_to_content_in_the_same_file]": "<detail_content>",
+              "Link to content in the Logstash Reference Guide [_link_to_content_in_the_logstash_reference_guide]": "<detail_content>",
+              "Link text [_link_text]": "<detail_content>",
+              "Link to data type descriptions [_link_to_data_type_descriptions]": "<detail_content>"
+            },
+            "Code samples [format-code]": "<detail_content>",
+            "Where’s my doc? [_wheres_my_doc]": {
+              "Documentation or plugin updates [_documentation_or_plugin_updates]": "<detail_content>"
+            },
+            "Resources [_resources]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Plugin Listing",
+          "path": "[\"subpages\", 0, \"subpages\", 14]",
+          "content": {
+            "List your plugin [plugin-listing]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Publish your plugin to RubyGems.org [publish-plugin]",
+          "path": "[\"subpages\", 0, \"subpages\", 15]",
+          "content": {
+            "Licensing [_licensing_5]": "<detail_content>",
+            "Publish to [RubyGems.org](http://rubygems.org) [_publish_to_rubygems_orghttprubygems_org]": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "description": "Documentation section: reference",
+      "path": "[\"subpages\", 1]",
+      "subpages": [
+        {
+          "title": "Advanced Logstash Configurations",
+          "path": "[\"subpages\", 1, \"subpages\", 0]",
+          "content": {
+            "Advanced Logstash configurations [configuration-advanced]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Parsing Logs with Logstash [advanced-pipeline]",
+          "path": "[\"subpages\", 1, \"subpages\", 1]",
+          "content": {
+            "Configuring Filebeat to Send Log Lines to Logstash [configuring-filebeat]": "<detail_content>",
+            "Configuring Logstash for Filebeat Input [_configuring_logstash_for_filebeat_input]": {
+              "Parsing Web Logs with the Grok Filter Plugin [configuring-grok-filter]": "<detail_content>",
+              "Enhancing Your Data with the Geoip Filter Plugin [configuring-geoip-plugin]": "<detail_content>",
+              "Indexing your data into Elasticsearch [indexing-parsed-data-into-elasticsearch]": {
+                "Testing Your Pipeline [testing-initial-pipeline]": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Logstash configuration examples [config-examples]",
+          "path": "[\"subpages\", 1, \"subpages\", 2]",
+          "content": {
+            "Configuring filters [filter-example]": "<detail_content>",
+            "Processing Apache logs [_processing_apache_logs]": "<detail_content>",
+            "Using conditionals [using-conditionals]": "<detail_content>",
+            "Processing Syslog messages [_processing_syslog_messages]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Logstash Configuration Files [config-setting-files]",
+          "path": "[\"subpages\", 1, \"subpages\", 3]",
+          "content": {
+            "Pipeline Configuration Files [pipeline-config-files]": "<detail_content>",
+            "Settings Files [settings-files]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Structure of a pipeline [configuration-file-structure]",
+          "path": "[\"subpages\", 1, \"subpages\", 4]",
+          "content": {
+            "Plugin configuration [plugin_configuration]": "<detail_content>",
+            "Value types [plugin-value-types]": "<detail_content>",
+            "Array [array]": {
+              "Lists [list]": "<detail_content>",
+              "Boolean [boolean]": "<detail_content>",
+              "Bytes [bytes]": "<detail_content>",
+              "Codec [codec]": "<detail_content>",
+              "Hash [hash]": "<detail_content>",
+              "Number [number]": "<detail_content>",
+              "Password [password]": "<detail_content>",
+              "URI [uri]": "<detail_content>",
+              "Path [path]": "<detail_content>",
+              "String [string]": "<detail_content>",
+              "Escape sequences [_escape_sequences]": "<detail_content>",
+              "Field reference [field-reference]": "<detail_content>"
+            },
+            "Comments [comments]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Configure Centralized Pipeline Management [configuring-centralized-pipelines]",
+          "path": "[\"subpages\", 1, \"subpages\", 5]",
+          "content": {
+            "Configuration Management Settings in Logstash [configuration-management-settings]": "<detail_content>",
+            "Wildcard support in pipeline ID [wildcard-in-pipeline-id]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Configure GeoIP Database Management [configuring-geoip-database-management]",
+          "path": "[\"subpages\", 1, \"subpages\", 6]",
+          "content": {
+            "GeoIP database Management settings in {{ls}} [geoip-database-management-settings]": "<detail_content>",
+            "Offline and air-gapped environments [configuring-geoip-database-management-offline]": {
+              "Using an HTTP proxy [_using_an_http_proxy]": "<detail_content>",
+              "Using a custom endpoint [_using_a_custom_endpoint]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Sending data to {{ech}} [connecting-to-cloud]",
+          "path": "[\"subpages\", 1, \"subpages\", 7]",
+          "content": {
+            "Cloud ID [cloud-id]": "<detail_content>",
+            "Cloud Auth [cloud-auth]": "<detail_content>",
+            "Using Cloud ID and Cloud Auth with plugins [cloud-id-plugins]": "<detail_content>",
+            "Sending {{ls}} management data to {{ech}} [cloud-id-mgmt]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Core Operations",
+          "path": "[\"subpages\", 1, \"subpages\", 8]",
+          "content": {
+            "Performing Core Operations [core-operations]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Creating Logstash Pipeline",
+          "path": "[\"subpages\", 1, \"subpages\", 9]",
+          "content": {
+            "Creating a Logstash Pipeline [configuration]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Collect {{ls}} monitoring data for dashboards [dashboard-monitoring-with-elastic-agent]",
+          "path": "[\"subpages\", 1, \"subpages\", 10]",
+          "content": {
+            "Install and configure {{agent}} [install-and-configure-db]": {
+              "Add the {{agent}} {{ls}} integration to monitor host logs and metrics [add-logstash-integration-ead]": "<detail_content>"
+            },
+            "Install and run an {{agent}} on your machine [add-agent-to-fleet-ead]": "<detail_content>",
+            "View assets [view-assets-ead]": "<detail_content>",
+            "Monitor {{ls}} logs and metrics [view-data-dashboard]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Data Deserialization",
+          "path": "[\"subpages\", 1, \"subpages\", 11]",
+          "content": {
+            "Deserializing Data [data-deserialization]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Dead letter queues (DLQ) [dead-letter-queues]",
+          "path": "[\"subpages\", 1, \"subpages\", 12]",
+          "content": {
+            "How the dead letter queue works [dead-letter-how]": "<detail_content>",
+            "{{es}} processing and the dead letter queue [es-proc-dlq]": "<detail_content>",
+            "Conditional statements and the dead letter queue [conditionals-dlq]": "<detail_content>",
+            "Configuring {{ls}} to use dead letter queues [configuring-dlq]": {
+              "File rotation [file-rotation]": "<detail_content>",
+              "Size management [size-management]": {
+                "Age policy [age-policy]": "<detail_content>"
+              },
+              "Automatic cleaning of consumed events [auto-clean]": "<detail_content>"
+            },
+            "Processing events in the dead letter queue [processing-dlq-events]": "<detail_content>",
+            "Reading from a timestamp [dlq-timestamp]": "<detail_content>",
+            "Example: Processing data that has mapping errors [dlq-example]": "<detail_content>",
+            "Track dead letter queue size [dlq-size]": "<detail_content>",
+            "Clear the dead letter queue [dlq-clear]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Deploying and scaling Logstash [deploying-and-scaling]",
+          "path": "[\"subpages\", 1, \"subpages\", 13]",
+          "content": {
+            "Getting Started [deploying-getting-started]": {
+              "Introducing Logstash [_introducing_logstash]": "<detail_content>"
+            },
+            "Scaling Ingest [scaling-ingest]": {
+              "Beats and Logstash [_beats_and_logstash]": "<detail_content>",
+              "Scalability [_scalability]": "<detail_content>",
+              "Resiliency [_resiliency]": "<detail_content>",
+              "Processing [_processing]": "<detail_content>",
+              "Secure Transport [_secure_transport]": "<detail_content>",
+              "Monitoring [_monitoring]": "<detail_content>"
+            },
+            "Adding Other Popular Sources [adding-other-sources]": {
+              "TCP, UDP, and HTTP Protocols [_tcp_udp_and_http_protocols]": "<detail_content>",
+              "Network and Security Data [_network_and_security_data]": "<detail_content>",
+              "Centralized Syslog Servers [_centralized_syslog_servers]": "<detail_content>",
+              "Infrastructure & Application Data and IoT [_infrastructure_application_data_and_iot]": "<detail_content>"
+            },
+            "Integrating with Messaging Queues [integrating-with-messaging-queues]": {
+              "Resiliency and Recovery [_resiliency_and_recovery]": "<detail_content>",
+              "Other Messaging Queue Integrations [_other_messaging_queue_integrations]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Logstash Directory Layout [dir-layout]",
+          "path": "[\"subpages\", 1, \"subpages\", 14]",
+          "content": {
+            "Directory Layout of `.zip` and `.tar.gz` Archives [zip-targz-layout]": "<detail_content>",
+            "Directory Layout of Debian and RPM Packages [deb-layout]": "<detail_content>",
+            "Directory Layout of Docker Images [docker-layout]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Configuring Logstash for Docker [docker-config]",
+          "path": "[\"subpages\", 1, \"subpages\", 15]",
+          "content": {
+            "Pipeline Configuration [_pipeline_configuration]": "<detail_content>",
+            "Settings [_settings]": {
+              "Bind-mounted settings files [docker-bind-mount-settings]": "<detail_content>",
+              "Custom Images [_custom_images]": "<detail_content>",
+              "Environment variable configuration [docker-env-config]": "<detail_content>"
+            },
+            "Docker defaults [_docker_defaults]": "<detail_content>",
+            "Logging Configuration [_logging_configuration]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Running Logstash on Docker [docker]",
+          "path": "[\"subpages\", 1, \"subpages\", 16]",
+          "content": {
+            "Pulling the image [_pulling_the_image]": "<detail_content>",
+            "Verifying the image [_verifying_the_image]": "<detail_content>"
+          }
+        },
+        {
+          "title": "ECS in Logstash [ecs-ls]",
+          "path": "[\"subpages\", 1, \"subpages\", 17]",
+          "content": {
+            "ECS compatibility [ecs-compatibility]": {
+              "Configuring ECS [ecs-configuration]": {
+                "Specific plugin instance [_specific_plugin_instance]": "<detail_content>",
+                "All plugins in a given pipeline [ecs-configuration-pipeline]": "<detail_content>",
+                "All plugins in all pipelines [ecs-configuration-all]": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Using environment variables [environment-variables]",
+          "path": "[\"subpages\", 1, \"subpages\", 18]",
+          "content": {
+            "Overview [_overview]": "<detail_content>",
+            "Examples [_examples]": {
+              "Setting the TCP port [_setting_the_tcp_port]": "<detail_content>",
+              "Setting the value of a tag [_setting_the_value_of_a_tag]": "<detail_content>",
+              "Setting a file path [_setting_a_file_path]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Event API [event-api]",
+          "path": "[\"subpages\", 1, \"subpages\", 19]",
+          "content": {
+            "Event Object [_event_object]": "<detail_content>",
+            "Event API [_event_api]": "<detail_content>",
+            "Ruby Filter [_ruby_filter]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Accessing event data and fields [event-dependent-configuration]",
+          "path": "[\"subpages\", 1, \"subpages\", 20]",
+          "content": {
+            "Field references [logstash-config-field-references]": {
+              "Why use field references? [field-reference-deep-dive]": "<detail_content>",
+              "Formal grammar [formal-grammar]": {
+                "Field Reference Literal [formal-grammar-field-reference-literal]": "<detail_content>",
+                "Field Reference (Event APIs) [formal-grammar-field-reference]": "<detail_content>",
+                "Path Fragment [formal-grammar-path-fragment]": "<detail_content>",
+                "Field Name [formal-grammar-field-name]": "<detail_content>",
+                "Composite Field Reference [formal-grammar-event-api-composite-field-reference]": {
+                  "Canonical Representations of Composite Field References [canonical-representations]": "<detail_content>"
+                },
+                "Embedded Field Reference [formal-grammar-event-api-embedded-field-reference]": "<detail_content>"
+              },
+              "Escape sequences [formal-grammar-escape-sequences]": "<detail_content>"
+            },
+            "sprintf format [sprintf]": "<detail_content>",
+            "Conditionals [conditionals]": "<detail_content>",
+            "The @metadata field [metadata]": {
+              "sprintf date/time format in conditionals [date-time]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Execution Model",
+          "path": "[\"subpages\", 1, \"subpages\", 21]",
+          "content": {
+            "Execution Model [execution-model]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Field Extraction",
+          "path": "[\"subpages\", 1, \"subpages\", 22]",
+          "content": {
+            "Extracting Fields and Wrangling Data [field-extraction]": "<detail_content>"
+          }
+        },
+        {
+          "title": "First Event",
+          "path": "[\"subpages\", 1, \"subpages\", 23]",
+          "content": {
+            "Stashing Your First Event [first-event]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Getting Started With Logstash",
+          "path": "[\"subpages\", 1, \"subpages\", 24]",
+          "content": {
+            "Getting started with Logstash [getting-started-with-logstash]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Glob Pattern Support [glob-support]",
+          "path": "[\"subpages\", 1, \"subpages\", 25]",
+          "content": {
+            "Example Patterns [example-glob-patterns]": "<detail_content>"
+          }
+        },
+        {
+          "title": "How Logstash Works [pipeline]",
+          "path": "[\"subpages\", 1, \"subpages\", 26]",
+          "content": {
+            "Inputs [_inputs]": "<detail_content>",
+            "Filters [_filters]": "<detail_content>",
+            "Outputs [_outputs]": "<detail_content>",
+            "Codecs [_codecs]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Index",
+          "path": "[\"subpages\", 1, \"subpages\", 27]",
+          "content": {
+            "Logstash [introduction]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Installing Logstash [installing-logstash]",
+          "path": "[\"subpages\", 1, \"subpages\", 28]",
+          "content": {
+            "Installing from a Downloaded Binary [installing-binary]": "<detail_content>",
+            "Installing from Package Repositories [package-repositories]": {
+              "APT [_apt]": "<detail_content>",
+              "YUM [_yum]": "<detail_content>",
+              "Docker [_docker]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "JVM settings [jvm-settings]",
+          "path": "[\"subpages\", 1, \"subpages\", 29]",
+          "content": {
+            "Setting the memory size [memory-size]": {
+              "Setting the JVM heap size [heap-size]": "<detail_content>",
+              "Setting the off-heap size [off-heap-size]": "<detail_content>",
+              "Buffer Allocation types [off-heap-buffers-allocation]": "<detail_content>",
+              "Memory sizing [memory-size-calculation]": "<detail_content>"
+            },
+            "Setting the JVM stack size [stacks-size]": "<detail_content>",
+            "Using `LS_JAVA_OPTS` [ls-java-opts]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Secrets keystore for secure settings [keystore]",
+          "path": "[\"subpages\", 1, \"subpages\", 30]",
+          "content": {
+            "Keystore password [keystore-password]": "<detail_content>",
+            "Keystore location [keystore-location]": "<detail_content>",
+            "Create or overwrite a keystore [creating-keystore]": "<detail_content>",
+            "Add keys [add-keys-to-keystore]": "<detail_content>",
+            "List keys [list-settings]": "<detail_content>",
+            "Remove keys [remove-settings]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Logging [logging]",
+          "path": "[\"subpages\", 1, \"subpages\", 31]",
+          "content": {
+            "Log4j2 configuration [log4j2]": {
+              "Rollover settings [rollover]": "<detail_content>"
+            },
+            "Logging APIs [_logging_apis]": {
+              "Retrieve list of logging configurations [_retrieve_list_of_logging_configurations]": "<detail_content>",
+              "Update logging levels [_update_logging_levels]": "<detail_content>",
+              "Reset dynamic logging levels [_reset_dynamic_logging_levels]": "<detail_content>"
+            },
+            "Log file location [_log_file_location]": "<detail_content>",
+            "Slowlog [_slowlog]": {
+              "Enable slowlog [_enable_slowlog]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Centralized Pipeline Management [logstash-centralized-pipeline-management]",
+          "path": "[\"subpages\", 1, \"subpages\", 32]",
+          "content": {
+            "Manage pipelines [_manage_pipelines]": {
+              "Pipeline behavior [_pipeline_behavior]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "GeoIP Database Management [logstash-geoip-database-management]",
+          "path": "[\"subpages\", 1, \"subpages\", 33]",
+          "content": {
+            "Database Metrics [logstash-geoip-database-management-metrics]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Logstash Monitoring Ui",
+          "path": "[\"subpages\", 1, \"subpages\", 34]",
+          "content": {
+            "Monitoring UI [logstash-monitoring-ui]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Pipeline Viewer UI [logstash-pipeline-viewer]",
+          "path": "[\"subpages\", 1, \"subpages\", 35]",
+          "content": {
+            "Prerequisites [_prerequisites]": "<detail_content>",
+            "View the pipeline [_view_the_pipeline]": "<detail_content>",
+            "Notes and best practices [_notes_and_best_practices]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Logstash Settings File",
+          "path": "[\"subpages\", 1, \"subpages\", 36]",
+          "content": {
+            "logstash.yml [logstash-settings-file]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Logstash To Logstash Communications",
+          "path": "[\"subpages\", 1, \"subpages\", 37]",
+          "content": {
+            "Logstash-to-Logstash communications [ls-to-ls]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Enriching Data with Lookups [lookup-enrichment]",
+          "path": "[\"subpages\", 1, \"subpages\", 38]",
+          "content": {
+            "Lookup plugins [lookup-plugins]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Logstash-to-Logstash: HTTP output to HTTP input [ls-to-ls-http]",
+          "path": "[\"subpages\", 1, \"subpages\", 39]",
+          "content": {
+            "Configuration overview [overview-http-http]": {
+              "Configure the downstream Logstash to use HTTP input [configure-downstream-logstash-http-input]": "<detail_content>",
+              "Configure the upstream Logstash to use HTTP output [configure-upstream-logstash-http-output]": "<detail_content>",
+              "Secure Logstash to Logstash [securing-logstash-to-logstash-http]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Logstash-to-Logstash: Lumberjack output to Beats input [ls-to-ls-lumberjack]",
+          "path": "[\"subpages\", 1, \"subpages\", 40]",
+          "content": {
+            "Configuration overview [_configuration_overview]": {
+              "Generate a self-signed SSL certificate and key [generate-self-signed-cert]": "<detail_content>",
+              "Copy the SSL certificate and key [copy-cert-key]": "<detail_content>",
+              "Start the upstream Logstash instance [save-cert-ls1]": "<detail_content>",
+              "Start the downstream Logstash instance [save-cert-ls2]": "<detail_content>",
+              "Verify the communication [test-ls-to-ls]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Logstash-to-Logstash: Output to Input [ls-to-ls-native]",
+          "path": "[\"subpages\", 1, \"subpages\", 41]",
+          "content": {
+            "Configuration overview [overview-ls-ls]": {
+              "Configure the downstream Logstash to use Logstash input [configure-downstream-logstash-input]": "<detail_content>",
+              "Configure the upstream Logstash to use Logstash output [configure-upstream-logstash-output]": "<detail_content>",
+              "Secure Logstash to Logstash [securing-logstash-to-logstash]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Managing Geoip Databases",
+          "path": "[\"subpages\", 1, \"subpages\", 42]",
+          "content": {
+            "Managing GeoIP databases [geoip-database-management]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Managing Logstash",
+          "path": "[\"subpages\", 1, \"subpages\", 43]",
+          "content": {
+            "Managing Logstash [config-management]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Memory queue [memory-queue]",
+          "path": "[\"subpages\", 1, \"subpages\", 44]",
+          "content": {
+            "Benefits of memory queues [mem-queue-benefits]": "<detail_content>",
+            "Limitations of memory queues [mem-queue-limitations]": "<detail_content>",
+            "Memory queue size [sizing-mem-queue]": {
+              "Settings that affect queue size [mq-settings]": "<detail_content>"
+            },
+            "Back pressure [backpressure-mem-queue]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Collect {{ls}} monitoring data using legacy collectors [monitoring-internal-collection-legacy]",
+          "path": "[\"subpages\", 1, \"subpages\", 45]",
+          "content": {
+            "Components for legacy collection [_components_for_legacy_collection]": {
+              "Output [logstash-monitoring-output-legacy]": {
+                "Default Configuration [logstash-monitoring-default-legacy]": "<detail_content>"
+              }
+            },
+            "Configure {{ls}} monitoring with legacy collectors [configure-internal-collectors-legacy]": "<detail_content>",
+            "Monitoring settings for legacy collection [monitoring-settings-legacy]": {
+              "General monitoring settings [monitoring-general-settings-legacy]": "<detail_content>",
+              "Monitoring collection settings [monitoring-collection-settings-legacy]": "<detail_content>",
+              "Monitoring TLS/SSL settings [monitoring-ssl-settings-legacy]": "<detail_content>",
+              "Additional settings [monitoring-additional-settings-legacy]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Monitoring Logstash Legacy",
+          "path": "[\"subpages\", 1, \"subpages\", 46]",
+          "content": {
+            "Monitoring Logstash (Legacy) [configuring-logstash]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Monitoring Logstash With Elastic Agent",
+          "path": "[\"subpages\", 1, \"subpages\", 47]",
+          "content": {
+            "Monitoring Logstash with Elastic Agent [monitoring-with-ea]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Monitoring Logstash with APIs",
+          "path": "[\"subpages\", 1, \"subpages\", 48]",
+          "content": {
+            "APIs for monitoring Logstash [monitoring]": "<detail_content>",
+            "Securing the Logstash API [monitoring-api-security]": "<detail_content>",
+            "Common options [monitoring-common-options]": {
+              "Pretty results": "<detail_content>",
+              "Human-readable output": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Troubleshooting monitoring in Logstash [monitoring-troubleshooting]",
+          "path": "[\"subpages\", 1, \"subpages\", 49]",
+          "content": {
+            "Logstash Monitoring Not Working After Upgrade [_logstash_monitoring_not_working_after_upgrade]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Collect {{ls}} monitoring data for stack monitoring [monitoring-with-elastic-agent]",
+          "path": "[\"subpages\", 1, \"subpages\", 50]",
+          "content": {
+            "Install and configure {{agent}} [install-and-configure-mon]": {
+              "Add the {{agent}} {{ls}} integration [add-logstash-integration-ea]": "<detail_content>",
+              "Install and run an {{agent}} on your machine [add-agent-to-fleet-ea]": "<detail_content>"
+            },
+            "View assets [view-assets]": {
+              "Monitor {{ls}} logs and metrics (Stack Monitoring) [view-data-stack]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Collect {{ls}} monitoring data with {{metricbeat}} [monitoring-with-metricbeat]",
+          "path": "[\"subpages\", 1, \"subpages\", 51]",
+          "content": {
+            "Disable default collection of {{ls}} monitoring metrics [disable-default]": "<detail_content>",
+            "Determine target Elasticsearch cluster [define-cluster__uuid]": "<detail_content>",
+            "Install and configure {{metricbeat}} [configure-metricbeat]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Managing Multiline Events [multiline]",
+          "path": "[\"subpages\", 1, \"subpages\", 52]",
+          "content": {
+            "Examples of Multiline Codec Configuration [_examples_of_multiline_codec_configuration]": {
+              "Java Stack Traces [_java_stack_traces]": "<detail_content>",
+              "Line Continuations [_line_continuations]": "<detail_content>",
+              "Timestamps [_timestamps]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Stitching Together Multiple Input and Output Plugins [multiple-input-output-plugins]",
+          "path": "[\"subpages\", 1, \"subpages\", 53]",
+          "content": {
+            "Reading from a Twitter Feed [twitter-configuration]": "<detail_content>",
+            "Configuring Filebeat to Send Log Lines to Logstash [configuring-lsf]": "<detail_content>",
+            "Writing Logstash Data to a File [logstash-file-output]": "<detail_content>",
+            "Writing to Multiple Elasticsearch Nodes [multiple-es-nodes]": {
+              "Testing the Pipeline [testing-second-pipeline]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Multiple Pipelines [multiple-pipelines]",
+          "path": "[\"subpages\", 1, \"subpages\", 54]",
+          "content": {
+            "Usage Considerations [multiple-pipeline-usage]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Offline Plugin Management [offline-plugins]",
+          "path": "[\"subpages\", 1, \"subpages\", 55]",
+          "content": {
+            "Building Offline Plugin Packs [building-offline-packs]": "<detail_content>",
+            "Installing Offline Plugin Packs [installing-offline-packs]": "<detail_content>",
+            "Updating Offline Plugins [updating-offline-packs]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Performance troubleshooting [performance-troubleshooting]",
+          "path": "[\"subpages\", 1, \"subpages\", 56]",
+          "content": {
+            "Performance checklist [_performance_checklist]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Performance Tuning",
+          "path": "[\"subpages\", 1, \"subpages\", 57]",
+          "content": {
+            "Performance tuning [performance-tuning]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Persistent queues (PQ) [persistent-queues]",
+          "path": "[\"subpages\", 1, \"subpages\", 58]",
+          "content": {
+            "Benefits of persistent queues [persistent-queues-benefits]": "<detail_content>",
+            "Limitations of persistent queues [persistent-queues-limitations]": "<detail_content>",
+            "Configuring persistent queues [configuring-persistent-queues]": "<detail_content>",
+            "Configuration notes [pq-config-notes]": {
+              "Queue size [pq-size]": {
+                "Queue size by data type [sizing-by-type]": "<detail_content>"
+              },
+              "Smaller queue size [pq-lower-max_bytes]": "<detail_content>",
+              "Fewer checkpoints [pq-fewer-checkpoints]": "<detail_content>",
+              "PQs and pipeline-to-pipeline communication [pq-pline-pline]": {
+                "Use case: PQs and output isolator pattern [uc-isolator]": "<detail_content>"
+              }
+            },
+            "Troubleshooting persistent queues [troubleshooting-pqs]": {
+              "`pqcheck` utility [pqcheck]": "<detail_content>",
+              "`pqrepair` utility [pqrepair]": "<detail_content>",
+              "Draining the queue [draining-pqs]": "<detail_content>"
+            },
+            "How persistent queues work [persistent-queues-architecture]": {
+              "Handling back pressure [backpressure-persistent-queue]": "<detail_content>",
+              "Controlling durability [durability-persistent-queues]": "<detail_content>",
+              "Disk garbage collection [garbage-collection]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Pipeline-to-pipeline communication [pipeline-to-pipeline]",
+          "path": "[\"subpages\", 1, \"subpages\", 59]",
+          "content": {
+            "Configuration overview [pipeline-to-pipeline-overview]": {
+              "How it works [how-pipeline-to-pipeline-works]": "<detail_content>",
+              "Delivery guarantees [delivery-guarantees]": "<detail_content>",
+              "Avoid cycles [avoid-cycles]": "<detail_content>"
+            },
+            "Architectural patterns [architectural-patterns]": {
+              "The distributor pattern [distributor-pattern]": "<detail_content>",
+              "The output isolator pattern [output-isolator-pattern]": "<detail_content>",
+              "The forked path pattern [forked-path-pattern]": "<detail_content>",
+              "The collector pattern [collector-pattern]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Cross-plugin concepts and features [plugin-concepts]",
+          "path": "[\"subpages\", 1, \"subpages\", 60]",
+          "content": {
+            "Space-deliminated URIs in list-type params [space-delimited-uris-in-list-params]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Plugin Generator",
+          "path": "[\"subpages\", 1, \"subpages\", 61]",
+          "content": {
+            "Generating plugins [plugin-generator]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Private Gem Repositories [private-rubygem]",
+          "path": "[\"subpages\", 1, \"subpages\", 62]",
+          "content": {
+            "Editing the Gemfile [_editing_the_gemfile]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Processing Details [processing]",
+          "path": "[\"subpages\", 1, \"subpages\", 63]",
+          "content": {
+            "Event ordering [event-ordering]": {
+              "*pipeline.ordered* setting [order-setting]": "<detail_content>"
+            },
+            "Java pipeline initialization time [pipeline-init-time]": "<detail_content>",
+            "Reserved fields in {{ls}} events [reserved-fields]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Queues Data Resiliency",
+          "path": "[\"subpages\", 1, \"subpages\", 64]",
+          "content": {
+            "Queues and data resiliency [resiliency]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Reloading the Config File [reloading-config]",
+          "path": "[\"subpages\", 1, \"subpages\", 65]",
+          "content": {
+            "Force reloading the config file [force-reload]": "<detail_content>",
+            "How automatic config reloading works [_how_automatic_config_reloading_works]": "<detail_content>",
+            "Plugins that prevent automatic reloading [plugins-block-reload]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Running Logstash from the Command Line [running-logstash-command-line]",
+          "path": "[\"subpages\", 1, \"subpages\", 66]",
+          "content": {
+            "Command-Line Flags [command-line-flags]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Running Logstash Kubernetes",
+          "path": "[\"subpages\", 1, \"subpages\", 67]",
+          "content": {
+            "Running Logstash on Kubernetes [running-logstash-kubernetes]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Running Logstash on Windows [running-logstash-windows]",
+          "path": "[\"subpages\", 1, \"subpages\", 68]",
+          "content": {
+            "Validating JVM prerequisites on Windows [running-logstash-windows-validation]": {
+              "`Write-Host $env:LS_JAVA_HOME` [_write_host_envls_java_home]": "<detail_content>",
+              "`Java -version` [_java_version]": "<detail_content>"
+            },
+            "Running Logstash manually [running-logstash-windows-manual]": "<detail_content>",
+            "Running Logstash as a service with NSSM [running-logstash-windows-nssm]": "<detail_content>",
+            "Running Logstash with Task Scheduler [running-logstash-windows-scheduledtask]": "<detail_content>",
+            "Example Logstash Configuration [running-logstash-windows-example]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Running Logstash as a Service on Debian or RPM [running-logstash]",
+          "path": "[\"subpages\", 1, \"subpages\", 69]",
+          "content": {
+            "Running Logstash by Using Systemd [running-logstash-systemd]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Secure your connection to {{es}} [ls-security]",
+          "path": "[\"subpages\", 1, \"subpages\", 70]",
+          "content": {
+            "{{es}} security on by default [es-security-on]": {
+              "Secure communication with an on-premise {{es}} cluster [es-security-onprem]": {
+                "Copy and save the certificate [es-sec-copy-cert]": "<detail_content>",
+                "Configure the elasticsearch output [es-sec-plugin]": "<detail_content>"
+              },
+              "Configuring Logstash to use basic authentication [ls-http-auth-basic]": "<detail_content>",
+              "Granting access to the indices Logstash creates [ls-user-access]": "<detail_content>",
+              "Configuring Logstash to use TLS/SSL encryption [ls-http-ssl]": "<detail_content>",
+              "Configuring the {{es}} output to use PKI authentication [ls-http-auth-pki]": "<detail_content>",
+              "Configuring credentials for {{ls}} monitoring [ls-monitoring-user]": "<detail_content>",
+              "Configuring credentials for Centralized Pipeline Management [ls-pipeline-management-user]": "<detail_content>",
+              "Grant access using API keys [ls-api-keys]": {
+                "Create an API key [ls-create-api-key]": {
+                  "Create an API key for publishing [ls-api-key-publish]": "<detail_content>",
+                  "Create an API key for reading [ls-api-key-input]": "<detail_content>",
+                  "Create an API key for filtering [ls-api-key-filter]": "<detail_content>",
+                  "Create an API key for monitoring [ls-api-key-monitor]": "<detail_content>",
+                  "Create an API key for central management [ls-api-key-man]": "<detail_content>"
+                },
+                "Learn more about API keys [learn-more-api-keys]": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Collect {{ls}} monitoring data for dashboards ({{serverless-short}}) [serverless-monitoring-with-elastic-agent]",
+          "path": "[\"subpages\", 1, \"subpages\", 71]",
+          "content": {
+            "Add and configure the {{ls}} integration [setup-project]": "<detail_content>",
+            "View assets [view-assets-esvrless]": "<detail_content>",
+            "Monitor {{ls}} logs and metrics [view-data-svrless]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Setting Up Running Logstash",
+          "path": "[\"subpages\", 1, \"subpages\", 72]",
+          "content": {
+            "Setting up and running Logstash [setup-logstash]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Shutting Down Logstash [shutdown]",
+          "path": "[\"subpages\", 1, \"subpages\", 73]",
+          "content": {
+            "What Happens During a Controlled Shutdown? [_what_happens_during_a_controlled_shutdown]": "<detail_content>",
+            "Stall Detection Example [shutdown-stall-example]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Tips and best practices [tips]",
+          "path": "[\"subpages\", 1, \"subpages\", 74]",
+          "content": {
+            "Command line [tip-cli]": {
+              "Shell commands on Windows OS [tip-windows-cli]": "<detail_content>"
+            },
+            "Pipelines [tip-pipelines]": {
+              "Pipeline management [tip-pipeline-mgmt]": "<detail_content>"
+            },
+            "Tips using filters [tip-filters]": {
+              "Check to see if a boolean field exists [tip-check-field]": "<detail_content>"
+            },
+            "Kafka [tip-kafka]": {
+              "Kafka settings [tip-kafka-settings]": {
+                "Partitions per topic [tip-kafka-partitions]": "<detail_content>",
+                "Consumer threads [tip-kafka-threads]": "<detail_content>"
+              },
+              "Kafka input and persistent queue (PQ) [tip-kafka-pq-persist]": {
+                "Kafka offset commits [tip-kafka-offset-commit]": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "Transforming Data",
+          "path": "[\"subpages\", 1, \"subpages\", 75]",
+          "content": {
+            "Transforming data [transformation]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Tuning and profiling logstash pipeline performance [tuning-logstash]",
+          "path": "[\"subpages\", 1, \"subpages\", 76]",
+          "content": {
+            "Worker utilization [tuning-logstash-worker-utilization]": "<detail_content>",
+            "Queue back-pressure [tuning-logstash-queue-backpressure]": "<detail_content>",
+            "Tuning-related settings [tuning-logstash-settings]": "<detail_content>",
+            "Notes on pipeline configuration and performance [_notes_on_pipeline_configuration_and_performance]": "<detail_content>",
+            "Profiling the heap [profiling-the-heap]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Upgrading Logstash [upgrading-logstash]",
+          "path": "[\"subpages\", 1, \"subpages\", 77]",
+          "content": {
+            "Before you upgrade {{ls}}": "<detail_content>",
+            "Upgrade tips and considerations": "<detail_content>",
+            "Ways to upgrade": "<detail_content>",
+            "When to upgrade [_when_to_upgrade]": "<detail_content>",
+            "When not to upgrade [_when_not_to_upgrade]": "<detail_content>",
+            "When `elastic_integration` is in {{ls}} pipeline [upgrading-when-elastic_integration-in-pipeline]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Upgrading Minor Versions",
+          "path": "[\"subpages\", 1, \"subpages\", 78]",
+          "content": {
+            "Upgrading between minor versions [upgrading-minor-versions]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Upgrading Using Direct Download",
+          "path": "[\"subpages\", 1, \"subpages\", 79]",
+          "content": {
+            "Upgrading using a direct download [upgrading-using-direct-download]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Upgrading Using Package Managers",
+          "path": "[\"subpages\", 1, \"subpages\", 80]",
+          "content": {
+            "Upgrading using package managers [upgrading-using-package-managers]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Example: Set up Filebeat modules to work with Kafka and Logstash [use-filebeat-modules-kafka]",
+          "path": "[\"subpages\", 1, \"subpages\", 81]",
+          "content": {
+            "Set up and run {{filebeat}} [_set_up_and_run_filebeat]": "<detail_content>",
+            "Create and start the {{ls}} pipeline [_create_and_start_the_ls_pipeline]": "<detail_content>",
+            "Visualize the data [_visualize_the_data]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Use Ingest Pipelines",
+          "path": "[\"subpages\", 1, \"subpages\", 82]",
+          "content": {
+            "Use ingest pipelines for parsing [use-ingest-pipelines]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Using Logstash with Elastic integrations [ea-integrations]",
+          "path": "[\"subpages\", 1, \"subpages\", 83]",
+          "content": {
+            "Elastic {{integrations}}: ingesting to visualizing [integrations-value]": "<detail_content>",
+            "Extend {{integrations}} with {{ls}} [integrations-and-ls]": {
+              "Using `filter-elastic_integration` with `output-elasticsearch` [es-tips]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Working With Filebeat Modules",
+          "path": "[\"subpages\", 1, \"subpages\", 84]",
+          "content": {
+            "Working with Filebeat modules [filebeat-modules]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Working with plugins [working-with-plugins]",
+          "path": "[\"subpages\", 1, \"subpages\", 85]",
+          "content": {
+            "No internet connection? [pointer-to-offline]": {
+              "Proxy configuration [http-proxy]": "<detail_content>"
+            },
+            "Listing plugins [listing-plugins]": "<detail_content>",
+            "Adding plugins to your deployment [installing-plugins]": "<detail_content>",
+            "Updating plugins [updating-plugins]": {
+              "Major version plugin updates [updating-major]": "<detail_content>"
+            },
+            "Removing plugins [removing-plugins]": {
+              "Advanced: Adding a locally built plugin [installing-local-plugins]": "<detail_content>",
+              "Advanced: Using `--path.plugins` [installing-local-plugins-path]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Working with Winlogbeat modules [winlogbeat-modules]",
+          "path": "[\"subpages\", 1, \"subpages\", 86]",
+          "content": {
+            "Use ingest pipelines for parsing [use-winlogbeat-ingest-pipelines]": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "description": "Documentation section: release-notes",
+      "path": "[\"subpages\", 2]",
+      "subpages": [
+        {
+          "title": "Logstash breaking changes [logstash-breaking-changes]",
+          "path": "[\"subpages\", 2, \"subpages\", 0]",
+          "content": {
+            "9.0.0 [logstash-900-breaking-changes]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Deprecations",
+          "path": "[\"subpages\", 2, \"subpages\", 1]",
+          "content": {
+            "Logstash deprecations [logstash-deprecations]": "<detail_content>"
+          }
+        },
+        {
+          "title": "Logstash release notes [logstash-release-notes]",
+          "path": "[\"subpages\", 2, \"subpages\", 2]",
+          "content": {
+            "9.1.2 [logstash-9.1.2-release-notes]": {
+              "Plugins [logstash-plugin-9.1.2-changes]": "<detail_content>"
+            },
+            "9.1.1 [logstash-9.1.1-release-notes]": {
+              "Features and enhancements [logstash-9.1.1-features-enhancements]": "<detail_content>",
+              "Plugins [logstash-plugin-9.1.1-changes]": "<detail_content>"
+            },
+            "9.1.0 [logstash-9.1.0-release-notes]": {
+              "Features and enhancements [logstash-9.1.0-features-enhancements]": {
+                "Field Tracking Support in Elasticsearch Input (Technical Preview)": "<detail_content>"
+              },
+              "Updates to dependencies [logstash-9.1.0-dependencies]": "<detail_content>",
+              "Plugins [logstash-plugin-9.1.0-changes]": "<detail_content>"
+            },
+            "9.0.4 [logstash-9.0.4-release-notes]": {
+              "Fixes [logstash-9.0.4-fixes]": "<detail_content>",
+              "Plugins [logstash-plugin-9.0.4-changes]": "<detail_content>"
+            },
+            "9.0.3 [logstash-9.0.3-release-notes]": {
+              "Plugins [logstash-plugin-9.0.3-changes]": "<detail_content>"
+            },
+            "9.0.2 [logstash-9.0.2-release-notes]": {
+              "Plugins [logstash-plugin-9.0.2-changes]": "<detail_content>"
+            },
+            "9.0.1 [logstash-9.0.1-release-notes]": {
+              "Features and enhancements [logstash-9.0.1-features-enhancements]": "<detail_content>",
+              "Updates to dependencies [logstash-9.0.1-dependencies]": "<detail_content>",
+              "Plugins [logstash-plugin-9.0.1-changes]": "<detail_content>"
+            },
+            "9.0.0 [logstash-900-release-notes]": {
+              "Features and enhancements [logstash-900-features-enhancements]": "<detail_content>",
+              "Fixes [logstash-900-fixes]": "<detail_content>",
+              "Plugins [logstash-plugin-900-changes]": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Logstash known issues [logstash-known-issues]",
+          "path": "[\"subpages\", 2, \"subpages\", 3]",
+          "content": {
+            "9.0.0": "<detail_content>"
+          }
+        }
+      ]
+    }
+  ]
+}

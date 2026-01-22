@@ -1,0 +1,816 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Debugging Engine - Multi-architecture debugging system with comprehensive process control and memory management",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Process Lifecycle Management - Controls target process execution states and debugging sessions",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Debug Session Control - Manages attachment, initialization, and termination of debugging sessions",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Process attachment and detachment mechanisms with state validation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Debug initialization and cleanup procedures",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Anti-debugging evasion capabilities to hide debugger presence",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Execution Control Engine - Implements comprehensive execution flow control",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Single-step execution modes (into, over, out) with exception awareness",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Continuous execution with pause/resume capabilities",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Instruction undo and reverse execution support",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Thread Management System - Controls and monitors multiple execution threads",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Thread lifecycle operations (create, suspend, resume, terminate)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Thread context switching and priority management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Thread-specific debugging state tracking",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Memory Management Subsystem - Comprehensive virtual memory operations and analysis",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Memory Access Layer - Provides safe read/write operations with validation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Safe memory read/write with bounds checking",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Memory allocation and deallocation in target process",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Page protection and rights management",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Memory Layout Analysis - Tracks and analyzes virtual memory structure",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Virtual memory region enumeration and analysis",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Module base address resolution and tracking",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Memory dump generation and export capabilities",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "OS-Level Integration - System-level debugging capabilities and privilege management",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Privilege escalation and management for system-level debugging",
+              "weight": 2
+            },
+            {
+              "requirements": "Handle manipulation and system resource access",
+              "weight": 1
+            },
+            {
+              "requirements": "JIT debugger registration and management",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Breakpoint Management System - Comprehensive multi-type breakpoint engine with advanced conditional logic",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-Type Breakpoint Engine - Implements various breakpoint mechanisms",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Software Breakpoints - INT3-based execution breakpoints with collision management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Instruction patching and restoration mechanism",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Breakpoint collision detection and management",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Hardware Breakpoints - CPU debug register utilization",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Debug register allocation and management",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Access type specification (read, write, execute)",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Memory Breakpoints - Page-based memory access monitoring",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Memory page protection manipulation for monitoring",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Range-based memory monitoring",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Exception Breakpoints - Exception-based debugging triggers",
+              "weight": 2
+            },
+            {
+              "requirements": "Library Breakpoints - DLL load/unload event handling",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Conditional Logic Engine - Advanced breakpoint logic and automation",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Expression Evaluation System - Runtime condition checking",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Boolean expression parser and evaluator for breakpoint conditions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Context-aware variable, register, and memory value resolution",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Hit Count Management - Breakpoint frequency control",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Hit counter tracking and reset mechanisms",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Conditional hit count thresholds",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Automated Actions - Script execution and logging on breakpoint hits",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Command execution engine for breakpoint actions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Logging and output generation system",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Silent breakpoint execution (no UI interruption)",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Code Analysis and Disassembly Engine - Multi-architecture instruction analysis with static and dynamic capabilities",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Disassembly Engine - Multi-architecture instruction decoding and assembly",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Instruction Decoder - Raw bytes to assembly conversion",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "x86/x64 instruction set support with extensions",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Instruction length calculation and validation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Operand analysis and addressing mode resolution",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Assembly Engine - Assembly to machine code conversion",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Runtime instruction patching capabilities",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Instruction encoding validation",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Static Analysis Engine - Code structure and flow analysis without execution",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Control Flow Analysis - Program structure understanding",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Function boundary detection and basic block identification",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Loop detection and structure analysis",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Branch destination calculation and control flow mapping",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Cross-Reference Analysis - Code relationship mapping",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Reference tracking and enumeration for code and data",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Call graph construction and analysis",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Dynamic Analysis Capabilities - Runtime behavior analysis and tracing",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Execution Tracing Engine - Runtime execution recording and playback",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Instruction trace recording to specified file formats",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Conditional tracing with intelligent filtering",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Trace coverage analysis and logic differentiation",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Search and Pattern Matching - Advanced search capabilities across memory and code",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Memory Search Engine - Pattern finding in process memory",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Binary pattern search with wildcards",
+                  "weight": 2
+                },
+                {
+                  "requirements": "String search (ASCII/Unicode) with encoding detection",
+                  "weight": 2
+                },
+                {
+                  "requirements": "GUID pattern recognition and search",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Code Search Engine - Assembly instruction and reference finding",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Assembly instruction pattern matching",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Reference and cross-reference enumeration",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Symbol and Data Type Management - Comprehensive symbolic information and user-defined type system",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Symbol Management System - Debug symbol loading and resolution",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Symbol Loading Engine - External symbol file management",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "PDB symbol loading and management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Symbol download and caching system",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "User-Defined Type System - Custom data type definition and visualization",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Data Type Engine - Memory interpretation and type definition",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Primitive type definitions (byte, word, dword, qword)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Complex type definitions (structures, unions, function signatures)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "String type handling (ASCII, Unicode)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Floating-point type support",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Type Visualization - Memory data interpretation display",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Type-aware memory dump formatting",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Structure member expansion and navigation",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Annotation Database - Persistent user metadata storage",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Annotation Management - User-defined code annotations",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Label management system for address naming",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Comment system for code documentation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Bookmark system for important locations",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Function Metadata - Function signature and argument tracking",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Function definition and boundary management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Argument type and name annotation",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Database Persistence - Save/load user analysis data",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Database serialization and deserialization",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Database clearing and reset operations",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Scripting and Automation Framework - Comprehensive automation system with expression evaluation",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Expression Evaluation Engine - Mathematical and logical expression processing",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Expression Parser - Complex expression evaluation with context awareness",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Arithmetic, bitwise, and logical operation support",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Register, flag, memory address, and symbol value resolution",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Built-in function library for advanced queries and manipulations",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Variable Management - User-defined variable storage and scope handling",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Script Execution Engine - Built-in scripting language runtime",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Script Language Parser - Command interpretation and execution",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Control flow statements (conditionals, loops, jumps)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Function call and return mechanisms",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Script loading from files and direct command execution",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Script Debugging - Script execution control and monitoring",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Script breakpoint management",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Step-by-step script execution",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Plugin and Extensibility Architecture - Comprehensive third-party extension framework",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Plugin Lifecycle Management - Dynamic library loading and management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Plugin discovery and loading mechanisms",
+              "weight": 2
+            },
+            {
+              "requirements": "Plugin unloading and cleanup procedures",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Plugin API Bridge - Interface between plugins and core systems",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Debug Engine API - Core debugging functionality exposure",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Complete debugger engine API access for plugins",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Shared memory and data marshalling between components",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Event System - Plugin notification and callback management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Event-driven callbacks for debugger events (process creation, breakpoint hit)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Plugin registration system for event handling",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "UI Integration - Plugin interface extension capabilities",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Custom menu and toolbar integration",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Plugin window and tab management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Command-line auto-completion extension",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "User Interface and Visualization System - Multi-view debugging interface with real-time state synchronization",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "View Management System - Multiple debugging perspective coordination",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Disassembly View - Code visualization and navigation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Syntax highlighting and instruction formatting",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Address navigation and goto functionality",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Code folding and organization features",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Memory and Data Views - Memory visualization and editing",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Hexadecimal dump with ASCII representation and editing",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Multiple dump windows for comparison",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Stack memory dump with frame analysis and call trace",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Register and System State Views - CPU state visualization",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "General-purpose register display and editing",
+                  "weight": 2
+                },
+                {
+                  "requirements": "FPU and SIMD register visualization",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Flag register state indication",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Specialized Views - Symbols, threads, and references",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Symbol browser and management interface",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Thread list and management interface",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Reference and search result display with navigation",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Graph Visualization - Control flow and call graph display",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Interactive control flow graph generation and rendering",
+              "weight": 2
+            },
+            {
+              "requirements": "Graph navigation, zoom controls, and export functionality",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "State Synchronization Mechanism - Real-time UI updates and debugging state reflection",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Engine-to-GUI event propagation for state changes",
+              "weight": 3
+            },
+            {
+              "requirements": "Performance-optimized update management with selective refresh",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Watch and Monitor System - Variable and expression monitoring",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Watch expression management and real-time evaluation",
+              "weight": 1
+            },
+            {
+              "requirements": "Value change detection and notification",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "User Input and Command Processing - Command line and UI interaction handling",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration and Integration Management - System configuration and external tool integration",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "Configuration Management - Settings and preference handling",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "System-wide settings and configuration persistence",
+              "weight": 2
+            },
+            {
+              "requirements": "Event handling configuration and customization",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "External Tool Integration - Third-party tool and utility support",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Scylla import reconstruction integration",
+              "weight": 1
+            },
+            {
+              "requirements": "External utility integration and workflow support",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

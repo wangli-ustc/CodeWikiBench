@@ -1,0 +1,424 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core JSON Object Model and Type System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Templated Class Architecture",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "The central class `basic_json` is a template, allowing customization of underlying container types (object_t, array_t), string types, and numeric types (number_integer_t, number_unsigned_t, number_float_t)",
+              "weight": 3
+            },
+            {
+              "requirements": "Provides pre-configured specializations, such as `nlohmann::json` (using standard containers) and `nlohmann::ordered_json` (preserving object key insertion order)",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Polymorphic Value Storage System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Value type enumeration system (value_t) for runtime type identification of JSON types (object, array, string, number, boolean, null, binary)",
+              "weight": 3
+            },
+            {
+              "requirements": "Union-based storage for different JSON types ensuring only one type is active at any time with memory optimization and type safety",
+              "weight": 3
+            },
+            {
+              "requirements": "Type-safe access methods with runtime type checking and introspection (e.g., `is_object()`, `is_string()`, `type()`)",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Binary Data Support System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Binary container with subtype metadata for CBOR/MessagePack compatibility",
+              "weight": 2
+            },
+            {
+              "requirements": "Subtype management for binary format interoperability",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "STL-Compatible Container Interface",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Element Access Operations",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Bounds-checked access (`at`) with exception handling for invalid operations",
+              "weight": 3
+            },
+            {
+              "requirements": "Unchecked access (`operator[]`) with automatic type conversion",
+              "weight": 3
+            },
+            {
+              "requirements": "Default-value access (`value`) patterns for safe retrieval",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Iterator System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Bidirectional iterator support (`begin`, `end`, `items`) for all JSON types with range-based for loop compatibility",
+              "weight": 3
+            },
+            {
+              "requirements": "Iterator invalidation tracking and safety mechanisms",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Container Operations",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Capacity and query functions (`size`, `empty`, `clear`) that mimic standard C++ containers",
+              "weight": 2
+            },
+            {
+              "requirements": "Modifier functions (`push_back`, `emplace`, `erase`) for dynamic content manipulation",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Serialization and Deserialization Engine",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "JSON Text Processing Pipeline",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "DOM Parser Implementation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "The default DOM parser (`parse`) constructs a complete in-memory `basic_json` object tree from input sources",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Lexical analysis and tokenization with error recovery and position tracking",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Recursive descent parser with optional callback mechanism (`parser_callback_t`) for user intervention",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "SAX Event-Driven Parser",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Low-level SAX parser (`sax_parse`) with event-based interface for memory-efficient processing of large files",
+                  "weight": 2
+                },
+                {
+                  "requirements": "User-defined SAX handler integration for streaming processing",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "JSON Serialization",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "The `dump()` method serializes `basic_json` objects into textual JSON strings",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Formatting options including indentation, pretty-printing control, and character escaping",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Multi-Format Binary Protocol Support",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "CBOR (Concise Binary Object Representation) codec with static methods (`from_cbor`, `to_cbor`)",
+              "weight": 2
+            },
+            {
+              "requirements": "MessagePack binary serialization format support",
+              "weight": 2
+            },
+            {
+              "requirements": "BSON (Binary JSON) format handling",
+              "weight": 2
+            },
+            {
+              "requirements": "UBJSON (Universal Binary JSON) and BJData (Binary JData) format implementation",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Format Extensions and Validation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Support for JSON extensions like comments and trailing commas",
+              "weight": 2
+            },
+            {
+              "requirements": "The `accept()` function for validation of JSON input without building full objects or throwing exceptions",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Type Conversion and Serialization Framework",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Extensible Automatic Type Conversion System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "ADL Serializer Architecture",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "The system uses `adl_serializer` struct and Argument-Dependent Lookup (ADL) to find `to_json` and `from_json` functions for arbitrary C++ types",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Primary customization point allowing integration of any custom or third-party type with the library",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Template-based type trait system with SFINAE-based overload resolution for type safety and conversion detection",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Conversion Pathways",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "The `get<T>()` method template provides the primary mechanism for explicit conversion from JSON values to C++ types",
+              "weight": 3
+            },
+            {
+              "requirements": "Optional implicit conversions via assignment and conversion operators, configurable with macros",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Macro-Based Code Generation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Intrusive serialization macros (`NLOHMANN_DEFINE_TYPE_INTRUSIVE`) for automatic code generation inside class definitions",
+              "weight": 2
+            },
+            {
+              "requirements": "Non-intrusive serialization macros (`NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE`) for external types that cannot be modified",
+              "weight": 2
+            },
+            {
+              "requirements": "Enum serialization macro system (`NLOHMANN_JSON_SERIALIZE_ENUM`) for mapping C++ enums to JSON values",
+              "weight": 2
+            },
+            {
+              "requirements": "Derived type serialization with inheritance support",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "JSON Pointer and Path Navigation System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "RFC 6901 JSON Pointer Implementation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "A `json_pointer` class represents string paths to specific values within JSON documents",
+              "weight": 3
+            },
+            {
+              "requirements": "Path parsing and validation with escape sequence handling",
+              "weight": 2
+            },
+            {
+              "requirements": "Document traversal and value resolution enabling deep, direct access using `operator[]` or `at()` methods",
+              "weight": 2
+            },
+            {
+              "requirements": "Pointer arithmetic and manipulation operations",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Document Structure Manipulation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "`flatten` operation converts structured JSON objects to flat key-value maps where keys are JSON Pointers",
+              "weight": 2
+            },
+            {
+              "requirements": "`unflatten` operation reconstructs nested structures from flattened representations",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "JSON Patch and Document Modification",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "RFC 6902 JSON Patch Implementation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Patch operation types (add, remove, replace, move, copy, test) with atomic transaction semantics",
+              "weight": 2
+            },
+            {
+              "requirements": "The `patch()` method applies sequences of operations defined in patch objects to target JSON documents",
+              "weight": 3
+            },
+            {
+              "requirements": "In-place patch application for memory efficiency",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Document Difference and Merge Operations",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "The `diff()` function compares two JSON documents and generates JSON Patches that transform the first document into the second",
+              "weight": 3
+            },
+            {
+              "requirements": "RFC 7396 JSON Merge Patch support with `merge_patch()` method for simplified, recursive patching",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Exception Handling and Error Management",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Hierarchical Exception System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Exception-based model throwing specific exceptions (`parse_error`, `type_error`, `out_of_range`, etc.) derived from common `json::exception` base class",
+              "weight": 3
+            },
+            {
+              "requirements": "Enhanced error messages with context information and position tracking for parse errors",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Alternative Error Handling Modes",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Optional no-exception mode where functions signal errors via return values and object state (`is_discarded()`)",
+              "weight": 2
+            },
+            {
+              "requirements": "Exception-free operation modes for environments where exceptions are not suitable",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration and Customization Framework",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Compile-Time Configuration System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Core behavior control via preprocessor macros for exception handling (`JSON_NOEXCEPTION`) and implicit conversions (`JSON_USE_IMPLICIT_CONVERSIONS`)",
+              "weight": 3
+            },
+            {
+              "requirements": "Feature toggle macros for disabling functionality like I/O operations (`JSON_NO_IO`) to reduce binary size or manage dependencies",
+              "weight": 2
+            },
+            {
+              "requirements": "Namespace customization and versioning through macros (`NLOHMANN_JSON_NAMESPACE*`)",
+              "weight": 1
+            },
+            {
+              "requirements": "Compiler compatibility and language standard detection",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Object Ordering and Comparison",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Ordered map implementation for preserving insertion order in JSON objects",
+              "weight": 1
+            },
+            {
+              "requirements": "Lexicographical comparison operators with three-way comparison support for C++20",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

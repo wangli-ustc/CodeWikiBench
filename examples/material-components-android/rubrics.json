@@ -1,0 +1,712 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core Library Integration & Bootstrapping",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Application Setup and Environment Configuration",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Material Theme Inheritance System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Requires application theme to inherit from library-provided Material theme (e.g., Theme.Material3)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Theme inheritance injects default styles, attributes, and behaviors into all components",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "AppCompatActivity dependency for core functionality and backward compatibility",
+              "weight": 2
+            },
+            {
+              "requirements": "Enforces specific build environment configurations (Android SDK, Java, Gradle versions)",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Dependency and Resource Management",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Maven library distribution for standardized Gradle project integration",
+              "weight": 2
+            },
+            {
+              "requirements": "Non-transitive R class resource management to prevent ID conflicts",
+              "weight": 2
+            },
+            {
+              "requirements": "AndroidX namespace migration and compatibility layer",
+              "weight": 2
+            },
+            {
+              "requirements": "Snapshot version distribution and integration",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Material Design Theming & Styling Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Centralized Theme System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Theme attribute resolution hierarchy and style inheritance",
+              "weight": 3
+            },
+            {
+              "requirements": "Style overlay composition and merging logic",
+              "weight": 3
+            },
+            {
+              "requirements": "Runtime theme switching and component update propagation",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Color System Implementation",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Semantic Color Roles and Mapping",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Defines semantic color roles (colorPrimary, colorSurface) mapped to theme values",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Dark theme color mapping and contrast management",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Dynamic Color System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Dynamic color extraction and harmonization algorithms from user wallpaper",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Content-based dynamic color generation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Color harmonization utilities for custom colors",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Elevation and Surface Color System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Surface color calculation with elevation overlay for Dark Theme",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Programmatic surface lightening based on virtual elevation",
+                  "weight": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Shape System Implementation",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "MaterialShapeDrawable and ShapeAppearanceModel",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "MaterialShapeDrawable rendering system for complex shapes with cut and rounded corners",
+                  "weight": 3
+                },
+                {
+                  "requirements": "ShapeAppearanceModel for defining component geometry and corner treatments",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Corner family and size calculation system",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Shape Customization Framework",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Shape appearance model inheritance and override resolution",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Multi-level shape customization (global theme, component-type, per-instance)",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Typography System Implementation",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Type scale definition and theme attribute mapping (textAppearanceHeadline1)",
+              "weight": 3
+            },
+            {
+              "requirements": "Downloadable font integration and caching",
+              "weight": 2
+            },
+            {
+              "requirements": "Emphasized typography variant generation",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "UI Component Framework Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Core Component Infrastructure",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Component Base Classes and Architecture",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Custom View/Drawable implementation with configurable XML attributes and APIs",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Theme-aware component design inheriting from global theming system",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Component state management system (enabled, disabled, selected, error, checked)",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Component Attribute and Style System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "XML attribute parsing and validation framework",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Runtime attribute modification and property binding",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Accessibility Integration Layer",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "TalkBack integration and screen reader optimization",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Touch target size enforcement and validation",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Content description generation and management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "RTL layout support and text direction handling",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Behavioral Controllers and Interactions",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "CoordinatorLayout.Behavior System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Component interaction orchestration (BottomAppBar with scrolling views)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Dismissible and expandable surface behaviors (Bottom Sheets, Side Sheets)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Complex transition management (SearchBar to SearchView animation)",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "System Integration Features",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Predictive Back gesture integration with custom animations",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Android back event handling and navigation flow",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Component Composition and Variants",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Container component management (ChipGroup, ToggleButtonGroup) with layout and selection logic",
+              "weight": 2
+            },
+            {
+              "requirements": "Component variant system (Filled vs. Outlined TextField, Standard vs. Modal BottomSheet)",
+              "weight": 2
+            },
+            {
+              "requirements": "Drawable-based components (BadgeDrawable) for view hierarchy attachment",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Individual Component Implementations",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Input Components",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Text Field System (TextInputLayout/TextInputEditText)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Input validation and error state management",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Floating label animation and positioning logic",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Helper text and character counter integration",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Selection Controls (Checkbox, RadioButton, Switch)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "State transition animations and visual feedback",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Group selection management for radio buttons",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Slider Component System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Touch interaction and gesture handling",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Value formatting and label display logic",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Range slider multi-thumb coordination",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Navigation Components",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "App Bar System (MaterialToolbar, CollapsingToolbarLayout)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Scrolling behavior coordination with content",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Collapsing animation and parallax effects",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Action item overflow management",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Navigation Drawer System",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Drawer state management and gesture handling",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Navigation item selection and highlighting",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Scrim overlay and modal behavior",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Bottom Navigation and Navigation Rail",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Badge system integration",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Active indicator animation and positioning",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Tab System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "ViewPager integration and synchronization",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Tab indicator animation and scrolling behavior",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Action Components",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Button System (Material Button, Icon Button, FAB)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Ripple effect animation system",
+                  "weight": 3
+                },
+                {
+                  "requirements": "FAB visibility animation and anchoring system",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Button group coordination and overflow handling",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Chip System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "ChipGroup selection management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Chip removal animation and interaction",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Container Components",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Sheet Systems (Bottom Sheet, Side Sheet)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Behavior state machine (collapsed, expanded, hidden)",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Gesture recognition and drag handling",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Predictive back gesture integration",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Card System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Checkable state management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Drag and drop interaction support",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Dialog System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Modal overlay and scrim management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Full-screen dialog transition handling",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Feedback Components",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Progress Indicator System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Determinate/indeterminate state switching",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Animation timing and easing coordination",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Snackbar System",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Queue management for multiple snackbars",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Anchoring and positioning relative to other components",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Motion and Animation System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Transition Framework Implementation",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Container Transform Pattern",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Shared element identification and bounds calculation",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Morphing animation between different container shapes",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Content fade and reveal choreography",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Shared Axis Pattern",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Directional movement coordination (X, Y, Z axis)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Content sliding and fade timing synchronization",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Fade Through Pattern",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Sequential fade out/in timing coordination",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Content replacement and layout change handling",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Motion Theming and Primitives",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Spring-based animation system with configurable tension and friction",
+              "weight": 2
+            },
+            {
+              "requirements": "Easing curve system with duration and interpolation control",
+              "weight": 2
+            },
+            {
+              "requirements": "Motion resource management and caching",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Adaptive UI & Layout System",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Adaptive Layout Infrastructure",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Foldable device state monitoring and layout adaptation with WindowManager integration",
+              "weight": 3
+            },
+            {
+              "requirements": "ConstraintSet-based layout switching for different screen configurations",
+              "weight": 3
+            },
+            {
+              "requirements": "Navigation component integration for adaptive layouts",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Canonical Layout Pattern Implementations",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "List-detail adaptive layout with master-detail coordination",
+              "weight": 2
+            },
+            {
+              "requirements": "Feed layout with responsive column management",
+              "weight": 2
+            },
+            {
+              "requirements": "Supporting Panel layout with contextual content display",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Development Infrastructure & Quality Assurance",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Testing and Validation Framework",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Component testing infrastructure with accessibility validation",
+              "weight": 2
+            },
+            {
+              "requirements": "Catalog app for component demonstration and testing",
+              "weight": 1
+            },
+            {
+              "requirements": "Code convention enforcement and style validation",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

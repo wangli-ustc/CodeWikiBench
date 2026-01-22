@@ -1,0 +1,266 @@
+{
+  "title": "FluentValidation",
+  "description": "Documentation for FluentValidation",
+  "subpages": [
+    {
+      "title": "Other Advanced Features",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "PreValidate": "<detail_content>",
+        "Root Context Data": "<detail_content>",
+        "Customizing the Validation Exception": "<detail_content>"
+      }
+    },
+    {
+      "title": "ASP.NET Core",
+      "path": "[\"subpages\", 1]",
+      "content": {
+        "Getting started": "<detail_content>",
+        "Manual Validation": "<detail_content>",
+        "Automatic Validation": {
+          "Using the ASP.NET Validation Pipeline": "<detail_content>",
+          "Using a Filter": "<detail_content>"
+        },
+        "Clientside Validation": "<detail_content>",
+        "Minimal APIs": "<detail_content>"
+      }
+    },
+    {
+      "title": "Async",
+      "path": "[\"subpages\", 2]",
+      "content": {
+        "Asynchronous Validation": "<detail_content>"
+      }
+    },
+    {
+      "title": "Blazor",
+      "path": "[\"subpages\", 3]",
+      "content": {
+        "Blazor": "<detail_content>"
+      }
+    },
+    {
+      "title": "Built-in Validators",
+      "path": "[\"subpages\", 4]",
+      "content": {
+        "NotNull Validator": "<detail_content>",
+        "NotEmpty Validator": "<detail_content>",
+        "NotEqual Validator": "<detail_content>",
+        "Equal Validator": "<detail_content>",
+        "Length Validator": "<detail_content>",
+        "MaxLength Validator": "<detail_content>",
+        "MinLength Validator": "<detail_content>",
+        "Less Than Validator": "<detail_content>",
+        "Less Than Or Equal Validator": "<detail_content>",
+        "Greater Than Validator": "<detail_content>",
+        "Greater Than Or Equal Validator": "<detail_content>",
+        "Predicate Validator": "<detail_content>",
+        "Regular Expression Validator": "<detail_content>",
+        "Email Validator": "<detail_content>",
+        "Credit Card Validator": "<detail_content>",
+        "Enum Validator": "<detail_content>",
+        "Enum Name Validator": "<detail_content>",
+        "Empty Validator": "<detail_content>",
+        "Null Validator": "<detail_content>",
+        "ExclusiveBetween Validator": "<detail_content>",
+        "InclusiveBetween Validator": "<detail_content>",
+        "PrecisionScale Validator": "<detail_content>"
+      }
+    },
+    {
+      "title": "Setting the Cascade mode",
+      "path": "[\"subpages\", 5]",
+      "content": {
+        "Rule-Level Cascade Modes": "<detail_content>",
+        "Validator Class-Level Cascade Modes": "<detail_content>",
+        "Global Default Cascade Modes": "<detail_content>",
+        "Introduction of RuleLevelCascadeMode and ClassLevelCascadeMode (and removal of CascadeMode)": "<detail_content>"
+      }
+    },
+    {
+      "title": "Collections",
+      "path": "[\"subpages\", 6]",
+      "content": {
+        "Collections of Simple Types": "<detail_content>",
+        "Collections of Complex Types": "<detail_content>"
+      }
+    },
+    {
+      "title": "Conditions",
+      "path": "[\"subpages\", 7]",
+      "content": {
+        "Conditions": "<detail_content>"
+      }
+    },
+    {
+      "title": "Overriding the Message",
+      "path": "[\"subpages\", 8]",
+      "content": {
+        "Placeholders": "<detail_content>"
+      }
+    },
+    {
+      "title": "Custom State",
+      "path": "[\"subpages\", 9]",
+      "content": {
+        "Custom State": "<detail_content>"
+      }
+    },
+    {
+      "title": "Custom Validators",
+      "path": "[\"subpages\", 10]",
+      "content": {
+        "Predicate Validator": "<detail_content>",
+        "Custom message placeholders": "<detail_content>",
+        "Writing a Custom Validator": "<detail_content>",
+        "Reusable Property Validators": "<detail_content>"
+      }
+    },
+    {
+      "title": "Dependentrules",
+      "path": "[\"subpages\", 11]",
+      "content": {
+        "Dependent Rules": "<detail_content>"
+      }
+    },
+    {
+      "title": "Dependency Injection",
+      "path": "[\"subpages\", 12]",
+      "content": {
+        "Automatic registration": {
+          "Filtering results": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Custom Error Codes",
+      "path": "[\"subpages\", 13]",
+      "content": {
+        "ErrorCode and Error Messages": "<detail_content>"
+      }
+    },
+    {
+      "title": "Including Rules",
+      "path": "[\"subpages\", 14]",
+      "content": {
+        "Including Rules": "<detail_content>"
+      }
+    },
+    {
+      "title": "Inheritance Validation",
+      "path": "[\"subpages\", 15]",
+      "content": {
+        "Limitations": "<detail_content>"
+      }
+    },
+    {
+      "title": "Installation",
+      "path": "[\"subpages\", 16]",
+      "content": {
+        "Installation": "<detail_content>"
+      }
+    },
+    {
+      "title": "Localization",
+      "path": "[\"subpages\", 17]",
+      "content": {
+        "Localization": "<detail_content>"
+      }
+    },
+    {
+      "title": "Mvc5",
+      "path": "[\"subpages\", 18]",
+      "content": {
+        "ASP.NET MVC 5": "<detail_content>"
+      }
+    },
+    {
+      "title": "Rulesets",
+      "path": "[\"subpages\", 19]",
+      "content": {
+        "RuleSets": "<detail_content>"
+      }
+    },
+    {
+      "title": "Severity",
+      "path": "[\"subpages\", 20]",
+      "content": {
+        "Setting the Severity Level": "<detail_content>"
+      }
+    },
+    {
+      "title": "Specific Properties",
+      "path": "[\"subpages\", 21]",
+      "content": {
+        "Validating specific properties": "<detail_content>"
+      }
+    },
+    {
+      "title": "Start",
+      "path": "[\"subpages\", 22]",
+      "content": {
+        "Creating your first validator": "<detail_content>",
+        "Chaining validators": "<detail_content>",
+        "Throwing Exceptions": "<detail_content>",
+        "Complex Properties": "<detail_content>"
+      }
+    },
+    {
+      "title": "Test Extensions",
+      "path": "[\"subpages\", 23]",
+      "content": {
+        "Using TestValidate": "<detail_content>",
+        "Asynchronous TestValidate": "<detail_content>"
+      }
+    },
+    {
+      "title": "Transform",
+      "path": "[\"subpages\", 24]",
+      "content": {
+        "Transforming Values": "<detail_content>"
+      }
+    },
+    {
+      "title": "Upgrading To 10",
+      "path": "[\"subpages\", 25]",
+      "content": {
+        "10.0 Upgrade Guide": "<detail_content>"
+      }
+    },
+    {
+      "title": "Upgrading To 11",
+      "path": "[\"subpages\", 26]",
+      "content": {
+        "11.0 Upgrade Guide": "<detail_content>"
+      }
+    },
+    {
+      "title": "Upgrading To 12",
+      "path": "[\"subpages\", 27]",
+      "content": {
+        "12.0 Upgrade Guide": "<detail_content>"
+      }
+    },
+    {
+      "title": "Upgrading To 8",
+      "path": "[\"subpages\", 28]",
+      "content": {
+        "8.0 Upgrade Guide": "<detail_content>"
+      }
+    },
+    {
+      "title": "Upgrading To 9",
+      "path": "[\"subpages\", 29]",
+      "content": {
+        "9.0 Upgrade Guide": "<detail_content>"
+      }
+    },
+    {
+      "title": "Webapi",
+      "path": "[\"subpages\", 30]",
+      "content": {
+        "ASP.NET WebApi 2": "<detail_content>"
+      }
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Cross-platform Electron Application Architecture",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Dual-Process Model Implementation",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Main Process Management",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Application lifecycle and window management",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Native UI elements management (windows, menus, dialogs)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "File system operations and OS-level API handling",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Renderer Process (Editor Window)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "UI component rendering system",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Editor viewport and mode switching",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Sidebar navigation and file tree display",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Tab-based document management interface",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Titlebar and window controls",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Document state management and synchronization",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Inter-Process Communication (IPC)",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Messaging system coordination between Main and Renderer processes",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Command registration and execution framework",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Event-driven architecture for UI updates",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Cross-Platform Abstraction Layer",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Platform-specific key binding management",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Separate default keymaps for different operating systems",
+                  "weight": 2
+                },
+                {
+                  "requirements": "User-defined keyboard shortcuts mapping to internal commands",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Native OS integration and file associations",
+              "weight": 2
+            },
+            {
+              "requirements": "Distribution packaging system",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Linux packaging formats (AppImage, Flatpak)",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Platform-specific installation and deployment",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Markdown Editing Engine (Muya Integration)",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Markdown Parsing and Rendering Pipeline",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Raw Markdown text parsing into internal structured document model (AST)",
+              "weight": 3
+            },
+            {
+              "requirements": "Real-time WYSIWYG-style editable view rendering",
+              "weight": 3
+            },
+            {
+              "requirements": "Block-based content structure handling",
+              "weight": 2
+            },
+            {
+              "requirements": "Syntax highlighting and live preview generation",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Text and Content Manipulation Engine",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Core text operations",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Text insertion, deletion, and selection handling",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Selection and cursor management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Undo/redo operation tracking",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Advanced formatting and content manipulation commands",
+              "weight": 2
+            },
+            {
+              "requirements": "Structural block elements management and properties",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Smart Editing Features and Assistance",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Auto-completion for brackets, quotes, and syntax elements",
+              "weight": 2
+            },
+            {
+              "requirements": "Link and image management within documents",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Link resolution and management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Local image processing and optimization",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Cloud image upload integration (PicGo, GitHub)",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Specialized viewing modes",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Typewriter mode implementation",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Focus mode implementation",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Search and Replace Functionality",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Text search and optional replacement within current document",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "File and Data Management System",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "File System Operations Engine",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Core file I/O operations (opening, saving, reading files and directories)",
+              "weight": 3
+            },
+            {
+              "requirements": "Multi-format file handling and validation",
+              "weight": 3
+            },
+            {
+              "requirements": "File encoding detection and conversion",
+              "weight": 2
+            },
+            {
+              "requirements": "Line ending normalization",
+              "weight": 1
+            },
+            {
+              "requirements": "Directory-based project management",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Document State Management",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "In-memory state maintenance for open files (content, path, modification status)",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Application Data Persistence",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "User preferences, themes, and configuration storage in dedicated application data directory",
+              "weight": 2
+            },
+            {
+              "requirements": "Portable Mode support with data stored alongside executable",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration and Extensibility Framework",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Centralized Preferences Management System",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "User preferences persistence and synchronization",
+              "weight": 2
+            },
+            {
+              "requirements": "Read, write, and manage all user-configurable settings",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Theming and Appearance System",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "CSS-based theme loading and application",
+              "weight": 2
+            },
+            {
+              "requirements": "Theme management for editor UI and document export",
+              "weight": 1,
+              "sub_tasks": [
+                {
+                  "requirements": "Theme installation and management",
+                  "weight": 1
+                },
+                {
+                  "requirements": "Custom theme creation framework",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Service Integration Framework",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Spell Checking Service Abstraction",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Platform-specific spell checker integration (macOS, Windows native)",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Hunspell dictionary management",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "requirements": "Image Upload Service Integration",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "External image hosting provider integration (GitHub, PicGo)",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Internationalization (i18n) Framework",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "Language-specific resource file loading for UI translation",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Document Export and Rendering Pipeline",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Multi-format Export Engine",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Internal Markdown document conversion to external formats (HTML, PDF)",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Export Configuration and Styling",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Export-specific configurations (page layout, headers, footers)",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom styles and theme application for exports",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Development and Build Infrastructure",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "Build and Development Toolchain",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Electron build pipeline and packaging",
+              "weight": 2
+            },
+            {
+              "requirements": "Development environment setup and debugging tools",
+              "weight": 1
+            },
+            {
+              "requirements": "Release management and deployment",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Command Line Interface",
+          "weight": 1,
+          "sub_tasks": [
+            {
+              "requirements": "CLI command processing and argument parsing",
+              "weight": 1
+            },
+            {
+              "requirements": "File opening and application control via command line",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

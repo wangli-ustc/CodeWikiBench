@@ -1,0 +1,362 @@
+{
+  "rubrics": [
+    {
+      "requirements": "Core System Architecture: Dual-component design separating Unity simulation environment from Python training framework with standardized communication protocol",
+      "weight": 3,
+      "sub_tasks": [
+        {
+          "requirements": "Unity Simulation Environment: C# runtime for agent interaction, data collection, and inference execution",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Agent Component System: Fundamental entities managing perception, decision-making, and action execution within simulation",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Observation Processing Pipeline: Multi-modal sensor system for environmental data collection and preprocessing",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Sensor Abstraction Framework: Modular ISensor interface supporting vector, visual, raycast, grid, and variable-length observations",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Data Normalization and Encoding: Pre-processing system with stacking, one-hot encoding, and tensor-compatible serialization",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Multi-Camera Visual Integration: Simultaneous processing of multiple visual inputs with convolutional network support",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Action Execution System: Motor control interface translating neural network outputs into environment actions",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Actuator Abstraction Framework: Modular IActuator interface for continuous and discrete action space execution",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Action Space Management: Support for continuous force control and discrete choice actions with dynamic masking",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Agent Lifecycle Management: Episode initialization, termination handling, heuristic fallback, and max-step capping",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Multi-Agent Coordination: Group behavior system supporting cooperative teams and adversarial scenarios",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Cooperative Group Management: Shared reward systems encouraging collaborative behavior",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Adversarial Team Assignment: Dynamic team formation for competitive multi-agent training",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "Inference Engine: Cross-platform neural network execution system within Unity",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Model Embedding and Execution: ONNX model integration with Barracuda backend for CPU/GPU/mobile deployment",
+                  "weight": 3
+                },
+                {
+                  "requirements": "Cross-Platform Determinism: Consistent inference results across different hardware targets",
+                  "weight": 2
+                }
+              ]
+            },
+            {
+              "requirements": "Environment Management: Simulation lifecycle control and parameterization system",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Academy Singleton: Global time-stepping, fixed-interval control, and scene-wide parameter management",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Environment Parameterization: Dynamic configuration system for curriculum learning and domain randomization",
+                  "weight": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "requirements": "Python Training Framework: Machine learning orchestration system managing algorithms, optimization, and distributed training",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Training Orchestration System: Command-line interface managing complete training lifecycle",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Session Management: Training run control with checkpoint saving, resumption, and graceful shutdown",
+                  "weight": 2
+                },
+                {
+                  "requirements": "SubprocessEnvManager: Parallel Unity environment coordination for accelerated data collection",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Multi-Algorithm Training Framework: Pluggable system supporting reinforcement learning and imitation learning approaches",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Deep Reinforcement Learning Algorithms: Policy gradient and value-based methods for autonomous learning",
+                  "weight": 3,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Proximal Policy Optimization (PPO): On-policy algorithm with GAE, entropy bonus, and learning rate annealing",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Soft Actor-Critic (SAC): Off-policy algorithm with twin Q-functions and automatic temperature tuning",
+                      "weight": 3
+                    },
+                    {
+                      "requirements": "Multi-Agent POCA: Centralized critic with decentralized execution for cooperative heterogeneous agents",
+                      "weight": 2
+                    }
+                  ]
+                },
+                {
+                  "requirements": "Imitation Learning Framework: Learning from demonstrations through behavioral cloning and adversarial methods",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Behavioral Cloning: Direct policy learning from expert demonstrations with L2 loss",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Generative Adversarial Imitation Learning (GAIL): Adversarial approach without explicit reward engineering",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "Neural Network Architecture System: Flexible model construction with specialized components and memory integration",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "Visual Encoding Networks: CNN architectures with GroupNorm, IMPALA residual blocks, and configurable filters",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Attention Mechanisms: Transformer blocks for variable-length and structured input processing",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Memory-Enhanced Networks: LSTM/GRU integration for temporal reasoning and partial observability",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Model Export Pipeline: TorchScript to ONNX to Barracuda conversion for Unity deployment",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Reward Signal Composition System: Multi-source reward aggregation combining extrinsic and intrinsic motivation",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "Intrinsic Motivation Framework: Self-generated rewards for exploration enhancement",
+                  "weight": 2,
+                  "sub_tasks": [
+                    {
+                      "requirements": "Curiosity-Driven Exploration (ICM): Prediction error-based rewards for novel state discovery",
+                      "weight": 2
+                    },
+                    {
+                      "requirements": "Random Network Distillation (RND): Feature-based exploration for sparse reward environments",
+                      "weight": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "requirements": "TorchOptimizer Framework: PyTorch-based optimization with gradient clipping, mixed precision, and distributed support",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Unity-Python Communication Protocol: Bidirectional RPC system with protobuf serialization and step-wise synchronization",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "BaseEnv Interface: Python abstraction providing step(), reset(), and behavior specification methods",
+              "weight": 3
+            },
+            {
+              "requirements": "Communication Layer Components: Socket-based client-server architecture with version handshake",
+              "weight": 3,
+              "sub_tasks": [
+                {
+                  "requirements": "UnityCommunicator: C# server packaging DecisionSteps/TerminalSteps with engine configuration",
+                  "weight": 3
+                },
+                {
+                  "requirements": "RpcCommunicator: Python client handling async I/O and protobuf to numpy translation",
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "requirements": "Side Channel System: Parallel communication for auxiliary data outside main observation-action loop",
+              "weight": 2,
+              "sub_tasks": [
+                {
+                  "requirements": "System-Level Channels: Built-in channels for engine configuration and environment parameters",
+                  "weight": 2
+                },
+                {
+                  "requirements": "Custom Channel Framework: User-extensible bidirectional data streams with runtime registration",
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Advanced Training Strategies: High-level methodologies for complex problem solving and robust policy development",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "Self-Play Training System: Competitive learning where agents train against evolving versions of themselves",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "ELO Rating and Opponent Selection: Skill assessment mechanism for balanced competitive training",
+              "weight": 2
+            },
+            {
+              "requirements": "Policy Snapshot Management: Historical policy preservation with swap-probability curriculum",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Curriculum Learning Framework: Progressive difficulty adjustment for complex skill acquisition",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Performance-Based Progression: Automatic advancement based on agent competency metrics with JSON-defined thresholds",
+              "weight": 2
+            },
+            {
+              "requirements": "Multi-Stage Task Decomposition: Complex task breakdown into learnable sub-skills",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "requirements": "Environment Parameter Randomization: Domain randomization for robust policy generalization",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Statistical Sampling Framework: Configurable parameter distributions including uniform, Gaussian, and multi-range samplers",
+              "weight": 2
+            },
+            {
+              "requirements": "Adaptive Parameter Control: E-Greedy bandit balancing exploration vs exploitation of environment parameters",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Configuration and Monitoring System: Declarative training specification and performance analysis infrastructure",
+      "weight": 2,
+      "sub_tasks": [
+        {
+          "requirements": "YAML Configuration Framework: Declarative system for defining training runs, hyperparameters, and reward signals",
+          "weight": 3,
+          "sub_tasks": [
+            {
+              "requirements": "Behavior-Specific Configuration: Mapping trainer settings to specific agent behaviors with algorithm selection",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "requirements": "Training Monitoring and Visualization: Statistics collection and real-time performance tracking",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "TensorBoard Integration: Automatic logging of rewards, policy loss, entropy, and custom metrics",
+              "weight": 2
+            },
+            {
+              "requirements": "StatsWriter Plugin System: Extensible statistics aggregation with pluggable output formats",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": "Extensibility and Integration Ecosystem: Plugin architecture and external framework compatibility",
+      "weight": 1,
+      "sub_tasks": [
+        {
+          "requirements": "Plugin Architecture: Entry-point system for custom trainers, optimizers, and specialized components",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "Custom Trainer Plugin System: Framework for implementing novel training algorithms",
+              "weight": 2
+            },
+            {
+              "requirements": "Custom StatsWriter Extensions: Pluggable statistics export beyond TensorBoard",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "External Framework Integration: Compatibility layers for popular ML frameworks and research platforms",
+          "weight": 2,
+          "sub_tasks": [
+            {
+              "requirements": "OpenAI Gym Wrapper: Single-agent interface with action flattening and dtype conversion",
+              "weight": 2
+            },
+            {
+              "requirements": "PettingZoo Integration: Multi-agent AEC and parallel APIs with agent lifecycle management",
+              "weight": 2
+            },
+            {
+              "requirements": "Hugging Face Hub Integration: Model sharing with automatic metadata and README generation",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "requirements": "Cloud and DevOps Infrastructure: Distributed training support with containerization and cloud platform integration",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

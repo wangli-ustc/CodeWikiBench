@@ -1,0 +1,1809 @@
+{
+  "title": "mermaid",
+  "description": "Documentation for mermaid",
+  "subpages": [
+    {
+      "title": "Custom SVG Shapes Library",
+      "path": "[\"subpages\", 0]",
+      "content": {
+        "Overview": "<detail_content>",
+        "Shape Helpers and Utilities": "<detail_content>",
+        "Available Utilities": {
+          "1. `labelHelper`": "<detail_content>",
+          "2. `updateNodeBounds`": "<detail_content>",
+          "3. `insertPolygonShape`": "<detail_content>",
+          "4. `getNodeClasses`": "<detail_content>",
+          "5. `createPathFromPoints`": "<detail_content>",
+          "6. `generateFullSineWavePoints`": "<detail_content>"
+        },
+        "Getting Started": "<detail_content>",
+        "Example Usage": "<detail_content>",
+        "Adding New Shapes": {
+          "1. Create the Shape Function": "<detail_content>",
+          "2. Register the Shape": "<detail_content>"
+        }
+      }
+    },
+    {
+      "title": "Community",
+      "description": "Documentation section: community",
+      "path": "[\"subpages\", 1]",
+      "subpages": [
+        {
+          "title": "Mermaid Contributing Guide",
+          "path": "[\"subpages\", 1, \"subpages\", 0]",
+          "content": {
+            "Initial Setup": {
+              "Get the Source Code": "<detail_content>",
+              "Install Requirements": "<detail_content>",
+              "Install Packages": "<detail_content>",
+              "Verify Everything Works": "<detail_content>"
+            },
+            "Workflow": "<detail_content>",
+            "Checkout a New Branch": "<detail_content>",
+            "Contributing Code": {
+              "Where is the Code Located?": "<detail_content>",
+              "Building Mermaid Locally": "<detail_content>",
+              "Running Mermaid Locally": "<detail_content>",
+              "Make Changes": "<detail_content>",
+              "Write Tests": {
+                "Unit Tests": {
+                  "Testing the DOM": "<detail_content>"
+                },
+                "Integration / End-to-End (E2E) Tests": "<detail_content>"
+              },
+              "Update Documentation": "<detail_content>"
+            },
+            "Contributing Documentation": {
+              "Where is the Documentation Located?": "<detail_content>",
+              "Running the Documentation Website Locally": "<detail_content>",
+              "Formatting": "<detail_content>",
+              "Navigation": "<detail_content>",
+              "Build Docs": "<detail_content>"
+            },
+            "Submit your pull request": "<detail_content>",
+            "Congratulations": "<detail_content>"
+          }
+        },
+        {
+          "title": "Getting Started",
+          "path": "[\"subpages\", 1, \"subpages\", 1]",
+          "content": {
+            "How can I help?": "<detail_content>",
+            "Join the Development": "<detail_content>",
+            "A Question Or a Suggestion?": "<detail_content>",
+            "Last Words": "<detail_content>"
+          }
+        },
+        {
+          "title": "Adding a New Diagram/Chart (Deprecated) 📊",
+          "path": "[\"subpages\", 1, \"subpages\", 2]",
+          "content": {
+            "Usage of the parser as a separate module": {
+              "Setup": "<detail_content>",
+              "Parsing": "<detail_content>",
+              "Data extraction": "<detail_content>"
+            },
+            "Layout": {
+              "Common parts of a diagram": "<detail_content>"
+            },
+            "Accessibility": {
+              "aria-roledescription": "<detail_content>",
+              "accessible title and description": "<detail_content>"
+            },
+            "Theming": "<detail_content>"
+          }
+        },
+        {
+          "title": "Adding a New Diagram/Chart 📊",
+          "path": "[\"subpages\", 1, \"subpages\", 3]",
+          "content": {
+            "Accessibility": {
+              "aria-roledescription": "<detail_content>",
+              "accessible title and description": "<detail_content>"
+            },
+            "Theming": "<detail_content>",
+            "Examples": "<detail_content>"
+          }
+        },
+        {
+          "title": "Questions or Suggestions?",
+          "path": "[\"subpages\", 1, \"subpages\", 4]",
+          "content": {
+            "Search for Existing Issue": "<detail_content>",
+            "Add a new Issue": "<detail_content>"
+          }
+        },
+        {
+          "title": "Security",
+          "path": "[\"subpages\", 1, \"subpages\", 5]",
+          "content": {
+            "Reporting vulnerabilities": "<detail_content>",
+            "Best practices": "<detail_content>",
+            "Configuring DomPurify": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Config",
+      "description": "Documentation section: config",
+      "path": "[\"subpages\", 2]",
+      "subpages": [
+        {
+          "title": "Version 8.6.0 Changes",
+          "path": "[\"subpages\", 2, \"subpages\", 0]",
+          "content": {
+            "[New Mermaid Live-Editor Beta](https://mermaid-js.github.io/docs/mermaid-live-editor-beta/#/edit/eyJjb2RlIjoiJSV7aW5pdDoge1widGhlbWVcIjogXCJmb3Jlc3RcIiwgXCJsb2dMZXZlbFwiOiAxIH19JSVcbmdyYXBoIFREXG4gIEFbQ2hyaXN0bWFzXSAtLT58R2V0IG1vbmV5fCBCKEdvIHNob3BwaW5nKVxuICBCIC0tPiBDe0xldCBtZSB0aGlua31cbiAgQyAtLT58T25lfCBEW0xhcHRvcF1cbiAgQyAtLT58VHdvfCBFW2lQaG9uZV1cbiAgQyAtLT58VGhyZWV8IEZbZmE6ZmEtY2FyIENhcl1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGFyayJ9fQ)": "<detail_content>",
+            "[CDN](https://www.jsdelivr.com/package/npm/mermaid)": "<detail_content>"
+          }
+        },
+        {
+          "title": "Accessibility Options",
+          "path": "[\"subpages\", 2, \"subpages\", 1]",
+          "content": {
+            "Accessibility": {
+              "aria-roledescription": "<detail_content>",
+              "Accessible Title and Description": {
+                "accessible title": "<detail_content>",
+                "accessible description": "<detail_content>",
+                "accTitle and accDescr Usage Examples": "<detail_content>",
+                "Sample Code Snippets for other diagram types": {
+                  "Class Diagram": "<detail_content>",
+                  "Entity Relationship Diagram": "<detail_content>",
+                  "Gantt Chart": "<detail_content>",
+                  "GitGraph": "<detail_content>",
+                  "Pie Chart": "<detail_content>",
+                  "Requirement Diagram": "<detail_content>",
+                  "Sequence Diagram": "<detail_content>",
+                  "State Diagram": "<detail_content>",
+                  "User Journey Diagram": "<detail_content>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Configuration",
+          "path": "[\"subpages\", 2, \"subpages\", 2]",
+          "content": {
+            "Frontmatter config": "<detail_content>",
+            "Theme configuration": "<detail_content>",
+            "Starting mermaid": "<detail_content>",
+            "Initialize": "<detail_content>",
+            "configApi.reset": "<detail_content>"
+          }
+        },
+        {
+          "title": "Directives",
+          "path": "[\"subpages\", 2, \"subpages\", 3]",
+          "content": {
+            "Directives": "<detail_content>",
+            "Types of Directives options": "<detail_content>",
+            "Declaring directives": "<detail_content>",
+            "Directive Examples": {
+              "Changing theme via directive": "<detail_content>",
+              "Changing fontFamily via directive": "<detail_content>",
+              "Changing logLevel via directive": "<detail_content>",
+              "Changing flowchart config via directive": "<detail_content>",
+              "Changing Sequence diagram config via directive": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Faq",
+          "path": "[\"subpages\", 2, \"subpages\", 4]",
+          "content": {
+            "Frequently Asked Questions": "<detail_content>"
+          }
+        },
+        {
+          "title": "Icons",
+          "path": "[\"subpages\", 2, \"subpages\", 5]",
+          "content": {
+            "Registering icon pack in mermaid": "<detail_content>"
+          }
+        },
+        {
+          "title": "Math Configuration (v10.9.0+)",
+          "path": "[\"subpages\", 2, \"subpages\", 6]",
+          "content": {
+            "Usage": {
+              "Flowcharts": "<detail_content>",
+              "Sequence": "<detail_content>"
+            },
+            "Legacy Support": "<detail_content>",
+            "Handling Rendering Differences": "<detail_content>"
+          }
+        },
+        {
+          "title": "Mermaidcli",
+          "path": "[\"subpages\", 2, \"subpages\", 7]",
+          "content": {
+            "mermaid CLI": "<detail_content>"
+          }
+        },
+        {
+          "title": "Theme Configuration",
+          "path": "[\"subpages\", 2, \"subpages\", 8]",
+          "content": {
+            "Available Themes": "<detail_content>",
+            "Site-wide Theme": "<detail_content>",
+            "Diagram-specific Themes": "<detail_content>",
+            "Customizing Themes with `themeVariables`": "<detail_content>",
+            "Color and Color Calculation": "<detail_content>",
+            "Theme Variables": "<detail_content>",
+            "Flowchart Variables": "<detail_content>",
+            "Sequence Diagram Variables": "<detail_content>",
+            "Pie Diagram Variables": "<detail_content>",
+            "State Colors": "<detail_content>",
+            "Class Colors": "<detail_content>",
+            "User Journey Colors": "<detail_content>"
+          }
+        },
+        {
+          "title": "Usage",
+          "path": "[\"subpages\", 2, \"subpages\", 9]",
+          "content": {
+            "Using mermaid": {
+              "Installing and Hosting Mermaid on a Webpage": "<detail_content>"
+            },
+            "Simple full example:": "<detail_content>",
+            "Notes:": "<detail_content>",
+            "Tiny Mermaid": "<detail_content>",
+            "Enabling Click Event and Tags in Nodes": "<detail_content>",
+            "securityLevel": {
+              "Labels out of bounds": "<detail_content>",
+              "Using `mermaid.run`": "<detail_content>",
+              "Calling `mermaid.init` - Deprecated": "<detail_content>"
+            },
+            "Usage with webpack": "<detail_content>",
+            "API usage": {
+              "Binding events": "<detail_content>"
+            },
+            "Example of a marked renderer": "<detail_content>",
+            "Advanced usage": {
+              "Syntax validation without rendering": "<detail_content>"
+            },
+            "Configuration": {
+              "The following methods are deprecated and are kept only for backwards compatibility.": "<detail_content>"
+            },
+            "Using the mermaid object": "<detail_content>"
+          }
+        },
+        {
+          "title": "Setup",
+          "description": "Documentation section: setup",
+          "path": "[\"subpages\", 2, \"subpages\", 10]",
+          "subpages": [
+            {
+              "title": "mermaid",
+              "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 0]",
+              "content": {
+                "Modules": "<detail_content>"
+              }
+            },
+            {
+              "title": "Config",
+              "description": "Documentation section: config",
+              "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1]",
+              "subpages": [
+                {
+                  "title": "config",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 0]",
+                  "content": {
+                    "Variables": "<detail_content>",
+                    "Functions": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Functions",
+                  "description": "Documentation section: functions",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1]",
+                  "subpages": [
+                    {
+                      "title": "Function: addDirective()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 0]",
+                      "content": {
+                        "Parameters": {
+                          "directive": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: getConfig()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 1]",
+                      "content": {
+                        "getConfig": "<detail_content>",
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: getSiteConfig()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 2]",
+                      "content": {
+                        "getSiteConfig": "<detail_content>",
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: getUserDefinedConfig()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 3]",
+                      "content": {
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: reset()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 4]",
+                      "content": {
+                        "reset": "<detail_content>",
+                        "conf": "<detail_content>",
+                        "Parameters": {
+                          "config": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: sanitize()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 5]",
+                      "content": {
+                        "sanitize": "<detail_content>",
+                        "Parameters": {
+                          "options": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: saveConfigFromInitialize()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 6]",
+                      "content": {
+                        "Parameters": {
+                          "conf": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: setConfig()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 7]",
+                      "content": {
+                        "setConfig": "<detail_content>",
+                        "Parameters": {
+                          "conf": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: setSiteConfig()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 8]",
+                      "content": {
+                        "setSiteConfig": "<detail_content>",
+                        "Parameters": {
+                          "conf": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: updateCurrentConfig()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 9]",
+                      "content": {
+                        "Parameters": {
+                          "siteCfg": "<detail_content>",
+                          "\\_directives": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Function: updateSiteConfig()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 1, \"subpages\", 10]",
+                      "content": {
+                        "Parameters": {
+                          "conf": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Variables",
+                  "description": "Documentation section: variables",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 2]",
+                  "subpages": [
+                    {
+                      "title": "Defaultconfig",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 1, \"subpages\", 2, \"subpages\", 0]",
+                      "content": {
+                        "Variable: defaultConfig": "<detail_content>"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Defaultconfig",
+              "description": "Documentation section: defaultConfig",
+              "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 2]",
+              "subpages": [
+                {
+                  "title": "defaultConfig",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 2, \"subpages\", 0]",
+                  "content": {
+                    "Variables": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Variables",
+                  "description": "Documentation section: variables",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 2, \"subpages\", 1]",
+                  "subpages": [
+                    {
+                      "title": "Configkeys",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 2, \"subpages\", 1, \"subpages\", 0]",
+                      "content": {
+                        "Variable: configKeys": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Default",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 2, \"subpages\", 1, \"subpages\", 1]",
+                      "content": {
+                        "Variable: default": "<detail_content>"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Mermaid",
+              "description": "Documentation section: mermaid",
+              "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3]",
+              "subpages": [
+                {
+                  "title": "mermaid",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 0]",
+                  "content": {
+                    "Classes": "<detail_content>",
+                    "Interfaces": "<detail_content>",
+                    "Type Aliases": "<detail_content>",
+                    "Variables": "<detail_content>"
+                  }
+                },
+                {
+                  "title": "Classes",
+                  "description": "Documentation section: classes",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 1]",
+                  "subpages": [
+                    {
+                      "title": "Class: UnknownDiagramError",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 1, \"subpages\", 0]",
+                      "content": {
+                        "Extends": "<detail_content>",
+                        "Constructors": {
+                          "new UnknownDiagramError()": {
+                            "Parameters": {
+                              "message": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>",
+                            "Overrides": "<detail_content>"
+                          }
+                        },
+                        "Properties": {
+                          "cause?": {
+                            "Inherited from": "<detail_content>"
+                          },
+                          "message": {
+                            "Inherited from": "<detail_content>"
+                          },
+                          "name": {
+                            "Inherited from": "<detail_content>"
+                          },
+                          "stack?": {
+                            "Inherited from": "<detail_content>"
+                          },
+                          "prepareStackTrace()?": {
+                            "Parameters": {
+                              "err": "<detail_content>",
+                              "stackTraces": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>",
+                            "See": "<detail_content>",
+                            "Inherited from": "<detail_content>"
+                          },
+                          "stackTraceLimit": {
+                            "Inherited from": "<detail_content>"
+                          }
+                        },
+                        "Methods": {
+                          "captureStackTrace()": {
+                            "Parameters": {
+                              "targetObject": "<detail_content>",
+                              "constructorOpt?": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>",
+                            "Inherited from": "<detail_content>"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Interfaces",
+                  "description": "Documentation section: interfaces",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2]",
+                  "subpages": [
+                    {
+                      "title": "Interface: DetailedError",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 0]",
+                      "content": {
+                        "Properties": {
+                          "error?": "<detail_content>",
+                          "hash": "<detail_content>",
+                          "message?": "<detail_content>",
+                          "str": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: ExternalDiagramDefinition",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 1]",
+                      "content": {
+                        "Properties": {
+                          "detector": "<detail_content>",
+                          "id": "<detail_content>",
+                          "loader": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: LayoutData",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 2]",
+                      "content": {
+                        "Indexable": "<detail_content>",
+                        "Properties": {
+                          "config": "<detail_content>",
+                          "edges": "<detail_content>",
+                          "nodes": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: LayoutLoaderDefinition",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 3]",
+                      "content": {
+                        "Properties": {
+                          "algorithm?": "<detail_content>",
+                          "loader": "<detail_content>",
+                          "name": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: Mermaid",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 4]",
+                      "content": {
+                        "Properties": {
+                          "contentLoaded()": {
+                            "Returns": "<detail_content>"
+                          },
+                          "detectType()": {
+                            "Parameters": {
+                              "text": "<detail_content>",
+                              "config?": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>"
+                          },
+                          "getRegisteredDiagramsMetadata()": {
+                            "Returns": "<detail_content>"
+                          },
+                          "~~init()~~": "<detail_content>"
+                        },
+                        "init": {
+                          "initialize()": {
+                            "Parameters": {
+                              "config": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>"
+                          },
+                          "~~mermaidAPI~~": {
+                            "Deprecated": "<detail_content>"
+                          },
+                          "parse()": {
+                            "Parameters": {
+                              "text": "<detail_content>",
+                              "parseOptions?": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>",
+                            "See": "<detail_content>",
+                            "Throws": "<detail_content>"
+                          },
+                          "parseError?": "<detail_content>",
+                          "registerExternalDiagrams()": {
+                            "Parameters": {
+                              "diagrams": "<detail_content>",
+                              "opts": {
+                                "lazyLoad?": "<detail_content>"
+                              }
+                            },
+                            "Returns": "<detail_content>"
+                          },
+                          "registerIconPacks()": {
+                            "Parameters": {
+                              "iconLoaders": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>"
+                          },
+                          "registerLayoutLoaders()": {
+                            "Parameters": {
+                              "loaders": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>"
+                          },
+                          "render()": {
+                            "Parameters": {
+                              "id": "<detail_content>",
+                              "text": "<detail_content>",
+                              "svgContainingElement?": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>",
+                            "Deprecated": "<detail_content>"
+                          },
+                          "run()": "<detail_content>"
+                        },
+                        "run": {
+                          "setParseErrorHandler()": "<detail_content>"
+                        },
+                        "setParseErrorHandler Alternative to directly setting parseError using:": {
+                          "startOnLoad": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: MermaidConfig",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 5]",
+                      "content": {
+                        "Properties": {
+                          "altFontFamily?": "<detail_content>",
+                          "architecture?": "<detail_content>",
+                          "arrowMarkerAbsolute?": "<detail_content>",
+                          "block?": "<detail_content>",
+                          "c4?": "<detail_content>",
+                          "class?": "<detail_content>",
+                          "darkMode?": "<detail_content>",
+                          "deterministicIds?": "<detail_content>",
+                          "deterministicIDSeed?": "<detail_content>",
+                          "dompurifyConfig?": "<detail_content>",
+                          "elk?": {
+                            "considerModelOrder?": "<detail_content>",
+                            "cycleBreakingStrategy?": "<detail_content>",
+                            "forceNodeModelOrder?": "<detail_content>",
+                            "mergeEdges?": "<detail_content>",
+                            "nodePlacementStrategy?": "<detail_content>"
+                          },
+                          "er?": "<detail_content>",
+                          "flowchart?": "<detail_content>",
+                          "fontFamily?": "<detail_content>",
+                          "fontSize?": "<detail_content>",
+                          "forceLegacyMathML?": "<detail_content>",
+                          "gantt?": "<detail_content>",
+                          "gitGraph?": "<detail_content>",
+                          "handDrawnSeed?": "<detail_content>",
+                          "htmlLabels?": "<detail_content>",
+                          "journey?": "<detail_content>",
+                          "kanban?": "<detail_content>",
+                          "layout?": "<detail_content>",
+                          "legacyMathML?": "<detail_content>",
+                          "logLevel?": "<detail_content>",
+                          "look?": "<detail_content>",
+                          "markdownAutoWrap?": "<detail_content>",
+                          "maxEdges?": "<detail_content>",
+                          "maxTextSize?": "<detail_content>",
+                          "mindmap?": "<detail_content>",
+                          "packet?": "<detail_content>",
+                          "pie?": "<detail_content>",
+                          "quadrantChart?": "<detail_content>",
+                          "radar?": "<detail_content>",
+                          "requirement?": "<detail_content>",
+                          "sankey?": "<detail_content>",
+                          "secure?": "<detail_content>",
+                          "securityLevel?": "<detail_content>",
+                          "sequence?": "<detail_content>",
+                          "startOnLoad?": "<detail_content>",
+                          "state?": "<detail_content>",
+                          "suppressErrorRendering?": "<detail_content>",
+                          "theme?": "<detail_content>",
+                          "themeCSS?": "<detail_content>",
+                          "themeVariables?": "<detail_content>",
+                          "timeline?": "<detail_content>",
+                          "wrap?": "<detail_content>",
+                          "xyChart?": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: ParseOptions",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 6]",
+                      "content": {
+                        "Properties": {
+                          "suppressErrors?": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: ParseResult",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 7]",
+                      "content": {
+                        "Properties": {
+                          "config": "<detail_content>",
+                          "diagramType": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: RenderOptions",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 8]",
+                      "content": {
+                        "Properties": {
+                          "algorithm?": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: RenderResult",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 9]",
+                      "content": {
+                        "Properties": {
+                          "bindFunctions()?": {
+                            "Parameters": {
+                              "element": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>"
+                          },
+                          "diagramType": "<detail_content>",
+                          "svg": "<detail_content>"
+                        }
+                      }
+                    },
+                    {
+                      "title": "Interface: RunOptions",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 2, \"subpages\", 10]",
+                      "content": {
+                        "Properties": {
+                          "nodes?": "<detail_content>",
+                          "postRenderCallback()?": {
+                            "Parameters": {
+                              "id": "<detail_content>"
+                            },
+                            "Returns": "<detail_content>"
+                          },
+                          "querySelector?": "<detail_content>",
+                          "suppressErrors?": "<detail_content>"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Type Aliases",
+                  "description": "Documentation section: type-aliases",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 3]",
+                  "subpages": [
+                    {
+                      "title": "Internalhelpers",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 3, \"subpages\", 0]",
+                      "content": {
+                        "Type Alias: InternalHelpers": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Type Alias: ParseErrorFunction()",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 3, \"subpages\", 1]",
+                      "content": {
+                        "Parameters": {
+                          "err": "<detail_content>",
+                          "hash?": "<detail_content>"
+                        },
+                        "Returns": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Svg",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 3, \"subpages\", 2]",
+                      "content": {
+                        "Type Alias: SVG": "<detail_content>"
+                      }
+                    },
+                    {
+                      "title": "Svggroup",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 3, \"subpages\", 3]",
+                      "content": {
+                        "Type Alias: SVGGroup": "<detail_content>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Variables",
+                  "description": "Documentation section: variables",
+                  "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 4]",
+                  "subpages": [
+                    {
+                      "title": "Default",
+                      "path": "[\"subpages\", 2, \"subpages\", 10, \"subpages\", 3, \"subpages\", 4, \"subpages\", 0]",
+                      "content": {
+                        "Variable: default": "<detail_content>"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ecosystem",
+      "description": "Documentation section: ecosystem",
+      "path": "[\"subpages\", 3]",
+      "subpages": [
+        {
+          "title": "Integrations",
+          "path": "[\"subpages\", 3, \"subpages\", 0]",
+          "content": {
+            "Official integration": {
+              "Mermaid Chart": "<detail_content>"
+            },
+            "Community integrations": {
+              "Productivity tools": "<detail_content>",
+              "LLM integrations": "<detail_content>",
+              "CRM/ERP": "<detail_content>",
+              "Blogging": "<detail_content>",
+              "CMS/ECM": "<detail_content>",
+              "Communication": "<detail_content>",
+              "Wikis": "<detail_content>",
+              "Editor Plugins": "<detail_content>",
+              "Document Generation": "<detail_content>",
+              "Browser Extensions": "<detail_content>",
+              "Other": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Integrations - create",
+          "path": "[\"subpages\", 3, \"subpages\", 1]",
+          "content": {
+            "Recommendations": {
+              "File Extension": "<detail_content>",
+              "MIME Type": "<detail_content>"
+            },
+            "Showcase": {
+              "Mermaid Discord workspace": "<detail_content>",
+              "Add to Mermaid Ecosystem": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Mermaid Chart",
+          "path": "[\"subpages\", 3, \"subpages\", 2]",
+          "content": {
+            "About": "<detail_content>",
+            "Features": "<detail_content>",
+            "Plans": "<detail_content>",
+            "Mermaid JS contributions": "<detail_content>"
+          }
+        },
+        {
+          "title": "Tutorials",
+          "path": "[\"subpages\", 3, \"subpages\", 3]",
+          "content": {
+            "Live-Editor Tutorials": "<detail_content>",
+            "Mermaid with OpenAI": "<detail_content>",
+            "Mermaid with HTML": "<detail_content>",
+            "Mermaid with Text Area": "<detail_content>",
+            "Mermaid in open source docs": "<detail_content>",
+            "Jupyter / Python Integration with mermaid-js": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Intro",
+      "description": "Documentation section: intro",
+      "path": "[\"subpages\", 4]",
+      "subpages": [
+        {
+          "title": "Mermaid User Guide",
+          "path": "[\"subpages\", 4, \"subpages\", 0]",
+          "content": {
+            "Mermaid is composed of three parts": "<detail_content>",
+            "Ways to use Mermaid": "<detail_content>",
+            "1. Using the Mermaid Live Editor": {
+              "Features": {
+                "• Diagram Code": "<detail_content>",
+                "• Configurations": "<detail_content>",
+                "• Editing History": "<detail_content>",
+                "• Saving a diagram": "<detail_content>",
+                "• Editing your diagrams": "<detail_content>",
+                "• Loading from Gists": "<detail_content>"
+              }
+            },
+            "2. Using the Mermaid Chart Editor": "<detail_content>",
+            "3. Using Mermaid Plugins": {
+              "Mermaid Plugins": "<detail_content>",
+              "Mermaid Chart Plugins": "<detail_content>",
+              "Native Mermaid Support": "<detail_content>"
+            },
+            "4. Calling the Mermaid JavaScript API": {
+              "Requirements for the Mermaid API": {
+                "Examples": "<detail_content>"
+              }
+            },
+            "5. Adding Mermaid as a dependency": "<detail_content>",
+            "Closing note": "<detail_content>"
+          }
+        },
+        {
+          "title": "About Mermaid",
+          "path": "[\"subpages\", 4, \"subpages\", 1]",
+          "content": {
+            "Diagram Types": {
+              "[Flowchart](../syntax/flowchart.md?id=flowcharts-basic-syntax)": "<detail_content>",
+              "[Sequence diagram](../syntax/sequenceDiagram.md)": "<detail_content>",
+              "[Gantt diagram](../syntax/gantt.md)": "<detail_content>",
+              "[Class diagram](../syntax/classDiagram.md)": "<detail_content>",
+              "[Git graph](../syntax/gitgraph.md)": "<detail_content>",
+              "[Entity Relationship Diagram - :exclamation: experimental](../syntax/entityRelationshipDiagram.md)": "<detail_content>",
+              "[User Journey Diagram](../syntax/userJourney.md)": "<detail_content>",
+              "[Quadrant Chart](../syntax/quadrantChart.md)": "<detail_content>",
+              "[XY Chart](../syntax/xyChart.md)": "<detail_content>"
+            },
+            "Installation": {
+              "CDN": "<detail_content>"
+            },
+            "Deploying Mermaid": {
+              "[Mermaid API](../config/setup/README.md):": "<detail_content>"
+            },
+            "Sibling projects": "<detail_content>",
+            "Request for Assistance": "<detail_content>",
+            "Contributors": {
+              "Requirements": "<detail_content>",
+              "Development Installation": "<detail_content>",
+              "Lint": "<detail_content>",
+              "Test": "<detail_content>",
+              "Release": "<detail_content>"
+            },
+            "Security and safe diagrams": "<detail_content>",
+            "Reporting vulnerabilities": "<detail_content>",
+            "Appreciation": "<detail_content>"
+          }
+        },
+        {
+          "title": "Diagram Syntax",
+          "path": "[\"subpages\", 4, \"subpages\", 2]",
+          "content": {
+            "Syntax Structure": "<detail_content>",
+            "Diagram Breaking": "<detail_content>",
+            "Mermaid Live Editor": "<detail_content>",
+            "Configuration": {
+              "Configuration Section in the [Live Editor](https://mermaid.live).": "<detail_content>",
+              "[The initialize() call](./getting-started.md#_3-calling-the-javascript-api)": "<detail_content>",
+              "Frontmatter for diagram code": "<detail_content>",
+              "[Directives](../config/directives.md)": "<detail_content>",
+              "[Theme Manipulation](../config/theming.md)": "<detail_content>",
+              "Layout and look": "<detail_content>",
+              "Selecting Diagram Looks": {
+                "Selecting Layout Algorithms": "<detail_content>",
+                "Supported Layout Algorithms:": "<detail_content>",
+                "How to Select a Layout Algorithm:": "<detail_content>",
+                "Customizing ELK Layout:": "<detail_content>",
+                "Using Dagre Layout with Classic Look:": "<detail_content>"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "News",
+      "description": "Documentation section: news",
+      "path": "[\"subpages\", 5]",
+      "subpages": [
+        {
+          "title": "Announcements",
+          "path": "[\"subpages\", 5, \"subpages\", 0]",
+          "content": {
+            "🚀 Exciting News from Mermaid Chart! 🚀": "<detail_content>",
+            "Mermaid Chart's Visual Editor for Flowcharts and Sequence diagrams": "<detail_content>",
+            "📖 Blog posts": "<detail_content>"
+          }
+        },
+        {
+          "title": "Blog",
+          "path": "[\"subpages\", 5, \"subpages\", 1]",
+          "content": {
+            "[Mermaid introduces the Visual Editor for Entity Relationship diagrams](https://docs.mermaidchart.com/blog/posts/mermaid-introduces-the-visual-editor-for-entity-relationship-diagrams)": "<detail_content>",
+            "[Mermaid supports Treemap Diagrams now!!!](https://docs.mermaidchart.com/blog/posts/mermaid-have-treemap-diagrams-now)": "<detail_content>",
+            "[AI Diagram Generators and Data Visualization: Best Practices](https://docs.mermaidchart.com/blog/posts/ai-diagram-generators-and-data-visualization-best-practices)": "<detail_content>",
+            "[How to Choose the Best AI Diagram Generator for Your Needs (2025)](https://docs.mermaidchart.com/blog/posts/how-to-choose-the-best-ai-diagram-generator-for-your-needs-2025)": "<detail_content>",
+            "[5 Time-Saving Tips for Using Mermaid’s AI Diagram Generator Effectively](https://docs.mermaidchart.com/blog/posts/5-time-saving-tips-for-using-mermaids-ai-diagram-generator-effectively)": "<detail_content>",
+            "[Enhancing Team Collaboration with AI-Powered Diagrams](https://docs.mermaidchart.com/blog/posts/enhancing-team-collaboration-with-ai-powered-diagrams)": "<detail_content>",
+            "[What is an AI Diagram Generator? Benefits and Use Cases](https://docs.mermaidchart.com/blog/posts/what-is-an-ai-diagram-generator-benefits-and-use-cases)": "<detail_content>",
+            "[How to Use Mermaid Chart as an AI Diagram Generator for Developers](https://docs.mermaidchart.com/blog/posts/how-to-use-mermaid-chart-as-an-ai-diagram-generator)": "<detail_content>",
+            "[Mermaid Chart VS Code Plugin: Create and Edit Mermaid.js Diagrams in Visual Studio Code](https://docs.mermaidchart.com/blog/posts/mermaid-chart-vs-code-plugin-create-and-edit-mermaid-js-diagrams-in-visual-studio-code)": "<detail_content>",
+            "[Mermaid Chart: The Evolution of Mermaid](https://docs.mermaidchart.com/blog/posts/mermaid-chart-the-evolution-of-mermaid)": "<detail_content>",
+            "[GUI for editing Mermaid Class Diagrams](https://docs.mermaidchart.com/blog/posts/gui-for-editing-mermaid-class-diagrams)": "<detail_content>",
+            "[7 ER Diagram Examples For Database Modeling from Mermaid AI](https://docs.mermaidchart.com/blog/posts/7-er-diagram-examples-for-database-modeling-from-mermaid-ai)": "<detail_content>",
+            "[Mermaid Whiteboard: Visual Collaboration Made Universal](https://docs.mermaidchart.com/blog/posts/mermaid-whiteboard-visual-collaboration-made-universal)": "<detail_content>",
+            "[Mermaid 11.4 is out: New Features and Kanban Diagramming](https://www.mermaidchart.com/blog/posts/mermaid-11-4-is-out-new-features-and-kanban-diagramming)": "<detail_content>",
+            "[How To Build an ER Diagram with Mermaid Chart](https://www.mermaidchart.com/blog/posts/how-to-build-an-er-diagram-with-mermaid-chart)": "<detail_content>",
+            "[Expanding the Horizons of Mermaid Flowcharts: Introducing 30 New Shapes!](https://www.mermaidchart.com/blog/posts/new-mermaid-flowchart-shapes/)": "<detail_content>",
+            "[Introducing Architecture Diagrams in Mermaid](https://www.mermaidchart.com/blog/posts/mermaid-supports-architecture-diagrams/)": "<detail_content>",
+            "[Mermaid v11 is out!](https://www.mermaidchart.com/blog/posts/mermaid-v11/)": "<detail_content>",
+            "[Mermaid Innovation - Introducing New Looks for Mermaid Diagrams](https://www.mermaidchart.com/blog/posts/mermaid-innovation-introducing-new-looks-for-mermaid-diagrams/)": "<detail_content>",
+            "[The Mermaid Chart Plugin for Jira: A How-To User Guide](https://www.mermaidchart.com/blog/posts/the-mermaid-chart-plugin-for-jira-a-how-to-user-guide/)": "<detail_content>",
+            "[Mermaid AI Is Here to Change the Game For Diagram Creation](https://www.mermaidchart.com/blog/posts/mermaid-ai-is-here-to-change-the-game-for-diagram-creation/)": "<detail_content>",
+            "[How to Make a Sequence Diagram with Mermaid Chart](https://www.mermaidchart.com/blog/posts/how-to-make-a-sequence-diagram-in-mermaid-chart-step-by-step-guide/)": "<detail_content>",
+            "[How to Use the New “Comments” Feature in Mermaid Chart](https://www.mermaidchart.com/blog/posts/how-to-use-the-new-comments-feature-in-mermaid-chart/)": "<detail_content>",
+            "[How to Use the official Mermaid Chart for Confluence app](https://www.mermaidchart.com/blog/posts/how-to-use-the-official-mermaid-chart-for-confluence-app/)": "<detail_content>",
+            "[How to Choose the Right Documentation Software](https://www.mermaidchart.com/blog/posts/how-to-choose-the-right-documentation-software/)": "<detail_content>",
+            "[AI in software diagramming: What trends will define the future?](https://www.mermaidchart.com/blog/posts/ai-in-software-diagramming/)": "<detail_content>",
+            "[Mermaid Chart Unveils Visual Editor for Sequence Diagrams](https://www.mermaidchart.com/blog/posts/mermaid-chart-unveils-visual-editor-for-sequence-diagrams/)": "<detail_content>",
+            "[Modeling system states: It starts with a Turing machine](https://www.mermaidchart.com/blog/posts/modeling-system-states/)": "<detail_content>",
+            "[Mermaid Chart Raises $7.5M to Reinvent Visual Collaboration for Enterprises](https://www.mermaidchart.com/blog/posts/mermaid-chart-raises-7.5m-to-reinvent-visual-collaoration-for-enterprises/)": "<detail_content>",
+            "[Mermaid Chart GPT Is Now Available In the GPT Store!](https://www.mermaidchart.com/blog/posts/mermaid-chart-gpt-is-now-available-in-the-gpt-store/)": "<detail_content>",
+            "[How to Make a Flowchart with Mermaid Chart](https://www.mermaidchart.com/blog/posts/how-to-make-flowcharts-with-mermaid-chart/)": "<detail_content>",
+            "[How one data scientist uses Mermaid Chart to quickly and easily build flowcharts](https://www.mermaidchart.com/blog/posts/customer-spotlight-ari-tal/)": "<detail_content>",
+            "[Introducing Mermaid Chart’s JetBrains IDE Extension](https://www.mermaidchart.com/blog/posts/introducing-mermaid-charts-jetbrains-ide-extension/)": "<detail_content>",
+            "[Mermaid Chart Releases New Visual Editor For Flowcharts](https://www.mermaidchart.com/blog/posts/mermaid-chart-releases-new-visual-editor-for-flowcharts/)": "<detail_content>",
+            "[7 best practices (+ examples) for good developer documentation](https://www.mermaidchart.com/blog/posts/7-best-practices-for-good-documentation/)": "<detail_content>",
+            "[5 Reasons You Should Be Using Mermaid Chart As Your Diagram Generator](https://www.mermaidchart.com/blog/posts/5-reasons-you-should-be-using-mermaid-chart-as-your-diagram-generator/)": "<detail_content>",
+            "[How to Use Mermaid Chart as an AI Diagram Generator](https://www.mermaidchart.com/blog/posts/how-to-use-mermaid-chart-as-an-ai-diagram-generator/)": "<detail_content>",
+            "[Diagrams, Made Even Easier: Introducing “Code Snippets” in the Mermaid Chart Editor](https://www.mermaidchart.com/blog/posts/easier-diagram-editing-with-code-snippets/)": "<detail_content>",
+            "[How to Make a Git Graph with Mermaid Chart](https://www.mermaidchart.com/blog/posts/how-to-make-a-git-graph-with-mermaid-chart/)": "<detail_content>",
+            "[Present flow data using Sankey diagrams in Mermaid, thanks to Nikolay Rozhkov](https://www.mermaidchart.com/blog/posts/present-flow-data-using-sankey-diagrams/)": "<detail_content>",
+            "[Special cases broke Microsoft Zune and can ruin your code base too](https://www.mermaidchart.com/blog/posts/special-cases-broke-microsoft-zune-and-can-ruin-your-code-base-too/)": "<detail_content>",
+            "[New AI chatbot now available on Mermaid Chart to simplify text-based diagram creation](https://www.mermaidchart.com/blog/posts/ai-chatbot-now-available-on-mermaid-chart-to-simplify-text-based-diagram-creation/)": "<detail_content>",
+            "[Believe It or Not, You Still Need an Online UML Diagram Tool](https://www.mermaidchart.com/blog/posts/uml-diagram-tool/)": "<detail_content>",
+            "[From Chaos to Clarity: Exploring Mind Maps with MermaidJS](https://www.mermaidchart.com/blog/posts/from-chaos-to-clarity-exploring-mind-maps-with-mermaidjs)": "<detail_content>",
+            "[Mermaid Chart Announces Visual Studio Code Plugin to Simplify Development Workflows](https://www.mermaidchart.com/blog/posts/mermaid-chart-announces-visual-studio-code-plugin)": "<detail_content>",
+            "[Mermaid Chart’s ChatGPT Plugin Combines Generative AI and Smart Diagramming For Users](https://www.mermaidchart.com/blog/posts/mermaid-chart-chatgpt-plugin-combines-generative-ai-and-smart-diagramming)": "<detail_content>",
+            "[Sequence diagrams, the only good thing UML brought to software development](https://www.mermaidchart.com/blog/posts/sequence-diagrams-the-good-thing-uml-brought-to-software-development/)": "<detail_content>",
+            "[subhash-halder contributed quadrant charts so you can show your manager what to select - just like the strategy consultants at BCG do](https://www.mermaidchart.com/blog/posts/subhash-halder-contributed-quadrant-charts-so-you-can-show-your-manager-what-to-select-just-like-the-strategy-consultants-at-bcg-do/)": "<detail_content>",
+            "[Bad documentation is bad for developers](https://www.mermaidchart.com/blog/posts/bad-documentation-is-bad-for-developers)": "<detail_content>",
+            "[Automatic text wrapping in flowcharts is here!](https://www.mermaidchart.com/blog/posts/automatic-text-wrapping-in-flowcharts-is-here/)": "<detail_content>",
+            "[Mermaid Chart officially launched with sharable diagram links and presentation mode](https://www.mermaidchart.com/blog/posts/mermaid-chart-officially-launched-with-sharable-diagram-links-and-presentation-mode/)": "<detail_content>",
+            "[If you're not excited about ChatGPT, then you're not being creative](https://www.mermaidchart.com/blog/posts/if-youre-not-excited-about-chatgpt-then-youre-not-being-creative-enough/)": "<detail_content>",
+            "[Flow charts are O(n)2 complex, so don't go over 100 connections](https://www.mermaidchart.com/blog/posts/flow-charts-are-on2-complex-so-dont-go-over-100-connections/)": "<detail_content>",
+            "[Busting the myth that developers can't write](https://www.mermaidchart.com/blog/posts/busting-the-myth-that-developers-cant-write/)": "<detail_content>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Syntax",
+      "description": "Documentation section: syntax",
+      "path": "[\"subpages\", 6]",
+      "subpages": [
+        {
+          "title": "Architecture Diagrams Documentation (v11.1.0+)",
+          "path": "[\"subpages\", 6, \"subpages\", 0]",
+          "content": {
+            "Example": "<detail_content>",
+            "Syntax": {
+              "Groups": "<detail_content>",
+              "Services": "<detail_content>",
+              "Edges": {
+                "Edge Direction": "<detail_content>",
+                "Arrows": "<detail_content>",
+                "Edges out of Groups": "<detail_content>"
+              },
+              "Junctions": "<detail_content>"
+            },
+            "Icons": "<detail_content>"
+          }
+        },
+        {
+          "title": "Block Diagrams Documentation",
+          "path": "[\"subpages\", 6, \"subpages\", 1]",
+          "content": {
+            "Introduction to Block Diagrams": {
+              "Definition and Purpose": "<detail_content>",
+              "General Use Cases": "<detail_content>",
+              "Simple Block Diagrams": {
+                "Basic Structure": "<detail_content>"
+              },
+              "Defining the number of columns to use": {
+                "Column Usage": "<detail_content>"
+              }
+            },
+            "3. Advanced Block Configuration": {
+              "Setting Block Width": {
+                "Spanning Multiple Columns": "<detail_content>"
+              },
+              "Creating Composite Blocks": {
+                "Nested Blocks": "<detail_content>"
+              },
+              "Column Width Dynamics": {
+                "Adjusting Widths": "<detail_content>"
+              }
+            },
+            "4. Block Varieties and Shapes": {
+              "Standard and Special Block Shapes": "<detail_content>",
+              "Block Arrows and Space Blocks": {
+                "Example - Block Arrows": "<detail_content>",
+                "Example - Space Blocks": "<detail_content>"
+              }
+            },
+            "5. Connecting Blocks with Edges": {
+              "Basic Linking and Arrow Types": "<detail_content>",
+              "Text on Links": "<detail_content>"
+            },
+            "6. Styling and Customization": {
+              "Individual Block Styling": {
+                "Example - Styling a Single Block": "<detail_content>"
+              },
+              "Class Styling": {
+                "Example - Styling a Single Class": "<detail_content>"
+              },
+              "7. Practical Examples and Use Cases": "<detail_content>",
+              "Detailed Examples Illustrating Various Features": {
+                "Example - System Architecture": "<detail_content>",
+                "Example - Business Process Flow": "<detail_content>"
+              }
+            },
+            "8. Troubleshooting and Common Issues": {
+              "Common Syntax Errors": {
+                "Example - Incorrect Linking": "<detail_content>",
+                "Example - Misplaced Styling": "<detail_content>"
+              },
+              "Tips for Complex Diagram Structures": {
+                "Modular Design": "<detail_content>",
+                "Consistent Styling": "<detail_content>",
+                "Comments and Documentation": "<detail_content>"
+              }
+            }
+          }
+        },
+        {
+          "title": "C4 Diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 2]",
+          "content": {
+            "C4 System Context Diagram (C4Context)": "<detail_content>",
+            "C4 Container diagram (C4Container)": "<detail_content>",
+            "C4 Component diagram (C4Component)": "<detail_content>",
+            "C4 Dynamic diagram (C4Dynamic)": "<detail_content>",
+            "C4 Deployment diagram (C4Deployment)": "<detail_content>"
+          }
+        },
+        {
+          "title": "Class diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 3]",
+          "content": {
+            "Syntax": {
+              "Class": "<detail_content>"
+            },
+            "Define a class": {
+              "Class labels": "<detail_content>"
+            },
+            "Defining Members of a class": "<detail_content>",
+            "Defining Relationship": {
+              "Labels on Relations": "<detail_content>",
+              "Two-way relations": "<detail_content>",
+              "Lollipop Interfaces": "<detail_content>"
+            },
+            "Define Namespace": "<detail_content>",
+            "Cardinality / Multiplicity on relations": "<detail_content>",
+            "Annotations on classes": "<detail_content>",
+            "Comments": "<detail_content>",
+            "Setting the direction of the diagram": "<detail_content>",
+            "Interaction": "<detail_content>",
+            "Notes": {
+              "Examples": "<detail_content>"
+            },
+            "Styling": {
+              "Styling a node": {
+                "Classes": "<detail_content>"
+              },
+              "Default class": "<detail_content>",
+              "CSS Classes": "<detail_content>"
+            },
+            "Configuration": {
+              "Members Box": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Entity Relationship Diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 4]",
+          "content": {
+            "Syntax": {
+              "Entities and Relationships": {
+                "Unicode text": "<detail_content>",
+                "Markdown formatting": "<detail_content>"
+              },
+              "Relationship Syntax": "<detail_content>",
+              "Identification": "<detail_content>",
+              "Attributes": "<detail_content>",
+              "Entity Name Aliases": {
+                "Attribute Keys and Comments": "<detail_content>"
+              },
+              "Direction": "<detail_content>",
+              "Styling a node": {
+                "Classes": "<detail_content>"
+              },
+              "Default class": "<detail_content>"
+            },
+            "Configuration": {
+              "Layout": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Examples",
+          "path": "[\"subpages\", 6, \"subpages\", 5]",
+          "content": {
+            "Basic Pie Chart": "<detail_content>",
+            "Basic sequence diagram": "<detail_content>",
+            "Basic flowchart": "<detail_content>",
+            "Larger flowchart with some styling": "<detail_content>",
+            "SequenceDiagram: Loops, alt and opt": "<detail_content>",
+            "SequenceDiagram: Message to self in loop": "<detail_content>",
+            "Sequence Diagram: Blogging app service communication": "<detail_content>",
+            "A commit flow diagram.": "<detail_content>"
+          }
+        },
+        {
+          "title": "Flowcharts - Basic Syntax",
+          "path": "[\"subpages\", 6, \"subpages\", 6]",
+          "content": {
+            "Node shapes": {
+              "A node with round edges": "<detail_content>",
+              "A stadium-shaped node": "<detail_content>",
+              "A node in a subroutine shape": "<detail_content>",
+              "A node in a cylindrical shape": "<detail_content>",
+              "A node in the form of a circle": "<detail_content>",
+              "A node in an asymmetric shape": "<detail_content>",
+              "A node (rhombus)": "<detail_content>",
+              "A hexagon node": "<detail_content>",
+              "Parallelogram": "<detail_content>",
+              "Parallelogram alt": "<detail_content>",
+              "Trapezoid": "<detail_content>",
+              "Trapezoid alt": "<detail_content>",
+              "Double circle": "<detail_content>"
+            },
+            "Expanded Node Shapes in Mermaid Flowcharts (v11.3.0+)": {
+              "Complete List of New Shapes": "<detail_content>",
+              "Example Flowchart with New Shapes": "<detail_content>",
+              "Process": "<detail_content>",
+              "Event": "<detail_content>",
+              "Terminal Point (Stadium)": "<detail_content>",
+              "Subprocess": "<detail_content>",
+              "Database (Cylinder)": "<detail_content>",
+              "Start (Circle)": "<detail_content>",
+              "Odd": "<detail_content>",
+              "Decision (Diamond)": "<detail_content>",
+              "Prepare Conditional (Hexagon)": "<detail_content>",
+              "Data Input/Output (Lean Right)": "<detail_content>",
+              "Data Input/Output (Lean Left)": "<detail_content>",
+              "Priority Action (Trapezoid Base Bottom)": "<detail_content>",
+              "Manual Operation (Trapezoid Base Top)": "<detail_content>",
+              "Stop (Double Circle)": "<detail_content>",
+              "Text Block": "<detail_content>",
+              "Card (Notched Rectangle)": "<detail_content>",
+              "Lined/Shaded Process": "<detail_content>",
+              "Start (Small Circle)": "<detail_content>",
+              "Stop (Framed Circle)": "<detail_content>",
+              "Fork/Join (Long Rectangle)": "<detail_content>",
+              "Collate (Hourglass)": "<detail_content>",
+              "Comment (Curly Brace)": "<detail_content>",
+              "Comment Right (Curly Brace Right)": "<detail_content>",
+              "Comment with braces on both sides": "<detail_content>",
+              "Com Link (Lightning Bolt)": "<detail_content>",
+              "Document": "<detail_content>",
+              "Delay (Half-Rounded Rectangle)": "<detail_content>",
+              "Direct Access Storage (Horizontal Cylinder)": "<detail_content>",
+              "Disk Storage (Lined Cylinder)": "<detail_content>",
+              "Display (Curved Trapezoid)": "<detail_content>",
+              "Divided Process (Divided Rectangle)": "<detail_content>",
+              "Extract (Small Triangle)": "<detail_content>",
+              "Internal Storage (Window Pane)": "<detail_content>",
+              "Junction (Filled Circle)": "<detail_content>",
+              "Lined Document": "<detail_content>",
+              "Loop Limit (Notched Pentagon)": "<detail_content>",
+              "Manual File (Flipped Triangle)": "<detail_content>",
+              "Manual Input (Sloped Rectangle)": "<detail_content>",
+              "Multi-Document (Stacked Document)": "<detail_content>",
+              "Multi-Process (Stacked Rectangle)": "<detail_content>",
+              "Paper Tape (Flag)": "<detail_content>",
+              "Stored Data (Bow Tie Rectangle)": "<detail_content>",
+              "Summary (Crossed Circle)": "<detail_content>",
+              "Tagged Document": "<detail_content>",
+              "Tagged Process (Tagged Rectangle)": "<detail_content>"
+            },
+            "Special shapes in Mermaid Flowcharts (v11.3.0+)": {
+              "Icon Shape": {
+                "Parameters": "<detail_content>"
+              },
+              "Image Shape": {
+                "Parameters": "<detail_content>"
+              }
+            },
+            "Links between nodes": {
+              "A link with arrow head": "<detail_content>",
+              "An open link": "<detail_content>",
+              "Text on links": "<detail_content>",
+              "A link with arrow head and text": "<detail_content>",
+              "Dotted link": "<detail_content>",
+              "Dotted link with text": "<detail_content>",
+              "Thick link": "<detail_content>",
+              "Thick link with text": "<detail_content>",
+              "An invisible link": "<detail_content>",
+              "Chaining of links": "<detail_content>",
+              "Attaching an ID to Edges": "<detail_content>",
+              "Turning an Animation On": "<detail_content>",
+              "Selecting Type of Animation": "<detail_content>",
+              "Using classDef Statements for Animations": "<detail_content>"
+            },
+            "New arrow types": {
+              "Circle edge example": "<detail_content>",
+              "Cross edge example": "<detail_content>"
+            },
+            "Multi directional arrows": {
+              "Minimum length of a link": "<detail_content>"
+            },
+            "Special characters that break syntax": {
+              "Entity codes to escape characters": "<detail_content>"
+            },
+            "Subgraphs": {
+              "flowcharts": "<detail_content>",
+              "Direction in subgraphs": {
+                "Limitation": "<detail_content>"
+              }
+            },
+            "Markdown Strings": "<detail_content>",
+            "Interaction": {
+              "Comments": "<detail_content>"
+            },
+            "Styling and classes": {
+              "Styling links": "<detail_content>",
+              "Styling line curves": {
+                "Diagram level curve style": "<detail_content>",
+                "Edge level curve style using Edge IDs (v11.10.0+)": "<detail_content>"
+              },
+              "Styling a node": {
+                "Classes": "<detail_content>"
+              },
+              "CSS classes": "<detail_content>",
+              "Default class": "<detail_content>"
+            },
+            "Basic support for fontawesome": {
+              "Register FontAwesome icon packs (v11.7.0+)": "<detail_content>",
+              "Register FontAwesome CSS": "<detail_content>",
+              "Custom icons": "<detail_content>"
+            },
+            "Graph declarations with spaces between vertices and link and without semicolon": "<detail_content>",
+            "Configuration": {
+              "Renderer": "<detail_content>",
+              "Width": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Gantt diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 7]",
+          "content": {
+            "A note to users": "<detail_content>",
+            "Syntax": {
+              "Title": "<detail_content>",
+              "Excludes": {
+                "Weekend (v\\11.0.0+)": "<detail_content>"
+              },
+              "Section statements": "<detail_content>",
+              "Milestones": "<detail_content>",
+              "Vertical Markers": "<detail_content>"
+            },
+            "Setting dates": {
+              "Input date format": "<detail_content>",
+              "Output date format on the axis": "<detail_content>",
+              "Axis ticks (v10.3.0+)": "<detail_content>"
+            },
+            "Output in compact mode": "<detail_content>",
+            "Comments": "<detail_content>",
+            "Styling": {
+              "Classes used": "<detail_content>",
+              "Sample stylesheet": "<detail_content>"
+            },
+            "Today marker": "<detail_content>",
+            "Configuration": {
+              "Possible configuration params:": "<detail_content>"
+            },
+            "Interaction": "<detail_content>",
+            "Examples": {
+              "Bar chart (using gantt chart)": "<detail_content>",
+              "Timeline (with comments, CSS, config in frontmatter)": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "GitGraph Diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 8]",
+          "content": {
+            "Syntax": {
+              "Adding custom commit id": "<detail_content>",
+              "Modifying commit type": "<detail_content>",
+              "Adding Tags": "<detail_content>",
+              "Create a new branch": "<detail_content>",
+              "Checking out an existing branch": "<detail_content>",
+              "Merging two branches": "<detail_content>",
+              "Cherry Pick commit from another branch": "<detail_content>"
+            },
+            "GitGraph specific configuration options": "<detail_content>",
+            "Hiding Branch names and lines": "<detail_content>",
+            "Commit labels Layout: Rotated or Horizontal": "<detail_content>",
+            "Hiding commit labels": "<detail_content>",
+            "Customizing main branch name": "<detail_content>",
+            "Customizing branch ordering": "<detail_content>",
+            "Orientation (v10.3.0+)": {
+              "Left to Right (default, `LR:`)": "<detail_content>",
+              "Top to Bottom (`TB:`)": "<detail_content>",
+              "Bottom to Top (`BT:`) (v11.0.0+)": "<detail_content>"
+            },
+            "Parallel commits (v10.8.0+)": {
+              "Temporal Commits (default, `parallelCommits: false`)": "<detail_content>",
+              "Parallel commits (`parallelCommits: true`)": "<detail_content>"
+            },
+            "Themes": {
+              "Base Theme": "<detail_content>",
+              "Forest Theme": "<detail_content>",
+              "Default Theme": "<detail_content>",
+              "Dark Theme": "<detail_content>",
+              "Neutral Theme": "<detail_content>"
+            },
+            "Customize using Theme Variables": {
+              "Customizing branch colors": "<detail_content>",
+              "Customizing branch label colors": "<detail_content>",
+              "Customizing Commit colors": "<detail_content>",
+              "Customizing Commit Label Font Size": "<detail_content>",
+              "Customizing Tag Label Font Size": "<detail_content>",
+              "Customizing Tag colors": "<detail_content>",
+              "Customizing Highlight commit colors": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Mermaid Kanban Diagram Documentation",
+          "path": "[\"subpages\", 6, \"subpages\", 9]",
+          "content": {
+            "Overview": "<detail_content>",
+            "Defining Columns": "<detail_content>",
+            "Adding Tasks to Columns": "<detail_content>",
+            "Adding Metadata to Tasks": "<detail_content>",
+            "Supported Metadata Keys": "<detail_content>",
+            "Configuration Options": "<detail_content>",
+            "Full Example": "<detail_content>"
+          }
+        },
+        {
+          "title": "Mindmap",
+          "path": "[\"subpages\", 6, \"subpages\", 10]",
+          "content": {
+            "Syntax": "<detail_content>",
+            "Different shapes": {
+              "Square": "<detail_content>",
+              "Rounded square": "<detail_content>",
+              "Circle": "<detail_content>",
+              "Bang": "<detail_content>",
+              "Cloud": "<detail_content>",
+              "Hexagon": "<detail_content>",
+              "Default": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Packet Diagram (v11.0.0+)",
+          "path": "[\"subpages\", 6, \"subpages\", 11]",
+          "content": {
+            "Introduction": "<detail_content>",
+            "Usage": "<detail_content>",
+            "Syntax": {
+              "Bits Syntax (v11.7.0+)": "<detail_content>"
+            },
+            "Examples": "<detail_content>",
+            "Details of Syntax": "<detail_content>",
+            "Configuration": "<detail_content>",
+            "Theme Variables": "<detail_content>",
+            "Example on config and theme": "<detail_content>"
+          }
+        },
+        {
+          "title": "Pie chart diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 12]",
+          "content": {
+            "Syntax": "<detail_content>",
+            "Example": "<detail_content>",
+            "Configuration": "<detail_content>"
+          }
+        },
+        {
+          "title": "Quadrant Chart",
+          "path": "[\"subpages\", 6, \"subpages\", 13]",
+          "content": {
+            "Example": "<detail_content>",
+            "Syntax": {
+              "Title": {
+                "Example": "<detail_content>"
+              },
+              "x-axis": {
+                "Example": "<detail_content>"
+              },
+              "y-axis": {
+                "Example": "<detail_content>"
+              },
+              "Quadrants text": {
+                "Example": "<detail_content>"
+              },
+              "Points": {
+                "Example": "<detail_content>"
+              }
+            },
+            "Chart Configurations": "<detail_content>",
+            "Chart Theme Variables": "<detail_content>",
+            "Example on config and theme": {
+              "Point styling": {
+                "Available styles:": "<detail_content>"
+              }
+            },
+            "Example on styling": "<detail_content>"
+          }
+        },
+        {
+          "title": "Radar Diagram (v11.6.0+)",
+          "path": "[\"subpages\", 6, \"subpages\", 14]",
+          "content": {
+            "Introduction": "<detail_content>",
+            "Usage": "<detail_content>",
+            "Syntax": "<detail_content>",
+            "Examples": "<detail_content>",
+            "Details of Syntax": {
+              "Title": "<detail_content>",
+              "Axis": "<detail_content>",
+              "Curve": "<detail_content>",
+              "Options": "<detail_content>"
+            },
+            "Configuration": "<detail_content>",
+            "Theme Variables": {
+              "Global Theme Variables": "<detail_content>",
+              "Radar Style Options": "<detail_content>"
+            },
+            "Example on config and theme": "<detail_content>"
+          }
+        },
+        {
+          "title": "Requirement Diagram",
+          "path": "[\"subpages\", 6, \"subpages\", 15]",
+          "content": {
+            "Syntax": {
+              "Requirement": "<detail_content>",
+              "Element": "<detail_content>",
+              "Markdown Formatting": "<detail_content>",
+              "Relationship": "<detail_content>"
+            },
+            "Larger Example": "<detail_content>",
+            "Direction": "<detail_content>",
+            "Styling": {
+              "Direct Styling": "<detail_content>",
+              "Class Definitions": "<detail_content>",
+              "Default class": "<detail_content>",
+              "Applying Classes": "<detail_content>",
+              "Combined Example": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Sankey diagram (v10.3.0+)",
+          "path": "[\"subpages\", 6, \"subpages\", 16]",
+          "content": {
+            "Example": "<detail_content>",
+            "Syntax": {
+              "Basic": "<detail_content>",
+              "Empty Lines": "<detail_content>",
+              "Commas": "<detail_content>",
+              "Double Quotes": "<detail_content>"
+            },
+            "Configuration": {
+              "Links Coloring": "<detail_content>",
+              "Node Alignment": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "Sequence diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 17]",
+          "content": {
+            "Syntax": {
+              "Participants": "<detail_content>",
+              "Actors": "<detail_content>",
+              "Boundary": "<detail_content>",
+              "Control": "<detail_content>",
+              "Entity": "<detail_content>",
+              "Database": "<detail_content>",
+              "Collections": "<detail_content>",
+              "Queue": "<detail_content>",
+              "Aliases": "<detail_content>",
+              "Actor Creation and Destruction (v10.3.0+)": {
+                "Unfixable actor/participant creation/deletion error": "<detail_content>"
+              },
+              "Grouping / Box": "<detail_content>"
+            },
+            "Messages": "<detail_content>",
+            "Activations": "<detail_content>",
+            "Notes": "<detail_content>",
+            "Line breaks": "<detail_content>",
+            "Loops": "<detail_content>",
+            "Alt": "<detail_content>",
+            "Parallel": "<detail_content>",
+            "Critical Region": "<detail_content>",
+            "Break": "<detail_content>",
+            "Background Highlighting": "<detail_content>",
+            "Comments": "<detail_content>",
+            "Entity codes to escape characters": "<detail_content>",
+            "sequenceNumbers": "<detail_content>",
+            "Actor Menus": "<detail_content>",
+            "Styling": {
+              "Classes used": "<detail_content>",
+              "Sample stylesheet": "<detail_content>"
+            },
+            "Configuration": {
+              "Possible configuration parameters:": "<detail_content>"
+            }
+          }
+        },
+        {
+          "title": "State diagrams",
+          "path": "[\"subpages\", 6, \"subpages\", 18]",
+          "content": {
+            "States": "<detail_content>",
+            "Transitions": "<detail_content>",
+            "Start and End": "<detail_content>",
+            "Composite states": "<detail_content>",
+            "Choice": "<detail_content>",
+            "Forks": "<detail_content>",
+            "Notes": "<detail_content>",
+            "Concurrency": "<detail_content>",
+            "Setting the direction of the diagram": "<detail_content>",
+            "Comments": "<detail_content>",
+            "Styling with classDefs": {
+              "Apply classDef styles to states": {
+                "1. `class` statement": "<detail_content>",
+                "2. `:::` operator to apply a style to a state": "<detail_content>"
+              }
+            },
+            "Spaces in state names": "<detail_content>"
+          }
+        },
+        {
+          "title": "Timeline Diagram",
+          "path": "[\"subpages\", 6, \"subpages\", 19]",
+          "content": {
+            "Syntax": "<detail_content>",
+            "Grouping of time periods in sections/ages": "<detail_content>",
+            "Wrapping of text for long time-periods or events": "<detail_content>",
+            "Styling of time periods and events": {
+              "Customizing Color scheme": "<detail_content>"
+            },
+            "Themes": {
+              "Base Theme": "<detail_content>",
+              "Forest Theme": "<detail_content>",
+              "Dark Theme": "<detail_content>",
+              "Default Theme": "<detail_content>",
+              "Neutral Theme": "<detail_content>"
+            },
+            "Integrating with your library/website": "<detail_content>"
+          }
+        },
+        {
+          "title": "Treemap Diagram",
+          "path": "[\"subpages\", 6, \"subpages\", 20]",
+          "content": {
+            "Introduction": "<detail_content>",
+            "Syntax": {
+              "Node Definition": "<detail_content>"
+            },
+            "Examples": {
+              "Basic Treemap": "<detail_content>",
+              "Hierarchical Treemap": "<detail_content>",
+              "Treemap with Styling": "<detail_content>"
+            },
+            "Styling and Configuration": {
+              "Using classDef for Styling": "<detail_content>",
+              "Theme Configuration": "<detail_content>",
+              "Diagram Padding": "<detail_content>"
+            },
+            "Configuration Options": "<detail_content>",
+            "Advanced Features": {
+              "Value Formatting": "<detail_content>"
+            },
+            "Common Use Cases": "<detail_content>",
+            "Limitations": "<detail_content>",
+            "Related Diagrams": "<detail_content>",
+            "Notes": "<detail_content>"
+          }
+        },
+        {
+          "title": "Userjourney",
+          "path": "[\"subpages\", 6, \"subpages\", 21]",
+          "content": {
+            "User Journey Diagram": "<detail_content>"
+          }
+        },
+        {
+          "title": "XY Chart",
+          "path": "[\"subpages\", 6, \"subpages\", 22]",
+          "content": {
+            "Example": "<detail_content>",
+            "Syntax": {
+              "Orientations": "<detail_content>",
+              "Title": {
+                "Example": "<detail_content>"
+              },
+              "x-axis": {
+                "Example": "<detail_content>"
+              },
+              "y-axis": {
+                "Example": "<detail_content>"
+              },
+              "Line chart": {
+                "Example": "<detail_content>"
+              },
+              "Bar chart": {
+                "Example": "<detail_content>",
+                "Simplest example": "<detail_content>"
+              }
+            },
+            "Chart Configurations": {
+              "AxisConfig": "<detail_content>"
+            },
+            "Chart Theme Variables": "<detail_content>",
+            "Example on config and theme": "<detail_content>"
+          }
+        },
+        {
+          "title": "ZenUML",
+          "path": "[\"subpages\", 6, \"subpages\", 23]",
+          "content": {
+            "Syntax": {
+              "Participants": "<detail_content>",
+              "Annotators": "<detail_content>",
+              "Aliases": "<detail_content>"
+            },
+            "Messages": {
+              "Sync message": "<detail_content>",
+              "Async message": "<detail_content>",
+              "Creation message": "<detail_content>",
+              "Reply message": "<detail_content>"
+            },
+            "Nesting": "<detail_content>",
+            "Comments": "<detail_content>",
+            "Loops": "<detail_content>",
+            "Alt": "<detail_content>",
+            "Opt": "<detail_content>",
+            "Parallel": "<detail_content>",
+            "Try/Catch/Finally (Break)": "<detail_content>",
+            "Integrating with your library/website.": "<detail_content>"
+          }
+        }
+      ]
+    }
+  ]
+}
